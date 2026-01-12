@@ -1,0 +1,7 @@
+{
+  "notes": "Project Dystopia - Type A: Standard Composition",
+  "nodes": [
+    {"id": 1, "type": "CLIPTextEncode", "pos": [10, 10], "widgets_values": ["score_9, score_8_up, (masterpiece:1.2), a girl, standing in the rain"]},
+    {"id": 2, "type": "CheckpointLoaderSimple", "pos": [10, 200], "widgets_values": ["ponyDiffusionV6XL_v61.safetensors"]}
+  ]
+}
