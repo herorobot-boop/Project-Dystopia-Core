@@ -1,0 +1,7 @@
+{
+  "notes": "Project Dystopia - Type E: Pose Master",
+  "nodes": [
+    {"id": 20, "type": "ControlNetApply", "pos": [10, 10]},
+    {"id": 21, "type": "ControlNetLoader", "widgets_values": ["controlnet-vit-anime-pose-xl.safetensors"]}
+  ]
+}
