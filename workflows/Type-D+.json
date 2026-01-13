@@ -1,0 +1,35 @@
+{
+  "last_node_id": 60,
+  "last_link_id": 100,
+  "nodes": [
+    { "id": 40, "type": "LoadImage", "pos": [10, 10], "size": [315, 315], "title": "0. SOURCE IMAGE", "widgets_values": ["example.png"], "outputs": [{"name": "IMAGE", "type": "IMAGE", "links": [41, 55]}, {"name": "MASK", "type": "MASK", "links": [42]}] },
+    { "id": 42, "type": "GrowMask", "pos": [400, 10], "title": "0.1 MASK EXPAND", "widgets_values": [6, "dilated"], "inputs": [{"name": "mask", "type": "MASK", "link": 42}], "outputs": [{"name": "MASK", "type": "MASK", "links": [43]}] },
+    { "id": 43, "type": "MaskBlur", "pos": [400, 120], "title": "0.2 MASK BLUR", "widgets_values": [4, 0], "inputs": [{"name": "mask", "type": "MASK", "link": 43}], "outputs": [{"name": "MASK", "type": "MASK", "links": [44]}] },
+    
+    { "id": 10, "type": "CheckpointLoaderSimple", "pos": [10, 500], "title": "RESOURCE: PONY", "widgets_values": ["Pony_Real_Power.safetensors"], "outputs": [{"name": "MODEL", "type": "MODEL", "links": [10, 24]}, {"name": "CLIP", "type": "CLIP", "links": [11, 25]}, {"name": "VAE", "type": "VAE", "links": [12, 16, 26]}] },
+    
+    { "id": 44, "type": "VAEEncodeForInpaint", "pos": [750, 10], "title": "1. INPAINT ENCODE", "widgets_values": [6], "inputs": [{"name": "pixels", "type": "IMAGE", "link": 41}, {"name": "vae", "type": "VAE", "link": 12}, {"name": "mask", "type": "MASK", "link": 44}], "outputs": [{"name": "LATENT", "type": "LATENT", "links": [45]}] },
+    
+    { "id": 12, "type": "CLIPTextEncode", "pos": [750, 200], "size": [400, 150], "title": "2. INPAINT PROMPT", "widgets_values": ["score_9, score_8_up, rating_explicit, (detailed skin:1.2), naked, nude"], "inputs": [{"name": "clip", "type": "CLIP", "link": 11}], "outputs": [{"name": "CONDITIONING", "type": "CONDITIONING", "links": [14, 28]}] },
+    
+    { "id": 13, "type": "KSampler", "pos": [1200, 10], "size": [315, 262], "title": "3. INPAINT SAMPLER", "widgets_values": [0, "randomize", 25, 7.0, "dpmpp_2m", "karras", 0.65], "inputs": [{"name": "model", "type": "MODEL", "link": 10}, {"name": "positive", "type": "CONDITIONING", "link": 14}, {"name": "negative", "type": "CONDITIONING", "link": null}, {"name": "latent_image", "type": "LATENT", "link": 45}], "outputs": [{"name": "LATENT", "type": "LATENT", "links": [15]}] },
+    
+    { "id": 14, "type": "VAEDecode", "pos": [1550, 10], "title": "4. DECODE", "inputs": [{"name": "samples", "type": "LATENT", "link": 15}, {"name": "vae", "type": "VAE", "link": 16}], "outputs": [{"name": "IMAGE", "type": "IMAGE", "links": [56]}] },
+    
+    { "id": 50, "type": "ImageColorMatch", "pos": [1800, 10], "title": "5. COLOR MATCH", "widgets_values": ["wavelet"], "inputs": [{"name": "image_ref", "type": "IMAGE", "link": 55}, {"name": "image_target", "type": "IMAGE", "link": 56}], "outputs": [{"name": "IMAGE", "type": "IMAGE", "links": [57]}] },
+    
+    { "id": 20, "type": "FaceDetailer", "pos": [2100, 10], "size": [315, 300], "title": "6. FINAL POLISH", "widgets_values": [512, true, 768, 0, "fixed", 20, 7.0, "dpmpp_2m", "karras", 0.35, 5, true, true, 0.5, 10, 3.0, "center-1", 0, 0.93, 0, 0.7, "False", 10], "inputs": [{"name": "image", "type": "IMAGE", "link": 57}, {"name": "model", "type": "MODEL", "link": 24}, {"name": "clip", "type": "CLIP", "link": 25}, {"name": "vae", "type": "VAE", "link": 26}, {"name": "bbox_detector", "type": "BBOX_DETECTOR", "link": 21}, {"name": "sam_model_opt", "type": "SAM_MODEL", "link": 22}, {"name": "positive", "type": "CONDITIONING", "link": 28}], "outputs": [{"name": "IMAGE", "type": "IMAGE", "links": [60]}] },
+    
+    { "id": 21, "type": "UltralyticsDetectorProvider", "pos": [2100, 350], "widgets_values": ["bbox/face_yolov8m.pt"], "outputs": [{"name": "BBOX_DETECTOR", "type": "BBOX_DETECTOR", "links": [21]}] },
+    { "id": 22, "type": "SAMLoader", "pos": [2100, 450], "widgets_values": ["sam_vit_b_01ec64.pth", "Prefer GPU"], "outputs": [{"name": "SAM_MODEL", "type": "SAM_MODEL", "links": [22]}] },
+    
+    { "id": 30, "type": "SaveImage", "pos": [2500, 10], "title": "7. RESULT", "inputs": [{"name": "images", "type": "IMAGE", "link": 60}] }
+  ],
+  "links": [
+    [41, 40, 0, 44, 0, "IMAGE"], [42, 40, 1, 42, 0, "MASK"], [43, 42, 0, 43, 0, "MASK"], [44, 43, 0, 44, 2, "MASK"],
+    [10, 10, 0, 13, 0, "MODEL"], [11, 10, 1, 12, 0, "CLIP"], [12, 10, 2, 44, 1, "VAE"],
+    [45, 44, 0, 13, 3, "LATENT"], [14, 12, 0, 13, 1, "CONDITIONING"], [15, 13, 0, 14, 0, "LATENT"],
+    [16, 10, 2, 14, 1, "VAE"], [55, 40, 0, 50, 0, "IMAGE"], [56, 14, 0, 50, 1, "IMAGE"], [57, 50, 0, 20, 0, "IMAGE"],
+    [21, 21, 0, 20, 4, "BBOX_DETECTOR"], [22, 22, 0, 20, 5, "SAM_MODEL"], [24, 10, 0, 20, 1, "MODEL"], [25, 10, 1, 20, 2, "CLIP"], [26, 10, 2, 20, 3, "VAE"], [28, 12, 0, 20, 6, "CONDITIONING"], [60, 20, 0, 30, 0, "IMAGE"]
+  ]
+}

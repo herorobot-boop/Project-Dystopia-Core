@@ -1,7 +1,19 @@
 {
-  "notes": "Project Dystopia - Type D: Enhanced Inpaint",
+  "last_node_id": 50,
+  "last_link_id": 60,
   "nodes": [
-    {"id": 10, "type": "InpaintModelConditioning", "pos": [10, 10]},
-    {"id": 11, "type": "VAEEncodeForInpaint", "pos": [10, 150]}
+    { "id": 40, "type": "LoadImage", "pos": [10, 10], "size": [315, 315], "title": "SOURCE IMAGE", "widgets_values": ["example.png"], "outputs": [{"name": "IMAGE", "type": "IMAGE", "links": [41]}, {"name": "MASK", "type": "MASK", "links": [42]}] },
+    { "id": 41, "type": "VAEEncodeForInpaint", "pos": [400, 10], "title": "INPAINT ENCODE", "widgets_values": [6], "inputs": [{"name": "pixels", "type": "IMAGE", "link": 41}, {"name": "vae", "type": "VAE", "link": 12}, {"name": "mask", "type": "MASK", "link": 42}], "outputs": [{"name": "LATENT", "type": "LATENT", "links": [43]}] },
+    { "id": 10, "type": "CheckpointLoaderSimple", "pos": [10, 400], "title": "PONY MODEL", "widgets_values": ["Pony_Real_Power.safetensors"], "outputs": [{"name": "MODEL", "type": "MODEL", "links": [10]}, {"name": "CLIP", "type": "CLIP", "links": [11]}, {"name": "VAE", "type": "VAE", "links": [12]}] },
+    { "id": 12, "type": "CLIPTextEncode", "pos": [400, 200], "size": [400, 100], "title": "INPAINT PROMPT", "widgets_values": ["naked, nude, (detailed skin:1.2), score_9, score_8_up"], "inputs": [{"name": "clip", "type": "CLIP", "link": 11}], "outputs": [{"name": "CONDITIONING", "type": "CONDITIONING", "links": [14]}] },
+    { "id": 13, "type": "KSampler", "pos": [850, 10], "size": [315, 262], "title": "INPAINT SAMPLER", "widgets_values": [0, "randomize", 30, 7.0, "dpmpp_2m", "karras", 0.6], "inputs": [{"name": "model", "type": "MODEL", "link": 10}, {"name": "positive", "type": "CONDITIONING", "link": 14}, {"name": "negative", "type": "CONDITIONING", "link": null}, {"name": "latent_image", "type": "LATENT", "link": 43}], "outputs": [{"name": "LATENT", "type": "LATENT", "links": [15]}] },
+    { "id": 14, "type": "VAEDecode", "pos": [1200, 10], "title": "DECODE", "inputs": [{"name": "samples", "type": "LATENT", "link": 15}, {"name": "vae", "type": "VAE", "link": 12}], "outputs": [{"name": "IMAGE", "type": "IMAGE", "links": [16]}] },
+    { "id": 20, "type": "FaceDetailer", "pos": [1400, 10], "size": [315, 300], "title": "FINAL FINISH", "widgets_values": [512, true, 768, 0, "fixed", 20, 7.0, "dpmpp_2m", "karras", 0.4, 5, true, true, 0.5, 10, 3.0, "center-1", 0, 0.93, 0, 0.7, "False", 10], "inputs": [{"name": "image", "type": "IMAGE", "link": 16}, {"name": "model", "type": "MODEL", "link": 10}, {"name": "clip", "type": "CLIP", "link": 11}, {"name": "vae", "type": "VAE", "link": 12}, {"name": "bbox_detector", "type": "BBOX_DETECTOR", "link": 21}, {"name": "sam_model_opt", "type": "SAM_MODEL", "link": 22}, {"name": "positive", "type": "CONDITIONING", "link": 14}], "outputs": [{"name": "IMAGE", "type": "IMAGE", "links": [30]}] },
+    { "id": 21, "type": "UltralyticsDetectorProvider", "pos": [1400, 350], "widgets_values": ["bbox/face_yolov8m.pt"], "outputs": [{"name": "BBOX_DETECTOR", "type": "BBOX_DETECTOR", "links": [21]}] },
+    { "id": 22, "type": "SAMLoader", "pos": [1400, 450], "widgets_values": ["sam_vit_b_01ec64.pth", "Prefer GPU"], "outputs": [{"name": "SAM_MODEL", "type": "SAM_MODEL", "links": [22]}] },
+    { "id": 30, "type": "SaveImage", "pos": [1750, 10], "title": "SAVE", "inputs": [{"name": "images", "type": "IMAGE", "link": 30}] }
+  ],
+  "links": [
+    [41, 40, 0, 41, 0, "IMAGE"], [42, 40, 1, 41, 2, "MASK"], [10, 10, 0, 13, 0, "MODEL"], [11, 10, 1, 12, 0, "CLIP"], [12, 10, 2, 41, 1, "VAE"], [43, 41, 0, 13, 3, "LATENT"], [14, 12, 0, 13, 1, "CONDITIONING"], [15, 13, 0, 14, 0, "LATENT"], [16, 14, 0, 20, 0, "IMAGE"], [21, 21, 0, 20, 4, "BBOX_DETECTOR"], [22, 22, 0, 20, 5, "SAM_MODEL"], [30, 20, 0, 30, 0, "IMAGE"]
   ]
 }

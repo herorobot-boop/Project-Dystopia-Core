@@ -1,7 +1,167 @@
 {
-  "notes": "Project Dystopia - Type E: Pose Master",
-  "nodes": [
-    {"id": 20, "type": "ControlNetApply", "pos": [10, 10]},
-    {"id": 21, "type": "ControlNetLoader", "widgets_values": ["controlnet-vit-anime-pose-xl.safetensors"]}
-  ]
+  "last_node_id": 60,
+  "last_link_id": 11,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "LoadImage",
+      "pos": [10, 10],
+      "size": [315, 315],
+      "title": "0. POSE SOURCE IMAGE",
+      "widgets_values": ["pose_source.png"],
+      "outputs": [
+        { "name": "IMAGE", "type": "IMAGE", "links": [1] }
+      ]
+    },
+
+    {
+      "id": 2,
+      "type": "DWPreprocessor",
+      "pos": [380, 10],
+      "size": [315, 180],
+      "title": "0.1 POSE ESTIMATOR (DW-Pose)",
+      "widgets_values": ["DWOpenPose_full"],
+      "inputs": [
+        { "name": "image", "type": "IMAGE", "link": 1 }
+      ],
+      "outputs": [
+        { "name": "IMAGE", "type": "IMAGE", "links": [2] }
+      ]
+    },
+
+    {
+      "id": 10,
+      "type": "CheckpointLoaderSimple",
+      "pos": [10, 260],
+      "size": [315, 98],
+      "title": "1. BASE MODEL (SDXL / Pony系)",
+      "widgets_values": ["cyberrealisticPony_v60.safetensors"],
+      "outputs": [
+        { "name": "MODEL", "type": "MODEL", "links": [3] },
+        { "name": "CLIP", "type": "CLIP", "links": [4] },
+        { "name": "VAE", "type": "VAE", "links": [9] }
+      ]
+    },
+
+    {
+      "id": 11,
+      "type": "ControlNetLoader",
+      "pos": [10, 390],
+      "size": [315, 82],
+      "title": "1.1 CONTROLNET MODEL (OpenPose)",
+      "widgets_values": ["controlnet_openpose.safetensors"],
+      "outputs": [
+        { "name": "CONTROL_NET", "type": "CONTROL_NET", "links": [5] }
+      ]
+    },
+
+    {
+      "id": 20,
+      "type": "CLIPTextEncode",
+      "pos": [380, 260],
+      "size": [400, 150],
+      "title": "2. PROMPT (IDENTITY & STYLE)",
+      "widgets_values": [
+        "full body portrait of a person standing on a city street, detailed clothes, natural lighting, cinematic, high quality"
+      ],
+      "inputs": [
+        { "name": "clip", "type": "CLIP", "link": 4 }
+      ],
+      "outputs": [
+        { "name": "CONDITIONING", "type": "CONDITIONING", "links": [6] }
+      ]
+    },
+
+    {
+      "id": 30,
+      "type": "EmptyLatentImage",
+      "pos": [380, 440],
+      "size": [315, 106],
+      "title": "3. CANVAS (LATENT)",
+      "widgets_values": [1024, 1024, 1],
+      "outputs": [
+        { "name": "LATENT", "type": "LATENT", "links": [7] }
+      ]
+    },
+
+    {
+      "id": 12,
+      "type": "ControlNetApplyAdvanced",
+      "pos": [760, 10],
+      "size": [360, 180],
+      "title": "1.2 CONTROLNET APPLY (POSE INJECTION)",
+      "widgets_values": [1.0, 0.0],
+      "inputs": [
+        { "name": "model", "type": "MODEL", "link": 3 },
+        { "name": "control_net", "type": "CONTROL_NET", "link": 5 },
+        { "name": "image", "type": "IMAGE", "link": 2 }
+      ],
+      "outputs": [
+        { "name": "MODEL", "type": "MODEL", "links": [8] }
+      ]
+    },
+
+    {
+      "id": 40,
+      "type": "KSampler",
+      "pos": [760, 260],
+      "size": [315, 262],
+      "title": "4. GENERATE WITH POSE (Denoise 1.0)",
+      "widgets_values": [0, "randomize", 30, 1.0, "dpmpp_2m", "karras", 1.0],
+      "inputs": [
+        { "name": "model", "type": "MODEL", "link": 8 },
+        { "name": "positive", "type": "CONDITIONING", "link": 6 },
+        { "name": "negative", "type": "CONDITIONING", "link": null },
+        { "name": "latent_image", "type": "LATENT", "link": 7 }
+      ],
+      "outputs": [
+        { "name": "LATENT", "type": "LATENT", "links": [10] }
+      ]
+    },
+
+    {
+      "id": 50,
+      "type": "VAEDecode",
+      "pos": [1130, 260],
+      "size": [140, 46],
+      "title": "5. DECODE TO IMAGE",
+      "inputs": [
+        { "name": "samples", "type": "LATENT", "link": 10 },
+        { "name": "vae", "type": "VAE", "link": 9 }
+      ],
+      "outputs": [
+        { "name": "IMAGE", "type": "IMAGE", "links": [11] }
+      ]
+    },
+
+    {
+      "id": 60,
+      "type": "SaveImage",
+      "pos": [1350, 260],
+      "size": [210, 58],
+      "title": "6. SAVE RESULT",
+      "widgets_values": ["TypeE_PoseMaster"],
+      "inputs": [
+        { "name": "images", "type": "IMAGE", "link": 11 }
+      ],
+      "outputs": []
+    }
+  ],
+  "links": [
+    [1, 1, 0, 2, 0, "IMAGE"],
+    [2, 2, 0, 12, 2, "IMAGE"],
+
+    [3, 10, 0, 12, 0, "MODEL"],
+    [4, 10, 1, 20, 0, "CLIP"],
+    [9, 10, 2, 50, 1, "VAE"],
+
+    [5, 11, 0, 12, 1, "CONTROL_NET"],
+
+    [6, 20, 0, 40, 1, "CONDITIONING"],
+    [7, 30, 0, 40, 3, "LATENT"],
+    [8, 12, 0, 40, 0, "MODEL"],
+    [10, 40, 0, 50, 0, "LATENT"],
+    [11, 50, 0, 60, 0, "IMAGE"]
+  ],
+  "version": 0.4
 }

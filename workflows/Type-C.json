@@ -1,0 +1,21 @@
+{
+  "last_node_id": 50, "last_link_id": 60,
+  "nodes": [
+    { "id": 1, "type": "UNETLoader", "pos": [50, 50], "title": "1. FLUX MODEL", "widgets_values": ["flux1-dev-fp8.safetensors", "default"], "outputs": [{"name": "MODEL", "type": "MODEL", "links": [1]}] },
+    { "id": 2, "type": "DualCLIPLoader", "pos": [50, 150], "title": "2. FLUX CLIP", "widgets_values": ["t5xxl_fp8_e4m3fn.safetensors", "clip_l.safetensors", "flux", "default"], "outputs": [{"name": "CLIP", "type": "CLIP", "links": [2]}] },
+    { "id": 3, "type": "VAELoader", "pos": [50, 280], "title": "3. FLUX VAE", "widgets_values": ["ae.safetensors"], "outputs": [{"name": "VAE", "type": "VAE", "links": [3]}] },
+    { "id": 4, "type": "CLIPTextEncode", "pos": [450, 50], "size": [400, 150], "title": "4. PROMPT", "widgets_values": [""], "inputs": [{"name": "clip", "type": "CLIP", "link": 2}], "outputs": [{"name": "CONDITIONING", "type": "CONDITIONING", "links": [4]}] },
+    { "id": 5, "type": "EmptyLatentImage", "pos": [50, 400], "title": "5. RESOLUTION", "widgets_values": [1024, 1024, 1], "outputs": [{"name": "LATENT", "type": "LATENT", "links": [5]}] },
+    { "id": 6, "type": "KSampler", "pos": [450, 250], "title": "6. SAMPLER (FLUX)", "widgets_values": [0, "fixed", 20, 1.0, "euler", "simple", 1.0], "inputs": [{"name": "model", "type": "MODEL", "link": 1}, {"name": "positive", "type": "CONDITIONING", "link": 4}, {"name": "latent_image", "type": "LATENT", "link": 5}], "outputs": [{"name": "LATENT", "type": "LATENT", "links": [6]}] },
+    { "id": 7, "type": "VAEDecode", "pos": [900, 250], "title": "7. DECODE", "inputs": [{"name": "samples", "type": "LATENT", "link": 6}, {"name": "vae", "type": "VAE", "link": 3}], "outputs": [{"name": "IMAGE", "type": "IMAGE", "links": [7]}] },
+    { "id": 10, "type": "CheckpointLoaderSimple", "pos": [50, 550], "title": "8. PONY MODEL", "widgets_values": ["Pony_Real_Power.safetensors"], "outputs": [{"name": "MODEL", "type": "MODEL", "links": [10]}, {"name": "CLIP", "type": "CLIP", "links": [11]}, {"name": "VAE", "type": "VAE", "links": [12]}] },
+    { "id": 11, "type": "VAEEncode", "pos": [900, 550], "title": "9. RE-ENCODE (SDXL)", "inputs": [{"name": "pixels", "type": "IMAGE", "link": 7}, {"name": "vae", "type": "VAE", "link": 12}], "outputs": [{"name": "LATENT", "type": "LATENT", "links": [13]}] },
+    { "id": 12, "type": "CLIPTextEncode", "pos": [450, 550], "size": [400, 150], "title": "10. PONY TAGS", "widgets_values": [""], "inputs": [{"name": "clip", "type": "CLIP", "link": 11}], "outputs": [{"name": "CONDITIONING", "type": "CONDITIONING", "links": [14]}] },
+    { "id": 13, "type": "KSampler", "pos": [1250, 550], "title": "11. REFINER (PONY)", "widgets_values": [0, "randomize", 25, 6.0, "dpmpp_2m", "karras", 0.45], "inputs": [{"name": "model", "type": "MODEL", "link": 10}, {"name": "positive", "type": "CONDITIONING", "link": 14}, {"name": "latent_image", "type": "LATENT", "link": 13}], "outputs": [{"name": "LATENT", "type": "LATENT", "links": [15]}] },
+    { "id": 14, "type": "VAEDecode", "pos": [1650, 550], "title": "12. FINAL DECODE", "inputs": [{"name": "samples", "type": "LATENT", "link": 15}, {"name": "vae", "type": "VAE", "link": 12}], "outputs": [{"name": "IMAGE", "type": "IMAGE", "links": [16]}] },
+    { "id": 30, "type": "SaveImage", "pos": [1950, 550], "title": "13. SAVE", "inputs": [{"name": "images", "type": "IMAGE", "link": 16}] }
+  ],
+  "links": [
+    [1, 1, 0, 6, 0, "MODEL"], [2, 2, 0, 4, 0, "CLIP"], [3, 3, 0, 7, 1, "VAE"], [4, 4, 0, 6, 1, "CONDITIONING"], [5, 5, 0, 6, 3, "LATENT"], [6, 6, 0, 7, 0, "LATENT"], [7, 7, 0, 11, 0, "IMAGE"], [10, 10, 0, 13, 0, "MODEL"], [11, 10, 1, 12, 0, "CLIP"], [12, 10, 2, 11, 1, "VAE"], [13, 11, 0, 13, 3, "LATENT"], [14, 12, 0, 13, 1, "CONDITIONING"], [15, 13, 0, 14, 0, "LATENT"], [16, 14, 0, 30, 0, "IMAGE"]
+  ]
+}
