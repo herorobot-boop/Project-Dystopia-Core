@@ -1,22 +1,27 @@
+# PromptEngine_v1.py (アップグレード版)
 class PromptEngine:
     def __init__(self):
-        self.styles = {
-            "Pony": "score_9, score_8_up, score_7_up, rating_explicit, (masterpiece:1.2), ",
-            "Negative": "score_4, score_5, score_6, (worst quality:1.4), (low quality:1.4), lowres, blurry, "
-        }
+        # Ponyの深層心理を叩き起こすための「聖歌」
+        self.pony_sacred_tags = "score_9, score_8_up, score_7_up, rating_explicit, (masterpiece:1.2), "
+        self.negative_standard = "score_4, score_5, score_6, (worst quality:1.4), (low quality:1.4), lowres, blurry, "
 
-    def generate(self, p_type, character, scene, style_tags, extra):
-        base_pos = self.styles["Pony"]
-        base_neg = self.styles["Negative"]
+    def generate(self, p_type, character, scene, style, extra):
+        # 共通のネガティブ設定：服の残りカスや破綻を排除
+        base_neg = self.negative_standard + "deformed hands, extra limbs, clothes, underwear, fabric, "
 
-        if p_type == "D": # Inpaint
-            pos = f"{character}, {extra}, (highly detailed texture:1.2), {style_tags}"
-            neg = base_neg + "clothes, fabric, background"
-        elif p_type == "E": # Pose Master
-            pos = f"{base_pos}{character}, {scene}, {style_tags}, {extra}, (identity swap:1.2)"
-            neg = base_neg + "distorted body, extra limbs, incorrect pose"
-        else: # Standard A/C
-            pos = f"{base_pos}{character}, {scene}, {style_tags}, {extra}"
-            neg = base_neg + "deformed hands, extra limbs"
+        if p_type == "D" or p_type == "D+":
+            # 【Type D/D+専用】肌の質感と解剖学的正解を最優先するロジック
+            pos = f"{character}, {extra}, (highly detailed skin:1.3), (realistic skin texture:1.2), {scene}, {style}"
+            neg = base_neg + "missing nipples, blurred skin, plastic texture"
+        
+        elif p_type == "E":
+            # 【Type E専用】ポーズ固定・アイデンティティ重視
+            pos = f"{self.pony_sacred_tags}{character}, {scene}, {style}, {extra}, (perfect anatomy:1.1)"
+            neg = base_neg
+            
+        else:
+            # 【Type A/B/C専用】標準的な高密度生成
+            pos = f"{self.pony_sacred_tags}{character}, {scene}, {style}, {extra}"
+            neg = base_neg
 
         return {"positive": pos, "negative": neg}
