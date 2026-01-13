@@ -24,3 +24,13 @@
 
 &nbsp;  cd Project-Dystopia
 
+## 🛠 Privateリポジトリの召喚 (RunPod)
+
+1. **合鍵（トークン）を用意**: GitHubで発行した `Personal Access Token` を使います。
+2. **コマンドを実行**: RunPodのターミナルに以下をコピペしてください。
+
+   ```bash
+   git clone https://[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]@[github.com/herorobot-boop/Project-Dystopia.git](https://github.com/herorobot-boop/Project-Dystopia.git)
+   cd Project-Dystopia
+
+
