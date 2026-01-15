@@ -1,0 +1,93 @@
+{
+  "0": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "POSE_IMAGE_PATH"
+    }
+  },
+  "1": {
+    "class_type": "ControlNetApply",
+    "inputs": {
+      "image": ["0", 0],
+      "control_net": ["2", 0]
+    }
+  },
+  "2": {
+    "class_type": "ControlNetLoader",
+    "inputs": {
+      "control_net_name": "control_v11p_sd15_openpose.pth"
+    }
+  },
+  "3": {
+    "class_type": "LoadLoRA",
+    "inputs": {
+      "lora_name": "Super_LTX-2.safetensors"
+    }
+  },
+  "4": {
+    "class_type": "CheckpointLoaderSimple",
+    "inputs": {
+      "ckpt_name": "chronos-v2.ckpt"
+    }
+  },
+  "5": {
+    "class_type": "ControlNetLoader",
+    "inputs": {
+      "control_net_name": "control_v11f1e1_tile.pth"
+    }
+  },
+  "6": {
+    "class_type": "ControlNetApply",
+    "inputs": {
+      "image": ["0", 0],
+      "control_net": ["5", 0]
+    }
+  },
+  "7": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "text": "PROMPT_HERE"
+    }
+  },
+  "8": {
+    "class_type": "AnimateDiffLoader",
+    "inputs": {
+      "ckpt_name": "mm_sd_v15_v2.ckpt"
+    }
+  },
+  "9": {
+    "class_type": "MotionBucketLoader",
+    "inputs": {
+      "ckpt_name": "mb16_fp16.safetensors"
+    }
+  },
+  "10": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": ["4", 0],
+      "positive": ["7", 0],
+      "control": [["1", 0], ["6", 0]],
+      "motion": ["8", 0],
+      "motion_bucket": ["9", 0],
+      "steps": 28,
+      "cfg": 7.5,
+      "sampler_name": "euler",
+      "scheduler": "karras",
+      "seed": 123456,
+      "denoise": 1.0
+    }
+  },
+  "11": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "filename_prefix": "frame"
+    }
+  },
+  "12": {
+    "class_type": "SaveVideo",
+    "inputs": {
+      "fps": 15,
+      "filename": "refined_output.mp4"
+    }
+  }
+}
