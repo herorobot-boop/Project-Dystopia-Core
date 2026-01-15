@@ -1,0 +1,26 @@
+{
+  "Concept_BioMic_H-K9_v1": {
+    "tags": ["type_e", "penetration", "microphone_pose"],
+    "score": {
+      "reproducibility": 5,
+      "breakdown_resistance": 4,
+      "compatibility": 5,
+      "strength_control": 4,
+      "phase_v_ready": 5
+    },
+    "default_strength": 0.7,
+    "notes": "構造再現性が非常に高く、他LoRAとの併用も安定。"
+  },
+  "Fluid_Resource_H-K9_v2_dense": {
+    "tags": ["type_c", "fluid", "viscosity"],
+    "score": {
+      "reproducibility": 4,
+      "breakdown_resistance": 3,
+      "compatibility": 4,
+      "strength_control": 5,
+      "phase_v_ready": 5
+    },
+    "default_strength": 0.8,
+    "notes": "粘性のある液体表現に特化。Phase Vでの質感再描画に最適。"
+  }
+}
