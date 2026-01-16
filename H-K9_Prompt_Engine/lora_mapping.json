@@ -1,0 +1,5 @@
+{
+  "A01": { "lora": "low_angle_pose_v2.safetensors", "strength": 0.8 },
+  "C03": { "lora": "fluid_splash_effect_v1.safetensors", "strength": 1.0 },
+  "D02": { "lora": "office_lady_uniform_v3.safetensors", "strength": 0.9 }
+}
