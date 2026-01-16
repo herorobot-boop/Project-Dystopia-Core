@@ -1,5 +1,26 @@
 {
-  "A01": { "lora": "low_angle_pose_v2.safetensors", "strength": 0.8 },
-  "C03": { "lora": "fluid_splash_effect_v1.safetensors", "strength": 1.0 },
-  "D02": { "lora": "office_lady_uniform_v3.safetensors", "strength": 0.9 }
+  "A01": {
+    "lora": "low_angle_pose_v2.safetensors",
+    "strength": 0.8
+  },
+  "B02": {
+    "lora": "wet_surface_effect_v1.safetensors",
+    "strength": 0.7
+  },
+  "C03": {
+    "lora": "Fluid_Resource_H-K9_v2_dense",
+    "strength": 0.8
+  },
+  "D01": {
+    "lora": "office_lady_uniform_v3.safetensors",
+    "strength": 0.9
+  },
+  "E01": {
+    "lora": "Concept_BioMic_H-K9_v1",
+    "strength": 0.7
+  },
+  "F02": {
+    "lora": "motion_twist_drive_v1.safetensors",
+    "strength": 0.6
+  }
 }
