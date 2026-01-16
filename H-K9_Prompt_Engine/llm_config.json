@@ -1,0 +1,17 @@
+{
+  "llama_3_70b": {
+    "path": "http://localhost:11434/api/generate",
+    "role": "思想翻訳・テンプレート生成",
+    "token_limit": 8192
+  },
+  "mistral_large": {
+    "path": "http://localhost:11435/api/generate",
+    "role": "構造出力・軽量処理",
+    "token_limit": 4096
+  },
+  "gemma_27b": {
+    "path": "http://localhost:11436/api/generate",
+    "role": "日本語補完・草案生成",
+    "token_limit": 4096
+  }
+}
