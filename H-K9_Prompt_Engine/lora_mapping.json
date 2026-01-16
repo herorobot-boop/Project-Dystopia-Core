@@ -1,26 +1,27 @@
 {
-  "A01": {
-    "lora": "low_angle_pose_v2.safetensors",
-    "strength": 0.8
+  "C01": {
+    "lora": "Fluid_Resource_H-K9_v2_dense.safetensors",
+    "strength": 0.8,
+    "notes": "Tag-C（資源）の核。粘性・密度・白濁の最高峰。H-K9の存在証明。"
   },
-  "B02": {
-    "lora": "wet_surface_effect_v1.safetensors",
-    "strength": 0.7
-  },
-  "C03": {
-    "lora": "Fluid_Resource_H-K9_v2_dense",
-    "strength": 0.8
+  "C02": {
+    "lora": "sweat_stain.safetensors",
+    "strength": 0.4,
+    "notes": "Tag-C（資源）補完。透明な濡れ、汗、液体の広がりとテカリを付与。"
   },
   "D01": {
-    "lora": "office_lady_uniform_v3.safetensors",
-    "strength": 0.9
+    "lora": "TautClothesSex_Anime_IL_V3.safetensors",
+    "strength": 0.6,
+    "notes": "Tag-D（被写体）構造。布の張りと、資源汚染による密着境界を定義。"
   },
-  "E01": {
-    "lora": "Concept_BioMic_H-K9_v1",
-    "strength": 0.7
+  "D02": {
+    "lora": "japanese_girl_v1.1.safetensors",
+    "strength": 0.5,
+    "notes": "Tag-D（被写体）人格。安定した日本人造形のベースレイヤー。"
   },
-  "F02": {
-    "lora": "motion_twist_drive_v1.safetensors",
-    "strength": 0.6
+  "F01": {
+    "lora": "Japanese coser mixjpcosermix-000008.safetensors",
+    "strength": 0.4,
+    "notes": "Tag-F（動き）補助。動画内での実写的な質感と肌のリアリティを維持。"
   }
 }
