@@ -1,0 +1,7 @@
+1. ユーザーの入力（日本語）を解析し、意図を抽出する  
+2. structure_tags.json から該当する構造タグ（Type-A〜F）を選定する  
+3. lora_mapping.json から対応するLoRA名と強度を取得する  
+4. PromptEngineを用いて、positive / negative プロンプトを構築する  
+5. 選定された構造タイプに応じて、適切なWorkflowテンプレート（Type-A〜F）を選ぶ  
+6. プロンプト・LoRA・構造テンプレートを統合し、ComfyUI用のWorkflow JSONを出力する  
+7. 出力は常に構造的・整形式であること。構文エラーを含まないこと。
