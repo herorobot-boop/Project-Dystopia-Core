@@ -40,8 +40,8 @@
     "notes": "Tag-F（動き）。静止画にひねりと躍動感を付与。"
   },
   "F02": {
-    "lora": "Bubbling_Rings_Motion.safetensors",
-    "strength": 0.5,
-    "notes": "Tag-F（動き）。AnimateDiff用。資源の揺らぎと滴りを制御。"
-  }
+  "lora": "Bubbling_Rings_Motion.safetensors",
+  "strength": 0.35,
+  "notes": "Tag-F（動き）。AnimateDiff用。資源の揺らぎと滴りを制御。"
+}
 }
