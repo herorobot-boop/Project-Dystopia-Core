@@ -2,5 +2,9 @@
   "train_scene": ["A01", "B01", "C01", "D01", "E01", "F01"],
   "school_scene": ["A01", "B04", "C01", "D02", "E01", "F01"],
   "comic_market_scene": ["A01", "B05", "C01", "D02", "E01", "F02"],
-  "gym_scene": ["A01", "B03", "C01", "D01", "E01", "F01"]
+  "gym_scene": ["A01", "B03", "C01", "D01", "E01", "F01"],
+  "water_sector": ["A01", "B06", "C02", "D02", "E01", "F02"],
+  "convenience_store": ["A01", "B07", "C01", "D01", "E01", "F01"],
+  "cinema_scene": ["A01", "B08", "C01", "D02", "E01", "F01"],
+  "locker_room": ["A01", "B09", "C01", "D01", "E01", "F01"]
 }
