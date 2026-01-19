@@ -1,5 +1,6 @@
 import json
 import os
+from datetime import datetime
 
 class HK9_PromptEngine:
     def __init__(self, mapping_path="lora_mapping.json", scene_path="scene_mapping.json"):
@@ -22,7 +23,7 @@ class HK9_PromptEngine:
     def generate_command(self, scene_code, log_path="run_log.csv", overrides=None, output_path=None, notes=""):
         tags = self.scene_map.get(scene_code, [])
         if not tags:
-            return "⚠️ Scene Code not found."
+            return f"⚠️ Scene Code '{scene_code}' not found."
 
         lora_prompts = []
         for tag in tags:
