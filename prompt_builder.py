@@ -1,38 +1,39 @@
 import json
+import os
 from datetime import datetime
 
 def build_prompt(payload):
-    core = payload["core_struct"]
-    visual = payload["visual_sens"]
-    env = payload["env_override"]
-    anomaly = payload["anomaly"]
+    core = payload.get("core_struct", {})
+    visual = payload.get("visual_sens", {})
+    env = payload.get("env_override", {})
+    anomaly = payload.get("anomaly", {})
     motion = payload.get("type_f", {})
 
     # Positive prompt
-    positive = ", ".join([
-        visual["type_b"],
-        visual["type_c"],
-        env["type_d"],
-        core["type_a"],
-        core["fov"],
+    positive = ", ".join(filter(None, [
+        visual.get("type_b"),
+        visual.get("type_c"),
+        env.get("type_d"),
+        core.get("type_a"),
+        core.get("fov"),
         "cinematic lighting",
         "high detail"
-    ])
+    ]))
 
     # Negative prompt
     negative = "deformed, blurry, lowres, watermark, duplicate"
 
-    # LoRA
+    # LoRA list
     lora_list = visual.get("lora", [])
 
-    # Motion
+    # Motion parameters
     motion_type = motion.get("motion_type", "StaticPulse")
     intensity = motion.get("intensity", 0.5)
     rhythm = motion.get("rhythm", "steady")
     deformation = motion.get("deformation", "None")
 
-    # Pose image path (構図)
-    pose_image_path = f"/workspace/Phase_V/Inputs/pose_{core['type_a']}.png"
+    # Pose image path
+    pose_image_path = f"/workspace/Phase_V/Inputs/pose_{core.get('type_a', 'A00')}.png"
 
     # Motion bucket ID（仮マッピング）
     motion_bucket_id = {
@@ -52,14 +53,21 @@ def build_prompt(payload):
         "motion_deformation": deformation
     }
 
-# 使用例
+# 実行例
 if __name__ == "__main__":
-    with open("scene_01.json", "r") as f:
-        data = json.load(f)
-    result = build_prompt(data["payload"])
+    input_path = "mapped/scene_A01_C01_D02_20260119_180000.json"
+    with open(input_path, "r", encoding="utf-8") as f:
+        scene_data = json.load(f)
+
+    # payload部分だけ抽出（構造タグに基づく詳細構成が入っている前提）
+    payload = scene_data.get("payload", scene_data)  # fallback for raw payloads
+
+    result = build_prompt(payload)
 
     timestamp = datetime.now().strftime("%Y%m%d_%H%M")
-    with open(f"RunPayloads/prompt_{timestamp}.json", "w") as f:
-        json.dump(result, f, indent=2)
+    out_path = f"RunPayloads/prompt_{timestamp}.json"
+    os.makedirs("RunPayloads", exist_ok=True)
+    with open(out_path, "w", encoding="utf-8") as f:
+        json.dump(result, f, indent=2, ensure_ascii=False)
 
-    print(f"✅ Prompt構築完了 → prompt_{timestamp}.json")
+    print(f"✅ Prompt構築完了 → {out_path}")
