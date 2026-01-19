@@ -39,3 +39,17 @@ class HK9_PromptEngine:
             f.write(f"{scene_code},{final_prompt},{','.join(tags)},{output_path if output_path else ''},{notes}\n")
 
         return f"【H-K9 Deployment: {scene_code}】\n{final_prompt}"
+
+    def generate_and_save(self, scene_code, output_dir="outputs", overrides=None, notes=""):
+        os.makedirs(output_dir, exist_ok=True)
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        filename = f"{scene_code}_{timestamp}.png"
+        output_path = os.path.join(output_dir, filename)
+        prompt = self.generate_command(
+            scene_code=scene_code,
+            log_path="run_log.csv",
+            overrides=overrides,
+            output_path=output_path,
+            notes=notes
+        )
+        return prompt
