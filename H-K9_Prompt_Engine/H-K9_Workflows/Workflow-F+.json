@@ -1,0 +1,20 @@
+{
+  "id": 2,
+  "type": "ApplyLoRA",
+  "inputs": {
+    "model": [1, 0],
+    "lora_name": "Pov_xl_v1.5.safetensors",
+    "strength_model": 0.75,
+    "strength_clip": 1.0
+  }
+},
+{
+  "id": 13,
+  "type": "ApplyLoRA",
+  "inputs": {
+    "model": [2, 0],
+    "lora_name": "Wires_on_Back_IL.safetensors",
+    "strength_model": 0.8,
+    "strength_clip": 1.0
+  }
+}
