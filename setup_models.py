@@ -1,49 +1,42 @@
 import os
 import shutil
-import re
-from datetime import datetime
 
-# === 設定 ===
-GDRIVE_LORA_DIR = "/workspace/drive/MyDrive/H-K9_Assets/loras"  # RunPod上のGDriveマウント先
-RUNPOD_LORA_DIR = "/workspace/models/loras"  # ComfyUIが参照するLoRA保存先
-LOG_PATH = "/workspace/logs/sync_log.txt"
+# GDrive上のモデル格納パス
+MODEL_PATHS = {
+    "checkpoints": "/workspace/gdrive/MyDrive/AI_Models/Checkpoints/",
+    "loras": "/workspace/gdrive/MyDrive/AI_Models/Loras/",
+    "vae": "/workspace/gdrive/MyDrive/AI_Models/vae/",
+    "clip": "/workspace/gdrive/MyDrive/AI_Models/clip/",
+    "unet": "/workspace/gdrive/MyDrive/AI_Models/unet/",
+    "embeddings": "/workspace/gdrive/MyDrive/AI_Models/embeddings/",
+    "adetailer": "/workspace/gdrive/MyDrive/AI_Models/Tools_ADetailer/"
+}
 
-def normalize_filename(filename):
-    # バージョン番号や余計な接尾辞を除去して正規化
-    base = re.sub(r'_v\d+|_v\d+\.\d+|_V\d+|_V\d+\.\d+', '', filename)
-    base = re.sub(r'[\s
+# ComfyUIのモデルディレクトリ
+COMFY_PATH = "/workspace/ComfyUI/models"
 
-\[\]
+TARGETS = {
+    "checkpoints": "checkpoints",
+    "loras": "loras",
+    "vae": "vae",
+    "clip": "clip",
+    "unet": "unet",
+    "embeddings": "embeddings",
+    "adetailer": "annotator/embeddings"
+}
 
-\(\)]', '', base)  # 空白や記号を除去
-    return base
+def sync_models():
+    for key, src in MODEL_PATHS.items():
+        dst = os.path.join(COMFY_PATH, TARGETS[key])
+        os.makedirs(dst, exist_ok=True)
+        for root, _, files in os.walk(src):
+            for file in files:
+                src_file = os.path.join(root, file)
+                dst_file = os.path.join(dst, file)
+                if not os.path.exists(dst_file):
+                    print(f"🔄 Syncing: {file}")
+                    shutil.copy2(src_file, dst_file)
 
-def sync_loras():
-    os.makedirs(RUNPOD_LORA_DIR, exist_ok=True)
-    os.makedirs(os.path.dirname(LOG_PATH), exist_ok=True)
-
-    log_lines = []
-    log_lines.append(f"=== H-K9 SYNC START [{datetime.now()}] ===")
-
-    for fname in os.listdir(GDRIVE_LORA_DIR):
-        if fname.endswith(".safetensors"):
-            src = os.path.join(GDRIVE_LORA_DIR, fname)
-            norm_name = normalize_filename(fname)
-            dst = os.path.join(RUNPOD_LORA_DIR, norm_name)
-
-            if not os.path.exists(dst):
-                shutil.copy2(src, dst)
-                log_lines.append(f"[SYNCED] {fname} → {norm_name}")
-            else:
-                log_lines.append(f"[SKIPPED] {fname} already exists as {norm_name}")
-
-    log_lines.append(f"=== SYNC COMPLETE ===\n")
-
-    with open(LOG_PATH, "a") as log_file:
-        log_file.write("\n".join(log_lines) + "\n")
-
-    print(f"✅ LoRA同期完了。ログ: {LOG_PATH}")
-
-# 実行
 if __name__ == "__main__":
-    sync_loras()
+    sync_models()
+    print("✅ モデル同期完了")
