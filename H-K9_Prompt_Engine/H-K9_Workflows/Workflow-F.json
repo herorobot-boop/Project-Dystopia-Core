@@ -1,0 +1,88 @@
+{
+  "last_node_id": 12,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "CheckpointLoaderSimple",
+      "inputs": {
+        "ckpt_name": "IllustriousXL_v10.safetensors"
+      }
+    },
+    {
+      "id": 2,
+      "type": "LoRAStack",
+      "inputs": {
+        "model": [1, 0],
+        "lora_list": [
+          "<lora:Pov_xl_v1.5:0.75>",
+          "<lora:Fluid_Resource_H-K9_v2_dense:0.8>",
+          "<lora:Wires_on_Back_IL:0.8>",
+          "<lora:Dynamic_Poses_Slider_IL:0.6>"
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "type": "CLIPTextEncode",
+      "inputs": {
+        "text": "schoolgirl, wet clothes, cinematic lighting, <lora:Pov_xl_v1.5:0.75>, <lora:Wires_on_Back_IL:0.8>"
+      }
+    },
+    {
+      "id": 4,
+      "type": "CLIPTextEncode",
+      "inputs": {
+        "text": "(worst quality:1.4), lowres, blurry, deformed hands, extra limbs"
+      }
+    },
+    {
+      "id": 5,
+      "type": "AnimateDiffLoader",
+      "inputs": {
+        "motion_lora": "Bubbling_Rings_Motion.safetensors",
+        "frame_count": 16
+      }
+    },
+    {
+      "id": 6,
+      "type": "IPAdapterFaceID",
+      "inputs": {
+        "image": "face_reference.png"
+      }
+    },
+    {
+      "id": 7,
+      "type": "TemporalNetFreeInit",
+      "inputs": {
+        "model": [2, 0]
+      }
+    },
+    {
+      "id": 8,
+      "type": "ControlNetSoftEdge",
+      "inputs": {
+        "image": "background_edge_map.png"
+      }
+    },
+    {
+      "id": 9,
+      "type": "KSampler",
+      "inputs": {
+        "model": [7, 0],
+        "positive": [3, 0],
+        "negative": [4, 0],
+        "steps": 28,
+        "sampler_name": "DPM++ 2M Karras"
+      }
+    },
+    {
+      "id": 10,
+      "type": "VideoCombine",
+      "inputs": {
+        "frames": [9, 0],
+        "fps": 8,
+        "format": "mp4"
+      }
+    }
+  ]
+}
