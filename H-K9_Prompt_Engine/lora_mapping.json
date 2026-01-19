@@ -11,7 +11,7 @@
   "B12": { "lora": "JP_School_Locker_Room.safetensors", "strength": 0.7, "notes": "学校更衣室" },
   "C01": { "lora": "Fluid_Resource_H-K9_v2_dense.safetensors", "strength": 0.8, "notes": "メイン資源" },
   "D01": { "lora": "TautClothesSex_Anime_IL_V3.safetensors", "strength": 0.6, "notes": "服の張り" },
-  "D02": { "lora": "japanese_girl_v1.1.safetensors", "strength": 0.5, "notes": "日本人造形" },
+  "D02": { "lora": "Character_Resource/japanese_girl_v1.1.safetensors","strength": 0.5,"notes": "日本人造形"},
   "E01": { "lora": "Wires_on_Back_IL.safetensors", "strength": 0.8, "notes": "人体プラグ" },
   "E02": { "lora": "Japanese_Public_Phone_SDXL.safetensors", "strength": 0.7, "notes": "公衆電話構造" },
   "E03": { "lora": "Inside_Locker_Structure.safetensors", "strength": 0.8, "notes": "ロッカー内部" },
