@@ -4,6 +4,7 @@ import requests
 import os
 import pandas as pd
 from datetime import datetime
+import math
 
 # === 設定 ===
 VLLM_URL = "http://localhost:8000/v1/chat/completions"
@@ -11,6 +12,7 @@ COMFY_URL = "http://localhost:8188/prompt"
 PAYLOAD_DIR = "/workspace/gdrive/MyDrive/Project-Dystopia/RunPayloads"
 LOG_FILE = "/workspace/run_log.csv"
 WORKFLOW_TEMPLATE = "/workspace/Project-Dystopia/templates/ltx2_infinity_template.json"
+MAPPING_CONFIG_PATH = "/workspace/Project-Dystopia/config/mapping_config.json"
 
 # === LLM 思想生成ロジック ===
 def generate_thought(user_input):
@@ -30,6 +32,26 @@ def generate_thought(user_input):
     except Exception as e:
         return json.dumps({"error": str(e)}, indent=2)
 
+# === マッピングエンジン ===
+def apply_mapping(thought, workflow, mapping_config):
+    context = {**thought}
+    for key, rule in mapping_config.items():
+        formula = rule["formula"]
+        try:
+            value = eval(formula, {"__builtins__": {}, "int": int, "round": round, "math": math}, context)
+        except Exception as e:
+            print(f"[Mapping Error] {key}: {e}")
+            continue
+
+        for node in workflow["nodes"]:
+            if node["type"] == rule["target_node_type"]:
+                fields = rule["target_field"].split(".")
+                target = node
+                for f in fields[:-1]:
+                    target = target.setdefault(f, {})
+                target[fields[-1]] = value
+    return workflow
+
 # === ComfyUI 実行ロジック ===
 def queue_video_generation(thought_json_str):
     try:
@@ -41,13 +63,10 @@ def queue_video_generation(thought_json_str):
         with open(WORKFLOW_TEMPLATE, "r") as f:
             workflow = json.load(f)
 
-        # マッピング（例：guidance_scale, seed, promptなど）
-        for node in workflow["nodes"]:
-            if node["type"] == "LTXVSampler":
-                node["properties"]["guidance_scale"] = 1.0 + thought.get("intensity", 0.5) * 7.0
-                node["properties"]["seed"] = int(1000 + thought.get("chaos", 0.5) * 1000)
-            if node["type"] == "CLIPTextEncode":
-                node["inputs"]["text"] = thought.get("prompt", "")
+        # マッピング設定の読み込みと適用
+        with open(MAPPING_CONFIG_PATH, "r") as f:
+            mapping_config = json.load(f)
+        workflow = apply_mapping(thought, workflow, mapping_config)
 
         # 保存
         with open(payload_path, "w") as f:
@@ -140,23 +159,19 @@ with gr.Blocks(title="Project Dystopia - Phase VII Interface", theme=gr.themes.S
 
     with gr.Tab("アーカイブ & ログ"):
         with gr.Row():
-import math
+            with gr.Column(scale=1):
+                log_table = gr.DataFrame(label="生成ログ (run_log.csv)")
+                refresh_btn = gr.Button("ログを更新")
+            with gr.Column(scale=1):
+                payload_selector = gr.Dropdown(label="過去の思想を選択", choices=[], interactive=True)
+                load_btn = gr.Button("選択した思想を読み込む")
 
-def apply_mapping(thought, workflow, mapping_config):
-    context = {**thought}
-    for key, rule in mapping_config.items():
-        formula = rule["formula"]
-        try:
-            value = eval(formula, {"__builtins__": {}, "int": int, "round": round, "math": math}, context)
-        except Exception as e:
-            print(f"[Mapping Error] {key}: {e}")
-            continue
+    # イベント連携
+    gen_btn.click(generate_thought, inputs=[user_input], outputs=[thought_editor])
+    run_btn.click(queue_video_generation, inputs=[thought_editor], outputs=[status])
+    refresh_btn.click(load_log, outputs=[log_table])
+    refresh_btn.click(list_payloads, outputs=[payload_selector])
+    load_btn.click(load_payload, inputs=[payload_selector], outputs=[thought_editor])
 
-        for node in workflow["nodes"]:
-            if node["type"] == rule["target_node_type"]:
-                fields = rule["target_field"].split(".")
-                target = node
-                for f in fields[:-1]:
-                    target = target.setdefault(f, {})
-                target[fields[-1]] = value
-    return workflow
+if __name__ == "__main__":
+    demo.launch(server_name="0.0.0.0", server_port=7860)
