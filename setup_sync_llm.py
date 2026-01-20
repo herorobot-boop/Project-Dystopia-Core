@@ -1,61 +1,73 @@
 import os
 import subprocess
+import time
+import requests
+from datetime import datetime
 
 # === 設定 ===
-GDRIVE_REMOTE = "gdrive"
-GDRIVE_MODEL_PATH = "AI_Models/Checkpoints/LLM"
-RUNPOD_MODEL_DIR = "/workspace/llm_models"
-MODEL_FILENAME = "chronos-hermes-13b-v2.Q5_K_M.gguf"
-LLAMA_SERVER_URL = "https://huggingface.co/steven-tey/llama-cpp-linux-binaries/resolve/main/llama-server"
-LLAMA_SERVER_PATH = "/workspace/llama-server"
+MODEL_NAME = "chronos-hermes-13b.Q5_K_M.gguf"
+MODEL_PATH = "/workspace/gdrive/MyDrive/Project-Dystopia/LLM/" + MODEL_NAME
+VLLM_PORT = 8000
+GPU_MEMORY_UTILIZATION = 0.3
+CONFIG_PATH = "/workspace/vllm_config.yaml"
+LOG_PATH = "/workspace/llm_log.txt"
 
-def ensure_dirs():
-    os.makedirs(RUNPOD_MODEL_DIR, exist_ok=True)
+# === vLLM起動コマンド ===
+def build_vllm_command():
+    return [
+        "python3", "-m", "vllm.entrypoints.openai.api_server",
+        "--model", MODEL_PATH,
+        "--port", str(VLLM_PORT),
+        "--gpu-memory-utilization", str(GPU_MEMORY_UTILIZATION),
+        "--trust-remote-code",
+        "--tokenizer", MODEL_PATH,
+        "--dtype", "auto",
+        "--max-model-len", "4096",
+        "--disable-log-requests",
+        "--load-config", CONFIG_PATH
+    ]
 
-def sync_model():
-    print("🔄 GDriveからLLMモデルを同期中...")
-    result = subprocess.run([
-        "rclone", "copy",
-        f"{GDRIVE_REMOTE}:{GDRIVE_MODEL_PATH}",
-        RUNPOD_MODEL_DIR,
-        "--progress"
-    ])
-    if result.returncode != 0:
-        print("⚠️ モデル同期に失敗しました。GDriveのパスを確認してください。")
-        exit(1)
-    print("✅ モデル同期完了")
+# === API起動確認 ===
+def wait_for_api(timeout=60):
+    print(f"⏳ Waiting for vLLM API to become available on port {VLLM_PORT}...")
+    url = f"http://localhost:{VLLM_PORT}/v1/models"
+    for i in range(timeout):
+        try:
+            res = requests.get(url)
+            if res.status_code == 200:
+                print("✅ vLLM API is ready.")
+                return True
+        except:
+            pass
+        time.sleep(1)
+    print("❌ Timeout: vLLM API did not become ready.")
+    return False
 
-def download_llama_server():
-    if not os.path.exists(LLAMA_SERVER_PATH):
-        print("⬇️ llama-server をダウンロード中...")
-        subprocess.run([
-            "wget", LLAMA_SERVER_URL,
-            "-O", LLAMA_SERVER_PATH
-        ], check=True)
-        subprocess.run(["chmod", "+x", LLAMA_SERVER_PATH], check=True)
-        print("✅ llama-server 準備完了")
+# === 起動処理 ===
+def main():
+    print("🧠 [setup_sync_llm.py] Starting Chronos-Hermes via vLLM...")
+    print(f"⏱️ {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+
+    if not os.path.exists(MODEL_PATH):
+        print(f"❌ Model not found at {MODEL_PATH}")
+        return
+
+    if not os.path.exists(CONFIG_PATH):
+        print(f"❌ Config file not found at {CONFIG_PATH}")
+        return
+
+    with open(LOG_PATH, "w") as log_file:
+        process = subprocess.Popen(
+            build_vllm_command(),
+            stdout=log_file,
+            stderr=subprocess.STDOUT
+        )
+
+    if wait_for_api():
+        print("🚀 Chronos-Hermes is now serving at:")
+        print(f"   http://localhost:{VLLM_PORT}/v1/chat/completions")
     else:
-        print("✅ llama-server は既に存在します")
-
-def launch_llm():
-    model_path = os.path.join(RUNPOD_MODEL_DIR, MODEL_FILENAME)
-    if not os.path.exists(model_path):
-        print(f"⚠️ モデルファイルが見つかりません: {model_path}")
-        exit(1)
-
-    print("🚀 LLMサーバーを起動中...")
-    subprocess.Popen([
-        LLAMA_SERVER_PATH,
-        "--model", model_path,
-        "--port", "8000",
-        "--ctx-size", "4096",
-        "--host", "0.0.0.0",
-        "--mlock"
-    ])
-    print("✅ LLMサーバー起動完了（http://localhost:8000）")
+        print("⚠️ LLM startup failed or timed out. Check llm_log.txt for details.")
 
 if __name__ == "__main__":
-    ensure_dirs()
-    sync_model()
-    download_llama_server()
-    launch_llm()
+    main()
