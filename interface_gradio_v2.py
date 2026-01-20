@@ -89,6 +89,40 @@ def load_log():
     else:
         return pd.DataFrame()
 
+# === RunPayloads ギャラリー ===
+def list_payloads():
+    files = [f for f in os.listdir(PAYLOAD_DIR) if f.endswith(".json")]
+    return sorted(files, reverse=True)
+
+def load_payload(filename):
+    path = os.path.join(PAYLOAD_DIR, filename)
+    try:
+        with open(path, "r") as f:
+            data = json.load(f)
+        prompt = ""
+        intensity = 0.5
+        chaos = 0.5
+        motion_intent = ""
+        visual_persistence = 0.5
+        for node in data["nodes"]:
+            if node["type"] == "CLIPTextEncode":
+                prompt = node["inputs"].get("text", "")
+            if node["type"] == "LTXVSampler":
+                gs = node["properties"].get("guidance_scale", 5.0)
+                sd = node["properties"].get("seed", 1234)
+                intensity = round((gs - 1.0) / 7.0, 2)
+                chaos = round((sd - 1000) / 1000.0, 2)
+        thought = {
+            "prompt": prompt,
+            "intensity": intensity,
+            "chaos": chaos,
+            "motion_intent": motion_intent,
+            "visual_persistence": visual_persistence
+        }
+        return json.dumps(thought, indent=2)
+    except Exception as e:
+        return json.dumps({"error": str(e)}, indent=2)
+
 # === GUI 構築 ===
 with gr.Blocks(title="Project Dystopia - Phase VII Interface", theme=gr.themes.Soft()) as demo:
     gr.Markdown("# 🧠 Project Dystopia: Phase VII Control Center")
@@ -105,13 +139,4 @@ with gr.Blocks(title="Project Dystopia - Phase VII Interface", theme=gr.themes.S
                 status = gr.Textbox(label="ステータス", interactive=False)
 
     with gr.Tab("アーカイブ & ログ"):
-        log_table = gr.DataFrame(label="生成ログ (run_log.csv)")
-        refresh_btn = gr.Button("ログを更新")
-
-    # イベント連携
-    gen_btn.click(generate_thought, inputs=[user_input], outputs=[thought_editor])
-    run_btn.click(queue_video_generation, inputs=[thought_editor], outputs=[status])
-    refresh_btn.click(load_log, outputs=[log_table])
-
-if __name__ == "__main__":
-    demo.launch(server_name="0.0.0.0", server_port=7860)
+        with gr.Row():
