@@ -1,0 +1,17 @@
+{
+  "guidance_scale": {
+    "formula": "1.0 + intensity * 7.0",
+    "target_node_type": "LTXVSampler",
+    "target_field": "properties.guidance_scale"
+  },
+  "seed": {
+    "formula": "int(1000 + chaos * 1000)",
+    "target_node_type": "LTXVSampler",
+    "target_field": "properties.seed"
+  },
+  "prompt": {
+    "formula": "prompt",
+    "target_node_type": "CLIPTextEncode",
+    "target_field": "inputs.text"
+  }
+}
