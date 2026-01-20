@@ -1,0 +1,17 @@
+trust_remote_code: true
+max_model_len: 8192
+logits_processors:
+  - type: ban_tokens
+    tokens: ["Sorry", "I apologize", "As an AI", "I'm sorry"]
+    mode: prefix_only
+speculative_model: "/workspace/llm_draft/mistral-7b.Q4_K_M.gguf"
+speculative_max_tokens: 512
+output_schema:
+  type: object
+  properties:
+    prompt: { type: string }
+    intensity: { type: number, minimum: 0.0, maximum: 1.0 }
+    chaos: { type: number, minimum: 0.0, maximum: 1.0 }
+    motion_intent: { type: string }
+    visual_persistence: { type: number, minimum: 0.0, maximum: 1.0 }
+  required: [prompt, intensity, chaos, motion_intent]
