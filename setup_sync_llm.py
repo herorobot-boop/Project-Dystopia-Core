@@ -4,15 +4,15 @@ import time
 import requests
 from datetime import datetime
 
-# === 設定 ===
 MODEL_NAME = "chronos-hermes-13b.Q5_K_M.gguf"
 MODEL_PATH = "/workspace/gdrive/MyDrive/Project-Dystopia/LLM/" + MODEL_NAME
+DRAFT_MODEL_PATH = "/workspace/llm_draft/mistral-7b.Q4_K_M.gguf"
 VLLM_PORT = 8000
 GPU_MEMORY_UTILIZATION = 0.3
 CONFIG_PATH = "/workspace/vllm_config.yaml"
 LOG_PATH = "/workspace/llm_log.txt"
+MAX_MODEL_LEN = 8192  # ← A100向け拡張
 
-# === vLLM起動コマンド ===
 def build_vllm_command():
     return [
         "python3", "-m", "vllm.entrypoints.openai.api_server",
@@ -22,12 +22,12 @@ def build_vllm_command():
         "--trust-remote-code",
         "--tokenizer", MODEL_PATH,
         "--dtype", "auto",
-        "--max-model-len", "4096",
+        "--max-model-len", str(MAX_MODEL_LEN),
         "--disable-log-requests",
+        "--speculative-model", DRAFT_MODEL_PATH,
         "--load-config", CONFIG_PATH
     ]
 
-# === API起動確認 ===
 def wait_for_api(timeout=60):
     print(f"⏳ Waiting for vLLM API to become available on port {VLLM_PORT}...")
     url = f"http://localhost:{VLLM_PORT}/v1/models"
@@ -43,13 +43,16 @@ def wait_for_api(timeout=60):
     print("❌ Timeout: vLLM API did not become ready.")
     return False
 
-# === 起動処理 ===
 def main():
     print("🧠 [setup_sync_llm.py] Starting Chronos-Hermes via vLLM...")
     print(f"⏱️ {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
 
     if not os.path.exists(MODEL_PATH):
         print(f"❌ Model not found at {MODEL_PATH}")
+        return
+
+    if not os.path.exists(DRAFT_MODEL_PATH):
+        print(f"❌ Speculative model not found at {DRAFT_MODEL_PATH}")
         return
 
     if not os.path.exists(CONFIG_PATH):
