@@ -19,7 +19,7 @@ MAPPING_CONFIG_PATH = "/workspace/Project-Dystopia/config/mapping_config.json"
 OUTPUT_DIR = "/workspace/outputs"
 FRAME_DIR = "/workspace/frames"
 
-# === LLM 思想生成ロジック ===
+# === 思想生成 ===
 def generate_thought(user_input):
     payload = {
         "model": "chronos-hermes-13b",
@@ -56,89 +56,6 @@ def apply_mapping(thought, workflow, mapping_config):
                     target = target.setdefault(f, {})
                 target[fields[-1]] = value
     return workflow
-# === ComfyUI 実行ロジック ===
-def queue_video_generation(thought_json_str):
-    try:
-        thought = json.loads(thought_json_str)
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        payload_path = os.path.join(PAYLOAD_DIR, f"prompt_{timestamp}.json")
-
-        with open(WORKFLOW_TEMPLATE, "r") as f:
-            workflow = json.load(f)
-
-        with open(MAPPING_CONFIG_PATH, "r") as f:
-            mapping_config = json.load(f)
-        workflow = apply_mapping(thought, workflow, mapping_config)
-
-        with open(payload_path, "w") as f:
-            json.dump(workflow, f, indent=2)
-
-        requests.post(COMFY_URL, json=workflow)
-
-        log_entry = {
-            "timestamp": timestamp,
-            "prompt": thought.get("prompt", ""),
-            "intensity": thought.get("intensity", ""),
-            "chaos": thought.get("chaos", ""),
-            "motion_intent": thought.get("motion_intent", ""),
-            "visual_persistence": thought.get("visual_persistence", ""),
-            "guidance_scale": 1.0 + thought.get("intensity", 0.5) * 7.0,
-            "seed": int(1000 + thought.get("chaos", 0.5) * 1000),
-            "segment_index": 0,
-            "user_score": "",
-            "auto_score": ""
-        }
-
-        if os.path.exists(LOG_FILE):
-            df = pd.read_csv(LOG_FILE)
-            df = pd.concat([df, pd.DataFrame([log_entry])], ignore_index=True)
-        else:
-            df = pd.DataFrame([log_entry])
-        df.to_csv(LOG_FILE, index=False)
-
-        return f"✅ 映像生成をキューに追加しました: {os.path.basename(payload_path)}"
-    except Exception as e:
-        return f"❌ エラー: {str(e)}"
-
-# === ログ・ギャラリー ===
-def load_log():
-    if os.path.exists(LOG_FILE):
-        return pd.read_csv(LOG_FILE)
-    else:
-        return pd.DataFrame()
-
-def list_payloads():
-    files = [f for f in os.listdir(PAYLOAD_DIR) if f.endswith(".json")]
-    return sorted(files, reverse=True)
-
-def load_payload(filename):
-    path = os.path.join(PAYLOAD_DIR, filename)
-    try:
-        with open(path, "r") as f:
-            data = json.load(f)
-        prompt = ""
-        intensity = 0.5
-        chaos = 0.5
-        motion_intent = ""
-        visual_persistence = 0.5
-        for node in data["nodes"]:
-            if node["type"] == "CLIPTextEncode":
-                prompt = node["inputs"].get("text", "")
-            if node["type"] == "LTXVSampler":
-                gs = node["properties"].get("guidance_scale", 5.0)
-                sd = node["properties"].get("seed", 1234)
-                intensity = round((gs - 1.0) / 7.0, 2)
-                chaos = round((sd - 1000) / 1000.0, 2)
-        thought = {
-            "prompt": prompt,
-            "intensity": intensity,
-            "chaos": chaos,
-            "motion_intent": motion_intent,
-            "visual_persistence": visual_persistence
-        }
-        return json.dumps(thought, indent=2)
-    except Exception as e:
-        return json.dumps({"error": str(e)}, indent=2)
 
 # === 自動評価レイヤー ===
 def encode_image_to_base64(image_path):
@@ -204,9 +121,146 @@ def run_auto_evaluation(timestamp):
 
     return update_auto_score(timestamp, score)
 
+# === 自己進化ループ ===
+def generate_variant_from_top_score(top_n=3, temperature=0.9):
+    if not os.path.exists(LOG_FILE):
+        return "❌ run_log.csv が見つかりません"
+
+    df = pd.read_csv(LOG_FILE)
+    df = df.dropna(subset=["auto_score"])
+    df["auto_score"] = pd.to_numeric(df["auto_score"], errors="coerce")
+    df = df.sort_values(by="auto_score", ascending=False).head(top_n)
+
+    if df.empty:
+        return "❌ 評価済みの思想が見つかりません"
+
+    base_prompt = df.iloc[0]["prompt"]
+
+    payload = {
+        "model": "chronos-hermes-13b",
+        "messages": [
+            {"role": "system", "content": "あなたは映像監督です。以下の思想をもとに、少し変化を加えた新しい思想を1つ生成してください。"},
+            {"role": "user", "content": base_prompt}
+        ],
+        "temperature": temperature
+    }
+
+    try:
+        response = requests.post(VLLM_URL, json=payload).json()
+        new_prompt = response['choices'][0]['message']['content']
+        return new_prompt
+    except Exception as e:
+        return f"❌ LLMエラー: {str(e)}"
+
+def run_self_evolution():
+    new_prompt = generate_variant_from_top_score()
+    if new_prompt.startswith("❌"):
+        return new_prompt
+
+    thought_json = generate_thought(new_prompt)
+    try:
+        thought = json.loads(thought_json)
+    except:
+        return "❌ 構造化に失敗しました"
+
+    status = queue_video_generation(thought_json)
+    if not status.startswith("✅"):
+        return status
+
+    match = re.search(r"prompt_(\d{8}_\d{6})\.json", status)
+    if not match:
+        return "❌ timestamp の抽出に失敗しました"
+    timestamp = match.group(1)
+
+    result = run_auto_evaluation(timestamp)
+    return f"🧠 新しい思想を生成・評価しました\n\n{new_prompt}\n\n{result}"
+# === ComfyUI 実行ロジック ===
+def queue_video_generation(thought_json_str):
+    try:
+        thought = json.loads(thought_json_str)
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        payload_path = os.path.join(PAYLOAD_DIR, f"prompt_{timestamp}.json")
+
+        with open(WORKFLOW_TEMPLATE, "r") as f:
+            workflow = json.load(f)
+
+        with open(MAPPING_CONFIG_PATH, "r") as f:
+            mapping_config = json.load(f)
+        workflow = apply_mapping(thought, workflow, mapping_config)
+
+        with open(payload_path, "w") as f:
+            json.dump(workflow, f, indent=2)
+
+        requests.post(COMFY_URL, json=workflow)
+
+        log_entry = {
+            "timestamp": timestamp,
+            "prompt": thought.get("prompt", ""),
+            "intensity": thought.get("intensity", ""),
+            "chaos": thought.get("chaos", ""),
+            "motion_intent": thought.get("motion_intent", ""),
+            "visual_persistence": thought.get("visual_persistence", ""),
+            "guidance_scale": 1.0 + thought.get("intensity", 0.5) * 7.0,
+            "seed": int(1000 + thought.get("chaos", 0.5) * 1000),
+            "segment_index": 0,
+            "user_score": "",
+            "auto_score": ""
+        }
+
+        if os.path.exists(LOG_FILE):
+            df = pd.read_csv(LOG_FILE)
+            df = pd.concat([df, pd.DataFrame([log_entry])], ignore_index=True)
+        else:
+            df = pd.DataFrame([log_entry])
+        df.to_csv(LOG_FILE, index=False)
+
+        return f"✅ 映像生成をキューに追加しました: prompt_{timestamp}.json"
+    except Exception as e:
+        return f"❌ エラー: {str(e)}"
+
+# === ログ・ギャラリー ===
+def load_log():
+    if os.path.exists(LOG_FILE):
+        return pd.read_csv(LOG_FILE)
+    else:
+        return pd.DataFrame()
+
+def list_payloads():
+    files = [f for f in os.listdir(PAYLOAD_DIR) if f.endswith(".json")]
+    return sorted(files, reverse=True)
+
+def load_payload(filename):
+    path = os.path.join(PAYLOAD_DIR, filename)
+    try:
+        with open(path, "r") as f:
+            data = json.load(f)
+        prompt = ""
+        intensity = 0.5
+        chaos = 0.5
+        motion_intent = ""
+        visual_persistence = 0.5
+        for node in data["nodes"]:
+            if node["type"] == "CLIPTextEncode":
+                prompt = node["inputs"].get("text", "")
+            if node["type"] == "LTXVSampler":
+                gs = node["properties"].get("guidance_scale", 5.0)
+                sd = node["properties"].get("seed", 1234)
+                intensity = round((gs - 1.0) / 7.0, 2)
+                chaos = round((sd - 1000) / 1000.0, 2)
+        thought = {
+            "prompt": prompt,
+            "intensity": intensity,
+            "chaos": chaos,
+            "motion_intent": motion_intent,
+            "visual_persistence": visual_persistence
+        }
+        return json.dumps(thought, indent=2)
+    except Exception as e:
+        return json.dumps({"error": str(e)}, indent=2)
+
 # === GUI構築 ===
-with gr.Blocks(title="Project Dystopia - Phase VII Interface", theme=gr.themes.Soft()) as demo:
-    gr.Markdown("# 🧠 Project Dystopia: Phase VII Control Center")
+with gr.Blocks(title="Project Dystopia - Phase VIII Interface", theme=gr.themes.Soft()) as demo:
+    gr.Markdown("# 🧠 Project Dystopia: Phase VIII Control Center")
 
     with gr.Tab("思想生成 & 映像化"):
         with gr.Row():
@@ -233,6 +287,10 @@ with gr.Blocks(title="Project Dystopia - Phase VII Interface", theme=gr.themes.S
             eval_btn = gr.Button("自動評価を実行")
             eval_result = gr.Textbox(label="評価結果", interactive=False)
 
+    with gr.Tab("自己進化"):
+        evolve_btn = gr.Button("自己進化ループを1回実行")
+        evolve_output = gr.Textbox(label="進化ログ", lines=10)
+
     # イベント連携
     gen_btn.click(generate_thought, inputs=[user_input], outputs=[thought_editor])
     run_btn.click(queue_video_generation, inputs=[thought_editor], outputs=[status])
@@ -241,6 +299,7 @@ with gr.Blocks(title="Project Dystopia - Phase VII Interface", theme=gr.themes.S
     refresh_btn.click(list_payloads, outputs=[eval_selector])
     load_btn.click(load_payload, inputs=[payload_selector], outputs=[thought_editor])
     eval_btn.click(run_auto_evaluation, inputs=[eval_selector], outputs=[eval_result])
+    evolve_btn.click(run_self_evolution, outputs=[evolve_output])
 
 if __name__ == "__main__":
     demo.launch(server_name="0.0.0.0", server_port=7860)
