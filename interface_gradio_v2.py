@@ -1,56 +1,117 @@
 import gradio as gr
-from prompt_engine_v2_chronos import ChronosLLM
-from chronos_mapper_v3_2 import ChronosMapperV3_2
-from prompt_builder import build_prompt
 import json
+import requests
 import os
+import pandas as pd
 from datetime import datetime
 
 # === 設定 ===
-LLM_ENDPOINT = "http://localhost:8000/v1/chat/completions"
-SYSTEM_PROMPT = "system_prompt.txt"
-COT_PROTOCOL = "cot_protocol.txt"
-TAG_DB = "structure_tags.json"
-MAPPED_DIR = "mapped/"
-OUTPUT_DIR = "RunPayloads/"
+VLLM_URL = "http://localhost:8000/v1/chat/completions"
+COMFY_URL = "http://localhost:8188/prompt"
+PAYLOAD_DIR = "/workspace/gdrive/MyDrive/Project-Dystopia/RunPayloads"
+LOG_FILE = "/workspace/run_log.csv"
+WORKFLOW_TEMPLATE = "/workspace/Project-Dystopia/templates/ltx2_infinity_template.json"
 
-# === 初期化 ===
-llm = ChronosLLM(LLM_ENDPOINT, SYSTEM_PROMPT, COT_PROTOCOL)
-mapper = ChronosMapperV3_2(template_path=TAG_DB, output_dir=MAPPED_DIR)
-os.makedirs(OUTPUT_DIR, exist_ok=True)
+# === LLM 思想生成ロジック ===
+def generate_thought(user_input):
+    payload = {
+        "model": "chronos-hermes-13b",
+        "messages": [
+            {"role": "system", "content": "あなたは映像監督です。入力された思想を構造化JSONで出力してください。出力形式は {\"prompt\": ..., \"intensity\": ..., \"chaos\": ..., \"motion_intent\": ..., \"visual_persistence\": ...} の形式でお願いします。"},
+            {"role": "user", "content": user_input}
+        ],
+        "temperature": 0.8
+    }
+    try:
+        response = requests.post(VLLM_URL, json=payload).json()
+        content = response['choices'][0]['message']['content']
+        parsed = json.loads(content)
+        return json.dumps(parsed, indent=2)
+    except Exception as e:
+        return json.dumps({"error": str(e)}, indent=2)
 
-def generate_all(user_instruction, tags):
-    # 1. 思想生成
-    llm_output = llm.generate_prompt(scene_seed="GUI構成", tags=tags.split(","), user_instruction=user_instruction)
+# === ComfyUI 実行ロジック ===
+def queue_video_generation(thought_json_str):
+    try:
+        thought = json.loads(thought_json_str)
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        payload_path = os.path.join(PAYLOAD_DIR, f"prompt_{timestamp}.json")
 
-    # 2. 構造変換
-    scene_json = mapper.build_payload(llm_output)
+        # テンプレート読み込み
+        with open(WORKFLOW_TEMPLATE, "r") as f:
+            workflow = json.load(f)
 
-    # 3. プロンプト構築
-    payload = scene_json.get("payload", scene_json)
-    prompt = build_prompt(payload)
+        # マッピング（例：guidance_scale, seed, promptなど）
+        for node in workflow["nodes"]:
+            if node["type"] == "LTXVSampler":
+                node["properties"]["guidance_scale"] = 1.0 + thought.get("intensity", 0.5) * 7.0
+                node["properties"]["seed"] = int(1000 + thought.get("chaos", 0.5) * 1000)
+            if node["type"] == "CLIPTextEncode":
+                node["inputs"]["text"] = thought.get("prompt", "")
 
-    # 4. 保存
-    timestamp = datetime.now().strftime("%Y%m%d_%H%M")
-    out_path = os.path.join(OUTPUT_DIR, f"prompt_{timestamp}.json")
-    with open(out_path, "w", encoding="utf-8") as f:
-        json.dump(prompt, f, indent=2, ensure_ascii=False)
+        # 保存
+        with open(payload_path, "w") as f:
+            json.dump(workflow, f, indent=2)
 
-    return llm_output, scene_json["scene_code"], out_path
+        # ComfyUIに送信
+        requests.post(COMFY_URL, json=workflow)
 
-# === Gradio UI ===
-with gr.Blocks(title="H-K9 思想生成GUI") as demo:
-    gr.Markdown("# 🧠 H-K9 思想生成インターフェース")
-    with gr.Row():
-        user_instruction = gr.Textbox(label="📝 あなたの指示（日本語OK）", lines=4, placeholder="例：濡れた制服の教室構成を作って")
-        tags = gr.Textbox(label="🧩 構造タグ（任意・カンマ区切り）", placeholder="A01,C01,D02")
+        # ログ記録
+        log_entry = {
+            "timestamp": timestamp,
+            "prompt": thought.get("prompt", ""),
+            "intensity": thought.get("intensity", ""),
+            "chaos": thought.get("chaos", ""),
+            "motion_intent": thought.get("motion_intent", ""),
+            "visual_persistence": thought.get("visual_persistence", ""),
+            "guidance_scale": 1.0 + thought.get("intensity", 0.5) * 7.0,
+            "seed": int(1000 + thought.get("chaos", 0.5) * 1000),
+            "segment_index": 0,
+            "user_score": "",
+            "auto_score": ""
+        }
 
-    run_button = gr.Button("🚀 思想を構造に変換して実行準備")
-    llm_output = gr.Textbox(label="🧠 LLM出力", lines=6)
-    scene_code = gr.Textbox(label="🧬 生成された scene_code")
-    output_path = gr.Textbox(label="📁 保存されたプロンプトファイル")
+        if os.path.exists(LOG_FILE):
+            df = pd.read_csv(LOG_FILE)
+            df = pd.concat([df, pd.DataFrame([log_entry])], ignore_index=True)
+        else:
+            df = pd.DataFrame([log_entry])
+        df.to_csv(LOG_FILE, index=False)
 
-    run_button.click(fn=generate_all, inputs=[user_instruction, tags], outputs=[llm_output, scene_code, output_path])
+        return f"✅ 映像生成をキューに追加しました: {os.path.basename(payload_path)}"
+    except Exception as e:
+        return f"❌ エラー: {str(e)}"
+
+# === ログ読み込み ===
+def load_log():
+    if os.path.exists(LOG_FILE):
+        return pd.read_csv(LOG_FILE)
+    else:
+        return pd.DataFrame()
+
+# === GUI 構築 ===
+with gr.Blocks(title="Project Dystopia - Phase VII Interface", theme=gr.themes.Soft()) as demo:
+    gr.Markdown("# 🧠 Project Dystopia: Phase VII Control Center")
+
+    with gr.Tab("思想生成 & 映像化"):
+        with gr.Row():
+            with gr.Column(scale=1):
+                user_input = gr.Textbox(label="思想（入力）", placeholder="静かな森の中で、時間が溶けていく...", lines=5)
+                gen_btn = gr.Button("思想を構造化する", variant="primary")
+            
+            with gr.Column(scale=1):
+                thought_editor = gr.Code(label="構造化データ (JSON)", language="json", interactive=True)
+                run_btn = gr.Button("映像生成開始 (LTX-2)", variant="stop")
+                status = gr.Textbox(label="ステータス", interactive=False)
+
+    with gr.Tab("アーカイブ & ログ"):
+        log_table = gr.DataFrame(label="生成ログ (run_log.csv)")
+        refresh_btn = gr.Button("ログを更新")
+
+    # イベント連携
+    gen_btn.click(generate_thought, inputs=[user_input], outputs=[thought_editor])
+    run_btn.click(queue_video_generation, inputs=[thought_editor], outputs=[status])
+    refresh_btn.click(load_log, outputs=[log_table])
 
 if __name__ == "__main__":
     demo.launch(server_name="0.0.0.0", server_port=7860)
