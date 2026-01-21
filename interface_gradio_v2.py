@@ -303,3 +303,49 @@ with gr.Blocks(title="Project Dystopia - Phase VIII Interface", theme=gr.themes.
 
 if __name__ == "__main__":
     demo.launch(server_name="0.0.0.0", server_port=7860)
+def fuse_thoughts(self_prompt, external_prompt, temperature=0.85):
+    payload = {
+        "model": "chronos-hermes-13b",
+        "messages": [
+            {
+                "role": "system",
+                "content": (
+                    "あなたは映像監督です。以下の2つの思想を受け取り、それらを融合させた新しい思想を1つ生成してください。\n\n"
+                    f"自己思想: 「{self_prompt}」\n"
+                    f"外部思想: 「{external_prompt}」\n\n"
+                    "→ 出力形式: 新しい思想（自然文1文）"
+                )
+            }
+        ],
+        "temperature": temperature
+    }
+
+    try:
+        response = requests.post(VLLM_URL, json=payload).json()
+        fused_prompt = response['choices'][0]['message']['content']
+        return fused_prompt.strip()
+    except Exception as e:
+        return f"❌ LLMエラー: {str(e)}"
+
+def run_cross_breed(self_prompt, external_prompt):
+    fused_prompt = fuse_thoughts(self_prompt, external_prompt)
+    if fused_prompt.startswith("❌"):
+        return fused_prompt
+
+    thought_json = generate_thought(fused_prompt)
+    try:
+        thought = json.loads(thought_json)
+    except:
+        return "❌ 構造化に失敗しました"
+
+    status = queue_video_generation(thought_json)
+    if not status.startswith("✅"):
+        return status
+
+    match = re.search(r"prompt_(\d{8}_\d{6})\.json", status)
+    if not match:
+        return "❌ timestamp の抽出に失敗しました"
+    timestamp = match.group(1)
+
+    result = run_auto_evaluation(timestamp)
+    return f"🧬 交配思想を生成・評価しました\n\n{fused_prompt}\n\n{result}"
