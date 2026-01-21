@@ -1,0 +1,54 @@
+{
+  "body_physics": {
+    "weighted_dynamics": [
+      "sagging under gravity",
+      "fabric pressing against skin",
+      "natural droop due to weight"
+    ],
+    "elastic_deformation": [
+      "skin compressed by tight clothing",
+      "indentation from sitting posture",
+      "flesh slightly bulging over waistband"
+    ]
+  },
+  "voyeur_geometry": {
+    "obstructions": [
+      "door ajar",
+      "potted plant leaves",
+      "steamy glass",
+      "bookshelf gap"
+    ],
+    "camera_positions": [
+      "floor level under table",
+      "high corner like CCTV",
+      "through mirror reflection",
+      "from inside a closet"
+    ]
+  },
+  "physiological_causality": {
+    "emotional_reactions": {
+      "embarrassment": ["flushed cheeks", "red collarbone", "averted gaze"],
+      "arousal": ["dilated pupils", "slightly parted lips", "tense fingers"],
+      "cold": ["goosebumps", "shivering shoulders", "tightened posture"]
+    }
+  },
+  "optical_realism": {
+    "lighting_flaws": [
+      "harsh smartphone flash",
+      "redeye effect",
+      "overexposed highlights",
+      "greenish tint from fluorescent light"
+    ],
+    "subsurface_scattering": [
+      "red glow on ears",
+      "translucent fingertips",
+      "rim light on fine body hair"
+    ]
+  },
+  "life_debris": [
+    "empty plastic bottle on floor",
+    "tangled charging cables",
+    "wrinkled bedsheets",
+    "fingerprints on mirror"
+  ]
+}
