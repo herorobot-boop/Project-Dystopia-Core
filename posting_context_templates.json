@@ -1,0 +1,22 @@
+"free": {
+  "camera": "mirror selfie, wide shot, amateur framing",
+  "expression": "smiling, relaxed, casual eye contact",
+  "clothing": "hoodie, jeans, casual wear",
+  "lighting": "soft daylight, natural shadows",
+  "scenario_hint": "daily routine, friendly atmosphere, relatable moment",
+  "viewpoint": "eye-level, direct gaze",
+  "obstruction": "",
+  "camera_specs": "smartphone front camera, handheld",
+  "context_logic": "subject is aware of the camera, posing casually"
+},
+"paid": {
+  "camera": "extreme close-up, low angle, intimate framing",
+  "expression": "flushed, parted lips, heavy breathing",
+  "clothing": "lifted shirt, exposed shoulder, minimal clothing",
+  "lighting": "dim red neon, moody shadows, soft glow",
+  "scenario_hint": "private moment, suggestive tension, emotional intensity",
+  "viewpoint": "voyeuristic, candid",
+  "obstruction": "looking through a curtain or door gap",
+  "camera_specs": "telephoto lens, high angle, CCTV aesthetics",
+  "context_logic": "subject is unaware of the camera, focused on personal activity"
+}
