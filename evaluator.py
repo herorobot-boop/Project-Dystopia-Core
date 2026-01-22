@@ -1,58 +1,95 @@
-# core/evaluator.py
+import json
+import random
+from pathlib import Path
+from datetime import datetime
+from thought_generator import generate_thought
 
-import base64
-import re
-import requests
-from core.io_utils import update_log_score
-from tools.extract_frame import extract_frame
-import os
-import pandas as pd
+# --- 設定 ---
+THOUGHT_LOG_PATH = Path("/workspace/Project-Dystopia/outputs/thought_log.jsonl")
+EVOLVED_OUTPUT_DIR = Path("/workspace/Project-Dystopia/outputs/evolved_thoughts")
+EVOLVED_OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-def encode_image_to_base64(image_path):
-    with open(image_path, "rb") as f:
-        return base64.b64encode(f.read()).decode("utf-8")
+def load_thought_log():
+    thoughts = []
+    if not THOUGHT_LOG_PATH.exists():
+        print("❌ thought_log.jsonl が見つかりません。生成を先に行ってください。")
+        return thoughts
 
-def extract_score(text):
-    match = re.search(r"(\d+(?:\.\d+)?)\s*/\s*10", text)
-    if match:
-        return float(match.group(1))
-    return None
+    with open(THOUGHT_LOG_PATH, "r", encoding="utf-8") as f:
+        for line in f:
+            try:
+                thoughts.append(json.loads(line))
+            except Exception as e:
+                continue
+    return thoughts
 
-def evaluate_alignment(prompt_text, image_path, vlm_url="http://localhost:8000/v1/chat/completions"):
-    image_b64 = encode_image_to_base64(image_path)
-    payload = {
-        "model": "llava",
-        "messages": [
-            {"role": "user", "content": f"この画像は次の説明とどれくらい一致していますか？説明: {prompt_text}。10点満点で評価してください。"}
-        ],
-        "temperature": 0.2,
-        "max_tokens": 100,
-        "image": image_b64
-    }
+def evaluate_thoughts(thoughts: list, top_k=3):
+    """
+    評価フェーズ：現在は簡易的に『最新の成果』または『ランダム』から選出。
+    将来的にはここに画像解析AIによる自動スコアや、HEROの手動評価(Rating)を紐付ける。
+    """
+    if len(thoughts) < top_k:
+        return thoughts
+    
+    # 戦略的選出：最新の成功例を重視しつつ、多様性のためにランダムを混ぜる
+    sorted_thoughts = sorted(thoughts, key=lambda x: x.get("timestamp", ""), reverse=True)
+    seeds = sorted_thoughts[:10] # 直近10件から
+    return random.sample(seeds, k=min(top_k, len(seeds)))
 
-    try:
-        response = requests.post(vlm_url, json=payload).json()
-        score_text = response.get("choices", [{}])[0].get("message", {}).get("content", "")
-        return extract_score(score_text)
-    except Exception as e:
-        return f"error: {str(e)}"
+def evolve_thought(base_thought: dict, variation_id: int = 0):
+    """
+    選ばれた思想のDNA（シーン、LoRA構成）を解析し、変異（Mutation）を加える。
+    """
+    original_scene = base_thought.get("scene", "unknown")
+    
+    # --- 変異アルゴリズム：環境因子の注入 ---
+    mutations = [
+        "、超広角で", "、シネマティックな逆光", 
+        "、肌に付着した水滴の質感", "、極限まで低いアングルから",
+        "、レンズフレアの干渉", "、粒子感のあるフィルムノイズ"
+    ]
+    
+    # 30%の確率で劇的な環境変化（変異）が発生
+    if random.random() < 0.3:
+        mutated_scene = original_scene + random.choice(mutations)
+    else:
+        mutated_scene = original_scene
 
-def run_auto_evaluation(timestamp, log_file, output_dir, frame_dir):
-    video_path = os.path.join(output_dir, f"prompt_{timestamp}.mp4")
-    image_path = os.path.join(frame_dir, f"prompt_{timestamp}.jpg")
+    # 元のコンテキストを維持
+    context_type = "paid" if "paid" in str(base_thought.get("image_path", "")) else "teaser"
 
-    if not extract_frame(video_path, image_path, position="middle"):
-        return "❌ フレーム抽出に失敗しました"
+    # 新たな思想の召喚（再演算）
+    evolved = generate_thought(mutated_scene, context_type=context_type, variation_id=variation_id)
+    
+    # 進化の記録をメタデータに刻む
+    evolved["meta"]["generation"] = base_thought.get("generation", 0) + 1
+    evolved["meta"]["ancestor_id"] = base_thought.get("prompt_id", "root")
+    
+    return evolved
 
-    df = pd.read_csv(log_file)
-    row = df[df["timestamp"] == timestamp]
-    if row.empty:
-        return "❌ 該当するログが見つかりません"
+def run_evolution():
+    print("🧬 Phase XVI: 思想の進化（Evolution）を開始します…")
+    thoughts = load_thought_log()
+    if not thoughts:
+        return
 
-    prompt_text = row.iloc[0]["prompt"]
-    score = evaluate_alignment(prompt_text, image_path)
-    if isinstance(score, str) and score.startswith("error"):
-        return score
+    # 1. 優秀な個体の選別
+    selected = evaluate_thoughts(thoughts, top_k=3)
+    print(f"🌱 継承される個体: {[t['prompt_id'] for t in selected]}")
 
-    success = update_log_score(log_file, timestamp, score)
-    return f"✅ auto_score を更新しました: {score}" if success else "❌ スコア更新に失敗しました"
+    # 2. 次世代の創出
+    for idx, base in enumerate(selected):
+        new_thought = evolve_thought(base, variation_id=idx)
+        
+        timestamp = datetime.now().strftime("%Y%m%d-%H%M%S")
+        out_path = EVOLVED_OUTPUT_DIR / f"evolved_{timestamp}_{idx}.json"
+        
+        with open(out_path, "w", encoding="utf-8") as f:
+            json.dump(new_thought, f, indent=2, ensure_ascii=False)
+            
+        print(f"✅ 次世代思想を記録: {out_path.name}")
+
+    print("\n🌿 進化の儀式が完了しました。これらの思想は run_batch.py で即座に実体化可能です。")
+
+if __name__ == "__main__":
+    run_evolution()
