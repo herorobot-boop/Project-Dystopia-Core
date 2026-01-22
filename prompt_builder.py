@@ -3,14 +3,13 @@ from pathlib import Path
 
 def build_prompt(thought_json: dict, negative: bool = False) -> str:
     """
-    思想JSONをもとに、画像生成用のポジティブ/ネガティブプロンプトを構築する。
-    Free(SFW)とPaid(NSFW)で出力の質を自動的に切り替える。
+    思想JSONから、LoRAタグ付きポジティブプロンプト、
+    または文脈に応じたネガティブプロンプトを構築する。
     """
-
     context = thought_json.get("context_type", "free")
 
+    # --- 1. ネガティブプロンプト構築 ---
     if negative:
-        # --- 1. 共通のネガティブ要素（低品質の排除） ---
         base_negatives = [
             "worst quality", "low quality", "normal quality", "jpeg artifacts",
             "blurry", "extra fingers", "missing fingers", "bad anatomy",
@@ -19,15 +18,14 @@ def build_prompt(thought_json: dict, negative: bool = False) -> str:
             "oversaturated", "overexposed", "flat lighting"
         ]
 
-        # --- 2. 文脈別のネガティブ制御 ---
         if context == "free":
-            # SNSでの安全性を高め、健全な日常感を守る
+            # SNSセーフティ(SFW)を強化
             base_negatives += [
                 "nsfw", "nude", "cleavage", "underwear", "suggestive", 
                 "extreme expression", "unusual lighting", "nipples", "pussy"
             ]
         elif context == "paid":
-            # 「AI的な綺麗さ」を排除し、生々しいリアリズムを強制する
+            # AI的完璧さを排除し、実写(Non-Censored/UGC)を強制
             base_negatives += [
                 "perfect symmetry", "studio lighting", "airbrushed skin", 
                 "plastic skin", "makeup", "caricature", "doll-like"
@@ -35,34 +33,43 @@ def build_prompt(thought_json: dict, negative: bool = False) -> str:
 
         return ", ".join(base_negatives)
 
-    # --- 3. ポジティブプロンプト構築 ---
-    # Identity (不変遺伝子)
+    # --- 2. ポジティブプロンプト構築 ---
+    
+    # LoRAタグ生成
+    lora_tags = []
+    for lora in thought_json.get("lora_settings", []):
+        name = lora.get("name", "").strip()
+        weight = lora.get("weight", 1.0)
+        if name:
+            lora_tags.append(f"<lora:{name}:{weight}>")
+
+    # キャラクター・不変要素
     identity = thought_json["global_overrides"].get("identity", "")
     identity_tags = identity.replace("identity_anchor_active:", "").replace("_", " ").strip()
 
-    # View & Lighting (構図・照明)
+    # 構図・照明・シーン
     view = thought_json["visual_config"].get("view", "").replace("_", " ")
     lighting = thought_json["visual_config"].get("lighting", "").replace("_", " ")
     focus = thought_json["visual_config"].get("focus_strategy", "").replace("_", " ")
     scene = thought_json.get("scene_context", "")
 
-    # Physical Interaction (物理・素材干渉)
+    # 物理干渉
     fabric = thought_json.get("fabric_logic", {}).get("material_interaction", "").replace("_", " ")
     action = thought_json.get("fabric_logic", {}).get("action_state", "").replace("_", " ")
 
-    # Physiological Reality (生理反応：Paidのみ強く反映)
+    # 生理反応 (重み付け)
     physiology = thought_json.get("physiology_detail", "").replace("_", " ")
     if physiology:
-        # 生理反応は生々しさの核なので、重み付けを強化
         physiology = f"({physiology}:1.2)"
 
-    # Realism Tags & Optical Defects (質感・ノイズ)
+    # 質感・ノイズ
     realism_tags = [t.replace("_", " ") for t in thought_json.get("realism_tags", [])]
     optical = thought_json["global_overrides"].get("optical", "").replace("_", " ")
     physics = thought_json["global_overrides"].get("physics", "").replace("_", " ")
 
-    # --- 4. プロンプトの組み立て (因果関係順) ---
+    # --- 最終構築（優先順位：LoRA > 品質 > シーン > 構図 > 物理 > 生理 > ノイズ） ---
     prompt_parts = [
+        *lora_tags,
         "masterpiece, best quality, ultra-detailed",
         scene,
         f"{view}, {lighting}, {focus}",
@@ -74,24 +81,18 @@ def build_prompt(thought_json: dict, negative: bool = False) -> str:
         physics
     ]
 
-    # 空要素を除外し、最終クリーンアップ
     final_prompt = ", ".join([p for p in prompt_parts if p and p.strip()])
     final_prompt = final_prompt.replace("_", " ")
 
     return final_prompt.strip()
 
-# --- テスト実行セクション ---
 if __name__ == "__main__":
     from thought_generator import generate_thought
 
-    # 1. Paid（有料/ノンセンサード）のテスト
-    paid_thought = generate_thought("夕暮れの体育館、放課後", context_type="paid")
+    # 実働テスト
+    target_scene = "雨の降る深夜の駅のホーム"
+    
+    # PAIDの生成
+    paid_thought = generate_thought(target_scene, context_type="paid")
     print("💎 [PAID] Positive:\n", build_prompt(paid_thought))
-    print("🚫 [PAID] Negative:\n", build_prompt(paid_thought, negative=True))
-
-    print("\n" + "="*50 + "\n")
-
-    # 2. Free（無料/SNS用）のテスト
-    free_thought = generate_thought("昼下がりのカフェ", context_type="free")
-    print("🕊️ [FREE] Positive:\n", build_prompt(free_thought))
-    print("🚫 [FREE] Negative:\n", build_prompt(free_thought, negative=True))
+    print("\n🚫 [PAID] Negative:\n", build_prompt(paid_thought, negative=True))
