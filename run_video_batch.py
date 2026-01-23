@@ -1,5 +1,6 @@
 import json
 import requests
+import random
 from pathlib import Path
 from datetime import datetime
 
@@ -40,23 +41,20 @@ def build_video_payload(thought, workflow_template):
 
     wf = json.loads(json.dumps(workflow_template))  # ディープコピー
 
-    # テンプレート(JSON)の構造に合わせて差し替え
     # ID "2" : CLIPTextEncode (Positive Prompt)
     if "2" in wf:
         wf["2"]["inputs"]["text"] = f"{scene}, cinematic motion, high quality, masterpiece"
         print(f"📝 Prompt Injected: {scene[:30]}...")
-    
+
     # ID "5" : KSampler (Seedをランダム化)
     if "5" in wf:
         wf["5"]["inputs"]["seed"] = random.randint(0, 0xffffffffffffffff)
 
-    # 思考データに特定のLoRA指定がある場合（拡張用）
+    # 拡張用: LoRA指定がある場合
     # if "10" in wf and "lora_name" in thought:
     #     wf["10"]["inputs"]["lora_name"] = thought["lora_name"]
 
     return wf, p_id
-
-import random # 追加
 
 def main():
     if not WORKFLOW_PATH.exists():
@@ -67,7 +65,8 @@ def main():
         template = json.load(f)
 
     thoughts = load_latest_evolved_thoughts()
-    if not thoughts: return
+    if not thoughts:
+        return
 
     PAYLOAD_LOG_DIR.mkdir(exist_ok=True)
     print(f"🚀 Processing {len(thoughts)} video thoughts...")
