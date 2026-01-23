@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.pyc
+
+# Outputs
+outputs/images/
+outputs/payload_logs/
+outputs/evolved_thoughts/
+outputs/thought_log.jsonl
+
+# Config (optional)
+config/workflow_api_template.json
+config/lora_assets.csv
