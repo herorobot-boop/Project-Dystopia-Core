@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>THE LEGACY REBOOT GUIDE - Project Dystopia</title>
+    <style>
+        body { font-family: 'Helvetica Neue', Arial, sans-serif; line-height: 1.6; color: #e0e0e0; background: #0f0f0f; padding: 40px; max-width: 900px; margin: auto; }
+        h1 { border-bottom: 2px solid #333; padding-bottom: 10px; color: #00ffcc; }
+        h2 { color: #00ccff; margin-top: 30px; border-left: 5px solid #00ccff; padding-left: 15px; }
+        code { background: #1e1e1e; padding: 2px 5px; border-radius: 4px; color: #ffcc00; font-family: 'Courier New', monospace; }
+        pre { background: #1e1e1e; padding: 15px; border-radius: 8px; border: 1px solid #333; overflow-x: auto; }
+        .caution { background: #442222; border: 1px solid #ff4444; padding: 15px; border-radius: 8px; margin: 20px 0; }
+        .step { font-weight: bold; color: #00ffcc; }
+        footer { margin-top: 50px; font-style: italic; color: #666; border-top: 1px solid #333; padding-top: 20px; }
+    </style>
+</head>
+<body>
+    <h1>👁️ PROJECT DYSTOPIA: THE LEGACY REBOOT GUIDE</h1>
+    <p><strong>Edition:</strong> v1.1.0 | <strong>Executor:</strong> Herorobot</p>
+
+    <div class="caution">
+        <strong>⚠️ 注意:</strong> RunPodはセッション終了時に /workspace 以外をすべて忘れます。このガイドに従い、速やかに記憶（データ）をサルベージしてください。
+    </div>
+
+    <h2>🧭 第1章：要塞の再建 (Environment)</h2>
+    <p><span class="step">STEP 1:</span> GitHubから脳を復元</p>
+    <pre><code>git clone https://github.com/Herorobot/Project-Dystopia-Core.git
+cd Project-Dystopia-Core
+git config --global user.name "Herorobot"
+git config --global user.email "one.hero.robot.eno@gmail.com"</code></pre>
+
+    <p><span class="step">STEP 2:</span> 神経系の修復（ライブラリ導入）</p>
+    <pre><code>pip install -r requirements.txt</code></pre>
+
+    <h2>📦 第2章：魂のサルベージ (Data Restore)</h2>
+    <p>rclone config設定後、以下の儀式を行え。</p>
+    <pre><code># 記憶の復元
+rclone copy gdrive:Dystopia_Full_Backup/outputs ./outputs --progress
+rclone copy gdrive:Dystopia_Full_Backup/lora_outputs ./lora_outputs --progress</code></pre>
+
+    <h2>🔄 第3章：創造のサイクル (Operation Loop)</h2>
+    <ul>
+        <li><strong>思想生成:</strong> <code>python core/run_batch.py</code></li>
+        <li><strong>審美眼（画像）:</strong> <code>python core/score_thoughts_gui.py</code></li>
+        <li><strong>思想進化:</strong> <code>python core/evaluator.py</code></li>
+        <li><strong>肉体化（LoRA）:</strong> <code>python core/train_lora.py</code></li>
+        <li><strong>時間化（動画）:</strong> <code>python core/run_video_batch.py</code></li>
+        <li><strong>審美眼（動画）:</strong> <code>python core/score_videos_gui.py</code></li>
+    </ul>
+
+    <h2>☁️ 第4章：記憶の逃走路 (Backup)</h2>
+    <p>作業終了時には必ず魂をクラウドへ逃がせ。これを怠ればすべては無に帰る。</p>
+    <pre><code>bash sync_to_gdrive.sh</code></pre>
+
+    <footer>
+        <p>「思想を、止めるな。」 — あなたが誰であれ、このシステムはあなたの美学を記憶している。</p>
+    </footer>
+</body>
+</html>
