@@ -1,96 +1,90 @@
-🧠 Project Dystopia: 画像生成資源化計画
-「画像生成を『ギャンブル』から『設計』へ」
+🧠 Project Dystopia Core
 
-本リポジトリは、ComfyUIを用いた「高精度・高再現性」な画像生成パイプラインと、
-それを操るための思想的インターフェース（PromptEngine）を提供します。
+**Project Dystopia** は、思想を生成し、評価し、進化させる完全自律型の画像生成エンジンです。  
+このリポジトリはその「中核知性（Core）」を構成するスクリプト群を収めています。
 
-📖 聖典：四つの柱（Philosophy）
-我々は、消費されるだけの「生成ガチャ」を拒絶する。
+> 🎨 思想は、もはや“書く”ものではなく、“召喚する”ものへ。  
+> 🧬 そして、評価され、淘汰され、進化し、血統を刻む。
 
-粒度の支配  
-　AIのリソースは有限である。背景、構図、細部に優先順位をつけ、無駄な書き込みを排せ。
+---
 
-構造の継承  
-　優れたポーズや構図は「資源」である。Type Eを用い、骨格を次の生成へと引き継げ。
+## 🚀 概要
 
-局所の執着  
-　全体を変えずに一部を磨く。Type D/D+は、あなたの「欲望（フェチ）」を純化するためのメスである。
+Project Dystopia は以下の5つのフェーズを自動で回します：
 
-資源の循環  
-　生成は終わりではない。優れた出力は次の素材（Asset）となり、螺旋のようにクオリティを高めていく。
+1. **思想の生成**：LLMがシーンから思想（プロンプト）を構築
+2. **肉体の構築**：LoRAを選定し、ComfyUI用ペイロードを生成
+3. **現実への送信**：ComfyUI APIを通じて画像を生成
+4. **評価と記録**：画像にスコアを与え、思想と紐づけて記録
+5. **進化と淘汰**：高スコア思想をもとに次世代を生成
 
-🛠 導入手順（RunPod / Private環境）
-1. リポジトリの召喚
-bash
-git clone https://github.com/herorobot-boop/Project-Dystopia.git
-cd Project-Dystopia
-2. 環境の自動構築（Phase Vまで）
-bash
-python setup_sync_v50.py
-✅ Pony, RealVisXL 5.0, FLUX等の主要モデルとカスタムノードが自動展開されます。
+---
 
-🕹 運用マニュアル：弾丸を込め、撃ち抜く
-Step 1: 弾丸の精製（PromptEngine GUI）
-🟢 手動設計モード（GUI v1）
-bash
-python interface_gradio_v1.py
-キャラ・シーン・スタイル・LoRAタグを手動で入力
+## 🧩 ディレクトリ構成
 
-Positive / Negative Prompt を生成し、ComfyUIに貼り付けて使用
+```text
+Project-Dystopia-Core/
+├── core/                         # 実行知性の中枢
+│   ├── run_batch.py              # 初期思想の一括生成
+│   ├── evaluator.py              # 評価に基づく進化思想の生成
+│   ├── run_evolved_batch.py      # 進化思想の一括送信
+│   ├── result_watcher.py         # 画像と思想の紐づけ
+│   ├── score_thoughts.py         # スコア入力（CLI）
+│   ├── evolution_tracker.py      # スコア分布・進化傾向の可視化
+│   ├── mutation_lab.py           # 変異パターンの勝率分析
+│   └── bloodline_viewer.py       # 高スコア思想の血統を可視化
+├── config/                       # 聖典（設定・定義ファイル）
+│   ├── workflow_api_template.json # ComfyUIから保存したAPI形式ワークフロー
+│   ├── lora_assets.csv           # LoRA資産リスト
+│   └── system_prompt.txt         # LLM用プロンプト定義
+├── workflows/                    # 予備のワークフロー群（Type-A〜Fなど）
+├── outputs/                      # 観測記録（非公開推奨）
+│   ├── payload_logs/             # 送信したペイロードのログ
+│   ├── images/                   # 生成された画像
+│   └── thought_log.jsonl         # 思想・スコア・血統の記録
+├── legacy/                       # 旧バージョン・実験スクリプトの保管庫
+└── README.md                     # このファイル
+🛠 使用方法
+1. 初期セットアップ（初回起動時）
+Bash
 
-GUI起動後、表示されたURL（例：https://xxxx.gradio.live）をブラウザで開く
+# 知性の統合と整理
+python integrate_core.py
+cd Project-Dystopia-Core
 
-💡 Tip: Extra欄に [ANTI_MELT], [REAL_SKIN], [POSE_FIX] などのタグを活用
+# 依存ライブラリのインストール
+pip install -r requirements.txt
+2. 召喚サイクル（日常の運用）
+Bash
 
-🔷 思想駆動モード（GUI v2）
-bash
-# 事前にローカルLLMを起動（初回のみ）
-python setup_sync_llm.py
+# A. 初期思想の生成と送信
+python core/run_batch.py
 
-# GUI起動
-python interface_gradio_v2.py
-日本語で構成指示を入力するだけで、LLMが構造タグを生成
+# B. 画像生成後の記録と評価（ComfyUI完了後に実行）
+python core/result_watcher.py
+python core/score_thoughts.py
 
-自動で prompt_*.json を構築し、ComfyUIで即実行可能
+# C. 進化思想の生成と再送信
+python core/evaluator.py
+python core/run_evolved_batch.py
+3. 分析と可視化
+Bash
 
-GUI起動後、表示されたURL（例：https://xxxx.gradio.live）をブラウザで開く
+python core/evolution_tracker.py
+python core/mutation_lab.py
+python core/bloodline_viewer.py
+🔄 RunPod再起動時の復帰手順
+RunPodのインスタンスを再起動、または新規構築した際は、以下の手順で「知性の続き」を呼び戻します。
 
-✅ .json は RunPayloads/ に保存されます
+GitHubから最新の状態をプル
 
-Step 2: 構造の展開（ComfyUI）
-ComfyUIを開き、workflows/ 内の最適な「銃（JSON）」を読み込みます。
+Bash
 
-Type	用途
-A / B / C	標準・実験・垂直整理。FLUX + Ponyのハイブリッド構成
-D / D+	局所修正。特定部位を「資源化」レベルまで描き変える
-E	骨格継承。ポーズを固定し、キャラクターを転生させる
-Step 3: 装填と発射
-GUIで生成した Positive Prompt を CLIP Text Encode ノードに貼り付け
+cd Project-Dystopia-Core
+git pull origin main
+依存関係の再修復
 
-.json を読み込んだ場合はそのまま実行ボタンを押すだけ
+Bash
 
-🧭 GUIの使い分けまとめ
-あなたの目的	使うGUI	起動コマンド
-自分で構成を細かく組みたい	interface_gradio_v1.py	python interface_gradio_v1.py
-日本語で指示して自動生成したい	interface_gradio_v2.py	python interface_gradio_v2.py
-ComfyUIに貼るだけのプロンプトが欲しい	GUI v1	✅
-.json で構成を保存・再利用したい	GUI v2	✅
-🔞 リミッター解除：検閲なき創造
-Project Dystopiaは、外部の検閲サーバーを介しません。
-Pony系モデルが持つ潜在的な表現力を、PromptEngineが自動で最適化し、
-最高純度の「資源」へと変換します。
-
-📂 フォルダ構成（抜粋）
-コード
-Project-Dystopia/
-├── interface_gradio_v1.py        # 手動プロンプト設計GUI
-├── interface_gradio_v2.py        # 思想駆動プロンプト生成GUI
-├── prompt_engine_v1.py
-├── prompt_engine_v2_chronos.py
-├── chronos_mapper_v3_2.py
-├── prompt_builder.py
-├── setup_sync_llm.py             # RunPod用LLM起動スクリプト
-├── RunPayloads/                  # 生成されたプロンプト保存先
-├── mapped/                       # 構造タグ付きscene_code保存先
-├── workflows/                    # ComfyUI用ワークフロー群
-└── structure_tags.json           # タグ定義辞書
+pip install -r requirements.txt
+継続の確認 outputs/thought_log.jsonl が存在すれば、過去の評価データは維持されています。そのまま core/evaluator.py から再開して次世代を生成可能です。
