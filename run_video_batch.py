@@ -15,7 +15,7 @@ def load_latest_evolved_thoughts():
     """最新の進化済み思想ファイルを読み込む"""
     files = sorted(EVOLVED_THOUGHTS_DIR.glob("evolved_*.json"), key=lambda x: x.stat().st_mtime, reverse=True)
     if not files:
-        print("⚠️ 進化済み思想が見つかりません。")
+        print("⚠️ 進化済み思想が見つかりません。evaluator.pyを先に実行してください。")
         return []
     with open(files[0], "r", encoding="utf-8") as f:
         return json.load(f)
@@ -25,49 +25,57 @@ def queue_video_job(payload, prompt_id):
     try:
         response = requests.post(COMFY_URL, json={"prompt": payload})
         if response.status_code == 200:
-            print(f"🎬 Video Job Queued: {prompt_id}")
+            print(f"🎬 Video Job Queued | Prompt ID: {prompt_id}")
             return response.json().get("prompt_id", "unknown")
         else:
-            print(f"❌ APIエラー: {response.status_code} - {response.text}")
+            print(f"❌ API Error: {response.status_code} - {response.text}")
     except Exception as e:
-        print(f"📡 接続エラー: {e}")
+        print(f"📡 Connection Error: {e}")
     return None
 
 def build_video_payload(thought, workflow_template):
-    """動画用ペイロードの構築"""
-    prompt_id = thought.get("prompt_id", f"video_{datetime.now().strftime('%Y%m%d_%H%M%S')}")
+    """動画用ペイロードの構築（テンプレートのノードIDと同期）"""
+    p_id = thought.get("prompt_id", f"video_{datetime.now().strftime('%Y%m%d_%H%M%S')}")
     scene = thought.get("scene", "a cinematic scene")
 
-    wf = json.loads(json.dumps(workflow_template))  # 深いコピー
+    wf = json.loads(json.dumps(workflow_template))  # ディープコピー
 
-    # ノードIDはテンプレートに合わせて調整
-    if "6" in wf:
-        wf["6"]["inputs"]["text"] = f"{scene}, cinematic motion, high quality"
-    if "10" in wf and "lora_name" in thought:
-        wf["10"]["inputs"]["lora_name"] = thought["lora_name"]
+    # テンプレート(JSON)の構造に合わせて差し替え
+    # ID "2" : CLIPTextEncode (Positive Prompt)
+    if "2" in wf:
+        wf["2"]["inputs"]["text"] = f"{scene}, cinematic motion, high quality, masterpiece"
+        print(f"📝 Prompt Injected: {scene[:30]}...")
+    
+    # ID "5" : KSampler (Seedをランダム化)
+    if "5" in wf:
+        wf["5"]["inputs"]["seed"] = random.randint(0, 0xffffffffffffffff)
 
-    return wf, prompt_id
+    # 思考データに特定のLoRA指定がある場合（拡張用）
+    # if "10" in wf and "lora_name" in thought:
+    #     wf["10"]["inputs"]["lora_name"] = thought["lora_name"]
+
+    return wf, p_id
+
+import random # 追加
 
 def main():
     if not WORKFLOW_PATH.exists():
-        print(f"⚠️ 動画用ワークフローが見つかりません: {WORKFLOW_PATH}")
+        print(f"⚠️ ワークフローが見つかりません: {WORKFLOW_PATH}")
         return
 
     with open(WORKFLOW_PATH, "r", encoding="utf-8") as f:
         template = json.load(f)
 
     thoughts = load_latest_evolved_thoughts()
-    if not thoughts:
-        print("⚠️ 送信する思想がありません。先に evaluator.py を実行してください。")
-        return
+    if not thoughts: return
 
     PAYLOAD_LOG_DIR.mkdir(exist_ok=True)
-    print(f"🚀 {len(thoughts)} 件の動画生成ジョブを送信します...")
+    print(f"🚀 Processing {len(thoughts)} video thoughts...")
 
     for t in thoughts:
         payload, p_id = build_video_payload(t, template)
 
-        # ログ保存
+        # 送信内容をデバッグ用に保存
         log_file = PAYLOAD_LOG_DIR / f"video_payload_{p_id}.json"
         with open(log_file, "w", encoding="utf-8") as f:
             json.dump(payload, f, indent=2, ensure_ascii=False)
