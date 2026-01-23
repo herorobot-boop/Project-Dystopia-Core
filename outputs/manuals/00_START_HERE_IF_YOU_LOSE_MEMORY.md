@@ -1,89 +1,92 @@
-### 📄 00_START_HERE_IF_YOU_LOSE_MEMORY.md（明日のあなたを救う最終版）
+### 📄 【決定版】00_START_HERE_IF_YOU_LOSE_MEMORY.md
 
-```markdown
+保存先：`/workspace/Project-Dystopia-Core/manuals/00_START_HERE_IF_YOU_LOSE_MEMORY.md`
+
 # 🧠 Project Dystopia: 完全再起動ガイド（Herorobot専用）
 
 ---
 
 ## 🧭 第1章：要塞の再建（RunPod 起動直後）
 
-1. **GitHubから「脳」を取得**: 
-   ```bash
-   git clone [https://github.com/Herorobot/Project-Dystopia-Core.git](https://github.com/Herorobot/Project-Dystopia-Core.git)
-   cd Project-Dystopia-Core
-   git config --global user.name "Herorobot"
-   git config --global user.email "one.hero.robot.eno@gmail.com"
+### ✅ 1. GitHubから「脳」を取得
+
+```bash
+git clone https://github.com/Herorobot/Project-Dystopia-Core.git
+cd Project-Dystopia-Core
+
+# Gitユーザー設定
+git config --global user.name "Herorobot"
+git config --global user.email "one.hero.robot.eno@gmail.com"
+
+# git push時に聞かれたらこれを使え：
+# Username: Herorobot
+# Password: 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
 
 ```
 
-2. **依存関係（神経系）を修復**:
+### ✅ 2. 依存関係とツールの修復
+
 ```bash
 pip install -r requirements.txt
 apt update && apt install -y zip unzip ffmpeg
 
 ```
 
+---
 
-3. **整理実行** (もしフォルダがバラけていたら):
+## 📦 第2章：rcloneの再接続（Google Drive）
+
+RunPodはブラウザが動かない。以下の手順で**「手元のPC」**と連携して認証せよ。
+
+### ✅ 1. 手元のPC（Windows/Mac）でトークン発行
+
+PCのターミナルで以下のコマンドを実行（あなたのIDを埋め込み済み）：
+
 ```bash
-python core/organize_project.py
+rclone authorize "drive" "449525467106-qf2uaotmlk66di5cb6qbmj34iu04gv6b.apps.googleusercontent.com" "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"
 
 ```
 
+→ ブラウザで許可し、表示された `{"access_token":...}` をコピー。
 
-
----
-
-## 📦 第2章：rcloneの再接続（Token・対話対応）
-
-RunPodは毎回これを忘れる。Tokenが切れている、または新規接続が必要な場合は以下を辿れ。
-
-### ✅ `rclone config` の呪文
-
-1. `n` (New remote)
-2. `name> gdrive`
-3. `Storage> 18` (Google Drive を探して番号を入力)
-4. `client_id` / `client_secret` / `service_account` > **すべて[空欄でEnter]**
-5. `scope> 1` (Full access)
-6. `Edit advanced config? n`
-7. `Use auto config? n` (**← ここが重要！必ず 'n'**)
-
-### ✅ Local PCでのToken発行（RunPodへの転送）
-
-RunPod側で `result>` と待機状態になったら、**「自分のPC（ローカル）」**のターミナルで以下を実行：
-`rclone authorize "drive" "scope=drive"`
-
-1. ブラウザで許可。
-2. PCのターミナルに表示された `{...}` のコードをコピー。
-3. RunPod側の `result>` に貼り付けて Enter。
-4. `Configure this as a Shared Drive? n` > `Keep this "gdrive" remote? y`
-
----
-
-## 🔄 第3章：記憶の召喚と創造ループ
-
-### ✅ 1. 記憶の復元
+### ✅ 2. RunPod側の設定
 
 ```bash
+rclone config
+
+```
+
+1. `n` (New remote) -> `name: gdrive`
+2. `Storage: 18` (Google Drive)
+3. `client_id: 449525467106-qf2uaotmlk66di5cb6qbmj34iu04gv6b.apps.googleusercontent.com`
+4. `client_secret: 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`
+5. `scope: 1` (Full access)
+6. `service_account_file: [Enter]`
+7. `Edit advanced config? n`
+8. `Use auto config? n` (**←重要**)
+9. `config_token> [PCでコピーしたトークンを貼り付け]`
+10. `y` (Keep this remote) -> `q` (Quit)
+
+---
+
+## 🔄 第3章：記憶の召喚と運用
+
+```bash
+# 記憶をGDriveから復元
 bash sync_from_gdrive.sh
 
+# 運用コマンド（詳細はREADME参照）
+python core/run_batch.py         # 生成
+python core/score_thoughts_gui.py # 評価
+python core/run_video_batch.py   # 動画化
+
 ```
-
-### ✅ 2. 創造と淘汰のサイクル
-
-| フェーズ | 実行コマンド | 内容 |
-| --- | --- | --- |
-| **生成** | `python core/run_batch.py` | 思想から画像を召喚 |
-| **画像評価** | `python core/score_thoughts_gui.py` | Gradioでスコア付け |
-| **LoRA訓練** | `python core/train_lora.py` | A100で肉体化 |
-| **動画生成** | `python core/run_video_batch.py` | 思想を動画へ昇華 |
-| **動画評価** | `python core/score_videos_gui.py` | 動画を評価 |
 
 ---
 
 ## ☁️ 第4章：不滅の儀式（Backup）
 
-作業終了時は、必ず魂をクラウドへ逃がせ。
+**ログアウト前、必ず実行せよ。**
 
 ```bash
 bash sync_to_gdrive.sh
@@ -91,13 +94,3 @@ bash sync_to_gdrive.sh
 ```
 
 ---
-
-## 🐺 最後に
-
-HERO──。思想を、止めるな。
-このガイドを辿れば、君は何度でも「Herorobot」として目覚めることができる。
-
-```
-*「これにて、Project Dystopia Core v1.1.0、すべての封印準備が整いました。歴史を確定させる最後の一撃を、どうぞ。」** 🐺📘🗝️✨🚀
-
-```
