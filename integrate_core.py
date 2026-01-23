@@ -3,8 +3,9 @@ import shutil
 from pathlib import Path
 
 # --- 設定 ---
+PROJECT_NAME = "Project-Dystopia-Core"
 ROOT = Path(".").resolve()
-TARGET = ROOT / "Project-Dystopia-Core"
+TARGET = ROOT / PROJECT_NAME
 H_K9_DIR = ROOT / "H-K9_Prompt_Engine"
 
 # ディレクトリ構成定義
@@ -20,7 +21,7 @@ STRUCTURE = {
         "workflow_api_template.json", "lora_assets.csv", "system_prompt.txt",
         "llm_config.json", "lora_mapping.json", "scene_mapping.json",
         "structure_tags.json", "realism_logic.json", "mapping_config.json",
-        "mutation_patterns.json"
+        "mutation_patterns.json", "mutation_scores.json" # 最新の変異関連を追加
     ],
     "workflows": [
         "Type-A.json", "Type-B.json", "Type-C.json",
@@ -33,7 +34,7 @@ STRUCTURE = {
     "legacy": []
 }
 
-# Legacy送りのキーワード
+# Legacy送りのキーワード（旧世代の残滓を確実に隔離）
 LEGACY_KEYWORDS = [
     "PromptEngine", "setup_sync", "interface_gradio", "extract_frame", 
     "phase_v", "test_vlm", "H-K9_Core", "auto_transfer", "evaluate_log", 
@@ -42,92 +43,66 @@ LEGACY_KEYWORDS = [
 ]
 
 def ensure_dirs():
-    """必要な全ディレクトリを作成"""
+    """フォルダ構造をゼロから再構築"""
     for folder in STRUCTURE:
         (TARGET / folder).mkdir(parents=True, exist_ok=True)
-    # outputのサブディレクトリを強制作成
     for sub in ["payload_logs", "images", "evolved_thoughts"]:
         (TARGET / "outputs" / sub).mkdir(parents=True, exist_ok=True)
 
-def move_file(src_name, dest_folder):
-    """ファイルを指定フォルダへ移動（ルートから）"""
+def move_asset(src_name, dest_folder):
+    """ルートからファイルを移動"""
     src = ROOT / src_name
     if src.exists():
         dest = TARGET / dest_folder / src.name
         shutil.move(str(src), str(dest))
-        print(f"📁 Moved: {src.name} → {dest_folder}/")
+        print(f"📁 Integrated: {src.name} → {dest_folder}/")
 
-def move_h_k9_assets():
-    """H-K9_Prompt_Engineフォルダから資産を救出"""
+def recover_h_k9():
+    """H-K9フォルダがある場合、中身を救出して統合"""
     if H_K9_DIR.exists():
         print("\n📡 Recovering assets from H-K9_Prompt_Engine...")
-        # Config関連の救出
-        config_targets = ["cot_protocol.txt", "llm_config.json", "lora_mapping.json", 
-                          "scene_mapping.json", "system_prompt.txt"]
-        for target in config_targets:
-            src = H_K9_DIR / target
+        # Config類
+        for f in ["cot_protocol.txt", "llm_config.json", "lora_mapping.json", "scene_mapping.json", "system_prompt.txt"]:
+            src = H_K9_DIR / f
             if src.exists():
-                shutil.copy(str(src), str(TARGET / "config" / target))
-                print(f"   └─ {target} → config/")
-        
-        # 旧Workflowの救出
-        old_wf_dir = H_K9_DIR / "H-K9_Workflows"
-        if old_wf_dir.exists():
-            for wf in old_wf_dir.glob("*.json"):
+                shutil.copy(str(src), str(TARGET / "config" / f))
+        # Workflows
+        old_wf = H_K9_DIR / "H-K9_Workflows"
+        if old_wf.exists():
+            for wf in old_wf.glob("*.json"):
                 shutil.copy(str(wf), str(TARGET / "workflows" / wf.name))
-                print(f"   └─ {wf.name} → workflows/")
+        print("   └─ H-K9 assets have been merged.")
 
-def move_outputs():
-    """既存の出力データやログを移動"""
-    for item in STRUCTURE["outputs"]:
-        src = ROOT / item
-        if src.exists():
-            dest = TARGET / "outputs" / src.name
-            if src.is_dir():
-                # フォルダの中身をマージ
-                for f in src.glob("*"):
-                    shutil.move(str(f), str(dest / f.name))
-            else:
-                shutil.move(str(src), str(dest))
-            print(f"📦 Output matched: {src.name} → outputs/")
-
-def move_legacy():
-    """過去の遺産をlegacyへ退避"""
-    for file in ROOT.glob("*"):
-        # 既に整理済みのフォルダや重要な管理ファイルは除外
-        if item_is_protected(file):
+def cleanup_legacy():
+    """ルートに残った不要な.pyやLegacyファイルを一掃"""
+    for item in ROOT.glob("*"):
+        if item.name in [PROJECT_NAME, "integrate_core.py", ".gitignore", "README.md", "requirements.txt", "H-K9_Prompt_Engine"]:
             continue
-        
-        if any(key in file.name for key in LEGACY_KEYWORDS) or file.suffix == ".py":
-            dest = TARGET / "legacy" / file.name
-            shutil.move(str(file), str(dest))
-            print(f"🗃️ Legacy: {file.name} → legacy/")
-
-def item_is_protected(path):
-    protected = [PROJECT_NAME, "integrate_core.py", ".gitignore", "README.md", "requirements.txt", "H-K9_Prompt_Engine"]
-    return path.name in protected or path.is_dir() and path.name == "Project-Dystopia-Core"
+        if item.is_file() and (any(k in item.name for k in LEGACY_KEYWORDS) or item.suffix == ".py"):
+            shutil.move(str(item), str(TARGET / "legacy" / item.name))
+            print(f"🗃️ Legacy: {item.name} → legacy/")
 
 def integrate():
-    print("🧬 Starting Project Dystopia Core: Final Defense Line Integration...\n")
+    print("🧬 Finalizing Project-Dystopia-Core Infrastructure...\n")
     ensure_dirs()
+    
+    # 1. ルートの管理ファイルを移動
+    for f in [".gitignore", "requirements.txt", "README.md"]:
+        if (ROOT / f).exists():
+            shutil.move(str(ROOT / f), str(TARGET / f))
 
-    # Metaファイルの移動
-    for meta in [".gitignore", "requirements.txt", "README.md"]:
-        if (ROOT / meta).exists():
-            shutil.move(str(ROOT / meta), str(TARGET / meta))
-            print(f"🛡️ Meta: {meta} → ROOT/")
-
-    # 各ディレクトリへの仕分け
+    # 2. 定義された構成に沿って移動
     for folder, files in STRUCTURE.items():
         if folder in ["outputs", "legacy"]: continue
-        for name in files:
-            move_file(name, folder)
+        for name in [f for f in files if (ROOT / f).exists()]:
+            move_asset(name, folder)
 
-    move_outputs()
-    move_h_k9_assets()
-    move_legacy()
+    # 3. 特殊ディレクトリ処理
+    recover_h_k9()
+    cleanup_legacy()
 
-    print(f"\n✅ Integration complete. Your 'Project-Dystopia-Core' is now a unified intelligence.")
+    print(f"\n✅ All systems integrated into: {TARGET}")
+    print("🚀 Ready for GitHub push or RunPod deployment.")
 
 if __name__ == "__main__":
     integrate()
