@@ -1,13 +1,29 @@
-# Python
+# --- Python ---
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.env
 
-# Outputs
-outputs/images/
-outputs/payload_logs/
-outputs/evolved_thoughts/
+# --- Project Outputs (成果物は同期しない) ---
+outputs/images/*
+outputs/payload_logs/*
+outputs/evolved_thoughts/*
 outputs/thought_log.jsonl
 
-# Config (optional)
+# --- Config & Assets (個人設定・巨大資産) ---
+# テンプレートはGit管理しても良いですが、実データは除外を推奨
 config/workflow_api_template.json
 config/lora_assets.csv
+config/mutation_patterns.json
+
+# --- OS specific ---
+.DS_Store
+Thumbs.db
+
+# --- Data/Models (もしフォルダがある場合) ---
+models/
+input/
