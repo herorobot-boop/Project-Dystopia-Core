@@ -1,8 +1,8 @@
 import json
-import random
+import matplotlib.pyplot as plt
 from pathlib import Path
 from collections import defaultdict
-import matplotlib.pyplot as plt
+import numpy as np
 
 # --- 設定 ---
 BASE_PATH = Path("/workspace/Project-Dystopia-Core")
@@ -10,19 +10,12 @@ THOUGHT_LOG_PATH = BASE_PATH / "outputs/thought_log.jsonl"
 CHART_PATH = BASE_PATH / "outputs/mutation_score_chart.png"
 MUTATION_SCORE_PATH = BASE_PATH / "config/mutation_scores.json"
 
-def extract_mutation(scene: str, ancestor_scene: str) -> str | None:
-    if not ancestor_scene or scene == ancestor_scene:
-        return None
-    # 差分から変異を抽出
-    if scene.startswith(ancestor_scene):
-        return scene[len(ancestor_scene):].strip("、 ")
-    return None
+# 分析の信頼性を高めるための最小試行回数
+MIN_SAMPLES = 2
 
 def analyze_mutations():
-    if not THOUGHT_LOG_PATH.exists():
-        print("❌ thought_log.jsonl が見つかりません。")
-        return
-
+    if not THOUGHT_LOG_PATH.exists(): return
+    
     logs = []
     with open(THOUGHT_LOG_PATH, "r", encoding="utf-8") as f:
         for line in f:
@@ -30,57 +23,46 @@ def analyze_mutations():
             except: continue
 
     mutation_data = defaultdict(list)
-
     for entry in logs:
         meta = entry.get("meta", {})
-        ancestor_scene = meta.get("ancestor_scene") or ""
-        scene = entry.get("scene", "")
+        # ancestor_sceneと現在のsceneの差分から変異を特定
+        anc = meta.get("ancestor_scene", "")
+        cur = entry.get("scene", "")
         score = entry.get("score")
+        if score is not None and cur.startswith(anc) and cur != anc:
+            mut = cur[len(anc):].strip("、 ")
+            mutation_data[mut].append(score)
 
-        if score is None: continue
+    if not mutation_data: return
 
-        mutation = extract_mutation(scene, ancestor_scene)
-        if mutation:
-            mutation_data[mutation].append(score)
-
-    if not mutation_data:
-        print("⚠️ 変異パターンが検出されませんでした。")
-        return
-
-    # 平均スコアの算出とソート
     stats = {}
     for mut, scores in mutation_data.items():
-        avg = sum(scores) / len(scores)
-        stats[mut] = {"avg": round(avg, 2), "count": len(scores)}
+        if len(scores) < MIN_SAMPLES: continue # フィルタリング
+        stats[mut] = {
+            "avg": round(float(np.mean(scores)), 2),
+            "median": round(float(np.median(scores)), 2),
+            "count": len(scores)
+        }
 
+    # スコア順にソート
     sorted_stats = sorted(stats.items(), key=lambda x: x[1]["avg"], reverse=True)
-
-    print("🧪 --- Project Dystopia: 変異パターン評価レポート ---")
-    labels, averages = [], []
     
-    # スコア辞書の更新用
-    new_scores = {}
-
-    for mut, data in sorted_stats:
-        avg, count = data["avg"], data["count"]
-        bar = "█" * int(avg)
-        print(f"{mut:<30} | 平均: {avg:.2f} | 件数: {count:>2} | {bar}")
-        labels.append(mut)
-        averages.append(avg)
-        new_scores[mut] = avg
-
-    # 1. グラフ保存
-    plt.figure(figsize=(10, 6))
-    plt.barh(labels[::-1], averages[::-1], color="skyblue")
-    plt.title("Mutation Performance (Average Score)")
-    plt.tight_layout()
-    plt.savefig(CHART_PATH)
-    print(f"\n📊 グラフを保存: {CHART_PATH.name}")
-
-    # 2. 次世代用スコアファイルの自動生成
+    # mutation_scores.json を自動生成（次世代の進化に即座に反映）
+    new_scores = {mut: d["avg"] for mut, d in sorted_stats}
     with open(MUTATION_SCORE_PATH, "w", encoding="utf-8") as f:
         json.dump(new_scores, f, indent=2, ensure_ascii=False)
-    print(f"🧬 自動学習完了: {MUTATION_SCORE_PATH.name} を更新しました。")
+
+    # グラフ出力
+    labels = [f"{m} (n={d['count']})" for m, d in sorted_stats]
+    avgs = [d["avg"] for m, d in sorted_stats]
+    
+    plt.figure(figsize=(12, 8))
+    plt.barh(labels[::-1], avgs[::-1], color="teal")
+    plt.xlabel("Average Score")
+    plt.title("Mutation Performance Analysis")
+    plt.tight_layout()
+    plt.savefig(CHART_PATH)
+    print(f"📊 Analysis complete. Data saved to {MUTATION_SCORE_PATH.name}")
 
 if __name__ == "__main__":
     analyze_mutations()
