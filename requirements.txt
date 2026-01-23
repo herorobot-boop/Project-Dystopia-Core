@@ -1,4 +1,17 @@
+# --- ネットワーク・API制御 ---
 requests
+
+# --- データ解析・統計 ---
 pandas
-pathlib
-# 他に thought_generator.py で使用するライブラリ（openai, anthropic等）があれば追記
+openpyxl
+matplotlib
+
+# --- 設定ファイル処理 ---
+PyYAML
+
+# --- ユーザーインターフェース ---
+tqdm
+gradio
+
+# --- 画像処理（オプション：将来の解析用） ---
+Pillow
