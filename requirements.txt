@@ -1,0 +1,4 @@
+requests
+pandas
+pathlib
+# 他に thought_generator.py で使用するライブラリ（openai, anthropic等）があれば追記
