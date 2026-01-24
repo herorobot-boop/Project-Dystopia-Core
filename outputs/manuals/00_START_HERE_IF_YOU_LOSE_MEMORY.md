@@ -43,8 +43,7 @@ RunPodはブラウザが動かない。以下の手順で**「手元のPC」**�
 PCのターミナルで以下のコマンドを実行（あなたのIDを埋め込み済み）：
 
 ```bash
-rclone authorize "drive" "449525467106-qf2uaotmlk66di5cb6qbmj34iu04gv6b.apps.googleusercontent.com" "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"
-
+.\rclone authorize "drive" "449525467106-qf2uaotmlk66di5cb6qbmj34iu04gv6b.apps.googleusercontent.com" "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"
 ```
 
 → ブラウザで許可し、表示された `{"access_token":...}` をコピー。
