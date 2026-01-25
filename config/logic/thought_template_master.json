@@ -1,37 +1,46 @@
 {
-  "project": "Project Dystopia",
-  "engine_version": "1.1-Hybrid",
+  "project": "Project Dystopia: H-K9 Core",
+  "engine_version": "2.0-Physics-Matrix",
   "global_overrides": {
-    "optical": "smartphone_UGC_style, lens_dust, intentional_digital_noise, slight_chromatic_aberration",
-    "physics": "flesh_deformation, gravitational_sagging, skin_indentation_from_clothing",
+    "optical": "UGC_style, cctv_glitch, intentional_overexposure, sensor_noise, heavy_vignetting",
+    "physics": "soft_body_simulation, meat_indentation, gravitational_load_analysis",
     "identity": "identity_anchor_active: japanese_girl_v1.1, signature_moles_fixed"
   },
-  "realism_genetics": {
-    "tags": ["rim_light_on_peach_fuzz", "flushed_collarbone", "vein_visibility_under_skin", "blurred_foreground_occlusion"],
-    "fabric_logic": {
-      "material_interaction": "ribbed_knit_stretch, cotton_wrinkles, denim_stiffness, sheer_transparency_under_rimlight",
-      "action_state": "mid-adjustment, shifting_fabric, unintended_exposure"
+  "simulation_genetics": {
+    "deformation_logic": {
+      "indentation_depth": "range[20mm-50mm]",
+      "pressure_points": "elastic_waistband, restrictive_cuffs, intimate_contact_v2",
+      "flesh_overlap_intensity": "high"
+    },
+    "resource_state": {
+      "viscosity": "viscous_fluid_physics, honey-like_consistency",
+      "saturation": "fabric_permeation_70%, skin_surface_coating_max",
+      "thermal_effect": "body_heat_steam, condensation"
     }
   },
   "context_matrix": {
     "free": {
-      "focus": "Daily_Relatability",
-      "view": "eye-level, wide_shot, mirror_selfie",
-      "lighting": "natural_daylight, flat_indoor",
-      "meta": { "target": "Public_Growth", "threshold": "Safe_but_Real" }
+      "focus": "Daily_Surveillance",
+      "view": "high-angle_cctv, casual_smartphone_angle",
+      "lighting": "harsh_fluorescent, flat_indoor_lighting",
+      "meta": { "threshold": "Social_Boundary_Edge" }
     },
     "teaser": {
-      "focus": "Information_Hunger",
-      "view": "voyeuristic_peek, through_the_gap, high_angle_surveillance",
-      "lighting": "sunset_chiaroscuro, long_shadows",
-      "meta": { "target": "Conversion", "threshold": "Hint_of_Forbidden" }
+      "focus": "Voyeuristic_Evidence",
+      "view": "crevice_view, telephoto_zoom_compression, shaky_cam",
+      "lighting": "sunset_chiaroscuro, deep_shadow_contrast",
+      "meta": { "threshold": "Evidence_of_Contamination" }
     },
     "paid": {
-      "focus": "Physiological_Ecstasy",
-      "view": "extreme_close_up, low_angle_floor_pov, dutch_angle",
-      "lighting": "dim_red_neon, moody_rim_light, high_contrast_shadows",
-      "physiology": "hyper-realistic_sweat_sheen, dilated_pupils, parted_lips_breathing, flushed_skin",
-      "meta": { "target": "LTV_Max", "threshold": "Deep_Uncensored_Realism" }
+      "focus": "Absolute_Physical_Domination",
+      "view": "macro_physics_pov, ground_level_distorted_perspective, extreme_close-up",
+      "lighting": "direct_camera_flash_washout, dim_red_emergency_light",
+      "physiology": {
+        "respiration": "rapid_shallow_breathing, vocal_cord_vibration",
+        "autonomic": "excessive_perspiration, capillary_dilation, hyper-reflexia",
+        "state": "consciousness_drift, sensory_overload_shutdown"
+      },
+      "meta": { "threshold": "Total_Resource_Saturation" }
     }
   }
 }
