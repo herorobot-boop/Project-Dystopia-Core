@@ -10,14 +10,33 @@ CURRENT_DIR = Path(__file__).resolve().parent
 if str(CURRENT_DIR) not in sys.path:
     sys.path.append(str(CURRENT_DIR))
 
+def apply_physics_weight(text: str) -> str:
+    """
+    特定の物理干渉キーワードを検知し、強制的に強調ウェイトを付与する。
+    """
+    critical_keywords = [
+        "indentation", "flesh overlap", "squish", "clinging", 
+        "permeation", "backflow", "deformation", "skin redness",
+        "resource accumulation", "tightness"
+    ]
+    
+    words = text.split(", ")
+    weighted_words = []
+    for word in words:
+        if any(ck in word.lower() for ck in critical_keywords):
+            # 物理キーワードには1.3のウェイトを強制
+            weighted_words.append(f"({word}:1.3)")
+        else:
+            weighted_words.append(word)
+    return ", ".join(weighted_words)
+
 def build_prompt(thought_json: dict, negative: bool = False) -> str:
     """
-    人物固定タグとLoRAタグを統合して、最終的なプロンプトを構築する。
-    [HERO's Logic Preserved: 質感・干渉・生理反応の重層構造を維持]
+    [H-K9 Architecture: 物理強調ロジックを組み込んだプロンプト構築]
     """
     context = thought_json.get("context_type", "free")
 
-    # --- ネガティブプロンプト構築 (変更なし) ---
+    # --- ネガティブプロンプト構築 ---
     if negative:
         base_negatives = [
             "worst quality", "low quality", "normal quality", "jpeg artifacts",
@@ -27,7 +46,8 @@ def build_prompt(thought_json: dict, negative: bool = False) -> str:
         if context == "free":
             base_negatives += ["nsfw", "nude", "cleavage", "underwear", "suggestive"]
         elif context == "paid":
-            base_negatives += ["perfect symmetry", "studio lighting", "airbrushed skin", "makeup"]
+            # 有料版では「清潔感」や「美化」をネガティブに叩き込む
+            base_negatives += ["perfect symmetry", "studio lighting", "airbrushed skin", "makeup", "clean"]
         
         return ", ".join(base_negatives)
 
@@ -39,33 +59,33 @@ def build_prompt(thought_json: dict, negative: bool = False) -> str:
     # Identity（人物記述）
     identity_tags = thought_json.get("identity_tag", "1girl")
 
-    # 構図・照明・シーン (新構造のパス経由でもデータ形式を維持)
+    # 構成要素の取得と物理強調の適用
     vc = thought_json.get("visual_config", {})
     view = vc.get("view", "").replace("_", " ")
     lighting = vc.get("lighting", "").replace("_", " ")
     focus = vc.get("focus_strategy", "").replace("_", " ")
-    scene = thought_json.get("scene_context", "")
+    scene = apply_physics_weight(thought_json.get("scene_context", ""))
 
     # 質感・干渉
     fabric_logic = thought_json.get("fabric_logic", {})
-    fabric = fabric_logic.get("material_interaction", "").replace("_", " ")
+    fabric = apply_physics_weight(fabric_logic.get("material_interaction", "").replace("_", " "))
     action = fabric_logic.get("action_state", "").replace("_", " ")
     
-    # 生理反応 (Paidのみ)
+    # 生理反応 (Paidのみ強調)
     physiology = thought_json.get("physiology_detail", "").replace("_", " ")
     if physiology:
-        physiology = f"({physiology}:1.2)"
+        physiology = f"({physiology}:1.4)" # 生理反応は最優先
 
     # リアリズム・光学
     realism_tags = [t.replace("_", " ") for t in thought_json.get("realism_tags", [])]
     overrides = thought_json.get("global_overrides", {})
     optical = overrides.get("optical", "").replace("_", " ")
-    physics = overrides.get("physics", "").replace("_", " ")
+    physics = apply_physics_weight(overrides.get("physics", "").replace("_", " "))
 
-    # --- 最終結合（情報の重層構造：HERO's Architecture） ---
+    # --- 最終結合 ---
     prompt_parts = [
         *lora_tags,
-        "masterpiece, best quality, photographic, sharp focus",
+        "masterpiece, best quality, photographic, sharp focus, raw photo",
         scene,
         identity_tags,
         f"{view}, {lighting}, {focus}",
@@ -80,16 +100,10 @@ def build_prompt(thought_json: dict, negative: bool = False) -> str:
     return final_prompt.replace("_", " ").strip()
 
 if __name__ == "__main__":
-    # テスト：新構造での動作確認
     try:
         from thought_generator import generate_thought
-        print(f"[*] Project Root: {BASE_DIR}")
-        
-        # テスト出力
-        thought = generate_thought("深夜の公園のベンチ", context_type="teaser")
-        print("\n🧠 Integrated Positive Prompt:\n", build_prompt(thought))
-        print("\n🚫 Integrated Negative Prompt:\n", build_prompt(thought, negative=True))
-    except ImportError as e:
-        print(f"[-] ImportError: {e}. Check if thought_generator.py is in core/engines/")
+        # テスト実行
+        thought = generate_thought("tight lora test with resource", context_type="paid")
+        print("\n🧠 H-K9 Physics-Boosted Prompt:\n", build_prompt(thought))
     except Exception as e:
-        print(f"[-] Execution Error: {e}")
+        print(f"[-] Error: {e}")
