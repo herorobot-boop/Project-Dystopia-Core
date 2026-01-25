@@ -1,0 +1,2 @@
+mkdir -p /workspace/Project-Dystopia-Core/protocols
+mv /workspace/Project-Dystopia-Core/protocols/HK9_MASTER.txt /workspace/Project-Dystopia-Core/protocols/HK9_MASTER.txt 2>/dev/null || true
