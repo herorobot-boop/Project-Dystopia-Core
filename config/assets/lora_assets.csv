@@ -1,1 +1,7 @@
-
+File Name,Trigger Word,Type,Notes
+Pov_xl_v1.5.safetensors,pov,Concept,H-K9必須演出・視点固定
+Flesh_Indentation_v2.safetensors,indentation,Physics,肉体の食い込み強調
+Resource_Saturation_XL.safetensors,resource accumulation,Fluid,資源の堆積・白濁
+Japanese_Public_Phone_SDXL.safetensors,public phone,Environment,公衆電話・ロケーション
+Thin_Tights_Trans_XL.safetensors,30denier tights,Material,タイツの透過・素材感
+Wet_Effect_Pro.safetensors,wet clothing,Physics,濡れ・張り付き演出
