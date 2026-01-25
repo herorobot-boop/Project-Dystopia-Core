@@ -1,0 +1,23 @@
+# H-K9 ComfyUI External Model Path Configuration
+# This file tells ComfyUI where the Project-Dystopia models are located.
+
+comfyui:
+    # 標準のモデルベースディレクトリ（setup_models.pyの同期先）
+    base_path: /workspace/models
+
+    checkpoints: checkpoints/
+    loras: loras/
+    vae: vae/
+    controlnet: controlnet/
+    clip: clip/
+    unet: unet/
+    upscale_models: upscale_models/
+    embeddings: embeddings/
+    
+    # H-K9 特化型：ADetailerやカスタムノード用
+    adetailer: adetailer/
+
+# 動画生成エンジン (Hunyuan / Wan2.1) 用のパス
+# 5090のパワーを活かすため、大容量パスを明示
+diffusion_models: /workspace/models/unet
+vae_approx: /workspace/models/vae
