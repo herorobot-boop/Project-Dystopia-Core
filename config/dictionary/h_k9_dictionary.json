@@ -1,4 +1,15 @@
-{
+{"modifications": {
+    "改01": { "name": "完全服従スク水", "effect": "school_swimsuit", "physics": "tight_compression", "denoise": 0.75 },
+    "改02": { "name": "極限マイクロビキニ", "effect": "micro_bikini", "physics": "extreme_flesh_overlap", "denoise": 0.8 },
+    "改03": { "name": "30Dタイツ/ガーター", "effect": "tights_garter", "physics": "skin_indentation", "denoise": 0.7 },
+    "改04": { "name": "肉体膨張（巨乳化）", "effect": "breast_enlargement_p200", "physics": "fabric_burst", "denoise": 0.6 },
+    "改05": { "name": "M字開脚固定", "effect": "m_pose_fixed", "physics": "joint_stress", "denoise": 0.85 },
+    "改06": { "name": "資源コーティング（精液）", "effect": "semen_coating", "physics": "viscous_fluid_gloss", "denoise": 0.5 },
+    "改07": { "name": "完全裸体化", "effect": "total_nudity", "physics": "natural_gravity", "denoise": 0.9 },
+    "改08": { "name": "四つん這い/背面挿入", "effect": "all_fours_pose", "physics": "spinal_curve", "denoise": 0.8 },
+    "改09": { "name": "肉体食い込み（Squish）", "effect": "heavy_squish", "physics": "deep_indentation_3cm", "denoise": 0.7 },
+    "改10": { "name": "CCTV/スマホ接写", "effect": "handheld_camera_pov", "physics": "lens_distortion", "denoise": 0.4 }
+  },
   "医療#1": "身長・体重測定。バーを男性器に置換。頭上への射精、または口内への直接挿入なかだし。肉体の厚みをスマホで記録。",
   "医療#2": "視力・聴力検査。遮眼子の代わりに男性器で目を覆い、耳元で資源放出音を聞かせる。反応をCCTVで記録。",
   "医療#3": "血圧・心拍数。腕への強烈な圧搾(Squish)と、胸部への直接的な男性器接触。鼓動の高鳴りと資源注入の同期。",
