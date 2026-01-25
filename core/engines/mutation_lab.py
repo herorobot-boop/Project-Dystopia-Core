@@ -4,17 +4,18 @@ from pathlib import Path
 from collections import defaultdict
 import numpy as np
 
-# --- 設定 ---
-BASE_PATH = Path("/workspace/Project-Dystopia-Core")
-THOUGHT_LOG_PATH = BASE_PATH / "outputs/thought_log.jsonl"
-CHART_PATH = BASE_PATH / "outputs/mutation_score_chart.png"
-MUTATION_SCORE_PATH = BASE_PATH / "config/mutation_scores.json"
+# --- 神経接続：新構造パスの動的特定 ---
+BASE_DIR = Path(__file__).resolve().parents[2]
+THOUGHT_LOG_PATH = BASE_DIR / "outputs/payload_logs/thought_log.jsonl"
+CHART_PATH = BASE_DIR / "outputs/mutation_score_chart.png"
+MUTATION_SCORE_PATH = BASE_DIR / "config/logic/mutation_scores.json"
 
-# 分析の信頼性を高めるための最小試行回数
 MIN_SAMPLES = 2
 
 def analyze_mutations():
-    if not THOUGHT_LOG_PATH.exists(): return
+    if not THOUGHT_LOG_PATH.exists(): 
+        print(f"[-] No log found at {THOUGHT_LOG_PATH}")
+        return
     
     logs = []
     with open(THOUGHT_LOG_PATH, "r", encoding="utf-8") as f:
@@ -25,44 +26,44 @@ def analyze_mutations():
     mutation_data = defaultdict(list)
     for entry in logs:
         meta = entry.get("meta", {})
-        # ancestor_sceneと現在のsceneの差分から変異を特定
         anc = meta.get("ancestor_scene", "")
         cur = entry.get("scene", "")
         score = entry.get("score")
-        if score is not None and cur.startswith(anc) and cur != anc:
+        # 差分から変異キーワードを特定する HERO's Logic
+        if score is not None and anc and cur.startswith(anc) and cur != anc:
             mut = cur[len(anc):].strip("、 ")
             mutation_data[mut].append(score)
 
-    if not mutation_data: return
+    if not mutation_data: 
+        print("[-] No valid mutation data to analyze.")
+        return
 
     stats = {}
     for mut, scores in mutation_data.items():
-        if len(scores) < MIN_SAMPLES: continue # フィルタリング
+        if len(scores) < MIN_SAMPLES: continue 
         stats[mut] = {
             "avg": round(float(np.mean(scores)), 2),
-            "median": round(float(np.median(scores)), 2),
             "count": len(scores)
         }
 
-    # スコア順にソート
+    # スコア順にソートし、次世代の進化パラメータ（JSON）を更新
     sorted_stats = sorted(stats.items(), key=lambda x: x[1]["avg"], reverse=True)
-    
-    # mutation_scores.json を自動生成（次世代の進化に即座に反映）
     new_scores = {mut: d["avg"] for mut, d in sorted_stats}
+    
     with open(MUTATION_SCORE_PATH, "w", encoding="utf-8") as f:
         json.dump(new_scores, f, indent=2, ensure_ascii=False)
 
-    # グラフ出力
-    labels = [f"{m} (n={d['count']})" for m, d in sorted_stats]
-    avgs = [d["avg"] for m, d in sorted_stats]
-    
-    plt.figure(figsize=(12, 8))
-    plt.barh(labels[::-1], avgs[::-1], color="teal")
-    plt.xlabel("Average Score")
-    plt.title("Mutation Performance Analysis")
-    plt.tight_layout()
-    plt.savefig(CHART_PATH)
-    print(f"📊 Analysis complete. Data saved to {MUTATION_SCORE_PATH.name}")
+    # グラフ出力（可視化）
+    if sorted_stats:
+        labels = [f"{m} (n={d['count']})" for m, d in sorted_stats]
+        avgs = [d["avg"] for m, d in sorted_stats]
+        plt.figure(figsize=(12, 8))
+        plt.barh(labels[::-1], avgs[::-1], color="teal")
+        plt.xlabel("Average Mutation Performance Score")
+        plt.title("H-K9 Mutation Performance Analysis")
+        plt.tight_layout()
+        plt.savefig(CHART_PATH)
+        print(f"📊 Analysis complete. Evolution scores updated: {MUTATION_SCORE_PATH.name}")
 
 if __name__ == "__main__":
     analyze_mutations()
