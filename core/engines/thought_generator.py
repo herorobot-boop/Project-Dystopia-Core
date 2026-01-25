@@ -1,15 +1,33 @@
 import json
 import datetime
 import random
+import sys
 from pathlib import Path
-from lora_selector import select_lora
 
-BASE_DIR = Path("/workspace/Project-Dystopia")
-TEMPLATE_PATH = BASE_DIR / "config/thought_template_master.json"
+# --- 神経接続：プロジェクトルートの動的特定 ---
+# 自身の場所 (core/engines/) から2階層上がルート
+BASE_DIR = Path(__file__).resolve().parents[2]
+
+# --- 依存モジュールのパス追加 ---
+# utils フォルダにある lora_selector.py 等を読み込めるようにする
+UTILS_DIR = BASE_DIR / "utils"
+if str(UTILS_DIR) not in sys.path:
+    sys.path.append(str(UTILS_DIR))
+
+try:
+    from lora_selector import select_lora
+except ImportError:
+    # 後のデバッグ用にエラーを可視化
+    def select_lora(*args, **kwargs):
+        print("[-] Warning: lora_selector could not be loaded from utils/")
+        return []
+
+# --- 整理された新構造のパス定義 ---
+TEMPLATE_PATH = BASE_DIR / "config/logic/thought_template_master.json"
 
 def load_thought_template(path=TEMPLATE_PATH):
     if not path.exists():
-        raise FileNotFoundError(f"Template not found at {path}")
+        raise FileNotFoundError(f"Template not found at {path}\nCheck if the file exists in config/logic/")
     with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
 
@@ -34,7 +52,7 @@ def generate_thought(scene_context: str, context_type: str = "free", variation_i
         "1girl, student, uniform"
     ])
 
-    # 2. 自動LoRAセレクターの実行（CSV資産との突合）
+    # 2. 自動LoRAセレクターの実行（utils/lora_selector.py を使用）
     lora_settings = select_lora(scene_context, view_str, context_type)
 
     # 3. 思想構造体の構築
@@ -62,7 +80,7 @@ def generate_thought(scene_context: str, context_type: str = "free", variation_i
 
     # プロンプト構築の論理（因果関係の記録）
     base["prompt_logic"] = {
-        "applied_loras": [l['name'] for l in lora_settings],
+        "applied_loras": [l['name'] for l in lora_settings] if lora_settings else [],
         "identity_direction": identity_tag,
         "context_priority": "Physiological" if context_type == "paid" else "Relatability"
     }
@@ -70,9 +88,10 @@ def generate_thought(scene_context: str, context_type: str = "free", variation_i
     return base
 
 if __name__ == "__main__":
-    # テスト：資産CSVを読み込んで「公衆電話」の思想を生成
+    # テスト：新構造での動作確認
+    print(f"[*] Project Root detected: {BASE_DIR}")
     try:
         thought = generate_thought("雨の公衆電話で誰かを待つ", context_type="paid")
         print(json.dumps(thought, indent=2, ensure_ascii=False))
     except Exception as e:
-        print(f"Error: {e}")
+        print(f"Error during execution: {e}")
