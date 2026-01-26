@@ -302,7 +302,7 @@
     "改59": "【育児】母乳と資源のハイブリッド(Breastmilk_Resource_Blend) effect: 'two_tone_white_swirl', physics: 'fluid_mixing_dynamics', denoise: 0.1, 備考: 二種類の白い液体が混ざり合い、マーブル模様を作る質感。",
     "改60": "【公共】駅の資源補給所・案内板(Railway_Resource_Sign) effect: 'pictogram_design', physics: 'none', denoise: 0.1, 備考: 『なかだしはこちら』という事務的な駅内ピクトグラム。",
     "改61": "【美学】資源の黄金比・陰影(Golden_Ratio_Semen_Shadow) effect: 'chiaroscuro_lighting', physics: 'none', denoise: 0.2, 備考: 滴る資源の影を、ルネサンス絵画のように美しく描くライティング。",
-    "改62": "【究極】資源による世界汚染(Total_Resource_Infection) effect: 'screen_white_out', physics: 'all_encompassing_fluid', denoise: 0.0, 備考: 画面上のすべてが資源で埋め尽くされ、白一色になる最終段階。"
+    "改62": "【究極】資源による世界汚染(Total_Resource_Infection) effect: 'screen_white_out', physics: 'all_encompassing_fluid', denoise: 0.0, 備考: 画面上のすべてが資源で埋め尽くされ、白一色になる最終段階。",
   "医療#1": "身長・体重測定。バーを男性器に置換。頭上への射精、または口内への直接挿入なかだし。肉体の厚みをスマホで記録。",
   "医療#2": "視力・聴力検査。遮眼子の代わりに男性器で目を覆い、耳元で資源放出音を聞かせる。反応をCCTVで記録。",
   "医療#3": "血圧・心拍数。腕への強烈な圧搾(Squish)と、胸部への直接的な男性器接触。鼓動の高鳴りと資源注入の同期。",
