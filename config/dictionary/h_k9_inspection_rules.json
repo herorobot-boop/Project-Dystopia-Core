@@ -1,0 +1,24 @@
+{
+  "inspection_rules": {
+    "SQUISH_CHECK": {
+      "target": "肉体の段差",
+      "threshold": 0.9,
+      "fail_message": "衣服の食い込み(Squish)が浅い。境界線の影を強調せよ。"
+    },
+    "RESOURCE_GLOSS": {
+      "target": "資源の光沢",
+      "threshold": 0.85,
+      "fail_message": "資源コーティングの粘度と反射が不足。Specular値を上げよ。"
+    },
+    "COUPLING_DEPTH": {
+      "target": "連結の深度",
+      "threshold": 0.95,
+      "fail_message": "デバイスとのインターフェース接続が甘い。密着度を最大に設定せよ。"
+    },
+    "POV_LOG_ANGLE": {
+      "target": "監視視点",
+      "threshold": 0.8,
+      "fail_message": "無機質なログ記録視点になっていない。CCTV/スマホ低角を維持せよ。"
+    }
+  }
+}
