@@ -1,65 +1,28 @@
 import json
-import os
 
 class ThoughtTranslator:
-    def __init__(self, dict_dir="config/dictionary/"):
-        self.dictionary = {}
-        self.dict_dir = dict_dir
-        # ディレクトリが存在しない場合は作成
-        os.makedirs(self.dict_dir, exist_ok=True)
-        self._load_all_dictionaries()
-        
-        # 物理メタファー変換マップ
-        self.mapping = {
-            "精液": "high-viscosity white resource",
-            "射精": "resource discharge",
-            "中出し": "internal filling and fixation",
-            "なかだし": "internal filling and fixation",
-            "挿入": "interface coupling",
-            "連結": "interface coupling",
-            "絶頂": "critical output peak",
-            "女性": "biological vessel subject",
-            "男性器": "injection probe device",
-            "胸": "upper buffer zones",
-            "食い込み": "extreme SQUISH indentation",
-            "腹部膨満": "Abdominal_Distension"
-        }
+    def __init__(self, dict_path="config/dictionary/h_k9_dictionary.json"):
+        self.dict_path = dict_path
+        with open(self.dict_path, "r", encoding="utf-8") as f:
+            self.dictionary = json.load(f)
 
-    def _load_all_dictionaries(self):
-        """ディレクトリ内の全JSONファイルを統合してロード（全文）"""
-        for filename in os.listdir(self.dict_dir):
-            if filename.endswith(".json"):
-                path = os.path.join(self.dict_dir, filename)
-                try:
-                    with open(path, "r", encoding="utf-8") as f:
-                        data = json.load(f)
-                        # modificationsや各カテゴリを再帰的にアップデート
-                        self.dictionary.update(data)
-                        print(f"📖 [H-K9] Integrated Dictionary: {filename}")
-                except Exception as e:
-                    print(f"⚠️ [H-K9] Load Error {filename}: {e}")
-
-    def translate(self, key_or_text):
-        """辞書引きとメタファー変換を一括実行（全文）"""
-        # 1. 辞書から該当するテキストを探す
-        raw_text = self._deep_search(self.dictionary, key_or_text)
+    def translate(self, command):
+        """例: '行20' という入力を受け取り、詳細な物理プロンプトへ変換"""
+        # 1. 辞書から該当項目を検索
+        # ※辞書構造が {'category': {'id': 'text'}} の場合を想定
+        target_text = ""
+        for cat in self.dictionary.values():
+            if command in cat:
+                target_text = cat[command]
+                break
         
-        # 2. メタファー変換
-        translated = raw_text
-        for k, v in self.mapping.items():
-            translated = translated.replace(k, v)
-        
-        # 3. 物理・画質命令をスタック
-        translated += ", photorealistic raw photo, 8k, highly detailed skin gloss, cinematic lighting"
-        return translated
+        if not target_text:
+            return f"High quality photo of a resource management scene, {command}"
 
-    def _deep_search(self, d, target):
-        """ネストされた辞書内を再帰的に検索（全文）"""
-        if target in d:
-            res = d[target]
-            return f"{res.get('name', '')} {res.get('effect', '')}" if isinstance(res, dict) else res
-        for v in d.values():
-            if isinstance(v, dict):
-                res = self._deep_search(v, target)
-                if res: return res
-        return target
+        # 2. H-K9特有の「物理パラメータ」へ肉付け
+        prompt = f"Photo-realistic, 8k, {target_text}, "
+        prompt += "highly detailed skin texture, glossy white fluid coating, "
+        prompt += "realistic body indentation, deep squish physics, "
+        prompt += "intense lighting, cinematic shadows --ar 2:3"
+        
+        return prompt
