@@ -1,0 +1,35 @@
+{
+  "modifications": {
+    "改01": { "name": "完全服従スク水", "effect": "school_swimsuit", "physics": "tight_compression", "denoise": 0.75 },
+    "改02": { "name": "極限マイクロビキニ", "effect": "micro_bikini", "physics": "extreme_flesh_overlap", "denoise": 0.8 },
+    "改03": { "name": "30Dタイツ/ガーター", "effect": "tights_garter", "physics": "skin_indentation", "denoise": 0.7 },
+    "改04": { "name": "肉体膨張（巨乳化）", "effect": "breast_enlargement_p200", "physics": "fabric_burst", "denoise": 0.6 },
+    "改05": { "name": "M字開脚固定", "effect": "m_pose_fixed", "physics": "joint_stress", "denoise": 0.85 },
+    "改06": { "name": "資源コーティング", "effect": "semen_coating", "physics": "viscous_fluid_gloss", "denoise": 0.5 },
+    "改09": { "name": "肉体食い込み（Squish）", "effect": "heavy_squish", "physics": "deep_indentation_3cm", "denoise": 0.7 },
+    "改12": { "name": "資源定着", "effect": "internal_filling", "physics": "translucent_belly_distension", "denoise": 0.8 },
+    "改15": { "name": "衣装汚染", "effect": "clothing_leakage", "physics": "wet_transparency", "denoise": 0.75 },
+    "改17": { "name": "生体警告", "effect": "abdominal_distension", "physics": "skin_stretch_warning", "denoise": 0.8 },
+    "改26": { "name": "資源粘度", "effect": "viscous_stringing", "physics": "surface_tension_modeling", "denoise": 0.6 },
+    "改31": { "name": "生体育成", "effect": "glossy_skin_enhancement", "physics": "subsurface_scattering_glow", "denoise": 0.5 },
+    "改63": { "name": "Cinematic_Splash", "effect": "high_fidelity_splatter", "physics": "ultra_slow_motion_fluid", "denoise": 0.4 },
+    "改84": { "name": "Glossy_Skin", "effect": "white_fluid_glow", "physics": "high_specular_gloss", "denoise": 0.5 }
+  },
+  "アーカイブ_A": {
+    "#44_警察24時": "資源不法投棄の検挙。現場での強制内部充填による身元確認。BodyCam記録。",
+    "#13_情熱大陸": "資源管理に従事する供給者と検体の日常を密着ドキュメント。無機質な定点記録。"
+  },
+  "アーカイブ_B": {
+    "#43_つくってあそぼ": "資源（抽出液）を工作用素材として扱う情操教育。検体による資源活用実演。",
+    "企画#32_AC": "公共の場での正しい連結マナー啓発。歩きなかだしの防止キャンペーン。"
+  },
+  "アーカイブ_C": {
+    "#45_格付けチェック": "資源の粘度と光沢による供給デバイスの選別。一流供給者の資源判別プロセス。",
+    "配信#03_VTuber": "アバターの動きと中の人へのプローブ接続が完全同期する。臨界状態のリアルタイム配信。"
+  },
+  "アーカイブ_D": {
+    "企画#30_天然水CM": "資源がいかに肌を白く輝かせるかを清潔感あふれる映像で描く。Glossy_Skinの極致。",
+    "#60_サラメシ": "昼食の代わりにデスク下で内部充填を受け、午後の業務に備えるOLのルーチン。"
+  },
+  "医療#1": "身長・体重測定。バーを供給デバイスに置換。資源定着による肉体の厚みを記録。"
+}
