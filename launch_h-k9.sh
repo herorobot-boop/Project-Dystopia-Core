@@ -1,33 +1,35 @@
 #!/bin/bash
 
 # ==========================================================
-# H-K9 COMMAND CENTER: SELF-EVOLVING LAUNCHER
+# H-K9 COMMAND CENTER: FINAL LAUNCHER (V3)
 # ==========================================================
 
 echo "🐺 [H-K9] Initiating Self-Evolving Environment..."
 
-# --- 準備工程 (省略/前述と同じ) ---
 PROJECT_ROOT=$(pwd)
 COMFYUI_DIR="/workspace/ComfyUI"
-git reset --hard origin/main
+
+# 1. GitHub 同期
+git fetch origin main && git reset --hard origin/main
+
+# 2. 環境変数と最適化
 export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
+export TORCH_CUDA_ARCH_LIST="8.0 8.6 8.9 9.0"
+
+# 3. 依存関係の修復
 pip install -q pandas pathlib flask requests opencv-python-headless sageattention xformers
 
-# --- 起動とループ ---
-echo "🚀 [H-K9] Launching ComfyUI & Inspector..."
+# 4. tmux セッションの構築（画面分割）
+# セッション名: h_k9
+tmux new-session -d -s h_k9
 
-# ComfyUIをバックグラウンド起動
-cd $COMFYUI_DIR
-python3 main.py --listen 0.0.0.0 --port 8188 --bf16-storage --extra-model-paths-config "$PROJECT_ROOT/core/protocols/extra_model_paths.yaml" > /dev/null 2>&1 &
+# 左パネル: ComfyUI ログ監視
+tmux send-keys -t h_k9 "cd $COMFYUI_DIR && python3 main.py --listen 0.0.0.0 --port 8188 --bf16-storage --extra-model-paths-config $PROJECT_ROOT/core/protocols/extra_model_paths.yaml" C-m
 
-cd $PROJECT_ROOT
+# 右パネル: 思想エンジン + 翻訳レイヤー + 検品
+tmux split-window -h -t h_k9
+tmux send-keys -t h_k9 "cd $PROJECT_ROOT && python3 core/engines/thought_generator.py --interactive" C-m
 
-# [重要] 自己進化ループの開始
-# 生成 -> 判定 -> 修正 -> 再生成 を自動で回すモード
-echo "🧠 [H-K9] Thought Generator: AUTO-EVOLUTION MODE"
-echo "----------------------------------------------------------"
-echo "AI will now inspect every generation against the Dictionary."
-echo "----------------------------------------------------------"
-
-# インタラクティブ兼、自動判定待機モードで起動
-python3 core/engines/thought_generator.py --interactive --enable-inspection
+# 起動完了の通知
+echo "✅ [H-K9] System deployed. Use 'tmux attach-session -t h_k9' to enter command center."
+echo "Mission Ready."
