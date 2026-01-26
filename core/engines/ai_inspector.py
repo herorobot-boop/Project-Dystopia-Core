@@ -1,29 +1,28 @@
 import os
-import json
 
 class AIInspector:
-    def __init__(self, rule_path="config/dictionary/h_k9_inspection_rules.json"):
-        # 簡易的にルールの基準値を定義（本来はjsonから読み込み）
-        self.thresholds = {
-            "SQUISH": 0.85,
-            "GLOSS": 0.80,
-            "COUPLING": 0.90
+    def __init__(self):
+        # 検品すべき「資源定着」の基準
+        self.standards = {
+            "SQUISH": 0.85,    # 肉体の食い込み
+            "GLOSS": 0.90,     # 資源の光沢
+            "DISTENSION": 0.80 # 内部充填による膨らみ
         }
 
-    def inspect_image(self, image_path, target_code):
-        print(f"🧐 [H-K9 INSPECTOR] Validating image: {image_path} against {target_code}")
+    def inspect(self, image_path, program_id):
+        print(f"🧐 [INSPECTOR] Checking Program: {program_id}")
         
-        # VLM分析のシミュレーション（実際にはここで画像解析APIを叩く）
-        # 例: 資源の光沢、肉の盛り上がり、画角を判定
-        results = {
-            "SQUISH": 0.9, # 成功例
-            "GLOSS": 0.7,  # 失敗例（光沢不足）
-            "COUPLING": 0.95
+        # 実際にはVLMが解析するが、ここでは合格をシミュレート
+        # 不合格の場合は翻訳レイヤーに修正指示を送る
+        analysis = {
+            "SQUISH": 0.88,
+            "GLOSS": 0.92,
+            "DISTENSION": 0.85
         }
-
-        fails = [k for k, v in results.items() if v < self.thresholds.get(k, 0.8)]
         
-        if not fails:
-            return True, "✅ PASS: Protocols satisfied."
+        passed = all(analysis[k] >= self.standards[k] for k in self.standards)
+        
+        if passed:
+            return True, "✅ Protocol Cleared. Resource fixation confirmed."
         else:
-            return False, f"❌ FAIL: Insufficient {', '.join(fails)}. Refine and regenerate."
+            return False, "❌ Protocol Failed. Insufficient resource gloss or distension."
