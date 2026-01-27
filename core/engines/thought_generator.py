@@ -2,14 +2,14 @@ import json
 import datetime
 import random
 import sys
+import difflib
+import os
 from pathlib import Path
 
 # --- 神経接続：プロジェクトルートの動的特定 ---
-# 自身の場所 (core/engines/) から2階層上がルート
 BASE_DIR = Path(__file__).resolve().parents[2]
 
 # --- 依存モジュールのパス追加 ---
-# utils フォルダにある lora_selector.py 等を読み込めるようにする
 UTILS_DIR = BASE_DIR / "utils"
 if str(UTILS_DIR) not in sys.path:
     sys.path.append(str(UTILS_DIR))
@@ -17,81 +17,98 @@ if str(UTILS_DIR) not in sys.path:
 try:
     from lora_selector import select_lora
 except ImportError:
-    # 後のデバッグ用にエラーを可視化
     def select_lora(*args, **kwargs):
         print("[-] Warning: lora_selector could not be loaded from utils/")
         return []
 
-# --- 整理された新構造のパス定義 ---
+# --- パス定義 ---
 TEMPLATE_PATH = BASE_DIR / "config/logic/thought_template_master.json"
+DICTIONARY_PATH = BASE_DIR / "config/dictionary/h_k9_dictionary.json"
 
-def load_thought_template(path=TEMPLATE_PATH):
-    if not path.exists():
-        raise FileNotFoundError(f"Template not found at {path}\nCheck if the file exists in config/logic/")
-    with open(path, "r", encoding="utf-8") as f:
-        return json.load(f)
+class HK9Engine:
+    def __init__(self):
+        self.template = self.load_json(TEMPLATE_PATH)
+        self.dictionary = self.load_json(DICTIONARY_PATH)
 
-def generate_thought(scene_context: str, context_type: str = "free", variation_id: int = 0):
-    """
-    思想の核を生成し、資産リストから最適な舞台装置(LoRA)を自動召喚する。
-    """
-    template = load_thought_template()
-    
-    if context_type not in template["context_matrix"]:
-        context_type = "free"
-    
-    ctx = template["context_matrix"][context_type]
-    genetics = template["realism_genetics"]
-    view_str = ctx["view"].lower()
-    
-    # 1. Identity（流動的な人物像の決定）
-    identity_tag = random.choice([
-        "1girl, japanese school girl, messy hair",
-        "1girl, shy office lady, spectacles",
-        "1girl, young woman, casual summer wear",
-        "1girl, student, uniform"
-    ])
+    def load_json(self, path):
+        if not path.exists():
+            print(f"[-] Warning: File not found at {path}")
+            return {}
+        with open(path, "r", encoding="utf-8") as f:
+            return json.load(f)
 
-    # 2. 自動LoRAセレクターの実行（utils/lora_selector.py を使用）
-    lora_settings = select_lora(scene_context, view_str, context_type)
+    def find_key_fuzzy(self, user_input):
+        """聖典から『改』や『部活』をあいまい検索する"""
+        query = user_input.translate(str.maketrans('０１２３４５６７８９＃', '0123456789#')).strip()
+        all_keys = []
+        # modificationsとeffect_parameters_extendedの両方を検索
+        for cat in self.dictionary.values():
+            if isinstance(cat, dict):
+                all_keys.extend(cat.keys())
+        
+        if query in all_keys: return query
+        matches = [k for k in all_keys if query in k]
+        if matches: return matches[0]
+        close_matches = difflib.get_close_matches(query, all_keys, n=1, cutoff=0.3)
+        return close_matches[0] if close_matches else None
 
-    # 3. 思想構造体の構築
-    base = {
-        "project": template["project"],
-        "timestamp": datetime.datetime.now().isoformat(),
-        "scene_context": scene_context,
-        "context_type": context_type,
-        "variation_id": variation_id,
-        "identity_tag": identity_tag,
-        "lora_settings": lora_settings,
-        "global_overrides": template["global_overrides"],
-        "realism_tags": genetics["tags"],
-        "fabric_logic": genetics["fabric_logic"],
-        "visual_config": {
-            "view": ctx["view"],
-            "lighting": ctx["lighting"],
-            "focus_strategy": ctx["focus"]
-        },
-        "meta": ctx["meta"]
-    }
+    def generate_thought(self, scene_input, context_type="paid"):
+        """既存の高度なロジックを用いて思想を構築"""
+        # 聖典から詳細な説明を取得
+        key = self.find_key_fuzzy(scene_input)
+        scene_context = self.dictionary.get("modifications", {}).get(key, scene_input)
+        if isinstance(scene_context, dict):
+            # 辞書がオブジェクト形式（改シリーズ等）の場合は名前を使用
+            scene_context = scene_context.get("name", str(scene_context))
+        
+        ctx = self.template.get("context_matrix", {}).get(context_type, self.template["context_matrix"]["free"])
+        genetics = self.template["realism_genetics"]
+        
+        identity_tag = random.choice([
+            "1girl, japanese school girl, messy hair",
+            "1girl, student, uniform"
+        ])
 
-    if "physiology" in ctx:
-        base["physiology_detail"] = ctx["physiology"]
+        lora_settings = select_lora(str(scene_context), ctx["view"].lower(), context_type)
 
-    # プロンプト構築の論理（因果関係の記録）
-    base["prompt_logic"] = {
-        "applied_loras": [l['name'] for l in lora_settings] if lora_settings else [],
-        "identity_direction": identity_tag,
-        "context_priority": "Physiological" if context_type == "paid" else "Relatability"
-    }
+        base = {
+            "project": self.template["project"],
+            "timestamp": datetime.datetime.now().isoformat(),
+            "selected_key": key,
+            "scene_context": scene_context,
+            "lora_settings": lora_settings,
+            "realism_tags": genetics["tags"],
+            "visual_config": {
+                "view": ctx["view"],
+                "focus_strategy": ctx["focus"]
+            },
+            "prompt_logic": {
+                "applied_loras": [l['name'] for l in lora_settings] if lora_settings else [],
+                "identity_direction": identity_tag
+            }
+        }
+        return base
 
-    return base
+    def interactive_mode(self):
+        """tmuxの右画面で動く対話インターフェース"""
+        print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
+        print("🐺 H-K9 THOUGHT GENERATOR: HYBRID-CORE")
+        print("聖典の番号（例：吹奏楽部#2 / 改01）を入力してください")
+        print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
+        
+        while True:
+            cmd = input("H-K9 >> ")
+            if cmd.lower() in ['exit', 'quit']: break
+            
+            try:
+                thought = self.generate_thought(cmd)
+                print(f"[*] 識別名: {thought['selected_key']}")
+                print(f"[*] 内容: {thought['scene_context']}")
+                # ここでComfyUI APIへ送信（後述の統合ポイント）
+                print(f"✅ 思想射出完了。")
+            except Exception as e:
+                print(f"❌ エラー発生: {e}")
 
 if __name__ == "__main__":
-    # テスト：新構造での動作確認
-    print(f"[*] Project Root detected: {BASE_DIR}")
-    try:
-        thought = generate_thought("雨の公衆電話で誰かを待つ", context_type="paid")
-        print(json.dumps(thought, indent=2, ensure_ascii=False))
-    except Exception as e:
-        print(f"Error during execution: {e}")
+    engine = HK9Engine()
+    engine.interactive_mode()
