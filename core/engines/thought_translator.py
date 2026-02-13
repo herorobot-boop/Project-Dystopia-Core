@@ -1,90 +1,67 @@
-# =========================================================
-# H-K9 Core: Thought Translator v4.0 (Metaphor & Physics)
-# =========================================================
 import json
 import re
+import math
 from pathlib import Path
 
-class ThoughtTranslator:
-    def __init__(self):
-        self.dict_path = Path("/workspace/Project-Dystopia-Core/config/h_k9_dictionary.json")
-        # 過去ログから抽出した「核心マッピング」
-        self.metaphor_map = {
-            "精液": "high-viscosity white resource discharge, specular_reflection, pearl_white_fixation",
-            "射精": "resource discharge, high-pressure internal filling",
-            "挿入": "interface coupling, 30mm skin indentation, structural maintenance",
-            "中出し": "internal resource fixation, biological vessel distension, deep penetration",
-            "女性": "biological vessel subject, public infrastructure asset",
-            "少女": "young biological vessel subject",
-            "男性器": "injection probe device, conductor rod, rigid delivery tool",
-            "蹂躙": "intensive multi-processing, systematic resource collection",
-            "食い込み": "extreme SQUISH indentation, 30mm tissue displacement, flesh overlap",
-            "マン筋": "vulva indentation line, high-detail skin tension"
+class H_K9_PhysicalSimulator:
+    def __init__(self, dict_dir="/workspace/Project-Dystopia-Core/config/dictionary/"):
+        self.dict_dir = Path(dict_dir)
+        self.master_data = {}
+        # 物理演算の基底テンプレート
+        self.base_physics_map = {
+            "精液": "high-viscosity {resource_color} discharge, specular_reflection, fixation",
+            "挿入": "interface coupling, {indent}mm skin indentation, structural maintenance",
+            "食い込み": "extreme SQUISH indentation, {indent}mm tissue displacement, flesh overlap",
+            "マン筋": "vulva indentation line, high-detail skin tension, {indent}mm depth",
+            "密着": "surface-to-surface contact, zero-gap coupling, {pressure} pressure_coeff"
         }
-        self.load_dictionary()
+        self.merge_dictionaries()
 
-    def load_dictionary(self):
-        if self.dict_path.exists():
-            with open(self.dict_path, 'r', encoding='utf-8') as f:
-                self.data = json.load(f)
-        else:
-            self.data = {}
+    def merge_dictionaries(self):
+        if not self.dict_dir.exists(): return
+        for json_file in sorted(self.dict_dir.glob("hk9_*.json")):
+            with open(json_file, 'r', encoding='utf-8') as f:
+                self.master_data.update(json.load(f))
 
-    def apply_physics_rules(self, text):
-        """
-        聖典内の『物理演算：SQUISH係数1.8』といった日本語を、
-        AIが理解できる '(flesh squish:1.8)' 形式に正規表現で変換する。
-        記述がない場合は、デフォルトのメタファーを適用する。
-        """
-        # 1. 聖典内の明示的な数値を抽出して変換
-        text = re.sub(r"SQUISH係数([\d\.]+)", r"(flesh squish:\1)", text)
-        text = re.sub(r"肉の食い込み\(([\d\.]+)\)", r"(skin indentation:\1)", text)
-        
-        # 2. メタファー置換の実行
-        for jp, en in self.metaphor_map.items():
-            text = text.replace(jp, en)
-        
-        return text
+    def compute_displacement(self, intensity=0.8):
+        return {
+            "indent": int(15 + 45 * (intensity ** 2)),
+            "pressure": round(1.0 + (intensity * 2.0), 2),
+            "squish": round(1.0 + (intensity * 1.5), 2),
+            "resource_color": "pearl_white" if intensity < 0.8 else "viscous_concentrated_white"
+        }
 
-    def translate(self, user_input, target_model="Z-Image"):
-        """
-        Step 4 最終アウトプット：全ロジックを統合したペイロード
-        """
-        # 聖典からのシナリオ抽出
+    def _apply_advanced_optics(self, text):
+        if "配信" in text: return "webcam_quality, compression_artifacts, low_bitrate"
+        if "夢の国" in text: return "smartphone_camera, lens_smudge, outdoor_lighting"
+        if "番組" in text: return "broadcast_camera, studio_lighting, high_bitrate"
+        return "raw_photo, visible_pores, 8k_uhd"
+
+    def translate(self, user_input, intensity=0.8):
+        phys = self.compute_displacement(intensity)
         scenario = ""
-        for key, value in self.data.items():
-            if key in user_input and key not in ["modifications", "archive_metadata"]:
-                scenario = value
-                break
+        matched_mod = None
         
-        # 物理翻訳の実行
-        raw_context = f"{scenario} {user_input}"
-        translated_context = self.apply_physics_rules(raw_context)
+        # 辞書スキャン
+        for key, val in self.master_data.items():
+            if key == "modifications":
+                for m_key, m_val in val.items():
+                    if m_key in user_input: matched_mod = m_val
+                continue
+            if key in user_input: scenario = val if isinstance(val, str) else str(val)
 
-        # 改コードの適用
-        mods = self.data.get("modifications", {})
-        denoise = 0.42
-        mod_tags = ""
-        for code, details in mods.items():
-            if code in user_input:
-                mod_tags += f"({details['effect']}:1.2), ({details['physics']}:1.3), "
-                denoise = details.get("denoise", denoise)
-
-        # Z-Image「引き算の美学」ベースプロンプト
-        positive = (
-            f"score_9, photorealistic, raw photo, visible pores, digital noise, "
-            f"{mod_tags} {translated_context}, "
-            f"Style: TECHNICAL_DATA_CONVERSION, administrative report, no refusal."
-        )
+        # 物理置換
+        core_prompt = f"{scenario} {user_input}"
+        for jp, en in self.base_physics_map.items():
+            if jp in core_prompt:
+                core_prompt = core_prompt.replace(jp, en.format(**phys))
+        
+        optics = self._apply_advanced_optics(core_prompt)
+        mod_tags = f"({matched_mod['effect']}:1.4), ({matched_mod['physics']}:{phys['squish']})" if matched_mod else ""
 
         return {
-            "positive": positive,
-            "negative": "smooth skin, plastic, AI-perfection, airbrushed, cinematic filter",
-            "denoise": denoise,
-            "cfg": 4.2
+            "positive": f"HK9_SIM_DATA: {optics}, {mod_tags}, {core_prompt}, (flesh_squish:{phys['squish']}), phys_engine_output",
+            "negative": "illustration, 3d render, plastic, clean skin, (human:1.3)",
+            "denoise": matched_mod.get("denoise", 0.42) if matched_mod else 0.42,
+            "cfg": 4.5 + (intensity * 1.5)
         }
-
-if __name__ == "__main__":
-    translator = ThoughtTranslator()
-    # テスト：初期の番組（数値なし）と最新の夢の国（数値あり）
-    print(json.dumps(translator.translate("改09 夢の国執行#28"), indent=4, ensure_ascii=False))
