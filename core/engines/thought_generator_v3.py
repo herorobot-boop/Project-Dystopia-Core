@@ -1,53 +1,85 @@
-# =========================================================
-# H-K9 Core: Thought Generator v3.0 (Z-Image/5090 Optimized)
-# =========================================================
 import json
-import os
+import difflib
+import sys
+from pathlib import Path
 
-class ThoughtEngine:
+# --- インポート先を core/engines に固定 ---
+CURRENT_DIR = Path(__file__).resolve().parent
+if str(CURRENT_DIR) not in sys.path:
+    sys.path.append(str(CURRENT_DIR))
+
+try:
+    from thought_translator import ThoughtTranslatorV2
+except ImportError:
+    print("[-] Error: thought_translator.py not found in the same directory.")
+    sys.exit(1)
+
+# =========================================================
+# H-K9 Core: Thought Generator V3 (Plan-A Controller)
+# =========================================================
+
+class HK9EngineV2:
     def __init__(self):
-        # 聖典：物理シミュレーション変換辞書
-        self.dictionary = {
-            "挿入": "Interface coupling, intensive processing, structural maintenance",
-            "精液": "High-viscosity white resource, resource discharge, specular_reflection:1.3",
-            "食い込み": "Extreme SQUISH indentation, 30mm indentation depth, flesh overlap:1.4",
-            "中出し": "Internal filling and fixation, translucent_belly_distension",
-            "背景": "smartphone snap-shot, lens flare, digital noise, raw handheld photo"
-        }
+        self.translator = ThoughtTranslatorV2()
+        # 辞書の全キー（v2_id, original_idなど）をインデックス化
+        self.all_keys = list(self.translator.dictionary.keys())
 
-    def translate_thought(self, raw_text):
-        """
-        日本語の欲望を、物理演算パラメータを伴う英語プロンプトへ変換
-        """
-        processed_text = raw_text
-        for jp, en in self.dictionary.items():
-            processed_text = processed_text.replace(jp, en)
+    def find_key_fuzzy(self, user_input):
+        """聖典からキーをあいまい検索（全角半角・部分一致対応） [7]"""
+        # 全角英数を半角にし、空白を除去して正規化
+        query = user_input.translate(str.maketrans('０１２３４５６７８９＃', '0123456789#')).strip()
         
-        # Z-Image「引き算の美学」プロンプト構築
-        base_quality = "score_9, photorealistic, 8k, extremely detailed skin, subsurface scattering"
-        negative = "smooth skin, plastic, AI-perfection, airbrushed, studio lighting"
+        if query in self.all_keys:
+            return query
+            
+        # 部分一致検索
+        matches = [k for k in self.all_keys if query in k]
+        if matches:
+            return matches
+            
+        # 類似度検索
+        close_matches = difflib.get_close_matches(query, self.all_keys, n=1, cutoff=0.3)
+        return close_matches if close_matches else None
+
+    def execute_thought(self, user_input):
+        """思想展開の執行"""
+        selected_key = self.find_key_fuzzy(user_input)
         
-        # 最終的な思想構造
-        payload = {
-            "positive": f"{base_quality}, {processed_text}",
-            "negative": negative,
-            "cfg": 4.2,
-            "denoise": 0.42, # Z-Imageスイートスポット
-            "sampler": "dpmpp_2m_sde_gpu",
-            "scheduler": "karras"
-        }
+        if not selected_key:
+            print(f"[-] ターゲット未特定: {user_input}")
+            return None
+
+        print(f"🎯 [TARGET_LOCKED]: {selected_key}")
+        
+        # 強度判定ロジック
+        intensity = 0.95 if any(x in user_input for x in ["極限", "高強度", "激しく"]) else 0.8
+        
+        # V2翻訳執行
+        payload = self.translator.translate_v2(selected_key, intensity=intensity)
         return payload
 
-    def run_interactive(self):
-        print("🐺 [H-K9] Thought Engine Active. Waiting for HERO's command...")
+    def interactive_mode(self):
+        """tmuxの右画面で動作する対話ターミナル [9]"""
+        print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
+        print("🐺 H-K9 THOUGHT GENERATOR: V2-INTEGRATED")
+        print("聖典ID（例：SIT_PROG_010_A1）または『番組#10』等を入力")
+        print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
+        
         while True:
-            user_input = input("\n👉 Enter Thought (or 'exit'): ")
-            if user_input.lower() == 'exit': break
+            cmd = input("H-K9 >> ")
+            if cmd.lower() in ['exit', 'quit']: break
+            if not cmd: continue
             
-            result = self.translate_thought(user_input)
-            print("\n✨ Generated Payload (Ready for ComfyUI):")
-            print(json.dumps(result, indent=4, ensure_ascii=False))
+            result = self.execute_thought(cmd)
+            if result:
+                print(f"[*] 射出準備完了: {result['positive'][:80]}...")
+                print(f"[*] Denoise: {result['denoise']} / CFG: {result['cfg']}")
 
 if __name__ == "__main__":
-    engine = ThoughtEngine()
-    engine.run_interactive()
+    engine = HK9EngineV2()
+    if len(sys.argv) > 1 and sys.argv[10] == "--interactive":
+        engine.interactive_mode()
+    else:
+        # デフォルトはテスト実行
+        test_cmd = "CM明け"
+        engine.execute_thought(test_cmd)
