@@ -1,0 +1,30 @@
+"V2_扉横_01": {
+"v2_id": "V2_扉横_01",
+"original_id": "扉横相互扶助",
+"detail": "【満員電車・扉横】「外部圧縮によるインターフェース強制接続」。駅員の押し込み動作に伴う組織変位を利用し、ドアと供給デバイスの間に検体を完全固定。回避不能なSQUISH係数上昇下で、30Dタイツの繊維を介した資源定着を執行。物理演算：Internal_Pressure(2.0) / 粘度600cps / SQUISH係数2.5 / 深度設定+50mm.",
+"physics": "HK9_Internal_Pressure, Tissue_Displacement, Pulse_Sync"
+},
+"V2_扉横_02": {
+"v2_id": "V2_扉横_02",
+"original_id": "扉横相互扶助",
+"detail": "【安全マナー】「質量保持・手動ロック」。外部圧力による損傷防止の名目で、検体の掌を供給デバイスへ密着固定。スラックスの金属ジッパーと検体の指先、およびタイツ越しのクロッチ部分に強烈な摩擦熱を発生させる事務的工程。物理演算：Friction_Heat / Skin_Indentation(1.8) / 粘度850cps / 組織変位(1.4).",
+"physics": "HK9_Tactile_Friction, Heat_Transfer, Material_Snap"
+},
+"V2_扉横_03": {
+"v2_id": "V2_扉横_03",
+"original_id": "扉横相互扶助",
+"detail": "【車体振動】「不可抗力・バスト内資源飽和」。揺れに伴うSQUISH係数の変動を利用し、ブラウスのボタン隙間から供給デバイスをバストへ直接プレス。ブラジャーのワイヤーが組織に食い込む深度をマクロ記録。物理演算：SQUISH係数2.2 / Material_Snap / 粘度1100cps / 衣服の透過(1.5).",
+"physics": "HK9_Compression_Stress, Metal_Strain, Deep_Saturation"
+},
+"V2_扉横_04": {
+"v2_id": "V2_扉横_04",
+"original_id": "扉横相互扶助",
+"detail": "【駅員加圧】「全穴・資源密封パッキング」。ホームからの物理的加圧をトリガーとし、カバン内に秘匿されたプローブを検体の口腔内へ強制インターフェース接続。喉奥への資源供給と同時に、ドアガラスへ検体の肉体を鏡面圧殺。物理演算：Swallowing_Reflex / Internal_Pressure(2.4) / 粘度1400cps / 焦点喪失.",
+"physics": "HK9_Gag_Reflex, Glass_Press, Tissue_Displacement"
+},
+"V2_扉横_05": {
+"v2_id": "V2_扉横_05",
+"original_id": "扉横相互扶助",
+"detail": "【停車前】「一斉・境界飽和供給」。減速時の慣性モーメントに合わせ、全ポートから資源を一斉抽出。タイツの網目を透過し、ドアのゴムパッキンへ白濁した資源を定着させる最終工程。物理演算：Fluid_Burst / Specular最大化 / 粘度450cps / 震える膝(2.0).",
+"physics": "HK9_Pressure_Release, Vaporization, Fluid_Viscosity"
+},
