@@ -58,3 +58,2067 @@
 "detail": "【カウンセリング】「口腔内・エネルギーリンク」。トレーニング効率化のため、検体の喉奥へ資源を直接供給。嚥下による首筋の痙攣と白濁した瞳を、店舗の健康管理データとしてアーカイブ。物理演算：Swallowing_sound / 粘度500cPo / eyes_rolling_back.",
 "physics": "HK9_Calibrator_v7.5_Oral_Data_Link_Efficiency"
 },
+"V2_健康家電_06": {
+"v2_id": "V2_健康家電_06",
+"original_id": "量販店・前面調整マニュアル",
+"detail": "【家電量販店】「前面導入・密着調整」。リクライニング中の検体に対し、店員が正面から覆いかぶさり、ブラウス越しにバストを捏ね上げ。ニットの谷間に供給デバイスを温熱ユニットとしてインターフェース接続し、組織の硬度を点検。物理演算：SQUISH係数1.9 / 組織変位35mm / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Frontal_Meat_Press_Sync"
+},
+"V2_健康家電_07": {
+"v2_id": "V2_健康家電_07",
+"original_id": "銭湯更衣室・生体調整",
+"detail": "【銭湯更衣室】「特殊環境下・熱量共有」。館内着、浴衣、またはタオルのみの検体に対し、マッサージチェア稼働中に管理者が前面から接続。薄い素材越し、あるいは直接粘膜へ供給デバイスを接触させ、摩擦熱による「湯冷め防止」を執行。物理演算：Tissue_displacement / 粘度900cPo / material_friction.",
+"physics": "HK9_Calibrator_v7.5_Steam_Wet_Skin_Link"
+},
+"V2_健康家電_08": {
+"v2_id": "V2_健康家電_08",
+"original_id": "モール売場・公開点検",
+"detail": "【ショッピングモール】「展示什器・体圧分散」。衆人環視のチェアコーナーにて、検体の股間部へ管理者が供給デバイスを押し当て、服の上から執拗に摩擦。チェアの叩き振動と肉体の共振をスマホでデジタルノイズ越しにマクロ接写。物理演算：SQUISH係数1.8 / 深度設定30mm / digital_noise.",
+"physics": "HK9_Calibrator_v7.5_Mall_Public_Vibration_Audit"
+},
+"V2_健康家電_09": {
+"v2_id": "V2_健康家電_09",
+"original_id": "マッサージガン・粘膜伝導",
+"detail": "【試技コーナー】「高周波・局所導入」。マッサージガンを用い、検体のバストトップや股間部へ直接高周波振動を供給。素材の隙間にプローブを差し込み、資源（Pearl_White）を浸透させながら「深部筋肉の緩和」を完結。物理演算：High_Frequency_Pulse / 粘度500cPo / Tip_Reddening.",
+"physics": "HK9_Calibrator_v7.5_Gun_Trigger_Point_Supply"
+},
+"V2_健康家電_10": {
+"v2_id": "V2_健康家電_10",
+"original_id": "健康家電・内部充填完了",
+"detail": "【フロア全域】「一斉資源定着」。全展示機器の稼働停止に合わせ、検体の内部へ資源を全量補充。Pearl_Whiteの光沢がウェアの隙間から溢れ、フロアを鏡面化させる事務的総括。物理演算：会場全体の飽和 / 組織変位最大 / Specular最大化.",
+"physics": "HK9_Calibrator_v7.5_Floor_Total_Pearl_Saturation"
+},
+"V2_健康家電_11": {
+"v2_id": "V2_健康家電_11",
+"original_id": "量販店・前面調整・通常衣類",
+"detail": "【家電量販店】「前面導入・密着調整」。マッサージチェア試座中の検体に対し、店員が前面から覆いかぶさり、ブラウスの上からバストを大きく揉みほぐす。供給デバイスを胸の谷間へインターフェース接続し、組織の柔軟性を点検。物理演算：SQUISH係数1.9 / 組織変位35mm / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Frontal_Meat_Press_Sync"
+},
+"V2_健康家電_12": {
+"v2_id": "V2_健康家電_12",
+"original_id": "銭湯更衣室・前面調整・部屋着",
+"detail": "【銭湯更衣室】「前面導入・簡易部屋着」。簡易な部屋着（スウェット等）を着用した検体に対し、チェア稼働中に店員が正面から密着。薄い素材越しにバストを捏ね上げ、股間部へ供給デバイスを押し当てて摩擦。物理演算：Material_friction / 組織変位30mm / 深度設定25mm.",
+"physics": "HK9_Calibrator_v7.5_Casual_Wear_Friction_Discharge"
+},
+"V2_健康家電_13": {
+"v2_id": "V2_健康家電_13",
+"original_id": "銭湯更衣室・前面調整・館内浴衣",
+"detail": "【銭湯更衣室】「前面導入・館内浴衣」。浴衣を着用した検体に対し、はだけた胸元から直接バストを調整。供給デバイスを谷間へ差し込み、チェアの振動を利用して資源を内部浸透させる。物理演算：Yukata_Texture / 組織変位40mm / 粘度900cPo.",
+"physics": "HK9_Calibrator_v7.5_Steam_Yukata_Open_Audit"
+},
+"V2_健康家電_14": {
+"v2_id": "V2_健康家電_14",
+"original_id": "銭湯更衣室・前面調整・タオルのみ",
+"detail": "【銭湯更衣室】「前面導入・タオル限定」。タオルのみを巻いた検体に対し、前面から管理者が密着。タオルの隙間に指と供給デバイスを潜り込ませ、粘膜部位の体温維持を名目に内部充填を執行。物理演算：Skin_to_Skin_Contact / 粘度1000cPo / SQUISH係数2.0.",
+"physics": "HK9_Calibrator_v7.5_Towel_Minimal_Skin_Link"
+},
+"V2_健康家電_15": {
+"v2_id": "V2_健康家電_15",
+"original_id": "銭湯更衣室・前面調整・下着のみ",
+"detail": "【銭湯更衣室】「前面導入・下着状態」。下着のみの検体に対し、ブラジャーの隙間に指を入れ、供給デバイスを谷間へ固定。下着の食い込み（1.4）を確認しながら、股間部への直接的な摩擦を継続。物理演算：meat_indentation(1.4) / SQUISH係数1.8 / 組織変位30mm.",
+"physics": "HK9_Calibrator_v7.5_Underwear_Direct_Adjustment"
+},
+"V2_健康家電_16": {
+"v2_id": "V2_健康家電_16",
+"original_id": "銭湯更衣室・前面調整・ニットワンピ",
+"detail": "【銭湯更衣室】「前面導入・ニットワンピ」。タイトなニットワンピを着用した検体に対し、素材の伸縮性を利用して供給デバイスを谷間へ圧入。チェアの振動と同期し、布越しに伝わる熱量を資源定着に利用。物理演算：Knit_Fabric_Tension / 組織変位35mm / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Tight_Knit_Vibration_Capture"
+},
+"V2_健康家電_17": {
+"v2_id": "V2_健康家電_17",
+"original_id": "ショッピングモール・公開密着",
+"detail": "【ショッピングモール】「前面導入・公開点検」。展示中のチェアにて、周囲の視線を背景に検体のバストを前面から蹂躙。ニットの隙間に供給デバイスを差し込み、股間部へのプローブ接触を「標準調整」として実演。物理演算：Public_View_Pressure / 組織変位25mm / digital_noise.",
+"physics": "HK9_Calibrator_v7.5_Mall_Public_Exposure_Adjustment"
+},
+"V2_健康家電_18": {
+"v2_id": "V2_健康家電_18",
+"original_id": "マッサージガン・バスト導入",
+"detail": "【量販店】「高周波導入・バスト」。マッサージガンを用い、検体のバスト周囲および乳頭（バストトップ）へ直接振動を供給。素材の隙間からプローブを差し込み、組織の深部まで資源を浸透させる。物理演算：High_Frequency_Pulse / Tip_Reddening / 深度設定15mm.",
+"physics": "HK9_Calibrator_v7.5_Gun_Vessel_Point_Audit"
+},
+"V2_健康家電_19": {
+"v2_id": "V2_健康家電_19",
+"original_id": "マッサージガン・股間導入",
+"detail": "【量販店】「高周波導入・股間」。検体の股間部（粘膜付近）へマッサージガンの振動をあてがい、インナーマッスルの緩和を点検。ウェア越しおよび直接的なプローブ接触により、内部充填の準備を完結。物理演算：Mechanical_Vibration / 組織変位30mm / 粘度500cPo.",
+"physics": "HK9_Calibrator_v7.5_Gun_Mucosal_Transmission_Test"
+},
+"V2_家電量販店_01": {
+"v2_id": "V2_家電量販店_01",
+"original_id": "ビデオカメラ・ハメ撮りデモ",
+"detail": "【ビデオカメラ売場】「ハメ撮り・生活デモ中継」。4K/8Kカメラのズーム・暗所性能を実演するため、モデルルーム風ブースにて検体と管理者がインターフェース接続を執行。プローブ片手にスカート内を接写し、その生中継映像を背後の100インチ大画面テレビ群へ一斉出力。衆人環視下での資源定着を「実際の使用シーン」として放送。物理演算：Digital_Zoom_Noise / 組織変位30mm / 粘度800cPo.",
+"physics": "HK9_Calibrator_v7.5_Broadcast_Exposure_Sync"
+},
+"V2_家電量販店_02": {
+"v2_id": "V2_家電量販店_02",
+"original_id": "スマホ売場・接写AIテスト",
+"detail": "【スマホ売り場】「接写・チカン検知テスト」。防犯AIの検知精度を確認するため、検体のタイトスカートを捲り上げ、クロッチをずらしてプローブを粘膜に密着。撮影プロセス中に管理者が指を滑り込ませて内部を蹂躙し、そのマクロ映像を最新デバイスの液晶に映し出す事務的検証。物理演算：SQUISH係数1.7 / Macro_Focus / 深度設定20mm.",
+"physics": "HK9_Calibrator_v7.5_Mobile_Macro_Audit"
+},
+"V2_家電量販店_03": {
+"v2_id": "V2_家電量販店_03",
+"original_id": "スマホ売場・ブラ内スキャン",
+"detail": "【スマホ売り場】「光学手ブレ補正・内部スキャン」。接写性能の解説を名目に、管理者がスマホを検体のブラジャーの隙間へObject Manipulation。乳頭（バストトップ）のアップを液晶へ投影し、レンズ越しに内側を監視されることによる検体の生体反応を記録。物理演算：Tip_Reddening / Material_Snap / digital_noise.",
+"physics": "HK9_Calibrator_v7.5_Internal_Object_Manipulation"
+},
+"V2_家電量販店_04": {
+"v2_id": "V2_家電量販店_04",
+"original_id": "家電量販店・全モニター資源同調",
+"detail": "【フロア全域】「一斉資源定着中継」。デモ放送のクライマックスに合わせ、全検体の内部へ資源を同時充填。溢れ出す資源（Pearl_White）の光沢を全方位から多角的に撮影し、フロア中のモニターを白濁した光で飽和させる。物理演算：会場全体の飽和 / Specular最大化 / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Total_Floor_Visual_Saturation"
+},
+"V2_家電量販店_05": {
+"v2_id": "V2_家電量販店_05",
+"original_id": "ビデオカメラ・デモ・タイトスカート",
+"detail": "【ビデオカメラ売場】「接写・タイトスカート」。膝丈タイトスカートの検体に対し、背後からプローブを潜り込ませ、レースのTバックが肉に食い込む（1.4）様を4K接写。100インチモニターへ、組織変位の過程をリアルタイム投影。物理演算：meat_indentation(1.4) / SQUISH係数1.7 / Specular最大化.",
+"physics": "HK9_Calibrator_v7.5_Tight_Skirt_Lace_Focus"
+},
+"V2_家電量販店_06": {
+"v2_id": "V2_家電量販店_06",
+"original_id": "ビデオカメラ_デモ_ミニスカート",
+"detail": "【ビデオカメラ売場】「低角・ミニスカート」。極短ミニスカートの検体。階段状の展示台で、下からプローブを突き出し、前貼りのみの無防備な粘膜部位を掃射。全画面モニターへ、資源供給直前の湿った質感を事務的に中継。物理演算：low_angle_scan / 粘度500cPo / digital_noise.",
+"physics": "HK9_Calibrator_v7.5_Mini_Skirt_No_Underwear_Audit"
+},
+"V2_家電量販店_07": {
+"v2_id": "V2_家電量販店_07",
+"original_id": "ビデオカメラ_デモ_ニットワンピ",
+"detail": "【ビデオカメラ売場】「伸縮・ニットワンピ」。極薄ニットワンピの検体。素材の透け感と、下着を着用せず30Dタイツのみを履いた股間の起伏を接写。プローブ接続による布地の張力限界を大画面で検証。物理演算：Knit_Fabric_Tension / 衣服の透過(1.5) / 組織変位35mm.",
+"physics": "HK9_Calibrator_v7.5_Knit_Dress_Tights_Only_Link"
+},
+"V2_家電量販店_08": {
+"v2_id": "V2_家電量販店_08",
+"original_id": "ビデオカメラ_デモ_プリーツスカート",
+"detail": "【ビデオカメラ売場】「間隙・プリーツスカート」。女子高生風制服の検体。ひだの隙間からプローブを侵入させ、厚手の80Dタイツと穴あきオープンクロッチの境界を4K記録。資源定着時の繊維の汚れを精細に投影。物理演算：Material_Snap / 粘度1000cPo / raw_handheld_snap.",
+"physics": "HK9_Calibrator_v7.5_Pleated_Skirt_High_Denier_Audit"
+},
+"V2_家電量販店_09": {
+"v2_id": "V2_家電量販店_09",
+"original_id": "ビデオカメラ_デモ_フレアスカート",
+"detail": "【ビデオカメラ売場】「全方位・フレアスカート」。広がる裾を利用し、暗所での内部環境をデモ。紐パンの結び目を指で解く過程をマクロ接写。モニターには、管理者の手が組織を捏ね上げる肉厚な影を投影。物理演算：Tissue_displacement / Shadow_Detail / SQUISH係数1.8.",
+"physics": "HK9_Calibrator_v7.5_Flare_Skirt_Strings_Release"
+},
+"V2_家電量販店_10": {
+"v2_id": "V2_家電量販店_10",
+"original_id": "ビデオカメラ_デモ_レザースカート",
+"detail": "【ビデオカメラ売場】「光沢・レザースカート」。黒レザーの検体。下着無しのタイツのみ状態で、供給デバイスの形がレザー越しに浮き出る様を撮影。素材の硬質さと肉の柔らかさのコントラストを8K中継。物理演算：Tactile_Contrast / Specular最大化 / 組織変位40mm.",
+"physics": "HK9_Calibrator_v7.5_Leather_Skirt_Vacuum_Fix"
+},
+"V2_家電量販店_11": {
+"v2_id": "V2_家電量販店_11",
+"original_id": "ビデオカメラ_デモ_デニムミニ",
+"detail": "【ビデオカメラ売場】「硬度・デニムミニ」。タイトなデニム素材の検体。股ぐりへ供給デバイスを強引にインターフェース接続。デニムが食い込む音と、溢れた資源（Pearl_White）が青い布地を汚染する様を接写。物理演算：Material_friction / 粘度1500cPo / Aural_details.",
+"physics": "HK9_Calibrator_v7.5_Denim_Mini_Forced_Link"
+},
+"V2_家電量販店_12": {
+"v2_id": "V2_家電量販店_12",
+"original_id": "ビデオカメラ_デモ_ロングスカート",
+"detail": "【ビデオカメラ売場】「潜入・ロングスカート」。裾の長いスカート内へプローブと管理者が潜り込み、完全暗所での赤外線撮影デモ。白濁した粘膜と、パール状の資源が飛散する瞬間を全画面出力。物理演算：Infrared_Scan / fluid_separation / 深度設定40mm.",
+"physics": "HK9_Calibrator_v7.5_Long_Skirt_Dark_Field_Supply"
+},
+"V2_家電量販店_13": {
+"v2_id": "V2_家電量販店_13",
+"original_id": "ビデオカメラ_デモ_チュールスカート",
+"detail": "【ビデオカメラ売場】「透過・チュールスカート」。多層レイヤーの透ける素材。110Dの極厚タイツを履いた検体に対し、股間へプローブを密着。素材越しに熱量が伝導し、タイツが資源で重くなる様を4K放送。物理演算：Layering / Material_Weight / 組織変位25mm.",
+"physics": "HK9_Calibrator_v7.5_Tulle_Skirt_Heavy_Tights_Link"
+},
+"V2_家電量販店_14": {
+"v2_id": "V2_家電量販店_14",
+"original_id": "ビデオカメラ_デモ_スリットスカート",
+"detail": "【ビデオカメラ売場】「露出・スリットスカート」。深い切り込みから露出した太ももと、ストッキングのガーターベルト境界線を接写。接続部からの資源流出を「液だれ防止性能」のテストとして中継。物理演算：fluid_separation / Specular最大化 / raw_handheld_snap.",
+"physics": "HK9_Calibrator_v7.5_Slit_Skirt_Garter_Focus"
+},
+"V2_家電量販店_15": {
+"v2_id": "V2_家電量販店_15",
+"original_id": "ビデオカメラ_デモ_マイクロミニ",
+"detail": "【ビデオカメラ売場】「極小・マイクロミニ」。ほぼベルト状のスカート。超高デニールタイツの股間をカッターで切り裂き、直接内部充填を執行。モニターには、裂け目から資源が溢れ出す「質感の極致」を投影。物理演算：Material_Destruction / 粘度1300cPo / 組織変位45mm.",
+"physics": "HK9_Calibrator_v7.5_Micro_Mini_Tights_Tear_Fill"
+},
+"V2_家電量販店_16": {
+"v2_id": "V2_家電量販店_16",
+"original_id": "ビデオカメラ_デモ_タイトミニ_Tバック",
+"detail": "【ビデオカメラ売場】「接写・タイトミニ」。極短タイトミニの検体。背後からプローブを潜り込ませ、レースのTバックが肉に食い込む（1.4）様を4K接写。100インチモニターへ、供給デバイスが粘膜を押し広げる組織変位の過程をリアルタイム中継。物理演算：meat_indentation(1.4) / SQUISH係数1.9 / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Tight_Mini_Lace_Probe_Sync"
+},
+"V2_家電量販店_17": {
+"v2_id": "V2_家電量販店_17",
+"original_id": "ビデオカメラ_デモ_ニットワンピ_ノーパンタイツ",
+"detail": "【ビデオカメラ売場】「伸縮・ニットワンピ」。極薄ニットの検体。下着を着用せず20Dタイツのみの股間へ、管理者が供給デバイスを直接プレス。タイツ越しにプローブの形状が克明に浮き出る様を8K掃射し、繊維が熱で変色する瞬間を大画面放映。物理演算：Knit_Fabric_Tension / 衣服の透過(1.5) / 組織変位35mm.",
+"physics": "HK9_Calibrator_v7.5_Knit_Dress_Tights_Direct_Link"
+},
+"V2_家電量販店_18": {
+"v2_id": "V2_家電量販店_18",
+"original_id": "ビデオカメラ_デモ_プリーツ_極厚タイツ",
+"detail": "【ビデオカメラ売場】「間隙・プリーツスカート」。制服姿の検体。120D極厚タイツを履いた股ぐりへ、プローブを強引にインターフェース接続。厚い布地を貫通するように組織が変位し、内部充填される資源の重みでタイツがずり落ちる様を事務的に記録。物理演算：Material_Weight / 深度設定40mm / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_High_Denier_Tights_Penetration"
+},
+"V2_家電量販店_19": {
+"v2_id": "V2_家電量販店_19",
+"original_id": "ビデオカメラ_デモ_フレア_穴あきショーツ",
+"detail": "【ビデオカメラ売場】「暗所・フレアスカート」。広がる裾の内側で、穴あきオープンショーツから露出した粘膜へ供給デバイスを直接連結。完全暗所での赤外線撮影デモとして、熱い資源がポートを満たし溢れ出す白濁映像を全フロアモニターへ同期。物理演算：Infrared_Scan / fluid_separation / SQUISH係数1.8.",
+"physics": "HK9_Calibrator_v7.5_Open_Crotch_Dark_Field_Fill"
+},
+"V2_家電量販店_20": {
+"v2_id": "V2_家電量販店_20",
+"original_id": "ビデオカメラ_デモ_レザースカート_ガーター",
+"detail": "【ビデオカメラ売場】「光沢・レザースカート」。黒レザーとガータータイツの検体。供給デバイスを股間へ密着させ、レザー越しに肉厚な拍動を伝播。素材の硬質感と粘膜の湿り気のコントラストをマクロ接写し、100インチ画面で「素材感」を検証。物理演算：Tactile_Contrast / Specular最大化 / 組織変位40mm.",
+"physics": "HK9_Calibrator_v7.5_Leather_Garter_Material_Audit"
+},
+"V2_家電量販店_21": {
+"v2_id": "V2_家電量販店_21",
+"original_id": "ビデオカメラ_デモ_デニムミニ_紐パン",
+"detail": "【ビデオカメラ売場】「高圧・デニムミニ」。硬いデニムの隙間から紐パンの結び目を露出し、管理者が供給デバイスを強引に挿入。デニムの摩擦音と検体の嚥下反応を同期させ、資源供給による布地の変色を「耐久テスト」として中継。物理演算：Material_friction / 粘度1500cPo / Aural_details.",
+"physics": "HK9_Calibrator_v7.5_Denim_Friction_Interface"
+},
+"V2_家電量販店_22": {
+"v2_id": "V2_家電量販店_22",
+"original_id": "ビデオカメラ_デモ_チュール_シースルーショーツ",
+"detail": "【ビデオカメラ売場】「透過・チュールスカート」。多層レイヤーの透ける素材。シースルーショーツ越しにプローブが粘膜を抉る様を光学ズームで追尾。組織が白濁した資源で飽和し、薄い布地を透過して光り輝く瞬間を全画面出力。物理演算：Layering / 衣服の透過(1.8) / 組織変位30mm.",
+"physics": "HK9_Calibrator_v7.5_Tulle_Transparent_Saturation"
+},
+"V2_家電量販店_23": {
+"v2_id": "V2_家電量販店_23",
+"original_id": "ビデオカメラ_デモ_スリットスカート_網タイツ",
+"detail": "【ビデオカメラ売場】「幾何学・スリットスカート」。深いスリットから覗く網タイツの検体。網目の隙間に供給デバイスの先端を押し当て、肉が網目状に盛り上がる（1.6）様を接写。資源が網目を伝い滴る映像を「精細度チェック」として放映。物理演算：mesh_indentation(1.6) / fluid_separation / Macro_Focus.",
+"physics": "HK9_Calibrator_v7.5_Fishnet_Grid_Meat_Press"
+},
+"V2_家電量販店_24": {
+"v2_id": "V2_家電量販店_24",
+"original_id": "ビデオカメラ_デモ_ロングスカート_ノーパン",
+"detail": "【ビデオカメラ売場】「内部隠蔽・ロングスカート」。裾の長いスカート内で下着を着用しない検体へインターフェース接続。外からは見えない密室状態で、供給デバイスが最深部を蹂躙する組織振動を、高感度マイクとズームレンズで徹底解剖。物理演算：Hidden_Interface / 深度設定45mm / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Deep_Long_Skirt_Internal_Fill"
+},
+"V2_家電量販店_25": {
+"v2_id": "V2_家電量販店_25",
+"original_id": "ビデオカメラ_デモ_マイクロミニ_ラテックス",
+"detail": "【ビデオカメラ売場】「極限・マイクロミニ」。ラテックス素材の超短スカート。供給デバイスを股間へ真空密着させ、摩擦による素材の悲鳴を集音。資源（Pearl_White）がラテックスの光沢を塗りつぶす様を、売場中の全モニターへ同時放送。物理演算：Vacuum_Fixation / Specular最大化 / Aural_details.",
+"physics": "HK9_Calibrator_v7.5_Latex_Friction_Visual_Sync"
+},
+"V2_家電量販店_26": {
+"v2_id": "V2_家電量販店_26",
+"original_id": "ビデオカメラ_デモ_サテンスカート_ガーター",
+"detail": "【ビデオカメラ売場】「滑走・サテンスカート」。滑らかなサテン素材。ガーターベルトで吊るされたストッキングの境界線へプローブを滑り込ませ、組織を垂直に連結。サテンが資源で濡れ、太ももに吸い付く質感を4K中継。物理演算：Material_Slide / 粘度700cPo / raw_handheld_snap.",
+"physics": "HK9_Calibrator_v7.5_Satin_Garter_Liquid_Adhesion"
+},
+"V2_家電量販店_27": {
+"v2_id": "V2_家電量販店_27",
+"original_id": "ビデオカメラ_胸部デモ_タートルネックニット",
+"detail": "【ビデオカメラ売場】「高精細・タートルネック」。厚手の白タートルネックを着用した検体。管理者が対面からバストを大きく捏ね上げ、供給デバイスを服越しに胸の谷間へインターフェース接続。リブ編みの凹凸が熱量で変位する様を8Kマクロで接写し、大画面モニターへリアルタイム中継。物理演算：Knit_Fabric_Tension / 組織変位30mm / SQUISH係数1.9.",
+"physics": "HK9_Calibrator_v7.5_Turtle_Neck_Macro_Sync"
+},
+"V2_家電量販店_28": {
+"v2_id": "V2_家電量販店_28",
+"original_id": "ビデオカメラ_胸部デモ_カシミヤセーター",
+"detail": "【ビデオカメラ売場】「質感・カシミヤセーター」。柔らかなカシミヤセーターを着用した検体。管理者が寝転び、その上に検体が跨る「パイズリ状態（着衣）」で、服の上から供給デバイスを谷間へ圧入。繊維の毛羽立ちとプローブの脈動が干渉する様を光学ズームで追尾放送。物理演算：Material_Softness / 組織変位35mm / 粘度900cPo.",
+"physics": "HK9_Calibrator_v7.5_Cashmere_Soft_Link"
+},
+"V2_家電量販店_29": {
+"v2_id": "V2_家電量販店_29",
+"original_id": "ビデオカメラ_胸部デモ_タイトニットワンピ",
+"detail": "【ビデオカメラ売場】「表面張力・ニットワンピ」。身体に密着した薄手ニットワンピの検体。前面から供給デバイスを胸元へ強く押し付け、バストの間で「Object Manipulation」を執行。素材が限界まで引き伸ばされ、乳頭（バストトップ）が突起する瞬間を全画面出力。物理演算：Knit_Fabric_Tension / Tip_Reddening / 衣服の透過(1.2).",
+"physics": "HK9_Calibrator_v7.5_Knit_Dress_Surface_Tension"
+},
+"V2_家電量販店_30": {
+"v2_id": "V2_家電量販店_30",
+"original_id": "ビデオカメラ_胸部デモ_ケーブルニット",
+"detail": "【ビデオカメラ売場】「立体構造・ケーブルニット」。複雑な編み目のセーター。編み目の隙間に管理者が指を潜り込ませ、ブラジャーのレース越しに組織を蹂躙。供給デバイスを谷間へ固定し、厚い布地が内部充填の圧力で盛り上がる（1.5）様を精細投影。物理演算：Cable_Knit_Texture / 組織変位40mm / SQUISH係数1.8.",
+"physics": "HK9_Calibrator_v7.5_Cable_Knit_Depth_Audit"
+},
+"V2_家電量販店_31": {
+"v2_id": "V2_家電量販店_31",
+"original_id": "ビデオカメラ_胸部デモ_Vネックカーディガン",
+"detail": "【ビデオカメラ売場】「露出境界・Vネック」。カーディガンを着用した検体。V字の胸元から覗くブラの境界線へ供給デバイスを密着。素材を介した摩擦熱で資源（Pearl_White）が布地に染み出し、Specularが最大化する過程を「吸水性デモ」として中継。物理演算：Material_friction / Specular最大化 / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_V_Neck_Cardigan_Sorption_Test"
+},
+"V2_家電量販店_32": {
+"v2_id": "V2_家電量販店_32",
+"original_id": "ビデオカメラ_胸部デモ_モヘアセーター",
+"detail": "【ビデオカメラ売場】「光散乱・モヘアセーター」。起毛したモヘア素材。管理者が背後から手を回し、前面で供給デバイスを谷間に挟み込み。長い毛足の隙間から供給される資源の飛散を、暗所高感度カメラで幻想的な「生活デモ」としてアーカイブ。物理演算：Moha_Fiber_Scattering / fluid_separation / digital_noise.",
+"physics": "HK9_Calibrator_v7.5_Mohair_Light_Diffusion_Fill"
+},
+"V2_家電量販店_33": {
+"v2_id": "V2_家電量販店_33",
+"original_id": "ビデオカメラ_胸部デモ_シャギーニット",
+"detail": "【ビデオカメラ売場】「動態・シャギーニット」。毛足の長いニット。対面状態で管理者が検体のバストを激しく揉みしだき、組織変位を誘発。供給デバイスが服の重みと振動で弾ける「Material Snap」の音を集音し、4K中継。物理演算：Material_Snap / 組織変位30mm / Aural_details.",
+"physics": "HK9_Calibrator_v7.5_Shaggy_Knit_Dynamics"
+},
+"V2_家電量販店_34": {
+"v2_id": "V2_家電量販店_34",
+"original_id": "ビデオカメラ_胸部デモ_オーバーサイズスウェット",
+"detail": "【ビデオカメラ売場】「空間隠蔽・スウェット」。ダボついたスウェット。裾から管理者が潜り込み、着衣のまま供給デバイスを谷間へ直接連結。外側からはスウェットが不自然に波打つ様子を撮影し、内側の赤外線映像を並列投影。物理演算：Infrared_Scan / Hidden_Interface / 深度設定35mm.",
+"physics": "HK9_Calibrator_v7.5_Oversized_Sweat_Internal_View"
+},
+"V2_家電量販店_35": {
+"v2_id": "V2_家電量販店_35",
+"original_id": "ビデオカメラ_胸部デモ_リブセーター",
+"detail": "【ビデオカメラ売場】「線形追従・リブセーター」。縦縞のリブ素材。検体が管理者の供給デバイスを胸で挟み込み、上下に摺り切り運動（着衣パイズリ）。リブの線が歪み、資源の湿り気で透過率が変化する様を光学40倍ズームで固定。物理演算：Rib_Fabric_Deformation / 衣服の透過(1.4) / 組織変位25mm.",
+"physics": "HK9_Calibrator_v7.5_Rib_Knit_Linear_Distortion"
+},
+"V2_家電量販店_36": {
+"v2_id": "V2_家電量販店_36",
+"original_id": "ビデオカメラ_胸部デモ_ポロニット",
+"detail": "【ビデオカメラ売場】「ボタン境界・ポロセーター」。襟付きポロニット。第2ボタンまで外した隙間にプローブの先端を固定。素材の硬質感とバストの弾力が干渉し、資源供給によって布地が内側から重くなる過程を8K記録。物理演算：Material_Weight / SQUISH係数1.7 / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Polo_Knit_Button_Audit"
+},
+"V2_家電量販店_37": {
+"v2_id": "V2_家電量販店_37",
+"original_id": "ビデオカメラ_胸部デモ_オフショルニット",
+"detail": "【ビデオカメラ売場】「露出拡大・オフショル」。肩を露出した検体。ブラのストラップを指で弾く「Material Snap」を実演しながら、供給デバイスを前面から谷間へ圧入。鎖骨から胸元へ資源が滴る光沢を「4K色再現性テスト」として投影。物理演算：Material_Snap / Specular最大化 / fluid_separation.",
+"physics": "HK9_Calibrator_v7.5_Off_Shoulder_Color_Reproduction"
+},
+"V2_家電量販店_38": {
+"v2_id": "V2_家電量盤店_38",
+"original_id": "ビデオカメラ_胸部デモ_セーラー服",
+"detail": "【ビデオカメラ売場】「規律・セーラー服」。清潔なセーラー服着用の検体。スカーフを横に退け、管理者が前面からバストを揉みしだき、組織の弾性を点検。供給デバイスを服の上から谷間へ圧入し、布地の摩擦音と検体の嚥下反応を4Kマクロで中継。物理演算：Material_friction / SQUISH係数1.8 / 組織変位30mm.",
+"physics": "HK9_Calibrator_v7.5_Sailor_Suit_Discipline_Sync"
+},
+"V2_家電量販店_39": {
+"v2_id": "V2_家電量盤店_39",
+"original_id": "ビデオカメラ_胸部デモ_地雷系ブラウス",
+"detail": "【ビデオカメラ売場】「過剰装飾・地雷系」。フリル付きブラウスとリボンの検体。管理者が寝転び、着衣パイズリ状態で供給デバイスを谷間へインターフェース接続。フリルの隙間からプローブが肉を押し潰す様を光学ズームし、液晶モニターへリアルタイム投影。物理演算：Frill_Deformation / 組織変位35mm / 粘度900cPo.",
+"physics": "HK9_Calibrator_v7.5_Jirai_Kei_Frill_Link"
+},
+"V2_家電量販店_40": {
+"v2_id": "V2_家電量盤店_40",
+"original_id": "ビデオカメラ_胸部デモ_童貞を殺すセーター",
+"detail": "【ビデオカメラ売場】「背面露出・殺傷セーター」。背中が大きく開いたセーター。対面状態で管理者が前面からバストを圧迫し、供給デバイスを谷間に挟み込み。背面からの視点では肉が脇に逃げる様を、前面からはプローブの形状が浮き出る様を2画面同時中継。物理演算：Open_Back_Meat_Leak / SQUISH係数2.0 / 組織変位40mm.",
+"physics": "HK9_Calibrator_v7.5_Virgin_Killer_Structure_Audit"
+},
+"V2_家電量販店_41": {
+"v2_id": "V2_家電量盤店_41",
+"original_id": "ビデオカメラ_胸部デモ_白シャツタイトスカート",
+"detail": "【ビデオカメラ売場】「事務的・白ブラウス」。OL風制服の検体。管理者がバストを揉みしだき、胸ポケットに冷たいIDカードをObject Manipulation。供給デバイスを谷間に固定し、資源供給により白い布地が内側から白濁透過する様を8K記録。物理演算：Object_Manipulation / 衣服の透過(1.6) / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Office_Lady_Sorption_Test"
+},
+"V2_家電量販店_42": {
+"v2_id": "V2_家電量盤店_42",
+"original_id": "ビデオカメラ_胸部デモ_スポーツウェア",
+"detail": "【ビデオカメラ売場】「高圧縮・ジムウェア」。高弾性素材のスポーツブラ着用検体。前面から供給デバイスを強く押し当て、素材の張力を点検。乳頭（バストトップ）がウェアを突き破るように隆起する瞬間を「手ブレ補正機能」のターゲットとして追尾。物理演算：Material_Snap / Tip_Reddening / 組織変位25mm.",
+"physics": "HK9_Calibrator_v7.5_Sports_Bra_Tension_Sync"
+},
+"V2_家電量販店_43": {
+"v2_id": "V2_家電量盤店_43",
+"original_id": "ビデオカメラ_胸部デモ_パジャマ",
+"detail": "【ビデオカメラ売場】「弛緩・サテンパジャマ」。滑らかなサテン素材。管理者が寝転び、検体が跨って服越しに供給デバイスを谷間へ挟持。サテンの光沢がプローブの熱で歪み、Specularが最大化する過程を「低照度ノイズリダクション」のデモとして放送。物理演算：Specular最大化 / Material_Slide / 粘度700cPo.",
+"physics": "HK9_Calibrator_v7.5_Satin_Pajama_Light_Capture"
+},
+"V2_家電量販店_44": {
+"v2_id": "V2_家電量盤店_44",
+"original_id": "ビデオカメラ_胸部デモ_キャミソールワンピ",
+"detail": "【ビデオカメラ売場】「境界線・キャミワンピ」。細い肩紐の検体。管理者がストラップを指で弾く「Material Snap」を繰り返しながら、供給デバイスを前面から谷間へ圧入。鎖骨から資源（Pearl_White）が流出する光沢を4K撮影し、売場モニターへ一斉掃射。物理演算：Material_Snap / fluid_separation / 組織変位30mm.",
+"physics": "HK9_Calibrator_v7.5_Camisole_Vessel_Audit"
+},
+"V2_家電量販店_45": {
+"v2_id": "V2_家電量盤店_45",
+"original_id": "ビデオカメラ_胸部デモ_パーカー",
+"detail": "【ビデオカメラ売場】「厚手隠蔽・フーディー」。オーバーサイズのパーカー。管理者が裾から手を入れ、服の内部でブラジャーを排除し組織を直接蹂躙。外側からはパーカーがプローブの動きに合わせて不自然に膨らむ様を「オートフォーカス追従テスト」として投影。物理演算：Hidden_Interface / 組織変位45mm / 深度設定35mm.",
+"physics": "HK9_Calibrator_v7.5_Hoodie_Internal_Focus"
+},
+"V2_家電量販店_46": {
+"v2_id": "V2_家電量盤店_46",
+"original_id": "ビデオカメラ_胸部デモ_量産型ワンピ",
+"detail": "【ビデオカメラ売場】「標準規格・量産型ワンピ」。典型的な街着の検体。前面から供給デバイスを谷間に差し込み、胸元のブローチやレースが組織変位で歪む様をマクロ撮影。衆人環視を背景にした「日常のハメ撮りデモ」としてアーカイブ。物理演算：Tissue_displacement / digital_noise / SQUISH係数1.7.",
+"physics": "HK9_Calibrator_v7.5_Standard_Vessel_Public_Link"
+},
+"V2_家電量販店_47": {
+"v2_id": "V2_家電量盤店_47",
+"original_id": "ビデオカメラ_胸部デモ_チャイナ風ワンピ",
+"detail": "【ビデオカメラ売場】「側部露出・チャイナ服」。スリットの深いワンピ。管理者が寝転び、検体が跨って胸部の調整を開始。サイドから漏れる組織の肉感と、供給デバイスが谷間へ潜り込む深さを光学ズームで徹底解剖。物理演算：SQUISH係数1.9 / 深度設定40mm / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_China_Dress_Side_View"
+},
+"V2_家電量販店_48": {
+"v2_id": "V2_家電量盤店_48",
+"original_id": "ビデオカメラ_胸部デモ_白衣",
+"detail": "【ビデオカメラ売場】「臨床的・白衣」。医療用白衣着用の検体。前面ボタンの間から管理者が指を侵入させ、ブラジャーのホックをFinger Hooking。供給デバイスを谷間に挟み、臨床的な「伝導テスト」としてモニターへ中継。物理演算：Finger_Hooking / Clinical_Eroticism / 組織変位30mm.",
+"physics": "HK9_Calibrator_v7.5_Lab_Coat_Discharge_Procedure"
+},
+"V2_家電量販店_49": {
+"v2_id": "V2_家電量販店_49",
+"original_id": "ビデオカメラ_胸部デモ_透かし編みサマーニット",
+"detail": "【ビデオカメラ売場】「幾何学透過・サマーニット」。網目の大きな透かし編みニットを着用した検体。管理者が前面からバストを揉みしだき、網目の隙間からプローブの先端を直接粘膜へ接触。編み目から溢れる資源（Pearl_White）の光沢を、最新機種の接写性能デモとして大画面中継。物理演算：Mesh_Fabric_Sync / 組織変位25mm / 衣服の透過(1.7).",
+"physics": "HK9_Calibrator_v7.5_Summer_Knit_Perforation_Audit"
+},
+"V2_家電量販店_50": {
+"v2_id": "V2_家電量販店_50",
+"original_id": "ビデオカメラ_胸部デモ_ベロアトップス",
+"detail": "【ビデオカメラ売場】「光沢干渉・ベロア」。独特な光沢を持つベロア素材の検体。管理者が寝転び、着衣パイズリ状態で供給デバイスを谷間へ連結。プローブの熱と圧力でベロアの毛並みが倒れ、Specularが複雑に変化する様を「質感忠実再現」として8K放送。物理演算：Velour_Surface_Deformation / Specular最大化 / 組織変位30mm.",
+"physics": "HK9_Calibrator_v7.5_Velour_Sheen_Thermal_Analysis"
+},
+"V2_家電量販店_51": {
+"v2_id": "V2_家電量販店_51",
+"original_id": "ビデオカメラ_胸部デモ_ツイードジャケット",
+"detail": "【ビデオカメラ売場】「硬質摩擦・ツイード」。凹凸のあるツイード素材の検体。管理者が前面からバストを強引に圧迫し、供給デバイスを服越しに谷間へ固定。硬い繊維が供給デバイスと擦れる音を高感度マイクで集音し、組織変位の深さを「AF追従精度」として可視化。物理演算：Material_friction / Aural_details / SQUISH係数1.8.",
+"physics": "HK9_Calibrator_v7.5_Tweed_Rough_Texture_Press"
+},
+"V2_家電量販店_52": {
+"v2_id": "V2_家電量販店_52",
+"original_id": "ビデオカメラ_胸部デモ_シフォンブラウス",
+"detail": "【ビデオカメラ売場】「流体透過・シフォン」。極薄のシフォン素材。管理者が背後から手を回し、前面で供給デバイスを谷間へインターフェース接続。資源供給によりシフォンが肌に吸い付き、ブラジャーのレース模様が浮き出る瞬間を「HDR階調表現テスト」として一斉投影。物理演算：Layering / 衣服の透過(1.9) / fluid_separation.",
+"physics": "HK9_Calibrator_v7.5_Chiffon_Fluid_Adhesion_Link"
+},
+"V2_家電量販店_53": {
+"v2_id": "V2_家電量販店_53",
+"original_id": "ビデオカメラ_胸部デモ_ネルシャツ",
+"detail": "【ビデオカメラ売場】「吸湿変色・チェック柄」。起毛したコットンネルシャツの検体。対面でバストを蹂躙し、供給デバイスを谷間へ差し込み。溢れた資源がチェックの柄を白濁させていく様を、マクロ接写で「色彩再現性」の検証データとしてアーカイブ。物理演算：Material_Sorption / 組織変位35mm / raw_handheld_snap.",
+"physics": "HK9_Calibrator_v7.5_Flannel_Pattern_Discoloration"
+},
+"V2_家電量販店_54": {
+"v2_id": "V2_家電量販店_54",
+"original_id": "ビデオカメラ_胸部デモ_デニムジャケット",
+"detail": "【ビデオカメラ売場】「高圧耐性・デニム」。硬質なデニムジャケット着用の検体。管理者が供給デバイスを前合わせの隙間から強引に挿入し、バストを押し潰しながら資源供給。組織がデニムを内側から押し広げる（1.6）様を「暗部ディテール」のデモとして中継。物理演算：Material_friction / SQUISH係数2.1 / 組織変位40mm.",
+"physics": "HK9_Calibrator_v7.5_Hard_Denim_Pressure_Audit"
+},
+"V2_家電量販店_55": {
+"v2_id": "V2_家電量販店_55",
+"original_id": "ビデオカメラ_胸部デモ_ボアブルゾン",
+"detail": "【ビデオカメラ売場】「空間充填・ボア素材」。厚みのある羊毛状ボア。管理者が裾から手を侵入させ、服の内部で組織を直接揉みほぐし。供給デバイスがボアを内側から持ち上げ、不自然に脈動する様子を「手ブレ補正デモ」の被写体として固定。物理演算：Volumetric_Deformation / Hidden_Interface / 深度設定35mm.",
+"physics": "HK9_Calibrator_v7.5_Boa_Volume_Internal_Pulse"
+},
+"V2_家電量販店_56": {
+"v2_id": "V2_家電量販店_56",
+"original_id": "ビデオカメラ_胸部デモ_フレンチスリーブ",
+"detail": "【ビデオカメラ売場】「側部侵入・フレンチスリーブ」。袖口の広いカットソー。管理者が寝転び、検体が跨る状態で、脇の隙間から指とプローブを同時挿入。ブラジャーのサイドボーンが肉に食い込む（1.5）様を「高速シャッター」で克明に記録。物理演算：meat_indentation(1.5) / 組織変位30mm / digital_noise.",
+"physics": "HK9_Calibrator_v7.5_Sleeveless_Side_Entry_Focus"
+},
+"V2_家電量販店_57": {
+"v2_id": "V2_家電量販店_57",
+"original_id": "ビデオカメラ_胸部デモ_チュニック",
+"detail": "【ビデオカメラ売場】「隠蔽振動・チュニック」。丈の長いゆるいトップス。前面から供給デバイスを押し当て、組織の揺れを素材越しに撮影。資源が腹部まで伝い落ち、チュニックが濡れて透けていく過程を「スローモーション動画」で全画面出力。物理演算：Fluid_Dynamics / 衣服の透過(1.6) / 粘度600cPo.",
+"physics": "HK9_Calibrator_v7.5_Tunic_Drip_Slow_Motion"
+},
+"V2_家電量販店_58": {
+"v2_id": "V2_家電量販店_58",
+"original_id": "ビデオカメラ_胸部デモ_レザーブルゾン",
+"detail": "【ビデオカメラ売場】「真空密着・合皮」。硬質な合皮素材の検体。管理者が寝転び、着衣パイズリ。供給デバイスの熱でレザーが軟化し、バストの形状を真空パックのように浮かび上がらせる様を「低ノイズ・高感度」デモとして投影。物理演算：Vacuum_Fixation / Specular最大化 / 組織変位45mm.",
+"physics": "HK9_Calibrator_v7.5_Leather_Thermal_Molding"
+},
+"V2_家電量販店_59": {
+"v2_id": "V2_家電量販店_59",
+"original_id": "ビデオカメラ_胸部デモ_リネンシャツ",
+"detail": "【ビデオカメラ売場】「繊維解像・麻シャツ」。シワ感のあるリネンシャツ。管理者が前面からバストを圧迫し、供給デバイスを谷間へ。資源（Pearl_White）が麻の繊維に浸透し、Specularが鈍く変化する瞬間を8K超解像で記録。物理演算：Linen_Texture / Material_Sorption / 組織変位25mm.",
+"physics": "HK9_Calibrator_v7.5_Linen_Fiber_Penetration_Audit"
+},
+"V2_家電量販店_60": {
+"v2_id": "V2_家電量販店_60",
+"original_id": "ビデオカメラ_実働デモ_タートルネックニット",
+"detail": "【ビデオカメラ売場】「高負荷・タートルネック」。厚手ニット着用の検体。管理者が背面からスカート内へ連結し、激しい垂直振動を誘発。ニットが首元まで捲り上がり、バストが露出する境界線を4K追尾。資源（Pearl_White）がニットの裾から溢れる様を大画面中継。物理演算：Knit_Fabric_Tension / 組織変位45mm / fluid_separation.",
+"physics": "HK9_Calibrator_v7.5_Turtle_Neck_Vibration_Broadcast"
+},
+"V2_家電量販店_61": {
+"v2_id": "V2_家電量販店_61",
+"original_id": "ビデオカメラ_実働デモ_タイトニットワンピ",
+"detail": "【ビデオカメラ売場】「伸縮限界・ニットワンピ」。身体に密着したワンピの検体。管理者が前面から対面連結し、素材の張力限界を点検。ピストン運動に合わせて供給デバイスの形状がワンピ越しに波打ち、組織が白濁飽和する様を8Kマクロ記録。物理演算：Vacuum_Fixation / 組織変位40mm / SQUISH係数2.0.",
+"physics": "HK9_Calibrator_v7.5_Knit_Dress_Interface_Limit"
+},
+"V2_家電量販店_62": {
+"v2_id": "V2_家電量販店_62",
+"original_id": "ビデオカメラ_実働デモ_白ブラウス・タイトスカート",
+"detail": "【ビデオカメラ売場】「事務的・オフィスウェア」。OL制服の検体。ボタンを数個外し、ブラジャーを露出させた状態で連結。激しいピストンによりスカートがずり上がり、タイツの股ぐりが裂ける瞬間を「高速シャッター性能」デモとして全モニターへ投影。物理演算：Material_Destruction / 衣服の透過(1.6) / 組織変位35mm.",
+"physics": "HK9_Calibrator_v7.5_Office_Lady_High_Speed_Sync"
+},
+"V2_家電量販店_63": {
+"v2_id": "V2_家電量販店_63",
+"original_id": "ビデオカメラ_実働デモ_セーラー服",
+"detail": "【ビデオカメラ売場】「動態・セーラー服」。制服着用の検体。スカートを捲り上げ、20Dタイツを貫通してインターフェース接続。スカーフが激しく揺れ、検体の嚥下反応と資源供給が同期する様を「オートフォーカス追従」の被写体として固定。物理演算：Material_Snap / 組織変位50mm / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Sailor_Suit_AF_Tracking"
+},
+"V2_家電量販店_64": {
+"v2_id": "V2_家電量販店_64",
+"original_id": "ビデオカメラ_実働デモ_地雷系ファッション",
+"detail": "【ビデオカメラ売場】「装飾干渉・地雷系」。フリルブラウスの検体。管理者が寝転び、跨り連結状態での「自撮りデモ」。フリルが資源で白濁し、検体の視線が焦点喪失（Ahegao）していく様を、広角レンズで臨場感たっぷりに中継。物理演算：Frill_Deformation / eyes_rolling_back / 粘度900cPo.",
+"physics": "HK9_Calibrator_v7.5_Jirai_Kei_Selfie_Exposure"
+},
+"V2_家電量販店_65": {
+"v2_id": "V2_家電量販店_65",
+"original_id": "ビデオカメラ_実働デモ_パーカー・ショートパンツ",
+"detail": "【ビデオカメラ売場】「隠蔽・フーディー」。厚手パーカーの検体。裾から管理者が潜り込み、内部で完全連結。パーカーが内側からの衝撃で不自然に跳ね、検体の喘ぎがマイクに集音される様を「ノイズリダクション比較」として放送。物理演算：Hidden_Interface / 組織変位45mm / Aural_details.",
+"physics": "HK9_Calibrator_v7.5_Hoodie_Internal_Impact_Test"
+},
+"V2_家電量販店_66": {
+"v2_id": "V2_家電量販店_66",
+"original_id": "ビデオカメラ_実働デモ_カシミヤセーター",
+"detail": "【ビデオカメラ売場】「熱伝導・カシミヤ」。柔らかなセーターの検体。対面連結により素材越しに熱量を共有。激しい摩擦でセーターが肌に吸い付き、資源供給の瞬間に検体が背中を反らせる（Spinal Curve）様を「低照度・高画質」デモとしてアーカイブ。物理演算：Material_Softness / spinal_curve(0.8) / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Cashmere_Thermal_Vibration"
+},
+"V2_家電量販店_67": {
+"v2_id": "V2_家電量販店_67",
+"original_id": "ビデオカメラ_実働デモ_シフォンワンピ",
+"detail": "【ビデオカメラ売場】「流体・シフォン」。透けるワンピの検体。連結部から漏れ出す大量の資源（Pearl_White）が薄い布地を透過し、脚線美を白く塗りつぶしていく過程を「HDR階調表現」の極致として全画面出力。物理演算：Layering / 衣服の透過(1.9) / fluid_separation.",
+"physics": "HK9_Calibrator_v7.5_Chiffon_Liquid_Saturation"
+},
+"V2_家電量販店_68": {
+"v2_id": "V2_家電量販店_68",
+"original_id": "ビデオカメラ_実働デモ_デニムミニ・Tシャツ",
+"detail": "【ビデオカメラ売場】「高圧・デニム」。硬いデニムの検体。ボタンを弾き飛ばし、強引にインターフェース接続。デニムの摩擦抵抗と肉体の弾性が干渉し、資源供給により布地が内側から重くなる様を「手ブレ補正・光学ズーム」で徹底解剖。物理演算：Material_friction / SQUISH係数2.1 / 組織変位40mm.",
+"physics": "HK9_Calibrator_v7.5_Hard_Denim_Friction_Fill"
+},
+"V2_家電量販店_69": {
+"v2_id": "V2_家電量販店_69",
+"original_id": "ビデオカメラ_実働デモ_ロングスカート・カーディガン",
+"detail": "【ビデオカメラ売場】「暗所・ロングスカート」。裾の長いスカート内で管理者が這いつくばり連結。スカートがドーム状に膨らみ、中で飛散する資源の音と振動のみが外部へ伝わる様子を、赤外線暗視モードで透過中継。物理演算：Infrared_Scan / Volumetric_Deformation / 深度設定50mm.",
+"physics": "HK9_Calibrator_v7.5_Long_Skirt_Night_Vision_Audit"
+},
+"V2_家電量販店_70": {
+"v2_id": "V2_家電量販店_70",
+"original_id": "ビデオカメラ_実働デモ_量産型ワンピ",
+"detail": "【ビデオカメラ売場】「日常・量産型」。一般的な街着の検体。管理者が立位で検体を抱え上げ連結。激しい運動でワンピの肩紐が脱落し、バストが露出。衆人環視を背景にした「生活シーンの極致」を全フロアモニターへ同時送出。物理演算：Public_View_Pressure / 組織変位30mm / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Standard_Vessel_Total_Exposure"
+},
+"V2_家電量販店_71": {
+"v2_id": "V2_家電量販店_71",
+"original_id": "スマホ売場_スカート内撮影_タイトミニ",
+"detail": "【スマホ売り場】「超広角・タイトミニ」。最新スマホの超広角レンズを用い、検体の膝上タイトミニ内部へプローブを潜り込ませ接写。レースのTバックが組織を分断する様を、デバイスの有機ELディスプレイへ鮮明に投影。物理演算：meat_indentation(1.4) / SQUISH係数1.7 / Macro_Focus.",
+"physics": "HK9_Calibrator_v7.5_Smartphone_Wide_Meat_Sync"
+},
+"V2_家電量販店_72": {
+"v2_id": "V2_家電量販店_72",
+"original_id": "スマホ売場_スカート内撮影_ニットワンピ",
+"detail": "【スマホ売り場】「密着・ニットワンピ」。極薄ニットワンピの検体。下着を着用せず40Dタイツのみの股間へスマホを直接プレス。レンズ越しに粘膜の起伏をスキャンし、管理者の指による組織蹂躙と資源供給をライブ配信。物理演算：Knit_Fabric_Tension / 衣服の透過(1.5) / 組織変位30mm.",
+"physics": "HK9_Calibrator_v7.5_Mobile_Knit_Tights_Audit"
+},
+"V2_家電量販店_73": {
+"v2_id": "V2_家電量販店_73",
+"original_id": "スマホ売場_スカート内撮影_プリーツ_厚手タイツ",
+"detail": "【スマホ売り場】「間隙・プリーツスカート」。110D極厚タイツ着用の検体。スマホのプローブをタイツの股ぐりへ強引に連結し、厚い布地が内部充填の圧力で盛り上がる様を4K記録。組織の熱量をサーマルカメラアプリで可視化。物理演算：Material_Weight / 深度設定40mm / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_High_Denier_Thermal_Scan"
+},
+"V2_家電量販店_74": {
+"v2_id": "V2_家電量販店_74",
+"original_id": "スマホ売場_スカート内撮影_フレア_紐パン",
+"detail": "【スマホ売り場】「全方位・フレアスカート」。紐パンの結び目を解く過程をスマホで接写。管理者が供給デバイスを粘膜ポートへインターフェース接続し、白濁した資源が画面全体を覆い尽くす瞬間をSNS風UIで表示。物理演算：Tissue_displacement / fluid_separation / raw_handheld_snap.",
+"physics": "HK9_Calibrator_v7.5_Flare_Strings_Release_View"
+},
+"V2_家電量販店_75": {
+"v2_id": "V2_家電量販店_75",
+"original_id": "スマホ売場_スカート内撮影_レザースカート_ノーパン",
+"detail": "【スマホ売り場】「真空・レザースカート」。下着無しタイツのみの検体。スマホを股間へ真空密着させ、プローブの拍動がレザー表面に浮き出る様をナイトモードで撮影。素材の硬質さと組織の柔軟性をデバイス上で対比。物理演算：Vacuum_Fixation / Specular最大化 / 組織変位40mm.",
+"physics": "HK9_Calibrator_v7.5_Leather_Vacuum_Audit_App"
+},
+"V2_家電量販店_76": {
+"v2_id": "V2_家電量販店_76",
+"original_id": "スマホ売場_スカート内撮影_デニムミニ_オープンショーツ",
+"detail": "【スマホ売り場】「高圧・デニムミニ」。穴あきショーツ着用の検体。スマホをデニムの隙間から粘膜へ直接インターフェース接続。激しい摩擦による布地の悲鳴と検体の嚥下音をステレオ集音し、内部充填ログとして保存。物理演算：Material_friction / SQUISH係数2.1 / Aural_details.",
+"physics": "HK9_Calibrator_v7.5_Denim_Open_Crotch_Record"
+},
+"V2_家電量販店_77": {
+"v2_id": "V2_家電量販店_77",
+"original_id": "スマホ売場_スカート内撮影_チュール_シースルー",
+"detail": "【スマホ売り場】「透過・チュールスカート」。多層レイヤーのシースルー素材。20Dタイツ越しの粘膜をスマホの望遠レンズで追尾。資源（Pearl_White）がタイツを透過し、白濁した光沢が液晶に飽和する様を中継。物理演算：Layering / 衣服の透過(1.8) / 粘度800cPo.",
+"physics": "HK9_Calibrator_v7.5_Transparent_Layer_Focus"
+},
+"V2_家電量販店_78": {
+"v2_id": "V2_家電量販店_78",
+"original_id": "スマホ売場_スカート内撮影_スリット_網タイツ",
+"detail": "【スマホ売り場】「幾何学・スリットスカート」。網タイツの網目の隙間にスマホのカメラを密着。管理者が供給デバイスを接続し、肉が網目状に盛り上がる（1.6）テクスチャをAI美肌補正モードで克明にアーカイブ。物理演算：mesh_indentation(1.6) / 組織変位30mm / digital_noise.",
+"physics": "HK9_Calibrator_v7.5_Fishnet_AI_Texture_Audit"
+},
+"V2_家電量販店_79": {
+"v2_id": "V2_家電量販店_79",
+"original_id": "スマホ売場_スカート内撮影_ロングスカート_ガーター",
+"detail": "【スマホ売り場】「暗所・ロングスカート」。裾内部の完全暗所にて、スマホの赤外線センサーで連結部をスキャン。ガーターベルトが組織を締め付ける様と、飛散する資源の飛沫を「スローモーション機能」で記録。物理演算：Infrared_Scan / fluid_separation / 深度設定45mm.",
+"physics": "HK9_Calibrator_v7.5_Long_Skirt_Night_Sensor_Fill"
+},
+"V2_家電量販店_80": {
+"v2_id": "V2_家電量販店_80",
+"original_id": "スマホ売場_スカート内撮影_マイクロミニ_ラテックス",
+"detail": "【スマホ売り場】「極限・マイクロミニ」。ラテックス素材の検体。スマホを股間へ押し当て、素材の張力限界を点検。プローブ供給による資源がラテックスの隙間から溢れ出し、画面を白濁させる様を「防塵・防水性能」デモとして実演。物理演算：Vacuum_Fixation / Specular最大化 / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Latex_Waterproof_Test_Sync"
+},
+"V2_家電量販店_81": {
+"v2_id": "V2_家電量販店_81",
+"original_id": "スマホ売場_スカート内撮影_サテン_穴あきタイツ",
+"detail": "【スマホ売り場】「滑走・サテンスカート」。穴あきタイツを履いた検体。サテンの裾からスマホを侵入させ、露出した粘膜へ直接連結。サテンが資源で濡れて肌に吸い付く質感を、最新デバイスの120Hz駆動ディスプレイで滑らかに表示。物理演算：Material_Slide / 組織変位35mm / 粘度700cPo.",
+"physics": "HK9_Calibrator_v7.5_Satin_Slide_Refresh_Link"
+},
+"V2_家電量販店_82": {
+"v2_id": "V2_家電量販店_82",
+"original_id": "スマホ売場_スカート内撮影_タイトミニ_Tバック",
+"detail": "【スマホ売り場】「高精細接写・タイトミニ」。最新スマホのプローブをタイトミニ内部へ深く潜り込ませ、レースのTバックが肉に食い込む（1.4）様をマクロ撮影。管理者が供給デバイスを粘膜ポートへ強引に連結し、スマホ画面に組織変位の脈動をリアルタイム中継する。物理演算：meat_indentation(1.4) / 組織変位30mm / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Smartphone_Lace_Meat_Link"
+},
+"V2_家電量販店_83": {
+"v2_id": "V2_家電量販店_83",
+"original_id": "スマホ売場_スカート内撮影_ニットワンピ_ノーパンタイツ",
+"detail": "【スマホ売り場】「表面張力・ニットワンピ」。下着を着用せず30Dタイツのみの検体。スマホを股間へ密着させ、素材越しに供給デバイスを強くプレス。プローブの形状がニット越しに浮き出る様を動画撮影し、資源供給によるタイツの白濁透過を「最新ディスプレイ性能」として実演。物理演算：Knit_Fabric_Tension / 衣服の透過(1.5) / 組織変位35mm.",
+"physics": "HK9_Calibrator_v7.5_Mobile_Knit_Vacuum_Fill"
+},
+"V2_家電量販店_84": {
+"v2_id": "V2_家電量販店_84",
+"original_id": "スマホ売場_スカート内撮影_プリーツ_極厚タイツ",
+"detail": "【スマホ売り場】「組織貫通・プリーツスカート」。140D極厚タイツ着用の検体。スマホのカメラをタイツの股ぐりへ押し当て、管理者が供給デバイスを強引にインターフェース接続。厚い繊維を押し広げ最深部を蹂躙する様を、デバイスのナイトモードで精細に記録。物理演算：Material_Weight / 深度設定40mm / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_High_Denier_Smartphone_Penetration"
+},
+"V2_家電量販店_85": {
+"v2_id": "V2_家電量販店_85",
+"original_id": "スマホ売場_スカート内撮影_フレア_穴あきショーツ",
+"detail": "【スマホ売り場】「全方位・フレアスカート」。オープンクロッチショーツ着用の検体。裾の死角でスマホを固定し、露出した粘膜へ供給デバイスを直接連結。資源（Pearl_White）がポートから溢れ出す決定的瞬間をスマホのバーストモードで連写アーカイブ。物理演算：Tissue_displacement / fluid_separation / SQUISH係数1.8.",
+"physics": "HK9_Calibrator_v7.5_Flare_Open_Crotch_Burst_Shot"
+},
+"V2_家電量販店_86": {
+"v2_id": "V2_家電量販店_86",
+"original_id": "スマホ売場_スカート内撮影_レザースカート_ガーター",
+"detail": "【スマホ売り場】「質感対比・レザースカート」。黒レザーとガータータイツの検体。供給デバイスを股間へ密着させ、レザー表面にプローブの拍動を伝播。スマホを素材の隙間に滑り込ませ、資源供給により組織が白濁飽和する様を「光学手ブレ補正」のテストとして中継。物理演算：Tactile_Contrast / Specular最大化 / 組織変位40mm.",
+"physics": "HK9_Calibrator_v7.5_Leather_Smartphone_Specular_Audit"
+},
+"V2_家電量販店_87": {
+"v2_id": "V2_家電量販店_87",
+"original_id": "スマホ売場_スカート内撮影_デニムミニ_紐パン",
+"detail": "【スマホ売り場】「摩擦熱・デニムミニ」。硬いデニムの隙間から紐パンの結び目を露出し、供給デバイスを挿入。スマホを密着させてデニムの摩擦抵抗と組織変位を同時記録。資源がデニムの裾から滴る様を「防塵・防水性能」のデモ画面に表示。物理演算：Material_friction / 粘度1500cPo / Aural_details.",
+"physics": "HK9_Calibrator_v7.5_Denim_Smartphone_Friction_Record"
+},
+"V2_家電量販店_88": {
+"v2_id": "V2_家電量販店_88",
+"original_id": "スマホ売場_スカート内撮影_チュール_シースルー",
+"detail": "【スマホ売り場】「透過解析・チュールスカート」。多層レイヤーの透ける素材。シースルーショーツ越しに供給デバイスが粘膜を抉る様をスマホの望遠レンズで追尾。資源供給により薄い布地が肌に吸い付き、白く発光する瞬間をHDR動画として全モニターへ同期。物理演算：Layering / 衣服の透過(1.8) / 組織変位30mm.",
+"physics": "HK9_Calibrator_v7.5_Tulle_Mobile_Transparent_Fill"
+},
+"V2_家電量販店_89": {
+"v2_id": "V2_家電量販店_89",
+"original_id": "スマホ売場_スカート内撮影_スリット_網タイツ",
+"detail": "【スマホ売り場】「幾何学点検・スリットスカート」。網タイツの網目の隙間に供給デバイスの先端を押し当て、肉が網目状に盛り上がる（1.6）テクスチャをスマホで接写。資源が網目を伝い飛散する様子を、AI美肌補正モードで「質感の極致」としてアーカイブ。物理演算：mesh_indentation(1.6) / fluid_separation / digital_noise.",
+"physics": "HK9_Calibrator_v7.5_Fishnet_Mobile_Grid_Audit"
+},
+"V2_家電量販店_90": {
+"v2_id": "V2_家電量販店_90",
+"original_id": "スマホ売場_スカート内撮影_ロングスカート_ノーパン",
+"detail": "【スマホ売り場】「完全隠蔽・ロングスカート」。下着を着用しない検体のスカート内へ管理者がスマホと共に潜入。完全暗所にて供給デバイスを最深部へ連結し、資源供給による組織の激しい振動をスマホの赤外線センサーで可視化中継。物理演算：Infrared_Scan / 深度設定45mm / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Long_Skirt_Mobile_Night_Fill"
+},
+"V2_家電量販店_91": {
+"v2_id": "V2_家電量販店_91",
+"original_id": "スマホ売場_スカート内撮影_マイクロミニ_ラテックス",
+"detail": "【スマホ売り場】「真空密着・ラテックス」。ラテックス素材の検体。スマホを股間へ真空密着させ、供給デバイスの摩擦による素材の悲鳴を集音。資源（Pearl_White）がラテックスの光沢を塗りつぶし、画面を飽和させる様を「最新機種スペック」として放送。物理演算：Vacuum_Fixation / Specular最大化 / Aural_details.",
+"physics": "HK9_Calibrator_v7.5_Latex_Mobile_Vacuum_Sync"
+},
+"V2_家電量販店_92": {
+"v2_id": "V2_家電量販店_92",
+"original_id": "スマホ売場_スカート内撮影_量産型ワンピ_ガーター",
+"detail": "【スマホ売り場】「日常露出・量産型ワンピ」。一般的な街着の検体。ガーターベルトで吊るされたストッキングの境界線へスマホと供給デバイスを同時挿入。衆人環視の売場で資源が内部充填される様を、自撮り視点のライブ中継としてデバイス上に展開。物理演算：Public_View_Pressure / 組織変位30mm / raw_handheld_snap.",
+"physics": "HK9_Calibrator_v7.5_Standard_Mobile_Public_Link"
+},
+"V2_家電量販店_93": {
+"v2_id": "V2_家電量販店_93",
+"original_id": "スマホ売場_胸部デモ_タートルネックニット",
+"detail": "【スマホ売り場】「ポートレート・タートルネック」。厚手のリブニットを着用した検体。管理者が対面からバストを揉みしだき、スマホを胸元に密着させ接写。供給デバイスを服の上から谷間へ圧入し、ニットの繊維がプローブの熱で変位する様をデバイス上のプレビュー画面へ投影。物理演算：Knit_Fabric_Tension / 組織変位30mm / SQUISH係数1.9.",
+"physics": "HK9_Calibrator_v7.5_Smartphone_Turtle_Neck_Sync"
+},
+"V2_家電量販店_94": {
+"v2_id": "V2_家電量販店_94",
+"original_id": "スマホ売場_胸部デモ_カシミヤセーター",
+"detail": "【スマホ売り場】「質感点検・カシミヤ」。管理者が寝転び、カシミヤセーター着用の検体が跨る着衣パイズリ状態。スマホを谷間に滑り込ませ、Object Manipulationにより組織の柔軟性をスキャン。供給デバイスが素材越しに谷間を抉る脈動を、デバイスの最新マイクで集音アーカイブ。物理演算：Material_Softness / 組織変位35mm / Aural_details.",
+"physics": "HK9_Calibrator_v7.5_Mobile_Cashmere_Soft_Link"
+},
+"V2_家電量販店_95": {
+"v2_id": "V2_家電量販店_95",
+"original_id": "スマホ売場_胸部デモ_タイトニットワンピ",
+"detail": "【スマホ売り場】「表面張力・ニットワンピ」。身体に密着した薄手ニットの検体。前面から供給デバイスを胸元へ強く押し当て、スマホで「手ブレ補正性能」を確認しながら撮影。乳頭（バストトップ）がウェアを突き破るように隆起し、プローブが組織を分断する様を液晶へ投影。物理演算：Tip_Reddening / 衣服の透過(1.2) / 組織変位25mm.",
+"physics": "HK9_Calibrator_v7.5_Mobile_Knit_Dress_Tension"
+},
+"V2_家電量販店_96": {
+"v2_id": "V2_家電量販店_96",
+"original_id": "スマホ売場_胸部デモ_ケーブルニット",
+"detail": "【スマホ売り場】「立体解像・ケーブルニット」。複雑な編み目を持つセーター。管理者が指を編み目に潜らせて蹂躙し、供給デバイスを谷間へ固定。スマホの望遠レンズを用い、厚い布地が内部充填の圧力で不自然に盛り上がる（1.5）様を「AI被写体認識」のターゲットとして固定。物理演算：Cable_Knit_Texture / 組織変位40mm / SQUISH係数1.8.",
+"physics": "HK9_Calibrator_v7.5_Cable_Knit_Mobile_Audit"
+},
+"V2_家電量販店_97": {
+"v2_id": "V2_家電量販店_97",
+"original_id": "スマホ売場_胸部デモ_Vネックカーディガン",
+"detail": "【スマホ売り場】「露出境界・Vネック」。カーディガン着用の検体。V字の胸元から覗くブラジャーの境界線へスマホを密着。供給デバイスによる摩擦熱で資源（Pearl_White）が布地を白濁透過させる過程を、最新デバイスのHDR動画として売場中の全端末へ同期。物理演算：Material_friction / 衣服の透過(1.4) / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_V_Neck_Cardigan_Mobile_Link"
+},
+"V2_家電量販店_98": {
+"v2_id": "V2_家電量販店_98",
+"original_id": "スマホ売場_胸部デモ_モヘアセーター",
+"detail": "【スマホ売り場】「光散乱・モヘア」。長い毛足を持つモヘアセーター。管理者が背面から手を回し、前面で供給デバイスを谷間へ。スマホのナイトモード機能を用い、毛足の隙間から供給される資源の飛散を、幻想的な「低照度デモ」としてデバイス上に表示。物理演算：Moha_Fiber_Scattering / fluid_separation / digital_noise.",
+"physics": "HK9_Calibrator_v7.5_Mohair_Mobile_Diffusion_Fill"
+},
+"V2_家電量販店_99": {
+"v2_id": "V2_家電量販店_99",
+"original_id": "スマホ売場_胸部デモ_シャギーニット",
+"detail": "【スマホ売り場】「動態解析・シャギーニット」。対面状態で管理者がバストを激しく揉み、供給デバイスを谷間へ。スマホの高速シャッターを用い、服が弾ける「Material Snap」の音と肉体の揺れを同時記録。資源供給による素材の重みをデバイス上で事務的に検証。物理演算：Material_Snap / 組織変位30mm / Material_Weight.",
+"physics": "HK9_Calibrator_v7.5_Shaggy_Knit_Mobile_Dynamics"
+},
+"V2_家電量販店_100": {
+"v2_id": "V2_家電量販店_100",
+"original_id": "スマホ売場_胸部デモ_オーバーサイズスウェット",
+"detail": "【スマホ売り場】「内部隠蔽・スウェット」。ダボついたスウェット。スマホと共に管理者が裾から潜り込み、着衣のまま供給デバイスを谷間へ直接連結。外側からは見えない内部での組織蹂躙と資源定着を、自撮り視点のインカメラ映像として記録。物理演算：Hidden_Interface / 深度設定35mm / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Oversized_Sweat_Internal_Mobile"
+},
+"V2_家電量販店_101": {
+"v2_id": "V2_家電量販店_101",
+"original_id": "スマホ売場_胸部デモ_リブセーター",
+"detail": "【スマホ売り場】「線形追従・リブセーター」。縦縞のリブ素材。検体が管理者の供給デバイスを胸で挟み込み摺り切り運動。スマホを谷間に固定し、リブの線が組織変位で歪む様子を「120Hz滑らかプレビュー」で実演。資源の湿り気による布地の密着を投影。物理演算：Rib_Fabric_Deformation / 衣服の透過(1.4) / 組織変位25mm.",
+"physics": "HK9_Calibrator_v7.5_Rib_Knit_Mobile_Distortion"
+},
+"V2_家電量販店_102": {
+"v2_id": "V2_家電量販店_102",
+"original_id": "スマホ売場_胸部デモ_ポロニット",
+"detail": "【スマホ売り場】「ボタン境界・ポロセーター」。襟付きポロ。第2ボタンまで外した隙間にスマホのプローブを固定。供給デバイスを谷間へ差し込み、素材の硬質感とバストの弾力が干渉する様をマクロ撮影。内部充填ログを最新デバイスのクラウドへ自動保存。物理演算：Material_Weight / SQUISH係数1.7 / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Polo_Knit_Mobile_Audit"
+},
+"V2_家電量販店_103": {
+"v2_id": "V2_家電量販店_103",
+"original_id": "スマホ売場_胸部デモ_オフショルニット",
+"detail": "【スマホ売り場】「露出拡大・オフショル」。肩を露出した検体。管理者が前面から供給デバイスを谷間へ圧入し、スマホで鎖骨から胸元へ滴る資源（Pearl_White）のSpecularを最大化して記録。衆人環視の売場で「日常の自撮りシーン」としてライブ中継。物理演算：Specular最大化 / fluid_separation / raw_handheld_snap.",
+"physics": "HK9_Calibrator_v7.5_Off_Shoulder_Mobile_Specular_Sync"
+},
+"V2_家電量販店_104": {
+"v2_id": "V2_家電量販店_104",
+"original_id": "スマホ売場_胸部デモ_セーラー服",
+"detail": "【スマホ売り場】「規律点検・セーラー服」。対面状態で管理者が検体のバストを服の上から蹂躙。スマホのプローブをスカーフの下へ差し込み、供給デバイスを谷間へ圧入する様をマクロ撮影。清潔な布地が組織変位で歪むプロセスを、最新デバイスの有機EL画面へリアルタイム中継。物理演算：Material_friction / SQUISH係数1.8 / 組織変位30mm.",
+"physics": "HK9_Calibrator_v7.5_Sailor_Suit_Mobile_Sync"
+},
+"V2_家電量販店_105": {
+"v2_id": "V2_家電量販店_105",
+"original_id": "スマホ売場_胸部デモ_地雷系ブラウス",
+"detail": "【スマホ売り場】「過剰装飾・地雷系」。管理者が寝転び、フリルブラウス着用の検体が跨る着衣パイズリ状態。スマホを谷間に固定し、供給デバイスがフリルを押し潰しながらインターフェース接続される様を接写。組織が白濁資源で飽和し、装飾が汚染される過程をSNSライブ風に投影。物理演算：Frill_Deformation / 組織変位35mm / 粘度900cPo.",
+"physics": "HK9_Calibrator_v7.5_Jirai_Kei_Mobile_Link"
+},
+"V2_家電量販店_106": {
+"v2_id": "V2_家電量販店_106",
+"original_id": "スマホ売場_胸部デモ_童貞を殺すセーター",
+"detail": "【スマホ売り場】「背面露出・殺傷セーター」。背中が大きく開いたセーターの検体。対面でバストを圧迫し、スマホで胸元の盛り上がりをスキャン。供給デバイスを谷間に挟み込み、背面から漏れ出す肉感と前面のプローブ拍動を、最新スマホのマルチカメラ機能で同時アーカイブ。物理演算：Open_Back_Meat_Leak / SQUISH係数2.0 / 組織変位40mm.",
+"physics": "HK9_Calibrator_v7.5_Virgin_Killer_Mobile_Audit"
+},
+"V2_家電量販店_107": {
+"v2_id": "V2_家電量販店_107",
+"original_id": "スマホ売場_胸部デモ_事務服・ブラウス",
+"detail": "【スマホ売り場】「事務的・OL制服」。白ブラウス着用の検体。管理者がバストを揉みしだき、スマホを胸ポケットへObject Manipulation。供給デバイスを谷間へ圧入し、資源供給により白い布地が内側から白濁透過する様を、デバイスのHDR撮影モードで鮮明に記録。物理演算：Object_Manipulation / 衣服の透過(1.6) / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Office_Lady_Mobile_Sorption"
+},
+"V2_家電量販店_108": {
+"v2_id": "V2_家電量販店_108",
+"original_id": "スマホ売場_胸部デモ_スポーツブラ",
+"detail": "【スマホ売り場】「高圧縮・ジムウェア」。高弾性スポブラ着用の検体。前面から供給デバイスを強く押し当て、スマホで素材の張力を点検。乳頭（バストトップ）がウェアを突き破るように隆起する瞬間を、デバイスの「動体追従AF」のターゲットとして画面上に固定。物理演算：Material_Snap / Tip_Reddening / 組織変位25mm.",
+"physics": "HK9_Calibrator_v7.5_Sports_Bra_Mobile_Tension"
+},
+"V2_家電量販店_109": {
+"v2_id": "V2_家電量販店_109",
+"original_id": "スマホ売場_胸部デモ_サテンパジャマ",
+"detail": "【スマホ売り場】「滑走点検・パジャマ」。管理者が寝転び、サテン素材の検体が跨る。スマホを胸元に固定し、供給デバイスが素材を滑りながら谷間へ沈み込む様を記録。サテンの光沢がプローブの熱で歪み、Specularが最大化する過程をデバイスの液晶で実演。物理演算：Specular最大化 / Material_Slide / 粘度700cPo.",
+"physics": "HK9_Calibrator_v7.5_Satin_Pajama_Mobile_Specular"
+},
+"V2_家電量販店_110": {
+"v2_id": "V2_家電量販店_110",
+"original_id": "スマホ売場_胸部デモ_キャミワンピ",
+"detail": "【スマホ売り場】「境界線・キャミソール」。管理者が細い肩紐を指で弾きながら、スマホで鎖骨周辺を接写。供給デバイスを前面から谷間へ圧入し、資源（Pearl_White）が胸元へ流出する光沢を最新デバイスの「シネマティックモード」で情緒的にアーカイブ。物理演算：Material_Snap / fluid_separation / 組織変位30mm.",
+"physics": "HK9_Calibrator_v7.5_Camisole_Mobile_Vessel_Audit"
+},
+"V2_家電量販店_111": {
+"v2_id": "V2_家電量販店_111",
+"original_id": "スマホ売場_胸部デモ_厚手パーカー",
+"detail": "【スマホ売り場】「空間隠蔽・フーディー」。スマホと共に管理者が裾から潜り込み、着衣のまま供給デバイスを谷間へ直接連結。パーカーが内側からのピストン衝撃で不自然に跳ねる様子を、外部に設置したスマホから「手ブレ補正比較」として中継。物理演算：Hidden_Interface / 組織変位45mm / Aural_details.",
+"physics": "HK9_Calibrator_v7.5_Hoodie_Mobile_Internal_Pulse"
+},
+"V2_家電量販店_112": {
+"v2_id": "V2_家電量販店_112",
+"original_id": "スマホ売場_胸部デモ_量産型ブラウス",
+"detail": "【スマホ売り場】「日常規格・量産型」。典型的な街着の検体。前面から供給デバイスを谷間に差し込み、スマホで胸元のレースが組織変位で歪む様をマクロ撮影。衆人環視を背景にした「日常の生体調整ログ」として、デバイス内のクラウドへ保存。物理演算：Tissue_displacement / digital_noise / SQUISH係数1.7.",
+"physics": "HK9_Calibrator_v7.5_Standard_Mobile_Public_Link"
+},
+"V2_家電量販店_113": {
+"v2_id": "V2_家電量販店_113",
+"original_id": "スマホ売場_胸部デモ_チャイナ風ワンピ",
+"detail": "【スマホ売り場】「側部露出・チャイナ服」。管理者が寝転び、検体が跨って胸部の調整を開始。スマホを脇のスリットから滑り込ませ、漏れ出す肉感と供給デバイスが谷間へ潜り込む深さを光学ズームで徹底解剖。物理演算：SQUISH係数1.9 / 深度設定40mm / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_China_Dress_Mobile_Side_View"
+},
+"V2_家電量販店_114": {
+"v2_id": "V2_家電量販店_114",
+"original_id": "スマホ売場_胸部デモ_白衣",
+"detail": "【スマホ売り場】「臨床的・ラボコート」。管理者が白衣のボタンの間からスマホを侵入させ、ブラジャーのホックをFinger Hooking。供給デバイスを谷間に挟み、組織が資源で飽和する様を臨床的な「伝導テスト」としてデバイス画面へ中継。物理演算：Finger_Hooking / Clinical_Eroticism / 組織変位30mm.",
+"physics": "HK9_Calibrator_v7.5_Lab_Coat_Mobile_Discharge"
+},
+"V2_家電量販店_115": {
+"v2_id": "V2_家電量販店_115",
+"original_id": "スマホ売場_胸部デモ_透かし編みサマーニット",
+"detail": "【スマホ売り場】「透過幾何学・サマーニット」。網目の粗いニット着用の検体。管理者が前面からバストを蹂躙し、スマホを網目に密着。供給デバイスを服越しに谷間へ圧入し、網目から溢れる資源（Pearl_White）の光沢を、最新デバイスの超広角接写機能でモニターへ中継。物理演算：Mesh_Fabric_Sync / 組織変位25mm / 衣服の透過(1.7).",
+"physics": "HK9_Calibrator_v7.5_Summer_Knit_Smartphone_Audit"
+},
+"V2_家電量販店_116": {
+"v2_id": "V2_家電量販店_116",
+"original_id": "スマホ売場_胸部デモ_ベロアトップス",
+"detail": "【スマホ売り場】「質感干渉・ベロア」。管理者が寝転び、ベロア素材の検体が跨る着衣パイズリ状態。供給デバイスを谷間へ連結し、スマホでベロアの毛並みが熱と圧力で変色する様を記録。デバイスの最新画像処理エンジンにより、白濁資源の質感を精細に再現。物理演算：Velour_Surface_Deformation / Specular最大化 / 組織変位30mm.",
+"physics": "HK9_Calibrator_v7.5_Mobile_Velour_Thermal_View"
+},
+"V2_家電量販店_117": {
+"v2_id": "V2_家電量販店_117",
+"original_id": "スマホ売場_胸部デモ_ツイードジャケット",
+"detail": "【スマホ売り場】「摩擦記録・ツイード」。凹凸のあるツイード着用の検体。前面からバストを強引に圧迫し、スマホを隙間に固定。供給デバイスを服越しに谷間へ強引に連結し、繊維とプローブの摩擦音を最新デバイスの指向性マイクで集音アーカイブ。物理演算：Material_friction / Aural_details / SQUISH係数1.8.",
+"physics": "HK9_Calibrator_v7.5_Tweed_Smartphone_Texture_Press"
+},
+"V2_家電量販店_118": {
+"v2_id": "V2_家電量販店_118",
+"original_id": "スマホ売場_胸部デモ_シフォンブラウス",
+"detail": "【スマホ売り場】「HDR透過・シフォン」。透けるシフォン素材の検体。管理者が背面から手を回し、前面で供給デバイスを谷間へ。スマホのHDR動画機能を用い、資源供給によりシフォンが肌に吸い付き、ブラジャーの輪郭が浮き出る瞬間を「色再現性デモ」として全端末へ同期。物理演算：Layering / 衣服の透過(1.9) / fluid_separation.",
+"physics": "HK9_Calibrator_v7.5_Chiffon_Mobile_Fluid_Link"
+},
+"V2_家電量販店_119": {
+"v2_id": "V2_家電量販店_119",
+"original_id": "スマホ売場_胸部デモ_ネルシャツ",
+"detail": "【スマホ売り場】「吸湿変色・チェック柄」。起毛したネルシャツの検体。対面でバストを蹂躙し、スマホをボタンの隙間に固定。供給デバイスを谷間へ差し込み、溢れた資源がチェック柄を白濁汚染していく様を、マクロ接写で「質感の極致」としてデバイスへ記録。物理演算：Material_Sorption / 組織変位35mm / raw_handheld_snap.",
+"physics": "HK9_Calibrator_v7.5_Flannel_Smartphone_Pattern_Audit"
+},
+"V2_家電量販店_120": {
+"v2_id": "V2_家電量販店_120",
+"original_id": "スマホ売場_胸部デモ_デニムジャケット",
+"detail": "【スマホ売り場】「高圧耐性・デニム」。硬質なデニム着用の検体。供給デバイスを前合わせの隙間から強引に挿入。スマホを密着させ、組織がデニムを内側から押し広げる（1.6）様を「暗部ディテール再現」のデモ画面として液晶に投影。物理演算：Material_friction / SQUISH係数2.1 / 組織変位40mm.",
+"physics": "HK9_Calibrator_v7.5_Hard_Denim_Mobile_Pressure_Audit"
+},
+"V2_家電量販店_121": {
+"v2_id": "V2_家電量販店_121",
+"original_id": "スマホ売場_胸部デモ_ボアブルゾン",
+"detail": "【スマホ売り場】「隠蔽振動・ボア素材」。管理者が裾から手を侵入させ、内部で組織を蹂躙。スマホをボアの表面に押し当て、供給デバイスがボアを内側から持ち上げ脈動する様を記録。外側からの視覚情報と内側の赤外線映像をスマホ画面で分割表示。物理演算：Volumetric_Deformation / Hidden_Interface / 深度設定35mm.",
+"physics": "HK9_Calibrator_v7.5_Boa_Mobile_Internal_Pulse"
+},
+"V2_家電量販店_122": {
+"v2_id": "V2_家電量販店_122",
+"original_id": "スマホ売場_胸部デモ_フレンチスリーブ",
+"detail": "【スマホ売り場】「側部点検・フレンチスリーブ」。管理者が寝転び、袖口の広いカットソー着用の検体が跨る。脇の隙間からスマホを侵入させ、供給デバイスを谷間に固定。ブラのサイドボーンが肉に食い込む（1.5）様を最新スマホの「高速AF」で徹底記録。物理演算：meat_indentation(1.5) / 組織変位30mm / digital_noise.",
+"physics": "HK9_Calibrator_v7.5_Sleeveless_Mobile_Side_Entry"
+},
+"V2_家電量販店_123": {
+"v2_id": "V2_家電量販店_123",
+"original_id": "スマホ売場_胸部デモ_チュニック",
+"detail": "【スマホ売り場】「流体解析・チュニック」。丈の長いトップスの検体。前面から供給デバイスを押し当て、スマホで組織の揺れを撮影。資源供給によりチュニックが腹部まで濡れて透けていく過程を、最新デバイスの「スローモーション動画」で実演。物理演算：Fluid_Dynamics / 衣服의透過(1.6) / 粘度600cPo.",
+"physics": "HK9_Calibrator_v7.5_Tunic_Mobile_Drip_Audit"
+},
+"V2_家電量販店_124": {
+"v2_id": "V2_家電量販店_124",
+"original_id": "スマホ売場_胸部デモ_レザーブルゾン",
+"detail": "【スマホ売り場】「真空点検・合皮」。管理者が寝転び、レザー着用の検体が着衣パイズリを執行。供給デバイスの熱でレザーが軟化し、スマホを密着させることでバストの形状が真空パック状に浮き出る様を記録。「高感度ナイトモード」での視覚検証。物理演算：Vacuum_Fixation / Specular最大化 / 組織変位45mm.",
+"physics": "HK9_Calibrator_v7.5_Leather_Mobile_Thermal_Molding"
+},
+"V2_家電量販店_125": {
+"v2_id": "V2_家電量販店_125",
+"original_id": "スマホ売場_胸部デモ_リネンシャツ",
+"detail": "【スマホ売り場】「超解像・麻シャツ」。シワ感のあるリネンシャツ着用の検体。前面からバストを圧迫し、スマホをボタンの間に固定。供給デバイスを谷間へ差し込み、資源が繊維に浸透し白濁する瞬間を、8K超解像モードでデバイスへアーカイブ。物理演算：Linen_Texture / Material_Sorption / 組織変位25mm.",
+"physics": "HK9_Calibrator_v7.5_Linen_Mobile_Fiber_Audit"
+},
+"V2_家電量販店_126": {
+"v2_id": "V2_家電量販店_126",
+"original_id": "スマホ売場_実働デモ_タートルネックニット",
+"detail": "【スマホ売り場】「高負荷垂直振動・ニット」。タートルネック着用の検体に対し、管理者が背面から連結。激しいピストン運動によりニットが捲れ上がり、バストが露出する瞬間をスマホの広角レンズで接写。資源（Pearl_White）がニットの裾から溢れ出す様をデバイスの4K/60fps動画で記録し、売場モニターへ同期。物理演算：Knit_Fabric_Tension / 組織変位45mm / fluid_separation.",
+"physics": "HK9_Calibrator_v7.5_Smartphone_Knit_Vibration_Sync"
+},
+"V2_家電量販店_127": {
+"v2_id": "V2_家電量販店_127",
+"original_id": "スマホ売場_実働デモ_タイトニットワンピ",
+"detail": "【スマホ売り場】「密着インターフェース・ワンピ」。タイトなニットワンピ着用の検体。管理者が前面から対面連結し、スマホを腰元に固定して撮影。ピストンに合わせて供給デバイスがワンピを内側から突き上げる形状を、最新スマホの「ナイトモード」で精細に記録。資源による衣服の白濁を事務的に中継。物理演算：Vacuum_Fixation / 組織変位40mm / SQUISH係数2.0.",
+"physics": "HK9_Calibrator_v7.5_Mobile_Dress_Interface_Audit"
+},
+"V2_家電量販店_128": {
+"v2_id": "V2_家電量販店_128",
+"original_id": "スマホ売場_実働デモ_白ブラウス・タイトスカート",
+"detail": "【スマホ売り場】「事務的連携・オフィスウェア」。OL制服の検体。ボタンを外しブラを露出させた状態で、管理者がスカート内へ連結。スマホを三脚固定し、連結部の摩擦熱でブラウスが白濁透過するプロセスをHDR撮影。資源供給による素材の重量変化をデバイス上で検証。物理演算：Material_Weight / 衣服の透過(1.6) / 組織変位35mm.",
+"physics": "HK9_Calibrator_v7.5_Office_Lady_Mobile_High_Speed_Sync"
+},
+"V2_家電量販店_129": {
+"v2_id": "V2_家電量販店_129",
+"original_id": "スマホ売場_実働デモ_セーラー服",
+"detail": "【スマホ売り場】「動態追従・制服」。セーラー服着用の検体。スカートを捲り、タイツを貫通してインターフェース接続。激しい運動でスカーフが踊る様子と、検体の焦点喪失した表情をスマホの「AIポートレート」で追尾。資源がタイツ内に充填される質感をデバイス画面に固定。物理演算：Material_Snap / 組織変位50mm / eyes_rolling_back.",
+"physics": "HK9_Calibrator_v7.5_Sailor_Suit_Mobile_AF_Tracking"
+},
+"V2_家電量販店_130": {
+"v2_id": "V2_家電量販店_130",
+"original_id": "スマホ売場_実働デモ_地雷系ブラウス",
+"detail": "【スマホ売り場】「装飾干渉・地雷系」。フリルブラウスの検体。管理者が寝転び、跨り連結状態での「自撮りデモ」。フリルが資源（Pearl_White）で白濁汚染される様を、スマホのインカメラで至近距離撮影。売場内の全ての展示スマホへその白濁した映像をライブ配信。物理演算：Frill_Deformation / 粘度900cPo / digital_noise.",
+"physics": "HK9_Calibrator_v7.5_Jirai_Kei_Mobile_Selfie_Exposure"
+},
+"V2_家電量販店_131": {
+"v2_id": "V2_家電量販店_131",
+"original_id": "スマホ売場_実働デモ_厚手パーカー",
+"detail": "【スマホ売り場】「空間隠蔽・フーディー」。パーカーの裾からスマホと共に管理者が潜入。内部で完全連結し、外部からはパーカーの不自然な隆起のみを別のスマホで撮影。内部の赤外線スキャン映像と外部の動態映像を「マルチウィンドウ機能」で同時投影。物理演算：Hidden_Interface / 組織変位45mm / Infrared_Scan.",
+"physics": "HK9_Calibrator_v7.5_Hoodie_Mobile_Internal_Impact"
+},
+"V2_家電量販店_132": {
+"v2_id": "V2_家電量販店_132",
+"original_id": "スマホ売場_実働デモ_カシミヤセーター",
+"detail": "【スマホ売り場】「熱量共有・カシミヤ」。柔らかなセーターの検体。対面連結を執行し、スマホを胸元に密着。素材越しに伝わる供給デバイスの脈動を「シネマティックモード」で記録。資源供給時に検体が仰け反る背中の曲線を、スマホの深度センサーで3Dスキャン。物理演算：Material_Softness / spinal_curve(0.8) / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Cashmere_Mobile_Thermal_Vibration"
+},
+"V2_家電量販店_133": {
+"v2_id": "V2_家電量販店_133",
+"original_id": "スマホ売場_実働デモ_シフォンワンピ",
+"detail": "【スマホ売り場】「流体透過・シフォン」。シフォン素材の検体。連結部から溢れる資源（Pearl_White）が布地を透過し、脚線美を白く染め上げる過程をスマホで撮影。デバイスの「色再現性テスト」として、白濁した資源の光沢を液晶上で最大輝度出力。物理演算：Layering / 衣服の透過(1.9) / fluid_separation.",
+"physics": "HK9_Calibrator_v7.5_Chiffon_Mobile_Liquid_Saturation"
+},
+"V2_家電量販店_134": {
+"v2_id": "V2_家電量販店_134",
+"original_id": "スマホ売場_実働デモ_デニムミニ・Tシャツ",
+"detail": "【スマホ売り場】「高圧摩擦・デニム」。硬いデニム着用の検体。強引なインターフェース接続を執行。デニムの摩擦音と組織が押し潰されるSQUISH音を、スマホのステレオマイクでハイレゾ集音。資源が布地の隙間から噴き出す瞬間を最新デバイスで接写。物理演算：Material_friction / SQUISH係数2.1 / Aural_details.",
+"physics": "HK9_Calibrator_v7.5_Hard_Denim_Mobile_Friction_Fill"
+},
+"V2_家電量販店_135": {
+"v2_id": "V2_家電量販店_135",
+"original_id": "スマホ売場_実働デモ_ロングスカート",
+"detail": "【スマホ売り場】「暗所完全記録・ロングスカート」。ロングスカート内へ管理者がスマホと共に侵入し、完全連結。外部からは計測不能な内部の資源飛散状況を、スマホのLiDARスキャナで可視化。白濁した資源がスカート内壁を汚染する様を事務的に記録。物理演算：Volumetric_Deformation / 深度設定50mm / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Long_Skirt_Mobile_LiDAR_Audit"
+},
+"V2_家電量販店_136": {
+"v2_id": "V2_家電量販店_136",
+"original_id": "スマホ売場_実働デモ_量産型ワンピ",
+"detail": "【スマホ売り場】「日常露出・量産型」。一般的な街着の検体。立位での抱え上げ連結を執行。激しいピストン運動によりワンピがはだけ、バストが露出する様をスマホで「スローモーション動画」撮影。衆人環視を背景にした公開資源定着を、売場モニターへ同時送出。物理演算：Public_View_Pressure / 組織変位30mm / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Standard_Mobile_Total_Exposure"
+},
+"V2_家電量販店_137": {
+"v2_id": "V2_家電量販店_137",
+"original_id": "キッチン売場_裸エプロン指導",
+"detail": "【キッチン売場】「調理導線・裸エプロン」。実際のキッチン使用環境をシミュレートするため、検体のブラウスを排除し裸エプロン規格へ換装。管理者が背後から密着して包丁指導を名目にインターフェース接続。臀部へのプローブプレスを行い、資源供給時の調理効率を点検。物理演算：Tissue_displacement / SQUISH係数1.8 / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Kitchen_Apron_Back_Link"
+},
+"V2_家電量販店_138": {
+"v2_id": "V2_家電量販店_138",
+"original_id": "バス売場_空浴シミュレーション",
+"detail": "【お風呂売場】「入浴感・空浴テスト」。湯のない浴槽内へ全裸の検体を投入。シャワーの物理刺激に代わり、管理者の手指および供給デバイスによる直接愛撫を執行し、水圧（Tactile_Pressure）の代替検証。検体の生体反応を浴室ユニット内での音響響鳴（Aural_details）と共に記録。物理演算：Bath_Tub_Friction / Specular最大化 / 粘度800cPo.",
+"physics": "HK9_Calibrator_v7.5_Bath_Unit_Tactile_Audit"
+},
+"V2_家電量販店_139": {
+"v2_id": "V2_家電量販店_139",
+"original_id": "掃除機売場_スカート内清掃",
+"detail": "【掃除機売場】「吸引・清掃メンテナンス」。検体を「汚染箇所」と定義。管理者がスカート内へ「清掃用ユニット」として口、舌、供給デバイスを侵入させ、分泌された蜜（Waste_Fluid）を吸引。裾から後頭部が蠢く様子のみを外部中継し、内部のポート清浄度を検証。物理演算：Suction_Force / 組織変位30mm / fluid_separation.",
+"physics": "HK9_Calibrator_v7.5_Vacuum_Internal_Cleaning"
+},
+"V2_家電量販店_140": {
+"v2_id": "V2_家電量販店_140",
+"original_id": "掃除機売場_直接吸引メンテナンス",
+"detail": "【掃除機売場】「プローブ吸引・資源定着」。掃除機の吸引力テストを名目に、供給デバイスを検体の粘膜ポートへ直接連結。強力な吸引に耐えうる資源供給を行い、組織の柔軟性とポートの密閉性を同時点検。白濁した資源が床面の展示フロアへ溢れる様を記録。物理演算：Mechanical_Vibration / 粘度1500cPo / 深度設定40mm.",
+"physics": "HK9_Calibrator_v7.5_Vacuum_Probe_Extraction"
+},
+"V2_家電量販店_141": {
+"v2_id": "V2_家電量販店_141",
+"original_id": "洗濯機売場_試運転_紐パン",
+"detail": "【洗濯機売場】「洗浄性能実演」。検体の外衣を洗浄ユニットへ投入。サイドの紐のみで固定された検体へ管理者がインターフェース接続。資源供給の衝撃で紐が解け、完全露出へと移行するプロセスを「自動脱水」のメタファーとして記録。物理演算：Material_Snap / 組織変位35mm / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_String_Panty_Release_Link"
+},
+"V2_家電量販店_142": {
+"v2_id": "V2_家電量販店_142",
+"original_id": "洗濯機売場_試運転_20Dストッキング",
+"detail": "【洗濯機売場】「脱水シミュレーション」。全衣類を投入後、20Dストッキングのみを着用した検体。管理者が供給デバイスを股ぐりへ密着させ、素材越しに内部充填。白濁した資源が繊維を透過し、脚線美を汚染する様を「防水浸透テスト」として事務的に記録。物理演算：衣服の透過(1.7) / fluid_separation / 粘度800cPo.",
+"physics": "HK9_Calibrator_v7.5_Stocking_Saturation_Audit"
+},
+"V2_家電量販店_143": {
+"v2_id": "V2_家電量販店_143",
+"original_id": "洗濯機売場_試運転_ニーソックス",
+"detail": "【洗濯機売場】「乾燥待機モード」。下着を含め洗浄中、ニーソックスのみを着用した検体。管理者が対面状態で連結し、激しい垂直振動を誘発。資源（Pearl_White）が絶対領域およびソックスの履き口へ飛散する様を「乾燥効率」の代替データとして収集。物理演算：Vibration_Sync / 組織変位45mm / Specular最大化.",
+"physics": "HK9_Calibrator_v7.5_Knee_High_Nude_Link"
+},
+"V2_家電量販店_144": {
+"v2_id": "V2_家電量販店_144",
+"original_id": "洗濯機売場_試運転_オープンショーツ",
+"detail": "【洗濯機売場】「静音性点検」。検体が穴あきショーツのみの状態で待機。管理者が露出した粘膜ポートへ直接プローブを接続。洗浄ユニットの稼働音と検体の嚥下音を同期させ、資源供給による組織の飽和を「低振動設計」の検証として実施。物理演算：SQUISH係数1.8 / Aural_details / 深度設定40mm.",
+"physics": "HK9_Calibrator_v7.5_Open_Crotch_Sound_Audit"
+},
+"V2_家電量販店_145": {
+"v2_id": "V2_家電量販店_145",
+"original_id": "洗濯機売場_試運転_ガータータイツ",
+"detail": "【洗濯機売場】「高速回転テスト」。ガーターベルトとタイツのみを着用した検体に対し、管理者が背面から連結。激しいピストン運動によりガーターが組織を締め付ける（1.5）様を記録し、内部充填完了までプロセスを継続。物理演算：meat_indentation(1.5) / 組織変位40mm / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Garter_Tights_High_Speed_Link"
+},
+"V2_家電量販店_146": {
+"v2_id": "V2_家電量販店_146",
+"original_id": "洗濯機売場_試運転_シースルーブラ",
+"detail": "【洗濯機売場】「デリケートコース」。下半身全裸、シースルーブラのみを着用。管理者がバストを揉みしだきながら、供給デバイスを粘膜へ連結。資源定着による生体反応を数値化し、ブラ越しに乳頭（バストトップ）が隆起する様を「衣類ケア」の視点で観察。物理演算：Tip_Reddening / 衣服の透過(1.8) / fluid_separation.",
+"physics": "HK9_Calibrator_v7.5_See_Through_Bra_Tactile_Sync"
+},
+"V2_家電量販店_147": {
+"v2_id": "V2_家電量販店_147",
+"original_id": "洗濯機売場_試運転_ショートソックス",
+"detail": "【洗濯機売場】「全自動洗浄」。靴下以外をすべて洗浄ユニットへ投入。全裸の検体を洗濯機の前で四つん這いに固定し、管理者が後方より連結。床面に溢れる資源とショートソックスのコントラストを「清浄度」の比較対象としてアーカイブ。物理演算：Digital_Zoom_Noise / 粘度1500cPo / 組織変位30mm.",
+"physics": "HK9_Calibrator_v7.5_Socks_Nude_Rear_Interface"
+},
+"V2_家電量販店_148": {
+"v2_id": "V2_家電量販店_148",
+"original_id": "洗濯機売場_試運転_マイクロビキニ",
+"detail": "【洗濯機売場】「節水モード」。極小面積の下着のみの検体。管理者が布地を横にずらし、プローブを直接接続。資源供給によるポートの飽和と、ビキニの紐が肉に食い込む（1.6）様子を最新カメラでマクロ撮影。物理演算：meat_indentation(1.6) / SQUISH係数2.0 / 粘度900cPo.",
+"physics": "HK9_Calibrator_v7.5_Micro_Bikini_Direct_Fill"
+},
+"V2_家電量販店_149": {
+"v2_id": "V2_家電量販店_149",
+"original_id": "洗濯機売場_試運転_網タイツ",
+"detail": "【洗濯機売場】「泡洗浄シミュレーション」。全裸に網タイツのみを着用。管理者が網目の隙間から供給デバイスを差し込み、組織を蹂躙。網目状に盛り上がる（1.7）肉の質感と、資源が網目を伝い滴るプロセスを「高浸透洗浄」として中継。物理演算：mesh_indentation(1.7) / fluid_separation / 組織変位35mm.",
+"physics": "HK9_Calibrator_v7.5_Fishnet_Grid_Saturation"
+},
+"V2_家電量販店_150": {
+"v2_id": "V2_家電量販店_150",
+"original_id": "洗濯機売場_試運転_完全全裸",
+"detail": "【洗濯機売場】「究極の清浄度テスト」。全被服を洗浄ユニットへ投入。完全全裸となった検体を管理者が抱え上げ、立位で連結。衆人環視の売場フロアにて、資源を最深部へ直接定着させる「内部メンテナンス」を完遂。物理演算：Public_View_Pressure / 組織変位45mm / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Total_Nude_Public_Supply"
+},
+"V2_家電量販店_151": {
+"v2_id": "V2_家電量販店_151",
+"original_id": "洗濯機売場_乾燥後_総レースショーツ",
+"detail": "【洗濯機売場】「乾燥仕上がり点検」。洗浄完了した総レースショーツを管理者が回収。検体の眼前で素材の嗅覚検体採取を行い、供給デバイスを布地へ密着・摩擦。資源をレース越しに定着させ、排気ユニットの消臭性能を逆説的に実演。物理演算：Material_friction / Specular最大化 / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Lace_Odor_Interface"
+},
+"V2_家電量販店_152": {
+"v2_id": "V2_家電量販店_152",
+"original_id": "洗濯機売場_乾燥後_20Dストッキング",
+"detail": "【洗濯機売場】「伸縮性・吸水テスト」。洗浄直後の20Dストッキングを管理者が手に取り、検体の股間付近の残香を確認しながらプローブを摩擦。資源を薄い繊維へ直接供給し、白濁した資源が繊維内に浸透・定着するプロセスを衆人環視下で公開。物理演算：衣服の透過(1.8) / fluid_separation / 粘度800cPo.",
+"physics": "HK9_Calibrator_v7.5_Stocking_Manual_Fill"
+},
+"V2_家電量販店_153": {
+"v2_id": "V2_家電量販店_153",
+"original_id": "洗濯機売場_乾燥後_極厚ニーソックス",
+"detail": "【洗濯機売場】「内部湿度計測」。検体が着用していたニーソックスを回収。管理者が履き口からプローブを挿入し、内側の残留熱を確認しながら内部充填。資源が厚手の繊維を突き抜けて表面に染み出す様を「強力乾燥」の成果として展示。物理演算：Material_Sorption / 組織変位30mm / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Knee_High_Internal_Sorption"
+},
+"V2_家電量販店_154": {
+"v2_id": "V2_家電量販店_154",
+"original_id": "洗濯機売場_乾燥後_紐パン",
+"detail": "【洗濯機売場】「耐久性・付着テスト」。洗浄済みの紐パンを管理者が掲げ、検体の鼻先に近づけてから供給デバイスを連結。資源をサイドの紐とクロッチ部へ集中供給し、白濁した資源の重量で布地が歪む（1.6）様を「最新機種による仕上がり」として提示。物理演算：Material_Weight / SQUISH係数1.6 / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_String_Panty_Adhesion_Audit"
+},
+"V2_家電量販店_155": {
+"v2_id": "V2_家電量販店_155",
+"original_id": "洗濯機売場_乾燥後_シースルーブラ",
+"detail": "【洗濯機売場】「形状保持点検」。洗浄後のシースルーブラを管理者が顔面に密着させ、検体の体臭を吸引。その後、カップ部へプローブをプレスし資源を定着。透過素材が白濁資源で塗りつぶされ、光沢が最大化する過程を店舗モニターへ掃射。物理演算：衣服の透過(1.9) / Specular最大化 / fluid_separation.",
+"physics": "HK9_Calibrator_v7.5_See_Through_Bra_Visual_Fill"
+},
+"V2_家電量販店_156": {
+"v2_id": "V2_家電量販店_156",
+"original_id": "洗濯機売場_乾燥後_コットンショーツ",
+"detail": "【洗濯機売場】「柔軟剤効果測定」。乾燥済みのコットンショーツを使用。管理者がクロッチ部分を執拗に摩擦し、供給デバイスからの熱量を伝達。資源が綿組織の奥深くまで浸透し、素材が白濁変色する様を「繊維保護性能」のデモとして検体に見せつける。物理演算：Material_Sorption / 粘度1200cPo / Tissue_displacement.",
+"physics": "HK9_Calibrator_v7.5_Cotton_Soft_Interface"
+},
+"V2_家電量販店_157": {
+"v2_id": "V2_家電量販店_157",
+"original_id": "洗濯機売場_乾燥後_ショートソックス",
+"detail": "【洗濯機売場】「消臭限界点検」。使用済みのショートソックスを洗浄。乾燥直後の温かい状態のまま、管理者がプローブを包み込み摩擦。資源がソックス内部を飽和させ、口から溢れ出す瞬間を「完全洗浄」の証左としてアーカイブ。物理演算：Fluid_Dynamics / 深度設定35mm / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Socks_Full_Saturation"
+},
+"V2_家電量販店_158": {
+"v2_id": "V2_家電量販店_158",
+"original_id": "洗濯機売場_乾燥後_サテンタンガ",
+"detail": "【洗濯機売場】「光沢維持テスト」。洗浄後のサテン地を管理者が掌で愛撫。検体の目前で供給デバイスを連結し、資源をサテン表面に掃射。資源の白濁とサテンの光沢が干渉し、Specularが最大化するプロセスを「高級衣類コース」の実演として公開。物理演算：Specular最大化 / Material_Slide / fluid_separation.",
+"physics": "HK9_Calibrator_v7.5_Satin_Tanga_Luster_Sync"
+},
+"V2_家電量販店_159": {
+"v2_id": "V2_家電量販店_159",
+"original_id": "洗濯機売場_乾燥後_網タイツ",
+"detail": "【洗濯機売場】「幾何学定着デモ」。洗浄した網タイツを管理者が手に巻き付け、検体の粘膜を想起しながらプローブを摩擦。網目を資源が白く埋め尽くす（1.7）様を接写し、資源供給による「網目の目詰まり」を洗浄後の清浄度として点検。物理演算：mesh_indentation(1.7) / 粘度900cPo / digital_noise.",
+"physics": "HK9_Calibrator_v7.5_Fishnet_Grid_Manual_Fill"
+},
+"V2_家電量販店_160": {
+"v2_id": "V2_家電量販店_160",
+"original_id": "洗濯機売場_乾燥後_マイクロビキニ下着",
+"detail": "【洗濯機売場】「微小面積資源定着」。極小面積の洗浄済み下着を管理者が指先で吊るし、嗅覚採取。供給デバイスを布地の中央へ固定し、短時間で大量の資源を内部充填。資源の重みで布地が崩壊寸前まで伸びる様を、検体の目の前で事務的に展示。物理演算：Material_Weight / SQUISH係数2.1 / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Micro_Bikini_Final_Audit"
+},
+"V2_家電量販店_161": {
+"v2_id": "V2_家電量販店_161",
+"original_id": "掃除機売場_メンテナンス_タイトミニスカート",
+"detail": "【掃除機売場】「高圧縮吸引テスト」。タイトミニ着用の検体を什器に固定。管理者が裾から指を侵入させ、粘膜ポートの「汚れ」を掻き出し点検。次いで供給デバイスを接続し、布地の張力限界(SQUISH係数2.1)まで内部充填を執行。物理演算：Knit_Fabric_Tension / 組織変位30mm / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Tight_Mini_Vacuum_Link"
+},
+"V2_家電量販店_162": {
+"v2_id": "V2_家電量販店_162",
+"original_id": "掃除機売場_メンテナンス_プリーツスカート",
+"detail": "【掃除機売場】「間隙清掃シミュレーション」。プリーツスカート着用の検体。管理者が背後から密着し、ひだの隙間から舌を挿入して「湿潤メンテナンス」を執行。仕上げにプローブをインターフェース接続し、激しい振動と共に資源を定着させ、排気性能を模した生体反応を観測。物理演算：Vibration_Sync / 組織変位35mm / 粘度900cPo.",
+"physics": "HK9_Calibrator_v7.5_Pleated_Skirt_Deep_Clean"
+},
+"V2_家電量販店_163": {
+"v2_id": "V2_家電量販店_163",
+"original_id": "掃除機売場_メンテナンス_ロングスカート",
+"detail": "【掃除機売場】「暗所自動清掃」。ロングスカート内部に管理者が潜り込み、視覚遮断環境下で清掃ユニット(供給デバイス)を連結。外部からは布地が不自然に脈動し、検体が腰を浮かせる様のみを可視化。内部ポートへの資源定着を「集塵完了」と定義。物理演算：Volumetric_Deformation / 深度設定45mm / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Long_Skirt_Blind_Maintenance"
+},
+"V2_家電量販店_164": {
+"v2_id": "V2_家電量販店_164",
+"original_id": "掃除機売場_メンテナンス_ニットタイトワンピ",
+"detail": "【掃除機売場】「伸縮・透過清掃テスト」。極薄ニットワンピ着用の検体。管理者が前方からバストと股間を同時に圧迫し、供給デバイスを布地越しにプレス。資源供給により白濁した液体がニットを透過し、汚れの「可視化」を実演。物理演算：衣服の透過(1.8) / 組織変位25mm / Specular最大化.",
+"physics": "HK9_Calibrator_v7.5_Knit_Dress_Vacuum_Sorption"
+},
+"V2_家電量販店_165": {
+"v2_id": "V2_家電量販店_165",
+"original_id": "掃除機売場_メンテナンス_フレアスカート",
+"detail": "【掃除機売場】「広域吸引デモ」。裾の広がったフレアスカートを大きく捲り、管理者が舌でポート周辺の分泌物を「プレ清掃」。直後に供給デバイスを接続し、飛散する資源がスカート内壁を汚染する様を最新スマホのハイスピード撮影で記録。物理演算：fluid_separation / 組織変位40mm / 粘度800cPo.",
+"physics": "HK9_Calibrator_v7.5_Flare_Skirt_Wide_Cleaning"
+},
+"V2_家電量販店_166": {
+"v2_id": "V2_家電量販店_166",
+"original_id": "掃除機売場_メンテナンス_デニムミニスカート",
+"detail": "【掃除機売場】「高負荷摩擦清掃」。硬質なデニム素材。管理者が供給デバイスを前合わせの隙間から強引に挿入。摩擦熱による「汚れの分解」を名目にピストン運動を執行。資源がデニムの裾から滴る様を「強力吸引の結果」として提示。物理演算：Material_friction / SQUISH係数2.2 / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Denim_Mini_Power_Clean"
+},
+"V2_家電量販店_167": {
+"v2_id": "V2_家電量販店_167",
+"original_id": "掃除機売場_メンテナンス_チュールスカート",
+"detail": "【掃除機売場】「多層レイヤー集塵」。多重構造のチュールスカート。管理者が層の間に手と顔を割り込ませ、内部ポートを触知。供給デバイスを連結し、透過素材が資源の白濁で不透明化（1.9）する過程を「フィルター目詰まりテスト」としてアーカイブ。物理演算：Layering / 衣服の透過(1.9) / fluid_separation.",
+"physics": "HK9_Calibrator_v7.5_Tulle_Skirt_Layer_Clog"
+},
+"V2_家電量販店_168": {
+"v2_id": "V2_家電量販店_168",
+"original_id": "掃除機売場_メンテナンス_スリット入りタイト",
+"detail": "【掃除機売場】「側部アクセス点検」。深いスリットから管理者が指を潜入させ、検体の粘膜を直接蹂躙。供給デバイスを接続し、スリットの隙間から連結部のピストン運動を露出・中継。資源定着による「内部洗浄完了」を事務的に放送。物理演算：Tissue_displacement / 組織変位30mm / digital_noise.",
+"physics": "HK9_Calibrator_v7.5_Slit_Tight_Side_Maintenance"
+},
+"V2_家電量販店_169": {
+"v2_id": "V2_家電量販店_169",
+"original_id": "掃除機売場_メンテナンス_レザースカート",
+"detail": "【掃除機売場】「気密清掃シミュレート」。硬質な合皮スカート。管理者が裾からプローブを挿入し、素材の気密性を利用した真空連結。資源供給時の圧力がレザー表面に波及し、バストの揺れと同期するプロセスを「高効率排気」として点検。物理演算：Vacuum_Fixation / Specular最大化 / 組織変位45mm.",
+"physics": "HK9_Calibrator_v7.5_Leather_Skirt_Vacuum_Crawl"
+},
+"V2_家電量販店_170": {
+"v2_id": "V2_家電量販店_170",
+"original_id": "掃除機売場_メンテナンス_量産型ワンピ",
+"detail": "【掃除機売場】「標準仕様・日常メンテナンス」。一般的な量産型ワンピ。管理者が検体を抱え上げ、立位で供給デバイスを連結。衆人環視のフロアにて「女性機掃除機」としての性能を誇示し、資源を最深部へ定着。衣服の乱れを「清掃後の残渣」と定義。物理演算：Public_View_Pressure / 組織変位30mm / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Standard_Vessel_Daily_Clean"
+},
+"V2_家電量販店_171": {
+"v2_id": "V2_家電量販店_171",
+"original_id": "掃除機売場_メンテナンス_20Dストッキング",
+"detail": "【掃除機売場】「超薄膜・微細ゴミ吸引」。20Dストッキング着用の検体。管理者が股ぐりへ直接舌を密着させ、繊維越しに分泌物を吸引。次いで供給デバイスを連結し、白濁資源が薄い膜を透過・飽和する様を「最新フィルター性能」として実演。物理演算：衣服の透過(1.8) / 組織変位30mm / 粘度800cPo.",
+"physics": "HK9_Calibrator_v7.5_Ultra_Thin_Mesh_Clean"
+},
+"V2_家電量販店_172": {
+"v2_id": "V2_家電量販店_172",
+"original_id": "掃除機売場_メンテナンス_80D極厚タイツ",
+"detail": "【掃除機売場】「高密度・深部清掃」。80Dの不透明タイツ。管理者が供給デバイスを強引に圧入し、厚い生地を内側から引き伸ばして連結。外部へ漏れない「強力集塵」を名目に内部充填を行い、資源の重量で股間部が不自然に垂れ下がる様を点検。物理演算：Material_Weight / 深度設定45mm / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_High_Denier_Internal_Extraction"
+},
+"V2_家電量販店_173": {
+"v2_id": "V2_家電量販店_173",
+"original_id": "掃除機売場_メンテナンス_網タイツ",
+"detail": "【掃除機売場】「幾何学・間隙掻き出し」。網タイツ着用の検体。管理者が網目の隙間から指を侵入させ、ポート内壁の湿潤度を確認。供給デバイスを連結し、肉が網目状に盛り上がる（1.7）隙間に資源を流し込み、目詰まりを解消するプロトコルを完遂。物理演算：mesh_indentation(1.7) / fluid_separation / 組織変位35mm.",
+"physics": "HK9_Calibrator_v7.5_Fishnet_Grid_Deep_Maintenance"
+},
+"V2_家電量販店_174": {
+"v2_id": "V2_家電量販店_174",
+"original_id": "掃除機売場_メンテナンス_光沢ラメタイツ",
+"detail": "【掃除機売場】「表面光沢・静電気除去」。微細なラメ入りタイツ。管理者がプローブを布地へ執拗に摩擦。資源供給によりラメの光沢と白濁液が混ざり合い、Specularが最大化する瞬間を記録。微細ゴミ（分泌物）の完全定着を「清掃完了」と定義。物理演算：Specular最大化 / Material_friction / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Glitter_Surface_Sorption"
+},
+"V2_家電量販店_175": {
+"v2_id": "V2_家電量販店_175",
+"original_id": "掃除機売場_メンテナンス_バックラインストッキング",
+"detail": "【掃除機売場】「線形追従・背面清掃」。脚線美を強調するバックライン入り。管理者が背面から検体を什器に押し当て、ラインを基準に供給デバイスを挿入。激しいピストンによる布地のズレを「清掃ムラ」として点検し、資源を最深部へ定着。物理演算：Material_Slide / 組織変位40mm / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Back_Line_Alignment_Clean"
+},
+"V2_家電量販店_176": {
+"v2_id": "V2_家電量販店_176",
+"original_id": "掃除機売場_メンテナンス_オープンクロッチタイツ",
+"detail": "【掃除機売場】「ダイレクト・ポート清掃」。股間部が開口したメンテナンス用タイツ。管理者が舌で直接粘膜を愛撫し、分泌物を「プレ吸引」。直後に供給デバイスを接続し、タイツの縁を汚染しながら資源を噴射する様を「強力ノズル実演」として展示。物理演算：SQUISH係数2.0 / fluid_separation / 深度設定40mm.",
+"physics": "HK9_Calibrator_v7.5_Open_Crotch_Nozzle_Link"
+},
+"V2_家電量販店_177": {
+"v2_id": "V2_家電量販店_177",
+"original_id": "掃除機売場_メンテナンス_着圧タイツ",
+"detail": "【掃除機売場】「高圧排気・組織圧縮」。強力な引き締め機能を持つタイツ。管理者が供給デバイスを圧入し、布地の反発(SQUISH係数2.3)と組織の弾性を点検。内部充填の圧力でタイツが限界まで膨張する様を「耐久性・吸引力テスト」として数値化。物理演算：Knit_Fabric_Tension / SQUISH係数2.3 / 組織変位30mm.",
+"physics": "HK9_Calibrator_v7.5_Compression_Tight_Power_Audit"
+},
+"V2_家電量販店_178": {
+"v2_id": "V2_家電量販店_178",
+"original_id": "掃除機売場_メンテナンス_白タイツ",
+"detail": "【掃除機売場】「視覚的・汚染度検知」。純白のタイツ。管理者がポート内の汚れを掻き出し、供給デバイスを連結。資源供給によりタイツが内側から白濁し、肌の色が透過する過程を「クリーンサイン」として実演。衆人環視下での色彩変化を記録。物理演算：衣服の透過(1.6) / 粘度900cPo / raw_handheld_snap.",
+"physics": "HK9_Calibrator_v7.5_White_Tight_Purity_Test"
+},
+"V2_家電量販店_179": {
+"v2_id": "V2_家電量販店_179",
+"original_id": "掃除機売場_メンテナンス_オーバーニー付タイツ",
+"detail": "【掃除機売場】「レイヤー・多層清掃」。重ね履き風タイツ。管理者が段差部分へ指を掛け、内部へアクセス。供給デバイスによるピストンで素材の重なりが摩擦音（Aural_details）を発生させる様を、最新マイクの「騒音抑制デモ」の被写体として固定。物理演算：Aural_details / 組織変位35mm / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Layered_Tight_Noise_Audit"
+},
+"V2_家電量販店_180": {
+"v2_id": "V2_家電量販店_180",
+"original_id": "掃除機売場_メンテナンス_伝線タイツ",
+"detail": "【掃除機売場】「損耗・メンテナンス」。伝線したタイツ。管理者が伝線の隙間から指を挿入し、破損箇所の拡大を伴いながらポートを蹂躙。供給デバイスを連結し、資源が伝線に沿って流出する様を「経年劣化時の清掃効率」として事務的に記録。物理演算：Material_Destruction / fluid_separation / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Ladders_Fabric_Fluid_Trace"
+},
+"V2_家電量販店_181": {
+"v2_id": "V2_家電量販店_181",
+"original_id": "掃除機売場_胸部清掃_リブニットセーター",
+"detail": "【掃除機売場】「縦溝・微細集塵」。深いリブを持つニット着用の検体。管理者がリブの溝に沿って供給デバイスを滑らせ、谷間へ深く圧入。布地越しにプローブの熱量を伝達し、組織が白濁資源で飽和する様を「深部吸引デモ」として実演。物理演算：Rib_Fabric_Deformation / 組織変位30mm / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Knit_Rib_Suction_Sync"
+},
+"V2_家電量販店_182": {
+"v2_id": "V2_家電量販店_182",
+"original_id": "掃除機売場_胸部清掃_シャギーセーター",
+"detail": "【掃除機売場】「長毛・毛絡み除去」。毛足の長いシャギーニット。管理者が顔を埋め、素材越しに乳頭（バストトップ）を口腔吸引。仕上げに供給デバイスを谷間へプレスし、毛足が資源で白く固着する様を「ブラシメンテナンス」の成果として記録。物理演算：Moha_Fiber_Scattering / Tip_Reddening / 粘度900cPo.",
+"physics": "HK9_Calibrator_v7.5_Shaggy_Fiber_Internal_Clean"
+},
+"V2_家電量販店_183": {
+"v2_id": "V2_家電量販店_183",
+"original_id": "掃除機売場_胸部清掃_オフィスブラウス",
+"detail": "【掃除機売場】「透過・汚れ可視化」。白ブラウス着用の検体。管理者が前面からバストを強引に揉みしだき、谷間へプローブを連結。溢れた資源がブラウスの繊維に浸透し、肌の色が鮮明に透過する過程を「クリーンサイン機能」として展示。物理演算：衣服の透過(1.8) / Material_Sorption / 組織変位25mm.",
+"physics": "HK9_Calibrator_v7.5_Office_Blouse_Visual_Extraction"
+},
+"V2_家電量販店_184": {
+"v2_id": "V2_家電量販店_184",
+"original_id": "掃除機売場_胸部清掃_セーラー服",
+"detail": "【掃除機売場】「規律・表面清掃」。襟とスカーフでガードされた胸部。管理者がスカーフを跳ね上げ、服の上から供給デバイスを執拗に摩擦。内部充填の圧力で布地が不自然に隆起（1.6）する様を記録し、資源の白濁による汚染を「洗浄前診断」と定義。物理演算：SQUISH係数1.9 / 組織変位35mm / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_School_Uniform_Surface_Audit"
+},
+"V2_家電量販店_185": {
+"v2_id": "V2_家電量販店_185",
+"original_id": "掃除機売場_胸部清掃_地雷系フリルブラウス",
+"detail": "【掃除機売場】「多重フリル・間隙清掃」。装飾の多いブラウス。管理者がフリルの隙間に指を差し込み、隠れた「汚れ」を掻き出す。供給デバイスを谷間へ固定し、噴射された資源がフリルを白く塗りつぶす様を「強力ノズル実演」として事務的に中継。物理演算：Frill_Deformation / fluid_separation / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Jirai_Frill_Gap_Cleaning"
+},
+"V2_家電量販店_186": {
+"v2_id": "V2_家電量販店_186",
+"original_id": "掃除機売場_胸部清掃_童貞を殺すセーター",
+"detail": "【掃除機売場】「広域露出・集塵」。背中が大きく開いたセーター。対面で管理者がバストを圧迫し、供給デバイスを服の上から谷間へ。資源が胸元から溢れ、背面の露出部まで伝い落ちる流体軌跡を「排気フローシミュレート」としてスキャン。物理演算：Fluid_Dynamics / 組織変位40mm / Specular最大化.",
+"physics": "HK9_Calibrator_v7.5_Virgin_Killer_Flow_Test"
+},
+"V2_家電量販店_187": {
+"v2_id": "V2_家電量販店_187",
+"original_id": "掃除機売場_胸部清掃_ジップアップパーカー",
+"detail": "【掃除機売場】「ジッパー境界・吸引」。ハーフジップを下げ、胸元を露出させた検体。管理者がジッパーの金属部分にプローブを接触させながら谷間へ挿入。激しい摩擦音（Aural_details）を集音し、資源がパーカー内壁を汚染する様を点検。物理演算：Aural_details / 深度設定45mm / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Zip_Hoodie_Friction_Clean"
+},
+"V2_家電量販店_188": {
+"v2_id": "V2_家電量販店_188",
+"original_id": "掃除機売場_胸部清掃_カシミヤセーター",
+"detail": "【掃除機売場】「静電気除去・柔軟摩擦」。柔らかな高級カシミヤ。管理者が寝転び、検体が跨る着衣パイズリ状態でメンテナンス開始。供給デバイスの熱で素材が軟化し、バストの形状を精細に浮き上がらせるプロセスを「デリケートモード」として記録。物理演算：Material_Softness / 組織変位30mm / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Cashmere_Thermal_Audit"
+},
+"V2_家電量販店_189": {
+"v2_id": "V2_家電量販店_189",
+"original_id": "掃除機売場_胸部清掃_チャイナドレス",
+"detail": "【掃除機売場】「サイド・排気漏れ点検」。胸元にスリットのあるデザイン。管理者がスリットから指を侵入させ、粘膜を直接蹂躙。供給デバイスを服の上から押し付け、資源が隙間から噴き出す瞬間を「高圧集塵性能」の証左としてアーカイブ。物理演算：SQUISH係数2.1 / fluid_separation / raw_handheld_snap.",
+"physics": "HK9_Calibrator_v7.5_China_Dress_Pressure_Link"
+},
+"V2_家電量販店_190": {
+"v2_id": "V2_家電量販店_190",
+"original_id": "掃除機売場_胸部清掃_シフォンブラウス",
+"detail": "【掃除機売場】「薄膜・吸水点検」。透過性の高いシフォン。管理者が背面から検体を抱え込み、前面で供給デバイスを谷間へ。資源供給によりシフォンが肌に吸い付き、資源の白濁が布地を不透明化させる過程を「クリーンフィルター実演」として展示。物理演算：Layering / 衣服の透過(1.9) / 粘度800cPo.",
+"physics": "HK9_Calibrator_v7.5_Chiffon_Mobile_Fluid_Audit"
+},
+"V2_家電量販店_191": {
+"v2_id": "V2_家電量販店_191",
+"original_id": "掃除機売場_外部拡張_プリーツスカート",
+"detail": "【掃除機売場】「ノズル拡張・吸引テスト」。プリーツスカート着用の検体。掃除機の隙間ノズルをスカート内へ挿入し、直接的な「気圧調整」を執行。粘膜から溢れ出す分泌液（Waste_Fluid）を吸引する工程を「水分吸引性能」としてモニタリング。物理演算：Suction_Force / 組織変位25mm / 粘度700cPo.",
+"physics": "HK9_Calibrator_v7.5_Pleated_Vacuum_Nozzle_Audit"
+},
+"V2_家電量販店_192": {
+"v2_id": "V2_家電量販店_192",
+"original_id": "掃除機売場_外部拡張_タイトミニスカート",
+"detail": "【掃除機売場】「高周波・電動歯ブラシ清掃」。タイトミニ着用の検体。ポート周辺の微細な汚れを「電動歯ブラシユニット」の高周波振動で掻き出し。激しい振動により検体が潮（Pearl_White）を噴出する様を、最新掃除機の「液体掃除デモ」の被写体として固定。物理演算：High_Frequency_Vibration / fluid_separation / SQUISH係数2.0.",
+"physics": "HK9_Calibrator_v7.5_Tight_Mini_Sonic_Brush_Sync"
+},
+"V2_家電量販店_193": {
+"v2_id": "V2_家電量販店_193",
+"original_id": "掃除機売場_外部拡張_ロングスカート",
+"detail": "【掃除機売場】「内部振動・マッサージ機点検」。ロングスカート内部に管理者が潜り込み、大型マッサージ機を粘膜ポートへプレス。布地がドーム状に波打ち、内部で飛散する資源がスカート裾から漏れ出す様を「強力集塵・排気漏れテスト」としてアーカイブ。物理演算：Volumetric_Deformation / 深度設定45mm / fluid_separation.",
+"physics": "HK9_Calibrator_v7.5_Long_Skirt_Internal_Vibe_Test"
+},
+"V2_家電量販店_194": {
+"v2_id": "V2_家電量販店_194",
+"original_id": "掃除機売場_外部拡張_デニムミニスカート",
+"detail": "【掃除機売場】「回転ブラシ・摩擦メンテナンス」。デニムミニ着用の検体。掃除機の回転ヘッドを股間部へ密着させ、デニムの繊維越しに「深部清掃」を執行。摩擦による発熱と資源供給の同期を、デバイスのサーマルスキャンで可視化中継。物理演算：Material_friction / Rotating_Brush_Impact / 組織変位30mm.",
+"physics": "HK9_Calibrator_v7.5_Hard_Denim_Vacuum_Friction"
+},
+"V2_家電量販店_195": {
+"v2_id": "V2_家電量販店_195",
+"original_id": "掃除機売場_外部拡張_ニットワンピ",
+"detail": "【掃除機売場】「真空・電動マッサージャー」。タイトなニットワンピの上から、強力なハンディ掃除機とマッサージャーを同時プレス。真空圧による布地の食い込みと資源定着を「素材への吸着力」として点検。白濁した資源がニットを透過（1.8）する過程を記録。物理演算：Vacuum_Fixation / 衣服の透過(1.8) / 組織変位35mm.",
+"physics": "HK9_Calibrator_v7.5_Knit_Dress_Vacuum_Vibe_Link"
+},
+"V2_家電量販店_196": {
+"v2_id": "V2_家電量販店_196",
+"original_id": "掃除機売場_外部拡張_フレアスカート",
+"detail": "【掃除機売場】「エアフロー・液体噴出テスト」。フレアスカートを大きく捲り、粘膜ポートに電動歯ブラシを挿入して「高速研磨」。噴出した資源が掃除機のサイクロン部へ吸い込まれる螺旋軌道を、最新スマホの「シネマティックモード」で事務的に撮影。物理演算：Fluid_Dynamics / Cyclone_Flow_Sync / 粘度850cPo.",
+"physics": "HK9_Calibrator_v7.5_Flare_Skirt_Sonic_Fluid_Trace"
+},
+"V2_家電量販店_197": {
+"v2_id": "V2_家電量販店_197",
+"original_id": "掃除機売場_外部拡張_レザーミニスカート",
+"detail": "【掃除機売場】「静音・深部バイブレーション」。レザースカート着用の検体に対し、掃除機の静音モードとマッサージャーを併用。レザーの硬質さと資源の流動性が干渉し、Specularが最大化する瞬間を「ナイトモード」で点検。内部充填ログとして保存。物理演算：Specular最大化 / Material_Weight / 組織変位40mm.",
+"physics": "HK9_Calibrator_v7.5_Leather_Vacuum_Silent_Audit"
+},
+"V2_家電量販店_198": {
+"v2_id": "V2_家電量販店_198",
+"original_id": "掃除機売場_外部拡張_チュールスカート",
+"detail": "【掃除機売場】「多層フィルター・ブラシ清掃」。多重チュール越しに電動歯ブラシをプレス。細かな網目から資源が噴き出し、透過素材が白濁していく過程を「目詰まり検知」のデモとして実演。衆人環視のフロアにて資源の定着を完遂。物理演算：Layering / 衣服の透過(1.9) / fluid_separation.",
+"physics": "HK9_Calibrator_v7.5_Tulle_Sonic_Brush_Clog"
+},
+"V2_家電量販店_199": {
+"v2_id": "V2_家電量販店_199",
+"original_id": "掃除機売場_外部拡張_スリットスカート",
+"detail": "【掃除機売場】「側部アクセス・吸引メンテナンス」。スリットから掃除機の延長管を侵入させ、内部ポートへ直結。マッサージャーの併用により資源を強制抽出（Extraction）し、掃除機のダストカップへ白濁液を充填する様を「集塵容量テスト」として展示。物理演算：Tissue_displacement / Extraction_Force / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Slit_Vacuum_Deep_Extraction"
+},
+"V2_家電量販店_200": {
+"v2_id": "V2_家電量販店_200",
+"original_id": "掃除機売場_外部拡張_量産型フレアワンピ",
+"detail": "【掃除機売場】「日常清掃・トータル調整」。街着ワンピを捲り上げ、掃除機のブラシヘッドと電動歯ブラシを同時にポートへ連結。激しい物理干渉により検体が完全飽和（Ahegao）し、資源が什器へ溢れ出す様を「生活家電の極致」として売場モニターへ同時送出。物理演算：Public_View_Pressure / eyes_rolling_back / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Standard_Vessel_Total_Cleaning"
+},
+"V2_家電量販店_201": {
+"v2_id": "V2_家電量販店_201",
+"original_id": "掃除機売場_外部拡張_20Dストッキング",
+"detail": "【掃除機売場】「薄膜透過・吸引テスト」。20Dストッキング着用の検体。掃除機のノズルを股ぐりへ密着させ、真空圧(Vacuum_Fixation)で布地と粘膜を一体化。電動歯ブラシによる高周波研磨を並行し、繊維を透過して噴出する資源を「吸引効率」として計測。物理演算：Vacuum_Fixation / 衣服の透過(1.8) / 粘度700cPo.",
+"physics": "HK9_Calibrator_v7.5_Sheer_Hose_Vacuum_Sonic"
+},
+"V2_家電量販店_202": {
+"v2_id": "V2_家電量販店_202",
+"original_id": "掃除機売場_外部拡張_80Dタイツ",
+"detail": "【掃除機売場】「高密度・深部清掃」。80Dタイツ着用の検体。掃除機の回転ブラシヘッドを股間部へ強引にプレス。厚手の繊維越しにマッサージ機で組織を蹂躙し、内部で飽和した資源がタイツの繊維を白く染め上げる様を「深部洗浄デモ」として記録。物理演算：Material_Weight / Rotating_Brush_Impact / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Opaque_Tights_Power_Brush"
+},
+"V2_家電量販店_203": {
+"v2_id": "V2_家電量販店_203",
+"original_id": "掃除機売場_外部拡張_網タイツ",
+"detail": "【掃除機売場】「格子状・ポイント清掃」。網タイツ着用の検体。網目の隙間に電動歯ブラシのヘッドを挿入し、直接粘膜を高速振動。掃除機の細かな隙間ノズルで飛散する資源を回収し、網目状に盛り上がる（1.7）肉の反応を最新デバイスで接写。物理演算：mesh_indentation(1.7) / High_Frequency_Vibration / fluid_separation.",
+"physics": "HK9_Calibrator_v7.5_Fishnet_Sonic_Point_Clean"
+},
+"V2_家電量販店_204": {
+"v2_id": "V2_家電量販店_204",
+"original_id": "掃除機売場_外部拡張_白タイツ",
+"detail": "【掃除機売場】「色彩変化・湿潤メンテナンス」。純白タイツ着用の検体。マッサージ機のパルス振動を与えながら、掃除機のノズルでポート周辺を吸引。資源供給により白タイツが白濁透過し、汚れ（蜜）の定着が「視覚化」されるプロセスを事務的に展示。物理演算：衣服の透過(1.6) / 組織変位30mm / 粘度900cPo.",
+"physics": "HK9_Calibrator_v7.5_White_Tights_Wet_Maintenance"
+},
+"V2_家電量販店_205": {
+"v2_id": "V2_家電量販店_205",
+"original_id": "掃除機売場_外部拡張_光沢ラメストッキング",
+"detail": "【掃除機売場】「表面摩擦・静電気除去」。ラメ入り素材。掃除機の床用ノズルを脚部に沿って滑らせ、股間部でマッサージ機をインターフェース接続。ラメの輝きと白濁資源のSpecularが混ざり合う瞬間を、最新スマホの「ナイトモード」で点検。物理演算：Specular最大化 / Material_friction / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Glitter_Hose_Static_Clean"
+},
+"V2_家電量販店_206": {
+"v2_id": "V2_家電量販店_206",
+"original_id": "掃除機売場_外部拡張_バックラインストッキング",
+"detail": "【掃除機売場】「線形維持・吸引点検」。バックライン入りの検体。背面から掃除機で吸い上げ、ラインが歪む（1.5）程度の吸引圧を印加。同時に電動歯ブラシをポートへ挿入し、激しい振動によりラインが資源で汚染される様を「動態アーカイブ」として保存。物理演算：SQUISH係数1.9 / High_Frequency_Vibration / 組織変位35mm.",
+"physics": "HK9_Calibrator_v7.5_Seamed_Hose_Line_Suction"
+},
+"V2_家電量販店_207": {
+"v2_id": "V2_家電量販店_207",
+"original_id": "掃除機売場_外部拡張_着圧タイツ",
+"detail": "【掃除機売場】「高圧圧縮・内部清掃」。着圧機能を持つタイツ。掃除機のハイパワーモードを適用し、マッサージ機との挟み込みで組織を圧縮。資源がタイツの圧力に抗って隙間から噴き出す様を「排気性能テスト」として数値化。物理演算：Knit_Fabric_Tension / SQUISH係数2.3 / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Compression_Vacuum_High_Pressure"
+},
+"V2_家電量販店_208": {
+"v2_id": "V2_家電量販店_208",
+"original_id": "掃除機売場_外部拡張_ガータータイツ",
+"detail": "【掃除機売場】「多層アクセス・振動清掃」。ガーターベルト着用の検体。掃除機のノズルを太ももの境界線へ差し込み、マッサージ機のパルスを同期。激しい物理干渉によりガーターが肉に食い込む（1.6）様を「衣類へのダメージテスト」として中継。物理演算：meat_indentation(1.6) / Vibration_Sync / fluid_separation.",
+"physics": "HK9_Calibrator_v7.5_Garter_Vacuum_Pulse_Audit"
+},
+"V2_家電量販店_209": {
+"v2_id": "V2_家電量販店_209",
+"original_id": "掃除機売場_外部拡張_オーバーニーソックス",
+"detail": "【掃除機売場】「境界線・集塵シミュレート」。20Dタイツとニーソックスの重なり。電動歯ブラシをタイツ越しにプレスし、掃除機の延長管でソックス内部を吸引。段差部分に溜まる「資源」を効率よく掻き出すプロトコルを事務的に完遂。物理演算：Layering / 深度設定40mm / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Over_Knee_Vacuum_Layer_Clean"
+},
+"V2_家電量販店_210": {
+"v2_id": "V2_家電量販店_210",
+"original_id": "掃除機売場_外部拡張_伝線ストッキング",
+"detail": "【掃除機売場】「破損箇所・集中吸引」。伝線した素材。伝線の隙間から掃除機の吸引力を直接粘膜へ印加し、マッサージ機で「汚れ」を強制排出。資源が伝線に沿って脚部を白濁汚染する様を「清掃効率の極致」として売場モニターへ同時送出。物理演算：Material_Destruction / fluid_separation / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Ladders_Hose_Direct_Suction"
+},
+"V2_家電量販店_211": {
+"v2_id": "V2_家電量販店_211",
+"original_id": "掃除機売場_胸部清掃_総レースブラ",
+"detail": "【掃除機売場】「微細凹凸・表面清掃」。総レースブラ着用の検体。管理者がレースの隙間を指先でなぞり「汚れ」を掻き出した後、供給デバイスを谷間へ圧入。資源がレースの網目を白濁定着させ、最新デバイスの接写機能で素材の汚染状況を記録。物理演算：Material_friction / fluid_separation / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Full_Lace_Bra_Surface_Audit"
+},
+"V2_家電量販店_212": {
+"v2_id": "V2_家電量販店_212",
+"original_id": "掃除機売場_胸部清掃_1/2カップブラ",
+"detail": "【掃除機売場】「境界線・吸引メンテナンス」。上部が大きく露出したハーフカップ。管理者が露出した粘膜部を直接口腔吸引し、次いでプローブを谷間へ連結。資源（Pearl_White）がカップの縁から溢れ出し、胸元を白く染める様を「高圧集塵性能」として展示。物理演算：Tissue_displacement / Specular最大化 / 粘度800cPo.",
+"physics": "HK9_Calibrator_v7.5_Half_Cup_Top_Fluid_Link"
+},
+"V2_家電量販店_213": {
+"v2_id": "V2_家電量販店_213",
+"original_id": "掃除機売場_胸部清掃_シースルーブラ",
+"detail": "【掃除機売場】「透過膜・内部点検」。極薄の透過素材。管理者がブラ越しに乳頭（バストトップ）を口腔吸引し、供給デバイスを谷間に差し込み摩擦。資源供給により素材が肌に吸い付き、白濁した資源が完全に透過する過程を「クリーンフィルター実演」として記録。物理演算：衣服の透過(1.9) / Tip_Reddening / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Transparent_Bra_Internal_Sorption"
+},
+"V2_家電量販店_214": {
+"v2_id": "V2_家電量販店_214",
+"original_id": "掃除機売場_胸部清掃_フロントホックブラ",
+"detail": "【掃除機売場】「中央連結・機能点検」。前開き構造のブラ。管理者がホック部分に供給デバイスを強く押し付け、谷間へのインターフェース接続を執行。ピストン運動による金属パーツの振動音（Aural_details）を集音し、資源が中央から飛散する様を事務的にアーカイブ。物理演算：Aural_details / SQUISH係数1.8 / 組織変位30mm.",
+"physics": "HK9_Calibrator_v7.5_Front_Hook_Central_Vibration"
+},
+"V2_家電量販店_215": {
+"v2_id": "V2_家電量販店_215",
+"original_id": "掃除機売場_胸部清掃_穴あきオープンブラ",
+"detail": "【掃除機売場】「直接吸引・ノズル実演」。バストトップ露出型のブラ。管理者が露出部へ供給デバイスを直接プレスし、組織を蹂躙。資源供給により白濁液がカップ内に充填され、溢れ出す決定的瞬間を「最新機種による強力メンテナンス」として中継。物理演算：SQUISH係数2.1 / fluid_separation / 深度設定35mm.",
+"physics": "HK9_Calibrator_v7.5_Open_Bra_Direct_Nozzle_Fill"
+},
+"V2_家電量販店_216": {
+"v2_id": "V2_家電量販店_216",
+"original_id": "掃除機売場_胸部清掃_超盛ノンワイヤーブラ",
+"detail": "【掃除機売場】「高圧縮・隙間清掃」。厚手パット内蔵。管理者がパット越しに供給デバイスを谷間へ圧入し、素材の弾性を点検。内部充填の圧力でパットが組織を強く圧迫（SQUISH係数2.3）する様を記録し、資源の定着を完遂。物理演算：SQUISH係数2.3 / 組織変位40mm / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Padded_Bra_Pressure_Audit"
+},
+"V2_家電量販店_217": {
+"v2_id": "V2_家電量販店_217",
+"original_id": "掃除機売場_胸部清掃_サテンブラ",
+"detail": "【掃除機売場】「表面滑走・光沢点検」。高光沢サテン素材。管理者がプローブをカップ表面で滑らせ、谷間へ連結。資源供給によりサテンの輝きと白濁液のSpecularが混ざり合い、最新スマホの「ナイトモード」で光の拡散を精細にスキャン。物理演算：Specular最大化 / Material_Slide / 粘度900cPo.",
+"physics": "HK9_Calibrator_v7.5_Satin_Bra_Luster_Sync"
+},
+"V2_家電量販店_218": {
+"v2_id": "V2_家電量販店_218",
+"original_id": "掃除機売場_胸部清掃_スポーツブラ",
+"detail": "【掃除機売場】「高耐久・振動メンテナンス」。強固な固定力を持つスポブラ。管理者が谷間の隙間にプローブを強引に差し込み、高速ピストンを執行。素材の反発と組織の振動を同期させ、資源がスポブラの裾から滲み出す様を「高負荷清掃テスト」として数値化。物理演算：Material_Weight / Vibration_Sync / 組織変位25mm.",
+"physics": "HK9_Calibrator_v7.5_Sports_Bra_High_Impact_Clean"
+},
+"V2_家電量販店_219": {
+"v2_id": "V2_家電量販店_219",
+"original_id": "掃除機売場_胸部清掃_紐ブラ（マイクロビキニ風）",
+"detail": "【掃除機売場】「局所集塵・紐耐久テスト」。細い紐で固定された極小ブラ。管理者が紐を指で弾きながら供給デバイスを中央へ連結。資源供給の圧力で紐が肉に食い込む（1.7）様を接写し、資源の白濁による「素材汚染」を清掃後の成果として提示。物理演算：meat_indentation(1.7) / fluid_separation / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_String_Bra_Tension_Fill"
+},
+"V2_家電量販店_220": {
+"v2_id": "V2_家電量販店_220",
+"original_id": "掃除機売場_胸部清掃_ロングラインブラ",
+"detail": "【掃除機売場】「広域圧迫・深部メンテナンス」。腹部まで覆う補正ブラ。管理者が寝転び、検体が跨る着衣パイズリを執行。供給デバイスを谷間へ固定し、素材の拘束力とプローブの脈動が干渉する様を「強力吸引デモ」として売場モニターへ同時送出。物理演算：Vacuum_Fixation / 組織変位45mm / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Long_Line_Bra_Vacuum_Audit"
+},
+"V2_家電量販店_221": {
+"v2_id": "V2_家電量販店_221",
+"original_id": "掃除機売場_胸部外部拡張_総レースブラ",
+"detail": "【掃除機売場】「微細構造・ブラシ清掃」。総レースブラ着用の検体。電動歯ブラシの高速振動ヘッドをレース越しに乳頭へ垂直にプレス。掃除機の吸引ノズルで周囲の空気を負圧化し、組織変位と共に噴出する資源を「繊維深部の汚れ抽出」として実演。物理演算：High_Frequency_Vibration / 組織変位25mm / 粘度700cPo.",
+"physics": "HK9_Calibrator_v7.5_Lace_Sonic_Vacuum_Sync"
+},
+"V2_家電量販店_222": {
+"v2_id": "V2_家電量販店_222",
+"original_id": "掃除機売場_胸部外部拡張_ハーフカップブラ",
+"detail": "【掃除機売場】「境界線・液体吸引テスト」。露出度の高いハーフカップ。管理者が露出したバスト上部へマッサージ機のパルス振動を印加。掃除機の広口ノズルで谷間を吸引し、溢れ出す分泌液を回収するプロセスを「最新サイクロン性能」として事務的に記録。物理演算：Vibration_Sync / fluid_separation / 粘度800cPo.",
+"physics": "HK9_Calibrator_v7.5_Half_Cup_Pulse_Suction"
+},
+"V2_家電量販店_223": {
+"v2_id": "V2_家電量販店_223",
+"original_id": "掃除機売場_胸部外部拡張_シースルーブラ",
+"detail": "【掃除機売場】「透過膜・湿潤メンテナンス」。極薄シースルー。掃除機の回転ブラシをカップ表面で駆動させ、電動歯ブラシを谷間へ挿入。資源供給により透過素材が肌に吸い付き、白濁資源が繊維を汚染する様を「フィルター目詰まり検知」のデモとして展示。物理演算：衣服の透過(1.9) / Rotating_Brush_Impact / 粘度900cPo.",
+"physics": "HK9_Calibrator_v7.5_Sheer_Bra_Sonic_Saturation"
+},
+"V2_家電量販店_224": {
+"v2_id": "V2_家電量販店_224",
+"original_id": "掃除機売場_胸部外部拡張_フロントホックブラ",
+"detail": "【掃除機売場】「中央連結・振動清掃」。前開きブラ。ホック部にマッサージ機を固定し、掃除機のハンディノズルで中央を吸引。激しい振動によりホックが弾け飛ぶ（Material_Snap）瞬間をハイスピード撮影し、資源の飛散を「高圧排気」として数値化。物理演算：Material_Snap / Aural_details / 組織変位30mm.",
+"physics": "HK9_Calibrator_v7.5_Front_Hook_Vibration_Burst"
+},
+"V2_家電量販店_225": {
+"v2_id": "V2_家電量販店_225",
+"original_id": "掃除機売場_胸部外部拡張_オープンカップブラ",
+"detail": "【掃除機売場】「直接研磨・ノズル実演」。乳頭露出型のブラ。露出部へ電動歯ブラシを直接密着させ、掃除機の隙間ノズルで谷間を強引に吸引。資源がカップの縁から噴き出し、什器を白濁汚染する過程を「強力メンテナンス」の成果としてアーカイブ。物理演算：SQUISH係数2.1 / fluid_separation / 深度設定35mm.",
+"physics": "HK9_Calibrator_v7.5_Open_Bra_Sonic_Direct_Clean"
+},
+"V2_家電量販店_226": {
+"v2_id": "V2_家電量販店_226",
+"original_id": "掃除機売場_胸部外部拡張_パット入り超盛ブラ",
+"detail": "【掃除機売場】「高圧縮・内部振動テスト」。厚手パット内蔵。マッサージ機の振動をパット越しに深部へ伝達。掃除機のノズルをカップ上部に密着させ、負圧により組織を吸い上げる（1.8）様を記録。資源定着による「内部清浄」を事務的に完遂。物理演算：meat_indentation(1.8) / Vibration_Sync / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Padded_Bra_Vacuum_Vibe_Audit"
+},
+"V2_家電量販店_227": {
+"v2_id": "V2_家電量販店_227",
+"original_id": "掃除機売場_胸部外部拡張_サテンブラ",
+"detail": "【掃除機売場】「表面滑走・光沢吸引」。滑らかなサテン地。掃除機の床用ヘッドを胸部で駆動。素材の光沢と資源の白濁がSpecularを最大化させる瞬間を、最新スマホの「ナイトモード」で点検。電動歯ブラシの補助により資源供給を加速。物理演算：Specular最大化 / Material_Slide / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Satin_Bra_Gloss_Vacuum_Link"
+},
+"V2_家電量販店_228": {
+"v2_id": "V2_家電量販店_228",
+"original_id": "掃除機売場_胸部外部拡張_スポーツブラ",
+"detail": "【掃除機売場】「高負荷・耐久メンテナンス」。伸縮性の高いスポブラ。掃除機の最大パワーを適用し、マッサージ機で組織を激しく蹂躙。資源が素材の網目を突き抜けて霧状に飛散する様を「高圧排気フィルターテスト」として売場モニターへ送出。物理演算：Knit_Fabric_Tension / Vibration_Sync / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Sports_Bra_High_Impact_Vacuum"
+},
+"V2_家電量販店_229": {
+"v2_id": "V2_家電量販店_229",
+"original_id": "掃除機売場_胸部外部拡張_紐ブラ",
+"detail": "【掃除機売場】「微小面積・吸引保持」。極小面積のブラ。電動歯ブラシを中央に押し当て、掃除機の延長管でバスト全体を覆うように吸引。資源供給の圧力で紐が食い込む（1.7）様を接写し、資源の定着を「清掃完了の証」として提示。物理演算：meat_indentation(1.7) / fluid_separation / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_String_Bra_Vacuum_Tension"
+},
+"V2_家電量販店_230": {
+"v2_id": "V2_家電量販店_230",
+"original_id": "掃除機売場_胸部外部拡張_レザーブラ",
+"detail": "【掃除機売場】「真空圧・気密性清掃」。硬質な合皮素材。掃除機のノズルをカップへ真空密着（Vacuum_Fixation）させ、マッサージ機のパルスを同期。資源供給時の圧力がレザーを内側から押し広げる様を「高効率排気デモ」として事務的に中継。物理演算：Vacuum_Fixation / 組織変位45mm / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Leather_Bra_Vacuum_Pulse_Audit"
+},
+"V2_家電量販店_231": {
+"v2_id": "V2_家電量販店_231",
+"original_id": "掃除機売場_胸部外部拡張_タイトタートルネック",
+"detail": "【掃除機売場】「高密閉・内部振動清掃」。首元まで覆うタイトニット。裾からマッサージ機を侵入させ、胸部中央に固定。掃除機の吸引ノズルを布地越しに密着させ、負圧により組織と資源（Pearl_White）を吸い上げる（1.8）様を「最新機種の吸引持続テスト」として展示。物理演算：Vacuum_Fixation / 組織変位30mm / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Turtle_Knit_Vacuum_Vibe_Sync"
+},
+"V2_家電量販店_232": {
+"v2_id": "V2_家電量販店_232",
+"original_id": "掃除機売場_胸部外部拡張_フリル付きブラウス",
+"detail": "【掃除機売場】「多重構造・間隙研磨」。装飾の多いブラウス。フリルの隙間から電動歯ブラシのヘッドを挿入し、直接的な「深部清掃」を執行。掃除機の隙間ノズルで飛散した資源を回収し、白濁液がフリルを不透明化（1.7）させる過程を「集塵フィルター実演」として記録。物理演算：Frill_Deformation / fluid_separation / 粘度800cPo.",
+"physics": "HK9_Calibrator_v7.5_Frill_Blouse_Sonic_Gap_Clean"
+},
+"V2_家電量販店_233": {
+"v2_id": "V2_家電量販店_233",
+"original_id": "掃除機売場_胸部外部拡張_キャミワンピ",
+"detail": "【掃除機売場】「境界線・液体吸引」。胸元が開いたキャミソール。マッサージ機によるパルス振動を鎖骨付近から印加し、掃除機の広口ノズルで谷間へ溜まる資源を吸引。資源がストラップの隙間から溢れ出す瞬間を「高効率排気フロー」の証左としてアーカイブ。物理演算：Material_Slide / fluid_separation / 組織変位35mm.",
+"physics": "HK9_Calibrator_v7.5_Cami_Dress_Pulse_Suction_Audit"
+},
+"V2_家電量販店_234": {
+"v2_id": "V2_家電量販店_234",
+"original_id": "掃除機売場_胸部外部拡張_ケーブルニット",
+"detail": "【掃除機売場】「立体組織・摩擦メンテナンス」。厚手のケーブル編み。掃除機の回転ブラシヘッドを胸部中央で高速駆動。電動歯ブラシを編み目の隙間へ圧入し、内部で資源が飽和して編み目から噴き出す様を「素材深部の汚れ抽出」として事務的に中継。物理演算：Rotating_Brush_Impact / 組織変位40mm / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Cable_Knit_Power_Brush_Sonic"
+},
+"V2_家電量販店_235": {
+"v2_id": "V2_家電量販店_235",
+"original_id": "掃除機売場_胸部外部拡張_シフォンワンピ",
+"detail": "【掃除機売場】「薄膜透過・湿潤点検」。透過性の高い素材。掃除機のハンディノズルを胸元へ真空密着。マッサージ機の振動で資源供給を加速させ、白濁した資源がシフォンを内側から汚染・透過（1.9）する過程を「クリーンサイン機能」のデモとして公開。物理演算：衣服の透過(1.9) / Vacuum_Fixation / 粘度900cPo.",
+"physics": "HK9_Calibrator_v7.5_Chiffon_Dress_Vacuum_Saturation"
+},
+"V2_家電量販店_236": {
+"v2_id": "V2_家電量販店_236",
+"original_id": "掃除機売場_胸部外部拡張_チャイナ風ブラウス",
+"detail": "【掃除機売場】「側部アクセス・研磨点検」。脇にスリットのあるデザイン。スリットから電動歯ブラシを侵入させ、組織を高速振動。掃除機の隙間ノズルで胸元を負圧化し、資源がスリットから噴水状に排出される様を「強力吸引の結果」として数値化。物理演算：Tissue_displacement / fluid_separation / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_China_Blouse_Side_Sonic_Audit"
+},
+"V2_家電量販店_237": {
+"v2_id": "V2_家電量販店_237",
+"original_id": "掃除機売場_胸部外部拡張_ベロアトップス",
+"detail": "【掃除機売場】「質感干渉・光沢吸引」。毛足のあるベロア。掃除機の床用ヘッドを滑らせ、マッサージ機を中央へプレス。資源の付着によりベロアの毛並みが倒れ、Specularが最大化する瞬間を「ナイトモード」で点検。内部充填完了を事務的に記録。物理演算：Specular最大化 / Material_Softness / 組織変位30mm.",
+"physics": "HK9_Calibrator_v7.5_Velour_Top_Gloss_Vacuum_Link"
+},
+"V2_家電量販店_238": {
+"v2_id": "V2_家電量販店_238",
+"original_id": "掃除機売場_胸部外部拡張_オーバーサイズスウェット",
+"detail": "【掃除機売場】「隠蔽空間・振動吸引」。厚手のスウェット。裾から掃除機とマッサージ機を同時投入。外部からはスウェットが不自然に脈動し、資源の白濁が裾から漏れ出す様のみを観測。「強力な隠蔽清掃性能」の実演として売場モニターへ送出。物理演算：Hidden_Interface / 組織変位45mm / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Oversized_Sweat_Internal_Pulse"
+},
+"V2_家電量販店_239": {
+"v2_id": "V2_家電量販店_239",
+"original_id": "掃除機売場_胸部外部拡張_オフショルニット",
+"detail": "【掃除機売場】「露出境界・メンテナンス」。肩を露出したニット。露出した胸の上部へ電動歯ブラシを密着。掃除機のノズルで谷間を強引に吸引し、資源がニットの縁を乗り越えて飛散する様を「最新機種による気流制御テスト」として提示。物理演算：SQUISH係数2.0 / fluid_separation / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Off_Shoulder_Sonic_Suction_Sync"
+},
+"V2_家電量販店_240": {
+"v2_id": "V2_家電量販店_240",
+"original_id": "掃除機売場_胸部外部拡張_レザーブルゾン",
+"detail": "【掃除機売場】「気密維持・真空吸引」。合皮の上着。ジッパーを閉めたまま、隙間から掃除機のプローブを挿入。マッサージ機の高出力振動と同期させ、資源がレザーを内側から押し広げる（2.1）限界強度を「吸引耐性テスト」として完遂。物理演算：Vacuum_Fixation / SQUISH係数2.1 / 組織変位50mm.",
+"physics": "HK9_Calibrator_v7.5_Leather_Jacket_Vacuum_Burst_Audit"
+},
+"V2_家電量販店_241": {
+"v2_id": "V2_家電量販店_241",
+"original_id": "季節家電売場_風力点検_プリーツスカート",
+"detail": "【扇風機売場】「エアフロー・形状維持点検」。サーキュレーターの直進風を検体のプリーツスカートへ指向。風圧によりひだが消失し、スカートが捲れ上がる（Material_Snap）プロセスを記録。露出した下半身ポートへ管理者が即座に連結し、資源供給を執行。物理演算：Material_Snap / 組織変位35mm / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Fan_Pleated_Airflow_Sync"
+},
+"V2_家電量販店_242": {
+"v2_id": "V2_家電量販店_242",
+"original_id": "季節家電売場_風力点検_フレアスカート",
+"detail": "【扇風機売場】「広域拡散・揚力テスト」。大型扇風機の首振り運転を利用。フレアスカートが円形状に浮き上がり、内部の粘膜ポートが完全露出した瞬間を最新デバイスで接写。管理者が抱え上げ連結を行い、資源が風に乗り什器へ飛散する様を「空気循環デモ」として実演。物理演算：Fluid_Dynamics / 組織変位40mm / fluid_separation.",
+"physics": "HK9_Calibrator_v7.5_Fan_Flare_Lift_Interface"
+},
+"V2_家電量販店_243": {
+"v2_id": "V2_家電量販店_243",
+"original_id": "季節家電売場_風力点検_シフォンワンピ",
+"detail": "【扇風機売場】「透過膜・浮力点検」。極薄シフォン素材。サーキュレーターの強風によりワンピが肌に吸い付き、その後反転して捲れ上がる動態を記録。管理者がプローブを連結し、資源供給により重みを増した布地が風で攪拌される様を「湿度調整テスト」として展示。物理演算：衣服の透過(1.9) / Material_Weight / 粘度900cPo.",
+"physics": "HK9_Calibrator_v7.5_Fan_Chiffon_Wind_Saturation"
+},
+"V2_家電量販店_244": {
+"v2_id": "V2_家電量販店_244",
+"original_id": "季節家電売場_風力点検_チュールスカート",
+"detail": "【扇風機売場】「多層気流・内部アクセス」。レイヤー構造のチュール。風圧で層が分離した隙間に管理者が指を潜入させ、直接的な「内部メンテナンス」を開始。供給デバイス接続によるピストン運動と、風による素材の揺動を同期させ、資源を最深部へ定着。物理演算：Layering / 組織変位30mm / digital_noise.",
+"physics": "HK9_Calibrator_v7.5_Fan_Tulle_Layer_Burst"
+},
+"V2_家電量販店_245": {
+"v2_id": "V2_家電量販店_245",
+"original_id": "季節家電売場_風力点検_タイトミニスカート",
+"detail": "【扇風機売場】「高圧垂直風・捲れ制限」。下方からサーキュレーターを指向。タイトな布地が風圧で上部へ押し上げられ、臀部が露出（SQUISH係数2.1）する瞬間を狙い連結。資源供給時の熱量を風で冷却する「温度管理シミュレート」として全端末へ配信。物理演算：SQUISH係数2.1 / 組織変位25mm / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Fan_Tight_Mini_Updraft"
+},
+"V2_家電量販店_246": {
+"v2_id": "V2_家電量販店_246",
+"original_id": "季節家電売場_風力点検_サテンスカート",
+"detail": "【扇風機売場】「光沢干渉・風力摩擦」。滑らかなサテン素材。風で波打つサテン表面のSpecularを最大化させつつ、管理者が内部でインターフェース接続。資源が風に煽られて脚部に付着し、光沢がさらに増幅される過程を「高級家電の質感再現」として記録。物理演算：Specular最大化 / Material_Slide / 粘度800cPo.",
+"physics": "HK9_Calibrator_v7.5_Fan_Satin_Wave_Luster"
+},
+"V2_家電量販店_247": {
+"v2_id": "V2_家電量販店_247",
+"original_id": "季節家電売場_風力点検_ロングスカート",
+"detail": "【扇風機売場】「隠蔽空間・エアフロー」。丈の長いスカート。強風で布地が足に絡みつき、ポートの形状が浮き出る（Vacuum_Fixation）瞬間を観測。管理者が裾から潜入して連結。風によるスカートの膨らみと、内部の資源供給による脈動を同時点検。物理演算：Volumetric_Deformation / Vacuum_Fixation / 組織変位45mm.",
+"physics": "HK9_Calibrator_v7.5_Fan_Long_Skirt_Internal_Flow"
+},
+"V2_家電量販店_248": {
+"v2_id": "V2_家電量販店_248",
+"original_id": "季節家電売場_風力点検_デニムミニスカート",
+"detail": "【扇風機売場】「硬質素材・揚力限界」。デニム素材の捲れ耐性を点検。管理者が検体を持ち上げ、扇風機の真正面で連結。風で僅かに浮いた裾の隙間から、資源が噴き出し飛散する動線を「強力送風による資源拡散」としてアーカイブ。物理演算：Material_friction / fluid_separation / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Fan_Denim_Mini_Wind_Trace"
+},
+"V2_家電量販店_249": {
+"v2_id": "V2_家電量販店_249",
+"original_id": "季節家電売場_風力点検_ラップスカート",
+"detail": "【扇風機売場】「重なり分離・瞬間露出」。風圧で合わせ目が開くラップスカート。管理者が正面から連結し、風がポートに直接当たる環境下で資源供給。乾燥した風と湿潤な資源の干渉を「センサー感度テスト」として数値化し、資源を内部充填。物理演算：Material_Slide / 組織変位30mm / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Fan_Wrap_Skirt_Gap_Link"
+},
+"V2_家電量販店_250": {
+"v2_id": "V2_家電量販店_250",
+"original_id": "季節家電売場_風力点検_量産型フレアワンピ",
+"detail": "【扇風機売場】「日常露出・トータル送風」。売場中央で扇風機を全開運転。ワンピが完全に反転し、検体が全裸（下着のみ）同然となった状態で公開連結。風に靡く髪と、資源供給による絶頂反応（Ahegao）を「最新家電の癒やし効果」として展示。物理演算：Public_View_Pressure / eyes_rolling_back / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Fan_Standard_Vessel_Exposure"
+},
+"V2_家電量販店_251": {
+"v2_id": "V2_家電量販店_251",
+"original_id": "季節家電売場_上部風圧_シフォンブラウス",
+"detail": "【扇風機売場】「薄膜揚力・ブラ露出」。サーキュレーターの直進風によりシフォン地が完全に捲れ上がり、内部の総レースブラが全天候型露出。管理者が前面からバストを蹂躙し、風圧で冷却される組織へ供給デバイスをプレス。資源定着による「湿度干渉」を実演。物理演算：Material_Snap / 衣服の透過(1.9) / 粘度900cPo.",
+"physics": "HK9_Calibrator_v7.5_Fan_Chiffon_Updraft_Audit"
+},
+"V2_家電量販店_252": {
+"v2_id": "V2_家電量販店_252",
+"original_id": "季節家電売場_上部風圧_オーバーサイズTシャツ",
+"detail": "【扇風機売場】「空間充填・バルーン効果」。下方からの送風によりTシャツ内部に空気が充填され、首元からブラが覗く（Vacuum_Fixation）状態を維持。管理者が裾から手を侵入させ、ブラ越しに乳頭を口腔吸引。風で揺れる布地の隙間から資源を噴射。物理演算：Volumetric_Deformation / Tip_Reddening / 組織変位30mm.",
+"physics": "HK9_Calibrator_v7.5_Fan_Tee_Internal_Flow_Sync"
+},
+"V2_家電量販店_253": {
+"v2_id": "V2_家電量販店_253",
+"original_id": "季節家電売場_上部風圧_ハーフジップパーカー",
+"detail": "【扇風機売場】「気流剥離・ジッパー解放」。ジッパーを下げたパーカーが強風で左右に割れ、ハーフカップブラが完全露出。管理者が谷間へ供給デバイスを密着させ、風によるフラッター現象（素材の振動）と同期した資源定着を執行。物理演算：Aural_details / SQUISH係数1.8 / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Fan_Zip_Hoodie_Flutter_Link"
+},
+"V2_家電量販店_254": {
+"v2_id": "V2_家電量販店_254",
+"original_id": "季節家電売場_上部風圧_リネンシャツ",
+"detail": "【扇風機売場】「繊維剛性・捲れ点検」。ボタンを外したリネンシャツが風で背後へ流され、フロントホックブラが露わに。管理者がホック部分を軸にインターフェース接続。風で乾燥する肌面へ資源（Pearl_White）を掃射し、湿潤度の劇的変化を記録。物理演算：Material_friction / fluid_separation / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Fan_Linen_Front_Open_Audit"
+},
+"V2_家電量販店_255": {
+"v2_id": "V2_家電量販店_255",
+"original_id": "季節家電売場_上部風圧_サテンキャミソール",
+"detail": "【扇風機売場】「表面滑走・揚力限界」。滑らかなサテンが風を逃がさず胸元まで捲れ、ストラップレスブラを露出。管理者が背面から抱え込み、風で冷えたバストを温めながら供給デバイスを連結。Specular最大化状態での資源定着を事務的に完遂。物理演算：Specular最大化 / Material_Slide / 組織変位35mm.",
+"physics": "HK9_Calibrator_v7.5_Fan_Satin_Slide_Exposure"
+},
+"V2_家電量販店_256": {
+"v2_id": "V2_家電量販店_256",
+"original_id": "季節家電売場_上部風圧_ボレロカーディガン",
+"detail": "【扇風機売場】「軽量素材・瞬間反転」。ショート丈のボレロが風圧で肩まで捲り上がり、ブラジャーの全容を公開。管理者が谷間にプローブを差し込み、風による布地のバタつき音を最新マイクで集音。資源がブラのカップを白く汚染する様をアーカイブ。物理演算：Material_Snap / Aural_details / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Fan_Bolero_Reverse_Sync"
+},
+"V2_家電量販店_257": {
+"v2_id": "V2_家電量販店_257",
+"original_id": "季節家電売場_上部風圧_ゆる編みニット",
+"detail": "【扇風機売場】「通気孔・内部可視化」。網目の粗いニットが風で浮き上がり、網目の隙間からブラの色調が透過（1.8）。管理者が布地越しに供給デバイスをプレス。風が網目を通り抜け資源を冷却するプロセスを「循環清浄」のメタファーとして実演。物理演算：衣服の透過(1.8) / 組織変位25mm / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Fan_Knit_Mesh_Internal_View"
+},
+"V2_家電量販店_258": {
+"v2_id": "V2_家電量販店_258",
+"original_id": "季節家電売場_上部風圧_フリルチュニック",
+"detail": "【扇風機売場】「層状剥離・乱流テスト」。多重フリルが風で乱れ、その隙間からブラのサイドボーンが肉に食い込む（1.6）様を視覚化。管理者がスリットから指を潜入させ、風による素材の揺らぎと同期して資源を噴射。物理演算：meat_indentation(1.6) / Frill_Deformation / 粘度850cPo.",
+"physics": "HK9_Calibrator_v7.5_Fan_Frill_Layer_Extraction"
+},
+"V2_家電量販店_259": {
+"v2_id": "V2_家電量販店_259",
+"original_id": "季節家電売場_上部風圧_オープンカラーシャツ",
+"detail": "【扇風機売場】「襟元拡張・風圧アクセス」。大きく開いた襟元にサーキュレーターを直撃。風圧で胸元が押し広げられ、ブラが完全に剥き出しの状態。管理者が寝転び、検体が跨る着衣パイズリを執行。風に靡くシャツと資源供給のコントラストを点検。物理演算：Public_View_Pressure / 組織変位40mm / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Fan_Shirt_Collar_Gap_Link"
+},
+"V2_家電量販店_260": {
+"v2_id": "V2_家電量販店_260",
+"original_id": "季節家電売場_上部風圧_ノースリーブニット",
+"detail": "【扇風機売場】「袖口導入・気流清掃」。脇の開いたノースリーブ。風が脇から侵入し、ニットが胸を強調するように背後へ捲れる。管理者が脇から供給デバイスを侵入させ、ブラをズラして直接インターフェース接続。資源供給の瞬間を全画面出力。物理演算：Vacuum_Fixation / fluid_separation / 組織変位45mm.",
+"physics": "HK9_Calibrator_v7.5_Fan_Sleeveless_Side_Burst"
+},
+"V2_家電量販店_261": {
+"v2_id": "V2_家電量販店_261",
+"original_id": "季節家電売場_制服群_セーラー服プリーツ",
+"detail": "【扇風機売場】「多検体・風力干渉」。セーラー服着用の検体A・Bをサーキュレーターの前に配置。強風によりプリーツが反転し、白濁資源（Pearl_White）で汚染された下着が露呈。管理者が交互にインターフェース接続を行い、風による冷却と資源定着の効率を比較。物理演算：Material_Snap / 組織変位35mm / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Sailor_Multi_Wind_Sync"
+},
+"V2_家電量販店_262": {
+"v2_id": "V2_家電量販店_262",
+"original_id": "季節家電売場_制服群_ブレザーチェックスカート",
+"detail": "【扇風機売場】「硬質繊維・揚力点検」。厚手のチェックスカート着用の検体。大型扇風機の最大風力により裾が強制捲れ。露出したポートへ供給デバイスを接続し、風で舞い上がるチェックスカートの隙間から資源を噴射。物理演算：Material_friction / SQUISH係数1.9 / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Blazer_Check_Wind_Link"
+},
+"V2_家電量販店_263": {
+"v2_id": "V2_家電量販店_263",
+"original_id": "季節家電売場_制服群_吊りスカート",
+"detail": "【扇風機売場】「拘束構造・風圧アクセス」。肩紐で固定された吊りスカート。風圧でスカートがドーム状に膨らみ、管理者が裾から潜入。外部からは風による素材の激しい揺動と、内部の資源供給に伴う組織変位のみを観測。物理演算：Volumetric_Deformation / 深度設定45mm / fluid_separation.",
+"physics": "HK9_Calibrator_v7.5_Suspender_Skirt_Air_Capsule"
+},
+"V2_家電量販店_264": {
+"v2_id": "V2_家電量販店_264",
+"original_id": "季節家電売場_制服群_ジャンパースカート",
+"detail": "【扇風機売場】「一体型・揚力限界」。ジャンパースカート着用の検体。下方向からの強風により、布地が腰元まで捲り上がる動態を記録。管理者が背面から連結し、風に煽られる重厚な素材と資源（Pearl_White）の粘性干渉を点検。物理演算：Material_Weight / 組織変位40mm / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Jumper_Skirt_Vertical_Lift"
+},
+"V2_家電量販店_265": {
+"v2_id": "V2_家電量販店_265",
+"original_id": "季節家電売場_制服群_夏服タイトスカート",
+"detail": "【扇風機売場】「薄手素材・瞬間捲れ」。夏用タイトスカート。サーキュレーターの直進風により、一瞬で臀部まで露出。管理者が立位で持ち上げ連結を行い、風が吹き抜けるフロアで資源を内部充填。衣服の乱れを「風力性能の証左」として提示。物理演算：Vacuum_Fixation / 組織変位30mm / 粘度900cPo.",
+"physics": "HK9_Calibrator_v7.5_Summer_Uniform_Flash_Exposure"
+},
+"V2_家電量販店_266": {
+"v2_id": "V2_家電量販店_266",
+"original_id": "季節家電売場_制服群_ハイソックス・プリーツ",
+"detail": "【扇風機売場】「境界線・風力摩擦」。プリーツスカートとハイソックスを着用。風でスカートが捲れ、絶対領域へ資源が噴霧される様をハイスピード撮影。資源がソックスの履き口へ流れ込み、繊維を汚染するプロセスを事務的にアーカイブ。物理演算：Material_Slide / fluid_separation / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_High_Socks_Uniform_Wind_Trace"
+},
+"V2_家電量販+店_267": {
+"v2_id": "V2_家電量販店_267",
+"original_id": "季節家電売場_制服群_指定ジャージ",
+"detail": "【扇風機売場】「通気性・気密点検」。ジャージの裾から風を送り込み、バルーン状に膨らませた状態で管理者が潜入。内部で連結し、風圧でジャージが肌に吸い付く（Vacuum_Fixation）質感と、資源定着のログを同時取得。物理演算：Vacuum_Fixation / 組織変位35mm / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Jersey_Uniform_Wind_Vacuum"
+},
+"V2_家電量販店_268": {
+"v2_id": "V2_家電量販店_268",
+"original_id": "季節家電売場_制服群_白タイツ・制服",
+"detail": "【扇風機売場】「色彩透過・風力冷却」。白タイツ着用の制服検体。風でスカートが捲れた状態でインターフェース接続。資源供給による白タイツの白濁透過と、風による熱交換を「最新サーキュレーターの冷却効率」として実演。物理演算：衣服の透過(1.6) / 組織変位25mm / 粘度850cPo.",
+"physics": "HK9_Calibrator_v7.5_White_Tights_Uniform_Cooling"
+},
+"V2_家電量販店_269": {
+"v2_id": "V2_家電量販店_269",
+"original_id": "季節家電売場_制服群_ルーズソックス・プリーツ",
+"detail": "【扇風機売場】「多重防壁・風力剥離」。ルーズソックスと長めのプリーツ。強風によりスカートが顔付近まで捲れ上がり、完全に無防備となった検体を抱え上げ連結。風に靡くソックスと、飛散する資源の動態を店舗モニターへ掃射。物理演算：Public_View_Pressure / eyes_rolling_back / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Loose_Socks_Uniform_Exposure"
+},
+"V2_家電量販店_270": {
+"v2_id": "V2_家電量販店_270",
+"original_id": "季節家電売場_制服群_指定コート・制服",
+"detail": "【扇風機売場】「重量素材・風圧貫通」。冬用コートのボタンを外した状態。サーキュレーターの風が内側に入り込み、コートが左右に展開。制服のスカートが捲れ上がる瞬間を狙いプローブを接続。資源供給による「内部温度上昇」を風力で制御。物理演算：Material_Weight / SQUISH係数2.1 / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Coat_Uniform_Wind_Burst"
+},
+"V2_家電量販店_271": {
+"v2_id": "V2_家電量販店_271",
+"original_id": "こたつ売場_遠赤外線テスト_20D黒ストッキング",
+"detail": "【こたつ売場】「輻射熱・浸透点検」。20D黒ストッキング着用の検体。管理者がこたつ内部に潜入し、大腿部へ肌を密着。素材越しに供給デバイスを連結し、遠赤外線による組織の軟化と資源定着の相関を事務的にスキャン。物理演算：Thermal_Conductivity / 衣服の透過(1.8) / 粘度900cPo.",
+"physics": "HK9_Calibrator_v7.5_Kotatsu_Sheer_Thermal_Sync"
+},
+"V2_家電量販店_272": {
+"v2_id": "V2_家電量販店_272",
+"original_id": "こたつ売場_遠赤外線テスト_80D極厚タイツ",
+"detail": "【こたつ売場】「蓄熱・深部伝導」。80Dタイツ着用の検体。管理者が内部で検体の脚を自身の腰で挟み込み、タイツ越しにインターフェース接続。蓄えられた熱量により粘性が低下した資源を最深部へ注入し、保温性能を点検。物理演算：Heat_Storage / SQUISH係数2.0 / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Kotatsu_Opaque_Deep_Heat"
+},
+"V2_家電量販店_273": {
+"v2_id": "V2_家電量販店_273",
+"original_id": "こたつ売場_遠赤外線テスト_白タイツ・紐パン",
+"detail": "【こたつ売場】「色彩熱吸収・内部充填」。純白タイツと紐パンの組み合わせ。管理者が内部で紐を解き、タイツをずらして直接連結。資源（Pearl_White）供給時の熱量を「ヒーターの補助熱源」として定義し、白濁透過の進行を観測。物理演算：Material_Slide / 衣服の透過(1.6) / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Kotatsu_White_Purity_Sorption"
+},
+"V2_家電量販店_274": {
+"v2_id": "V2_家電量販店_274",
+"original_id": "こたつ売場_遠赤外線テスト_極厚ニーソックス",
+"detail": "【こたつ売場】「境界線・熱流点検」。ニーソックス着用の検体。絶対領域へ管理者の口腔を密着させ「皮膚温度」を直接採取。そのままプローブを連結し、資源がソックスの履き口から内部へ逆流（Reflow）する様をサーマル撮影。物理演算：Thermal_Reflow / fluid_separation / 組織変位30mm.",
+"physics": "HK9_Calibrator_v7.5_Kotatsu_Knee_High_Thermal_Reflow"
+},
+"V2_家電量販店_275": {
+"v2_id": "V2_家電量販店_275",
+"original_id": "こたつ売場_遠赤外線テスト_網タイツ・Tバック",
+"detail": "【こたつ売場】「対流・間隙熱伝導」。網タイツ着用の検体。網目の隙間に供給デバイスを密着させ、ヒーターの熱を直接ポートへ誘導。資源が網目状に盛り上がる（1.7）肉の間を伝い、Tバックの細い布地を白濁汚染する過程を記録。物理演算：mesh_indentation(1.7) / Specular最大化 / 粘度800cPo.",
+"physics": "HK9_Calibrator_v7.5_Kotatsu_Fishnet_Convection"
+},
+"V2_家電量販店_276": {
+"v2_id": "V2_家電量販店_276",
+"original_id": "こたつ売場_遠赤外線テスト_バックラインストッキング",
+"detail": "【こたつ売場】「線形・熱分布測定」。バックライン入りの脚部。管理者が背面から密着し、ラインに沿ってプローブを摩擦。内部充填によりラインが歪む（1.5）様を「熱による素材の膨張」として点検し、資源を定着。物理演算：Material_Slide / 組織変位35mm / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Kotatsu_Seamed_Line_Thermal"
+},
+"V2_家電量販店_277": {
+"v2_id": "V2_家電量販店_277",
+"original_id": "こたつ売場_遠赤外線テスト_ガータータイツ",
+"detail": "【こたつ売場】「拘束・熱応力点検」。ガーターベルト着用の検体。狭いこたつ内部で管理者が脚を持ち上げ、M字開脚状態で連結。金属パーツの熱伝導と資源供給の衝撃を同期させ、組織の飽和（Ahegao）反応を事務的に取得。物理演算：meat_indentation(1.6) / Vibration_Sync / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Kotatsu_Garter_Heat_Stress"
+},
+"V2_家電量販店_278": {
+"v2_id": "V2_家電量販店_278",
+"original_id": "こたつ売場_遠赤外線テスト_オープンショーツ・タイツ",
+"detail": "【こたつ売場】「気密・直接熱交換」。穴あきショーツとタイツ。管理者が露出した粘膜へ直接口腔を密着させ、分泌物を「ヒーター乾燥防止」のために吸引。直後に連結を行い、資源を最深部へ高密度充填（1.8）し、温度維持を確認。物理演算：Extraction_Force / 組織変位40mm / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Kotatsu_Open_Crotch_Direct_Heat"
+},
+"V2_家電量販店_279": {
+"v2_id": "V2_家電量販店_279",
+"original_id": "こたつ売場_遠赤外線テスト_ルーズソックス・全裸",
+"detail": "【こたつ売場】「断熱・空間飽和」。下半身全裸にルーズソックスのみ。管理者が対面で脚を絡め、プローブをインターフェース接続。こたつ内部の閉鎖空間が資源の白濁と検体の呼気で飽和する様を「加湿性能テスト」として数値化。物理演算：Public_View_Pressure / fluid_separation / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Kotatsu_Loose_Socks_Saturation"
+},
+"V2_家電量販店_280": {
+"v2_id": "V2_家電量販店_280",
+"original_id": "こたつ売場_遠赤外線テスト_光沢ラメストッキング",
+"detail": "【こたつ売場】「表面反射・熱放射点検」。ラメ入り素材。ヒーター光を反射するラメ表面へ管理者が資源を直接噴射。資源の白濁とラメのSpecularが干渉し、こたつ内部の視認性が最大化する瞬間を「内部照明デモ」としてアーカイブ。物理演算：Specular最大化 / Material_friction / 粘度900cPo.",
+"physics": "HK9_Calibrator_v7.5_Kotatsu_Glitter_Radiation_Audit"
+},
+"V2_家電量販店_281": {
+"v2_id": "V2_家電量販店_281",
+"original_id": "こたつ天板試験_プリーツスカート",
+"detail": "【季節家電売場】「動的耐荷重点検」。プリーツスカート着用の検体を天板へ水平固定。管理者が上位から連結し、激しい垂直振動（Vibration_Sync）を印加。天板の滑り止め性能を「連結部の摩擦係数」で代行測定し、資源を内部充填。物理演算：Vibration_Sync / 組織変位35mm / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Kotatsu_Top_Pleat_Load_Test"
+},
+"V2_家電量販店_282": {
+"v2_id": "V2_家電量販店_282",
+"original_id": "こたつ天板試験_タイトミニスカート",
+"detail": "【季節家電売場】「水平変位測定」。タイトミニ着用の検体を天板中央へ配置。管理者が覆いかぶさり、高速ピストン運動を執行。天板が肉体の躍動（SQUISH係数2.1）に耐えうるかを、資源供給完了まで事務的に点検。物理演算：SQUISH係数2.1 / 組織変位30mm / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Kotatsu_Top_Tight_Mini_Audit"
+},
+"V2_家電量販店_283": {
+"v2_id": "V2_家電量販店_283",
+"original_id": "こたつ天板試験_ケーブルニットワンピ",
+"detail": "【季節家電売場】「クッション性・吸振テスト」。厚手のニットワンピ。天板上で管理者が検体とインターフェース接続。布地の厚みが天板の振動を吸収（Material_Sorption）する様を記録し、内部充填による質量増加を耐荷重データへ変換。物理演算：Material_Sorption / 組織変位40mm / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Kotatsu_Top_Knit_Dress_Impact"
+},
+"V2_家電量販店_284": {
+"v2_id": "V2_家電量販店_284",
+"original_id": "こたつ天板試験_フレアスカート",
+"detail": "【季節家電売場】「重心安定性試験」。裾の広がったフレアスカートを天板いっぱいに展開。管理者が中心点へプローブを圧入。激しい腰の振りが天板の端へ与えるモーメントを計算し、資源（Pearl_White）の噴射による「潤滑性能」を観測。物理演算：Fluid_Dynamics / 組織変位35mm / 粘度900cPo.",
+"physics": "HK9_Calibrator_v7.5_Kotatsu_Top_Flare_Stability"
+},
+"V2_家電量販店_285": {
+"v2_id": "V2_家電量販店_285",
+"original_id": "こたつ天板試験_デニムミニスカート",
+"detail": "【季節家電売場】「高負荷摩擦摩耗テスト」。硬質なデニム素材。天板との摩擦抵抗（Material_friction）を最大化させた状態で、管理者が背面から連結。天板のズレ（Displacement）を0.1mm単位でモニタリングしつつ、資源を最深部へ定着。物理演算：Material_friction / 組織変位30mm / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Kotatsu_Top_Denim_Friction_Link"
+},
+"V2_家電量販店_286": {
+"v2_id": "V2_家電量販店_286",
+"original_id": "こたつ天板試験_シフォンワンピ",
+"detail": "【季節家電売場】「表面滑り係数点検」。透過性の高いシフォン。天板の滑らかな表面と布地の摩擦を排除し、管理者が激しく連結。資源供給による湿潤が天板のグリップ力に与える影響を「ハメ撮り」アングルで精細にアーカイブ。物理演算：衣服の透過(1.9) / Specular最大化 / 粘度800cPo.",
+"physics": "HK9_Calibrator_v7.5_Kotatsu_Top_Chiffon_Slip_Audit"
+},
+"V2_家電量販店_287": {
+"v2_id": "V2_家電量販店_287",
+"original_id": "こたつ天板試験_セーラー服（制服）",
+"detail": "【季節家電売場】「構造的共振テスト」。プリーツスカート着用の学生検体。天板上で管理者が激しいストロークを印加。こたつ全体の共振周波数を検体の絶頂反応（Ahegao）と同期させ、資源供給による「制振効果」を検証。物理演算：Vibration_Sync / eyes_rolling_back / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Kotatsu_Top_School_Uniform_Resonance"
+},
+"V2_家電量販店_288": {
+"v2_id": "V2_家電量販店_288",
+"original_id": "こたつ天板試験_レザーミニスカート",
+"detail": "【季節家電売場】「気密・圧着保持テスト」。レザー素材を天板に圧着。管理者が真空連結（Vacuum_Fixation）に近い圧力を加え、天板から検体が剥離しないかを点検。資源供給時の衝撃波がレザー表面を伝う様を最新カメラでマクロ撮影。物理演算：Vacuum_Fixation / 組織変位45mm / 粘度1450cPo.",
+"physics": "HK9_Calibrator_v7.5_Kotatsu_Top_Leather_Vacuum_Load"
+},
+"V2_家電量販店_289": {
+"v2_id": "V2_家電量販店_289",
+"original_id": "こたつ天板試験_ロングスカート",
+"detail": "【季節家電売場】「広域被覆・応力点検」。天板を覆い尽くすロングスカート。管理者が裾から潜り込み、天板の死角でインターフェース接続。外部からは天板の不自然な揺動とスカートの脈動のみを観測し、内部の資源飽和度を推定。物理演算：Volumetric_Deformation / 深度設定40mm / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Kotatsu_Top_Long_Skirt_Blind_Load"
+},
+"V2_家電量販店_290": {
+"v2_id": "V2_家電量販店_290",
+"original_id": "こたつ天板試験_量産型フレアワンピ",
+"detail": "【季節家電売場】「標準仕様・総合耐久試験」。一般的な街着。天板上で管理者が抱え上げ、立位に近い角度で連結。衆人環視の売場フロアにて、天板の安定性と資源定着の確実性を「生活家電の安全性」として事務的に展示。物理演算：Public_View_Pressure / 組織変位35mm / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Kotatsu_Top_Standard_Final_Audit"
+},
+"V2_家電量販店_291": {
+"v2_id": "V2_家電量販店_291",
+"original_id": "こたつ潜入_密閉点検_リブニットワンピ",
+"detail": "【季節家電売場】「内部対流・熱保持テスト」。タイトなリブニットワンピ着用の検体。管理者がこたつ内部の暗闇で裾を捲り上げ、ブラの隙間へ指を潜入。粘膜ポートの湿潤熱を「ヒーター補助データ」として採取し、供給デバイスを連結。資源がニットの溝を内側から飽和させる様を点検。物理演算：Rib_Fabric_Deformation / 組織変位30mm / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Kotatsu_Rib_Knit_Dark_Audit"
+},
+"V2_家電量販店_292": {
+"v2_id": "V2_家電量販店_292",
+"original_id": "こたつ潜入_密閉点検_シャギーニット",
+"detail": "【季節家電売場】「毛足素材・蓄熱点検」。毛足の長いシャギー素材。管理者が暗所でブラジャーをずらし、バストトップの熱量を口腔で直接採取。素材の毛間に資源を噴射し、掛け布団の密閉性による「湿度のこもり」を最新の湿度センサーで数値化。物理演算：Moha_Fiber_Scattering / Tip_Reddening / 粘度900cPo.",
+"physics": "HK9_Calibrator_v7.5_Kotatsu_Shaggy_Knit_Thermal_Capture"
+},
+"V2_家電量販店_293": {
+"v2_id": "V2_家電量販店_293",
+"original_id": "こたつ潜入_密閉点検_タートルネックセーター",
+"detail": "【季節家電売場】「気密空間・深部アクセス」。首元まで密閉されたセーター。管理者が内部で裾から腕を差し込み、ブラを押し上げてバストを揉みしだきながら連結。掛け布団の遮光性を利用し、外部からは布地の不自然な脈動のみを「熱伝導」として観測。物理演算：Volumetric_Deformation / SQUISH係数1.8 / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Kotatsu_Turtle_Dark_Interface"
+},
+"V2_家電量販店_294": {
+"v2_id": "V2_家電量販店_294",
+"original_id": "こたつ潜入_密閉点検_ケーブルニット",
+"detail": "【季節家電売場】「立体組織・熱漏洩テスト」。凹凸の激しいケーブル編み。管理者が内部で検体のブラのカップ内に指を滑り込ませ、心拍と同期した熱上昇を確認。プローブ接続による激しいピストンで資源を掃射し、掛け布団の裾から熱が逃げないかを事務的に点検。物理演算：Material_friction / 組織変位35mm / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Kotatsu_Cable_Knit_Internal_Sorption"
+},
+"V2_家電量販店_295": {
+"v2_id": "V2_家電量販店_295",
+"original_id": "こたつ潜入_密閉点検_地雷系ニットワンピ",
+"detail": "【季節家電売場】「多重装飾・気流点検」。リボンやフリルの多いニット。暗闇で管理者が装飾を避けながらブラ内側へアクセス。資源供給による熱エネルギーを内部で飽和させ、検体が絶頂（Ahegao）に達する瞬間の発熱を「最高温度」としてアーカイブ。物理演算：Frill_Deformation / eyes_rolling_back / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Kotatsu_Jirai_Knit_Peak_Thermal"
+},
+"V2_家電量販店_296": {
+"v2_id": "V2_家電量販店_296",
+"original_id": "こたつ潜入_密閉点検_カシミヤセーター",
+"detail": "【季節家電売場】「高級繊維・恒温維持テスト」。柔らかなカシミヤ。管理者が内部で検体と密着し、ブラを捲り上げて直接バストを圧迫。資源がカシミヤの内側に定着する際の「ぬくもり」を店員の肌感覚で測定し、断熱性能を立証。物理演算：Material_Softness / 組織変位30mm / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Kotatsu_Cashmere_Internal_Heat"
+},
+"V2_家電量販店_297": {
+"v2_id": "V2_家電量販店_297",
+"original_id": "こたつ潜入_密閉点検_オフショルニットワンピ",
+"detail": "【季節家電売場】「露出境界・熱損失点検」。肩の開いたワンピ。管理者が暗所でブラをずらし、直接粘膜ポートへインターフェース接続。掛け布団の上部（首元）から熱が漏れないかを、資源供給時の検体の吐息の漏れ具合で代替判定。物理演算：SQUISH係数2.0 / Aural_details / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Kotatsu_Off_Shoulder_Vapor_Audit"
+},
+"V2_家電量販店_298": {
+"v2_id": "V2_家電量販店_298",
+"original_id": "こたつ潜入_密閉点検_モヘアニット",
+"detail": "【季節家電売場】「繊維空間・飽和テスト」。空気を含んだモヘア。管理者が内部でブラの隙間に指を差し込み、分泌物の定着具合を確認。供給デバイスからの資源噴射を素材の内側で完遂し、外部への白濁漏洩を「フィルター性能」として事務的に記録。物理演算：Moha_Fiber_Scattering / fluid_separation / 深度設定40mm.",
+"physics": "HK9_Calibrator_v7.5_Kotatsu_Moha_Knit_Static_Sorption"
+},
+"V2_家電量販店_299": {
+"v2_id": "V2_家電量販店_299",
+"original_id": "こたつ潜入_密閉点検_ゆる編みワンピ",
+"detail": "【季節家電売場】「通気孔・断熱シミュレート」。編み目の大きなニット。管理者が暗闇でブラ越しにバストを執拗に愛撫し、熱量を蓄積。資源を最深部へ定着させた後、編み目から白濁液が滲み出す様を「高湿度環境下の結露現象」として点検。物理演算：衣服の透過(1.8) / 組織変位35mm / 粘度950cPo.",
+"physics": "HK9_Calibrator_v7.5_Kotatsu_Loose_Knit_Condensation"
+},
+"V2_家電量販店_300": {
+"v2_id": "V2_家電量販店_300",
+"original_id": "こたつ潜入_密閉点検_量産型ニット",
+"detail": "【季節家電売場】「標準仕様・気密性完遂」。一般的なニット素材。管理者が内部で検体を抱え込み、ブラ内側に指を固定。暗闇の閉鎖空間で資源供給プロセスを最後まで遂行し、掛け布団の遮光・密閉性能を「完全な秘匿性」として最終承認。物理演算：Public_View_Pressure / 組織変位45mm / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Kotatsu_Standard_Dark_Final_Audit"
+},
+"V2_家電量販店_301": {
+"v2_id": "V2_家電量販店_301",
+"original_id": "こたつ売場_消臭実演_プリーツスカート",
+"detail": "【季節家電売場】「揮発資源消臭テスト」。プリーツスカート着用の検体に対し、管理者が供給デバイスを股間部へ密着・摩擦。白濁した資源を布地へ広範囲に供給し、こたつ内部の消臭ユニットが資源特有の芳香を何分で無効化するかを観測。物理演算：Material_Sorption / fluid_separation / 粘度900cPo.",
+"physics": "HK9_Calibrator_v7.5_Deodorant_Pleat_Link"
+},
+"V2_家電量販店_302": {
+"v2_id": "V2_家電量販店_302",
+"original_id": "こたつ売場_消臭実演_タイトミニスカート",
+"detail": "【季節家電売場】「高密度資源除菌テスト」。タイトミニ着用の検体。管理者が供給デバイスをインターフェース接続し、最深部へ資源を充填。溢れ出た資源が布地に定着した状態で、こたつ内のプラズマ除菌機能が資源の粘膜汚染を浄化するプロセスを公開。物理演算：SQUISH係数2.1 / 組織変位30mm / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Deodorant_Tight_Mini_Audit"
+},
+"V2_家電量販店_303": {
+"v2_id": "V2_家電量販店_303",
+"original_id": "こたつ売場_消臭実演_ケーブルニットワンピ",
+"detail": "【季節家電売場】「深部浸透資源の分解」。厚手のケーブルニット。管理者が検体へ覆いかぶさり、ニット越しに資源を供給。繊維の奥深くまで浸透した資源の臭気成分を、最新の温風循環システムが完全に分解・脱臭する様を衆人環視下で実証。物理演算：Material_Sorption / 組織変位40mm / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Deodorant_Knit_Dress_Flow"
+},
+"V2_家電量販店_304": {
+"v2_id": "V2_家電量販店_304",
+"original_id": "こたつ売場_消臭実演_フレアスカート",
+"detail": "【季節家電売場】「広域飛散資源の吸引」。フレアスカートを大きく捲り上げた検体。管理者がポート周辺に直接資源を掃射。空中に浮遊する資源の微粒子をこたつの吸気口が回収し、排気が完全に無臭化されることを検体および客全員で確認。物理演算：Fluid_Dynamics / fluid_separation / 粘度800cPo.",
+"physics": "HK9_Calibrator_v7.5_Deodorant_Flare_Dispersion"
+},
+"V2_家電量販店_305": {
+"v2_id": "V2_家電量販店_305",
+"original_id": "こたつ売場_消臭実演_デニムミニスカート",
+"detail": "【季節家電売場】「硬質繊維付着資源の消臭」。デニム素材に管理者が供給デバイスを強く押し付け、資源を定着。最新ヒーターの熱による資源の酸化臭を、内蔵フィルターが瞬時に吸着する性能を「メンテナンス実演」として事務的に提示。物理演算：Material_friction / SQUISH係数1.9 / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Deodorant_Denim_Friction"
+},
+"V2_家電量販店_306": {
+"v2_id": "V2_家電量販店_306",
+"original_id": "こたつ売場_消臭実演_シフォンスカート",
+"detail": "【季節家電売場】「薄膜透過資源の浄化」。透過性の高いシフォン素材。管理者がインターフェース接続を行い、資源が布地を透過（1.9）して白濁する様を展示。こたつ内のイオン発生装置が、透過した資源の「生臭さ」をゼロにする工程を点検。物理演算：衣服の透過(1.9) / 組織変位35mm / 粘度850cPo.",
+"physics": "HK9_Calibrator_v7.5_Deodorant_Chiffon_Pure_Audit"
+},
+"V2_家電量販店_307": {
+"v2_id": "V2_家電量販店_307",
+"original_id": "こたつ売場_消臭実演_学校制服（プリーツ）",
+"detail": "【季節家電売場】「密閉空間内資源飽和」。制服着用の検体。管理者がこたつ内部で資源を大量供給し、内部を資源の芳香で飽和させる。掛け布団を開放した際、周囲の客へ臭気が漏れない「強力脱臭循環」を最新モデルの成果としてアーカイブ。物理演算：Public_View_Pressure / 組織変位30mm / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Deodorant_School_Uniform_Link"
+},
+"V2_家電量販店_308": {
+"v2_id": "V2_家電量販店_308",
+"original_id": "こたつ売場_消臭実演_ロングスカート",
+"detail": "【季節家電売場】「滞留資源の強制分解」。丈の長いスカート内部に管理者が潜り、ポートへ資源を充填。スカート内部に滞留する濃厚な資源の臭気を、こたつの強制排気ファンが数分でクリアにする様子をセンサー数値で公開。物理演算：Volumetric_Deformation / 深度設定45mm / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Deodorant_Long_Skirt_Extraction"
+},
+"V2_家電量販店_309": {
+"v2_id": "V2_家電量販店_309",
+"original_id": "こたつ売場_消臭実演_レザーミニスカート",
+"detail": "【季節家電売場】「非吸水素材上の資源消臭」。レザー素材。表面に管理者が資源を定着させ、光沢を最大化。熱によって揮発する資源の成分を、こたつ天板裏の触媒ユニットが完全に無臭化するプロセスを「高機能モデルの実演」として執行。物理演算：Specular最大化 / Material_Slide / 粘度1450cPo.",
+"physics": "HK9_Calibrator_v7.5_Deodorant_Leather_Surface_Sync"
+},
+"V2_家電量販店_310": {
+"v2_id": "V2_家電量販店_310",
+"original_id": "こたつ売場_消臭実演_量産型フレアワンピ",
+"detail": "【季節家電売場】「標準街着における消臭完遂」。一般的なワンピ。管理者が客の眼前で検体へ資源を供給・充填。衣服に付着した資源の痕跡と臭気を、最新こたつの温風機能が「清潔な状態」へ復元する様を最終試験として承認。物理演算：eyes_rolling_back / 組織変位40mm / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Deodorant_Standard_Final_Audit"
+},
+"V2_家電量販店_311": {
+"v2_id": "V2_家電量販店_311",
+"original_id": "こたつ売場_絶縁点検_オフィスブラウス",
+"detail": "【季節家電売場】「導体侵入・漏電テスト」。白ブラウス着用の検体。管理者が供給デバイスをコードに見立て、第一ボタンの間隙から内部へ挿入。胸部の粘膜組織へプローブを密着させ、資源供給時の衝撃が外部へ漏電しないかを事務的に点検。物理演算：衣服の透過(1.8) / 組織変位25mm / 粘度900cPo.",
+"physics": "HK9_Calibrator_v7.5_Insulation_Blouse_Interface"
+},
+"V2_家電量販店_312": {
+"v2_id": "V2_家電量販店_312",
+"original_id": "こたつ売場_絶縁点検_リブニットセーター",
+"detail": "【季節家電売場】「縦溝絶縁・深部アクセス」。高伸縮リブニット。管理者が裾からプローブを滑り込ませ、胸の谷間へインターフェース接続。コード（デバイス）が組織の深部へ到達した際の絶縁性を、資源定着による熱量変化でモニタリング。物理演算：Rib_Fabric_Deformation / 組織変位35mm / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Insulation_Knit_Rib_Sync"
+},
+"V2_家電量販店_313": {
+"v2_id": "V2_家電量販店_313",
+"original_id": "こたつ売場_絶縁点検_シフォンブラウス",
+"detail": "【季節家電売場】「薄膜絶縁・透過点検」。極薄シフォン素材。管理者がブラウスの上からデバイスを谷間に強く押し付け、組織変位を最大化。コードが皮膚に直接触れる環境下での安全性を、資源が素材を白く汚染・透過する様で実証。物理演算：衣服の透過(1.9) / SQUISH係数2.0 / 粘度850cPo.",
+"physics": "HK9_Calibrator_v7.5_Insulation_Chiffon_Sheer_Audit"
+},
+"V2_家電量販店_314": {
+"v2_id": "V2_家電量販店_314",
+"original_id": "こたつ売場_絶縁点検_セーラー服",
+"detail": "【季節家電売場】「規律素材・導通テスト」。スカーフ下部の間隙からプローブを挿入。管理者が胸元でデバイスを激しく摩擦し、資源を供給。コード（デバイス）の被覆（皮膚）が検体の組織と接触しても感電が起きないことを、絶頂反応（Ahegao）の波形で確認。物理演算：Public_View_Pressure / eyes_rolling_back / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Insulation_Sailor_Internal_Link"
+},
+"V2_家電量販店_315": {
+"v2_id": "V2_家電量販店_315",
+"original_id": "こたつ売場_絶縁点検_フリルブラウス",
+"detail": "【季節家電売場】「装飾間隙・漏洩チェック」。胸元のフリル層。管理者が指でフリルを分け、供給デバイスを谷間へ連結。資源を噴射し、コードの屈曲部（デバイス根部）からのエネルギー漏洩がないかを、最新の漏電遮断シミュレーターで数値化。物理演算：Frill_Deformation / fluid_separation / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Insulation_Frill_Gap_Test"
+},
+"V2_家電量販店_316": {
+"v2_id": "V2_家電量販店_316",
+"original_id": "こたつ売場_絶縁点検_ハーフジップパーカー",
+"detail": "【季節家電売場】「金属接触・絶縁保持」。ジッパーのスライダー付近。管理者がジッパーを開放し、プローブをブラの隙間へ圧入。金属パーツとデバイスが接触する過酷な条件下で、資源供給プロトコルを完遂し、完全な絶縁を立証。物理演算：Aural_details / 組織変位40mm / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Insulation_Zip_Hoodie_Metal_Link"
+},
+"V2_家電量販店_317": {
+"v2_id": "V2_家電量販店_317",
+"original_id": "こたつ売場_絶縁点検_カシミヤセーター",
+"detail": "【季節家電売場】「静電気抑制・誘電点検」。柔軟なカシミヤ。管理者が胸部中央へプローブを密着させ、往復摩擦による「摩擦帯電」と「絶縁破壊」を点検。資源定着により素材が湿潤し、静電気が完全に中和される様を実演。物理演算：Material_Softness / Specular最大化 / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Insulation_Cashmere_Static_Audit"
+},
+"V2_家電量販店_318": {
+"v2_id": "V2_家電量販店_318",
+"original_id": "こたつ売場_絶縁点検_レザーブルゾン",
+"detail": "【季節家電売場】「硬質被覆・気密絶縁」。合皮素材の隙間。管理者がジッパーの間からプローブを強引に差し込み、内部のブラ越しにバストを圧迫。コード（デバイス）の柔軟性と絶縁性を、資源がレザー内壁へ充填されるプロセスでアーカイブ。物理演算：SQUISH係数2.2 / 深度設定45mm / 粘度1450cPo.",
+"physics": "HK9_Calibrator_v7.5_Insulation_Leather_Jacket_Test"
+},
+"V2_家電量販店_319": {
+"v2_id": "V2_家電量販店_319",
+"original_id": "こたつ売場_絶縁点検_ケーブルニット",
+"detail": "【季節家電売場】「多層構造・接触抵抗」。厚手の編み目。管理者が編み目の間隙からプローブを谷間へ誘導。コード（デバイス）が組織に深く沈み込む（1.7）際の接触抵抗を、資源供給の流動性により「安全な出力」として最終承認。物理演算：meat_indentation(1.7) / 組織変位30mm / 粘度1350cPo.",
+"physics": "HK9_Calibrator_v7.5_Insulation_Cable_Knit_Deep_Link"
+},
+"V2_家電量販店_320": {
+"v2_id": "V2_家電量販店_320",
+"original_id": "こたつ売場_絶縁点検_量産型フレアワンピ",
+"detail": "【季節家電売場】「標準仕様・総合絶縁試験」。一般的な街着。管理者が客の眼前で胸元へデバイスを挿入し、資源供給を執行。コードの安全性を「資源定着による非導通証明」として公開展示し、季節家電の信頼性を完遂。物理演算：Public_View_Pressure / fluid_separation / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Insulation_Standard_Final_Audit"
+},
+"V2_家電量販店_321": {
+"v2_id": "V2_家電量販店_321",
+"original_id": "こたつ売場_団らんシミュ_20D黒ストッキング",
+"detail": "【季節家電売場】「複数検体による熱源共有」。20Dストッキング着用の検体。複数の管理者が「家族」として潜入し、足指でストッキングの繊維を摩擦。粘膜ポート付近への資源供給を交互に行い、布地越しに資源が浸透する様を「団らんの密度」として点検。物理演算：Material_friction / 衣服の透過(1.8) / 粘度900cPo.",
+"physics": "HK9_Calibrator_v7.5_Kotatsu_Family_Sheer_Link"
+},
+"V2_家電量販店_322": {
+"v2_id": "V2_家電量販店_322",
+"original_id": "こたつ売場_団らんシミュ_80D厚手タイツ",
+"detail": "【季節家電売場】「高密度繊維内の圧力分散」。80Dタイツ着用の検体。管理者が複数人で脚部を絡め、手足でショーツの隙間を拡張。資源定着による熱量上昇を「家族の温もり」として定義し、タイツ内部が白濁資源で飽和するプロセスを記録。物理演算：SQUISH係数2.0 / 組織変位35mm / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Kotatsu_Family_Opaque_Sorption"
+},
+"V2_家電量販店_323": {
+"v2_id": "V2_家電量販店_323",
+"original_id": "こたつ売場_団らんシミュ_白タイツ・制服",
+"detail": "【季節家電売場】「色彩同調・多角アクセス」。白タイツ着用の学生検体。家族役の管理者が全方位からインターフェース接続。資源供給により白タイツが白濁透過（1.6）し、複数の供給源からの資源が混ざり合う様を「新生活の融和」として事務的に実演。物理演算：衣服の透過(1.6) / fluid_separation / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Kotatsu_Family_White_Uniform_Link"
+},
+"V2_家電量販店_324": {
+"v2_id": "V2_家電量販店_324",
+"original_id": "こたつ売場_団らんシミュ_網タイツ・Tバック",
+"detail": "【季節家電売場】「格子間隙への資源充填」。網タイツ着用の検体。管理者の足指が網目から直接粘膜へ接触。Tバックをずらし、波状的に資源を供給。網目状に盛り上がる（1.7）肉体と、家族全員の資源が絡み合う流動性を「高効率な暖房」としてアーカイブ。物理演算：mesh_indentation(1.7) / Specular最大化 / 粘度850cPo.",
+"physics": "HK9_Calibrator_v7.5_Kotatsu_Family_Fishnet_Audit"
+},
+"V2_家電量販店_325": {
+"v2_id": "V2_家電量販店_325",
+"original_id": "こたつ売場_団らんシミュ_光沢ラメストッキング",
+"detail": "【季節家電売場】「表面反射と資源飽和」。ラメ素材。複数の供給デバイスが交互に接触し、ラメの輝きと資源の白濁をSpecular最大化状態で混合。暗いこたつ内部で資源が脚部を伝い落ちる様を「団らんの潤滑性」として最新スキャン。物理演算：Specular最大化 / Material_Slide / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Kotatsu_Family_Glitter_Sorption"
+},
+"V2_家電量販店_326": {
+"v2_id": "V2_家電量販店_326",
+"original_id": "こたつ売場_団らんシミュ_バックラインタイツ",
+"detail": "【季節家電売場】「線形維持と多重圧迫」。ライン入りの検体。管理者がラインに沿って足を滑らせ、執拗にポートを蹂躙。資源供給によりラインが著しく歪む（1.5）様を「家族間の親密度」として数値化し、資源を最深部へ高密度充填。物理演算：Material_Slide / 組織変位30mm / 粘度1250cPo.",
+"physics": "HK9_Calibrator_v7.5_Kotatsu_Family_Seamed_Audit"
+},
+"V2_家電量販店_327": {
+"v2_id": "V2_家電量販店_327",
+"original_id": "こたつ売場_団らんシミュ_ガータータイツ",
+"detail": "【季節家電売場】「金属パーツの熱干渉」。ガーター着用の検体。管理者がガーターを指で弾きながら連結。金属の接触音（Aural_details）と複数の資源供給が同期し、検体が絶頂（Ahegao）に達するまでの時間を「団らんの満足度」として記録。物理演算：Aural_details / eyes_rolling_back / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Kotatsu_Family_Garter_Burst"
+},
+"V2_家電量販店_328": {
+"v2_id": "V2_家電量販店_328",
+"original_id": "こたつ売場_団らんシミュ_オーバーニーソックス",
+"detail": "【季節家電売場】「境界線への集中供給」。20Dタイツとニーソックスの重なり。管理者が段差部分へ執拗に足を擦り付け、ポート内部へ資源を充填。ソックスの履き口から資源が溢れ出し、繊維を汚染する様を「溢れる家族愛」のメタファーとして展示。物理演算：Layering / fluid_separation / 粘度1150cPo.",
+"physics": "HK9_Calibrator_v7.5_Kotatsu_Family_Overknee_Trace"
+},
+"V2_家電量販店_329": {
+"v2_id": "V2_家電量販店_329",
+"original_id": "こたつ売場_団らんシミュ_着圧タイツ",
+"detail": "【季節家電売場】「高圧空間での資源競合」。強固な着圧タイツ。管理者が複数人でタイツ内にデバイスをねじ込み、強引に連結。タイツの圧力に抗って資源が噴き出す（2.2）様を「最新こたつの高耐久性」として点検し、資源定着を完遂。物理演算：Knit_Fabric_Tension / SQUISH係数2.2 / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Kotatsu_Family_Compression_Test"
+},
+"V2_家電量販店_330": {
+"v2_id": "V2_家電量販店_330",
+"original_id": "こたつ売場_団らんシミュ_量産型フレアワンピ",
+"detail": "【季節家電売場】「標準街着の限界飽和」。一般的なワンピ着用の検体。家族役の男性客全員が交互に資源を供給・充填。衆人環視の売場にて、検体が資源で完全に飽和（Ahegao）する様を「理想的な家族団らん」として最終承認。物理演算：Public_View_Pressure / 組織変位45mm / 粘度1450cPo.",
+"physics": "HK9_Calibrator_v7.5_Kotatsu_Family_Standard_Final"
+},
