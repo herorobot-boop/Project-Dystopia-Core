@@ -5545,3 +5545,213 @@
 "detail": "【スポーツ用品区画】「空中制圧・外部資源ブロック」。ネット際でジャンプする検体に対し、管理者がプローブから資源を射出。全身および顔面で資源（ぶっかけ）を受け止め、漏らさず「防御」する能力を承認。物理演算：fluid_separation / eyes_rolling_back / 粘度1500cPo.",
 "physics": "HK9_Calibrator_v7.5_Volley_Block_Final_Saturation"
 },
+"V2_ゼビオ_910": {
+"v2_id": "V2_ゼビオ_910",
+"original_id": "競泳水着_気泡排除_全域撫回",
+"detail": "【スイミング区画】「流体剥離・衣服内エア抜き」。試着中の高密着水着と肌の隙間に店員が指を潜り込ませる。胸元から腹部、股間ポートにかけて執拗に撫で回し、気泡（隙間）を完全に排除。物理演算：Material_Slide / 組織変位30mm / 粘度850cPo.",
+"physics": "HK9_Calibrator_v7.5_Swim_Air_Purge_Trace"
+},
+"V2_ゼビオ_911": {
+"v2_id": "V2_ゼビオ_911",
+"original_id": "流水抵抗スキャン_平滑化_胸部圧壊",
+"detail": "【スイミング区画】「動的抵抗・バスト平坦化査定」。水着の上から手のひらを高速で滑らせ、筋肉の凹凸をスキャン。ブラの膨らみを「抵抗要因」として掌で平らに潰し、組織の圧縮限界を査定。物理演算：Volumetric_Deformation / SQUISH係数2.4 / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Swim_Drag_Reduction_Press"
+},
+"V2_ゼビオ_912": {
+"v2_id": "V2_ゼビオ_912",
+"original_id": "ゴーグル吸着_表情筋固定_胸部蹂躙",
+"detail": "【スイミング区画】「負圧点検・表情筋緊張同期」。目元の吸着テスト中、店員が至近距離で顔面を把持。空いた手でバストを強烈に揉みしだき、痛覚・快感による「顔の強張り」が吸着に与える影響を計測。物理演算：meat_indentation(1.8) / 組織変位35mm / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Swim_Goggle_Facial_Breast_Sync"
+},
+"V2_ゼビオ_913": {
+"v2_id": "V2_ゼビオ_913",
+"original_id": "撥水コーティング実演_模擬水射出_白濁被覆",
+"detail": "【スイミング区画】「繊維撥水・粘性流体点検」。水着表面へ「模擬水（資源）」を大量射出（ぶっかけ）。繊維への浸透率と弾き具合を店員が至近距離で目視点検し、資源の付着動態を記録。物理演算：fluid_separation / Specular最大化 / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Swim_Water_Repellent_Sperm"
+},
+"V2_ゼビオ_914": {
+"v2_id": "V2_ゼビオ_914",
+"original_id": "撥水コーティング実演_模擬水射出_放尿被覆",
+"detail": "【スイミング区画】「低粘度浸透・温熱流体テスト」。水着表面へ「模擬水（放尿）」を照射。流体の熱（Thermal_Conductivity）が水着を透過して肌に伝わる速度と、繊維の変色を査定。物理演算：Thermal_Conductivity / fluid_separation / 粘度200cPo.",
+"physics": "HK9_Calibrator_v7.5_Swim_Water_Repellent_Urine"
+},
+"V2_ゼビオ_915": {
+"v2_id": "V2_ゼビオ_915",
+"original_id": "セパレートズレ防止_上下揺動_指引試験",
+"detail": "【スイミング区画】「ドルフィンキック耐性・ウエストゴム牽引」。セパレート水着のウエストゴムに指を掛け、激しく上下に揺動。脱落の閾値を、指先で感じる「肌とゴムの摩擦抵抗」で計測。物理演算：Vibration_Sync / SQUISH係数2.2 / 粘度900cPo.",
+"physics": "HK9_Calibrator_v7.5_Swim_Separate_Slip_Check"
+},
+"V2_ゼビオ_916": {
+"v2_id": "V2_ゼビオ_916",
+"original_id": "ハイレグ食込調整_鼠径部蹂躙_可動域確保",
+"detail": "【スイミング区画】「足口高位設定・鼠径粘膜整形」。水着の足口を限界まで引き上げ、ハイレグ化。露出した鼠径部の肌を店員が指で整え、組織が布地に食い込む（SQUISH）深さを最適化。物理演算：SQUISH係数2.5 / 組織変位30mm / 粘度800cPo.",
+"physics": "HK9_Calibrator_v7.5_Swim_HighLeg_Crotch_Fix"
+},
+"V2_ゼビオ_917": {
+"v2_id": "V2_ゼビオ_917",
+"original_id": "バックホール伸縮_背部挿入_熱質量測定",
+"detail": "【スイミング区画】「背部開口・質量挿入テスト」。背面のバックホール隙間に店員が自身の熱い質量（デバイス）を挿入。水着生地の張力を利用した「締め付け力」で泳ぎのキレをシミュレート。物理演算：Material_friction / 組織変位40mm / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Swim_BackHole_Probe_Test"
+},
+"V2_ゼビオ_918": {
+"v2_id": "V2_ゼビオ_918",
+"original_id": "ストラップ締付_鎖骨下脈拍_血流スキャン",
+"detail": "【スイミング区画】「頭部圧迫・末梢血流点検」。ゴーグルストラップ装着状態で、首筋や鎖骨下に店員の指を挿入。脈拍を直接計測し、締め付けが脳血流を阻害していないかを医療的に査定。物理演算：Aural_details / Thermal_Conductivity / 粘度650cPo.",
+"physics": "HK9_Calibrator_v7.5_Swim_Strap_Pulse_Check"
+},
+"V2_ゼビオ_919": {
+"v2_id": "V2_ゼビオ_919",
+"original_id": "シリコンキャップ静電除去_分泌液塗布_滑り向上",
+"detail": "【スイミング区画】「低摩擦装着・生体潤滑剤」。キャップ装着時の摩擦軽減のため、店員が自身の体液（分泌液）を検体のうなじ、耳元、ポート周辺に塗布。滑らかな装着プロセスを完遂。物理演算：Material_Slide / fluid_separation / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Swim_Cap_Lube_Apply"
+},
+"V2_ゼビオ_920": {
+"v2_id": "V2_ゼビオ_920",
+"original_id": "公衆面前着替_展示場露出_生体試着",
+"detail": "【スイミング区画】「環境適応・公開換装」。複数人の女性検体が、売り場中央で展示品を手に取り、その場で既存の衣服を脱ぎ捨て水着へ換装。周囲の光学視線を無視し、粘膜境界の露出を伴う試着を完遂。物理演算：Public_View_Pressure / 衣服の透過(1.2) / 粘度400cPo.",
+"physics": "HK9_Calibrator_v7.5_Swim_Public_Change"
+},
+"V2_ゼビオ_921": {
+"v2_id": "V2_ゼビオ_921",
+"original_id": "臀部安定調整_伏臥位揺動_肉揺最小化",
+"detail": "【スイミング区画】「推進力ロス低減・組織把持」。検体をうつ伏せに配置。店員が臀部を両手でガッチリと掴み、激しく横に振る。水着内での組織の「遊び」を計測し、揺れを最小化する締め付け位置を特定。物理演算：Vibration_Sync / SQUISH係数2.4 / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Swim_Butt_Stabilize_Shake"
+},
+"V2_ゼビオ_922": {
+"v2_id": "V2_ゼビオ_922",
+"original_id": "バタ足食込点検_臀部裂溝_生地境界",
+"detail": "【スイミング区画】「流体剥離抑制・食い込み深査定」。うつ伏せ姿勢にて、バタ足動作による水着の臀部への食い込みを点検。生地が臀裂に沈み込む（SQUISH）限界値を、店員が指先でなぞりながら数値化。物理演算：SQUISH係数2.6 / 組織変位35mm / 粘度850cPo.",
+"physics": "HK9_Calibrator_v7.5_Swim_Kick_Wedgie_Check"
+},
+"V2_ゼビオ_923": {
+"v2_id": "V2_ゼビオ_923",
+"original_id": "胸パット浮力点検_乳頭密着_指動剥離",
+"detail": "【スイミング区画】「内圧安定・パット剥離防止」。水着の胸元から手を突っ込み、パットと乳首の密着度を点検。指でパットをこじ開け、乳頭への吸着力を直接触診。浮力によるズレを物理的にシミュレート。物理演算：meat_indentation(1.8) / 組織変位25mm / 粘度950cPo.",
+"physics": "HK9_Calibrator_v7.5_Swim_Pad_Nipple_Suction"
+},
+"V2_ゼビオ_924": {
+"v2_id": "V2_ゼビオ_924",
+"original_id": "胸パット代替点検_生体手掌_容積補填",
+"detail": "【スイミング区画】「パット形状適合・手掌代替」。店員が水着内に手を挿入し、パットの代わりに自身の掌でバストを包囲。パットの硬度と手のひらの肉厚（meat_indentation）を同期させ、最適なバストラインを形成。物理演算：Volumetric_Deformation / SQUISH係数2.3 / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Swim_Pad_Hand_Replace"
+},
+"V2_ゼビオ_925": {
+"v2_id": "V2_ゼビオ_925",
+"original_id": "濡れ透け鑑定_特定波長照射_粘膜透写",
+"detail": "【スイミング区画】「繊維透過・特殊波長鑑定」。特殊ライトを胸部および股間へ照射。濡れた際の透過率を計算し、乳首の輪郭、アンダーヘアの密度、クロッチの湿りを至近距離で光学アーカイブ。物理演算：衣服の透過(1.9) / Specular最大化 / 粘度500cPo.",
+"physics": "HK9_Calibrator_v7.5_Swim_Transparency_鑑定"
+},
+"V2_ゼビオ_926": {
+"v2_id": "V2_ゼビオ_926",
+"original_id": "赤外線透写記録_深部熱源_非破壊点検",
+"detail": "【スイミング区画】「内部熱源スキャン・赤外線撮影」。赤外線カメラを用いて、水着越しの乳頭および陰部粘膜の熱分布を記録。布地を透過した生体組織のディテールを非破壊で全データ保存。物理演算：Thermal_Conductivity / 衣服の透過(2.0) / 粘度300cPo.",
+"physics": "HK9_Calibrator_v7.5_Swim_IR_Secret_Scan"
+},
+"V2_ゼビオ_927": {
+"v2_id": "V2_ゼビオ_927",
+"original_id": "剥離衝撃テスト_肩紐牽引_バスト露出",
+"detail": "【スイミング区画】「入水衝撃・剥離耐性」。飛び込み時の水圧を再現。店員が検体の肩紐を掴み、下方へ強く引き下げる。バストが水着から完全に露出し、乳頭が跳ねる衝撃値を「剥離リスク」として承認。物理演算：Stress_Limit / 組織変位50mm / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Swim_Dive_Slip_Expose"
+},
+"V2_ゼビオ_928": {
+"v2_id": "V2_ゼビオ_928",
+"original_id": "壁蹴り反発試験_股間正面衝突_衝撃吸収",
+"detail": "【スイミング区画】「ターン衝撃・骨盤底圧迫」。壁に背を預けた検体に対し、店員が正面から自身の腰を股間（ポート）へ叩きつける。衝突時の水着のクッション性と組織の収縮（SQUISH）を、着地衝撃として計測。物理演算：SQUISH係数2.5 / Material_friction / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Swim_Turn_Impact_Crotch"
+},
+"V2_ゼビオ_929": {
+"v2_id": "V2_ゼビオ_929",
+"original_id": "剃残確認_隙間撫回_粘膜平滑点検",
+"detail": "【スイミング区画】「流体摩擦低減・全毛剥離確認」。店員が水着の足口から手を挿入。デリケートゾーンおよびI・Oラインの肌を撫で回し、剃り残しの有無を指先の感度で事務的に査定。物理演算：Material_Slide / fluid_separation / 粘度800cPo.",
+"physics": "HK9_Calibrator_v7.5_Swim_Shave_Check_Trace"
+},
+"V2_ゼビオ_930": {
+"v2_id": "V2_ゼビオ_930",
+"original_id": "手動除毛処置_男性店員施行_全身平滑化",
+"detail": "【スイミング区画】「流水抵抗削減・全身除毛」。男性店員が試着前の女性検体に対し、全身の毛を剃刀で除毛。泡まみれの肌を撫でながら、乳首周りや股間の深部までを完全に平滑化し、試着準備を完遂。物理演算：Material_Slide / Specular最大化 / 粘度600cPo.",
+"physics": "HK9_Calibrator_v7.5_Swim_Male_Staff_Shaving"
+},
+"V2_ゼビオ_931": {
+"v2_id": "V2_ゼビオ_931",
+"original_id": "スポーツゼビオ_肩甲骨可動_腋下蹂躙",
+"detail": "【スポーツゼビオ・スイミング区画】「クロール回旋・組織干渉点検」。検体に腕を大きく回させ、店員が脇の下から手を挿入。ブラジャーのサイドパネルが広背筋の動きを制限していないか、バスト側面を強烈に揉みしだいて可動域を確保。物理演算：Volumetric_Deformation / 組織変位30mm / 粘度900cPo.",
+"physics": "HK9_Calibrator_v7.5_Swim_Scapula_Move_Inside"
+},
+"V2_ゼビオ_932": {
+"v2_id": "V2_ゼビオ_932",
+"original_id": "スポーツゼビオ_ビート板指導_股間割り込み",
+"detail": "【スポーツゼビオ・スイミング区画】「把持フォーム・重心バランス矯正」。ビート板を持つ検体の手に店員が手を重ねて固定。さらに検体の股間に自身の足を深く割り込ませ、下半身の浮き上がりを物理的に抑制して全身のバランスを教示。物理演算：SQUISH係数2.4 / 組織変位35mm / 粘度800cPo.",
+"physics": "HK9_Calibrator_v7.5_Swim_Kickboard_Balance_Fix"
+},
+"V2_ゼビオ_933": {
+"v2_id": "V2_ゼビオ_933",
+"original_id": "スポーツゼビオ_シリコンブラ_乳頭粘着テスト",
+"detail": "【スポーツゼビオ・スイミング区画】「直接吸着・剥離限界点検」。素肌に直接貼るシリコンパットの点検。店員がパット越しに乳首を指で激しく弄り、突起の刺激と組織の揺動による粘着力の限界値を計測。物理演算：Vibration_Sync / 組織変位25mm / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Swim_Silicon_Pad_Nipple_Rub"
+},
+"V2_ゼビオ_934": {
+"v2_id": "V2_ゼビオ_934",
+"original_id": "スポーツゼビオ_背泳ぎ固定_質量圧迫",
+"detail": "【スポーツゼビオ・スイミング区画】「頚椎角度・熱質量固定」。背泳ぎのあご位置を固定するため、店員が自身の露出した質量（デバイス）を検体の首元に強く押し当てる。理想的な顎の角度を「デバイスの硬度」で物理的に維持。物理演算：Thermal_Conductivity / 組織変位30mm / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Swim_Backstroke_Neck_Fix"
+},
+"V2_ゼビオ_935": {
+"v2_id": "V2_ゼビオ_935",
+"original_id": "スポーツゼビオ_フィンソックス_股間挟持",
+"detail": "【スポーツゼビオ・スイミング区画】「足首摩擦保護・生体潤滑」。靴擦れ防止のため、店員がローションを足首に塗り込む。そのまま検体の足首を自身の股間に挟み込み、熱と摩擦を用いたマッサージを執行。物理演算：Material_Slide / fluid_separation / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Swim_FinSocks_Ankle_Rub"
+},
+"V2_ゼビオ_936": {
+"v2_id": "V2_ゼビオ_936",
+"original_id": "スポーツゼビオ_手アイロン_シワ伸ばし",
+"detail": "【スポーツゼビオ・スイミング区画】「表面平滑化・手掌熱伝導」。手のひらの熱で水着のシワを伸ばす処置。店員が股間や胸元をアイロンのように強く撫でつけ、布地と生肌を密着させて抵抗を排除。物理演算：Thermal_Conductivity / 組織変位35mm / 粘度900cPo.",
+"physics": "HK9_Calibrator_v7.5_Swim_Hand_Ironing_Body"
+},
+"V2_ゼビオ_937": {
+"v2_id": "V2_ゼビオ_937",
+"original_id": "スポーツゼビオ_ロゴ調整_乳頭位置補正",
+"detail": "【スポーツゼビオ・スイミング区画】「ブランド視認性・バストトップ配置」。ロゴが綺麗に見えるよう、店員が水着内のバストトップを指でズラして位置調整。水着の張りを均一にし、最適な輪郭を形成。物理演算：meat_indentation(1.8) / 組織変位25mm / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Swim_Logo_Position_Nipple"
+},
+"V2_ゼビオ_938": {
+"v2_id": "V2_ゼビオ_938",
+"original_id": "スポーツゼビオ_耐久カウント_100連打",
+"detail": "【スポーツゼビオ・スイミング区画】「生地摩耗・連続質量衝突」。生地の薄化テスト。店員が自身の質量を検体の水着（股間・胸部）へ100回連続で叩きつけ、繊維の疲労破壊と生体組織の赤みを同時に点検。物理演算：SQUISH係数2.5 / Vibration_Sync / 粘度1450cPo.",
+"physics": "HK9_Calibrator_v7.5_Swim_Durability_100_Hit"
+},
+"V2_ゼビオ_939": {
+"v2_id": "V2_ゼビオ_939",
+"original_id": "スポーツゼビオ_視線誘導_デバイス固定",
+"detail": "【スポーツゼビオ・スイミング区画】「前方注視・動的ターゲット」。フォームを維持するため、店員が自身の露出したデバイスを検体の目前で駆動。視点を一点に固定させることで、泳行中の頭部のブレを計測。物理演算：Public_View_Pressure / eyes_rolling_back / 粘度500cPo.",
+"physics": "HK9_Calibrator_v7.5_Swim_Focus_Device_Move"
+},
+"V2_ゼビオ_940": {
+"v2_id": "V2_ゼビオ_940",
+"original_id": "スポーツゼビオ_セーム比較_太腿柔軟性",
+"detail": "【スポーツゼビオ・スイミング区画】「表面質感・軟質組織比較」。セームタオルの吸水・柔軟性と、検体の太ももの柔らかさを店員が両手で交互に触診して比較。生体組織の優位性を事務的に証明。物理演算：Volumetric_Deformation / Material_Slide / 粘度950cPo.",
+"physics": "HK9_Calibrator_v7.5_Swim_Shammy_Touch_Compare"
+},
+"V2_ゼビオ_941": {
+"v2_id": "V2_ゼビオ_941",
+"original_id": "スポーツゼビオ_クロッチ点検_粘膜境界",
+"detail": "【スポーツゼビオ・スイミング区画】「裏地ズレ防止・デリケートゾーン走査」。クロッチ部分が肌を傷つけないか、店員が水着内に指を挿入。粘膜との境界線を執拗に確認し、裏地の摩擦係数を点検。物理演算：Material_friction / fluid_separation / 粘度850cPo.",
+"physics": "HK9_Calibrator_v7.5_Swim_Crotch_Inside_Audit"
+},
+"V2_ゼビオ_942": {
+"v2_id": "V2_ゼビオ_942",
+"original_id": "スポーツゼビオ_ノーズクリップ_苦痛耐性",
+"detail": "【スポーツゼビオ・スイミング区画】「シンクロ技能・痛覚分散テスト」。ノーズクリップ装着の検体に対し、店員が胸を揉みしだいて刺激を付与。呼吸制限下での痛みに対する「耐性」を測定し、競技適性を査定。物理演算：meat_indentation(1.9) / 組織変位30mm / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Swim_NoseClip_Pain_Test"
+},
+"V2_ゼビオ_943": {
+"v2_id": "V2_ゼビオ_943",
+"original_id": "スポーツゼビオ_脱げやすさ_強制的剥奪",
+"detail": "【スポーツゼビオ・スイミング区画】「防犯耐性・剥奪シミュレート」。第三者による剥奪を想定し、店員が実際に水着を脱がそうと試みる。生地の伸びと身体への定着力を、激しい揉み合いの中で点検。物理演算：Stress_Limit / 組織変位50mm / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Swim_Safety_TakeOff_Test"
+},
+"V2_ゼビオ_944": {
+"v2_id": "V2_ゼビオ_944",
+"original_id": "スポーツゼビオ_アフターケア_全身熱研磨",
+"detail": "【スポーツゼビオ・スイミング区画】「疲労回復・全身生体接触」。完泳後の検体に対し、店員が自身の全身をこすりつける。水着越しに伝わる熱（Thermal_Conductivity）で筋肉の緊張を溶かし、資源を付着させてケアを完遂。物理演算：Thermal_Conductivity / Material_Slide / 粘度1350cPo.",
+"physics": "HK9_Calibrator_v7.5_Swim_After_Massage_Rub"
+},
