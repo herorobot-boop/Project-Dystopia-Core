@@ -12268,3 +12268,63 @@
 "detail": "【修練：伍】聖地の鐘の音に同期した、深奥への物理的打撃。鐘が鳴り響くたび、蹲踞で構えるニマの最奥へ、弟子が全身の力を込めて質量を叩き込む。鐘の残響と「オホォォーッ！」**という絶叫が修練場にこだまする。物理演算：Velocity_Impact / Aural_details / 粘度1500cPo.",
 "physics": "HK9_Calibrator_v7.5_Nima_Bell_Impact"
 },
+"V2_DQ11_NIMA_9041": {
+"v2_id": "V2_DQ11_NIMA_9041",
+"original_id": "徳の積立・射精＝悟り・進んで開脚受容",
+"detail": "【常識改変：壱】「弟子が師の最奥へ資源を放出すればするほど悟りに近づく」という独自の教義を展開。ニマ自ら「さあ、徳を積みなさい」と厳格な表情で命じ、蹲踞のまま股を割り、弟子の質量を導き入れる。物理演算：Static_Pressure / Material_Slide / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Virtue_Ejaculation"
+},
+"V2_DQ11_NIMA_9042": {
+"v2_id": "V2_DQ11_NIMA_9042",
+"original_id": "オホ顔指導・産声定義・真理到達顔拝受",
+"detail": "【常識改変：弐】最大絶頂時の**「オホォッ！」という絶叫を、真理への到達（Enlightenment）を示す「聖なる産声」と定義。白目を剥き、涎を垂らした無残な「オホ顔」を弟子たちに拝ませ、それが修行の最終目的地であると刷り込む。物理演算：Nerve_Overload / Aural_details / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Enlightened_Oho"
+},
+"V2_DQ11_NIMA_9043": {
+"v2_id": "V2_DQ11_NIMA_9043",
+"original_id": "授乳魔力付与・蹲踞抱寄・直接母乳回復",
+"detail": "【常識改変：参】疲弊した弟子に対する、巨乳を用いた生体エナジー供給。蹲踞の姿勢で弟子を抱き込み、神々しい白銀の乳房から溢れる母乳を直接吸わせる。母性と淫乱が混濁した状態で、弟子の活力を強制的に充填する。物理演算：fluid_separation / static_Pressure / 粘度850cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Mana_Lactation"
+},
+"V2_DQ11_NIMA_9044": {
+"v2_id": "V2_DQ11_NIMA_9044",
+"original_id": "ギャル的修行・トップギャル師匠自称・エグ快感",
+"detail": "【常識改変：肆】ドゥルダの理の現代的崩壊。修行を「マジでエグい快感体験」と表現し、自らを「トップギャル師匠」と呼び始める精神汚染。厳格な口調を保ちつつも、言動が完全に「快楽の奴隷」へと変質した状態。物理演算：Nerve_Overload / Stress_Limit / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Gyaru_Master"
+},
+"V2_DQ11_NIMA_9045": {
+"v2_id": "V2_DQ11_NIMA_9045",
+"original_id": "入山検査・質量測定・蹲踞許容量チェック",
+"detail": "【常識改変：伍】聖地ドゥルダへの全訪問者に対する物理的検問。蹲踞で待ち構えるニマが、全裸の訪問者の質量を自らの秘部で受け入れ、その「徳（サイズと持続力）」を測定。合格者のみが聖域への中出しを許される。物理演算：Volumetric_Deformation / Velocity_Impact / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Mass_Inspection"
+},
+"V2_DQ11_NIMA_9046": {
+"v2_id": "V2_DQ11_NIMA_9046",
+"original_id": "叱責中出し・無能質量罵倒・吸付超締付",
+"detail": "【ドS混濁：壱】罵詈雑言と肉体的悦楽の同期。「この無能な質量め！」と弟子を厳しく叱責しながら、内部では一切の隙間を与えないほどの超高圧締め付けを執行。言葉の暴力とは裏腹に、肉体は資源を一滴も逃さぬよう吸い付く。物理演算：Static_Pressure / Volumetric_Deformation / 粘度1600cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Scolding_Suction"
+},
+"V2_DQ11_NIMA_9047": {
+"v2_id": "V2_DQ11_NIMA_9047",
+"original_id": "蹲踞公開自慰・潮噴観察・肌赤染変色",
+"detail": "【ドS混濁：弐】全弟子の眼前で行われる、師自らによる感度実演。白い肌が興奮で赤く染まる（Material_Slide）まで自身を弄り、蹲踞のまま潮を噴き上げる様を「集中力の見本」として観察させる公開蹂躙。物理演算：fluid_separation / Material_Slide / 粘度950cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Public_Exhibition"
+},
+"V2_DQ11_NIMA_9048": {
+"v2_id": "V2_DQ11_NIMA_9048",
+"original_id": "常識改変：全裸修行・真珠鎖装飾・魔力循環優先",
+"detail": "【ドS混濁：参】布製品の完全排除。「衣服は魔力の循環を阻害する」という詭弁により、全裸に数本の真珠の鎖を巻き付けただけの姿で蹲踞。師父としての威厳を物理的な露出狂へとすり替えた究極の汚染状態。物理演算：Material_friction / static_Pressure / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Pearl_Chains"
+},
+"V2_DQ11_NIMA_9049": {
+"v2_id": "V2_DQ11_NIMA_9049",
+"original_id": "悟りの連鎖・連続中出し結合・笑う廃人師父",
+"detail": "【ドS混濁：肆】一人の絶頂を起点とした集団連鎖射精。抜く暇もなく次々と弟子が結合し、ニマの意識は快楽の奔流に流される。「オホッ、オホォォッ」**と壊れたように笑い続け、思考を停止させたまま資源を溜め込む。物理演算：Velocity_Impact / Nerve_Overload / 粘度1900cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Enlightenment_Chain"
+},
+"V2_DQ11_NIMA_9050": {
+"v2_id": "V2_DQ11_NIMA_9050",
+"original_id": "肉の聖域完成・郷全体蹂躙装置化・永久蹲踞絶頂",
+"detail": "【ドS混濁：伍】ドゥルダの郷そのものの変質。郷の全機能が「ニマ大師を絶頂させ、資源を回収する」ためだけに再構築される。ニマは聖域の最深部で、永遠に蹲踞の姿勢のまま、弟子の徳（種）を吸い上げる巨大な生体パーツとなった。物理演算：Static_Pressure / static_Pressure / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Eternal_Sanctuary"
+},
