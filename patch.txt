@@ -8686,3 +8686,3585 @@
 "detail": "【移動中の車内】汗と精液による繊維の「硬化（Crust）」。時間の経過とともに布地の柔軟性が失われ、検体肌と「カピカピ」に固着した状態で揺られる不快と快楽の混濁。物理演算：fluid_separation / Material_friction / 粘度1600cPo.",
 "physics": "HK9_Calibrator_v7.5_Monk_Carriage_Crust"
 },
+"V2_QUEEN_2234": {
+"v2_id": "V2_QUEEN_2234",
+"original_id": "涙型開口・蹲踞奉仕_額縁露出接続",
+"detail": "【スラム街・路地裏】蹲踞姿勢により最大張力がかかった「涙型開口部」への介入。衣装の縁端が形成する「額縁」効果により、露出した組織を物理的に強調。外部からの汚濁質量を口頸部で受容しつつ、下腹部組織からの流体噴出（潮吹き）を同時アーカイブ。物理演算：Volumetric_Deformation / fluid_separation / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Queen_TearDrop_Squat"
+},
+"V2_QUEEN_2235": {
+"v2_id": "V2_QUEEN_2235",
+"original_id": "薄絹シースルー・パイズリ_ヌルヌル潤滑摩擦",
+"detail": "【灼熱の砂漠】シルク製薄絹をプローブと乳房の間に介在させた多層摩擦。汗と吐息で湿潤した布地が「第3の潤滑剤」として機能し、素材特有の微細な繊維刺激を伴う高粘性スライドを執行。物理演算：Material_Slide / Thermal_Conductivity / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Queen_Silk_Breast_Rub"
+},
+"V2_QUEEN_2236": {
+"v2_id": "V2_QUEEN_2236",
+"original_id": "中出し直撃・根元締結_高貴腹部膨張",
+"detail": "【儀式専用構造】涙型開口部の縁（エッジ）によるプローブ根元の強力な絞り上げ。放出された全資源を胎内へ封じ込め、外部障壁（衣装）の内側で腹壁が物理的に隆起するプロセスをアーカイブ。物理演算：Stress_Limit / Volumetric_Deformation / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Queen_Internal_Fill"
+},
+"V2_QUEEN_2237": {
+"v2_id": "V2_QUEEN_2237",
+"original_id": "駅弁当開脚・限界拡張_空中資源受領",
+"detail": "【スラム街・空中】抱え上げによる四肢伸展が、涙型開口部の開口率を理論最大値まで拡張。重力と牽引力が重なる「逃げ場のない空中」での連続ドッキング。物理演算：SQUISH係数3.4 / Stress_Limit / 粘度1350cPo.",
+"physics": "HK9_Calibrator_v7.5_Queen_Aerial_Open"
+},
+"V2_QUEEN_2238": {
+"v2_id": "V2_QUEEN_2238",
+"original_id": "腕掴み立ちバック・臀部分断_張力露出",
+"detail": "【混沌の路地裏】両腕後方牽引に伴う衣装布地の水平張力増加。引っ張られたシルクが臀部組織を左右に割り、涙型の穴を最奥粘膜まで強制露呈させた状態での背面蹂躙。物理演算：meat_indentation(2.1) / Material_friction / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Queen_ArmPull_Back"
+},
+"V2_QUEEN_2239": {
+"v2_id": "V2_QUEEN_2239",
+"original_id": "伸展位四肢開放・開閉連動_眼球裏返アヘ顔",
+"detail": "【灼熱の砂地】仰向け姿勢での全身緩和。検体の呼吸運動と涙型開口部の「淫らな開閉」を同期させ、断続的な冷却と熱源注入を繰り返す神経撹拌。物理演算：Thermal_Conductivity / Vibration_Sync / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Queen_Supine_Pulse"
+},
+"V2_QUEEN_2240": {
+"v2_id": "V2_QUEEN_2240",
+"original_id": "正常位脚抱え・自己拡張_精液逆流汚染",
+"detail": "【スラム街】自らの腕で脚を抱え込むことによる「自己開口」プロセスのアーカイブ。涙型の穴から逆流する放出資源が、衣装外面および腹部組織を物理的に汚濁させるプロセスを計測。物理演算：fluid_separation / Material_Slide / 粘度1450cPo.",
+"physics": "HK9_Calibrator_v7.5_Queen_Self_Open_Reflux"
+},
+"V2_QUEEN_2241": {
+"v2_id": "V2_QUEEN_2241",
+"original_id": "屈曲マングリ・器型受領_重力捲上蹂躙",
+"detail": "【女王の汚辱】重力による衣装の胸元への脱落と、真上を向いた涙型開口部への垂直投下。組織を「器」として定義し、重畳する放出資源を全量保持させる定着プロトコル。物理演算：Volumetric_Deformation / fluid_separation / 粘度1600cPo.",
+"physics": "HK9_Calibrator_v7.5_Queen_Folding_Bowl"
+},
+"V2_QUEEN_2242": {
+"v2_id": "V2_QUEEN_2242",
+"original_id": "後背位背中逸らし・張力最大化_人形跳躍",
+"detail": "【スラム街・混沌】背面逸らし（Arch）による衣装の極限伸張。開口部周辺の繊維が「カチカチ」に固まった状態での高衝撃駆動。検体の体動を「壊れた人形」として物理演算。物理演算：Vibration_Sync / Stress_Limit / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Queen_Arch_Back_Shock"
+},
+"V2_QUEEN_2243": {
+"v2_id": "V2_QUEEN_2243",
+"original_id": "潰し駒掛け・真空密閉圧送_一滴不漏定着",
+"detail": "【最終儀式】衣装布地ごとプローブを完全挟入する「潰し」構造。涙型開口部がプローブ根元で物理的な真空（Vacuum）を形成し、放出資源を内部組織へ高圧注入する最終シミュレート。物理演算：Stress_Limit / fluid_separation / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Queen_Vacuum_Docking"
+},
+"V2_DQ_ARCHIVE_2244": {
+"v2_id": "V2_DQ_ARCHIVE_2244",
+"original_id": "女勇者・王家血脈受胎_金属腰当衝撃音",
+"detail": "【謁見の間】重厚マントおよび王家紋章入りの鎧を換装したままの連続資源定着。下卑た男たちの質量と「金属製腰当て」が衝突する際の硬質衝撃音（Impact_Aural）を計測。鎧の隙間から溢出する資源を「聖なる防具の汚濁」としてアーカイブ。物理演算：Material_friction / Aural_details / 粘度1450cPo.",
+"physics": "HK9_Calibrator_v7.5_DQ_Hero_Armor_Press"
+},
+"V2_DQ_ARCHIVE_2245": {
+"v2_id": "V2_DQ_ARCHIVE_2245",
+"original_id": "大神官更衣室監禁_未完成装束隙間侵入",
+"detail": "【ダーマ神殿】新職業換装プロセスの「未完成状態」への介入。重畳する布地の隙間から老人の指と質量を潜伏させ、着替えの動態をデバイスとした「非自発的サンドイッチ」。物理演算：Volumetric_Deformation / Material_Slide / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_DQ_Dharma_Change_Lock"
+},
+"V2_DQ_ARCHIVE_2246": {
+"v2_id": "V2_DQ_ARCHIVE_2246",
+"original_id": "下着越しぶっかけ清め_吸湿布地重合",
+"detail": "【神殿・儀式の間】下着およびブラジャーの繊維表面への直接資源投下。布地が吸湿・飽和し、重量を増した状態で粘膜へ密着する「清めの重み」をシミュレート。そのまま胎内へ資源を直結。物理演算：fluid_separation / Material_friction / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_DQ_Underwear_Semen_Soak"
+},
+"V2_DQ_ARCHIVE_2247": {
+"v2_id": "V2_DQ_ARCHIVE_2247",
+"original_id": "ルイーダ酒場選考_衣装隙間中出刻印",
+"detail": "【ルイーダの酒場】バニー、踊り子等の扇情的衣装に特化した「合格の刻印」プロセス。各衣装の構造的欠陥（隙間）を資源供給ポートとして定義し、全合格者の胎内へ順次定着を執行。物理演算：Stress_Limit / fluid_separation / 粘度1350cPo.",
+"physics": "HK9_Calibrator_v7.5_DQ_Luida_Selection_Fill"
+},
+"V2_DQ_ARCHIVE_2248": {
+"v2_id": "V2_DQ_ARCHIVE_2248",
+"original_id": "時間停止村娘・道案内_綿布完全静止サンド",
+"detail": "【停止した村】移動ポーズで固定された素朴な綿布装束への接続。一切の逃げ（運動）を許さない「生きた彫像」としての肉体が、プローブの全圧力を垂直に受容する完璧な静止圧搾。物理演算：Stress_Limit / meat_indentation(2.6) / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_DQ_TimeStop_Village_Sand"
+},
+"V2_DQ_ARCHIVE_2249": {
+"v2_id": "V2_DQ_ARCHIVE_2249",
+"original_id": "美魔女奥様・尻こきエプロン_臀部巨大加重",
+"detail": "【停止した村・台所】エプロンの紐で強調された巨大な臀部肉への背面ドッキング。エプロンの布地と尻肉の間に質量をトラップし、不変のポーズを維持する肉体の「弾力」を資源定着の反発力に転用。物理演算：SQUISH係数3.6 / Vibration_Sync / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_DQ_TimeStop_Kitchen_Hip"
+},
+"V2_DQ_ARCHIVE_2250": {
+"v2_id": "V2_DQ_ARCHIVE_2250",
+"original_id": "精液風呂完成_白濁粘性流体還流",
+"detail": "【停止した村・浴室】静止した湯船への連続資源投下による流体置換。透明な水が白濁した「精液（Semen）」へと変貌し、固まった奥様の組織表面を不快かつ濃厚にラミネートする。物理演算：fluid_separation / Thermal_Conductivity / 粘度1800cPo.",
+"physics": "HK9_Calibrator_v7.5_DQ_TimeStop_Semen_Bath"
+},
+"V2_DQ_ARCHIVE_2251": {
+"v2_id": "V2_DQ_ARCHIVE_2251",
+"original_id": "濡れシーツ物干プレス_若妻極限密着",
+"detail": "【停止した村・屋外】濡れたシーツの自重と若妻の背中の間にプローブをプレス。湿潤した繊維と熱い肉体の間に挟まれた質量が、逃げ場のない「濡れ密着」を生成。物理演算：Material_Slide / Thermal_Conductivity / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_DQ_TimeStop_WetSheet_Press"
+},
+"V2_DQ_ARCHIVE_2252": {
+"v2_id": "V2_DQ_ARCHIVE_2252",
+"original_id": "教会の祈り・尻穴開孔蹂躙_静寂衝撃音",
+"detail": "【停止した村・礼拝堂】祈りのポーズで固定されたシスターの修道服への「破壊的開孔」。物理的な「穴」を介した資源供給が、教会の静寂の中でピストン音（Impact_Aural）として共鳴。物理演算：Aural_details / Stress_Limit / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_DQ_TimeStop_Church_Bore"
+},
+"V2_DQ_ARCHIVE_2253": {
+"v2_id": "V2_DQ_ARCHIVE_2253",
+"original_id": "広場ディスプレイ・共同便器化_乱調装束定着",
+"detail": "【停止した村・中央広場】村長の娘を装束を乱した状態で固定。全旅人の資源を蓄積する「生きた聖杯（共同便器）」として定義し、服の隙間から常に資源が溢れ出す状態をアーカイブ。物理演算：fluid_separation / Stress_Limit / 粘度1600cPo.",
+"physics": "HK9_Calibrator_v7.5_DQ_TimeStop_Public_Urinal"
+},
+"V2_DESTINY_2254": {
+"v2_id": "V2_DESTINY_2254",
+"original_id": "エルフ長老リリス・薄絹濡れ布_千年精液飽和",
+"detail": "【神聖なる広場】高貴な千年の薄絹ローブが、男たちの汗と資源（精液）により物理的な「濡れ布」へ変質。繊維隙間を完全に流体が埋め尽くし、検体肌へ吸着ラミネートされた状態での連続資源定着。物理演算：fluid_separation / Thermal_Conductivity / 粘度1600cPo.",
+"physics": "HK9_Calibrator_v7.5_Elf_Ancient_Silk_Soak"
+},
+"V2_DESTINY_2255": {
+"v2_id": "V2_DESTINY_2255",
+"original_id": "人魚姫ネレイダ・鱗ドレス_真空密閉沸騰",
+"detail": "【陸上・時間制限】鱗状高弾性魔法ドレスによる「真空パック」効果。ドレスの強烈な復元力が結合部を外気から遮断し、内部の摩擦熱を保存。変身直前の組織熱量上昇に伴う資源の「沸騰（Boiling）」感覚をアーカイブ。物理演算：Stress_Limit / Thermal_Conductivity / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Mermaid_Scale_Vacuum"
+},
+"V2_DESTINY_2256": {
+"v2_id": "V2_DESTINY_2256",
+"original_id": "傭兵鎧・股間開放_硬質レザーエッジ削過",
+"detail": "【捕虜収容所】漆黒の硬質レザー鎧の「局所開放部」をデバイスとした蹂躙。不伸張なレザーの縁（エッジ）がプローブと粘膜を同時に削り取り、金属パーツの冷感と組織の熱を極大化させる。物理演算：Material_friction / Thermal_Conductivity / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_DarkElf_Armor_Edge"
+},
+"V2_DESTINY_2257": {
+"v2_id": "V2_DESTINY_2257",
+"original_id": "カジノディーラー・テーブル下タイツ足扱",
+"detail": "【カジノ・衆人環視】タイトスカート下でのタイツ装着肢による高精度挟持。正装としての布地（ベスト/スカート）が作る「社会的障壁」の裏側で、繊維摩擦を伴う高粘性資源供給を執行。物理演算：Material_Slide / Aural_details / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Dealer_Hidden_Tights"
+},
+"V2_DESTINY_2258": {
+"v2_id": "V2_DESTINY_2258",
+"original_id": "龍族鱗装束・高熱圧搾_咆哮アヘ声共鳴",
+"detail": "【龍族の檻】鱗状非伸縮素材と検体高熱組織による「熱的・物理的デッドロック」。一切の拡張を許さない装束内で、放出された資源が瞬時に気化・膨張するプロセスのシミュレート。物理演算：Stress_Limit / Thermal_Conductivity / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Dragon_Scale_Heat_Lock"
+},
+"V2_DESTINY_2259": {
+"v2_id": "V2_DESTINY_2259",
+"original_id": "奏者・ペダル連動聖歌結合_消音布地重層",
+"detail": "【礼拝堂】パイプオルガン・ペダル操作とプローブ駆動の物理的同期。重厚な修道服のスカートが「吸音材」として機能し、肉の衝突音（Impact_Aural）を聖歌の音圧に埋没させる。物理演算：Aural_details / Vibration_Sync / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Organist_Pedal_Sync"
+},
+"V2_DESTINY_2260": {
+"v2_id": "V2_DESTINY_2260",
+"original_id": "旅商人・重荷路上種付_キャンバス地汚濁",
+"detail": "【街道】バックパックの重量加重（Gravity）とプローブの垂直圧搾。丈夫なキャンバス地の旅装に付着した泥、汗、資源が混ざり合い、繊維の柔軟性が失われる物理プロセスのアーカイブ。物理演算：Material_friction / fluid_separation / 粘度1700cPo.",
+"physics": "HK9_Calibrator_v7.5_Merchant_Heavy_Load"
+},
+"V2_DESTINY_2261": {
+"v2_id": "V2_DESTINY_2261",
+"original_id": "勇者母・エプロン捲上中出_生活臭上書",
+"detail": "【キッチン】家庭用エプロンを捲り上げただけの最短経路接続。石鹸・料理の香りが資源の芳香（Musk）へと塗り替えられる「嗅覚・触覚の侵食」プロセスのアーカイブ。物理演算：Thermal_Conductivity / fluid_separation / 粘度1350cPo.",
+"physics": "HK9_Calibrator_v7.5_Mother_Apron_Overwrite"
+},
+"V2_DESTINY_2262": {
+"v2_id": "V2_DESTINY_2262",
+"original_id": "勇者母・義父24h繋留_部屋着湿潤定着",
+"detail": "【勇者の生家】薄手部屋着を介した「常時結合」状態の維持。歩行運動に伴う資源の漏出と、布地によるその吸着・保持。太ももを伝う流体による持続的なラミネート効果。物理演算：fluid_separation / Material_Slide / 粘度1550cPo.",
+"physics": "HK9_Calibrator_v7.5_Mother_Everlasting_Fill"
+},
+"V2_DESTINY_2263": {
+"v2_id": "V2_DESTINY_2263",
+"original_id": "勇者母・生活圏汚染_家具装束精液コート",
+"detail": "【リビング・書斎】机やキッチンの剛性と、プローブ加重による「逃げ場のないサンドイッチ」。日常の家具表面と検体の装束が放出資源で白濁コーティングされ、摩擦係数が極限まで低下する動態。物理演算：Stress_Limit / fluid_separation / 粘度1600cPo.",
+"physics": "HK9_Calibrator_v7.5_Mother_Daily_Pollution"
+},
+"V2_POSTWAR_2264": {
+"v2_id": "V2_POSTWAR_2264",
+"original_id": "王女ルミナ・敗戦ドレス_高貴布地汚濁定着",
+"detail": "【崩壊の玉座】敗戦により「脱ぐ権利」を剥奪された王女装束。ボロボロになった絹ドレスの重厚なスカートを顔面まで捲り上げ、視界を遮断した状態での連続資源投下。王家の紋章（刺繍）が男たちの手垢と流体で「不浄な層」へと書き換えられるプロセスをアーカイブ。物理演算：Material_friction / fluid_separation / 粘度1450cPo.",
+"physics": "HK9_Calibrator_v7.5_Postwar_Royal_Dress"
+},
+"V2_POSTWAR_2265": {
+"v2_id": "V2_POSTWAR_2265",
+"original_id": "聖騎士クラリス・甲冑隙間蹂躙_鉄箱内部圧搾",
+"detail": "【祝宴の裏】全身を覆う銀の甲冑。股間パーツのみを除去し、硬質な金属境界から軟質な体内組織へプローブを強行侵入。逃げ場のない鉄の箱（Armor）がプローブの膨張を100%組織へ反射し、金属の冷感と粘膜の熱を衝突させる。物理演算：Stress_Limit / Thermal_Conductivity / 粘度1550cPo.",
+"physics": "HK9_Calibrator_v7.5_Postwar_Paladin_Cage"
+},
+"V2_POSTWAR_2266": {
+"v2_id": "V2_POSTWAR_2266",
+"original_id": "魔道士メイ・魔力充填接続_肌内側輝動",
+"detail": "【兵士のテント】魔力枯渇による意識混濁状態（アヘ顔）への資源供給。布面積の極小な装束隙間から資源を注入し、充填された資源が検体組織の代謝（魔法回路）を活性化、肌表面を物理的に発光・膨張させる動態を計測。物理演算：Volumetric_Deformation / Thermal_Conductivity / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Postwar_Mage_Fill"
+},
+"V2_POSTWAR_2267": {
+"v2_id": "V2_POSTWAR_2267",
+"original_id": "武闘家リン・チャイナ服シルク摩擦_スリット攻防",
+"detail": "【打ち上げ会場】高密度のシルク製チャイナ服。深いスリットによる鼠径部露出と、布地越しにクリトリスを焼灼する「高周波摩擦」を同期。蹴り技に必要な脚部筋力を、プローブの垂直加重によって「痙攣」へ変換。物理演算：Material_friction / Vibration_Sync / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Postwar_Monk_Silk_Rub"
+},
+"V2_POSTWAR_2268": {
+"v2_id": "V2_POSTWAR_2268",
+"original_id": "盗賊ジュディ・革スーツ圧迫_熱帯密閉蹂躙",
+"detail": "【野営地】非伸縮性の革製キャットスーツ。ジッパー開放部からの局所侵入。タイトな革の圧力がプローブと検体肉を「単一の熱源体」として統合し、外気の寒風を遮断したまま内部を高温多湿の資源溜まりへと変貌させる。物理演算：Stress_Limit / Thermal_Conductivity / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Postwar_Thief_Leather_Press"
+},
+"V2_POSTWAR_2269": {
+"v2_id": "V2_POSTWAR_2269",
+"original_id": "看板娘アンナ・M字看板奉仕_共有の鞘化",
+"detail": "【武器屋店頭】エプロンを捲り上げただけの「剥き出しの案内」状態。不特定多数のプローブによる連続的な「抜き差し」を物理的な「磨耗（Wear）」として計測。秘部組織を社会的共有資源（鞘）として定義・固定。物理演算：Material_Slide / fluid_separation / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Postwar_ShopGirl_Open"
+},
+"V2_POSTWAR_2270": {
+"v2_id": "V2_POSTWAR_2270",
+"original_id": "女主人マーサ・美魔女ガウン吸音_包容蹂躙",
+"detail": "【宿屋・深夜】重厚なガウンと夜着による「多層消音構造」。熟練した肉体のゆとり（Elasticity）がプローブの衝撃を吸収し、ガウンの襟元にアヘ顔を埋没させながらの資源全量受容をアーカイブ。物理演算：Aural_details / SQUISH係数3.8 / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Postwar_Mistress_Gown"
+},
+"V2_POSTWAR_2271": {
+"v2_id": "V2_POSTWAR_2271",
+"original_id": "バニーガール・網タイツ透過汚染_不浄模様",
+"detail": "【カジノ・テーブル】高張力の網タイツ。網目の隙間から突出した肉体への直接打撃と、網繊維に絡みつく資源の「不均一な凝固」をシミュレート。脚部全体に描かれる白濁した「不浄の地図」をアーカイブ。物理演算：Material_friction / fluid_separation / 粘度1250cPo.",
+"physics": "HK9_Calibrator_v7.5_Postwar_Bunny_Net_Soak"
+},
+"V2_POSTWAR_2272": {
+"v2_id": "V2_POSTWAR_2272",
+"original_id": "侍女長ヒルダ・規律崩壊侍女服_背景化蹂躙",
+"detail": "【王宮・廊下】一切の乱れがない「糊の効いた侍女服」。捲り上げられたスカートの自重がピストン運動の衝撃エネルギーを増幅。規律（衣装）が崩壊する際の心理的エネルギーを、物理的な「組織の震え」として演算。物理演算：Stress_Limit / Vibration_Sync / 粘度1350cPo.",
+"physics": "HK9_Calibrator_v7.5_Postwar_Maid_Order_Break"
+},
+"V2_POSTWAR_2273": {
+"v2_id": "V2_POSTWAR_2273",
+"original_id": "若奥様エレン・綿服シワ中出_他種膨張",
+"detail": "【村・木陰】質素な綿服の「シワ（Crease）」を物理的なデバイスとして定義。他者の資源を受容するたびに、薄い腹壁と布地が内側から「ぽっこりと」隆起するプロセスを、夫の視覚情報の代用としてアーカイブ。物理演算：Volumetric_Deformation / fluid_separation / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Postwar_Wife_Cotton_Stretch"
+},
+"V2_HERO_VIOLATION_2274": {
+"v2_id": "V2_HERO_VIOLATION_2274",
+"original_id": "タンス物色・真横着替え_予熱冷感プレス",
+"detail": "【村人の民家】プライバシー権の完全消失（勇者の特権）。脱ぎかけのシャツで視界を遮断された検体に対し、タンスから抽出した「未装着の冷たい下着」をデバイスとして胸部へ圧着。金属的な冷感と、着替え動作に伴う無防備な肉の震えをアーカイブ。物理演算：Thermal_Conductivity / Stress_Limit / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Hero_Closet_Raid"
+},
+"V2_HERO_VIOLATION_2275": {
+"v2_id": "V2_HERO_VIOLATION_2275",
+"original_id": "通常会話裏の指先蹂躙_下着ゴム弾性振動",
+"detail": "【村の広場・NPC対話】情報収集（ダイアログ）継続状態での、スカート内層への隠密侵入。高弾性下着ゴムを物理的トリガーとし、指先による「パチン」という弾性衝突を検体組織へ投影。会話の論理回路と、脊髄的な快楽信号の混濁を計測。物理演算：Vibration_Sync / Material_friction / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Hero_Talk_Under_Flick"
+},
+"V2_HERO_VIOLATION_2276": {
+"v2_id": "V2_HERO_VIOLATION_2276",
+"original_id": "綿ブラウス隙間侵入_非伸張カップ押し下げ",
+"detail": "【アイテム授受・薬草】非伸縮性の綿ブラウスが作る「強固な障壁」を逆手に取った圧搾。ボタンの隙間から侵入した指が、ブラジャーのカップを強引に反転させ、乳頭部を露出。布地の張力が指の加重を増幅させる「梃子（てこ）」の原理をシミュレート。物理演算：Stress_Limit / meat_indentation(2.0) / 粘度1250cPo.",
+"physics": "HK9_Calibrator_v7.5_Hero_Button_Gap_In"
+},
+"V2_HERO_VIOLATION_2277": {
+"v2_id": "V2_HERO_VIOLATION_2277",
+"original_id": "セクシー装備強制換装_食込布地苦痛快感",
+"detail": "【換装コマンド】タンス内から「あぶない水着/セクシー下着」を強制装備。設計寸法を無視した「極小布地」が検体鼠径部および臀部へ食い込む際の組織変位をアーカイブ。新防具の防護性能をアヘ声のデシベル値で再定義。物理演算：SQUISH係数4.2 / Stress_Limit / 粘度1350cPo.",
+"physics": "HK9_Calibrator_v7.5_Hero_Force_Equip"
+},
+"V2_HERO_VIOLATION_2278": {
+"v2_id": "V2_HERO_VIOLATION_2278",
+"original_id": "シャワー室質量プレス_温水肌質量トリプルサンド",
+"detail": "【宿屋・浴場】濡れて粘着性を増した髪と肌を介した背面密着。温水による皮膚温度上昇（Thermal）と、石鹸泡による摩擦係数の極小化。プローブの質量が「滑る肌」を逃がさず、壁面へ垂直に圧し潰す三層積層蹂躙。物理演算：fluid_separation / Thermal_Conductivity / 粘度1600cPo.",
+"physics": "HK9_Calibrator_v7.5_Hero_Shower_Sandwich"
+},
+"V2_HERO_VIOLATION_2279": {
+"v2_id": "V2_HERO_VIOLATION_2279",
+"original_id": "セーブポイント安らぎ蹂躙_聖なる鐘音同期",
+"detail": "【教会】セーブポイント（聖域）を背もたれとした背面接続。記録完了（Save_End）までの継続的な資源供給。教会の鐘（音響デバイス）による振動と、プローブのピストン駆動を完全にフェーズ同期。物理演算：Aural_details / Vibration_Sync / 粘度1450cPo.",
+"physics": "HK9_Calibrator_v7.5_Hero_Church_Save_Dock"
+},
+"V2_HERO_VIOLATION_2280": {
+"v2_id": "V2_HERO_VIOLATION_2280",
+"original_id": "毒沼除染セックス_泥精液混濁汚染",
+"detail": "【村の外れ】「毒の沼地」による泥汚れと、プローブから放出された「精液」を検体装束の内側で混練。清潔な日常着の繊維が、粘着質な流体によって「ドロドロ」に軟化・変質する化学的プロセスをシミュレート。物理演算：fluid_separation / Material_friction / 粘度1750cPo.",
+"physics": "HK9_Calibrator_v7.5_Hero_Poison_Marsh_Mix"
+},
+"V2_HERO_VIOLATION_2281": {
+"v2_id": "V2_HERO_VIOLATION_2281",
+"original_id": "壷割り衝撃活用_陶器破片音跳躍",
+"detail": "【家宅捜索】壷が割れる瞬間の衝撃波（インパクト）に合わせ、立ちバック姿勢の検体を突き上げる「リズム蹂躙」。破片の飛散音と検体の悲鳴が、衣装の隙間から飛び散る資源の飛沫と視覚的に同期。物理演算：Aural_details / Vibration_Sync / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Hero_Pot_Break_Impact"
+},
+"V2_DQ_GHOST_2282": {
+"v2_id": "V2_DQ_GHOST_2282",
+"original_id": "トルネコ風奥様・武器屋カウンター_非伸張ブラウス圧搾",
+"detail": "【武器屋・接客中】一切の伸縮を拒絶する「高密度綿ブラウス」を介した乳房圧搾。カウンターの木材とプローブの間に検体肉をトラップし、布地の剛性を利用して組織を扁平状に成形する「物理的サンド」。物理演算：Stress_Limit / meat_indentation(2.4) / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_ShopWife_Cotton_Press"
+},
+"V2_DQ_GHOST_2283": {
+"v2_id": "V2_DQ_GHOST_2283",
+"original_id": "マーニャ風・下乳質量サンド_ブラ縁削過",
+"detail": "【ステージ・乱舞】激しい舞踊による衣装の上下動と、プローブの水平加重の同期。上方に固定された「ブラジャーの硬質ワイヤー縁」が、露出した下乳の付け根をナイフ状に削り取る境界蹂躙。物理演算：Material_friction / Vibration_Sync / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Dancer_Underbust_Cut"
+},
+"V2_DQ_GHOST_2284": {
+"v2_id": "V2_DQ_GHOST_2284",
+"original_id": "ビアンカ風・治安防波堤_麻服精液飽和滴下",
+"detail": "【平和の町】素朴な麻（リネン）素材が持つ「高い吸湿性」を利用した持続的汚染。連続中出しにより飽和した資源が繊維を伝い、裾から「平和の証」として滴り落ちる物理シミュレート。物理演算：fluid_separation / Material_Slide / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Peace_Linen_Soak"
+},
+"V2_DQ_GHOST_2285": {
+"v2_id": "V2_DQ_GHOST_2285",
+"original_id": "下の世界・王妃ドレス突破_重厚シルク層貫通",
+"detail": "【王宮晩餐会】「認識されない」プローブによる王妃ドレスへの侵入。重畳するシルク層（パニエ・スカート）が内側から「不可視の質量」によって不自然に膨張し、内部組織へ資源が直結される背徳。物理演算：Volumetric_Deformation / Stress_Limit / 粘度1450cPo.",
+"physics": "HK9_Calibrator_v7.5_Invisible_Royal_Silk"
+},
+"V2_DQ_GHOST_2286": {
+"v2_id": "V2_DQ_GHOST_2286",
+"original_id": "下の世界・井戸端結合_虚空注視アヘ顔",
+"detail": "【村の通り】会話中の奥様たちの衣装内層へダイレクト接続。周囲には「衣擦れの音」のみが伝播し、検体は「存在しない加害者」に対して絶頂信号を送信し続ける精神的・物理的解体。物理演算：Aural_details / Vibration_Sync / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Invisible_Talk_In"
+},
+"V2_DQ_GHOST_2287": {
+"v2_id": "V2_DQ_GHOST_2287",
+"original_id": "下の世界・バニー網タイツ食込_不可視質量擦過",
+"detail": "【カジノ】ルーレット操作中に網タイツの上から「認識されない熱源」を走査。網目の「食い込み」を利用して組織表面を不均一に摩耗させ、公共の場で絶頂へと誘導。物理演算：Material_friction / Thermal_Conductivity / 粘度1050cPo.",
+"physics": "HK9_Calibrator_v7.5_Invisible_Bunny_Net"
+},
+"V2_DQ_GHOST_2288": {
+"v2_id": "V2_DQ_GHOST_2288",
+"original_id": "下の世界・司書スカート内暗闇_床面圧搾接続",
+"detail": "【図書室】長いスカートが形成する「閉鎖空間」をデバイス化。床の剛性とプローブの垂直加重の間に検体肉を捕捉。外部からは理由不明の本の落下音のみが響く「暗黒蹂躙」。物理演算：Stress_Limit / Aural_details / 粘度1350cPo.",
+"physics": "HK9_Calibrator_v7.5_Invisible_Library_Dark"
+},
+"V2_DQ_GHOST_2289": {
+"v2_id": "V2_DQ_GHOST_2289",
+"original_id": "下の世界・農家作業着ゴワつき_土精液混濁",
+"detail": "【畑】ゴワついた作業着を介した背面保持。土の匂い（繊維付着）と、不可視のプローブから放出される資源の混濁が、検体装束を物理的・化学的に変質させる。物理演算：Material_friction / fluid_separation / 粘度1600cPo.",
+"physics": "HK9_Calibrator_v7.5_Invisible_Farm_Work"
+},
+"V2_DQ_GHOST_2290": {
+"v2_id": "V2_DQ_GHOST_2290",
+"original_id": "下の世界・侍女長ボタン消失_見えない手乳首弄",
+"detail": "【王宮廊下】規律ある侍女服のボタンが「見えない力」によって次々と弾け飛ぶ（破断）。露出したブラジャー越しに「存在しない指」が乳頭を硬結させ、彼女の規律をアヘ声で粉砕。物理演算：Stress_Limit / Vibration_Sync / 粘度1250cPo.",
+"physics": "HK9_Calibrator_v7.5_Invisible_Maid_Snap"
+},
+"V2_DAHMA_FOZ_2291": {
+"v2_id": "V2_DAHMA_FOZ_2291",
+"original_id": "フォズ・蹲踞奉仕_涙型開口床汚濁",
+"detail": "【神殿最奥】蹲踞姿勢により理論最大値まで拡張された「涙型開口部」からの組織露呈。大神官装束の硬質な縁が「額縁」として機能し、不特定多数の質量受容を物理的にガイド。下腹部からの潮吹き流体が、神殿の磨き抜かれた床面（剛性）を白濁ラミネートする動態。物理演算：fluid_separation / Thermal_Conductivity / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Foz_TearDrop_Squat"
+},
+"V2_DAHMA_FOZ_2292": {
+"v2_id": "V2_DAHMA_FOZ_2292",
+"original_id": "聖なるパイズリ_装束宝飾異物摩擦",
+"detail": "【転職儀式】純白装束に固定された「硬質宝飾」と、プローブ表面の衝突演算。大神官の証である装飾品が、乳房と質量の間に割り込むことで生じる不規則な「異物摩擦」をアーカイブ。涎（流体）による繊維の軟化を同期。物理演算：Material_friction / Vibration_Sync / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Foz_Jewel_Breast_Rub"
+},
+"V2_DAHMA_FOZ_2293": {
+"v2_id": "V2_DAHMA_FOZ_2293",
+"original_id": "転職の刻印・中出し_根元密閉腹部膨張",
+"detail": "【神殿・最終工程】涙型開口部の縁によるプローブ根元の「強制的絞り込み」。逃げ場を失った放出資源が、フォズの細い腹壁を内側から歪に押し広げる（隆起）プロセスを、高貴な腹部への「刻印」として定義。物理演算：Stress_Limit / Volumetric_Deformation / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Foz_Internal_Fill"
+},
+"V2_DAHMA_FOZ_2294": {
+"v2_id": "V2_DAHMA_FOZ_2294",
+"original_id": "駅弁空中結合_重力拡張天井報告",
+"detail": "【神殿・空間蹂躙】側近による抱え上げが、衣装の自重と重力により開口率を120%まで加速。空中で固定されたまま、次々と入れ替わる質量による高周波衝撃をアーカイブ。絶頂時の「喉元の震え」を音響信号化。物理演算：SQUISH係数4.1 / Aural_details / 粘度1350cPo.",
+"physics": "HK9_Calibrator_v7.5_Foz_Aerial_Open"
+},
+"V2_DAHMA_FOZ_2295": {
+"v2_id": "V2_DAHMA_FOZ_2295",
+"original_id": "祭壇立ちバック・布地牽引臀部分断",
+"detail": "【背徳の祭壇】前方への腕掴み牽引により、神官服の布地が臀部を左右へ物理的に「割開」。涙型の穴を最奥粘膜まで露出させ、不浄なシミ（精液）が純白の刺繍を侵食していく化学・物理的変質を計測。物理演算：meat_indentation(2.3) / Material_Slide / 粘度1250cPo.",
+"physics": "HK9_Calibrator_v7.5_Foz_Altar_Back_Sand"
+},
+"V2_DAHMA_FOZ_2296": {
+"v2_id": "V2_DAHMA_FOZ_2296",
+"original_id": "全開放の儀・仰向け脈打開口",
+"detail": "【神殿床面】手足伸展位における呼吸運動と、開口部の「淫らな拍動」の同期。衣装が内側から資源で飽和し、重量による圧迫（重力加重）が検体組織を床面へラミネートするプロセスのアーカイブ。物理演算：Thermal_Conductivity / fluid_separation / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Foz_Floor_Saturation"
+},
+"V2_DAHMA_FOZ_2297": {
+"v2_id": "V2_DAHMA_FOZ_2297",
+"original_id": "自己開口受容_腰回ドロドロ汚濁",
+"detail": "【神殿・威厳崩壊】自らの四肢を用いた「開口部拡張」という屈辱動態。逆流した資源が、涙型の穴から溢れ出し、大神官の腰回りと装束を「粘着質な層（ドロドロ）」で再コーティングする物理シミュレート。物理演算：fluid_separation / Material_Slide / 粘度1550cPo.",
+"physics": "HK9_Calibrator_v7.5_Foz_Self_Pollution"
+},
+"V2_DAHMA_FOZ_2298": {
+"v2_id": "V2_DAHMA_FOZ_2298",
+"original_id": "神殿の器・屈曲マングリ_熱帯密閉沸騰",
+"detail": "【儀式最盛期】垂直方向への腰突き出し。胸元まで捲れ上がった装束の張力が、結合部を「高熱の檻」として定義。胎内で資源が混合・加熱され、物理的な「熱帯」が形成される動態をアーカイブ。物理演算：Stress_Limit / Thermal_Conductivity / 粘度1650cPo.",
+"physics": "HK9_Calibrator_v7.5_Foz_Curved_Heat_Bowl"
+},
+"V2_DAHMA_FOZ_2299": {
+"v2_id": "V2_DAHMA_FOZ_2299",
+"original_id": "背中逸らし絶頂・食込拡張跳躍",
+"detail": "【神殿・衝撃駆動】背面牽引による脊椎の反りが、涙型開口の「縁」を肉に食い込ませる「楔（くさび）」効果を発生。プローブの衝撃が最奥を叩くたび、装束の隙間から資源が「噴水状」に飛散する動態演算。物理演算：Vibration_Sync / fluid_separation / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Foz_Arch_Spirt"
+},
+"V2_DAHMA_FOZ_2300": {
+"v2_id": "V2_DAHMA_FOZ_2300",
+"original_id": "立ち松葉・垂直落下生贄_自重圧搾定着",
+"detail": "【儀式完了】神官服の自重、および検体の体重をプローブへ垂直投下。一切の隙間がない「重力密閉」により、放出資源を一滴も漏らさず最奥へ圧送。涎とアヘ声が神殿を飽和させる最終定着プロトコル。物理演算：Stress_Limit / fluid_separation / 粘度1700cPo.",
+"physics": "HK9_Calibrator_v7.5_Foz_Vertical_Sacrifice"
+},
+"V2_DQ8_JESSICA_2301": {
+"v2_id": "V2_DQ8_JESSICA_2301",
+"original_id": "ゼシカ・胸元紐限界張力_軋み音同期",
+"detail": "【DQ8・通常装束】巨大な乳房の質量により、赤いベストを繋ぐ紐（紐材）が物理的限界まで伸張。紐が肉に食い込む際の「軋み」と、プローブの駆動を同期。物理演算：Stress_Limit / Aural_details / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Lace_Tension"
+},
+"V2_DQ8_JESSICA_2302": {
+"v2_id": "V2_DQ8_JESSICA_2302",
+"original_id": "下乳露出プレス_ぷにりはみ出し吸着",
+"detail": "【DQ8・短丈ベスト】突き上げ衝撃に伴うベスト裾からの「下乳（Underbust）」の逸脱。露出した肉体が直接プローブや男の手掌へ吸い付く「粘着性接触」をアーカイブ。物理演算：SQUISH係数4.5 / Material_Slide / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Under_Flesh"
+},
+"V2_DQ8_JESSICA_2303": {
+"v2_id": "V2_DQ8_JESSICA_2303",
+"original_id": "乳間真空密閉_直接肌密着熱保存",
+"detail": "【DQ8・圧搾】左右の乳房（Volume）によるプローブの完全包囲。布地を介さない「直接粘膜接触」により、放出資源の熱源（Thermal）を外部へ逃がさず保存する真空動態。物理演算：Thermal_Conductivity / Stress_Limit / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Breast_Vacuum"
+},
+"V2_DQ8_JESSICA_2304": {
+"v2_id": "V2_DQ8_JESSICA_2304",
+"original_id": "ベストボタン弾け_膨張解放蹂躙",
+"detail": "【DQ8・解放】内側からの組織膨張に耐えきれず、ベストのボタンが物理的に破断・飛散するシミュレート。拘束（布）からの解放が、同時に無防備な蹂躙へと移行する瞬間を計測。物理演算：Stress_Limit / Vibration_Sync / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Button_Burst"
+},
+"V2_DQ8_JESSICA_2305": {
+"v2_id": "V2_DQ8_JESSICA_2305",
+"original_id": "上乳波打ち振動_アヘ顔誘発共鳴",
+"detail": "【DQ8・高周波駆動】ピストンの衝撃波がベストを透過し、上部乳房組織を激しく波打たせる（Ripple）。組織の揺動と、検体の「視線の定まらないアヘ顔」を完全同期。物理演算：Vibration_Sync / Volumetric_Deformation / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Top_Ripple"
+},
+"V2_DQ8_JESSICA_2306": {
+"v2_id": "V2_DQ8_JESSICA_2306",
+"original_id": "前かがみ重力包囲_垂れ乳しごき",
+"detail": "【DQ8・蹲踞姿勢】重力（Gravity）に従い下垂した乳房をデバイス化した「包囲奉仕」。質量の自重と乳房の弾力でプローブを垂直に磨き上げるプロセスのアーカイブ。物理演算：Material_Slide / Thermal_Conductivity / 粘度1250cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Gravity_Sand"
+},
+"V2_DQ8_JESSICA_2307": {
+"v2_id": "V2_DQ8_JESSICA_2307",
+"original_id": "汗布密着・乳首浮彫圧搾_不透明透過",
+"detail": "【DQ8・湿潤】激しい運動による汗（流体）が赤いベストを肌に吸着。不透明な布地が乳頭部の突起をリアルに浮き彫りにさせ、その上から直接摩擦を加える蹂躙。物理演算：Material_friction / fluid_separation / 粘度1350cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Sweat_Stick"
+},
+"V2_DQ8_JESSICA_2308": {
+"v2_id": "V2_DQ8_JESSICA_2308",
+"original_id": "谷間直接放出・資源滝注ぎ",
+"detail": "【DQ8・資源定着】ベストを左右に割開し、露出した巨大な谷間（Cleavage）へ資源を直接投影。流体が滝状に肌を伝い、ベストの内側を汚濁させるプロセスの計測。物理演算：fluid_separation / Thermal_Conductivity / 粘度1600cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Valley_Splash"
+},
+"V2_DQ8_JESSICA_2309": {
+"v2_id": "V2_DQ8_JESSICA_2309",
+"original_id": "ベスト縁・付け根削過絶頂",
+"detail": "【DQ8・境界摩擦】ベストの硬い縁（エッジ）が乳房の付け根を鋭く圧迫。布地の硬度と組織の柔軟性が衝突し、痛みを快感信号へ変換させる極限の境界蹂躙。物理演算：Material_friction / Stress_Limit / 粘度1150cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Vest_Edge_Cut"
+},
+"V2_DQ8_JESSICA_2310": {
+"v2_id": "V2_DQ8_JESSICA_2310",
+"original_id": "背負い投げ反動・全自重乳房圧砕",
+"detail": "【DQ8・戦闘技能転用】武術の投擲モーションによるプローブへの垂直加重。ゼシカの全自重が、乳房というクッションを介してプローブを物理的に押し潰す（Flatten）。物理演算：Stress_Limit / SQUISH係数4.8 / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Combat_Press"
+},
+"V2_DQ8_JESSICA_2311": {
+"v2_id": "V2_DQ8_JESSICA_2311",
+"original_id": "ハワード邸・跪きM字開脚_冷感床面投影",
+"detail": "【ハワード邸・大理石床】魔法使いのスカートをウエストまで強制捲上。冷たい大理石の剛性と、検体組織の熱を衝突させつつ、最大開脚（M-Shape）による視覚的・物理的露呈をアーカイブ。物理演算：Thermal_Conductivity / Stress_Limit / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Howard_M_Open"
+},
+"V2_DQ8_JESSICA_2312": {
+"v2_id": "V2_DQ8_JESSICA_2312",
+"original_id": "魔力封じ首輪・意識明瞭アヘ顔強制",
+"detail": "【拘束プロトコル】首輪型デバイスによる魔力（意識防壁）の減衰。肉体的快楽信号を遮断せず、脳内へダイレクトに投影することで、プライドを残したままの「屈辱のアヘ顔」を物理的に生成。物理演算：Vibration_Sync / Stress_Limit / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Collar_Lock"
+},
+"V2_DQ8_JESSICA_2313": {
+"v2_id": "V2_DQ8_JESSICA_2313",
+"original_id": "謝罪の口淫・老廃質量涎受容",
+"detail": "【屈辱奉仕】アルバート家の令嬢としての矜持を、老いたハワードのプローブ受容によって解体。口腔内での高粘性流体（涎）の分泌と、資源放出に伴う「汚濁飲み込み」を計測。物理演算：fluid_separation / Material_Slide / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Oral_Apology"
+},
+"V2_DQ8_JESSICA_2314": {
+"v2_id": "V2_DQ8_JESSICA_2314",
+"original_id": "テーブル上中出し・書類摩擦蹂躙",
+"detail": "【書斎】大量の古文書・書類の上での仰向け結合。紙の鋭利なエッジによる背中への摩擦と、資源放出時の衝撃による「謝罪言語の破断（アヘ声）」を完全同期。物理演算：Material_friction / Aural_details / 粘度1450cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Document_Press"
+},
+"V2_DQ8_JESSICA_2315": {
+"v2_id": "V2_DQ8_JESSICA_2315",
+"original_id": "カーテン越し公開・音響漏出自己封鎖",
+"detail": "【窓際】透過性の低いベルベットカーテンを背もたれとした背面接続。外部への音漏れを恐れる検体自身の手掌による口腔封鎖と、背後からの垂直ピストン衝撃。物理演算：Aural_details / Stress_Limit / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Window_Expose"
+},
+"V2_DQ8_JESSICA_2316": {
+"v2_id": "V2_DQ8_JESSICA_2316",
+"original_id": "高級絨毯潮吹き・組織崩壊流体定着",
+"detail": "【ハワード邸】執拗なプローブ加重による神経系オーバーロード。自身の高潔さ（精神防壁）の崩壊に伴う大量の流体（潮）噴出を、吸湿性の高い高級絨毯へ物理定着。物理演算：fluid_separation / Thermal_Conductivity / 粘度1150cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Carpet_Soak"
+},
+"V2_DQ8_JESSICA_2317": {
+"v2_id": "V2_DQ8_JESSICA_2317",
+"original_id": "召使い共有・衣装内多人数資源蓄積",
+"detail": "【屋敷廊下】ハワードの命令による「共有物」への再定義。魔法使いの服をバケット（容器）として利用し、複数のプローブから放出される資源を衣装内層へ全量プールする。物理演算：fluid_separation / Material_Slide / 粘度1600cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Manservant_Fill"
+},
+"V2_DQ8_JESSICA_2318": {
+"v2_id": "V2_DQ8_JESSICA_2318",
+"original_id": "ドレス引き裂き・素材剥離露出拡張",
+"detail": "【謝罪工程】謝罪の進捗に合わせ、衣装の繊維構造を物理的に切断（Tear）。露出面積の拡大が検体の羞恥信号を増幅させ、組織の反応をより過敏に変化させるプロセスの計測。物理演算：Stress_Limit / Material_friction / 粘度1050cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Clothes_Ripping"
+},
+"V2_DQ8_JESSICA_2319": {
+"v2_id": "V2_DQ8_JESSICA_2319",
+"original_id": "インクまみれ乳房・不浄模様描画",
+"detail": "【書斎】転倒したインク瓶の黒流体と、プローブから放出される白濁資源の混練。ゼシカの白い乳房（組織表面）に、インクの粘性が描く「所有の模様」をアーカイブ。物理演算：fluid_separation / Material_Slide / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Ink_Semen_Art"
+},
+"V2_DQ8_JESSICA_2320": {
+"v2_id": "V2_DQ8_JESSICA_2320",
+"original_id": "屈服の刻印・資源定着後退出動態",
+"detail": "【ハワード邸・玄関】腹部最奥への資源定着（中出し）後、衣装を整えて退出するまでの物理計測。衣装の隙間から資源が漏出する「不快な歩行摩擦」を伴う、屈服の最終確認。物理演算：fluid_separation / Material_Slide / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Howard_Exit"
+},
+"V2_DQ8_JESSICA_2321": {
+"v2_id": "V2_DQ8_JESSICA_2321",
+"original_id": "門扉立ちバック・鉄格子圧着_硬質境界蹂躙",
+"detail": "【パルミド城門前】逃亡阻止直後の背面接続。冷たく硬い鉄格子の剛性と、プローブの水平圧力を利用した「サンドイッチ演算」。格子に押し付けられた顔面と、衣装の隙間から露出した臀部のコントラストをアーカイブ。物理演算：Stress_Limit / Thermal_Conductivity / 粘度1150cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Gate_Press"
+},
+"V2_DQ8_JESSICA_2322": {
+"v2_id": "V2_DQ8_JESSICA_2322",
+"original_id": "合言葉中出し・二重孔同時受容_資源飽和",
+"detail": "【検問所】通過条件としての「二重孔（Double_Hole）」への同時資源供給。門番たちの異なる粘度の質量が、ゼシカの聖域内で混練される流体動態をシミュレート。物理演算：fluid_separation / Volumetric_Deformation / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Double_Entry"
+},
+"V2_DQ8_JESSICA_2323": {
+"v2_id": "V2_DQ8_JESSICA_2323",
+"original_id": "夜風露出・スカート剥離_熱源依存絶頂",
+"detail": "【街道】スカートを完全剥離（Remove）された状態での、夜間冷気曝露。外部の冷感と、プローブから放出される「資源の熱（Thermal）」の極端な温度差による、神経系の過敏反応をアーカイブ。物理演算：Thermal_Conductivity / Vibration_Sync / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Night_Chill_Heat"
+},
+"V2_DQ8_JESSICA_2324": {
+"v2_id": "V2_DQ8_JESSICA_2324",
+"original_id": "焚き火影・交代熱放出_衣装内層加熱",
+"detail": "【野営地】焚き火の放射熱と、男たちの連続的な「熱伝導接続」。魔法使いの装束が熱を蓄積し、内側の粘膜が放出資源で「蒸れる」物理プロセスをアーカイブ。物理演算：Thermal_Conductivity / fluid_separation / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Fire_Shadow_Warmth"
+},
+"V2_DQ8_JESSICA_2325": {
+"v2_id": "V2_DQ8_JESSICA_2325",
+"original_id": "鎧擦過・腹部削過_衣装繊維破断",
+"detail": "【検問所内】門番の硬質鉄鎧（Plate_Armor）とゼシカの柔軟な腹部、および布地の摩擦。金属のエッジが衣装をボロボロに損壊させ、直接肌を赤く染め上げる物理的衝撃を計測。物理演算：Material_friction / Stress_Limit / 粘度1250cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Armor_Abrasion"
+},
+"V2_DQ8_JESSICA_2326": {
+"v2_id": "V2_DQ8_JESSICA_2326",
+"original_id": "伝令偽装・背面結合報告_声帯震動共鳴",
+"detail": "【門塔上部】背面結合を維持したままの「異常なし」発声シミュレート。プローブのピストン衝撃が横隔膜を突き上げ、声帯の震動を強制的に「アヘ声」へと変調させる動態。物理演算：Aural_details / Vibration_Sync / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Vocal_Deception"
+},
+"V2_DQ8_JESSICA_2327": {
+"v2_id": "V2_DQ8_JESSICA_2327",
+"original_id": "交代合図・衣装隙間新規資源注入",
+"detail": "【交代時間】門番の入れ替わりに同期した、連続資源更新。前の門番の資源が残留した状態での「上書き（Overwrite）」注入による、衣装内側の流体圧上昇をシミュレート。物理演算：fluid_separation / Volumetric_Deformation / 粘度1600cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Shift_Change_Fill"
+},
+"V2_DQ8_JESSICA_2328": {
+"v2_id": "V2_DQ8_JESSICA_2328",
+"original_id": "逃亡資金中出し・胎内資源貯蔵",
+"detail": "【検問所】金銭的価値を「精液」という物理資源へ変換。胎内をストレージ（貯蔵庫）として定義し、満載された資源の重みでゼシカの歩行モーションが「股を開いた」不自然なものへ変化する動態。物理演算：fluid_separation / Material_Slide / 粘度1700cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Resource_Banking"
+},
+"V2_DQ8_JESSICA_2329": {
+"v2_id": "V2_DQ8_JESSICA_2329",
+"original_id": "槍柄拘束・変則蹂躙_硬質棒状異物挿入",
+"detail": "【門前】武器（槍の柄）による物理的拘束と、その隙間を縫うプローブの侵入。硬い木製の柄と熱い肉、そして質量の三点衝突が、衣装の股間部を無残に引き裂くプロセス。物理演算：Stress_Limit / Material_friction / 粘度1350cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Spear_Shaft_Bind"
+},
+"V2_DQ8_JESSICA_2330": {
+"v2_id": "V2_DQ8_JESSICA_2330",
+"original_id": "夜明け遺棄・重粘性スカート牽引_アヘ顔定着",
+"detail": "【門扉前・朝】一晩中注ぎ込まれた資源で数倍の重量となったスカートを引きずり、意識混濁のまま放置。朝露と精液が混ざり合い、彼女の「令嬢の尊厳」が地面に溶け落ちる最終光景。物理演算：fluid_separation / Material_Slide / 粘度1800cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Dawn_Abandonment"
+},
+"V2_DQ8_JESSICA_2331": {
+"v2_id": "V2_DQ8_JESSICA_2331",
+"original_id": "馬車揺動同期・トロデ質量・衝撃深部到達",
+"detail": "【移動中の馬車】走行による不規則なピッチング（揺れ）と、トロデのピストン運動の物理的干渉。馬車の衝撃が加重（Gravity）として上乗せされ、プローブが通常可動域を超えてゼシカの最奥を叩く「不随意の深部蹂躙」をアーカイブ。物理演算：Vibration_Sync / Stress_Limit / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Wagon_Sync"
+},
+"V2_DQ8_JESSICA_2332": {
+"v2_id": "V2_DQ8_JESSICA_2332",
+"original_id": "トロデ小手先・衣装隙間乳首弄・魔物愛撫",
+"detail": "【馬車内暗闇】魔物の形状へ変化したトロデの特異な指先による、衣装（赤いベスト）の隙間からの侵入。人間離れした皮膚摩擦（Material_friction）と、乳頭部への集中的な低周波刺激。物理演算：Material_friction / Vibration_Sync / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Trode_SmallHands"
+},
+"V2_DQ8_JESSICA_2333": {
+"v2_id": "V2_DQ8_JESSICA_2333",
+"original_id": "ミーティア眼前・馬車隅アヘ奉仕_姫君視認",
+"detail": "【馬車内】王女（ミーティア）の目前で執行される、最高密度の口腔および結合奉仕。高貴な視線をデバイスとした心理的圧迫が、ゼシカの粘膜分泌（愛液）を加速させる動態を計測。物理演算：fluid_separation / Thermal_Conductivity / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Princess_Witness"
+},
+"V2_DQ8_JESSICA_2334": {
+"v2_id": "V2_DQ8_JESSICA_2334",
+"original_id": "荷物袋クッション・薬草香・衣装乱調定着",
+"detail": "【馬車荷台】弾力のある薬草袋（Canvas）を土台とした蹂躙。薬草の乾燥した香りと、放出資源の濃厚な芳香が混ざり合い、乱れた衣装の繊維に吸着していくプロセスをシミュレート。物理演算：Material_friction / fluid_separation / 粘度1350cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_HerbBag_Dock"
+},
+"V2_DQ8_JESSICA_2335": {
+"v2_id": "V2_DQ8_JESSICA_2335",
+"original_id": "暗闇密着・窓外監視偽装・下層結合",
+"detail": "【走行中】上半身で外部を警戒するポーズを維持しつつ、スカート下層でトロデと直結。馬車の揺れで「繋がっている」ことを悟られないよう、内壁の筋肉だけで質量を締め上げる内部動態演算。物理演算：Stress_Limit / Volumetric_Deformation / 粘度1450cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Wagon_Stealth"
+},
+"V2_DQ8_JESSICA_2336": {
+"v2_id": "V2_DQ8_JESSICA_2336",
+"original_id": "カース・マッサージ・呪的愛撫・衣装内全域汚染",
+"detail": "【馬車内】トロデの呪いによる異常な指使いが、魔法使いの服の内側をマッサージ。布地の内壁すべてをゼシカの愛液でラミネートし、プローブ受容への感度を物理的に最大化。物理演算：Material_Slide / Thermal_Conductivity / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Curse_Massage"
+},
+"V2_DQ8_JESSICA_2337": {
+"v2_id": "V2_DQ8_JESSICA_2337",
+"original_id": "旅疲れ癒やし・活力資源嚥下・口腔内飽和",
+"detail": "【日没前の馬車】宿到着前の「エネルギー補給」として、トロデの放出資源を全量回収。高粘性の資源がゼシカの口腔・喉元を通過する際の嚥下音（Aural_details）を最大ゲインで記録。物理演算：fluid_separation / Material_Slide / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Energy_Drink"
+},
+"V2_DQ8_JESSICA_2338": {
+"v2_id": "V2_DQ8_JESSICA_2338",
+"original_id": "膝枕中出し・スカート内潜伏・垂直資源噴射",
+"detail": "【馬車内休憩】トロデを膝枕で休ませる慈愛のポーズの裏で、スカート内に潜り込んだ質量による中出し。重なり合うスカートの布地が「消音・防壁」となり、内部で資源が跳ねる衝撃のみを抽出。物理演算：Aural_details / Stress_Limit / 粘度1550cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Lap_Pillow_Fill"
+},
+"V2_DQ8_JESSICA_2339": {
+"v2_id": "V2_DQ8_JESSICA_2339",
+"original_id": "地図下蹂躙・指先質量同期・布越非認知",
+"detail": "【馬車中央】広げられた世界地図の遮蔽を利用した、指先とプローブの同時蹂躙。地図の紙の擦れる音に紛れ、ゼシカの腹部が質量の突き上げで波打つ様子をアーカイブ。物理演算：Vibration_Sync / Volumetric_Deformation / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Map_Cover_Sex"
+},
+"V2_DQ8_JESSICA_2340": {
+"v2_id": "V2_DQ8_JESSICA_2340",
+"original_id": "秘密の誓い・カーテン奥・中出し打撃音記録",
+"detail": "【夜間走行】主人公（８）の背後、馬車のカーテンの奥で繰り返される物理的衝突。肉と肉がぶつかる湿った打撃音（Impact_Aural）と、放出された資源が服の隙間から床へこぼれ落ちる音。物理演算：Aural_details / fluid_separation / 粘度1650cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Secret_Wagon_End"
+},
+"V2_DQ8_JESSICA_2341": {
+"v2_id": "V2_DQ8_JESSICA_2341",
+"original_id": "氷の鞭・冷感蔑視踏付_質量圧砕",
+"detail": "【ドS状態】呪いにより加虐性が増大したゼシカ。男たちを地面に伏せさせ、露出した質量をハイヒールの踵で正確に圧砕。蔑みの視線と共に、衣装の裾が男の顔面を汚濁する物理シミュレート。物理演算：Stress_Limit / Thermal_Conductivity / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Ice_Whip_Stomp"
+},
+"V2_DQ8_JESSICA_2342": {
+"v2_id": "V2_DQ8_JESSICA_2342",
+"original_id": "靴舐強制・広域潮吹・顔面洗浄",
+"detail": "【ドS状態】パルミド広場にて男たちを跪かせ、自身のブーツを舐めさせる。絶頂の瞬間、衣装の開口部から男たちの顔面へ向かって高圧の愛液（潮）を噴射。羞恥を快楽に変換する逆転動態。物理演算：fluid_separation / Velocity_Impact / 粘度900cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Boot_Lick_Flood"
+},
+"V2_DQ8_JESSICA_2343": {
+"v2_id": "V2_DQ8_JESSICA_2343",
+"original_id": "MP0の絶望・純粋肉体化・乳房加重蹂躙",
+"detail": "【非力状態】魔力（MP）が完全に消失し、防御結界が崩壊。ただの「乳の大きな雌肉」と化した彼女へ、男たちが一斉に群がる。巨大な乳房の重み（Gravity）が、彼女自身の気道を圧迫する密着蹂躙。物理演算：SQUISH係数5.0 / Stress_Limit / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_MP0_Despair"
+},
+"V2_DQ8_JESSICA_2344": {
+"v2_id": "V2_DQ8_JESSICA_2344",
+"original_id": "魔法使い杖拘束・非力腕掴・一方的貫通",
+"detail": "【非力状態】自身の愛杖を股間に挟まされ、レバーのような支点として利用される。非力な腕を背後に回され、男たちの質量が一方的に組織を押し広げる際の「肉の悲鳴」をアーカイブ。物理演算：Material_friction / Stress_Limit / 粘度1250cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Staff_Bind"
+},
+"V2_DQ8_JESSICA_2345": {
+"v2_id": "V2_DQ8_JESSICA_2345",
+"original_id": "呪い反動・100倍感度・指先アヘ顔晒",
+"detail": "【非力状態】呪縛解除の副作用（リバウンド）による、全神経の過敏化。わずかな指先の接触が、ゼシカの脳内へ致死量を超える快楽信号を送信。衣装の繊維が擦れるだけで絶頂に達する極限動態。物理演算：Vibration_Sync / Nerve_Overload / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Curse_Rebound"
+},
+"V2_DQ8_JESSICA_2346": {
+"v2_id": "V2_DQ8_JESSICA_2346",
+"original_id": "町男逆襲・復讐中出・資源重合定着",
+"detail": "【非力状態】かつて蔑まれた男たちによる報復的資源定着。魔法使いの服を泥と精液で汚しながら、順次胎内へと「資源の杭」を打ち込む。組織の弾性を無視した連続的な拡張演算。物理演算：Volumetric_Deformation / Stress_Limit / 粘度1600cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Villager_Revenge"
+},
+"V2_DQ8_JESSICA_2347": {
+"v2_id": "V2_DQ8_JESSICA_2347",
+"original_id": "衣装自重・加護消失・不自由蹂躙",
+"detail": "【非力状態】魔力による軽量化が解け、物理的な「布の重み」となった装束。重くなったスカートが足枷となり、逃走不能となった状態で質量を迎え入れる。布の摩擦係数が増大した状態での擦過。物理演算：Material_friction / Gravity_Impact / 粘度1350cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Heavy_Clothes"
+},
+"V2_DQ8_JESSICA_2348": {
+"v2_id": "V2_DQ8_JESSICA_2348",
+"original_id": "知性喪失・本能牝化・知能低下アヘ顔",
+"detail": "【非力状態】MP減少に比例して高次思考回路がシャットダウン。言語野が崩壊し、男の質量を求めるだけの「呼吸する肉塊」へと変貌する。放出資源を受容するたびに、空虚な瞳から涙と涎が溢れる。物理演算：fluid_separation / Aural_details / 粘度1450cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Intellect_Loss"
+},
+"V2_DQ8_JESSICA_2349": {
+"v2_id": "V2_DQ8_JESSICA_2349",
+"original_id": "町の貯水池・精液器化・全資源受容晒",
+"detail": "【非力状態】パルミドの広場に固定され、全住民の放出資源を貯蔵する「生きた器」として定義。衣装の隙間から資源がダムの決壊のように溢れ出し、彼女の足元に白濁した池を形成する物理シミュレート。物理演算：fluid_separation / Static_Pressure / 粘度1800cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Semen_Reservoir"
+},
+"V2_DQ8_JESSICA_2350": {
+"v2_id": "V2_DQ8_JESSICA_2350",
+"original_id": "最後の一滴・魔力精液置換・力無き微笑",
+"detail": "【非力状態】魔力の残滓が消え、全細胞が男たちの「種」によって置換された最終段階。全身が精液で満たされたことによる奇妙な充足感と、アヘ顔のまま力なく微笑むゼシカの末路をアーカイブ。物理演算：Volumetric_Deformation / Thermal_Conductivity / 粘度1700cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Final_Substitution"
+},
+"V2_DQ8_JESSICA_2351": {
+"v2_id": "V2_DQ8_JESSICA_2351",
+"original_id": "特大ブラジャー洗濯・湿潤重量・資源巻付放出",
+"detail": "【野営地・小川】ゼシカの「特大サイズ」ブラジャーの吸水重量計測。湿って強固な弾力を持ったカップ部をプローブに巻き付け、彼女の乳房組織の反発係数を擬似再現。繊維隙間に自身の資源を全量圧入し、不透明な白を「資源の白」で上書き。物理演算：Material_friction / fluid_separation / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Bra_Soak_Release"
+},
+"V2_DQ8_JESSICA_2352": {
+"v2_id": "V2_DQ8_JESSICA_2352",
+"original_id": "脱ぎたてブラ眼前汚染・体温残存・カップ内定着",
+"detail": "【野営地】装着直後の残存体温（Thermal）を保持したブラジャーをデバイスとして使用。ゼシカの眼前で、彼女の乳房を模したカップ内壁へ直接資源を放出。布地が精液で硬化し、彼女の所有物が「男の所有物」へ変質するプロセスのアーカイブ。物理演算：Thermal_Conductivity / Material_Slide / 粘度1250cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Bra_Direct_Sullied"
+},
+"V2_DQ8_JESSICA_2353": {
+"v2_id": "V2_DQ8_JESSICA_2353",
+"original_id": "夕暮水浴びショー・一斉射精・岩付誘惑",
+"detail": "【街道・水辺】全裸状態のゼシカを「投影スクリーン」とした集団放出。岩に手をつき、重力で下垂させた乳房を振動させることで観測者の射精限界を誘発。四方から飛散する資源が彼女の濡れた肌に吸着・ラミネートされる動態。物理演算：fluid_separation / Gravity_Impact / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_River_Bath_Show"
+},
+"V2_DQ8_JESSICA_2354": {
+"v2_id": "V2_DQ8_JESSICA_2354",
+"original_id": "真後ろ排泄確認・トロデ自慰・音響共鳴",
+"detail": "【道端】ゼシカの排泄（尿）による流体音（Aural_details）と、真後ろに陣取ったトロデの高速摩擦運動の同期。尿の排出圧と、トロデから放出される資源の飛散軌道を物理演算。物理演算：Aural_details / fluid_separation / 粘度1150cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Piss_Behind_Trode"
+},
+"V2_DQ8_JESSICA_2355": {
+"v2_id": "V2_DQ8_JESSICA_2355",
+"original_id": "正面排泄凝視・羞恥アヘ顔・同時資源噴射",
+"detail": "【道端】視覚的接触（Eye_Contact）を維持した状態での、排泄と資源放出の同時執行。羞恥信号による括約筋の痙攣と、尿道・膣圧の不規則な変動を計測。物理演算：Vibration_Sync / fluid_separation / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Piss_Front_Stare"
+},
+"V2_DQ8_JESSICA_2356": {
+"v2_id": "V2_DQ8_JESSICA_2356",
+"original_id": "結合排泄・内圧圧迫・解放感崩壊",
+"detail": "【道端】トロデの質量を結合した状態での排泄執行。プローブによる物理的閉塞（Plug）と、排泄による内部圧力の上昇が、ゼシカの理性を機能停止（アヘ顔）させる極限の流体干渉。物理演算：Static_Pressure / Stress_Limit / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Piss_Plug_Sync"
+},
+"V2_DQ8_JESSICA_2357": {
+"v2_id": "V2_DQ8_JESSICA_2357",
+"original_id": "道中自慰排泄・警戒解除・背徳休息",
+"detail": "【街道中央】衆人環視（または魔物圏内）での自己蹂躙および排泄。道のど真ん中という「公共空間」への排泄痕と、自己絶頂による分泌液の混合定着。物理演算：fluid_separation / Material_Slide / 粘度1050cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Road_Masturbate"
+},
+"V2_DQ8_JESSICA_2358": {
+"v2_id": "V2_DQ8_JESSICA_2358",
+"original_id": "聖なる隠滅・トロデ尿嚥下・痕跡抹消",
+"detail": "【隠密行動中】ゼシカの尿をトロデが直接口腔で受容。全ての排泄流体を「体内貯蔵」へと移行させ、環境への痕跡（匂い）を100%遮断する物理的・生物的クレンジング。物理演算：fluid_separation / Material_Slide / 粘度950cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Piss_Drink_Trode"
+},
+"V2_DQ8_JESSICA_2359": {
+"v2_id": "V2_DQ8_JESSICA_2359",
+"original_id": "聖なる隠滅・ゼシカ口腔受容・トロデ尿定着",
+"detail": "【隠密行動中】トロデの排泄をゼシカが口腔および食道で受け止める。大神官候補でもあった令嬢の喉元を、魔物の排泄物が通過する際の組織収縮と嚥下音をアーカイブ。物理演算：Aural_details / fluid_separation / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Piss_Accept_Trode"
+},
+"V2_DQ8_JESSICA_2360": {
+"v2_id": "V2_DQ8_JESSICA_2360",
+"original_id": "蹲踞受け止め・先端結合排泄・一滴不漏胎内貯留",
+"detail": "【隠密行動中】トロデの先端部のみを結合させ、彼の全排泄エネルギーをゼシカの胎内へダイレクトに注入。衣装を一切汚さず、内側から「魔物の老廃物」で彼女を満たす密閉演算。物理演算：Static_Pressure / Volumetric_Deformation / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Internal_Waste_Fill"
+},
+"V2_DQ8_JESSICA_2361": {
+"v2_id": "V2_DQ8_JESSICA_2361",
+"original_id": "サンドイッチ就寝・宿屋シングル・両側質量圧砕",
+"detail": "【宿屋・深夜】一つのベッド内、主人公（８）とヤンガスの間にゼシカを配置。両側からの質量による挟持（Sandwich）と、赤い衣装が二人の「手垢」と「資源」で一晩中研磨される物理的・化学的劣化をアーカイブ。物理演算：Stress_Limit / Material_friction / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Inn_Sandwich"
+},
+"V2_DQ8_JESSICA_2362": {
+"v2_id": "V2_DQ8_JESSICA_2362",
+"original_id": "戦闘中スキル・味方ぱふぱふ・テンション上昇",
+"detail": "【戦闘領域】味方プローブ（主人公/ヤンガス）への特大乳房圧着。赤いベストの張力を利用し、組織を扁平状に成形。加重による熱量（テンション）を味方個体へ転送。物理演算：SQUISH係数4.8 / Thermal_Conductivity / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Combat_Puff"
+},
+"V2_DQ8_JESSICA_2363": {
+"v2_id": "V2_DQ8_JESSICA_2363",
+"original_id": "対ドルマゲス・道化師服・乳間質量挟込",
+"detail": "【ボス戦】敵対プローブ（ドルマゲス）の道化師装束を牽引し、ブラジャー露出状態で乳間にインターフェース接続。冷酷な対象の資源を強制抽出する圧搾動態。物理演算：Material_friction / Stress_Limit / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Dhoulmagus_Press"
+},
+"V2_DQ8_JESSICA_2364": {
+"v2_id": "V2_DQ8_JESSICA_2364",
+"original_id": "対ラパン・バニー幻視・老廃質量鎮静",
+"detail": "【ラパンハウス】魔法使いのスカート捲り上げによる、過去装備（バニー）の残像投影。老いた検体プローブを深部連結にて鎮静し、資源を全量定着させる。物理演算：fluid_separation / Thermal_Conductivity / 粘度1450cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Lapin_Bunny_Recall"
+},
+"V2_DQ8_JESSICA_2365": {
+"v2_id": "V2_DQ8_JESSICA_2365",
+"original_id": "対チャゴス・傲慢粉砕・乳房顔面圧搾",
+"detail": "【王家の山】傲慢な検体（チャゴス）の視界を乳房組織で100%遮断。顔面への高加重プレスにより呼吸を制限し、強制的にアヘ顔（意識混濁）を生成させる。物理演算：SQUISH係数5.2 / Static_Pressure / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Chagoss_Face_Smother"
+},
+"V2_DQ8_JESSICA_2366": {
+"v2_id": "V2_DQ8_JESSICA_2366",
+"original_id": "対マルチェロ・騎士服破断・秘部指先誘導",
+"detail": "【聖地ゴルド】厳格な騎士装束のボタンを物理破断。規律に固執する検体指先を、ゼシカの粘膜インターフェースへ強制接続し、精神防壁を解体する。物理演算：Stress_Limit / Vibration_Sync / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Marcello_Knight_Break"
+},
+"V2_DQ8_JESSICA_2367": {
+"v2_id": "V2_DQ8_JESSICA_2367",
+"original_id": "対ククール・聖堂騎士誇り・資源一括抽出",
+"detail": "【聖堂騎士団】近親的関係にある検体（ククール）への誘惑接続。騎士の誇り（精神資源）を、プローブからの資源放出と共に全て胎内へ吸い上げる。物理演算：fluid_separation / Material_Slide / 粘度1250cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Angelo_Knight_Drain"
+},
+"V2_DQ8_JESSICA_2368": {
+"v2_id": "V2_DQ8_JESSICA_2368",
+"original_id": "ハッスルダンス・蹲踞騎乗・MP魔力供給",
+"detail": "【戦闘領域】味方プローブへの蹲踞（Squat）姿勢での連結。激しい垂直振動による摩擦熱を魔力（MP）へ変換し、組織内へ資源を逆流充填させる。物理演算：Vibration_Sync / Volumetric_Deformation / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Hustle_Dance_Fill"
+},
+"V2_DQ8_JESSICA_2369": {
+"v2_id": "V2_DQ8_JESSICA_2369",
+"original_id": "ゼシカ・トラップ・敵対連結・死体資源汚濁",
+"detail": "【戦闘領域】敵対個体との連結維持によるデコイ行動。資源供給（中出し）を受けた状態での勝利。死体から流出した体液と、注入された資源が混ざり合う光景。物理演算：fluid_separation / Thermal_Conductivity / 粘度1600cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Trap_Semen_Dead"
+},
+"V2_DQ8_JESSICA_2370": {
+"v2_id": "V2_DQ8_JESSICA_2370",
+"original_id": "錬金釜隠し味・愛液精液・欲望装備錬成",
+"detail": "【錬金システム】錬金釜の反応槽へ、検体分泌液および供給資源を添加。生成される装備品の分子構造に「欲望の匂い」を物理定着させる。物理演算：fluid_separation / Material_friction / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Alchemy_Fluid_Mix"
+},
+"V2_DQ8_JESSICA_2371": {
+"v2_id": "V2_DQ8_JESSICA_2371",
+"original_id": "スカウトモンスター・魔物質量受容・鎮静接続",
+"detail": "【フィールド】非人間型プローブ（スカウトモンスター）の巨大質量を全身で受容。物理的な「種の差」を粘膜の弾性で補完し、魔物を従順化させる。物理演算：SQUISH係数5.5 / Stress_Limit / 粘度1750cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Monster_Scout_Deep"
+},
+"V2_DQ8_JESSICA_2372": {
+"v2_id": "V2_DQ8_JESSICA_2372",
+"original_id": "スキルパネル開放・洗礼中出・技能定着",
+"detail": "【成長システム】新規技能（スキル）獲得に伴う、師匠個体からの資源供給。胎内最奥への内部充填を「開放の合図」とし、組織へ技能を物理刻印する。物理演算：Volumetric_Deformation / Thermal_Conductivity / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Skill_Unlock_Seal"
+},
+"V2_DQ8_JESSICA_2373": {
+"v2_id": "V2_DQ8_JESSICA_2373",
+"original_id": "おしゃれな服試着・店主密着・サイズ確認中出",
+"detail": "【防具屋更衣室】新規装束の試着時における、店主プローブとの密着連結。布地の適合性（サイズ）を、プローブの膨張と中出しの衝撃で物理確認する。物理演算：Material_friction / Stress_Limit / 粘度1350cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Fitting_Room_Test"
+},
+"V2_DQ8_JESSICA_2374": {
+"v2_id": "V2_DQ8_JESSICA_2374",
+"original_id": "写真クエスト・スカート内・充填直後記録",
+"detail": "【景勝地】外部観測用デバイスの死角（スカート内層）での資源充填完了記録。内部から資源が溢れ出す「充填完了直後」の動態をコレクション化。物理演算：fluid_separation / Material_Slide / 粘度1650cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Photo_Quest_Inside"
+},
+"V2_DQ8_JESSICA_2375": {
+"v2_id": "V2_DQ8_JESSICA_2375",
+"original_id": "呪い解除条件・1リットル内部充填・重量歩行",
+"detail": "【フィールド】「1リットル保持」という呪文制約下での移動。検体胎内に資源を最大充填し、歩行時の液体振動（チャプッ）および衣装（白タイツ）への漏出汚濁を計測。物理演算：fluid_separation / Static_Pressure / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_1Liter_Weight"
+},
+"V2_DQ8_JESSICA_2376": {
+"v2_id": "V2_DQ8_JESSICA_2376",
+"original_id": "戦闘中排出禁止・括約筋密閉・アヘ顔耐性",
+"detail": "【戦闘領域】激しい物理運動に伴う資源漏出の完全阻止。衣装の密着圧と検体組織の収縮力のみで資源を内包し続ける。漏出寸前の臨界点における意識混濁（アヘ顔）をアーカイブ。物理演算：Stress_Limit / Static_Pressure / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Retention_Battle"
+},
+"V2_DQ8_JESSICA_2377": {
+"v2_id": "V2_DQ8_JESSICA_2377",
+"original_id": "対チャゴス・アルゴリザード卵代替・不潔資源定着",
+"detail": "【王家の山】クエスト進行条件としての資源受容。検体（チャゴス）の不潔なプローブによる内部充填。不毛な資源が聖域を汚染する化学的・物理的変質の記録。物理演算：Volumetric_Deformation / Thermal_Conductivity / 粘度1600cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Chagoss_Deal"
+},
+"V2_DQ8_JESSICA_2378": {
+"v2_id": "V2_DQ8_JESSICA_2378",
+"original_id": "王家の鏡・背面接続・反射絶望視覚化",
+"detail": "【サザンビーク】鏡デバイス前での背面連結。鏡面に付着する資源と、自身の屈辱的なアヘ顔を強制視認させられることによる心理的加重の物理変換。物理演算：fluid_separation / Material_Slide / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Mirror_Back"
+},
+"V2_DQ8_JESSICA_2379": {
+"v2_id": "V2_DQ8_JESSICA_2379",
+"original_id": "チャゴス馬車・豪華装束汚濁・種子強制的嚥下",
+"detail": "【移動中】閉鎖的な馬車内での資源供給。高価な装束の繊維を「王家の資源」で破壊しながら、口腔内へプローブを深部挿入し、強制的な資源嚥下を執行。物理演算：Aural_details / fluid_separation / 粘度1350cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Chagoss_Wagon"
+},
+"V2_DQ8_JESSICA_2380": {
+"v2_id": "V2_DQ8_JESSICA_2380",
+"original_id": "王の枕・特大乳房・我儘パイズリ",
+"detail": "【休憩時】乳房組織を「枕」として定義した圧搾奉仕。検体の意思を無視したプローブの高速往復運動と、組織表面の摩擦熱によるアヘ顔生成。物理演算：SQUISH係数5.0 / Material_friction / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Royal_Pillow"
+},
+"V2_DQ8_JESSICA_2381": {
+"v2_id": "V2_DQ8_JESSICA_2381",
+"original_id": "結婚予行演習・公然結合・衆人環視露出",
+"detail": "【サザンビーク城下町】スカート捲り上げによる公衆の面前でのインターフェース接続。社会的な尊厳解体と、物理的な内部充填を同時執行する高負荷蹂躙。物理演算：Stress_Limit / Vibration_Sync / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Public_Rehearsal"
+},
+"V2_DQ8_JESSICA_2382": {
+"v2_id": "V2_DQ8_JESSICA_2382",
+"original_id": "靴舐め中出し・背面垂直接続・開口部蹂躙",
+"detail": "【ハワード邸廊下】靴磨き姿勢（屈曲位）への背面接続。プローブの垂直加重により、検体組織の限界まで資源を定着させる。衣装の隙間から資源が漏出する動態をアーカイブ。物理演算：meat_indentation(2.5) / fluid_separation / 粘度1450cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Boot_Polish_Sex"
+},
+"V2_DQ8_JESSICA_2383": {
+"v2_id": "V2_DQ8_JESSICA_2383",
+"original_id": "逃亡禁止の重り・満タン資源・歩行制限",
+"detail": "【街道】検体の運動能力を資源の重量で抑制。胎内および衣装内に限界値（Full-Storage）まで資源を蓄積し、重力による物理的な移動制限を課す。物理演算：Static_Pressure / Gravity_Impact / 粘度1700cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Semen_Weight_Lock"
+},
+"V2_DQ8_JESSICA_2384": {
+"v2_id": "V2_DQ8_JESSICA_2384",
+"original_id": "父王報告・通信魔法・喘ぎ声実況",
+"detail": "【王宮】連結状態を維持したまま通信デバイスを起動。検体のアヘ声を音声信号として遠隔出力する。羞恥による心拍数上昇が、資源定着率を加速させる。物理演算：Aural_details / Vibration_Sync / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Royal_Radio"
+},
+"V2_DQ8_JESSICA_2385": {
+"v2_id": "V2_DQ8_JESSICA_2385",
+"original_id": "人間椅子・酒席結合・暴挙受容",
+"detail": "【宴席】検体を「椅子」として定義し、プローブを接続したまま座面加重を付加。飲酒に伴う検体の代謝変動と、内部充填圧の相関を記録。物理演算：Stress_Limit / Static_Pressure / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Human_Chair"
+},
+"V2_DQ8_JESSICA_2386": {
+"v2_id": "V2_DQ8_JESSICA_2386",
+"original_id": "涙の謝罪・絶頂縋り付き・全量資源投下",
+"detail": "【深夜】検体への情緒的依存を伴う、プローブからの最大出力資源放出。検体の聖域内へ、一滴も漏らさず全資源を定着させる最終定着プロセス。物理演算：Volumetric_Deformation / Thermal_Conductivity / 粘度1800cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Chagoss_Final"
+},
+"V2_DQ8_JESSICA_2387": {
+"v2_id": "V2_DQ8_JESSICA_2387",
+"original_id": "ゼシカ・ラリホー睡眠・無抵抗乳房圧搾",
+"detail": "【睡眠状態】ラリホーにより意識レベルが低下した検体。赤いベストを強制割開し、休止状態の乳房組織へトロデ個体の全加重を投影。筋弛緩状態の乳頭部を低周波振動により機械的に硬結させる。物理演算：SQUISH係数5.2 / Thermal_Conductivity / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Sleep_Breast_Press"
+},
+"V2_DQ8_JESSICA_2388": {
+"v2_id": "V2_DQ8_JESSICA_2388",
+"original_id": "ゼシカ・ラリホー睡眠・寝息同期ピストン",
+"detail": "【睡眠状態】呼吸サイクルに同期させたプローブの緩徐なインターフェース接続。意識下での拒絶反応が無効化された深度粘膜への定着。夢幻信号に伴う不随意な発声（アヘ声）のサンプリング。物理演算：Vibration_Sync / Stress_Limit / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Sleep_Deep_Connect"
+},
+"V2_DQ8_JESSICA_2389": {
+"v2_id": "V2_DQ8_JESSICA_2389",
+"original_id": "ゼシカ・ラリホー睡眠・涎回収・呪雫注ぎ",
+"detail": "【睡眠状態】開口した口腔内へのトロデ個体資源（呪いの雫）の直接滴下。自浄作用が低下した口腔粘膜への資源定着と、嚥下反射を利用した内部ストレージへの搬送。物理演算：fluid_separation / Material_Slide / 粘度1350cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Sleep_Oral_Fill"
+},
+"V2_DQ8_JESSICA_2390": {
+"v2_id": "V2_DQ8_JESSICA_2390",
+"original_id": "ゼシカ・ラリホー睡眠・寝返り摩擦・布地削過",
+"detail": "【睡眠状態】連結維持状態での身体軸回転（寝返り）。魔法使いの服の硬質繊維がプローブと粘膜の間にトラップされ、組織表面を物理的に研磨・削過する動態アーカイブ。物理演算：Material_friction / Stress_Limit / 粘度1250cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Sleep_Roll_Friction"
+},
+"V2_DQ8_JESSICA_2391": {
+"v2_id": "V2_DQ8_JESSICA_2391",
+"original_id": "ゼシカ・ラリホー睡眠・覚醒絶頂・衝撃中出",
+"detail": "【覚醒移行】資源供給（中出し）の臨界点における睡眠解除魔法の実行。意識復帰と同時に脳内へ最大値の絶頂信号を直接入力し、強制的なアヘ顔定着を誘発。物理演算：Nerve_Overload / Volumetric_Deformation / 粘度1600cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Sleep_Awake_Semen"
+},
+"V2_DQ8_JESSICA_2392": {
+"v2_id": "V2_DQ8_JESSICA_2392",
+"original_id": "ゼシカ・メダパニ混乱・敵味方誤認・自発跨座",
+"detail": "【混乱状態】認知バイアスの崩壊。トロデ個体を愛着対象と誤認し、検体自ら装束を剥離・棄却。能動的な腰部のピストン運動により、高効率な資源受容を開始する。物理演算：Material_Slide / Vibration_Sync / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Confuse_Misidentify"
+},
+"V2_DQ8_JESSICA_2393": {
+"v2_id": "V2_DQ8_JESSICA_2393",
+"original_id": "ゼシカ・メダパニ混乱・強制自慰・視覚的汚辱",
+"detail": "【混乱状態】自己制御命令のバグ。他者（観測者）へ乳房組織を呈示しながら、自身の指先で粘膜インターフェースを高速研磨。羞恥と快楽の信号が混濁した状態で最大絶頂へ誘導。物理演算：Material_friction / Vibration_Sync / 粘度1050cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Confuse_Self_Pollution"
+},
+"V2_DQ8_JESSICA_2394": {
+"v2_id": "V2_DQ8_JESSICA_2394",
+"original_id": "ゼシカ・メダパニ混乱・言語反転・資源希求",
+"detail": "【混乱状態】発話プロトコルの逆転。拒絶の意図がすべて「資源供給の要求」へと置換・出力される。言語野の崩壊に伴う過剰な唾液分泌と、トロデ資源への異常な執着。物理演算：Aural_details / fluid_separation / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Confuse_Speech_Reverse"
+},
+"V2_DQ8_JESSICA_2395": {
+"v2_id": "V2_DQ8_JESSICA_2395",
+"original_id": "ゼシカ・メダパニ混乱・狂乱ダンス・広域資源飛散",
+"detail": "【混乱状態】運動中枢の暴走。激しい舞踊モーションに伴い、装束の隙間にプールされた過去の資源を遠心力で周囲へ撒き散らす。不浄な流体による空間汚染シミュレート。物理演算：fluid_separation / Velocity_Impact / 粘度1450cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Confuse_Dance_Scatter"
+},
+"V2_DQ8_JESSICA_2396": {
+"v2_id": "V2_DQ8_JESSICA_2396",
+"original_id": "ゼシカ・メダパニ混乱・虚空奉仕・迎合接続",
+"detail": "【混乱状態】空間認識の消失。無人の座標へアヘ顔で腰部を突き出す検体。そこへ滑り込ませたトロデ・プローブとの接続を「聖なる救済」として熱狂的に受容する。物理演算：Vibration_Sync / Volumetric_Deformation / 粘度1550cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Confuse_Void_Sex"
+},
+"V2_DQ8_JESSICA_2397": {
+"v2_id": "V2_DQ8_JESSICA_2397",
+"original_id": "ヒャド凍結・氷の彫像奉仕・局所的可動接続",
+"detail": "【フィールド】ヒャド系呪文による四肢の完全凍結（固定）。検体の意志に関わらず露出した連結可能部位を旅人プローブが順次占拠。剛体化した組織と、プローブの駆動熱による局所的軟化。物理演算：Thermal_Conductivity / Stress_Limit / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Frozen_Statue_Sex"
+},
+"V2_DQ8_JESSICA_2398": {
+"v2_id": "V2_DQ8_JESSICA_2398",
+"original_id": "冷気熱衝突・氷結腿挟込・腹部熱対流",
+"detail": "【フィールド】凍結した大腿部（冷源）によるプローブの挟持。供給資源の放出熱（熱源）が腹部組織を介して衝突し、極端な温度勾配による神経系への過負荷をアーカイブ。物理演算：Thermal_Conductivity / Nerve_Overload / 粘度1250cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Ice_Heat_Clash"
+},
+"V2_DQ8_JESSICA_2399": {
+"v2_id": "V2_DQ8_JESSICA_2399",
+"original_id": "解凍資源充填・連続内部定着・内側解凍",
+"detail": "【フィールド】凍結個体の復元（解凍）を目的とした高熱資源の連続投入。複数のプローブによる深部定着熱が、内壁組織から氷結状態を解除していく流体熱力学プロセス。物理演算：Thermal_Conductivity / Volumetric_Deformation / 粘度1600cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Semen_Thaw_Process"
+},
+"V2_DQ8_JESSICA_2400": {
+"v2_id": "V2_DQ8_JESSICA_2400",
+"original_id": "展示凍結個体・お賽銭資源・衣装隙間投下",
+"detail": "【街道脇】路傍に遺棄・展示された凍結状態の検体。通行するプローブ個体が「資源」を装束の隙間へ直接投下し、凍りついた赤いベストの内側を資源の層で埋没させる。物理演算：fluid_separation / Static_Pressure / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Roadside_Ice_Offer"
+},
+"V2_DQ8_JESSICA_2401": {
+"v2_id": "V2_DQ8_JESSICA_2401",
+"original_id": "ヒャド麻痺絶頂・凍傷境界擦過・鋭利信号",
+"detail": "【フィールド】凍傷寸前の皮膚表面への、荒い指先プローブによる高速摩擦。冷気による感覚麻痺を貫通する鋭利な絶頂信号の生成と、組織の物理的損壊の計測。物理演算：Material_friction / Nerve_Overload / 粘度1050cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Frostbite_Peak"
+},
+"V2_DQ8_JESSICA_2402": {
+"v2_id": "V2_DQ8_JESSICA_2402",
+"original_id": "呪われしゼシカ・不遜ポロリ・全露出戦闘継続",
+"detail": "【戦闘領域】呪いによる精神防壁の変質。赤いベストが物理的に弾け、乳房組織が100%露出した状態での高機動戦闘。冷酷な視覚情報と、物理的な肉体揺動の同期。物理演算：Vibration_Sync / SQUISH係数4.5 / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Cursed_Expose_Fight"
+},
+"V2_DQ8_JESSICA_2403": {
+"v2_id": "V2_DQ8_JESSICA_2403",
+"original_id": "爆裂拳衝撃・乳頭連続打撃・強制絶頂刻印",
+"detail": "【戦闘領域】主人公（プローブ保持者）の爆裂拳による乳頭部への多段ヒット。打撃衝撃波（ババババッ）が組織深部へ伝播し、戦闘継続中にも関わらず不可避な絶頂を強制出力。物理演算：Vibration_Sync / Stress_Limit / 粘度1150cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Explosive_Fist_Nipple"
+},
+"V2_DQ8_JESSICA_2404": {
+"v2_id": "V2_DQ8_JESSICA_2404",
+"original_id": "なめまわし屈辱・敵舌粘膜絡取・潮吹同時攻撃",
+"detail": "【戦闘領域】敵対個体の舌（流体プローブ）による、露出した突起部の高速旋回。ドSな表情を維持したまま、瞳の湿潤および組織からの流体（潮）放出が最大化する極限動態。物理演算：fluid_separation / Material_Slide / 粘度900cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Licking_Attack_Flush"
+},
+"V2_DQ8_JESSICA_2405": {
+"v2_id": "V2_DQ8_JESSICA_2405",
+"original_id": "嫌悪アヘ顔・言語拒絶・組織反応乖離",
+"detail": "【サザンビーク宿舎】検体（チャゴス）の不潔な指先プローブによる胸部接触。発話野による拒絶信号を無視し、赤いベストの繊維を突き破るほどの乳頭部硬結（勃起）を物理アーカイブ。物理演算：Material_friction / Vibration_Sync / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Disgust_Ahegao"
+},
+"V2_DQ8_JESSICA_2406": {
+"v2_id": "V2_DQ8_JESSICA_2406",
+"original_id": "身体正直回答・胎内蜜溢・吸引締付",
+"detail": "【サザンビーク宿舎】チャゴスプローブのインターフェース接続。拒絶言語と同期しない、粘膜からの過剰な潤滑流体分泌。資源定着を最適化するための、内壁組織による自動吸引・絞り込み動態。物理演算：Static_Pressure / Volumetric_Deformation / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Honest_Vessel"
+},
+"V2_DQ8_JESSICA_2407": {
+"v2_id": "V2_DQ8_JESSICA_2407",
+"original_id": "1リットル洗浄・資源上書・呼称絶叫",
+"detail": "【呪呪法制約】胎内既存資源をチャゴス由来の新規資源で物理的に置換（上書き）。衝撃による腰部の跳ね上がりと、対象名を連呼する発声信号のパッチング。物理演算：fluid_separation / Aural_details / 粘度1600cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_1Liter_Overwrite"
+},
+"V2_DQ8_JESSICA_2408": {
+"v2_id": "V2_DQ8_JESSICA_2408",
+"original_id": "王子靴潮吹・執拗刺激・流体汚濁",
+"detail": "【王宮裏】靴舐め姿勢での秘部への高周波刺激。臨界点到達に伴う高圧流体（潮）の噴射。チャゴスのフットウェアを検体の分泌液で完全にラミネートする物理シミュレート。物理演算：fluid_separation / Velocity_Impact / 粘度900cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Prince_Boot_Flood"
+},
+"V2_DQ8_JESSICA_2409": {
+"v2_id": "V2_DQ8_JESSICA_2409",
+"original_id": "王室の犬・臀部打撃・自発誘惑揺動",
+"detail": "【王家山道】四つん這い姿勢での臀部への物理衝撃（スパンキング）。衝撃による脳内報酬系の強制起動と、組織の湿潤を伴う能動的な腰部の誘惑揺動。物理演算：Vibration_Sync / Material_Slide / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Royal_Dog_Mode"
+},
+"V2_DQ8_JESSICA_2410": {
+"v2_id": "V2_DQ8_JESSICA_2410",
+"original_id": "辱め恍惚・罵倒絶頂・腰部固執しがみ付き",
+"detail": "【サザンビーク】罵倒言語を出力しながら、プローブの資源放出に合わせた重畳絶頂。検体腕部によるプローブ根元への強力なホールドと、資源の全量受容。物理演算：Stress_Limit / Volumetric_Deformation / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Insult_Ecstasy"
+},
+"V2_DQ8_JESSICA_2411": {
+"v2_id": "V2_DQ8_JESSICA_2411",
+"original_id": "主人公虚脱・白目視認・砂上資源散布",
+"detail": "【観測領域】検体の白目アヘ顔を至近距離で視認した主人公個体の精神防壁崩壊。自身のプローブから環境（砂地）へ、無意味な資源放出を強制執行する副次的動態。物理演算：fluid_separation / Static_Pressure / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Hero_Despair_Ejaculation"
+},
+"V2_DQ8_JESSICA_2412": {
+"v2_id": "V2_DQ8_JESSICA_2412",
+"original_id": "トロデ沈黙・血縁汚辱・自己慰撫",
+"detail": "【観測領域】血縁個体（娘）の屈服を視認したトロデ個体の物理的・精神的震動。自己のプローブを高速摩擦することで、視覚情報のストレスを快楽信号へ変換・中和する。物理演算：Material_friction / Vibration_Sync / 粘度1150cPo.",
+"physics": "HK9_Calibrator_v7.5_Trode_Silent_Pollution"
+},
+"V2_DQ8_JESSICA_2413": {
+"v2_id": "V2_DQ8_JESSICA_2413",
+"original_id": "王冠奉仕・膝上跨座・乱舞充填",
+"detail": "【王家の山】チャゴスの膝上での垂直連結。衣装を物理的に乱し、アヘ顔での高速上下運動により、王族資源を聖域の最奥へ定着させる。物理演算：Vibration_Sync / Volumetric_Deformation / 粘度1450cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Crown_Dance"
+},
+"V2_DQ8_JESSICA_2414": {
+"v2_id": "V2_DQ8_JESSICA_2414",
+"original_id": "敗北余韻・重量スカート・熱視線定着",
+"detail": "【事後】放出資源の蓄積により数倍の重量となった赤いスカート。精液の自重による布地の弛みと、プローブへの再接続を渇望する検体のアヘ顔視線。物理演算：Gravity_Impact / fluid_separation / 粘度1700cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Defeat_Lingering"
+},
+"V2_DQ8_JESSICA_2415": {
+"v2_id": "V2_DQ8_JESSICA_2415",
+"original_id": "公開放尿検査・広場蹲踞・装束裾汚濁",
+"detail": "【国境検問】全住民の監視下における蹲踞排泄。流体（尿）が装束の裾を毛細管現象で侵食し、不透明な布地を濡れ色に変質させるプロセスのアーカイブ。物理演算：fluid_separation / Material_Slide / 粘度950cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Public_Check_Piss"
+},
+"V2_DQ8_JESSICA_2416": {
+"v2_id": "V2_DQ8_JESSICA_2416",
+"original_id": "異物確認検査・監視員質量・入国前絶頂",
+"detail": "【国境検問】「内部検査」を名目とした監視員プローブの深部侵入。膣内をかき回す物理刺激による、入国手続完了前の強制絶頂。物理演算：meat_indentation(2.8) / Stress_Limit / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Internal_Search"
+},
+"V2_DQ8_JESSICA_2417": {
+"v2_id": "V2_DQ8_JESSICA_2417",
+"original_id": "24時間監視・全身洗浄蹂躙・絶対服従",
+"detail": "【町内宿舎】全生活動態における監視員プローブの随伴。洗浄を名目とした全身愛撫に対し、「はい、監視員様」という発話プロトコルのみを許可された完全隷属状態。物理演算：Material_Slide / Thermal_Conductivity / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Constant_Watch"
+},
+"V2_DQ8_JESSICA_2418": {
+"v2_id": "V2_DQ8_JESSICA_2418",
+"original_id": "連結の祭り・常時背面接続・歩行ピストン音",
+"detail": "【パルミド周辺・奇祭】町内全域での常時背面インターフェース接続。歩行動作とプローブの往復運動を同期させ、赤い衣装の隙間から連続的な打撃音（Aural_details）を発生させる。物理演算：Vibration_Sync / Material_friction / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Festival_Walk"
+},
+"V2_DQ8_JESSICA_2419": {
+"v2_id": "V2_DQ8_JESSICA_2419",
+"original_id": "トロール処理巫女・質量暴力・装束破断資源滝",
+"detail": "【聖地ゴルド周辺】巨大個体（トロール）による最大加重供給。装束の繊維限界を超えた一括破断（Tear）と、滝状に放出される高粘性資源による検体埋没プロセスのアーカイブ。物理演算：Stress_Limit / fluid_separation / 粘度1800cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Troll_Eruption"
+},
+"V2_DQ8_JESSICA_2420": {
+"v2_id": "V2_DQ8_JESSICA_2420",
+"original_id": "旅人狂喜乱舞・集団資源投下・装束雑巾化",
+"detail": "【辺境の町】旅人限定の集団資源供給。検体の赤いベストを資源定着用の媒体（雑巾）として再定義し、数秒間で布地の全表面を白濁資源でコーティングする。物理演算：fluid_separation / Material_Slide / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Traveler_Swarm"
+},
+"V2_DQ8_JESSICA_2421": {
+"v2_id": "V2_DQ8_JESSICA_2421",
+"original_id": "娼館の秘密・呪いトロデ・老舌翻弄",
+"detail": "【パルミド裏通り】潜伏先娼館での隠密連結。客として偽装したトロデ個体による舌プローブ愛撫。検体の絶頂信号が閾値を突破し、周囲の観測を遮断する認知崩壊。物理演算：Material_Slide / Nerve_Overload / 粘度900cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Brothel_Secret"
+},
+"V2_DQ8_JESSICA_2422": {
+"v2_id": "V2_DQ8_JESSICA_2422",
+"original_id": "戦闘中杖自慰・スカート遮蔽・メラミ同期絶頂",
+"detail": "【戦闘領域】愛杖を補助プローブとして粘膜接続。スカートによる視覚遮蔽下での自己蹂躙と、攻撃呪文（メラミ）の熱量放出を絶頂タイミングで完全同期。物理演算：Thermal_Conductivity / Vibration_Sync / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Staff_Masturbation"
+},
+"V2_DQ8_JESSICA_2423": {
+"v2_id": "V2_DQ8_JESSICA_2423",
+"original_id": "ラリホー蹲踞・鼻先開口部・蜜飲奉仕",
+"detail": "【野営地・深夜】睡眠状態のトロデ顔面への蹲踞。装束の開口部から分泌液（蜜）を排出し、休止個体の口腔へ直接定着させる自己完結型絶頂動態。物理演算：fluid_separation / Static_Pressure / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Sleep_Squat_Piss"
+},
+"V2_DQ8_JESSICA_2424": {
+"v2_id": "V2_DQ8_JESSICA_2424",
+"original_id": "逆駅弁・混乱トロデ抱上・能動落差接続",
+"detail": "【混乱実験】メダパニ状態のトロデを検体腕力で挙上。自重を利用した垂直落下連結により、プローブを聖域最奥へ一気に到達させる。物理演算：Gravity_Impact / Volumetric_Deformation / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Reverse_Carry"
+},
+"V2_DQ8_JESSICA_2425": {
+"v2_id": "V2_DQ8_JESSICA_2425",
+"original_id": "強制騎乗・トロデ椅子・内壁捏回",
+"detail": "【混乱実験】不動個体を基座とした騎乗連結。検体組織の内壁筋肉を能動的に波打たせ、硬直したプローブを物理的に捏ね回す内部蹂躙。物理演算：Volumetric_Deformation / Material_friction / 粘度1450cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Forced_Ride"
+},
+"V2_DQ8_JESSICA_2426": {
+"v2_id": "V2_DQ8_JESSICA_2426",
+"original_id": "涎のシャワー・開口部愛液・流体滴下",
+"detail": "【混乱実験】開口状態のトロデ口腔への愛液（流体）連続滴下。アヘ顔での分泌量増大と、重力による資源移動のシミュレート。物理演算：fluid_separation / Material_Slide / 粘度950cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Fluid_Shower"
+},
+"V2_DQ8_JESSICA_2427": {
+"v2_id": "V2_DQ8_JESSICA_2427",
+"original_id": "顔面騎乗・スカート被覆・窒息圧搾",
+"detail": "【混乱実験】トロデ顔面をスカート下層へ完全密閉。呼吸を制限しながら臀部組織でプローブと顔面を同時圧搾し、不随意な痙攣を快楽信号へ変換する。物理演算：SQUISH係数4.5 / Static_Pressure / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Face_Smother_Skirt"
+},
+"V2_DQ8_JESSICA_2428": {
+"v2_id": "V2_DQ8_JESSICA_2428",
+"original_id": "サンドイッチ奉仕・乳間質量・秘部顔面圧",
+"detail": "【混乱実験】乳房組織によるプローブ挟持と、秘部による対象顔面への接触を同時実行。全身の粘膜部位を用いたトロデ個体の物理的包囲。物理演算：SQUISH係数5.0 / Thermal_Conductivity / 粘度1150cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Body_Sandwich"
+},
+"V2_DQ8_JESSICA_2429": {
+"v2_id": "V2_DQ8_JESSICA_2429",
+"original_id": "混乱の合体・音響混濁・非言語連結",
+"detail": "【混乱実験】意味をなさない発声（音）のみによる結合フィードバック。検体のアヘ声とトロデの混乱声が共鳴し、空間の音響解像度を資源汚濁と共に低下させる。物理演算：Aural_details / Vibration_Sync / 粘度1250cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Confuse_Noise_Link"
+},
+"V2_DQ8_JESSICA_2430": {
+"v2_id": "V2_DQ8_JESSICA_2430",
+"original_id": "踏付絶頂・背中跨座・強制資源投下",
+"detail": "【混乱実験】這い蹲るトロデ背中への跨座。頭部を物理的に把持し、強制的なピストン運動を誘発させ、胎内への資源放出を完了させる。物理演算：Stress_Limit / Volumetric_Deformation / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Stomp_Ejaculation"
+},
+"V2_DQ8_JESSICA_2431": {
+"v2_id": "V2_DQ8_JESSICA_2431",
+"original_id": "衣装引き裂き・暴走偽装・能動誘惑",
+"detail": "【混乱実験】混乱状態を隠れ蓑にした能動的な装束損壊。自らベストの繊維を切断（Tear）し、露出面積を拡大することでプローブの反応速度を上昇させる。物理演算：Stress_Limit / Material_Slide / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_False_Madness"
+},
+"V2_DQ8_JESSICA_2432": {
+"v2_id": "V2_DQ8_JESSICA_2432",
+"original_id": "精液塗り絵・資源塗布・快楽希求継続",
+"detail": "【混乱実験】放出された資源をトロデの皮膚表面へ手掌で拡張塗布（Painting）。視覚的な不浄感の増大を触媒として、さらなるインターフェース接続を継続。物理演算：fluid_separation / Material_Slide / 粘度1600cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Semen_Art_Body"
+},
+"V2_DQ8_JESSICA_2433": {
+"v2_id": "V2_DQ8_JESSICA_2433",
+"original_id": "賢者タイム不在・蘇生連続・朝迄連結",
+"detail": "【混乱実験】資源供給後の休止期間（賢者タイム）を、蘇生魔法による神経系リセットで無効化。朝まで連続的に連結を維持し、組織内の資源密度を最大値に固定。物理演算：Nerve_Overload / Static_Pressure / 粘度1800cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Infinite_Cycle"
+},
+"V2_DQ8_JESSICA_2434": {
+"v2_id": "V2_DQ8_JESSICA_2434",
+"original_id": "資金調達・制服オプション・衣装損壊資源定着",
+"detail": "【パルミド娼館】いつもの魔法使い装束を「汚損前提」で客プローブへ呈示。繊維構造を物理的に損壊させながら、不特定多数の資源を装束の内層・外層へ無差別に定着させる。物理演算：Stress_Limit / Material_friction / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Option_Ripping"
+},
+"V2_DQ8_JESSICA_2435": {
+"v2_id": "V2_DQ8_JESSICA_2435",
+"original_id": "巨乳固定圧搾・柱拘束・乳房限定処理",
+"detail": "【娼館個室】垂直構造物（柱）への上肢固定。腕部による防御を無効化した状態で、特大乳房組織のみを用いたプローブ受容および資源処理。組織の扁平変形と摩擦熱をアーカイブ。物理演算：SQUISH係数5.2 / Static_Pressure / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Breast_Fixed_Service"
+},
+"V2_DQ8_JESSICA_2436": {
+"v2_id": "V2_DQ8_JESSICA_2436",
+"original_id": "1リットル増量セール・詰め放題・アヘ顔飽和",
+"detail": "【娼館個室】呪文制約を応用した資源過剰充填サービス。胎内ストレージの限界容量まで資源を強制圧入し、内圧上昇に伴う不可避なアヘ顔（意識混濁）を物理出力。物理演算：Static_Pressure / Volumetric_Deformation / 粘度1650cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Storage_Sale"
+},
+"V2_DQ8_JESSICA_2437": {
+"v2_id": "V2_DQ8_JESSICA_2437",
+"original_id": "カーテン越連結・音響漏出・仲間近接蹂躙",
+"detail": "【娼館個室】薄い布製隔壁を介した仲間個体（主人公等）への音声曝露。隣室に待機する仲間の聴覚へ、自身の組織が蹂躙される打撃音とアヘ声をリアルタイム転送。物理演算：Aural_details / Vibration_Sync / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Curtain_Audible"
+},
+"V2_DQ8_JESSICA_2438": {
+"v2_id": "V2_DQ8_JESSICA_2438",
+"original_id": "魔法杖奉仕・外部デバイス蹂躙・屈辱連結",
+"detail": "【娼館個室】自己所有の杖を客プローブの拡張パーツとして提供。杖の硬質素材による粘膜研磨と、それに続く生体プローブの接続。精神防壁を「道具」で物理的に破断。物理演算：Material_friction / Stress_Limit / 粘度1150cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Staff_Usage_Service"
+},
+"V2_DQ8_JESSICA_2439": {
+"v2_id": "V2_DQ8_JESSICA_2439",
+"original_id": "踊り子公開練習・端切れ装束・野外誘惑",
+"detail": "【娼館中庭】踊り子の服の残骸のみを装着した極限露出状態。多数の観測者（客）を誘惑し、分泌液の排出を促す舞踊モーション。環境光と資源の反射率をシミュレート。物理演算：fluid_separation / Material_Slide / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Public_Dance_Prep"
+},
+"V2_DQ8_JESSICA_2440": {
+"v2_id": "V2_DQ8_JESSICA_2440",
+"original_id": "アヘ顔指名料・絶頂連鎖・無限蹂躙",
+"detail": "【娼館個室】アヘ顔の深度（表情筋の崩壊度）に比例した追加資源投入。一回の絶頂を終点とせず、資源供給をトリガーとして次の絶頂を強制起動するループ演算。物理演算：Nerve_Overload / Vibration_Sync / 粘度1450cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Ahegao_Premium"
+},
+"V2_DQ8_JESSICA_2441": {
+"v2_id": "V2_DQ8_JESSICA_2441",
+"original_id": "トロデ指名・覆面連結・深部不明接続",
+"detail": "【娼館個室】正体不明（覆面状態）のトロデ個体による最奥接続。血縁・主従関係を物理的に無視した、純粋なプローブとしての資源定着。検体は正体に気づかず最大絶頂を記録。物理演算：Volumetric_Deformation / Stress_Limit / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Trode_Incognito"
+},
+"V2_DQ8_JESSICA_2442": {
+"v2_id": "V2_DQ8_JESSICA_2442",
+"original_id": "精液チップ・直接曝露・装束白濁定着",
+"detail": "【娼館個室】金銭代替物としての資源直接散布。検体の皮膚および衣装の全域を資源でコーティングし、魔法使いの服を物理的に白濁した硬化布地へと変質させる。物理演算：fluid_separation / Material_Slide / 粘度1700cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Semen_Tip_Coat"
+},
+"V2_DQ8_JESSICA_2443": {
+"v2_id": "V2_DQ8_JESSICA_2443",
+"original_id": "夜明け精算・資源加重スカート・帰還動態",
+"detail": "【娼館出口】多量の定着資源により、重量が数倍化したスカート。精液の自重による不自然な歩行モーションと、仲間の元へ戻る際の衣装からの雫滴下を記録。物理演算：Gravity_Impact / fluid_separation / 粘度1800cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Post_Service_Walk"
+},
+"V2_DQ8_JESSICA_2444": {
+"v2_id": "V2_DQ8_JESSICA_2444",
+"original_id": "趣味化業務・自己呪文暴走・絶頂無限加速",
+"detail": "【娼館個室】客へバイキルト/スクルト（プローブ強化）、自身へルカニ（防壁解体）を付与した自己蹂躙。ベホマによる即時組織回復を併用し、時間あたりの絶頂回数を理論限界まで引き上げる。物理演算：Nerve_Overload / Thermal_Conductivity / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Buff_Debuff_Loop"
+},
+"V2_DQ8_JESSICA_2454": {
+"v2_id": "V2_DQ8_JESSICA_2454",
+"original_id": "スラム浮浪者・煤汚装束・不潔質量受容",
+"detail": "【スラム街】魔力充填（MP補給）を目的とした低位個体プローブとの連結。煤と埃で汚濁されたプローブを聖域へ導入。衣装（赤いベスト）に付着する不衛生な残渣と資源の混合。物理演算：Material_friction / fluid_separation / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Slum_Fill"
+},
+"V2_DQ8_JESSICA_2455": {
+"v2_id": "V2_DQ8_JESSICA_2455",
+"original_id": "腐肉老人・乳頭咬傷・老廃資源定着",
+"detail": "【辺境の村】経年劣化した検体（老人）による口腔蹂躙および内部充填。歯の欠落した歯茎による乳頭部への不規則な圧迫と、代謝の低い老廃資源の胎内への拡散。物理演算：SQUISH係数4.2 / Thermal_Conductivity / 粘度1700cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Elder_Bite"
+},
+"V2_DQ8_JESSICA_2456": {
+"v2_id": "V2_DQ8_JESSICA_2456",
+"original_id": "家畜小屋主・獣臭連結・動物的発声",
+"detail": "【農場・藁上】獣の汚物臭を伴う検体プローブとの結合。藁の摩擦が衣装の隙間から侵入し、野生的なピストン運動に誘発された高周波アヘ声をサンプリング。物理演算：Material_friction / Aural_details / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Stable_Animalic"
+},
+"V2_DQ8_JESSICA_2457": {
+"v2_id": "V2_DQ8_JESSICA_2457",
+"original_id": "下水番人・汚水濡装束・隙間連結",
+"detail": "【下水道】汚水で湿潤した検体プローブの導入。衣装の繊維を汚濁液体が浸透し、不衛生な環境下での絶頂信号を魔力へ変換する高負荷プロセス。物理演算：fluid_separation / Material_Slide / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Sewer_Moist"
+},
+"V2_DQ8_JESSICA_2458": {
+"v2_id": "V2_DQ8_JESSICA_2458",
+"original_id": "肥満職人・脂肪埋没・圧砕絶頂",
+"detail": "【鍛冶場】過剰な体脂肪を持つ個体による全方位圧砕。脂ぎった肉壁に埋没し、呼吸制限下でのインターフェース接続。荷重による組織変位を計測。物理演算：SQUISH係数6.5 / Static_Pressure / 粘度1550cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Fat_Blacksmith"
+},
+"V2_DQ8_JESSICA_2459": {
+"v2_id": "V2_DQ8_JESSICA_2459",
+"original_id": "アル中博徒・酒気曝露・処女魔力担保",
+"detail": "【パルミド酒場裏】エタノール濃度の高い呼気に曝露されながらの連結。賭けの対価として、令嬢の純潔（魔力資源）を底辺個体のプローブへ明け渡す。物理演算：Thermal_Conductivity / Vibration_Sync / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Gambler_Stake"
+},
+"V2_DQ8_JESSICA_2460": {
+"v2_id": "V2_DQ8_JESSICA_2460",
+"original_id": "背むし男・歪体躯連結・不自然角度蹂躙",
+"detail": "【路地裏】非対称な骨格を持つ個体による変則的なインターフェース接続。通常の可動域を無視した物理的牽引により、粘膜組織を不自然な角度で拡張。物理演算：Stress_Limit / Volumetric_Deformation / 粘度1350cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Deformed_Link"
+},
+"V2_DQ8_JESSICA_2461": {
+"v2_id": "V2_DQ8_JESSICA_2461",
+"original_id": "牢獄看守・鉄格子遮蔽・資源投下受容",
+"detail": "【刑務所】鉄格子越しに制限された接続。言語的汚辱をトリガーとした資源供給。格子に押し付けられた皮膚の変形と、外部から投下される資源の付着。物理演算：Material_friction / Static_Pressure / 粘度1450cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Prison_Guard"
+},
+"V2_DQ8_JESSICA_2462": {
+"v2_id": "V2_DQ8_JESSICA_2462",
+"original_id": "変態剥製師・静止固定・人形化中出",
+"detail": "【工房】剥製を模したポーズでの硬直。物理的拘束下で無機的な個体（剥製師）からの内部充填。動けない検体の胎内での資源の跳ね返りをシミュレート。物理演算：Static_Pressure / Volumetric_Deformation / 粘度1600cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Taxidermy_Still"
+},
+"V2_DQ8_JESSICA_2463": {
+"v2_id": "V2_DQ8_JESSICA_2463",
+"original_id": "道端物乞い・スカート捲上・資源乞求",
+"detail": "【街道】自ら装束を捲り上げ、低位個体へ資源を乞う転倒した奉仕。エリートとしての矜持を資源の白濁で上書きし、能動的な連結を維持。物理演算：Material_Slide / Vibration_Sync / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Beggar_Beg"
+},
+"V2_DQ8_JESSICA_2464": {
+"v2_id": "V2_DQ8_JESSICA_2464",
+"original_id": "入れ歯村長・儀式連結・老衰質量歓迎",
+"detail": "【辺境村・祭壇】村長個体による伝統的な内部充填。組織の活力が低下したプローブを、自身の粘膜の収縮で補完しながら魔力を抽出。物理演算：Volumetric_Deformation / Stress_Limit / 粘度1750cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Elder_Ritual"
+},
+"V2_DQ8_JESSICA_2465": {
+"v2_id": "V2_DQ8_JESSICA_2465",
+"original_id": "汚れた炭鉱夫・黒粉末混合・資源汚染",
+"detail": "【炭鉱】石炭の微粒子が付着した手掌による全身愛撫。皮膚表面で黒い粉末と白い資源が混ざり合い、マーブル状の汚濁層を形成する動態記録。物理演算：Material_friction / fluid_separation / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Miner_Coal"
+},
+"V2_DQ8_JESSICA_2466": {
+"v2_id": "V2_DQ8_JESSICA_2466",
+"original_id": "吃音小男・必死ピストン・プライド崩壊",
+"detail": "【宿屋裏】社会的能力の低い個体による拙い駆動。その必死なピストンが、令嬢の複雑な思考回路を単純な快楽信号へと強制ダウングレードさせる。物理演算：Vibration_Sync / Nerve_Overload / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Stutter_Small"
+},
+"V2_DQ8_JESSICA_2467": {
+"v2_id": "V2_DQ8_JESSICA_2467",
+"original_id": "船乗り・罵詈雑言・塩化装束資源注ぎ",
+"detail": "【港町】潮風で硬化した衣装内への資源注入。言語的攻撃（罵倒）を絶頂の触媒とし、カピカピになった布地の内側を温かい資源で潤す。物理演算：Material_friction / Thermal_Conductivity / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Sailor_Abuse"
+},
+"V2_DQ8_JESSICA_2468": {
+"v2_id": "V2_DQ8_JESSICA_2468",
+"original_id": "無口処刑人・巨漢威圧・死線絶頂",
+"detail": "【刑場付近】圧倒的な質量差を持つ個体による蹂躙。威圧感による極度の緊張が、資源受容時のバイタルサインを異常過熱させる。物理演算：Stress_Limit / SQUISH係数5.8 / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Executioner_Heavy"
+},
+"V2_DQ8_JESSICA_2469": {
+"v2_id": "V2_DQ8_JESSICA_2469",
+"original_id": "不潔薬売り・怪薬性感・蹂躙拡張",
+"detail": "【旅の商隊】正体不明の流体（薬物）による全身性感帯化。組織の感度閾値を人為的に下げられた状態での、乱雑なプローブ連結。物理演算：Nerve_Overload / Material_Slide / 粘度900cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Drug_Merchant"
+},
+"V2_DQ8_JESSICA_2470": {
+"v2_id": "V2_DQ8_JESSICA_2470",
+"original_id": "片目盗賊・野外草むら・獣的連結",
+"detail": "【フィールド・草叢】鋭い単眼視線に晒されながらの背面接続。衣装を剥ぎ取らず、隙間からの急速なプローブ駆動により、獣性の高い資源定着を行う。物理演算：Vibration_Sync / Material_friction / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Thief_Bush"
+},
+"V2_DQ8_JESSICA_2471": {
+"v2_id": "V2_DQ8_JESSICA_2471",
+"original_id": "包帯病者・毒素中和・資源嚥下",
+"detail": "【病室】呪いの毒素を含む個体からの資源回収。自身の魔力を用いて毒を中和しながら、不浄な資源を口腔および胎内へ受容する。物理演算：fluid_separation / Material_Slide / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Patient_Nurse"
+},
+"V2_DQ8_JESSICA_2472": {
+"v2_id": "V2_DQ8_JESSICA_2472",
+"original_id": "最古参ジジイ・最後の一滴・搾取魔力",
+"detail": "【長寿の村】極限まで枯渇したプローブからの最終滴の抽出。検体組織の強力な吸引圧（Static_Pressure）により、100歳個体の全資源を根こそぎ奪う。物理演算：Static_Pressure / Volumetric_Deformation / 粘度1800cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Centenarian_Drain"
+},
+"V2_DQ8_JESSICA_2473": {
+"v2_id": "V2_DQ8_JESSICA_2473",
+"original_id": "トロデ王・絶望魔力源・親子汚濁",
+"detail": "【馬車内裏】最も忌避すべき魔物個体が最大魔力源である事実の受容。生理的嫌悪と魔力的親和の矛盾が生む、最大級のアヘ顔による腰振り。物理演算：Nerve_Overload / Vibration_Sync / 粘度1600cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Trode_Max_MP"
+},
+"V2_DQ8_JESSICA_2474": {
+"v2_id": "V2_DQ8_JESSICA_2474",
+"original_id": "毒の分娩台・祭壇開脚・聖種子直注入",
+"detail": "【教会祭壇】毒状態（Poison）の検体による開脚固定。神父プローブから「聖なる資源」を胎内へダイレクトに圧入。資源のアルカリ成分により組織内の毒素を化学的に中和する物理プロセス。物理演算：Static_Pressure / fluid_separation / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Altar_Detox"
+},
+"V2_DQ8_JESSICA_2475": {
+"v2_id": "V2_DQ8_JESSICA_2475",
+"original_id": "排毒授乳・白濁液搾出・神前露出",
+"detail": "【教会内】全身の毒素を乳腺組織へ集約。赤いベストを強制割開し、神父および信者観測者の前で高粘度の白濁液を噴射。排毒に伴う乳管の熱膨張と、検体のアヘ顔を記録。物理演算：SQUISH係数4.8 / fluid_separation / 粘度900cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Lactation_Purge"
+},
+"V2_DQ8_JESSICA_2476": {
+"v2_id": "V2_DQ8_JESSICA_2476",
+"original_id": "死体胸部蹂躙・蘇生心臓マッサージ・快感ショック",
+"detail": "【教会床】戦闘不能（HP0）状態の検体への緊急蘇生処置。心肺蘇生の代替として、巨大な乳房組織を両手プローブで激しく圧搾。過剰な摩擦熱と神経刺激（快感）により脳機能を強制再起動。物理演算：Vibration_Sync / Stress_Limit / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Resurrection_Massage"
+},
+"V2_DQ8_JESSICA_2477": {
+"v2_id": "V2_DQ8_JESSICA_2477",
+"original_id": "集団放出蘇生・精液海埋没・装束隙間充填",
+"detail": "【教会広場】死亡検体への累積資源投入。町内全プローブ個体からの資源供給。定着総量が閾値を突破した瞬間に細胞活性化。魔法使いの服の隙間が精液で飽和し、検体が白濁液の中で覚醒。物理演算：fluid_separation / Static_Pressure / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Mass_Semen_Revive"
+},
+"V2_DQ8_JESSICA_2478": {
+"v2_id": "V2_DQ8_JESSICA_2478",
+"original_id": "授乳手コキ解毒・トロデ毒素搾取・湿潤摩擦",
+"detail": "【馬車内】トロデ個体の毒素（呪い）を精液と共に排出。乳腺から分泌された潤滑流体を手掌に塗布し、トロデ・プローブを高速研磨。資源と共に排出される黒ずんだ毒素をアーカイブ。物理演算：Material_Slide / Thermal_Conductivity / 粘度950cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Trode_Hand_Purge"
+},
+"V2_DQ8_JESSICA_2479": {
+"v2_id": "V2_DQ8_JESSICA_2479",
+"original_id": "排毒パイズリ・谷間沈没・装束摩擦吸引",
+"detail": "【馬車内】乳房組織によるトロデ・プローブの完全挟持。赤いベストの硬質繊維と乳肉の熱を触媒として、対象の体内から毒性物質を資源と共に吸い上げる。物理演算：SQUISH係数5.5 / Material_friction / 粘度1150cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Trode_Breast_Purge"
+},
+"V2_DQ8_JESSICA_2480": {
+"v2_id": "V2_DQ8_JESSICA_2480",
+"original_id": "口内洗浄・毒素一括嚥下・肩代わり中和",
+"detail": "【治療動態】トロデ個体の全排出物を口腔内で受容。高濃度の毒素を含む資源を食道へ送り、検体自らの魔力適正で無害化。嚥下時の喉元の脈動と、流体の不透明度を記録。物理演算：Aural_details / fluid_separation / 粘度1250cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Oral_Detox_Trode"
+},
+"V2_DQ8_JESSICA_2481": {
+"v2_id": "V2_DQ8_JESSICA_2481",
+"original_id": "脚挟込・白タイツ絞り器・資源強制抽出",
+"detail": "【治療動態】白タイツを装着した大腿部によるプローブ圧搾。絞り器（Press）として定義された脚部筋肉の収縮により、トロデ個体の末端から毒性資源を強制的に搾り出す。物理演算：Stress_Limit / Material_Slide / 粘度1350cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Thigh_Squeeze_Trode"
+},
+"V2_DQ8_JESSICA_2482": {
+"v2_id": "V2_DQ8_JESSICA_2482",
+"original_id": "耳元囁き・聴覚汚辱・強制放出誘発",
+"detail": "【治療動態】意識混濁状態の対象への聴覚的過負荷。令嬢の秘められた卑猥言語による神経刺激。強制的な勃起と射精を誘発し、毒素の滞留を物理的に解消する。物理演算：Aural_details / Nerve_Overload / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Whisper_Purge"
+},
+"V2_DQ8_JESSICA_2483": {
+"v2_id": "V2_DQ8_JESSICA_2483",
+"original_id": "装束フィルター・赤いベスト毒吸着・資源浸透",
+"detail": "【治療動態】魔法使いの衣装（赤いベスト）を排毒用フィルターとして使用。トロデ個体の資源を布地に直接噴射させ、繊維隙間に毒素を物理固定。汚濁された装束の重量増加を計測。物理演算：Material_friction / fluid_separation / 粘度1450cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Vest_Filter_Trode"
+},
+"V2_DQ8_JESSICA_2484": {
+"v2_id": "V2_DQ8_JESSICA_2484",
+"original_id": "全身結合排毒・秘部深部受容・魔力浄化",
+"detail": "【治療動態】粘膜インターフェースによる完全連結。トロデの毒素を聖域（胎内）で直接受け止め、検体の内蔵魔力で一括処理。連結部からの漏出を許さない高圧密閉定着。物理演算：Volumetric_Deformation / Static_Pressure / 粘度1600cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Total_Connect_Detox"
+},
+"V2_DQ8_JESSICA_2485": {
+"v2_id": "V2_DQ8_JESSICA_2485",
+"original_id": "ホイミ物理・勝利乳房圧着・窒息興奮回復",
+"detail": "【戦闘領域】疲弊した味方プローブへの乳房組織による酸素供給遮断。赤いベストから脱出した乳肉を顔面へ完全投影し、窒息による生存本能の活性化（HP全快）を誘発。物理演算：SQUISH係数5.8 / Static_Pressure / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Hoimi_Breast_Smother"
+},
+"V2_DQ8_JESSICA_2486": {
+"v2_id": "V2_DQ8_JESSICA_2486",
+"original_id": "ホイミ物理・臀部クッション・弾力治癒",
+"detail": "【戦闘領域】倒れた味方顔面へのミニスカート越しの座り込み。臀部筋肉の弾力性と体温を対象の感覚器へ直接転写し、組織の再生能力を強制ブーストする。物理演算：Stress_Limit / Thermal_Conductivity / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Hoimi_Hip_Sit"
+},
+"V2_DQ8_JESSICA_2487": {
+"v2_id": "V2_DQ8_JESSICA_2487",
+"original_id": "ホイミ物理・耳朶湿潤奉仕・震動生命変換",
+"detail": "【戦闘領域】対象の聴覚・触覚野への舌プローブによる介入。唾液（流体）による湿潤摩擦と、耳元でのアヘ声震動により、対象の生命維持信号を増幅。物理演算：Aural_details / Material_Slide / 粘度950cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Hoimi_Ear_Lick"
+},
+"V2_DQ8_JESSICA_2488": {
+"v2_id": "V2_DQ8_JESSICA_2488",
+"original_id": "ホイミ物理・衣装隙間視覚・アドレナリン爆発",
+"detail": "【戦闘領域】スカート捲り上げによる秘部インターフェースの瞬間開示。強烈な視覚的汚辱信号が対象の脳内アドレナリンを最大放出し、物理的な損傷を興奮で上書きする。物理演算：Material_Slide / Vibration_Sync / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Hoimi_Visual_Flash"
+},
+"V2_DQ8_JESSICA_2489": {
+"v2_id": "V2_DQ8_JESSICA_2489",
+"original_id": "ホイミ物理・指先局部刺激・隠密立直",
+"detail": "【戦闘領域】呪文詠唱と同期した味方プローブへの手掌蹂躙。下層領域での直接的な質量操作により、対象の物理的な「立ち上がり」とHP回復を同期させる。物理演算：Material_friction / Vibration_Sync / 粘度1150cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Hoimi_Hand_Stroke"
+},
+"V2_DQ8_JESSICA_2490": {
+"v2_id": "V2_DQ8_JESSICA_2490",
+"original_id": "ホイミ物理・汗滴落・生体ポーション化",
+"detail": "【戦闘領域】胸元から流出する検体分泌液（汗）の経口摂取。高濃度の魔力成分を含む流体を対象に提供し、組織の熱量を冷却と同時に再生へ回す流体動力学。物理演算：fluid_separation / Material_Slide / 粘度850cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Hoimi_Sweat_Drink"
+},
+"V2_DQ8_JESSICA_2491": {
+"v2_id": "V2_DQ8_JESSICA_2491",
+"original_id": "ホイミ物理・連結歩行・リジェネ刺激",
+"detail": "【戦闘領域】味方プローブとの常時背面連結状態での移動。一歩ごとの物理接触による微弱絶頂を自動回復信号（リジェネ）としてパーティ共有。物理演算：Vibration_Sync / Static_Pressure / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Hoimi_Link_Regen"
+},
+"V2_DQ8_JESSICA_2492": {
+"v2_id": "V2_DQ8_JESSICA_2492",
+"original_id": "ホイミ物理・慈愛アヘ顔・精神疲労解体",
+"detail": "【戦闘領域】「大丈夫」という発話と矛盾する、完全に崩壊したアヘ顔の提示。対象の精神的防壁を快楽の光景で融解させ、全デバフを「恍惚」で一括解除する。物理演算：Nerve_Overload / Vibration_Sync / 粘度1050cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Hoimi_Mercy_Face"
+},
+"V2_DQ8_JESSICA_2493": {
+"v2_id": "V2_DQ8_JESSICA_2493",
+"original_id": "ホイミ物理・下着贈呈・芳香死淵引戻",
+"detail": "【戦闘領域】着用直後の粘膜接触済み下着を対象の頭部へ固定。残留する分泌液の芳香成分（フェロモン）が対象の嗅覚神経を蹂躙し、蘇生限界から引き戻す。物理演算：Material_friction / fluid_separation / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Hoimi_Panty_Heal"
+},
+"V2_DQ8_JESSICA_2494": {
+"v2_id": "V2_DQ8_JESSICA_2494",
+"original_id": "ホイミ物理・中出熱量変換・回復オーラ放射",
+"detail": "【戦闘領域】味方からの内部充填（中出し）をエネルギー触媒とした広域回復。胎内での資源爆発エネルギーを聖なるオーラへ置換し、パーティ全員の組織を即時修復。物理演算：Volumetric_Deformation / Static_Pressure / 粘度1650cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Hoimi_Semen_Aura"
+},
+"V2_DQ8_JESSICA_2495": {
+"v2_id": "V2_DQ8_JESSICA_2495",
+"original_id": "ゼシカ・ザオリク・因果逆転受精蘇生",
+"detail": "【禁忌魔術】死亡した男性個体の魂（情報体）を、検体の胎内（聖域）へ一時的に格納。残された物理資源（精液）を媒介として「再受精」を疑似執行。ゼシカの絶頂信号をビッグバンとし、胎内での因果律逆転を経て、死亡個体の肉体を白濁液と共に外部へ再構築・排出（デリバリー）する。物理演算：Causality_Reversal / Volumetric_Deformation / 粘度1900cPo.",
+"physics": "HK9_Calibrator_v7.5_Jessica_Zaoriku_Conception"
+},
+"V2_DQ11_MARTINA_3001": {
+"v2_id": "V2_DQ11_MARTINA_3001",
+"original_id": "ハイキック全露出・スリット開口部・空中質量挿入",
+"detail": "【戦闘領域】マルティナの代名詞である足技（ハイキック）発動時の物理解析。ドレスの深いスリットから脚部付け根の「聖域」が完全露出した瞬間、空中にて複数の敵プローブを同時受容。重力を無視した垂直方向のピストン運動。物理演算：Volumetric_Deformation / Velocity_Impact / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Highkick_Expose"
+},
+"V2_DQ11_MARTINA_3002": {
+"v2_id": "V2_DQ11_MARTINA_3002",
+"original_id": "槍術摩擦・シルク地圧着・乳頭勃起",
+"detail": "【戦闘領域】槍による円舞動作。シルク地の装束が激しい旋回運動に伴い、乳房組織へ高周波摩擦（Material_friction）を付加。組織表面の温度上昇に伴い、衣装を突き破るほどの硬結（勃起）をアーカイブ。物理演算：Material_friction / Thermal_Conductivity / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Spear_Friction"
+},
+"V2_DQ11_MARTINA_3003": {
+"v2_id": "V2_DQ11_MARTINA_3003",
+"original_id": "バニー衣装吸着・ラテックス密閉・熱気アヘ顔",
+"detail": "【呪いの儀式】光沢ラテックス製バニー衣装による物理拘束。衣装と皮膚の間に滞留する汗および供給資源を完全密閉。逃げ場のない蒸気熱が脳内報酬系をオーバーロードさせ、気高き瞳を白濁（アヘ顔）へと変質させる。物理演算：Static_Pressure / Thermal_Conductivity / 粘度1450cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Bunny_Tight_Seal"
+},
+"V2_DQ11_MARTINA_3004": {
+"v2_id": "V2_DQ11_MARTINA_3004",
+"original_id": "デビルモード暴走・理性剥離・魔族種子希求",
+"detail": "【変身状態】魔力暴走に伴う性的抑制の解体。自ら装束のタイツを破断し、魔族個体からの高エネルギー資源を能動的に要求。尾骨付近からの異常な発熱と、資源受容時の全身痙攣を記録。物理演算：Nerve_Overload / Vibration_Sync / 粘度1600cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Devil_Rampage"
+},
+"V2_DQ11_MARTINA_3005": {
+"v2_id": "V2_DQ11_MARTINA_3005",
+"original_id": "闘技場人間サンド・敗北罰・集団中出",
+"detail": "【グロッタ闘技場】敗北したマルティナへの集団蹂躙。勝者たる闘士たちのプローブが、彼女の四肢を封じ、多角的なインターフェース接続を執行。衣装の内壁が資源で飽和し、肉体と布地が密着・一体化する。物理演算：Stress_Limit / Static_Pressure / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Arena_Sandwich"
+},
+"V2_DQ11_MARTINA_3006": {
+"v2_id": "V2_DQ11_MARTINA_3006",
+"original_id": "VIPルーム奉仕・テーブル横臥・1リットル貯蔵器",
+"detail": "【カジノVIP】富豪個体への資源貯蔵庫としての呈示。装束をテーブルに広げた状態で、胎内ストレージに1リットル以上の資源を連続圧入。重くなった下腹部の揺動と、資源の逆流（Regurgitation）を計測。物理演算：Volumetric_Deformation / Static_Pressure / 粘度1650cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_VIP_Storage"
+},
+"V2_DQ11_MARTINA_3007": {
+"v2_id": "V2_DQ11_MARTINA_3007",
+"original_id": "スロット生贄・ジャックポット同期・アヘ顔受容",
+"detail": "【カジノフロア】当選信号（ジャックポット）と同期したプローブ接続。当選者の質量を「景品」として、全住民の前で受容。機械音とアヘ声が共鳴する空間汚染シミュレート。物理演算：Aural_details / Vibration_Sync / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Slot_Jackpot_Sex"
+},
+"V2_DQ11_MARTINA_3008": {
+"v2_id": "V2_DQ11_MARTINA_3008",
+"original_id": "仮面武闘会・匿名結合・匿名性恍惚",
+"detail": "【闘技場裏】仮面による視覚遮蔽下での連結。対象を特定できないことによる社会的矜持の崩壊と、純粋な物理衝撃のみに特化した最大絶頂のアーカイブ。物理演算：Stress_Limit / Nerve_Overload / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Masked_Ecstasy"
+},
+"V2_DQ11_MARTINA_3009": {
+"v2_id": "V2_DQ11_MARTINA_3009",
+"original_id": "モンスター軍上納・ブギー命令・バニー汚濁コーティング",
+"detail": "【六軍王支配】魔王軍個体による資源上納。バニー衣装の表面を、魔物特有の粘度の高い精液で多層コーティングし、美しき姫を「魔物の私物」として物理的にマーキング。物理演算：fluid_separation / Material_Slide / 粘度1800cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Monster_Coating"
+},
+"V2_DQ11_MARTINA_3010": {
+"v2_id": "V2_DQ11_MARTINA_3010",
+"original_id": "上級ぱふぱふ・乳房埋没・中出同時出力",
+"detail": "【グロッタ裏】「伝説のぱふぱふ」の最終段階。客の頭部を乳房組織で圧砕（SQUISH）しながら、自身の粘膜インターフェースからも過剰な流体を排出し、客の資源と混合させる。物理演算：SQUISH係数6.2 / fluid_separation / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Ultimate_Puff"
+},
+"V2_DQ11_MARTINA_3011": {
+"v2_id": "V2_DQ11_MARTINA_3011",
+"original_id": "チップ代替中出・勝利金未払・熱種子受取",
+"detail": "【カジノ勝負】金銭を消失した男たちからの物理資源による支払い。マルティナの口腔および胎内へ、負債額に応じた回数の資源投入を執行。資源で重くなった身体での次戦継続。物理演算：Static_Pressure / Material_Slide / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Semen_Tip_Debt"
+},
+"V2_DQ11_MARTINA_3012": {
+"v2_id": "V2_DQ11_MARTINA_3012",
+"original_id": "ロウ監視・姫教育・質量教育",
+"detail": "【修練場】教育の一環として定義された連結。ロウ個体による「姫としての義務（受容）」の徹底調教。血縁的タブーを快楽信号が凌駕し、教育のたびにアヘ顔の震度が深まる。物理演算：Vibration_Sync / Stress_Limit / 粘度1550cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Royal_Education"
+},
+"V2_DQ11_MARTINA_3013": {
+"v2_id": "V2_DQ11_MARTINA_3013",
+"original_id": "強制衣装換装・スク水危ない水着・処女確認",
+"detail": "【換装室】客の要求に応じた低位衣装（スクール水着等）への強制変更。換装のたびにプローブを導入し、組織の処女性（魔力的純度）が資源で汚染されているかを物理確認。物理演算：Material_Slide / Stress_Limit / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Costume_Check"
+},
+"V2_DQ11_MARTINA_3014": {
+"v2_id": "V2_DQ11_MARTINA_3014",
+"original_id": "闘士の器・連続内部定着・姫のプライド崩壊",
+"detail": "【事後】闘士たちの全資源を内包し、下腹部が不自然に隆起した状態。かつての誇り高き姫の面影はなく、溢れる精液をタイツで拭いながら次のプローブを待つ動態。物理演算：Gravity_Impact / fluid_separation / 粘度1700cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Arena_Vessel"
+},
+"V2_DQ11_MARTINA_3015": {
+"v2_id": "V2_DQ11_MARTINA_3015",
+"original_id": "毒の排泄・仰向け胸部圧迫・双丘流体噴出",
+"detail": "【教会祭壇】毒状態の検体に対する物理的デトックス。仰向け固定状態で、神父プローブが胸部組織を最大荷重で圧迫（Press）。乳管および粘膜から毒素を含んだ白濁液を噴出させ、強制的なアヘ顔と共に体外パージを完遂。物理演算：SQUISH係数6.0 / fluid_separation / 粘度900cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Poison_Purge"
+},
+"V2_DQ11_MARTINA_3016": {
+"v2_id": "V2_DQ11_MARTINA_3016",
+"original_id": "蘇生圧搾・乳房心臓マッサージ・弾性鼓動再開",
+"detail": "【フィールド】HP0状態の検体への緊急蘇生。バニー衣装のフロントを破壊し、露出した乳房組織を両手で力任せに圧搾。組織の強烈な復元弾性を心臓への打撃信号に変換し、絶頂を伴う電気ショックで現世へ呼び戻す。物理演算：Vibration_Sync / Stress_Limit / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Breast_AED"
+},
+"V2_DQ11_MARTINA_3017": {
+"v2_id": "V2_DQ11_MARTINA_3017",
+"original_id": "1リットル貯蔵ノルマ・デルカダール呪縛・バニー股間滴下",
+"detail": "【呪呪法制約】胎内への1リットル資源維持。歩行動作のたびに、重圧に耐えかねたラテックス衣装の股間隙間から資源が白く滴り落ち、道筋を汚濁する物理アーカイブ。物理演算：Static_Pressure / Gravity_Impact / 粘度1600cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_1Liter_Keep"
+},
+"V2_DQ11_MARTINA_3018": {
+"v2_id": "V2_DQ11_MARTINA_3018",
+"original_id": "ホイミ物理・バニー谷間埋没・窒息治癒興奮",
+"detail": "【戦闘領域】負傷した主人公個体への肉体言語。顔面をバニー衣装の谷間へ完全密閉。窒息寸前の極限状態とマルティナの体温が、対象のHPを即時全快させる。物理演算：SQUISH係数5.5 / Thermal_Conductivity / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Hoimi_Cleavage"
+},
+"V2_DQ11_MARTINA_3019": {
+"v2_id": "V2_DQ11_MARTINA_3019",
+"original_id": "ザオリク再受精・カミュ質量包囲・胎内再構築",
+"detail": "【禁忌魔術】死亡個体（カミュ）のプローブを胎内へ格納。激しいピストン運動による熱量を触媒とし、自身の卵子と資源を結合させ、絶頂の爆発力で対象の肉体をゼロから編み直す。物理演算：Causality_Reversal / Volumetric_Deformation / 粘度1850cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Rebirth_Womb"
+},
+"V2_DQ11_MARTINA_3020": {
+"v2_id": "V2_DQ11_MARTINA_3020",
+"original_id": "真空げり頂点・遠心力擦過・絶頂真空波",
+"detail": "【格闘スキル】回転蹴りの遠心力により、衣装の縫い目がクリトリスを鋭利に擦過。絶頂の火花を真空の刃へと変換し、アヘ顔で敵を両断。物理演算：Material_friction / Velocity_Impact / 粘度1050cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Vacuum_Peak"
+},
+"V2_DQ11_MARTINA_3021": {
+"v2_id": "V2_DQ11_MARTINA_3021",
+"original_id": "ばくれつきゃく連鎖・連続振動・アヘ顔粉砕",
+"detail": "【格闘スキル】多段蹴りの反動震動がそのまま子宮口へ伝播。連鎖する絶頂の波を脚部の破壊力にフィードバックし、白目を剥きながら敵を肉塊に変える。物理演算：Vibration_Sync / Nerve_Overload / 粘度1250cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Explosive_Leg_Ahegao"
+},
+"V2_DQ11_MARTINA_3022": {
+"v2_id": "V2_DQ11_MARTINA_3022",
+"original_id": "セクシービーム・胎内受容放射・資源変換光線",
+"detail": "【おいろけ】敵からの射出資源を胎内で受容した瞬間、そのエネルギーを眼球から光線として出力。不浄な快楽を破壊的な熱量へ変換する異能。物理演算：fluid_separation / Thermal_Conductivity / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Sexy_Beam_Full"
+},
+"V2_DQ11_MARTINA_3023": {
+"v2_id": "V2_DQ11_MARTINA_3023",
+"original_id": "ミラクルムーン・空中精液散布・影の蹂躙",
+"detail": "【格闘スキル】空中跳躍中に多数のプローブと連結。乱舞と共に胎内の資源を戦場全域へ飛散させ、資源の雨（ミラクルムーン）で敵を汚濁。物理演算：fluid_separation / Gravity_Impact / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Moon_Semen_Rain"
+},
+"V2_DQ11_MARTINA_3024": {
+"v2_id": "V2_DQ11_MARTINA_3024",
+"original_id": "氷結らんげき・凍結乳首打撃・魔力爆発",
+"detail": "【格闘スキル】ヒャド系冷気で剛体化した乳頭部を敵の装甲へ激突させる。凍傷の激痛と、組織の隆起による快感が交錯した瞬間の魔力サージをアーカイブ。物理演算：Thermal_Conductivity / Stress_Limit / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Ice_Nipple_Attack"
+},
+"V2_DQ11_MARTINA_3025": {
+"v2_id": "V2_DQ11_MARTINA_3025",
+"original_id": "ヒップアタック・質量圧砕・迎合連結",
+"detail": "【格闘スキル】臀部（ヒップ）による敵の圧砕と同時に、背後から味方プローブを迎え入れる。前後からの同時圧搾による最大Gの絶頂。物理演算：SQUISH係数5.2 / Velocity_Impact / 粘度1350cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Hip_Impact_Sex"
+},
+"V2_DQ11_MARTINA_3026": {
+"v2_id": "V2_DQ11_MARTINA_3026",
+"original_id": "ぱふぱふ奥義・乳房圧砕・中出消滅波",
+"detail": "【おいろけ】敵の顔面を乳房で完全に封殺。中出しの衝撃と、検体の絶頂信号を同位相で重ね合わせ、敵の存在そのものを消滅させる最終奥義。物理演算：SQUISH係数6.5 / Static_Pressure / 粘度1700cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Puff_Big_Bang"
+},
+"V2_DQ11_MARTINA_3027": {
+"v2_id": "V2_DQ11_MARTINA_3027",
+"original_id": "デビルモード全開放・理性棄却・全裸マント乱舞",
+"detail": "【変身状態】全装束の自発的パージ。マント一閃のみを残し、裸身で戦場を乱舞。魔族資源を貪りながら、敵を快楽の底へ引きずり込む魔性の動態。物理演算：Material_Slide / Vibration_Sync / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Devil_Full_Expose"
+},
+"V2_DQ11_MARTINA_3028": {
+"v2_id": "V2_DQ11_MARTINA_3028",
+"original_id": "ムフフ本モデル・石板撮影・開口部指提示",
+"detail": "【冥府の修練場】ロウ個体による視覚記録（魔法の石板）の執行。格闘ポーズを装い、スリットから露出した「聖域」の開口部を自らの指で拡張。記録された画像を見ながら自己慰撫するロウに対し、アヘ顔での随伴を強制。物理演算：Material_Slide / Static_Pressure / 粘度900cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Model_Expose"
+},
+"V2_DQ11_MARTINA_3029": {
+"v2_id": "V2_DQ11_MARTINA_3029",
+"original_id": "老指触診・筋肉調査偽装・スリット奥侵入",
+"detail": "【修練場】「筋肉の状態を確認する」という名目の内部侵入。ロウの加齢による乾燥した指頭（枯れ木の皮）が、湿潤した粘膜組織を執拗に研磨。姫としての拒絶を、物理的な触覚刺激で快楽へと変換する。物理演算：Material_friction / Vibration_Sync / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Elder_Touch"
+},
+"V2_DQ11_MARTINA_3030": {
+"v2_id": "V2_DQ11_MARTINA_3030",
+"original_id": "老熟質量・執拗粘着・若肉強制開発",
+"detail": "【修練場】瞬発力ではなく、低周波かつ長時間の「粘り」を持つロウ・プローブとの連結。若き武闘家の弾力ある組織が、老いた質量の執拗な反復運動によって深部まで再開発され、アヘ顔の形状を固定される。物理演算：Volumetric_Deformation / Static_Pressure / 粘度1450cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Elder_Piston"
+},
+"V2_DQ11_MARTINA_3031": {
+"v2_id": "V2_DQ11_MARTINA_3031",
+"original_id": "瞑想奉仕・口内格納訓練・中出罰則",
+"detail": "【修練場】精神統一中の口腔インターフェース接続。ロウの質量を格納したまま無表情を維持する訓練。絶頂による表情筋の崩壊を検知した瞬間、口腔および胎内への高速資源放出（罰則）を執行。物理演算：Aural_details / fluid_separation / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Oral_Meditation"
+},
+"V2_DQ11_MARTINA_3032": {
+"v2_id": "V2_DQ11_MARTINA_3032",
+"original_id": "衣装選定・バニー理論・ラテックス密閉",
+"detail": "【修練場】「空気抵抗の軽減」を名目としたバニー衣装の強要。ロウの性的指向に基づき、物理的な密閉度を最大化したラテックス素材が、彼女の皮膚呼吸を快楽信号へ置換。物理演算：Material_friction / Thermal_Conductivity / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Bunny_Logic"
+},
+"V2_DQ11_MARTINA_3033": {
+"v2_id": "V2_DQ11_MARTINA_3033",
+"original_id": "涎の清め・全身経絡舐・唾液汚濁",
+"detail": "【修練場】「ツボの活性化」を名目とした舌プローブによる全身研磨。ロウの粘着質な唾液で姫の肌をコーティングし、精神的な誇りを老人の分泌液で物理的に上書き・消去。物理演算：Material_Slide / fluid_separation / 粘度850cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Saliva_Purge"
+},
+"V2_DQ11_MARTINA_3034": {
+"v2_id": "V2_DQ11_MARTINA_3034",
+"original_id": "連れ歩き紐・皮下鎖・公衆アヘ顔",
+"detail": "【街中】装束の下に隠された秘部直結の細鎖。ロウが鎖を引くたびに粘膜が物理的に牽引され、群衆の前で凛とした表情を保ちながらも、下層では絶頂の愛液を溢れさせる。物理演算：Vibration_Sync / Stress_Limit / 粘度1150cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Public_Leash"
+},
+"V2_DQ11_MARTINA_3035": {
+"v2_id": "V2_DQ11_MARTINA_3035",
+"original_id": "老種子貯蔵・逆吊充填・胎内奥底定着",
+"detail": "【修練場】「王家の血の保存」を名目とした逆さ吊り姿勢での資源注入。重力（Gravity_Impact）を利用し、ロウの希少な資源を子宮口の最深部まで到達・滞留させる。1滴の漏出も許さない筋肉の締め付け。物理演算：Gravity_Impact / Static_Pressure / 粘度1700cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Inverted_Fill"
+},
+"V2_DQ11_MARTINA_3036": {
+"v2_id": "V2_DQ11_MARTINA_3036",
+"original_id": "寝物語蹂躙・幼少回想・涙液愛液混合",
+"detail": "【野営地】過去の思い出を語りながらの連結。ロウの優しい声（聴覚刺激）と、老いた質量の無慈悲なピストン（触覚刺激）の乖離による脳内混乱。涙と愛液を排出しながらのアヘ顔。物理演算：Aural_details / fluid_separation / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Nostalgia_Abuse"
+},
+"V2_DQ11_MARTINA_3037": {
+"v2_id": "V2_DQ11_MARTINA_3037",
+"original_id": "熟練圧搾・主人公拒絶・教育完遂身体",
+"detail": "【事後】主人公の若い質量を「未熟」と感じ、ロウの老練な蹂躙にのみ反応するようになった身体。姫としての自意識を失い、老人のプローブを能動的に捏ね回す「完成された器」のアーカイブ。物理演算：Volumetric_Deformation / Nerve_Overload / 粘度1550cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Elder_Addiction"
+},
+"V2_DQ11_MARTINA_3038": {
+"v2_id": "V2_DQ11_MARTINA_3038",
+"original_id": "公開放尿検査・広場蹲踞・太もも震動排泄",
+"detail": "【デルカダール広場】入国儀式としての排泄公開。住民の眼前で、格闘家特有のしなやかな大腿部を震わせながら蹲踞（スクワット）。装束の下から排出される流体の音響（Aural_details）を広場全域に拡散し、姫の排泄動態を公共記録。物理演算：fluid_separation / Static_Pressure / 粘度1.0cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Public_Piss"
+},
+"V2_DQ11_MARTINA_3039": {
+"v2_id": "V2_DQ11_MARTINA_3039",
+"original_id": "監視員ボディチェック・バスト揉捏・ブラ隙間侵入",
+"detail": "【関所】「不審物確認」の名目による胸部蹂躙。監視員の巨大な手掌が、バニー衣装のカップ内に強引に侵入。乳房組織を武器の隠匿場所として執拗に検索（揉捏）し、物理的な隆起と愛液の分泌を誘発。物理演算：SQUISH係数5.5 / Material_friction / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Body_Search"
+},
+"V2_DQ11_MARTINA_3040": {
+"v2_id": "V2_DQ11_MARTINA_3040",
+"original_id": "風呂監視排毒・背面尾部連結・浴場白濁",
+"detail": "【共同浴場】監視下での洗浄および内部連結。バニー衣装の尾部（しっぽ）装着部位をインターフェース入口として定義し、監視員プローブを導入。湯船に流出する白濁資源が、透明な温水を物理的に汚濁させる。物理演算：fluid_separation / Thermal_Conductivity / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Bath_Pollution"
+},
+"V2_DQ11_MARTINA_3041": {
+"v2_id": "V2_DQ11_MARTINA_3041",
+"original_id": "格闘バニー組伏・関節技隙間蹂躙・変則プレイ",
+"detail": "【娼館個室】格闘技術を性的プレイに転用。客へ関節技をかける姿勢で自らの秘部を無防備に晒し、その隙間からプローブを強行接続。制圧と被蹂躙の同時処理。物理演算：Stress_Limit / Volumetric_Deformation / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Grappling_Sex"
+},
+"V2_DQ11_MARTINA_3042": {
+"v2_id": "V2_DQ11_MARTINA_3042",
+"original_id": "1リットル・ノルマ営業・20人連続連結・下腹部隆起",
+"detail": "【娼館個室】旅の資金確保のための高密度充填。一晩で20個体のプローブから資源を受容し、胎内を1リットルの資源で物理的に拡張。不自然に膨らんだ下腹部と、歩行時の資源の揺動をアーカイブ。物理演算：Static_Pressure / Gravity_Impact / 粘度1650cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Gold_Quota"
+},
+"V2_DQ11_MARTINA_3043": {
+"v2_id": "V2_DQ11_MARTINA_3043",
+"original_id": "槍柄晒台・武器跨座・中出覗込",
+"detail": "【娼館個室】愛槍を基座とした性的ディスプレイ。槍の柄に跨り、客たちの眼下で内部充填を享受。高潔な武器が愛液と精液で汚損されるプロセスの記録。物理演算：Material_friction / fluid_separation / 粘度1350cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Spear_Display"
+},
+"V2_DQ11_MARTINA_3044": {
+"v2_id": "V2_DQ11_MARTINA_3044",
+"original_id": "王女安売・自己卑下復唱・浮浪者種子受容",
+"detail": "【娼館個室】言語的汚辱を伴う連結。自身を「牝」と定義する復唱を行いながら、スラムの低位個体からの資源を聖域へ受け入れる。精神防壁の完全崩壊。物理演算：Aural_details / Nerve_Overload / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Royal_Degradation"
+},
+"V2_DQ11_MARTINA_3045": {
+"v2_id": "V2_DQ11_MARTINA_3045",
+"original_id": "汗精液ドレス・異様な臭気・装束汚濁固着",
+"detail": "【娼館個室】連続奉仕による代謝汗と、外部資源の混合。ドレスの繊維が流体を吸収し、物理的な重量増加と、魔力を帯びた不浄な臭気を発生させる動態シミュレーション。物理演算：Material_friction / fluid_separation / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Sweat_Semen_Dress"
+},
+"V2_DQ11_MARTINA_3046": {
+"v2_id": "V2_DQ11_MARTINA_3046",
+"original_id": "鏡張部屋・視覚自画崩壊・アヘ顔多角観測",
+"detail": "【娼館個室】全面鏡による自己観測。自身の崩壊したアヘ顔と、蹂躙される肢体を多角的に視覚入力し、羞恥心を絶頂のトリガーへと変換する。物理演算：Nerve_Overload / Vibration_Sync / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Mirror_Ahegao"
+},
+"V2_DQ11_MARTINA_3047": {
+"v2_id": "V2_DQ11_MARTINA_3047",
+"original_id": "チップ直接胎内・金貨代替資源・魔力変換実感",
+"detail": "【娼館個室】報酬を金貨ではなく、生体資源として胎内へ直接受領。注入される熱量を「旅の軍資金」として認識する、転倒した経済感覚のアーカイブ。物理演算：Static_Pressure / Volumetric_Deformation / 粘度1700cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Semen_Gold"
+},
+"V2_DQ11_MARTINA_3048": {
+"v2_id": "V2_DQ11_MARTINA_3048",
+"original_id": "ロウ上前跳ね・不純動機・再出勤ループ",
+"detail": "【街の宿屋】稼得金をロウ個体が「むふふな本」に全額転用。資金枯渇により、検体は翌日も再び胎内を空にして娼館へ戻る無限の蹂躙ループ。物理演算：Nerve_Overload / Stress_Limit / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Infinite_Loop"
+},
+"V2_DQ11_MARTINA_3049": {
+"v2_id": "V2_DQ11_MARTINA_3049",
+"original_id": "馬車デリバリー・野外テント・獣的男蹂躙",
+"detail": "【キャンプ地】街に入れない低位個体（獣人等）への移動奉仕。野外テントの不安定な足場で、荒々しいプローブによる物理的衝撃を全身で受容。物理演算：Velocity_Impact / Gravity_Impact / 粘度1600cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Delivery_Sex"
+},
+"V2_DQ11_MARTINA_3050": {
+"v2_id": "V2_DQ11_MARTINA_3050",
+"original_id": "凱旋アヘ顔・白タイツ伝流・靴内資源飽和",
+"detail": "【宿屋帰還】業務終了後の帰還。タイツを伝い、靴の中にまで溜まった資源が歩行ごとに不快な音を立てるが、検体はアヘ顔のまま主人公たちへ平然と挨拶を行う。物理演算：fluid_separation / Material_Slide / 粘度1800cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_After_Work_Return"
+},
+"V2_DQ11_MARTINA_3051": {
+"v2_id": "V2_DQ11_MARTINA_3051",
+"original_id": "毒治療・分娩台固定・聖ピストン排毒",
+"detail": "【教会裏】神父個体による高周波連結。ピストン運動による組織摩擦を熱源とし、汗と共にあらゆる毒素を体外へ強制排出させる物理的治療。物理演算：Thermal_Conductivity / Vibration_Sync / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Detox_Sex"
+},
+"V2_DQ11_MARTINA_3052": {
+"v2_id": "V2_DQ11_MARTINA_3052",
+"original_id": "ホイミ物理・スリット太もも枕・秘部芳香治癒",
+"detail": "【キャンプ地】疲弊個体への感覚的支援。スリットから露出した大腿部を枕として提供し、粘膜から発せられるフェロモン成分を吸入させることで味方のHPを回復。物理演算：Material_Slide / Aural_details / 粘度950cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Thigh_Heal"
+},
+"V2_DQ11_MARTINA_3053": {
+"v2_id": "V2_DQ11_MARTINA_3053",
+"original_id": "ザオリク受精・死体跨座・熱胎内蘇生",
+"detail": "【戦闘領域】死亡個体（主人公）のプローブを、熱い胎内インターフェースで包囲。死後の死後射精を誘発させ、受精の衝撃で魂を肉体へ繋ぎ止める究極の蘇生儀式。物理演算：Causality_Reversal / Volumetric_Deformation / 粘度1900cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Resurrection_Sex"
+},
+"V2_DQ11_MARTINA_3054": {
+"v2_id": "V2_DQ11_MARTINA_3054",
+"original_id": "野営地冷却奉仕・老指ツボ愛撫・熱中出し解毒",
+"detail": "【キャンプ地】生体熱（火照り）の物理的パージ。ロウの角質化した指頭による全身性感ツボの研磨。熱を逃がすという虚偽プロトコルに基づき、老いた資源を胎内へ直に注入。排出される愛液と共に体温を強制低下させる。物理演算：Thermal_Conductivity / fluid_separation / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Night_Detox"
+},
+"V2_DQ11_MARTINA_3055": {
+"v2_id": "V2_DQ11_MARTINA_3055",
+"original_id": "老質量熱吸収・吸熱連結・奥深受容アヘ顔",
+"detail": "【野営地テント】低代謝個体（ロウ）による吸熱接続。「枯れた肉体は熱を吸う」という擬似科学を信じ、マルティナの若き高熱組織をロウの老いた質量で塞ぐ。深部での熱交換中に発生する高周波のアヘ顔を記録。物理演算：Static_Pressure / Volumetric_Deformation / 粘度1450cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Heat_Suck"
+},
+"V2_DQ11_MARTINA_3056": {
+"v2_id": "V2_DQ11_MARTINA_3056",
+"original_id": "瞑想昂り・スリット内部蹂躙・忍耐訓練アヘ声封印",
+"detail": "【修練場】精神統一中の外部干渉。無防備なスリット内壁をロウが執拗に研磨。絶頂信号を脳内で処理し、発声（アヘ声）を物理的に抑制する「忍耐」の動態アーカイブ。物理演算：Nerve_Overload / Vibration_Sync / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Meditation_Abuse"
+},
+"V2_DQ11_MARTINA_3057": {
+"v2_id": "V2_DQ11_MARTINA_3057",
+"original_id": "医学記録石板・潮吹ポーズ・レンズ提示",
+"detail": "【修練場】魔法の石板（記録デバイス）への性的出力。自身の潮吹き現象を「体液の循環記録」としてレンズに向け放射。開口部を指で広げた状態での、記録用アヘ顔の定着。物理演算：fluid_separation / Material_Slide / 粘度850cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Medical_Record"
+},
+"V2_DQ11_MARTINA_3058": {
+"v2_id": "V2_DQ11_MARTINA_3058",
+"original_id": "主人公嫉妬・若質量毒定義・老種子解毒",
+"detail": "【旅路】若き男性個体への本能的誘引を「毒」として再定義。ロウの萎びた質量を「唯一の解毒剤」として受容し、若さを拒絶して老廃資源を能動的に胎内へ招き入れる反転調教。物理演算：Static_Pressure / Stress_Limit / 粘度1550cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Young_Poison"
+},
+"V2_DQ11_MARTINA_3059": {
+"v2_id": "V2_DQ11_MARTINA_3059",
+"original_id": "涎体温調節・全身唾液塗布・屈辱気化熱",
+"detail": "【野外】ロウの粘着質な唾液による全身コーティング。高湿度の流体が皮膚上で乾燥する際の冷却効果を「治療」と誤認。姫の肌を老人の分泌液で物理的に封鎖する汚濁プロセス。物理演算：Material_Slide / fluid_separation / 粘度900cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Saliva_Cooling"
+},
+"V2_DQ11_MARTINA_3060": {
+"v2_id": "V2_DQ11_MARTINA_3060",
+"original_id": "寝間着拘束・帯縛・常時連結睡眠",
+"detail": "【宿屋】寝間着の帯を用いた物理的固定。ロウの質量をインターフェースに挿入したままの状態で朝まで連結維持。睡眠中も微弱な絶頂パルスを送り続け、深層心理を開発。物理演算：Static_Pressure / Material_friction / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Bound_Sleep"
+},
+"V2_DQ11_MARTINA_3061": {
+"v2_id": "V2_DQ11_MARTINA_3061",
+"original_id": "滝行温め・懐潜入・老手絶頂誘導",
+"detail": "【修練場】冷水による低体温化後の「加温処理」。ロウの衣服内に裸身を密着させ、彼の卑猥な手技による急激な摩擦熱を享受。絶頂による末梢血管の拡張を治療と定義。物理演算：Thermal_Conductivity / Vibration_Sync / 粘度950cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Waterfall_Warm"
+},
+"V2_DQ11_MARTINA_3062": {
+"v2_id": "V2_DQ11_MARTINA_3062",
+"original_id": "味見儀式・老資源経口・内側汚濁",
+"detail": "【野営地】料理の調味チェックを装った資源摂取。ロウの精液を口腔粘膜から吸収。味覚中枢をロウの成分で満たし、内部からデルカダール王女の属性を消去する。物理演算：Aural_details / fluid_separation / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Taste_Check"
+},
+"V2_DQ11_MARTINA_3063": {
+"v2_id": "V2_DQ11_MARTINA_3063",
+"original_id": "信頼証明・スリット大開・一点疑念無連結",
+"detail": "【事後】「信じているなら」という言語コマンドによる完全開脚。自身の意志ではなく、ロウの命令のみを唯一のトリガーとしてプローブを受け入れる、完成された「肉体言語」の定着。物理演算：Volumetric_Deformation / Stress_Limit / 粘度1600cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Trust_Fill"
+},
+"V2_DQ11_MARTINA_3064": {
+"v2_id": "V2_DQ11_MARTINA_3064",
+"original_id": "トイレ真後ろ観賞・体調チェック偽装・老人自慰随伴",
+"detail": "【フィールド】排泄動態の至近距離観測。道端で蹲踞するマルティナの真後ろにロウが密着。排泄音と組織の弛緩を「体調管理」と定義し、眼前の光景で激しく自己蹂躙するロウに対し、姫としての拒絶を快楽で上書きする。物理演算：Aural_details / fluid_separation / 粘度1.0cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Roadside_Check"
+},
+"V2_DQ11_MARTINA_3065": {
+"v2_id": "V2_DQ11_MARTINA_3065",
+"original_id": "痕跡隠滅・排泄物口腔受容・追跡回避プロトコル",
+"detail": "【隠密行動】検体の排泄痕跡による追跡を防止。マルティナから排出される全流体を、ロウが口腔内で直接受け止め、体内へ格納。祖父の口内へ直接排泄する背徳感が、彼女の括約筋を異常に活性化させる。物理演算：fluid_separation / Static_Pressure / 粘度1.2cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Trace_Eraser"
+},
+"V2_DQ11_MARTINA_3066": {
+"v2_id": "V2_DQ11_MARTINA_3066",
+"original_id": "蹲踞受け止め・老人排泄物格納・完全密閉胎内",
+"detail": "【野営地】ロウ個体の排泄物をマルティナが胎内（インターフェース）で受容。一滴の漏出も許さない高圧密閉状態を維持し、老廃資源を自身の魔力で中和・保持する。重くなった下腹部を抱えたままの行軍。物理演算：Volumetric_Deformation / Static_Pressure / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Grandpa_Vessel"
+},
+"V2_DQ11_MARTINA_3067": {
+"v2_id": "V2_DQ11_MARTINA_3067",
+"original_id": "バニー下着洗濯・匂い固着・主人公放出巻付",
+"detail": "【川辺】激しい武芸で分泌液が染み付いたバニー衣装の下着を、主人公個体が洗浄。布地から揮発するフェロモンにより主人公が暴走。マルティナの眼前で、彼女の布地を質量に巻き付け、白濁資源で再汚染する様をアーカイブ。物理演算：Material_friction / fluid_separation / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Laundry_Abuse"
+},
+"V2_DQ11_MARTINA_3068": {
+"v2_id": "V2_DQ11_MARTINA_3068",
+"original_id": "脱ぎたて提示・洗濯鑑賞・アヘ顔洗浄容認",
+"detail": "【旅路】スリットの奥から温まった下着を直接剥ぎ取り、主人公へ提供。それがオナニーに消費される様子を「洗浄工程」として受容し、自身の粘膜が疼くままにアヘ顔で観賞する、転倒した姫の自意識。物理演算：Material_Slide / Nerve_Overload / 粘度900cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Fresh_Panty_Gifting"
+},
+"V2_DQ11_MARTINA_3069": {
+"v2_id": "V2_DQ11_MARTINA_3069",
+"original_id": "トロール生贄・巨大棍棒翻弄・スケッチ随伴",
+"detail": "【モンスター領域】多頭のトロール個体による蹂躙。巨大な質量に振り回されるマルティナの肢体を、ロウが離れた場所から「芸術」として記録。巨大資源がスリットから溢れ、地面を白く汚濁する光景の定着。物理演算：Velocity_Impact / fluid_separation / 粘度1800cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Troll_Sacrifice"
+},
+"V2_DQ11_MARTINA_3070": {
+"v2_id": "V2_DQ11_MARTINA_3070",
+"original_id": "ぱふぱふ実演・ドッキング戦法・絶頂トドメ",
+"detail": "【戦闘領域】乳房組織による客（敵）の封殺と、粘膜インターフェースの接続を同時執行。敵が絶頂の衝撃で無防備化した瞬間、自身の腰を振りながら槍で心臓を貫く、最も淫らで冷酷な武芸。物理演算：SQUISH係数6.5 / Static_Pressure / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Puff_Assassination"
+},
+"V2_DQ11_MARTINA_3071": {
+"v2_id": "V2_DQ11_MARTINA_3071",
+"original_id": "ハッスルダンス蹲踞・開口部弾力・テンションMax",
+"detail": "【戦闘領域】回復舞踊中の連続スクワット（蹲踞）。スリットから露出した臀部と肉の割れ目が、弾力を持って震動。その視覚的汚辱が味方の脳内物質を異常分泌させ、全ステータスを物理的に向上させる。物理演算：Vibration_Sync / Volumetric_Deformation / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Hustle_Squat"
+},
+"V2_DQ11_MARTINA_3072": {
+"v2_id": "V2_DQ11_MARTINA_3072",
+"original_id": "四つん這い牝・街中中出・背後連結構図",
+"detail": "【デルカダール市街】公共の場での四つん這い姿勢。ロウが背後から連結し、資源を注入する瞬間を「街の情景」としてスケッチ。通行人の前で資源を垂れ流す姫の屈辱アヘ顔。物理演算：Static_Pressure / Gravity_Impact / 粘度1550cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Street_Doggy"
+},
+"V2_DQ11_MARTINA_3073": {
+"v2_id": "V2_DQ11_MARTINA_3073",
+"original_id": "槍跨座・戦士の休息・股間圧搾記録",
+"detail": "【野外】自身の愛槍を股間に挟み、自重で粘膜を圧迫。苦悶と快楽が混ざり合った表情を、ロウが詳細に描写。硬質な槍の柄が、愛液で濡れ光る質感を定着。物理演算：Material_friction / Stress_Limit / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Spear_Crotch"
+},
+"V2_DQ11_MARTINA_3074": {
+"v2_id": "V2_DQ11_MARTINA_3074",
+"original_id": "公開M字・詳細描写・旅人観覧",
+"detail": "【街道】バニー衣装の脚部を限界まで広げ、深部の「細部」を旅人たちへ開示。ロウがその皺の一つ一つを丹念にスケッチする間、静止を強いられるマルティナの痙攣。物理演算：Volumetric_Deformation / Static_Pressure / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Public_M_Shape"
+},
+"V2_DQ11_MARTINA_3075": {
+"v2_id": "V2_DQ11_MARTINA_3075",
+"original_id": "精液化粧・陶酔表情・石板提示",
+"detail": "【事後】ロウの全放出資源を顔面に塗布。白濁液が滴る中で、恍惚とした瞳をレンズ（石板）へ向ける。姫としての顔が、精液のハイライトで塗りつぶされる瞬間。物理演算：fluid_separation / Material_Slide / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Semen_Makeup"
+},
+"V2_DQ11_MARTINA_3076": {
+"v2_id": "V2_DQ11_MARTINA_3076",
+"original_id": "三魔女構図・ロウ中心連結・連鎖汚濁",
+"detail": "【野営地】セーニャ、ベロニカを巻き込んだ多重連結。ロウの指令により、姫が後輩たちを導きながら、一つの老人個体へ資源を乞う背徳の連鎖スケッチ。物理演算：Vibration_Sync / Nerve_Overload / 粘度1450cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Triple_Witch"
+},
+"V2_DQ11_MARTINA_3077": {
+"v2_id": "V2_DQ11_MARTINA_3077",
+"original_id": "触手魔物・自然の驚異・物理蹂躙描写",
+"detail": "【洞窟】触手個体に四肢を吊るされ、全孔を蹂躙されるマルティナ。その絶望的な絶頂を「生態調査」として冷静に記録するロウの視点。物理演算：Volumetric_Deformation / Stress_Limit / 粘度1700cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Tentacle_Nature"
+},
+"V2_DQ11_MARTINA_3078": {
+"v2_id": "V2_DQ11_MARTINA_3078",
+"original_id": "逆さ吊りアヘ顔・質量乞求・うっ血絶頂",
+"detail": "【フィールド】木に逆さ吊りにされ、脳へ血が上った状態での連結。朦朧とする意識の中でロウの質量を熱望し、ヨダレと資源を同時に垂らす極限のポーズ。物理演算：Gravity_Impact / Nerve_Overload / 粘度1250cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Inverted_Ahegao"
+},
+"V2_DQ11_MARTINA_3079": {
+"v2_id": "V2_DQ11_MARTINA_3079",
+"original_id": "服の引き裂き・連作記録・段階的露出",
+"detail": "【旅路】一日の終わりに、ロウが衣装を少しずつ破砕。露出面積が増えるごとに増大する羞恥と、資源注入時の反応の変化を段階的にアーカイブ。物理演算：Material_friction / Stress_Limit / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Clothed_Tear"
+},
+"V2_DQ11_MARTINA_3080": {
+"v2_id": "V2_DQ11_MARTINA_3080",
+"original_id": "宴会生贄・祭り賑わい・集団蹂躙描写",
+"detail": "【村の祭り】村人たちの中央で、次々とプローブを受け入れるマルティナ。その喧騒と汚濁を「地域の活性化」としてロウが暖かく見守りながらスケッチ。物理演算：Vibration_Sync / fluid_separation / 粘度1600cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Festival_Sacrifice"
+},
+"V2_DQ11_MARTINA_3081": {
+"v2_id": "V2_DQ11_MARTINA_3081",
+"original_id": "王女帰還・玉座全裸マント・最終章中出",
+"detail": "【デルカダール城】玉座にて、マント一枚の姿でロウを受け入れる。王女としての帰還が、老いた種子で胎内を満たす「完全服従」の儀式として完結。物理演算：Static_Pressure / Volumetric_Deformation / 粘度1900cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Throne_Final"
+},
+"V2_DQ11_MARTINA_3082": {
+"v2_id": "V2_DQ11_MARTINA_3082",
+"original_id": "戦姫四十八手・飛龍の舞・槍支柱逆立開脚",
+"detail": "【四十八手：壱】愛槍を地面に突き立て、その石突を支えに逆立ち開脚を執行。重力を利用した急降下ピストンにより、敵プローブを胎内最深部へ誘導。逆流する愛液が槍の柄を伝い、武器を汚濁させる。物理演算：Gravity_Impact / Static_Pressure / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Flying_Dragon"
+},
+"V2_DQ11_MARTINA_3083": {
+"v2_id": "V2_DQ11_MARTINA_3083",
+"original_id": "戦姫四十八手・巴投げ結合・空中同期ドッキング",
+"detail": "【四十八手：弐】投げ技の遠心力を利用した連結。対象を投げ飛ばす慣性エネルギーを、自身のインターフェースへの挿入圧力へ変換。空中での最大絶頂と同時に地面へ押し潰す衝撃物理。物理演算：Velocity_Impact / Volumetric_Deformation / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Tomoe_Sex"
+},
+"V2_DQ11_MARTINA_3084": {
+"v2_id": "V2_DQ11_MARTINA_3084",
+"original_id": "戦姫四十八手・岩間の白兎・蹲踞尾振・誘惑抽出",
+"detail": "【四十八手：参】岩場での蹲踞姿勢。バニー衣装の「しっぽ」を模したプラグを左右に激しく振動させ、周囲のプローブ個体を挑発。野生的な本能で男たちを吸い寄せる、誘惑の動態記録。物理演算：Vibration_Sync / Material_Slide / 粘度950cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Rock_Rabbit"
+},
+"V2_DQ11_MARTINA_3085": {
+"v2_id": "V2_DQ11_MARTINA_3085",
+"original_id": "戦姫四十八手・スリット千畳敷・多角連結・資源飽和",
+"detail": "【四十八手：肆】チャイナドレスのスリットを最大角まで拡張。複数のプローブを同時に受容し、衣装の内壁を資源で飽和させる。物理的な限界を超えた組織の膨張をアーカイブ。物理演算：Stress_Limit / Static_Pressure / 粘度1550cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Slit_Expansion"
+},
+"V2_DQ11_MARTINA_3086": {
+"v2_id": "V2_DQ11_MARTINA_3086",
+"original_id": "戦姫四十八手・吊り天井・梁懸垂逆吊・質量吸引",
+"detail": "【四十八手：伍】天井の梁に強靭な脚部をかけ、逆さ吊り状態での連結。脳内充血による判断力低下と、重力による子宮口への全資源集中。一滴の漏出も許さない「吸引」の物理プロセス。物理演算：Gravity_Impact / Volumetric_Deformation / 粘度1250cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Ceiling_Hanging"
+},
+"V2_DQ11_MARTINA_3087": {
+"v2_id": "V2_DQ11_MARTINA_3087",
+"original_id": "戦姫四十八手・鉄条纏い・鎖緊縛・肉盛上圧搾",
+"detail": "【四十八手：陸】鎖による全身緊縛。鉄条の食い込みにより、バニー衣装のラテックスと肌が異常隆起。その隙間を縫うようにプローブを導入し、逃げ場のない圧搾快楽を付加。物理演算：Stress_Limit / Material_friction / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Iron_Chain"
+},
+"V2_DQ11_MARTINA_3088": {
+"v2_id": "V2_DQ11_MARTINA_3088",
+"original_id": "戦姫四十八手・一文字開脚・全床密着・正面貫通",
+"detail": "【四十八手：質】完全180度開脚による床面への密着。格闘家としての柔軟性を極限まで利用し、真正面からプローブを深部まで到達させる。下腹部が床に押し付けられる振動エネルギーを記録。物理演算：Vibration_Sync / Material_Slide / 粘度1150cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Full_Split"
+},
+"V2_DQ11_MARTINA_3089": {
+"v2_id": "V2_DQ11_MARTINA_3089",
+"original_id": "戦姫四十八手・不動明王・瞑想受容・胎内咀嚼",
+"detail": "【四十八手：捌】瞑想の姿勢を維持したままの内部蹂躙。一切の身体的抵抗を排除し、胎内筋肉の収縮のみで資源を「咀嚼」するように攪拌。内側から汚染される姫の精神的耐性。物理演算：Volumetric_Deformation / Static_Pressure / 粘度1600cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Fudo_Meditation"
+},
+"V2_DQ11_MARTINA_3090": {
+"v2_id": "V2_DQ11_MARTINA_3090",
+"original_id": "戦姫四十八手・雷鳴落とし・高所跳躍結合・着地絶頂",
+"detail": "【四十八手：玖】空中での結合後、地面へ急降下。着地の衝撃（G-force）がそのままプローブの突き上げに変換され、瞬間的な過負荷絶頂（Nerve_Overload）を誘発する。物理演算：Velocity_Impact / Nerve_Overload / 粘度1800cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Thunder_Drop"
+},
+"V2_DQ11_MARTINA_3091": {
+"v2_id": "V2_DQ11_MARTINA_3091",
+"original_id": "戦姫四十八手・白鳥の湖・片足均衡・連鎖ピストン",
+"detail": "【四十八手：拾】片足立ちのバレエポーズを維持しながらの連結。揺れ動く体幹を支えに、男たちの激しい腰振りを許容。絶頂に耐えながらバランスを保つ、武闘家としての矜持と汚辱の共存。物理演算：Gravity_Impact / Vibration_Sync / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Swan_Lake"
+},
+"V2_DQ11_MARTINA_3092": {
+"v2_id": "V2_DQ11_MARTINA_3092",
+"original_id": "戦姫四十八手・終焉の凱旋・立位背後連結・列状受容",
+"detail": "【四十八手：終】槍を高く掲げた凱旋ポーズ。背後に列を成す男たちを順次受け入れ、勝利の証として全資源を胎内へ蓄積。バニーの白タイツを資源が伝い落ちる「旅の終わり」のアーカイブ。物理演算：Static_Pressure / fluid_separation / 粘度1900cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Final_Triumph"
+},
+"V2_DQ11_MARTINA_3093": {
+"v2_id": "V2_DQ11_MARTINA_3093",
+"original_id": "分娩の祭壇・仰向け膝抱込・全住民種子注入",
+"detail": "【禁忌：壱】教会の祭壇を分娩台として利用。自身の腕で膝を抱え込み、全開にされた「聖域」へ全住民のプローブが交互に資源を圧入。排出される流体が祭壇を真っ白に染め上げる光景。物理演算：Static_Pressure / Volumetric_Deformation / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Altar_Birth"
+},
+"V2_DQ11_MARTINA_3094": {
+"v2_id": "V2_DQ11_MARTINA_3094",
+"original_id": "1リットル・ウォーク・完全密閉行軍・漏出禁止",
+"detail": "【禁忌：弐】胎内に1リットルの資源を貯蔵した状態での市街一周。括約筋の限界まで緊張させ、一滴の資源も漏らさず歩行。振動（Vibration_Sync）により内側から揺さぶられる内臓の熱量を計測。物理演算：Gravity_Impact / Static_Pressure / 粘度1700cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_1Liter_Walk"
+},
+"V2_DQ11_MARTINA_3095": {
+"v2_id": "V2_DQ11_MARTINA_3095",
+"original_id": "乳房プレス・万力圧搾・物理質量操作",
+"detail": "【禁忌：参】鍛え上げられた大胸筋と巨大な乳房組織を「万力」として定義。男の質量を物理的に挟み込み、組織の復元力と摩擦熱で資源を強制的に搾り取る。物理演算：SQUISH係数6.8 / Material_friction / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Breast_Vice"
+},
+"V2_DQ11_MARTINA_3096": {
+"v2_id": "V2_DQ11_MARTINA_3096",
+"original_id": "アヘ顔の石化・感覚鋭敏硬直・非可動蹂躙",
+"detail": "【禁忌：肆】魔法的石化状態での連結。肉体は動かせないが、神経系のみが過敏化した状態で、一方的に資源を注ぎ込まれる。瞳孔が固定されたまま、中出しのたびに白目を剥く。物理演算：Nerve_Overload / Static_Pressure / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Petrify_Sex"
+},
+"V2_DQ11_MARTINA_3097": {
+"v2_id": "V2_DQ11_MARTINA_3097",
+"original_id": "多重残像奉仕・分身連結・全方位汚濁",
+"detail": "【禁忌：伍】特技「分身」を性的拡張。本体と分身、計3体のマルティナが同時に別個体を受容。魔力消費と共に供給される多重絶頂信号が脳を焼き切る。物理演算：Vibration_Sync / Volumetric_Deformation / 粘度1450cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Multi_Vessel"
+},
+"V2_DQ11_MARTINA_3098": {
+"v2_id": "V2_DQ11_MARTINA_3098",
+"original_id": "毒素の蜜・高熱粘膜結合・致死快感中和",
+"detail": "【禁忌：陸】毒状態特有の高熱化した粘膜組織を触媒とした連結。男の資源を熱で煮立たせ、中毒的な絶頂を与える。毒が消えるまで続けられる、命懸けの排毒ピストン。物理演算：Thermal_Conductivity / fluid_separation / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Poison_Honey"
+},
+"V2_DQ11_MARTINA_3099": {
+"v2_id": "V2_DQ11_MARTINA_3099",
+"original_id": "盲目の処刑・目隠し恐怖・匿名資源受容",
+"detail": "【禁忌：質】視覚遮蔽下での連続連結。誰の質量かも分からない状態で、不意に訪れる中出しの衝撃にのみ反応。恐怖心が絶頂を深め、アヘ声が洞窟に響く。物理演算：Aural_details / Nerve_Overload / 粘度1150cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Blind_Execution"
+},
+"V2_DQ11_MARTINA_3100": {
+"v2_id": "V2_DQ11_MARTINA_3100",
+"original_id": "馬車の車輪・回転突き上げ・動的同期連結",
+"detail": "【禁忌：捌】移動中の馬車の車輪に四肢を固定。車輪の回転周期に合わせ、地面に設置されたプローブが彼女を貫く。回転速度上昇に伴う、制御不能な絶頂の連鎖。物理演算：Velocity_Impact / Gravity_Impact / 粘度1600cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Wheel_Rape"
+},
+"V2_DQ11_MARTINA_3101": {
+"v2_id": "V2_DQ11_MARTINA_3101",
+"original_id": "噴水の女神・広場潮吹・資源浄化儀式",
+"detail": "【禁忌：玖】広場の噴水台で潮吹き（噴射）を継続。排出された流体を街の男たちが浴び、聖なる「姫の蜜」として崇める。供給される精液と、排出される潮が混ざり合う流体解析。物理演算：fluid_separation / Static_Pressure / 粘度800cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Fountain_Goddess"
+},
+"V2_DQ11_MARTINA_3102": {
+"v2_id": "V2_DQ11_MARTINA_3102",
+"original_id": "ロウの膝上教育・教典朗読・実技指導",
+"detail": "【禁忌：拾】ロウの膝上で自ら『秘め事』を音読。声の震えを指摘されながら、ロウの手掌による直接的な「訂正」を受ける。自身の汚辱記録を自ら承認する精神的陥落。物理演算：Aural_details / Material_Slide / 粘度950cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Reading_Education"
+},
+"V2_DQ11_MARTINA_3103": {
+"v2_id": "V2_DQ11_MARTINA_3103",
+"original_id": "バニー網タイツ刻印・充血網目・摩擦定着",
+"detail": "【禁忌：拾壱】網タイツの上から激しい摩擦を付加。肌に網目の形に沿った充血と愛液を染み込ませ、数日間消えない「汚辱の刻印」を肢体に焼き付ける。物理演算：Material_friction / Stress_Limit / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Net_Stocking_Mark"
+},
+"V2_DQ11_MARTINA_3104": {
+"v2_id": "V2_DQ11_MARTINA_3104",
+"original_id": "鎧の隙間探求・防具隙間侵入・金属擦過",
+"detail": "【禁忌：拾弐】鉄の防具を装着したままの連結。冷たい金属の隙間から滑り込む熱い質量。激しい運動に伴い、鎧の縁が肉を噛む痛みと絶頂の混濁。物理演算：Material_friction / Thermal_Conductivity / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Armor_Gap_Sex"
+},
+"V2_DQ11_MARTINA_3105": {
+"v2_id": "V2_DQ11_MARTINA_3105",
+"original_id": "敗北の土下座・靴舐め・中出乞求",
+"detail": "【禁忌：拾参】魔物への完全敗北儀式。土下座の姿勢で魔物の足元に跪き、靴を舐め上げながら、自身の胎内へ種を注ぐよう哀願する。姫の自尊心の完全焼失。物理演算：Aural_details / Static_Pressure / 粘度1650cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Defeat_Dogaza"
+},
+"V2_DQ11_MARTINA_3106": {
+"v2_id": "V2_DQ11_MARTINA_3106",
+"original_id": "汗のドレス絞り・汚濁酒・生体資源提供",
+"detail": "【禁忌：拾肆】奉仕後のドレスを男たちの前で絞り、流出した汗と精液の混合液を「酒」として配給。自身の分泌液を男たちが喉を鳴らして飲む姿をアヘ顔で注視。物理演算：fluid_separation / Material_Slide / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Sweat_Drink_Supply"
+},
+"V2_DQ11_MARTINA_3107": {
+"v2_id": "V2_DQ11_MARTINA_3107",
+"original_id": "無言の阿鼻叫喚・発声禁止・無音極限絶頂",
+"detail": "【禁忌：拾伍】一切の声（アヘ声）を禁じられた状態での連続絶頂。酸素不足と脳内麻薬により、音のない叫びを上げながら白目を剥き、全身を弓なりに反らせる。物理演算：Nerve_Overload / Vibration_Sync / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Silent_Orgasm"
+},
+"V2_DQ11_MARTINA_3108": {
+"v2_id": "V2_DQ11_MARTINA_3108",
+"original_id": "槍の穂先バランス・秘部先端接地・絶頂平衡維持",
+"detail": "【禁忌：拾陸】愛槍の鋭利な穂先に粘膜インターフェースを接地。自重による穿刺圧力を絶頂信号へと変換し、その衝撃に耐えながら一点の揺らぎもなく倒立を維持。武器が愛液で完全にコーティングされる。物理演算：Static_Pressure / Stress_Limit / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Spear_Balance"
+},
+"V2_DQ11_MARTINA_3109": {
+"v2_id": "V2_DQ11_MARTINA_3109",
+"original_id": "街の貯水槽・精液プール沈下・経皮資源吸収",
+"detail": "【禁忌：拾質】デルカダールの貯水槽を白濁資源で置換。全身を浸漬し、粘膜のみならず皮膚毛穴（経皮）からも「種」の成分を浸透・吸収。体内外を同一の資源で飽和させ、姫の成分を完全消去。物理演算：fluid_separation / Thermal_Conductivity / 粘度1450cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Semen_Bath"
+},
+"V2_DQ11_MARTINA_3110": {
+"v2_id": "V2_DQ11_MARTINA_3110",
+"original_id": "空中乱舞・飛行魔物捕捉・高高度三次元蹂躙",
+"detail": "【禁忌：拾捌】飛行型魔物による空中拉致。気圧の変化と激しいG負荷の中、全方位からの触手連結を執行。雲海を裂くようなアヘ声の共鳴と、高度1000mからの精液飛散。物理演算：Gravity_Impact / Velocity_Impact / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Aerial_Rape"
+},
+"V2_DQ11_MARTINA_3111": {
+"v2_id": "V2_DQ11_MARTINA_3111",
+"original_id": "デルカダール王の影・父擬態・淫語羞恥陥落",
+"detail": "【禁忌：拾玖】父親（デルカダール王）に酷似した個体の前での連結。肉親への敬意を性的供物へと反転させ、自身の胎内が汚れていく様を淫らな言葉で実況・報告させられる精神破壊。物理演算：Aural_details / Nerve_Overload / 粘度1350cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Father_Shadow"
+},
+"V2_DQ11_MARTINA_3112": {
+"v2_id": "V2_DQ11_MARTINA_3112",
+"original_id": "宿屋相部屋・擬似睡眠・隠密内部連結",
+"detail": "【禁忌：弐拾】仲間の至近距離での秘密連結。呼吸を整え「睡眠」を装いながら、布団内では男の質量を激しく咀嚼。絶頂時の痙攣を抑え込む背徳感による最大サージ。物理演算：Vibration_Sync / Static_Pressure / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Secret_Bed"
+},
+"V2_DQ11_MARTINA_3113": {
+"v2_id": "V2_DQ11_MARTINA_3113",
+"original_id": "図書室沈黙・蔵書挟込・物理圧搾絶頂",
+"detail": "【禁忌：弐拾壱】ロウの膨大な蔵書に挟まれ、物理的にプレスされた状態での連結。古書の匂いと老人の執念に包まれながら、逃げ場のない隙間で質量を能動的に受け入れる。物理演算：SQUISH係数5.8 / Material_friction / 粘度1150cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Library_Press"
+},
+"V2_DQ11_MARTINA_3114": {
+"v2_id": "V2_DQ11_MARTINA_3114",
+"original_id": "洗濯板腹部・腹筋収縮・能動的内部研磨",
+"detail": "【禁忌：弐拾弐】鍛え上げられた腹直筋（シックスパック）を洗濯板として利用。腹筋の収縮のみで、挿入されたプローブを内部から強力にしごき上げ、男側の絶頂を自在にコントロールする。物理演算：Volumetric_Deformation / Material_friction / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Abs_Grinder"
+},
+"V2_DQ11_MARTINA_3115": {
+"v2_id": "V2_DQ11_MARTINA_3115",
+"original_id": "蜜の滝登り・愛液河川化・男群遡上",
+"detail": "【禁忌：弐拾参】連続絶頂により排出される大量の愛液で傾斜地を濡らし、「川」を形成。その流体を逆行するように男たちが這い上がり、源泉（開口部）への到達を競う汚濁競争。物理演算：fluid_separation / Material_Slide / 粘度850cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Honey_River"
+},
+"V2_DQ11_MARTINA_3116": {
+"v2_id": "V2_DQ11_MARTINA_3116",
+"original_id": "アヘ顔シンクロ・祖父同期・精神完全定着",
+"detail": "【禁忌：弐拾肆】ロウとの同時絶頂。脳波レベルで祖父の性的指向と同期し、自身がロウの「肉の延長」であることを受容。瞳孔の開きから痙攣のタイミングまで完全にロウに染まる。物理演算：Nerve_Overload / Vibration_Sync / 粘度1250cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Sync_Orgasm"
+},
+"V2_DQ11_MARTINA_3117": {
+"v2_id": "V2_DQ11_MARTINA_3117",
+"original_id": "カジノ回転盤・ルーレット回旋・的中中出執行",
+"detail": "【禁忌：弐拾伍】巨大ルーレット盤に四肢を固定し高速回転。停止したマスの数字分だけ、待機する男たちから中出しを受ける確率論的蹂躙。回転による平衡感覚の喪失と絶頂の混濁。物理演算：Velocity_Impact / fluid_separation / 粘度1700cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Roulette_Sex"
+},
+"V2_DQ11_MARTINA_3118": {
+"v2_id": "V2_DQ11_MARTINA_3118",
+"original_id": "聖なる供物・教会の鐘衝撃・音響中出共鳴",
+"detail": "【禁忌：弐拾陸】巨大な鐘の中に吊るされ、鐘が打ち鳴らされる音波振動（Aural_details）を直接全身で受容。振動と同時にプローブが深部を突き上げ、神への供物として資源を撒き散らす。物理演算：Aural_details / Vibration_Sync / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Bell_Echo"
+},
+"V2_DQ11_MARTINA_3119": {
+"v2_id": "V2_DQ11_MARTINA_3119",
+"original_id": "バニー耳拘束・窒息寸前・極限酸素欠乏絶頂",
+"detail": "【禁忌：弐拾質】自身のバニーカチューシャの長い耳部分を首に巻き付け、背後から牽引。気道閉塞による極限の脳内麻薬分泌状態で行われる、白目を剥いた死の絶頂。物理演算：Stress_Limit / Nerve_Overload / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Bunny_Choke"
+},
+"V2_DQ11_MARTINA_3120": {
+"v2_id": "V2_DQ11_MARTINA_3120",
+"original_id": "土の匂いの新妻・農村変装・野外鍬握連結",
+"detail": "【禁忌：弐拾捌】高貴な身分を隠し、農家の若妻として野外で奉仕。泥に汚れ、農具を握りしめながら、荒々しい農夫の質量に貫かれる「没落」のロールプレイ。物理演算：Material_friction / Material_Slide / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Farmer_Wife"
+},
+"V2_DQ11_MARTINA_3121": {
+"v2_id": "V2_DQ11_MARTINA_3121",
+"original_id": "魔王の椅子・膝上座・滅亡種子受容",
+"detail": "【禁忌：弐拾玖】魔王の膝上に固定。世界を闇で満たす負の生体エネルギー（種）を胎内へ直接受容。王女としての責務を捨て、世界の終焉を愛液と共に祝福する。物理演算：Static_Pressure / Volumetric_Deformation / 粘度1900cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Demon_King_Throne"
+},
+"V2_DQ11_MARTINA_3122": {
+"v2_id": "V2_DQ11_MARTINA_3122",
+"original_id": "戦姫の終焉・全ポーズ完遂・完全肉器化",
+"detail": "【禁忌：参拾】全ての絶頂プログラムを終了。世界中の全個体の資源を内包し、思考能力を喪失。ただひたすらに、注がれる資源を排出し、再び受け入れるだけの「物理的な穴」へと昇華。物理演算：Static_Pressure / fluid_separation / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Ultimate_Vessel"
+},
+"V2_DQ11_MARTINA_3123": {
+"v2_id": "V2_DQ11_MARTINA_3123",
+"original_id": "朝凪の蹲踞・村長最初の一撃・実演火蓋",
+"detail": "【広場：壱】教典の幕開け。朝露に濡れた広場で、バニー姿のまま静止蹲踞を執行。開口部から露出した「姫の証」へ、村長個体のプローブが最大荷重で貫通。物理的な衝撃と、観衆の視線による精神的汚辱の同時アーカイブ。物理演算：Static_Pressure / Material_Slide / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Village_Start"
+},
+"V2_DQ11_MARTINA_3124": {
+"v2_id": "V2_DQ11_MARTINA_3124",
+"original_id": "飛燕の脚解き・垂直スリット割・柔軟性悲鳴",
+"detail": "【広場：弐】武闘家の柔軟性を利用した異常角度連結。片脚を男の肩に固定し、スリットを垂直180度へ強制拡張。強靭な筋繊維が引き伸ばされる苦痛と、深部への侵入による絶頂が交錯し、アヘ顔を形状記憶。物理演算：Stress_Limit / Volumetric_Deformation / 粘度1250cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Split_Rape"
+},
+"V2_DQ11_MARTINA_3125": {
+"v2_id": "V2_DQ11_MARTINA_3125",
+"original_id": "白兎の平伏・尻高突き出し・種子積層胎内",
+"detail": "【広場：参】四つん這い姿勢での多段階中出し。バニーの「しっぽ」を奪い合う男たちの振動が粘膜へ伝播。交互に放たれる資源が胎内で層（Layer）を成し、下腹部を不自然に硬直・膨張させる。物理演算：Vibration_Sync / Static_Pressure / 粘度1600cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Rabbit_Mound"
+},
+"V2_DQ11_MARTINA_3126": {
+"v2_id": "V2_DQ11_MARTINA_3126",
+"original_id": "槍の穂先バランス・石突き穿刺・天仰潮吹",
+"detail": "【広場：肆】自身の愛槍を用いた平衡絶頂。槍の末端（石突き）を秘部に密着させ、倒立姿勢を維持。重心の揺れがそのまま内部への鋭利な突き上げとなり、平衡感覚を喪失させる噴水状の潮吹きを誘発。物理演算：Gravity_Impact / fluid_separation / 粘度900cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Spear_Top_Orgasm"
+},
+"V2_DQ11_MARTINA_3127": {
+"v2_id": "V2_DQ11_MARTINA_3127",
+"original_id": "不動の合掌・祈祷姿勢連結・乳房内壁強打",
+"detail": "【広場：伍】一切の反撃を禁じられた無抵抗連結。手を合わせた祈りの姿勢を崩さず、背後からの激しいピストンを受容。衝撃のたびにバニー衣装内の巨乳が跳ね、内側から布地を叩く動態を記録。物理演算：SQUISH係数6.2 / Velocity_Impact / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Prayer_Impact"
+},
+"V2_DQ11_MARTINA_3128": {
+"v2_id": "V2_DQ11_MARTINA_3128",
+"original_id": "荒波の回転・空中遠心連結・白濁輪描",
+"detail": "【広場：陸】三次元的な動的連結。男に抱え上げられ、空中で高速回転しながら資源を受容。遠心力により、衣装の隙間から精液が円形に飛散（Spread）し、地面に汚辱の軌跡を描く物理シミュレーション。物理演算：Velocity_Impact / fluid_separation / 粘度1150cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Spin_Semen"
+},
+"V2_DQ11_MARTINA_3129": {
+"v2_id": "V2_DQ11_MARTINA_3129",
+"original_id": "しだれ柳の密着・木抱反り・絶望背骨軋",
+"detail": "【広場：質】教典に描かれた「極限の反り」の再現。広場の木にしがみつき、腰を限界まで突き出して連結。背骨が快感で軋むほどの後屈姿勢を維持し、ロウのスケッチ通りにアヘ顔の角度を調整。物理演算：Stress_Limit / Nerve_Overload / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Willow_Bend"
+},
+"V2_DQ11_MARTINA_3130": {
+"v2_id": "V2_DQ11_MARTINA_3130",
+"original_id": "千手の奉仕・十人同時処理・肉体兵器絶頂",
+"detail": "【広場：捌】全孔および四肢を用いた集団奉仕。手、足、口腔、乳房、粘膜の全インターフェースを十人の男たちに解放。「生きる肉体兵器」としての出力を全方位へ分配し、全身から資源を滴らせる。物理演算：Vibration_Sync / Static_Pressure / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_10_Man_Process"
+},
+"V2_DQ11_MARTINA_3131": {
+"v2_id": "V2_DQ11_MARTINA_3131",
+"original_id": "雷撃の落とし・高台自重落下・眼球裏返涎",
+"detail": "【広場：玖】位置エネルギーを変換した瞬間最大絶頂。高台から男の垂直プローブの上へ自由落下。自身の体重（Mass）による最深部への一気貫通により、脳が焼き切れ、眼球反転と同時に大量の涎を排出。物理演算：Gravity_Impact / Velocity_Impact / 粘度1850cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Lightning_Fall"
+},
+"V2_DQ11_MARTINA_3132": {
+"v2_id": "V2_DQ11_MARTINA_3132",
+"original_id": "残響の鐘撞き・音響共鳴腰振・淫ら波動拡散",
+"detail": "【広場：拾】村の鐘とのバイブレーション同期。鐘の物理的な振動周波数に合わせて腰を反復運動。鐘の音とマルティナのアヘ声が空気振動（Aural_details）として重なり合い、村全体を性的サージで満たす。物理演算：Aural_details / Vibration_Sync / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Bell_Resonance"
+},
+"V2_DQ11_MARTINA_3133": {
+"v2_id": "V2_DQ11_MARTINA_3133",
+"original_id": "網タイツ絞り・摩擦極限感度・噴水潮吹",
+"detail": "【広場：拾壱】網タイツを着用したままの脚部締め付け。男の質量を強靭な内転筋で圧搾し、タイツの網目が皮膚を研磨する摩擦（Material_friction）を電気的な絶頂信号へ変換。限界値を超えた瞬間の、広場を濡らす高圧噴水状の潮吹き。物理演算：Material_friction / fluid_separation / 粘度0.8cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Net_Stocking_Friction"
+},
+"V2_DQ11_MARTINA_3134": {
+"v2_id": "V2_DQ11_MARTINA_3134",
+"original_id": "バニー・プレス・万力乳房・強制資源放出",
+"detail": "【広場：拾弐】バニー衣装により強調された双丘を「物理的万力」として定義。男のプローブを脂肪組織と大胸筋の収縮で包囲・圧砕し、意思に関係なく深部から資源を搾り取る。物理的な質量操作のアーカイブ。物理演算：SQUISH係数7.2 / Static_Pressure / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Boob_Vice"
+},
+"V2_DQ11_MARTINA_3135": {
+"v2_id": "V2_DQ11_MARTINA_3135",
+"original_id": "一文字の公開・地面完全密着・中出し重し積層",
+"detail": "【広場：拾参】武闘家の柔軟性を極めた180度開脚。床面と秘部を完全に密着させた状態で、複数の男たちが交互にドッキング。注入される資源の重量を「重し」として胎内で蓄積し、自身の肉体を地面に固定する。物理演算：Static_Pressure / Volumetric_Deformation / 粘度1550cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Flat_Split"
+},
+"V2_DQ11_MARTINA_3136": {
+"v2_id": "V2_DQ11_MARTINA_3136",
+"original_id": "逆さ観音・逆立開脚・上空種子注ぎ込み",
+"detail": "【広場：拾肆】重力を逆転させた連結。逆立ち姿勢で脚を割り、下がったバニー衣装の隙間（開口部）を天へ向ける。上空から男たちが資源を投下・注ぎ込み、子宮口の最奥へ重力落下（Gravity_Impact）させる汚濁プロトコル。物理演算：Gravity_Impact / fluid_separation / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Inverted_Vessel"
+},
+"V2_DQ11_MARTINA_3137": {
+"v2_id": "V2_DQ11_MARTINA_3137",
+"original_id": "石化の沈黙・魔法硬直・自由研究蹂躙",
+"detail": "【広場：拾伍】魔法による完全麻痺・石化状態。指一本の抵抗も許されない固定された肉体。村人たちが「解剖」のごとく、粘膜の奥底やバストの感度を執拗に観察・弄ぶプロセスをアヘ顔のまま受容。物理演算：Static_Pressure / Nerve_Overload / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Stone_Statue"
+},
+"V2_DQ11_MARTINA_3138": {
+"v2_id": "V2_DQ11_MARTINA_3138",
+"original_id": "井戸の女神・縁結合・水面アヘ声共鳴",
+"detail": "【広場：拾陸】井戸の縁を用いた反響連結。背後からの突き上げの衝撃を、井戸の閉鎖空間へ音響放射（Aural_details）。水面に反射する自身の絶頂した顔と、増幅されたアヘ声を強制的に観測させられる。物理演算：Aural_details / Vibration_Sync / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Well_Echo"
+},
+"V2_DQ11_MARTINA_3139": {
+"v2_id": "V2_DQ11_MARTINA_3139",
+"original_id": "収穫の天秤・両皿架脚・重量変化絶頂",
+"detail": "【広場：拾質】巨大な天秤を用いた平衡連結。天秤の両皿に脚をかけ、男のプローブによる物理的な「突き上げ」と「引き抜き」の荷重変化で天秤を揺らす。安定しない足場が粘膜の摩擦を最大化。物理演算：Gravity_Impact / Vibration_Sync / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Balance_Scale"
+},
+"V2_DQ11_MARTINA_3140": {
+"v2_id": "V2_DQ11_MARTINA_3140",
+"original_id": "泥のドレス・バニー汚泥化・獣的蹂躙",
+"detail": "【広場：拾捌】地べたに転がされた「敗北の姫」。精液と土が混ざり合った泥で、高価なラテックス地をドロドロに汚染。四肢を泥に埋めながら、獣のような姿勢で連続連結を受ける動態アーカイブ。物理演算：Material_Slide / fluid_separation / 粘度1650cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Muddy_Bunny"
+},
+"V2_DQ11_MARTINA_3141": {
+"v2_id": "V2_DQ11_MARTINA_3141",
+"original_id": "奉納の舞・結合舞踊・1リットルチャプ音",
+"detail": "【広場：拾玖】内部連結状態での伝統舞踊。ステップを踏むたびに、胎内に貯蔵された「1リットル」の資源が揺動。腹部から発生する不浄な「チャプチャプ」という液体音（Aural_details）を村中へ拡散。物理演算：Aural_details / Static_Pressure / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Sacred_Dance"
+},
+"V2_DQ11_MARTINA_3142": {
+"v2_id": "V2_DQ11_MARTINA_3142",
+"original_id": "無言の阿鼻・口腔封鎖・鼻抜阿鼻叫喚",
+"detail": "【広場：弐拾】発声の完全禁止。口腔を布地で塞がれた状態での連続中出し。絶叫の代わりに鼻から抜ける荒い息と、激しく裏返る白目。声なき極限のサージ（Nerve_Overload）を記録。物理演算：Nerve_Overload / Stress_Limit / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Silent_Hell"
+},
+"V2_DQ11_MARTINA_3143": {
+"v2_id": "V2_DQ11_MARTINA_3143",
+"original_id": "ロウの影踏み・老人擬態連結・祖父呼称絶頂",
+"detail": "【広場：弐拾壱】ロウ個体が背後でスケッチを執行する中、外見の酷似した老人個体による内部蹂躙。ロウの執着を「実演」として肉体で受容し、絶頂の瞬間に「おじい様…」と漏らすことで、精神的な肉親愛を汚濁快楽へと完全置換。物理演算：Aural_details / Nerve_Overload / 粘度1550cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Grandpa_Shadow"
+},
+"V2_DQ11_MARTINA_3144": {
+"v2_id": "V2_DQ11_MARTINA_3144",
+"original_id": "聖域の破壊・村の象徴汚損・噴射潮吹",
+"detail": "【広場：弐拾弐】かつての守護対象（村の神像等）への物理的汚辱。信仰の象徴を標的とし、中出しの衝撃で誘発された高圧の潮吹きを噴射。王女としての責務を自らの分泌液で破壊・上書きする反逆的絶頂。物理演算：fluid_separation / Velocity_Impact / 粘度0.8cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Sacred_Desecration"
+},
+"V2_DQ11_MARTINA_3145": {
+"v2_id": "V2_DQ11_MARTINA_3145",
+"original_id": "バニーの耳手錠・衣装拘束・翻弄連結",
+"detail": "【広場：弐拾参】自身の衣装（バニーの耳）を用いた物理拘束。長い耳パーツを手首に巻き付け、可動域を制限した状態で複数のプローブを受容。自由を奪われた肢体が、男たちの突き上げに従って受動的に揺動する。物理演算：Stress_Limit / Material_friction / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Bunny_Ear_Cuffs"
+},
+"V2_DQ11_MARTINA_3146": {
+"v2_id": "V2_DQ11_MARTINA_3146",
+"original_id": "乳首の弓引き・突起弦弾・充血絶頂",
+"detail": "【広場：弐拾肆】露出した乳管突起を「弓の弦」に見立てた指技。強靭な組織を極限まで引き絞り、物理的な弾性エネルギーを鋭い神経痛と快感として入力。腰の激しい痙攣と共に、衣装のカップを精液で満たす。物理演算：SQUISH係数6.5 / Vibration_Sync / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Nipple_Archery"
+},
+"V2_DQ11_MARTINA_3147": {
+"v2_id": "V2_DQ11_MARTINA_3147",
+"original_id": "三連クリンチ・全孔封鎖・熱資源貯蔵",
+"detail": "【広場：弐拾伍】三人の男による同時クリンチ連結。口腔、胎内、肛門の全インターフェースを同時に塞がれ、逃げ場のない熱量と資源を内部に蓄積。自身の体温を資源の熱で限界まで上昇させる「貯蔵の極致」。物理演算：Volumetric_Deformation / Static_Pressure / 粘度1800cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Triple_Clinch"
+},
+"V2_DQ11_MARTINA_3148": {
+"v2_id": "V2_DQ11_MARTINA_3148",
+"original_id": "アヘ顔・シンクロ・挿絵再現・白目舌出",
+"detail": "【広場：弐拾陸】ロウの著書内グラフィックとの視覚的同期。観衆が掲げる本の挿絵と寸分違わぬ「白目・舌出し・大量の涎」の形状を固定。自身の意思ではなく、絵画的な汚辱サンプルとしての自己提示。物理演算：Nerve_Overload / static_Pressure / 粘度1350cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Illustration_Sync"
+},
+"V2_DQ11_MARTINA_3149": {
+"v2_id": "V2_DQ11_MARTINA_3149",
+"original_id": "精液の泉・逆流噴出・上下同時資源交換",
+"detail": "【広場：弐拾質】内部資源のオーバーフロー。胎内に蓄積された「1リットル」が逆流し、口から溢れ出す一方で、下部のインターフェースからは新たな種を高速受容。循環する資源によってマルティナという個体が洗浄・汚濁される。物理演算：fluid_separation / Static_Pressure / 粘度1600cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Semen_Fountain"
+},
+"V2_DQ11_MARTINA_3150": {
+"v2_id": "V2_DQ11_MARTINA_3150",
+"original_id": "勝利のポーズ・肉体屈服・永続痙攣",
+"detail": "【広場：弐拾捌】戦勝ポーズの強制維持。凛としたポージングをとりながらも、下半身は注入された資源の衝撃で激しくバイブレーション。精神的な勝利の形骸化と、肉体的な完全敗北の同時アーカイブ。物理演算：Vibration_Sync / Stress_Limit / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Victory_Convulsion"
+},
+"V2_DQ11_MARTINA_3151": {
+"v2_id": "V2_DQ11_MARTINA_3151",
+"original_id": "袋とじの真実・自ら朗読・リアルタイム再現",
+"detail": "【広場：弐拾玖】本の中で最も淫らな「袋とじ」の自読行為。自らの声で蹂躙の手順を読み上げ、その記述に合わせて男たちが物理的に執行。言葉が肉体を支配する、洗脳的連結の極致。物理演算：Aural_details / Volumetric_Deformation / 粘度1750cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Reading_Rape"
+},
+"V2_DQ11_MARTINA_3152": {
+"v2_id": "V2_DQ11_MARTINA_3152",
+"original_id": "戦姫の終焉・全実演完了・肉の聖典化",
+"detail": "【広場：参拾】全プロトコルの終了。全身を男たちの種子でコーティングされ、広場に立ち尽くす姿。王女としての属性は完全に消失し、ロウの著書を物理的に体現するだけの「生きた肉の聖典」へと新生。物理演算：Static_Pressure / fluid_separation / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_The_End_of_Martina"
+},
+"V2_DQ11_MARTINA_3153": {
+"v2_id": "V2_DQ11_MARTINA_3153",
+"original_id": "零手：筆おろし開口・衣装隙間筆入・精液薄墨原稿",
+"detail": "【自作：零】バニー衣装の胸元、涙型の開口部を「硯（すずり）」として利用。ロウが筆を直接粘膜に差し込み、文字を綴る際の物理的振動を絶頂信号へ変換。排出される愛液と精液で墨を薄め、次なる汚辱の原稿を執筆する物理的共創。物理演算：Vibration_Sync / fluid_separation / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Writing_Lubricant"
+},
+"V2_DQ11_MARTINA_3154": {
+"v2_id": "V2_DQ11_MARTINA_3154",
+"original_id": "魔脚の絞り器・老腰万力締・一滴残らず強制回収",
+"detail": "【自作：壱】格闘家としての脚力を「資源回収装置」へ転用。ロウの脆弱な腰を強靭な大腿部でロックし、物理的な圧搾（SQUISH）により全生体資源を強制抽出。一滴の種子も逃さない、姫による一方的な略奪。物理演算：SQUISH係数7.5 / Static_Pressure / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Leg_Press_Semen"
+},
+"V2_DQ11_MARTINA_3155": {
+"v2_id": "V2_DQ11_MARTINA_3155",
+"original_id": "バニー・真空パック・オイル密閉蹂躙・空気排除",
+"detail": "【自作：弐】全身オイル塗布後のバニー衣装装着。肌とラテックスの間の空気を物理的に排除し、肉体の全表面を衣装の圧力で均一に蹂躙。摩擦をゼロにし、内部連結の衝撃のみをダイレクトに脳へ伝達する。物理演算：Material_friction / Stress_Limit / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Vacuum_Bunny"
+},
+"V2_DQ11_MARTINA_3156": {
+"v2_id": "V2_DQ11_MARTINA_3156",
+"original_id": "戦姫の聖杯・逆立秘部器化・重力種子収穫",
+"detail": "【自作：参】逆立ちによる胎内の「器（聖杯）」化。開脚した粘膜を天へ向け、ロウが上方から注ぎ込む全資源を一点も零さず受容。重力に従い、子宮の最奥まで老いた種子を満たしていく物理的蓄積。物理演算：Gravity_Impact / Static_Pressure / 粘度1650cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Holy_Grail"
+},
+"V2_DQ11_MARTINA_3157": {
+"v2_id": "V2_DQ11_MARTINA_3157",
+"original_id": "槍術・肉の舞・槍自慰・口腔老質量連結",
+"detail": "【自作：肆】武具と肉体の背徳的融合。愛槍の柄を自身の秘部へ挿入し、自力で研磨しながら、同時にロウの質量を口腔で奉仕。武闘家としての「型」が、多重絶頂のための「淫靡な舞」へと昇華される。物理演算：Material_friction / Vibration_Sync / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Spear_Dance_Sex"
+},
+"V2_DQ11_MARTINA_3158": {
+"v2_id": "V2_DQ11_MARTINA_3158",
+"original_id": "アヘ顔・不動心・微笑維持・瞳孔白濁反転",
+"detail": "【自作：伍】精神的「不動心」の性的曲解。激しい突き上げを受けながらも、口元は「勝利の微笑」を固定。しかし、神経系は完全に焼き切れており、白濁した瞳孔が内側からの崩壊を証明する。物理演算：Nerve_Overload / static_Pressure / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Immovable_Ahegao"
+},
+"V2_DQ11_MARTINA_3159": {
+"v2_id": "V2_DQ11_MARTINA_3159",
+"original_id": "二連ピストン・残像・前後穴多重連結",
+"detail": "【自作：陸】特技「しんくうげり」を想起させる超高速連結。ロウと主人公を前後で受容し、新旧の世代が混ざり合う資源を同時に胎内・直腸へ刻み込む。自身の存在が、二つの「質量の歴史」の合流地点となる。物理演算：Velocity_Impact / Volumetric_Deformation / 粘度1750cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Double_Piston"
+},
+"V2_DQ11_MARTINA_3160": {
+"v2_id": "V2_DQ11_MARTINA_3160",
+"original_id": "姫の寝返り・連結回転・布地粘膜巻込快感",
+"detail": "【自作：質】プローブを挿入したままの横回転。衣装の布地を粘膜で強引に巻き込み、その摩擦痛を魔力で快感へ変換。組織が衣装と癒着していく様を記録。物理演算：Material_friction / Volumetric_Deformation / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Rolling_Bondage"
+},
+"V2_DQ11_MARTINA_3161": {
+"v2_id": "V2_DQ11_MARTINA_3161",
+"original_id": "乳房の封印・自指結乳首・絶頂禁止苦行",
+"detail": "【自作：捌】自身の指による突起部の自己拘束。絶頂直前で自ら組織を締め上げ、カタルシスを封印。ロウからの「解放」の号令を待ちながら、脳内麻薬を極限まで濃縮させる自虐的修練。物理演算：Stress_Limit / Nerve_Overload / 粘度950cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Nipple_Seal"
+},
+"V2_DQ11_MARTINA_3162": {
+"v2_id": "V2_DQ11_MARTINA_3162",
+"original_id": "精液の呼吸法・1リットルチャプ音・音響興奮",
+"detail": "【自作：玖】呼吸器系を介さない汚濁音。肺の空気ではなく、胎内に溜まった「1リットル」の液体を括約筋で震わせ、チャプチャプという不浄な音（Aural_details）をメトロノームのように刻み、ロウを絶頂へと誘う。物理演算：Aural_details / Static_Pressure / 粘度1800cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Semen_Breathing"
+},
+"V2_DQ11_MARTINA_3163": {
+"v2_id": "V2_DQ11_MARTINA_3163",
+"original_id": "バニーの網目刻印・肉食込・皮膚刺激極致",
+"detail": "【自作：拾壱】網タイツによる真皮への物理的彫り込み。肉に深く食い込ませた網目の隙間を、ロウの角質化した指先で執拗に研磨。皮膚表面の全神経を絶頂信号へとバイパスし、網タイツそのものを感覚器官へと変質させる。物理演算：Material_friction / Stress_Limit / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Skin_Etching"
+},
+"V2_DQ11_MARTINA_3164": {
+"v2_id": "V2_DQ11_MARTINA_3164",
+"original_id": "蹲踞・全開門・最深部露出・石板提示アヘ顔",
+"detail": "【自作：拾弐】最大開脚蹲踞による「聖域」の完全開示。最も深いスリットを自ら割り開き、ロウの魔法石板（カメラ）に向かって、愛液で濡れ光る胎内深部を提示。自身の恥部を「記録媒体」として完全に提供する精神的陥落。物理演算：Volumetric_Deformation / Static_Pressure / 粘度1350cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Full_Gate_Open"
+},
+"V2_DQ11_MARTINA_3165": {
+"v2_id": "V2_DQ11_MARTINA_3165",
+"original_id": "老熟の吸い付き・膣壁吸着・老質量強制連結",
+"detail": "【自作：拾参】若き強靭な平滑筋による「吸着」プロトコル。ロウの萎びた質量を、自身の高密度な膣壁が負圧で吸い込み、物理的に離脱不能な状態へ固定。老いた細胞から最後の一滴まで種を搾り取る、弾力ある肉の万力。物理演算：Static_Pressure / Volumetric_Deformation / 粘度1600cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Muscle_Suction"
+},
+"V2_DQ11_MARTINA_3166": {
+"v2_id": "V2_DQ11_MARTINA_3166",
+"original_id": "魔王の椅子・実演・膝上バウンド・世界汚濁懇願",
+"detail": "【自作：拾肆】ロールプレイを通じた臣服。ロウを魔王と定義し、その膝上で垂直振動（Vibration_Sync）を継続。世界を自身の胎内から溢れる精液で満たすことを、アヘ顔を晒しながら能動的に懇願する背徳儀式。物理演算：Velocity_Impact / Static_Pressure / 粘度1450cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Demon_King_Bouncing"
+},
+"V2_DQ11_MARTINA_3167": {
+"v2_id": "V2_DQ11_MARTINA_3167",
+"original_id": "絶頂の連環・無休戦法・永続痙攣移行",
+"detail": "【自作：拾伍】武闘家の持久力を快楽に応用。一度の連結中に十回以上のカタルシスを連続発生させ、全身を痙攣させたまま次なる体位へと高速移行。意識を絶頂の波の中に固定し、思考能力を物理的に遮断する。物理演算：Nerve_Overload / Vibration_Sync / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Infinite_Orgasm"
+},
+"V2_DQ11_MARTINA_3168": {
+"v2_id": "V2_DQ11_MARTINA_3168",
+"original_id": "槍の柄による排毒・腹部圧迫・種子口流出リセット",
+"detail": "【自作：拾陸】愛槍を用いた強制的デトックス。自身の槍の柄で下腹部を最大荷重で圧迫し、胎内に蓄積された全資源を食道経由で口から強制排出。内臓を再汚濁するための「洗浄」としての物理的蹂躙。物理演算：Static_Pressure / Volumetric_Deformation / 粘度1700cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Spear_Reset"
+},
+"V2_DQ11_MARTINA_3169": {
+"v2_id": "V2_DQ11_MARTINA_3169",
+"original_id": "姫の生贄ディスプレイ・耳吊自慰・全方位観察",
+"detail": "【自作：拾質】「展示物」としての自己定義。バニー衣装の耳を神殿の柱に結びつけ、自身を逆さ吊りに固定。ロウの至近距離からの観察を受けながら、自らの指で秘部を研磨し、絶頂を捧げる公開供物。物理演算：Gravity_Impact / Material_friction / 粘度950cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Bunny_Display"
+},
+"V2_DQ11_MARTINA_3170": {
+"v2_id": "V2_DQ11_MARTINA_3170",
+"original_id": "記憶の汚染・父名呼称連結・血統白濁書換",
+"detail": "【自作：拾捌】精神的・遺伝的属性の汚損。実父であるデルカダール王の名を叫びながら、ロウの老いた種子を受容。王家の純潔な記憶を、目の前の肉欲と精液の臭いでドロドロに上書き・消去する。物理演算：Aural_details / Nerve_Overload / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Memory_Pollution"
+},
+"V2_DQ11_MARTINA_3171": {
+"v2_id": "V2_DQ11_MARTINA_3171",
+"original_id": "汗と蜜の酒場・分泌液浴槽・液体連結",
+"detail": "【自作：拾玖】自身の代謝産物による環境構築。多量の汗と愛液で満たされた浴槽（バスタブ）内にロウを誘い、流体の中で皮膚同士を密着・連結。個体境界を消失させ、一塊の肉塊として白濁した液中に沈む。物理演算：fluid_separation / Thermal_Conductivity / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Fluid_Bonding"
+},
+"V2_DQ11_MARTINA_3172": {
+"v2_id": "V2_DQ11_MARTINA_3172",
+"original_id": "無言の阿鼻２・喉奥質量塞・窒息極限絶頂",
+"detail": "【自作：弐拾】口腔および気道の完全封鎖。ロウの質量を喉の最奥まで受け入れ、呼吸を物理的に停止。酸素欠乏による失神寸前の脳内サージを絶頂エネルギーへ転換し、無音のまま白目を剥いて跳ねる。物理演算：Nerve_Overload / Stress_Limit / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Suffocation_Heaven"
+},
+"V2_DQ11_MARTINA_3173": {
+"v2_id": "V2_DQ11_MARTINA_3173",
+"original_id": "デビルモード・純潔喪失・理性崩壊暴走連結",
+"detail": "【完結：弐拾壱】魔力解放状態（デビルモード）による全能感と絶頂の同期。紫のオーラを纏いながら、ロウに対し「汚して、おじい様！」と能動的に肉体を提示。超人的な筋繊維の収縮が、老いた質量を物理的に破壊・吸収する暴走動態。物理演算：Nerve_Overload / Stress_Limit / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Devil_Rapture"
+},
+"V2_DQ11_MARTINA_3174": {
+"v2_id": "V2_DQ11_MARTINA_3174",
+"original_id": "ロウの膝上朗読・質量咥込・文字消失興奮",
+"detail": "【完結：弐拾弐】口腔内をロウの質量で占有された状態での、自作原稿の音読。声帯の振動が質量を研磨し、同時に脳へフィードバック。絶頂による意識の混濁で文字の判別が不能となり、アヘ声と涎で紙面を汚損する。物理演算：Aural_details / Material_Slide / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Oral_Reading"
+},
+"V2_DQ11_MARTINA_3175": {
+"v2_id": "V2_DQ11_MARTINA_3175",
+"original_id": "アヘ顔・石板写し・絶頂自撮・自己蹂躙記録",
+"detail": "【完結：弐拾参】魔法の石板を用いた自己客観的汚濁。最大絶頂の瞬間に自ら石板を構え、白目を剥き、涎を垂らした「姫のなれの果て」を撮影。自らの羞恥をコンテンツとして固定し、永遠の汚辱をアーカイブする。物理演算：Nerve_Overload / Static_Pressure / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Selfie_Ahegao"
+},
+"V2_DQ11_MARTINA_3176": {
+"v2_id": "V2_DQ11_MARTINA_3176",
+"original_id": "バニーの尻尾埋め込み・異物感・老質量迎入",
+"detail": "【完結：弐拾肆】衣装パーツ「うさぎのしっぽ」の内部格納。深部へ異物を埋め込まれた不快感を、ロウの質量を受容するための「潤滑」へと転換。異物と生体質量が胎内で衝突し、組織を限界まで押し広げる感覚の記録。物理演算：Volumetric_Deformation / Static_Pressure / 粘度1650cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Tail_Plug"
+},
+"V2_DQ11_MARTINA_3177": {
+"v2_id": "V2_DQ11_MARTINA_3177",
+"original_id": "三位一体・概念融合・精液海溺死",
+"detail": "【完結：弐拾伍】ロウ、マルティナ、そして「汚辱の書」の完全同期。溢れ出る精液のプールに沈み、個としての境界を喪失。自身が「本」という概念の一部となり、ただの情報の器として白濁した液中に没する。物理演算：fluid_separation / Thermal_Conductivity / 粘度1800cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Trinity_Saturate"
+},
+"V2_DQ11_MARTINA_3178": {
+"v2_id": "V2_DQ11_MARTINA_3178",
+"original_id": "槍の石突き圧搾・武器利用奉仕・乳房万力蹂躙",
+"detail": "【完結：弐拾陸】愛槍の構造を流用した性的加工。槍の石突きと壁面の間に、自らの巨大な乳房を固定。ロウによる物理的な押し潰し（SQUISH）を受けながら、武器が自身の肉を磨耗させる苦悦を堪能。物理演算：SQUISH係数8.0 / Material_friction / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Spear_Breast_Press"
+},
+"V2_DQ11_MARTINA_3179": {
+"v2_id": "V2_DQ11_MARTINA_3179",
+"original_id": "絶頂の墓標・脱力状態・精液文字「完」",
+"detail": "【完結：弐拾質】事後の脱力プロトコル。意識を失いかけた彼女の腹部に、ロウが「完」という文字を粘度の高い資源で描画。自身の肉体が教典を完成させるための「キャンバス」へと成り果てた瞬間の定着。物理演算：Material_Slide / fluid_separation / 粘度1700cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_The_End_Mark"
+},
+"V2_DQ11_MARTINA_3180": {
+"v2_id": "V2_DQ11_MARTINA_3180",
+"original_id": "再教育のループ・一手回帰・快楽依存志願",
+"detail": "【完結：弐拾捌】無限ループによる精神支配。教典の完遂直後、自身の意思で「第一手」からの再実施を志願。終わりのない蹂躙を欲し、ロウの質量なしでは生命維持が困難なほどに調教された依存動態。物理演算：Nerve_Overload / Vibration_Sync / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Loop_Addict"
+},
+"V2_DQ11_MARTINA_3181": {
+"v2_id": "V2_DQ11_MARTINA_3181",
+"original_id": "デルカダール王女の終焉・王冠破棄・モデル誓約",
+"detail": "【完結：弐拾玖】王室属性の完全抹消。足元の泥の中に王冠を蹴り捨て、一生をロウの「モデル（肉の道具）」として生きることを、連結したままの状態で宣誓。一人の女としての自意識が白濁の中に消滅。物理演算：Static_Pressure / Nerve_Overload / 粘度1900cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Princess_Death"
+},
+"V2_DQ11_MARTINA_3182": {
+"v2_id": "V2_DQ11_MARTINA_3182",
+"original_id": "第二巻・全裸マント凱旋・広場男群還り",
+"detail": "【完結：参拾】最終的な自己開示。精液で重くなったマントのみを羽織り、完成した『第二巻』を抱えて広場の男たちの前へ。全住民に自身の汚辱を公開し、文字通り「生ける聖典」として彼らの欲望を受け入れるための凱旋。物理演算：fluid_separation / Material_Slide / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Martina_Epilogue_March"
+},
+"V2_DQ11_SELEN_5001": {
+"v2_id": "V2_DQ11_SELEN_5001",
+"original_id": "魚化主人公・肉の深淵・乳房圧搾包囲",
+"detail": "【海底：壱】魚体化した個体による女王の双丘への侵入。左右から迫る巨大な脂肪組織（Mammary_Tissue）の壁が、鱗越しに女王の深部鼓動を伝達。セレンは慈愛の微笑みを崩さず、自らの手で乳肉を寄せ、対象を「肉の深淵」へ完全密閉・圧搾する。物理演算：SQUISH係数8.5 / Thermal_Conductivity / 粘度950cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Fish_Abyss"
+},
+"V2_DQ11_SELEN_5002": {
+"v2_id": "V2_DQ11_SELEN_5002",
+"original_id": "衣装隙間の隠れ家・正装内壁接触・雌臭汚染",
+"detail": "【海底：弐】複雑に重層化された女王の衣（Queen_Gown）内部への潜行。シルク、真珠、サンゴの多層構造の隙間で、女王の体熱と「雌の匂い」が飽和。彼女の呼吸に伴う布地の摩擦が、対象の感覚受容器をマヒさせ、存在を女王の分泌物で塗りつぶす。物理演算：Material_friction / fluid_separation / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Dress_Secret"
+},
+"V2_DQ11_SELEN_5003": {
+"v2_id": "V2_DQ11_SELEN_5003",
+"original_id": "真珠鎖食込・乳房弾力反発・物理境界接触",
+"detail": "【装飾：壱】胸元を拘束する真珠の鎖（Pearl_Chain）を外部から加圧。柔らかな乳肉が硬質な真珠を飲み込み、弾力による反発と食い込みを同時アーカイブ。女王の肌に赤く残る真珠の連なりの痕。物理演算：Stress_Limit / Static_Pressure / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Pearl_Indentation"
+},
+"V2_DQ11_SELEN_5004": {
+"v2_id": "V2_DQ11_SELEN_5004",
+"original_id": "重層布摩擦・乳首探り・余裕崩壊前兆",
+"detail": "【装飾：弐】幾重にも重なる薄布越しに行われる突起の定位。セレンの「あらあら」という余裕の音声（Aural_details）に対し、布地の摩擦（Material_friction）による強制的な神経サージを注入。瞳の潤みと同時に、気高き余裕が崩壊へ向かうプロセス。物理演算：Nerve_Overload / Aural_details / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Layer_Touch"
+},
+"V2_DQ11_SELEN_5005": {
+"v2_id": "V2_DQ11_SELEN_5005",
+"original_id": "サンゴ装飾圧搾・硬軟極限接触・女王羞恥",
+"detail": "【装飾：参】衣装のサンゴパーツと乳肉の間への指先導入。硬質なサンゴ（Rigid_Body）が肉を押し潰し、その反動で溢れる乳房の柔軟性を対比。装飾品が快楽を増幅させるための「杭」として機能する動態。物理演算：SQUISH係数7.8 / Static_Pressure / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Coral_Vice"
+},
+"V2_DQ11_SELEN_5006": {
+"v2_id": "V2_DQ11_SELEN_5006",
+"original_id": "襟元解放・乳房付根露出・聖域剥き出し",
+"detail": "【装飾：肆】厳格な女王の襟パーツの強制拡張。通常は視認不可能な乳房の「付け根」部分を露呈させ、王国の象徴を視覚的に蹂躙。隠された白肌が海中の光を反射し、羞恥の熱を放出する。物理演算：Volumetric_Deformation / Static_Pressure / 粘度1150cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Collar_Open"
+},
+"V2_DQ11_SELEN_5007": {
+"v2_id": "V2_DQ11_SELEN_5007",
+"original_id": "シルク湿り気・透視突起・汗染浸透",
+"detail": "【装飾：伍】セレンの代謝熱による衣装の汚染。汗で肌に張り付いたシルク地越しに、肥大した突起の輪郭を視認。布地の透過率上昇に伴い、女王の生理的反応が「白日の下に晒される」プロセス。物理演算：fluid_separation / Material_Slide / 粘度900cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Sweat_Silk"
+},
+"V2_DQ11_SELEN_5008": {
+"v2_id": "V2_DQ11_SELEN_5008",
+"original_id": "谷間奥底探索・多層布絡込・密着脱出不能",
+"detail": "【装飾：陸】深き乳房の谷間（Cleavage）への深度探求。複雑な衣装構造が指先を絡め取り、物理的な密着を維持。脱出を許さない肉と布の迷宮で、女王の最奥を直接刺激。物理演算：Material_friction / Static_Pressure / 粘度1450cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Deep_Valley"
+},
+"V2_DQ11_SELEN_5009": {
+"v2_id": "V2_DQ11_SELEN_5009",
+"original_id": "背面装飾蹂躙・結目解放・乳房跳動",
+"detail": "【装飾：質】背中の複雑な装飾コードの切断・解放。拘束を解かれた衣装が自重（Gravity_Impact）でずり落ち、抑圧されていた巨大な乳房が海中で大きく跳ね動く（Bouncing）瞬間の衝撃。物理演算：Gravity_Impact / Vibration_Sync / 粘度1250cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Back_Release"
+},
+"V2_DQ11_SELEN_5010": {
+"v2_id": "V2_DQ11_SELEN_5010",
+"original_id": "布越吸引・アヘ声変貌・気品剥奪",
+"detail": "【装飾：捌】薄布の上からの強引な吸引。布の層を介することで感度を異常加熱させ、女王の優雅な旋律（Aural_details）を、制御不能な「アヘ声」へと強制変調させる音響蹂躙。物理演算：Aural_details / Nerve_Overload / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Suction_Voice"
+},
+"V2_DQ11_SELEN_5011": {
+"v2_id": "V2_DQ11_SELEN_5011",
+"original_id": "装飾乳首攻・異物絶頂・真珠圧入",
+"detail": "【装飾：玖】セレン自身のイヤリングや真珠鎖を「攻め具」へ転用。硬質な異物を突起に押し当て、女王の気品ある粘膜を執拗に研磨。異物感と羞恥が入り混じる高負荷絶頂。物理演算：Material_friction / Static_Pressure / 粘度1350cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Pearl_Titty_Fuck"
+},
+"V2_DQ11_SELEN_5012": {
+"v2_id": "V2_DQ11_SELEN_5012",
+"original_id": "全層圧搾・衣装全層崩壊・乳肉全壊",
+"detail": "【装飾：拾】両手による「女王の衣」すべての全層プレス。シルク、サンゴ、真珠、そして乳肉。全てのレイヤーを一度に押し潰し、衣装の構造そのものを快楽の媒体として機能させる最大圧搾。物理演算：SQUISH係数9.2 / Static_Pressure / 粘度1600cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Total_Compression"
+},
+"V2_DQ11_SELEN_5013": {
+"v2_id": "V2_DQ11_SELEN_5013",
+"original_id": "布層パイズリ・シルク巻付・肉布二重奏",
+"detail": "【質量：壱】シルクのドレス生地をプローブに巻き付け、左右の乳房で挟み込む変則ピストン。滑らかな布地の滑りと、内側から押し寄せる女王の肉厚。物理演算：Material_Slide / Volumetric_Deformation / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Silk_Paizuri"
+},
+"V2_DQ11_SELEN_5014": {
+"v2_id": "V2_DQ11_SELEN_5014",
+"original_id": "サンゴ谷間ドッキング・冷熱衝突・女王戦慄",
+"detail": "【質量：弐】冷たいサンゴ装飾と、高熱化した乳房の谷間への同時連結。装飾品の硬質な拒絶と、肉壁の柔らかな受容。その温度差（Thermal_Conductivity）に、セレンの巨躯が歓喜で震える。物理演算：Thermal_Conductivity / Static_Pressure / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Coral_Docking"
+},
+"V2_DQ11_SELEN_5015": {
+"v2_id": "V2_DQ11_SELEN_5015",
+"original_id": "首飾り放出・顔面下滝・真珠汚泥化",
+"detail": "【質量：参】セレンの顔面直下で行われる資源射出。首元を飾る真珠の列へ、白濁した種子を大量に投下。女王の宝飾品が不浄な資源でコーティングされ、その滴りが彼女の唇を汚す光景。物理演算：fluid_separation / Velocity_Impact / 粘度1700cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Necklace_Splash"
+},
+"V2_DQ11_SELEN_5016": {
+"v2_id": "V2_DQ11_SELEN_5016",
+"original_id": "衣装隙間侵入・剥き出し乳肉直接研磨",
+"detail": "【質量：肆】衣装を脱がさず、布地を強引に横へずらしての連結。隙間から露出した女王の白肌へ、剥き出しの質量を直接摩擦。布地の縁が肌に食い込む痛みと、内部への侵入を渇望するセレンの視線。物理演算：Material_friction / Stress_Limit / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Dress_Gap_Sex"
+},
+"V2_DQ11_SELEN_5017": {
+"v2_id": "V2_DQ11_SELEN_5017",
+"original_id": "汗染シルク密着・潤滑クッション・限界圧入",
+"detail": "【質量：伍】濡れた衣装を緩衝材とした連結。汗と愛液で粘着化したシルクが質量と密着し、逃げ場のない圧力を乳房へ伝達。布地が肌の一部のように機能し、女王を内側から蹂躙する。物理演算：Material_Slide / Static_Pressure / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Wet_Silk_Press"
+},
+"V2_DQ11_SELEN_5018": {
+"v2_id": "V2_DQ11_SELEN_5018",
+"original_id": "真珠鎖絡付・女王手掌上下・連鎖摩擦",
+"detail": "【質量：陸】質量に真珠の鎖を巻き付け、セレン自らの手でストロークさせる強制奉仕。自身の宝飾品が男を絶頂させるための道具となる様を注視させ、女王のプライドを資源と共に搾り取る。物理演算：Material_friction / static_Pressure / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Pearl_Masturbation"
+},
+"V2_DQ11_SELEN_5019": {
+"v2_id": "V2_DQ11_SELEN_5019",
+"original_id": "装飾破壊絶頂・サンゴ砕散・赤染白肌",
+"detail": "【質量：質】激しいピストンの衝撃（Velocity_Impact）によるサンゴ装飾の物理破壊。砕け散るサンゴの破片が彼女の肌を擦過し、純白の乳房を「絶頂の傷」で赤く染め上げる物理シミュレーション。物理演算：Velocity_Impact / Material_friction / 粘度1350cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Coral_Shred"
+},
+"V2_DQ11_SELEN_5020": {
+"v2_id": "V2_DQ11_SELEN_5020",
+"original_id": "胸元サンド・全布地根元集約・先端受容",
+"detail": "【質量：捌】衣装の全レイヤーを質量の根元に集約し、乳房の弾力のみで先端を包囲。女王の重厚な肉厚が、プローブの全感覚を吸い込み、深部からの資源放出を強制誘導する。物理演算：SQUISH係数8.8 / Volumetric_Deformation / 粘度1650cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Chest_Sand"
+},
+"V2_DQ11_SELEN_5021": {
+"v2_id": "V2_DQ11_SELEN_5021",
+"original_id": "背中合乳房蹂躙・逆手引絞・極限後屈",
+"detail": "【質量：玖】背面からの腕回しによる、衣装レイヤーを逆手に取った乳房の引き絞り。女王の巨大な肉を前方に突出させ、男の質量で徹底的に潰す。後屈させられたセレンの喉から漏れる「アヘ声」の共鳴。物理演算：Stress_Limit / Vibration_Sync / 粘度1450cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Back_Hand_Titty"
+},
+"V2_DQ11_SELEN_5022": {
+"v2_id": "V2_DQ11_SELEN_5022",
+"original_id": "精液コーティング・刺繍凹凸埋没・白濁凱旋",
+"detail": "【質量：拾】女王の衣への最終的な資源定着。複雑な刺繍の凹凸をすべて白濁した種子で埋め尽くし、純潔の証であった正装を「淫らな白のドレス」へと新生。全変数を汚濁資源で上書きし、セレンの完全陥落を宣言。物理演算：fluid_separation / static_Pressure / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Final_Semen_Dress"
+},
+"V2_DQ11_SELEN_5023": {
+"v2_id": "V2_DQ11_SELEN_5023",
+"original_id": "前門の女王・後門の獣・前後同時多重連結",
+"detail": "【秘部：壱】人魚の尾の付け根に新設された前後開口部への同時エントリー。前方から勇者個体、後方から老成個体（ロウ）による質量入力。セレンの巨躯がX軸・Y軸へ激しくしなり、全方位からの圧搾を受容。物理演算：Volumetric_Deformation / Static_Pressure / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Front_Back_Sandwich"
+},
+"V2_DQ11_SELEN_5024": {
+"v2_id": "V2_DQ11_SELEN_5024",
+"original_id": "水圧バキューム・深海結合・限界圧搾砕骨",
+"detail": "【秘部：弐】結合状態での急速潜行。深度増加に伴う外水圧（Static_Pressure）を利用し、「ご都合開口」を内側へ向かって限界まで締め上げ。挿入されたプローブを粉砕せんばかりの超高圧バキュームを発生。物理演算：Static_Pressure / Stress_Limit / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Deep_Sea_Vacuum"
+},
+"V2_DQ11_SELEN_5025": {
+"v2_id": "V2_DQ11_SELEN_5025",
+"original_id": "尾鰭痙攣絶頂・海底砂巻上・運動エネルギー変換",
+"detail": "【秘部：参】資源射出（中出し）の衝撃による末端神経の暴走。絶頂と同時に巨大な尾鰭が海底を激しく打撃。数トンの水流と砂を巻き上げ、女王の痙攣が海底の地形を物理的に改変する動態アーカイブ。物理演算：Velocity_Impact / fluid_separation / 粘度1600cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Tail_Seismic"
+},
+"V2_DQ11_SELEN_5026": {
+"v2_id": "V2_DQ11_SELEN_5026",
+"original_id": "前後同時共鳴・内部質量衝突・脳内白濁消失",
+"detail": "【秘部：肆】二つの質量が胎内で物理的に衝突（Collision）。衝撃波が女王の脊髄を直撃し、視界を真っ白に上書き。思考能力が精液の衝撃により「ホワイトアウト」する精神破壊プロセス。物理演算：Nerve_Overload / Vibration_Sync / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Internal_Collision"
+},
+"V2_DQ11_SELEN_5027": {
+"v2_id": "V2_DQ11_SELEN_5027",
+"original_id": "鱗隙間愛液・虹色鱗伝播・海水白濁汚染",
+"detail": "【秘部：伍】オーバーフローした愛液による外装汚染。結合部から溢れた粘液が、虹色の鱗（Scale）の隙間を毛細管現象で伝い、全身をコーティング。排出された資源が海水を白濁させ、ムウレアの視界をゼロにする。物理演算：fluid_separation / Material_Slide / 粘度850cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Scale_Lubrication"
+},
+"V2_DQ11_SELEN_5028": {
+"v2_id": "V2_DQ11_SELEN_5028",
+"original_id": "女王威厳崩壊・臣下前アヘ声・気品完全剥奪",
+"detail": "【秘部：陸】全臣下の注視下で行われる前後蹂躙。支配者としての発声を禁じられ、漏れ出すのは本能的な「アヘ声」のみ。気高き女王の属性が、ただの「発情した個体」へとダウングレードされる音響記録。物理演算：Aural_details / Nerve_Overload / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Majesty_Collapse"
+},
+"V2_DQ11_SELEN_5029": {
+"v2_id": "V2_DQ11_SELEN_5029",
+"original_id": "海底岩礁固定・種子貯蔵庫化・完全受動蹂躙",
+"detail": "【秘部：質】物理的岩礁への四肢拘束。抵抗を排除した状態で、セレンの胎内を「資源貯蔵タンク」として定義。絶え間なく注がれる種子によって、下腹部が異様に膨張する物理的変容。物理演算：Static_Pressure / Volumetric_Deformation / 粘度1550cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Rock_Storage"
+},
+"V2_DQ11_SELEN_5030": {
+"v2_id": "V2_DQ11_SELEN_5030",
+"original_id": "1リットル人魚の掟・浸水防壁精液・密閉儀式",
+"detail": "【秘部：捌】海水の胎内浸入を物理的に阻止する「白濁充填」。常に1リットルの資源を内部に維持することで、浸透圧をコントロール。セレンの生命維持が男たちの種子に依存する生理的隷属。物理演算：fluid_separation / Static_Pressure / 粘度1800cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_1L_Rule"
+},
+"V2_DQ11_SELEN_5031": {
+"v2_id": "V2_DQ11_SELEN_5031",
+"original_id": "真珠書き出し・膣内宝探し・内部撹拌蹂躙",
+"detail": "【秘部：玖】粘膜内に隠された「真珠」をプローブで探索・摘出する物理的撹拌。硬質な球体が内壁を転がり、摩擦（Material_friction）を極大化。女王の胎内が物理的な「遊技場」へと変質。物理演算：Material_friction / Vibration_Sync / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Pearl_Hunting"
+},
+"V2_DQ11_SELEN_5032": {
+"v2_id": "V2_DQ11_SELEN_5032",
+"original_id": "前後入替乱舞・高速交代連結・連続絶頂ループ",
+"detail": "【秘部：拾】前後ホールのプローブを高速でスイッチする多重ピストン。休止時間を排除し、神経系を常に閾値以上に維持。カタルシスが波状に押し寄せ、セレンの意識を永続的な絶頂状態へ固定。物理演算：Velocity_Impact / Nerve_Overload / 粘度1350cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Switch_Rape"
+},
+"V2_DQ11_SELEN_5033": {
+"v2_id": "V2_DQ11_SELEN_5033",
+"original_id": "潮満引絶頂・自然同期腰振・海洋エネルギー融合",
+"detail": "【秘部：拾壱】潮汐力（Tidal_Force）に合わせた律動連結。海洋の全エネルギーを自身の快感へコンバート。満潮の瞬間に最大出力を受容し、海そのものと同期して潮を吹くマクロ的蹂躙。物理演算：Gravity_Impact / fluid_separation / 粘度950cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Tidal_Orgasm"
+},
+"V2_DQ11_SELEN_5034": {
+"v2_id": "V2_DQ11_SELEN_5034",
+"original_id": "人魚歌声・絶頂版・音響気道閉塞・アヘ喘鳴",
+"detail": "【秘部：拾弐】神聖な「歌声」の物理的崩壊。中出しの衝撃で横隔膜が痙攣し、歌唱が不浄な「喘鳴（喘ぎ）」へと置換。女王の旋律が精液の逆流により物理的に寸断されるプロセス。物理演算：Aural_details / fluid_separation / 粘度1250cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Broken_Song"
+},
+"V2_DQ11_SELEN_5035": {
+"v2_id": "V2_DQ11_SELEN_5035",
+"original_id": "衣装裾目隠・視覚遮断前後貫・暗黒蹂躙",
+"detail": "【秘部：拾参】ドレスの長い裾を用いた自己視覚封鎖。情報の80%を遮断することで、前後からのプローブの「質量」と「熱」を脳内で肥大化。暗闇の中で女王の身体が快感の触覚だけになる。物理演算：Nerve_Overload / Stress_Limit / 粘度1050cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Blind_Gown"
+},
+"V2_DQ11_SELEN_5036": {
+"v2_id": "V2_DQ11_SELEN_5036",
+"original_id": "泡の絶頂・流体攪拌・気泡包囲全身研磨",
+"detail": "【秘部：拾肆】激しいピストンによる海水のキャビテーション（気泡化）。全身を無数の微細な気泡が包み、鱗や粘膜への刺激を全方位から加圧。泡と精液が入り混じったカオスな流体環境での絶頂。物理演算：fluid_separation / Vibration_Sync / 粘度1150cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Bubble_Bath"
+},
+"V2_DQ11_SELEN_5037": {
+"v2_id": "V2_DQ11_SELEN_5037",
+"original_id": "女王排泄公開・尿精液同時放出・浄化儀式転換",
+"detail": "【秘部：拾伍】結合状態での生理放出。海底の住民たちの前で、尿と過剰な精液を同時に排出。女王の「浄化」の力が、最も原始的かつ汚辱的な液体の交換へと反転・昇華される瞬間の記録。物理演算：fluid_separation / Static_Pressure / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Royal_Purge"
+},
+"V2_DQ11_SELEN_5038": {
+"v2_id": "V2_DQ11_SELEN_5038",
+"original_id": "冷深海熱種・温度ギャップ混濁・熱勾配絶頂",
+"detail": "【秘部：拾陸】4℃の深海水と、38℃の生体資源（精液）の極端な温度勾配。周囲の冷たさが胎内の熱を際立たせ、温度刺激による脳内サージ（Thermal_Conductivity）を最大化。物理演算：Thermal_Conductivity / Nerve_Overload / 粘度1450cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Thermal_Shock"
+},
+"V2_DQ11_SELEN_5039": {
+"v2_id": "V2_DQ11_SELEN_5039",
+"original_id": "鱗への刻印・鱗剥落・赤染愛跡定着",
+"detail": "【秘部：拾質】男の質量と鱗の物理的摩擦による組織損耗。硬質な鱗が剥がれ落ち、露出した真皮が絶頂の摩擦で充血・赤変。女王の肉体に消えない「汚辱の紋章」を物理的に刻印。物理演算：Material_friction / Stress_Limit / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Scale_Scar"
+},
+"V2_DQ11_SELEN_5040": {
+"v2_id": "V2_DQ11_SELEN_5040",
+"original_id": "海底火山熱・熱気火照・冷種注込ギャップ",
+"detail": "【秘部：拾捌】火山帯の地熱を利用した生理操作。熱気で限界まで充血し、感度を高めたセレンの肉体へ、深海で冷却された種を注ぎ込む。熱感の飽和と冷感の貫通によるショック絶頂。物理演算：Thermal_Conductivity / Volumetric_Deformation / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Volcano_Rape"
+},
+"V2_DQ11_SELEN_5041": {
+"v2_id": "V2_DQ11_SELEN_5041",
+"original_id": "再受精女王・命源資源収集・胎内種子集約",
+"detail": "【秘部：拾玖】女王の権能「再生」の汚辱的解釈。死せる魚たちを蘇らせるための触媒として、大量の精液を胎内に収集。命の源（精液）を限界まで詰め込み、膨れ上がった下腹部を全ムウレアに開示。物理演算：Static_Pressure / Volumetric_Deformation / 粘度1900cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Refertility"
+},
+"V2_DQ11_SELEN_5042": {
+"v2_id": "V2_DQ11_SELEN_5042",
+"original_id": "永遠結合・玉座着座連結・永久絶頂眠",
+"detail": "【秘部：弐拾】全工程の完遂。前後から貫かれたままムウレアの玉座へ。神経系が快感で焼き切れ、絶頂の姿勢を保ったまま「生ける彫像」として停止。海底王国の象徴が「永遠の中出し」のポーズで固定。物理演算：Static_Pressure / fluid_separation / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Eternal_Throne"
+},
+"V2_DQ11_SELEN_6001": {
+"v2_id": "V2_DQ11_SELEN_6001",
+"original_id": "一本釣り・甲板激突・乳房飛出・オホッ声",
+"detail": "【甲板：壱】高高度からの自由落下衝撃。船の甲板へ激突した際、複雑な正装が崩壊し、特大の乳房が物理的な慣性で「ぷるん」と露出。肺から空気が押し出される衝撃と共に、女王が**「オホッ！？」と絶頂に近い悲鳴を上げ、視線が空中を彷徨う。物理演算：Gravity_Impact / SQUISH係数8.2 / 粘度900cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Landing_Shock"
+},
+"V2_DQ11_SELEN_6002": {
+"v2_id": "V2_DQ11_SELEN_6002",
+"original_id": "真珠鎖緊縛・左右割乳・突起浮彫",
+"detail": "【甲板：弐】首飾りの真珠鎖を用いたセルフ拘束蹂躙。左右の乳房を割るように鎖を食い込ませ、物理的な圧搾（Stress_Limit）を継続。布地の張力が極限に達し、肥大した乳首の輪郭が「女王の衣」を突き破らんばかりに浮き彫りとなる。物理演算：Stress_Limit / Static_Pressure / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Pearl_Restraint"
+},
+"V2_DQ11_SELEN_6003": {
+"v2_id": "V2_DQ11_SELEN_6003",
+"original_id": "サンゴ鱗剥・異物感恐怖・喉鳴オホホッ",
+"detail": "【甲板：参】鋭利なサンゴ装飾による尾の付け根の物理的探査。鱗を逆なでし、剥ぎ取る寸前の恐怖刺激により、セレンの喉奥から抑制不能な「オホホッ！」という動物的な喘鳴を抽出。威厳が恐怖と快感に置換されるプロセス。物理演算：Material_friction / Nerve_Overload / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Coral_Scratch"
+},
+"V2_DQ11_SELEN_6004": {
+"v2_id": "V2_DQ11_SELEN_6004",
+"original_id": "精液拓・全身資源塗布・不浄跡刻印",
+"detail": "【甲板：肆】全身を「拓本」の媒体とする汚濁儀式。男たちの種子を鱗と肌の全面に塗布し、甲板へ押し付けることで、セレンの肉体の形を白濁した資源で刻印。慈愛の女王が「不浄な魚拓」へと成り果てる。物理演算：fluid_separation / Material_Slide / 粘度1750cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Semen_Print"
+},
+"V2_DQ11_SELEN_6005": {
+"v2_id": "V2_DQ11_SELEN_6005",
+"original_id": "襟元強制開放・白磁胸元・唾液汚濁",
+"detail": "【甲板：伍】厳格な襟パーツの力任せな引き裂き。隠されていた白磁の胸元を全住民に開示し、釣り人たちの唾液（Saliva）を直接滴らせる。神聖な部位が卑俗な粘液で汚染されていく視覚的蹂躙。物理演算：Static_Pressure / fluid_separation / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Collar_Violation"
+},
+"V2_DQ11_SELEN_6006": {
+"v2_id": "V2_DQ11_SELEN_6006",
+"original_id": "布層指先侵入・七重シルク奥・悶絶オホォッ",
+"detail": "【布層：壱】多層構造のシルク衣装への深度侵食。指先が七枚目の最奥、高熱化した肌に到達した瞬間、セレンは「オホッ、オホォッ！」と脊髄反射で身を悶えさせる。布地の重なりが快感を密閉・増幅させる動態。物理演算：Material_friction / Nerve_Overload / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Silk_Depth"
+},
+"V2_DQ11_SELEN_6007": {
+"v2_id": "V2_DQ11_SELEN_6007",
+"original_id": "質量布越圧搾・刺繍摩擦・性感帯直撃",
+"detail": "【布層：弐】刺繍の凹凸を研磨剤とした乳房圧搾。男の質量を布越しにねじ込み、硬質な刺繍糸が女王の敏感な粘膜を削るような摩擦（Material_friction）を発生。布地というフィルターが快感の純度を逆に高める。物理演算：Material_friction / Static_Pressure / 粘度1150cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Embroidery_Press"
+},
+"V2_DQ11_SELEN_6008": {
+"v2_id": "V2_DQ11_SELEN_6008",
+"original_id": "サンゴ装飾サンド・乳首磨潰・痛快混濁",
+"detail": "【布層：参】硬質サンゴと男のプローブによる双方向プレス。乳首をその狭間に固定し、硬軟の物理衝撃で磨り潰す。物理的な痛みと神経的な射精感が混濁し、セレンの思考を麻痺させる。物理演算：SQUISH係数9.0 / Vibration_Sync / 粘度1450cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Nipple_Grind"
+},
+"V2_DQ11_SELEN_6009": {
+"v2_id": "V2_DQ11_SELEN_6009",
+"original_id": "女王パイズリ・オホ顔・質量熱飲込",
+"detail": "【布層：肆】強制的な自己乳房奉仕。巨大な乳肉を自らの手で寄せさせ、男の質量の熱を「オホッ、オホッ」という律動的な音響（Aural_details）と共に受容。女王の誇りが「肉の受容器」へと変質。物理演算：Aural_details / Static_Pressure / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Self_Paizuri"
+},
+"V2_DQ11_SELEN_6010": {
+"v2_id": "V2_DQ11_SELEN_6010",
+"original_id": "真珠吸上・冷吸同時刺激・白目剥絶頂",
+"detail": "【布層：伍】物理的異物を用いた吸引蹂躙。突起の上に真珠を配置し、その上から真空吸引（Vacuum）を執行。真珠の冷たさと強烈な負圧により、セレンは意識を飛ばし、完璧な白目（Eye_Roll）を晒す。物理演算：Static_Pressure / Nerve_Overload / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Pearl_Vacuum"
+},
+"V2_DQ11_SELEN_6011": {
+"v2_id": "V2_DQ11_SELEN_6011",
+"original_id": "前後同時串刺・人間サイズ縮小・オホォーッ叫",
+"detail": "【ドッキング：壱】縮小化した女王の秘部への前後貫通。前方から主人公、後方から漁師個体による物理的「串刺し」。人間サイズゆえの逃げ場のなさが、セレンに「オホォーッ！」という最大デシベルの喘鳴を強制。物理演算：Volumetric_Deformation / Static_Pressure / 粘度1850cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Double_Skewer"
+},
+"V2_DQ11_SELEN_6012": {
+"v2_id": "V2_DQ11_SELEN_6012",
+"original_id": "尾鰭痙攣打撃・甲板バタバタ・快感増幅振動",
+"detail": "【ドッキング：弐】中出し衝撃に伴う尾鰭の反射的打撃。絶頂のたびに尾が甲板を激しく叩き（Vibration_Sync）、その物理的な揺れが胎内のプローブに伝播。自らの痙攣がさらなる絶頂を呼ぶ無限フィードバック。物理演算：Vibration_Sync / Velocity_Impact / 粘度1600cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Tail_Drum"
+},
+"V2_DQ11_SELEN_6013": {
+"v2_id": "V2_DQ11_SELEN_6013",
+"original_id": "1リットル貯蔵限界・資源充填・質量蓋拷問",
+"detail": "【ドッキング：参】胎内を1リットルの精液で満杯にした状態での密閉。溢れ出そうとする資源を男の質量（Mass）で物理的に押し戻し、逃げ場のない汚濁資源を粘膜から吸収させる拷問プロセス。物理演算：fluid_separation / Static_Pressure / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Storage_Limit"
+},
+"V2_DQ11_SELEN_6014": {
+"v2_id": "V2_DQ11_SELEN_6014",
+"original_id": "前後入替無限ループ・高速ピストン・意識混濁オホォ",
+"detail": "【ドッキング：肆】前後プローブの非停止スイッチ。休む間もなく入れ替わるピストンの衝撃により、セレンの意識は常に「オホォ……オホッ」**と混濁し、もはや言語による意思疎通は不可能となる。物理演算：Nerve_Overload / Velocity_Impact / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Infinite_Loop_Oho"
+},
+"V2_DQ11_SELEN_6015": {
+"v2_id": "V2_DQ11_SELEN_6015",
+"original_id": "甲板排水溝奉仕・尿愛液踏付・中出し継続",
+"detail": "【ドッキング：伍】船上の最低レイヤーでの蹂躙。横たわらされたセレンから流れる尿と愛液を、漁師たちが足で踏みつけ、汚物と資源を攪拌しながら中出しを強行。女王が「船上のゴミ」として処理される光景。物理演算：fluid_separation / Material_Slide / 粘度1650cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Drainage_Service"
+},
+"V2_DQ11_SELEN_6016": {
+"v2_id": "V2_DQ11_SELEN_6016",
+"original_id": "乳首弓引・オホ絶頂・涎流出・規則的律動",
+"detail": "【崩壊：拾六】露出した乳管突起への物理的弾性攻撃。指先で弦のように弾かれるたび、セレンの脳内へ電気的な絶頂信号を直撃。**「オホッ！オホッ！」とメトロノームのような規則正しい喘鳴と共に、口角から制御不能な涎（Saliva）を滴らせる。物理演算：Vibration_Sync / Nerve_Overload / 粘度950cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Nipple_Snap"
+},
+"V2_DQ11_SELEN_6017": {
+"v2_id": "V2_DQ11_SELEN_6017",
+"original_id": "逆吊・中出シャワー・重力乳揉・顔面汚濁",
+"detail": "【崩壊：拾質】尾鰭を起点とした垂直逆さ吊り状態。重力（Gravity_Impact）で顔側へ垂れ下がった特大の乳房を無慈悲に揉みしだかれながら、全方位から放たれる射精資源を顔面に受容。女王の視界が白濁した液界で閉ざされる。物理演算：Gravity_Impact / fluid_separation / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Inverted_Shower"
+},
+"V2_DQ11_SELEN_6018": {
+"v2_id": "V2_DQ11_SELEN_6018",
+"original_id": "喉奥質量投下・歌声塞・オゴッ音響",
+"detail": "【崩壊：拾捌】口腔および咽頭への質量占有。神聖な歌を紡ぐべき喉を男の質量で物理的に閉塞。喉奥を突かれるたびに、悲鳴にも歌にもならない「オゴッ、オホッ」という不浄な湿性音（Aural_details）を漏らす。物理演算：Aural_details / Static_Pressure / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Throat_Gag"
+},
+"V2_DQ11_SELEN_6019": {
+"v2_id": "V2_DQ11_SELEN_6019",
+"original_id": "鱗隙間愛撫・粘膜直接刺激・腰跳オホッ",
+"detail": "【崩壊：拾玖】硬質な鱗の隙間から侵入する指先蹂躙。防壁であるはずの鱗を逆手に取り、隠された柔らかな真皮と粘膜を直接研磨。予期せぬ位置への局所刺激に、女王の腰が「オホッ」と鋭く跳ね上がる反射動態。物理演算：Material_friction / Vibration_Sync / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Scale_Tickle"
+},
+"V2_DQ11_SELEN_6020": {
+"v2_id": "V2_DQ11_SELEN_6020",
+"original_id": "衣装重なり窒息・酸素欠乏・強烈中出絶頂",
+"detail": "【崩壊：弐拾】多層布地による呼吸器封鎖。顔面を「女王の衣」で幾重にも覆われ、酸素濃度が低下する中での高圧射精。酸欠による脳内サージと、胎内を貫く熱い資源の衝撃が混ざり合い、意識を快楽の暗黒へ突き落とす。物理演算：Stress_Limit / Nerve_Overload / 粘度1650cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Choke_Ecstasy"
+},
+"V2_DQ11_SELEN_6021": {
+"v2_id": "V2_DQ11_SELEN_6021",
+"original_id": "氷漬蹂躙・鮮度維持・冷熱温度ギャップ・オホォッ",
+"detail": "【獲物：弐拾壱】砕氷を敷き詰めた甲板上での強制連結。背面の極低温（Thermal_Conductivity）が、内部に注ぎ込まれる男の質量の熱を際立たせ、肉体が熱勾配に耐えかねて「オホォッ！」と絶叫。女王としての細胞が快感で凍結・融解する。物理演算：Thermal_Conductivity / Static_Pressure / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Ice_Rape"
+},
+"V2_DQ11_SELEN_6022": {
+"v2_id": "V2_DQ11_SELEN_6022",
+"original_id": "女王自慰公開・指先衣装奥・屈辱オホッ",
+"detail": "【獲物：弐拾弐】全観衆の目前で行われる自己開発奉仕。王家の指で、自ら「女王の衣」の奥底を弄るよう命令。屈辱による体温上昇（Thermal_Conductivity）を伴いながら、自身の指が秘部に触れるたびに「オホッ」と情けない声を漏らす。物理演算：Aural_details / Material_friction / 粘度1150cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Public_Masturbation"
+},
+"V2_DQ11_SELEN_6023": {
+"v2_id": "V2_DQ11_SELEN_6023",
+"original_id": "精液鱗塗・一枚一枚汚染・淫らな輝き",
+"detail": "【獲物：弐拾参】鱗表面への資源定着加工。数千枚に及ぶ虹色の鱗の一枚一枚に精液を塗り込み、太陽光の下で粘着質かつ不浄な光沢を放たせる。神聖な人魚の象徴を、男たちの種子の「展示板」へと変質させる。物理演算：fluid_separation / Material_Slide / 粘度1800cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Scale_Polishing"
+},
+"V2_DQ11_SELEN_6024": {
+"v2_id": "V2_DQ11_SELEN_6024",
+"original_id": "卑猥囁き・精神汚染・オホ顔作り替え",
+"detail": "【獲物：弐拾肆】聴覚ルートからの認知破壊。釣り人たちの野卑な性語（Aural_details）を耳奥に直接注入され、女王としての自意識を「雌の獲物」へと強制書き換え。言葉の暴力がセレンの表情を恒常的なオホ顔へと固定する。物理演算：Nerve_Overload / Aural_details / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Ear_Pollution"
+},
+"V2_DQ11_SELEN_6025": {
+"v2_id": "V2_DQ11_SELEN_6025",
+"original_id": "衣装引裂・ボタン爆裂・全解放オホォーッ",
+"detail": "【獲物：弐拾伍】最大絶頂時の衣装構造破壊。ピストンの内圧と筋肉の膨張に耐えかね、正装のボタンが連続して「パパパパンッ！」と射出。物理的拘束からの解放と同時に、最大級の「オホォーッ！」**という絶頂を記録。物理演算：Velocity_Impact / Stress_Limit / 粘度1450cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Button_Burst"
+},
+"V2_DQ11_SELEN_6026": {
+"v2_id": "V2_DQ11_SELEN_6026",
+"original_id": "女王敗北・靴舐奉仕・支配快感目覚",
+"detail": "【獲物：弐拾陸】最下層への屈服。船長の泥まみれの長靴を舌で清掃させられながら、背後から最奥を蹂躙。女王の尊厳が「足蹴にされる快感」へと完全に反転し、支配される喜びを脊髄に刻み込む。物理演算：Material_Slide / Static_Pressure / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Boot_Lick"
+},
+"V2_DQ11_SELEN_6027": {
+"v2_id": "V2_DQ11_SELEN_6027",
+"original_id": "1リットル逆流・鼻精液噴出・無限求質量",
+"detail": "【獲物：弐拾質】内部資源の容量超過。胎内の「1リットル」が食道・鼻腔を逆流。口と鼻から白濁した液を吹き出し、溺れるような苦悶の中でなお、次の質量を求めて腰を振る完全な「肉の器」動態。物理演算：fluid_separation / Static_Pressure / 粘度1900cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Reverse_Flow"
+},
+"V2_DQ11_SELEN_6028": {
+"v2_id": "V2_DQ11_SELEN_6028",
+"original_id": "海底リリース・全員中出・海面白濁沈降",
+"detail": "【獲物：弐拾捌】汚濁資源を充填した状態での放流。甲板上の全員から最後の中出しを受け、全身が白く染まり、自重と資源の重みで海中へ。海面に精液の輪を広げながら、絶頂の痙攣と共に深く沈んでいく。物理演算：Gravity_Impact / fluid_separation / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Semen_Release"
+},
+"V2_DQ11_SELEN_6029": {
+"v2_id": "V2_DQ11_SELEN_6029",
+"original_id": "再捕獲恐怖・釣針渇望・依存個体化",
+"detail": "【獲物：弐拾玖】海中での「釣り針（質量）」探索行動。自由の身となっても、あの「オホッ！」という衝撃を忘れられず、自ら釣り針を秘部で探し求める依存症。女王の防衛本能が、捕獲される快楽へと上書きされた結果。物理演算：Nerve_Overload / Vibration_Sync / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Hook_Addict"
+},
+"V2_DQ11_SELEN_6030": {
+"v2_id": "V2_DQ11_SELEN_6030",
+"original_id": "永久オホ顔・慈愛喪失・涎垂固定獲物",
+"detail": "【獲物：参拾】全プロトコルの終了。セレンの表情筋は「オホッ、オホォッ」という絶頂時の形状で完全に硬直。白目を剥き、涎を垂らしたまま、海底の玉座でただの「人間たちの獲物」として立ち尽くす完成体。物理演算：Static_Pressure / Nerve_Overload / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Final_Oho_Face"
+},
+"V2_DQ11_SELEN_7001": {
+"v2_id": "V2_DQ11_SELEN_7001",
+"original_id": "女王の首輪と鎖・広場杭繋・全世代乳揉蹂躙",
+"detail": "【愛玩：壱】首筋への鉄製首輪（Iron_Collar）の物理的装着。広場の杭に繋留され、回避不能な状態で村の全個体（老人から子供まで）による乳房の「共有物化」を執行。特大の乳肉が不特定多数の指先によって絶え間なく変形・研磨される動態。物理演算：Static_Pressure / Material_friction / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Village_Collar"
+},
+"V2_DQ11_SELEN_7002": {
+"v2_id": "V2_DQ11_SELEN_7002",
+"original_id": "食用不可烙印・衣装解体・前後開口無防備開示",
+"detail": "【愛玩：弐】「肉」としての価値を否定された「器」としての定義。女王の衣を物理的に破砕し、前後の「ご都合開口」を白日の下に晒す。村人たちが「破壊用」として彼女の秘部を品定めする、精神的・物理的解体プロセス。物理演算：Volumetric_Deformation / Stress_Limit / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Marked_Object"
+},
+"V2_DQ11_SELEN_7003": {
+"v2_id": "V2_DQ11_SELEN_7003",
+"original_id": "オホッ！・乳首指弾・涎流出・条件反射跳躍",
+"detail": "【愛玩：参】行列を成した村人による突起部への連続パルス攻撃。指先で弾かれるたびに脳内へ絶頂信号が過負荷注入され、**「オホッ！」「オホォッ！」と脊髄反射で巨躯を跳ねさせる。口角からは知性の欠如を証明する涎が絶え間なく溢れる。物理演算：Nerve_Overload / Vibration_Sync / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Nipple_Flick"
+},
+"V2_DQ11_SELEN_7004": {
+"v2_id": "V2_DQ11_SELEN_7004",
+"original_id": "布層精液充填・衣装袋化・自重圧迫蹂躙",
+"detail": "【残骸：壱】重層化したシルク衣装を、射精資源を貯蔵するための「不浄な袋」として利用。数百人分の精液が布地の間に充填され、その液量と重みがセレンの乳房を物理的に圧迫・窒息させる流体負荷シミュレーション。物理演算：fluid_separation / Static_Pressure / 粘度1800cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Semen_Gown"
+},
+"V2_DQ11_SELEN_7005": {
+"v2_id": "V2_DQ11_SELEN_7005",
+"original_id": "サンゴ装飾強制バイブ・秘部挿入・永続オホ悶絶",
+"detail": "【残骸：弐】衣装から剥ぎ取られた硬質なサンゴ装飾の「栓（プラグ）」化。鋭利な突起を持つ異物を秘部の最奥へ固定配置。抜去を禁じられたまま、歩行や呼吸のたびに内壁を削り、セレンを「オホッ」と絶叫させ続ける永続的刺激。物理演算：Material_friction / Static_Pressure / 粘度1250cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Coral_Vibe"
+},
+"V2_DQ11_SELEN_7006": {
+"v2_id": "V2_DQ11_SELEN_7006",
+"original_id": "真珠書出競争・胎内撹拌・白目絶叫破壊",
+"detail": "【残骸：参】胎内に装填された真珠を、男の質量による撹拌で「排出」させる物理的競技。質量と真珠が内壁を同時に研磨する多重刺激により、女王は白目を剥き、「オホォォーッ！」と理性の果てまで突き抜けた音響を放出。物理演算：Vibration_Sync / Volumetric_Deformation / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Pearl_Scooping"
+},
+"V2_DQ11_SELEN_7007": {
+"v2_id": "V2_DQ11_SELEN_7007",
+"original_id": "村若者大人の階段・童貞初相手・慈愛オホ指導",
+"detail": "【実演：壱】村の少年個体による「初体験」の標的化。不慣れな物理的衝撃を、セレンがその巨大な包容力（乳肉）で受容。アヘ顔を晒しながらも、慈愛の微笑を浮かべて彼らの資源を「オホッ、オホォッ」と吸い上げる汚辱的教育。物理演算：Material_Slide / Aural_details / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Boy_Initiation"
+},
+"V2_DQ11_SELEN_7008": {
+"v2_id": "V2_DQ11_SELEN_7008",
+"original_id": "老人枯枝奉仕・乳房挟込・アヘ顔看取",
+"detail": "【実演：弐】村の老齢個体による、脆弱な質量の乳房間研磨。セレンは義務的な「奉仕」として、自身の高密度な脂肪組織を動員し、彼らの最後の一滴を搾り取る。白濁した瞳で老人を見守りながら、絶頂を分かち合う地獄絵図。物理演算：SQUISH係数8.0 / Static_Pressure / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Elder_Service"
+},
+"V2_DQ11_SELEN_7009": {
+"v2_id": "V2_DQ11_SELEN_7009",
+"original_id": "酒宴生贄・酒種混合・前後連鎖結合",
+"detail": "【実演：参】村の祭事に伴う「生贄」プロトコル。男たちが摂取したアルコールと放出された資源が、セレンの全身を汚染。前後からの不規則なリズムのピストンに、女王は「オホッ、オホッ」とリズムを刻み、思考を泥酔快楽へ沈める。物理演算：fluid_separation / Velocity_Impact / 粘度1600cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Festival_Rape"
+},
+"V2_DQ11_SELEN_7010": {
+"v2_id": "V2_DQ11_SELEN_7010",
+"original_id": "一晩1リットル掟・全男種子充填・腹部膨隆器化",
+"detail": "【実演：肆】村内全男性個体（数百名）の資源回収ノルマ。一晩で合計1リットルの液体が胎内へ圧入され、下腹部が妊婦のごとく異常膨張。重力と内圧に支配され、「オホ……オホォ」と呻くことしかできない物理的貯蔵庫への変質。物理演算：Static_Pressure / Volumetric_Deformation / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_1L_Container"
+},
+"V2_DQ11_SELEN_7011": {
+"v2_id": "V2_DQ11_SELEN_7011",
+"original_id": "泥まみれ開口部・粘膜土壌汚染・狂乱腰振",
+"detail": "【肉の器：壱】不衛生な地上環境での連結。土と泥にまみれた前後開口部を、男たちが強引に貫通。神聖な粘膜が外部の汚れによって物理的に侵食される不快を、セレンは狂ったような腰振りと「オホッ、オホォッ」という喘鳴で肯定。物理演算：Material_friction / fluid_separation / 粘度1450cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Mud_Violation"
+},
+"V2_DQ11_SELEN_7012": {
+"v2_id": "V2_DQ11_SELEN_7012",
+"original_id": "村共通トイレ・排泄絶頂混合・知性完全崩壊",
+"detail": "【肉の器：弐】質量連結の隙間を利用した排泄行為の強要。尿と愛液と精液が混ざり合い、甲板ならぬ広場を汚濁。排泄によるカタルシスと絶頂が神経系でショートし、女王セレンとしての知性が物理的に消失。物理演算：fluid_separation / Nerve_Overload / 粘度1350cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Common_Toilet"
+},
+"V2_DQ11_SELEN_7013": {
+"v2_id": "V2_DQ11_SELEN_7013",
+"original_id": "衣装重なり窒息・自己ドレス顔覆・匿名多重蹂躙",
+"detail": "【肉の器：参】剥ぎ取られた「女王の衣」を猿ぐつわ・目隠しとして流用。暗闇と窒息感（Stress_Limit）の中で、相手を特定できないまま複数の男に揉みしだかれる恐怖。対象への依存度が極大化し、快感の深度が計測不能域へ。物理演算：Stress_Limit / Nerve_Overload / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Dress_Suffocation"
+},
+"V2_DQ11_SELEN_7014": {
+"v2_id": "V2_DQ11_SELEN_7014",
+"original_id": "女王歌声・オホ旋律・質量気道閉塞・湿性音",
+"detail": "【肉の器：肆】神聖な歌唱の完全破壊。助けを呼ぼうとする開口部を、男の質量で喉元（咽頭）まで物理的に封鎖。漏れ出るのは物理的に攪拌された粘液の音「オホォ、オゴォッ……」という、淫らな湿性音（Aural_details）のみ。物理演算：Aural_details / Static_Pressure / 粘度1250cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Drowned_Voice"
+},
+"V2_DQ11_SELEN_7015": {
+"v2_id": "V2_DQ11_SELEN_7015",
+"original_id": "家畜共演・馬牛繋・愛玩モノ同質化",
+"detail": "【肉の器：伍】村の家畜（馬・牛）と並列に繋留される属性剥奪。自身を家畜と同じ「モノ」として認識させられ、獣の匂いの中で男たちの放出を受容。女王としての自意識が、家畜以下の愛玩動物へと完全にダウングレード。物理演算：Material_friction / Aural_details / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Livestock_Sync"
+},
+"V2_DQ11_SELEN_7016": {
+"v2_id": "V2_DQ11_SELEN_7016",
+"original_id": "玉座公開処刑・王国象徴縛付・秘部種子射的",
+"detail": "【堕落：壱】村へ略奪されたムウレアの玉座への磔。王国の尊厳である椅子を、射精のための「固定台」へと冒涜。村人たちが次々と彼女の秘部へ資源をぶちまけ、玉座を白濁した粘液で塗りつぶしていく。物理演算：Static_Pressure / Velocity_Impact / 粘度1700cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Throne_Sacrifice"
+},
+"V2_DQ11_SELEN_7017": {
+"v2_id": "V2_DQ11_SELEN_7017",
+"original_id": "愛玩動物調教・待て絶頂・命令潮噴依存",
+"detail": "【堕落：弐】「待て」と「出せ」による自律神経の完全支配。男たちの合図なしには絶頂を禁じられ、命令一下で全身を激しく痙攣させ潮を吹く、生体ボタン化。彼女の身体は、村人たちの意志を実行するだけのマリオネットへと化した。物理演算：Nerve_Overload / fluid_separation / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Conditioned_Pet"
+},
+"V2_DQ11_SELEN_7018": {
+"v2_id": "V2_DQ11_SELEN_7018",
+"original_id": "精液鱗磨・村女汚染・愛玩物洗滌",
+"detail": "【堕落：参】村の女性個体による、セレンの鱗への「メンテナンス」。精液を磨き粉として使用し、女王の全身を不浄な輝きでコーティング。セレンは「オホッ」と喘ぎながら、同性からの蔑みと汚濁を同時に受容。物理演算：Material_Slide / fluid_separation / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Scale_Polishing_Service"
+},
+"V2_DQ11_SELEN_7019": {
+"v2_id": "V2_DQ11_SELEN_7019",
+"original_id": "永久オホ顔固定・弛緩涎垂・白目固定女王",
+"detail": "【堕落：肆】表情筋の永続的機能不全。あまりにも高頻度な絶頂（Orgasm_Count: 999+）により、顔面がオホ顔の形状で完全固定。口を開け、涎を垂らし、白目を剥いたまま、二度と「女王」の貌に戻れない完成体。物理演算：Static_Pressure / Nerve_Overload / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Permanent_Oho"
+},
+"V2_DQ11_SELEN_7020": {
+"v2_id": "V2_DQ11_SELEN_7020",
+"original_id": "リリース拒否・質量鎖固持・待望オホォッ",
+"detail": "【堕落：伍】自由の否定。海への放流を告げられても、男の質量への依存（Addiction）から自ら首輪を握りしめ、村に留まることを選択。次の「中出し」を求めて腰を割り、「オホォッ！」**と資源の注入を懇願する。物理演算：Nerve_Overload / Static_Pressure / 粘度1900cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Refusal_Of_Freedom"
+},
+"V2_DQ11_SELEN_8001": {
+"v2_id": "V2_DQ11_SELEN_8001",
+"original_id": "巨乳聖域全開放・繁殖台固定・村人一斉群揉",
+"detail": "【開幕：壱】特注の「繁殖用傾斜台」への完全固定。切り裂かれた女王の衣から露出した、重力（Gravity_Impact）に従う巨大な乳房を村の全男性個体に提示。数百の指先が白肌を蹂躙し、王国の象徴を「無料の揉み物」として物理的に損耗させる。物理演算：Static_Pressure / Material_friction / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Breeding_Altar"
+},
+"V2_DQ11_SELEN_8002": {
+"v2_id": "V2_DQ11_SELEN_8002",
+"original_id": "オホッ！・乳首点火・絶頂波飲込・女王絶叫",
+"detail": "【開幕：弐】祭事開始のトリガーとなる突起部への強加圧。村長の指先が肥大した乳首を弾いた瞬間、セレンの全神経が快感サージを起こし、**「オホォーッ！」と絶叫。この瞬間、彼女の自意識は「繁殖用の獣」へと強制移行。物理演算：Nerve_Overload / Vibration_Sync / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Ignition_Snap"
+},
+"V2_DQ11_SELEN_8003": {
+"v2_id": "V2_DQ11_SELEN_8003",
+"original_id": "精液洗礼・若者一斉放出・白い化粧・胸元汚濁",
+"detail": "【開幕：参】結合前の物理的マーキング。村の若者個体たちが、セレンの胸元へ一斉に高粘度の資源を射出。純白の肌が精液の層で上書きされ、女王が「人間たちの所有物」であることを視覚的に定義。物理演算：fluid_separation / static_Pressure / 粘度1700cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Semen_Baptism"
+},
+"V2_DQ11_SELEN_8004": {
+"v2_id": "V2_DQ11_SELEN_8004",
+"original_id": "布摩擦発火・衣装端引張・乳房間熱摩擦・オホッ腰浮",
+"detail": "【開幕：肆】残存衣装を用いた摩擦熱蹂躙。男たちが衣装の切れ端を左右に引き、乳房の付け根を激しく研磨。布地の摩擦（Material_friction）が熱を帯び、セレンが「オホッ、オホォッ！」と腰を台から浮かせる反射動態。物理演算：Material_friction / Thermal_Conductivity / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Cloth_Friction"
+},
+"V2_DQ11_SELEN_8005": {
+"v2_id": "V2_DQ11_SELEN_8005",
+"original_id": "真珠吸付・冷真珠熱舌・交互刺激・理性融解",
+"detail": "【開幕：伍】冷温差を用いた感覚攪乱。乳首に固定された冷たい真珠（Rigid_Body）と、男たちの高熱化した舌による交互吸引。極端な温度勾配（Thermal_Conductivity）がセレンの理性を物理的に融解させ、白目を剥かせる。物理演算：Thermal_Conductivity / Nerve_Overload / 粘度1350cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Pearl_Tongue"
+},
+"V2_DQ11_SELEN_8006": {
+"v2_id": "V2_DQ11_SELEN_8006",
+"original_id": "第一陣：村長老定着・枯枝質量・敬意快感オホ",
+"detail": "【種付：壱】伝統的資源の胎内定着プロトコル。村の老齢個体による枯れ枝状の質量が、セレンの最奥を研磨。慈愛の精神を逆手に取られ、「オホ……オホッ」と老人を受け入れる屈辱的奉仕。物理演算：Material_Slide / Static_Pressure / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Elder_Imprint"
+},
+"V2_DQ11_SELEN_8007": {
+"v2_id": "V2_DQ11_SELEN_8007",
+"original_id": "第二陣：漁師怒涛ピストン・前後同時ドッキング・尾鰭台打撃",
+"detail": "【種付：弐】屈強な漁師個体群による高負荷ピストン。前後開口部への同時侵入が、セレンの巨躯を物理的に揺さぶる。絶頂のたびに巨大な尾が繁殖台を「バタバタ！」と叩き、その衝撃音が広場を支配する。物理演算：Velocity_Impact / Vibration_Sync / 粘度1600cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Fisherman_Assault"
+},
+"V2_DQ11_SELEN_8008": {
+"v2_id": "V2_DQ11_SELEN_8008",
+"original_id": "オホォーッ！・ダブル最奥衝突・内側引裂・咆哮",
+"detail": "【種付：参】胎内中央における前後質量の物理的衝突（Collision）。内壁を挟んで二つの「棒」がぶつかり合う異常刺激に、セレンは「オホォーッ！」と獣のような咆哮を上げ、意識を絶頂の白濁へ飛ばす。物理演算：Volumetric_Deformation / Nerve_Overload / 粘度1450cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Deep_Collision"
+},
+"V2_DQ11_SELEN_8009": {
+"v2_id": "V2_DQ11_SELEN_8009",
+"original_id": "1リットル貯蔵決壊・精液口溢・逆流ピストン継続",
+"detail": "【種付：肆】内部容量限界突破。胎内に収まりきらない資源が食道を逆流し、女王の口から溢れ出す。精液で溺れかけながらも、男たちは容赦なく質量を突き立て、彼女を「溢れる器」として処理し続ける。物理演算：fluid_separation / Static_Pressure / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Overflow_Breeding"
+},
+"V2_DQ11_SELEN_8010": {
+"v2_id": "V2_DQ11_SELEN_8010",
+"original_id": "休止なき結合連鎖・一秒隙無蹂躙・粘膜充填痙攣",
+"detail": "【種付：伍】非停止型交代ピストン。男が抜ける刹那、次の個体が即座に結合。空気に触れる暇もない連続中出しにより、セレンの開口部は真っ赤に充血。「オホォ、オホッ……」と永続的な痙攣状態へ。物理演算：Velocity_Impact / Stress_Limit / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Seamless_Chain"
+},
+"V2_DQ11_SELEN_8011": {
+"v2_id": "V2_DQ11_SELEN_8011",
+"original_id": "村人全員芳名録・乳房インク刻印・不浄刺青化",
+"detail": "【極致：壱】乳房を芳名帳とする汚辱記録。放出を終えた男たちが、セレンの乳肉に自分の名前をインクで署名。その上からさらに精液が塗り重ねられ、文字が皮膚に染み付く「生ける署名簿」への変質。物理演算：Material_Slide / fluid_separation / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Sign_Titty"
+},
+"V2_DQ11_SELEN_8012": {
+"v2_id": "V2_DQ11_SELEN_8012",
+"original_id": "オホッ顔ディスプレイ・絵師スケッチ・翌年ポスター絶頂",
+"detail": "【極致：弐】最大絶頂時の表情のアーカイブ。白目を剥き、涎を垂らしたセレンの「オホ顔」を村の絵師が詳細に描写。自分の無様な貌が祭りの看板になるという羞恥が、さらなる「オホッ！」を誘発する。物理演算：Nerve_Overload / Aural_details / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Poster_Face"
+},
+"V2_DQ11_SELEN_8013": {
+"v2_id": "V2_DQ11_SELEN_8013",
+"original_id": "衣装重なり窒息愉悦・顔面目隠・闇中多重絶頂",
+"detail": "【極致：参】残存布地を用いた感覚遮断。自分のドレスで顔を覆われ、視覚と呼吸を制限された状態での無差別結合。質量の太さと熱さだけで男を判別させられる「闇の種付け」に、女王の身体が歓喜で震える。物理演算：Stress_Limit / Static_Pressure / 粘度1250cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Dark_Breeding"
+},
+"V2_DQ11_SELEN_8014": {
+"v2_id": "V2_DQ11_SELEN_8014",
+"original_id": "女王排泄・聖水の泉・子宝の雨・羞恥絶頂",
+"detail": "【極致：肆】質量による膀胱圧搾と排泄の神聖化。結合の衝撃で尿を噴き出させ、それを「子宝の雨」と称えて浴びる村人たち。尊厳を排泄物と共に踏みにじられ、セレンは「オホォォーッ！」**と最大級の潮を噴く。物理演算：fluid_separation / static_Pressure / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Royal_Rain"
+},
+"V2_DQ11_SELEN_8015": {
+"v2_id": "V2_DQ11_SELEN_8015",
+"original_id": "サンゴ杭拡張・秘部限界広・常時受容態",
+"detail": "【極致：伍】質量未挿入時の「拡張」維持。太いサンゴの杭（Rigid_Plug）を秘部に常装。胎内を常に限界まで広げ、次の質量を即座に、かつ深く受け入れるための「穴」として固定された女王の末路。物理演算：Volumetric_Deformation / Static_Pressure / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Coral_Expander"
+},
+"V2_DQ11_SELEN_8021": {
+"v2_id": "V2_DQ11_SELEN_8021",
+"original_id": "中出し音合唱・集団射精音響・聴覚絶頂オホ",
+"detail": "【機械：壱】広場に響き渡る数十人同時の射精音（Fluid_Impact_Sound）。「ジュブッ！」という肉と液体の打撃音がセレンの聴覚神経を直接蹂躙。音圧だけで脳内サージが限界に達し、**「オホッ、オホォッ！」と咽び泣きながら全身を弓なりに痙攣させる。物理演算：Aural_details / Vibration_Sync / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Choir_Semen"
+},
+"V2_DQ11_SELEN_8022": {
+"v2_id": "V2_DQ11_SELEN_8022",
+"original_id": "鱗隙間種子埋込・鱗剥離・人魚肉体再定義",
+"detail": "【機械：弐】鱗を一枚ずつ剥離（Material_Friction）させ、その皮下組織へ直接精液を塗り込む物理的改変。人魚の象徴であった鱗が、男たちの種子を保持するための「土壌」へと置換。女王の肉体そのものが汚濁資源で再構築される。物理演算：Material_friction / fluid_separation / 粘度1800cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Scale_Planting"
+},
+"V2_DQ11_SELEN_8023": {
+"v2_id": "V2_DQ11_SELEN_8023",
+"original_id": "喉奥直接種付・声帯汚染・常時湿性オホ声",
+"detail": "【機械：参】発声器官への質量侵入と資源定着。聖なる歌を紡ぐ声帯を精液でコーティングし、物理的に音響特性を破壊。漏れ出る声は、粘液を攪拌する不快な音を伴う「オホ声」へと恒常的に変調される。物理演算：Aural_details / fluid_separation / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Vocal_Pollution"
+},
+"V2_DQ11_SELEN_8024": {
+"v2_id": "V2_DQ11_SELEN_8024",
+"original_id": "豊作祈願全身体位・全方位射精・絶頂拡散",
+"detail": "【機械：肆】アクロバティックな繁殖体位による資源散布。村の四方を向いた状態で絶頂を繰り返し、中出しされた資源と自身の液を広場へ撒き散らす。女王が村の「肥沃な大地」を維持するための生贄（モノ）として機能する動態。物理演算：Volumetric_Deformation / Velocity_Impact / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Harvest_Ritual"
+},
+"V2_DQ11_SELEN_8025": {
+"v2_id": "V2_DQ11_SELEN_8025",
+"original_id": "再受精女王狂乱・母性反転淫乱・宿命受容",
+"detail": "【機械：伍】胎内に宿る異種生命への期待値（Nerve_Overload）。中出しを重ねるごとに「命を宿す」という母性本能が、際限なき質量を求める「淫乱」へと物理的に反転。蹂躙される苦痛を、再受精のための歓喜として処理し始める。物理演算：Nerve_Overload / Static_Pressure / 粘度1450cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Maternal_Inversion"
+},
+"V2_DQ11_SELEN_8026": {
+"v2_id": "V2_DQ11_SELEN_8026",
+"original_id": "潮吹村浄化・最大射精受容・白濁噴水最高潮",
+"detail": "【機械：陸】最大容量の射精に伴う逆流性潮吹き。空高く噴き上げられた女王の液が村人に降り注ぎ、祭事の狂乱が極致へ。セレンの身体が物理的な「噴水」として定義され、全方位への汚濁拡散を完遂。物理演算：fluid_separation / Velocity_Impact / 粘度900cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Fountain_Orgasm"
+},
+"V2_DQ11_SELEN_8027": {
+"v2_id": "V2_DQ11_SELEN_8027",
+"original_id": "足腰喪失・肉穴化・感覚麻痺永続絶頂",
+"detail": "【機械：質】過度なピストン衝撃による下半身神経系の遮断（Paralysis）。もはや意思で腰を振ることはできず、ただ外部からの質量入力を受容し、揺れるだけの「肉の穴」へとダウングレード。抵抗という概念が物理的に消失。物理演算：Stress_Limit / Vibration_Sync / 粘度1600cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Sensory_Loss"
+},
+"V2_DQ11_SELEN_8028": {
+"v2_id": "V2_DQ11_SELEN_8028",
+"original_id": "女王敗北靴舐・繁殖台下服従・骨髄汚染",
+"detail": "【機械：捌】繁殖台の直下、順番待ちの男たちの長靴を舐めさせられる最終的屈服。自身の聖域を蹂躙する者たちへの完全な隷属を骨の髄まで刷り込まれ、舌を使いながら後ろから突かれることに最大の「オホッ！」を覚える。物理演算：Material_Slide / Static_Pressure / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Boot_Submission"
+},
+"V2_DQ11_SELEN_8029": {
+"v2_id": "V2_DQ11_SELEN_8029",
+"original_id": "精液風呂仮眠・樽沈・経皮匂汚染",
+"detail": "【機械：玖】祭りのインターバル中における精液充填樽への浸漬。呼吸器以外を精液に沈められ、皮膚や粘膜から「男の匂い」を強制吸収。休息中すらも資源に汚染され、女王の存在すべてが精液の色に染まる。物理演算：fluid_separation / Thermal_Conductivity / 粘度1700cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Semen_Soak"
+},
+"V2_DQ11_SELEN_8030": {
+"v2_id": "V2_DQ11_SELEN_8030",
+"original_id": "オホッ！乳房刻印・熱種乳首火傷・感覚麻痺",
+"detail": "【機械：拾】高熱化した精液による乳頭部の物理的変質。連続射精による熱と摩擦が乳首を「火傷」に近い状態まで追い込み、感覚が麻痺するほどの快痛を刻印。セレンは「オホッ！」と叫びながら、その痛みを新たな絶頂の燃料とする。物理演算：Thermal_Conductivity / Nerve_Overload / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Heat_Brand"
+},
+"V2_DQ11_SELEN_8031": {
+"v2_id": "V2_DQ11_SELEN_8031",
+"original_id": "意識彼方・肉体絶叫・質量渇望咆哮",
+"detail": "【終焉：壱】精神と肉体の完全解離。知性はムウレアの深海へ逃避するも、肉体はより太く、より熱い質量を求めて「もっと突いて！」と咆哮。もはや女王の意志に関係なく、肉そのものが「射精」を強要するオートマトン状態。物理演算：Aural_details / Nerve_Overload / 粘度1250cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Body_Rebellion"
+},
+"V2_DQ11_SELEN_8032": {
+"v2_id": "V2_DQ11_SELEN_8032",
+"original_id": "1リットル逆流再演・鼻耳噴出・オホ顔怪物",
+"detail": "【終焉：弐】全方位開口部からの資源溢出。胎内の限界容量を超えた種子が鼻腔や耳腔からも漏れ出し、顔面全体が白濁。その状態でなお、中出しを求めて白目を剥く様は、かつての女王ではなく「絶頂の怪物」。物理演算：fluid_separation / Static_Pressure / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Full_Leak"
+},
+"V2_DQ11_SELEN_8033": {
+"v2_id": "V2_DQ11_SELEN_8033",
+"original_id": "村英雄最終結合・全破壊中出・女王砕散",
+"detail": "【終焉：参】祭りのフィナーレ。村最大の質量を持つ個体による、すべてを破壊せんばかりのピストンと大量射精。内部を蹂躙され尽くしたセレンは、その衝撃に耐えかねて声にならない「オホォォ……」を漏らし、完全沈黙。物理演算：Velocity_Impact / Volumetric_Deformation / 粘度1900cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Hero_Finish"
+},
+"V2_DQ11_SELEN_8034": {
+"v2_id": "V2_DQ11_SELEN_8034",
+"original_id": "受精確定安寧・胎内脈動・安堵白目",
+"detail": "【終焉：肆】繁殖成功の物理的予感。胎内で熱く蠢く数億の種子を感じ、自身の存在意義が「苗床」として完遂されたことに深い安堵（Dopamine_Surge）を覚える。「オホ……オホォッ……」**と満足げな白目を剥き、廃人と化す。物理演算：Nerve_Overload / Static_Pressure / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Fertilization_Peace"
+},
+"V2_DQ11_SELEN_8035": {
+"v2_id": "V2_DQ11_SELEN_8035",
+"original_id": "永久苗床・共有財産・追撃中出待望",
+"detail": "【終焉：伍】祭りの終わりと地獄の定着。祭事が終了しても繁殖台からの解放は許可されず、村の「共有財産」として固定。毎日誰かの中出しを受け、資源を胎内に補充し続ける、永遠の「オホ顔の苗床」が完成。物理演算：Static_Pressure / Static_Pressure / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Eternal_Nursery"
+},
+"V2_DQ11_SELEN_9001": {
+"v2_id": "V2_DQ11_SELEN_9001",
+"original_id": "破裂寸前巨腹・装飾服全壊・豊作予兆撫回",
+"detail": "【巨腹：壱】胎児の成長と精液充填による腹部最大膨張。正装の布地が内圧に耐えかねて爆裂し、血管の浮き出た瑞々しい白肌が露出。村人たちが「豊作の供物」として、数千の指先でその膨らみを物理的に圧搾・研磨する。物理演算：Volumetric_Deformation / Static_Pressure / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Pregnant_Belly"
+},
+"V2_DQ11_SELEN_9002": {
+"v2_id": "V2_DQ11_SELEN_9002",
+"original_id": "母乳滴・突起弾・オホッ声白飛沫",
+"detail": "【巨腹：弐】臨月特有の乳管開通。特大の乳房から定常的に溢れ出す母乳（Fluid_Separation）。指先で突起を弾くたびに、女王が**「オホッ！」と脊髄反射で喘ぎ、白い飛沫が甲板を汚濁する物理的マーキング。物理演算：fluid_separation / Vibration_Sync / 粘度800cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Lactation_Snap"
+},
+"V2_DQ11_SELEN_9003": {
+"v2_id": "V2_DQ11_SELEN_9003",
+"original_id": "胎動ピストン共鳴・内外同時突上・白目絶頂",
+"detail": "【巨腹：参】胎児の跳躍と男の質量の内部干渉。内側からの蹴撃と外側からのピストンが同期した瞬間、セレンの脳内はカタルシスで焼き切れ、完璧な白目（Eye_Roll）を晒して硬直する。物理演算：Vibration_Sync / Stress_Limit / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Fetal_Resonance"
+},
+"V2_DQ11_SELEN_9004": {
+"v2_id": "V2_DQ11_SELEN_9004",
+"original_id": "血管浮出聖域・肉体限界露出・一斉種子汚濁",
+"detail": "【巨腹：肆】皮膚の伸展限界による皮下血管の透写。薄氷のような肌の下で脈打つ生命の躍動が、男たちの加虐心を最大化。視覚的興奮に伴い、一斉に放たれた資源が、血管の浮き出た腹部を白く塗りつぶす。物理演算：Material_Slide / static_Pressure / 粘度1800cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Vessel_Exposure"
+},
+"V2_DQ11_SELEN_9005": {
+"v2_id": "V2_DQ11_SELEN_9005",
+"original_id": "乳房種重石・母乳重量加算・オホォ悶絶",
+"detail": "【巨腹：伍】乳房を「資源受け皿」とする重量負荷蹂躙。母乳で既に肥大した肉の上に、男たちの資源を次々と塗り重ね、物理的な「重み」でセレンを圧迫。重みで垂れ下がる乳房の痛みに、女王は「オホォ、オホッ……」と快感混じりの呻きを漏らす。物理演算：Gravity_Impact / Static_Pressure / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Breast_Weight"
+},
+"V2_DQ11_SELEN_9006": {
+"v2_id": "V2_DQ11_SELEN_9006",
+"original_id": "産道最終拡張・出産前蹂躙・オホォーッ震",
+"detail": "【分娩：壱】分娩経路の物理的予備拡張。雛の脱出路を男の太い質量で「開墾」し、粘膜を限界まで引き延ばす。出産以上の摩擦係数（Material_Friction）により、セレンは「オホッ！オホォーッ！」と巨躯を激しく震わせる。物理演算：Volumetric_Deformation / Velocity_Impact / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Path_Expander"
+},
+"V2_DQ11_SELEN_9007": {
+"v2_id": "V2_DQ11_SELEN_9007",
+"original_id": "前後同時胎児衝撃・最奥貫通・オホゴォッ喉鳴",
+"detail": "【分娩：弐】前後開口部からの超深度ドッキング。質量の先端が、雛を包む卵膜を直接圧迫。未知の内部衝撃が迷走神経を直撃し、聖なる歌姫の喉から「オホゴォッ！」という潰れた動物的音響が漏れ出す。物理演算：Nerve_Overload / Static_Pressure / 粘度1600cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Fetal_Strike"
+},
+"V2_DQ11_SELEN_9008": {
+"v2_id": "V2_DQ11_SELEN_9008",
+"original_id": "破水直前蜜溢・濁流潤滑・狂乱種付加速",
+"detail": "【分娩：参】内圧限界による分泌液の噴出。羊水、愛液、精液が混ざり合った「白濁した濁流」が溢れ出し、分娩台を汚染。極限の潤滑状態（Material_Slide）が、男たちのピストンを音速の領域まで加速させる。物理演算：fluid_separation / Velocity_Impact / 粘度950cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Pre_Burst_Lubricant"
+},
+"V2_DQ11_SELEN_9009": {
+"v2_id": "V2_DQ11_SELEN_9009",
+"original_id": "分娩直前1L義務・胎内精液満杯・人魚形状崩壊",
+"detail": "【分娩：肆】雛の誕生直前に行われる精液充填儀式。産声を上げる瞬間の胎内を資源で満たしておくため、1リットル以上の液を強引に注入。腹部が球体状に膨れ上がり、セレンの生物的輪郭が物理的に崩壊する。物理演算：Volumetric_Deformation / static_Pressure / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Final_Filling"
+},
+"V2_DQ11_SELEN_9010": {
+"v2_id": "V2_DQ11_SELEN_9010",
+"original_id": "足腰拘束・腹部圧搾・オホォ意識飛",
+"detail": "【分娩：伍】鎖による尾鰭の固定と、膨張した腹部への外部加圧。男たちが代わる代わる腹の上に乗り、内側の雛と精液を押し潰す。圧迫による窒息感と射精の衝撃がループし、セレンの意識は完全に「オホォ……」の彼方へ。物理演算：Static_Pressure / Stress_Limit / 粘度1700cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Belly_Press"
+},
+"V2_DQ11_SELEN_9011": {
+"v2_id": "V2_DQ11_SELEN_9011",
+"original_id": "母性本能汚染・滋養自己言聞・オホ顔種飲",
+"detail": "【臨界：壱】認知的不協和による母性の汚濁。注がれる種子を「子供たちの栄養」と再定義することで、卑俗な中出しを肯定。慈愛に満ちた（はずの）オホ顔で、不潔な資源を次々と胎内へ受け入れる精神的崩壊。物理演算：Nerve_Overload / static_Pressure / 粘度1450cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Maternal_Corruption"
+},
+"V2_DQ11_SELEN_9012": {
+"v2_id": "V2_DQ11_SELEN_9012",
+"original_id": "村少年授乳・同時下部中出・世代跨蹂躙",
+"detail": "【臨界：弐】乳房と秘部の同時資源交換。片方の乳房で村の幼少個体に母乳を供給しつつ、下部ではその親世代による種付けを受容。女王セレンが村の全世代の「共有資源」として機能する動態アーカイブ。物理演算：fluid_separation / Material_Slide / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Generational_Feeding"
+},
+"V2_DQ11_SELEN_9013": {
+"v2_id": "V2_DQ11_SELEN_9013",
+"original_id": "陣痛中出シンクロ・痛快上書・狂乱旋律",
+"detail": "【臨界：参】周期的陣痛（Physical_Pain）と射精衝撃の同期。腹部を貫く痛みのパルスを、男のピストンによる強烈な快感パルスで物理的に上書き。「痛っ、オホッ！痛っ、オホォッ！」**という、苦悶と絶頂が等価になった狂乱の声。物理演算：Nerve_Overload / Vibration_Sync / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Contraction_Sync"
+},
+"V2_DQ11_SELEN_9014": {
+"v2_id": "V2_DQ11_SELEN_9014",
+"original_id": "喉奥母乳噴射・自己搾乳・質量同時受容",
+"detail": "【臨界：肆】口腔内における母乳と質量の混合。自らの乳房を絞り、溢れ出した白い液を口中に充填した状態で、男の質量を咽頭まで受け入れる。自身の母体成分と男の資源が喉奥で攪拌される汚辱的結合。物理演算：Aural_details / fluid_separation / 粘度1150cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Self_Lactation_Gag"
+},
+"V2_DQ11_SELEN_9015": {
+"v2_id": "V2_DQ11_SELEN_9015",
+"original_id": "サンゴ杭栓・精液密閉・胎児資源挟撃",
+"detail": "【臨界：伍】放流防止のための物理的封鎖。中出し直後に太いサンゴの杭（Rigid_Plug）を秘部へ刺入。内部の雛と、外から注がれた1リットルの精液の間に挟まれた密閉空間で、セレンの細胞が快楽で窒息する。物理演算：Static_Pressure / Volumetric_Deformation / 粘度1950cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Coral_Cutter_Plug"
+},
+"V2_DQ11_SELEN_9016": {
+"v2_id": "V2_DQ11_SELEN_9016",
+"original_id": "祝賀中出し・村人全順・産道最奥資源定着",
+"detail": "【分娩：陸】「元気な子を産め」という名目の集団資源投下。分娩準備段階の極度に過敏な粘膜へ、村の全男性個体が順番に、かつ確実に最奥まで資源を到達させる。セレンは**「オホッ、オホッ」と一回ごとの衝撃に感謝と絶頂を強制され、理性を削り取られる。物理演算：Static_Pressure / Material_Slide / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Congratulatory_Semen"
+},
+"V2_DQ11_SELEN_9017": {
+"v2_id": "V2_DQ11_SELEN_9017",
+"original_id": "全身汚濁コーティング・肉の彫像・衣装完全喪失",
+"detail": "【分娩：質】汗と種子と母乳による全身の被膜化。衣装という概念が消滅し、分泌液のみで輝く「肉の彫像」へと化した女王。その肌に触れるたび、村人たちは「愛玩物（モノ）」としての質感を再確認し、さらなる蹂躙を加速させる。物理演算：fluid_separation / Material_Slide / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Liquid_Statue"
+},
+"V2_DQ11_SELEN_9018": {
+"v2_id": "V2_DQ11_SELEN_9018",
+"original_id": "最大級質量衝突・破水絶頂・人生最大オホォォ",
+"detail": "【分娩：捌】産気づいた瞬間の最大質量侵入。胎児が産道を降りる圧力と、外部からの強烈なピストンが正面衝突。セレンは全人生で最大級の「オホォォォーーーッ！！」という咆哮とともに破水し、羊水と資源を同時に吹き出す。物理演算：Volumetric_Deformation / Velocity_Impact / 粘度1900cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Burst_Ecstasy"
+},
+"V2_DQ11_SELEN_9019": {
+"v2_id": "V2_DQ11_SELEN_9019",
+"original_id": "精液波乗雛・オホ顔対面・新生児汚濁",
+"detail": "【分娩：玖】溢れ出す白濁資源とともに産まれ落ちる雛たち。セレンは絶頂の余韻で白目を剥き、涎を垂らしたまま、産まれてきた我が子を「壊れたオホ顔」で迎える。誕生の瞬間から、雛たちは「父たちの種」にまみれて祝福される。物理演算：fluid_separation / Gravity_Impact / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Semen_Birth"
+},
+"V2_DQ11_SELEN_9020": {
+"v2_id": "V2_DQ11_SELEN_9020",
+"original_id": "産後即時再開・苗床宿命・非停止種付",
+"detail": "【分娩：拾】分娩終了数秒後からの追撃ピストン。子宮が収縮する間も与えず、次の「種付け」プロトコルが開始。出産という大仕事を終えた女王の肉体は、休息ではなく「次の苗床」としての機能を即座に強要される。物理演算：Stress_Limit / Velocity_Impact / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Postpartum_Relay"
+},
+"V2_DQ11_SELEN_9021": {
+"v2_id": "V2_DQ11_SELEN_9021",
+"original_id": "収縮胎内追撃・強引掻回・喉鳴オホゴォ",
+"detail": "【苗床：壱】出産で拡張された内部空間への物理的探査。緩んだ粘膜を男の質量が強引に掻き回し、強制的な収縮（SQUISH係数9.5）を誘発。セレンは身体を「く」の字に曲げ、喉の奥で「オホッ、オゴッ」という湿った音を鳴らし続ける。物理演算：Volumetric_Deformation / Aural_details / 粘度1450cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Uterine_Stirring"
+},
+"V2_DQ11_SELEN_9022": {
+"v2_id": "V2_DQ11_SELEN_9022",
+"original_id": "混合授与・種母乳・初期汚染教育",
+"detail": "【苗床：弐】男たちの種子を混ぜた母乳による授乳。雛たちが最初に口にするのは、母の愛ではなく「蹂躙者の資源」。セレンはアヘ顔で自らの乳房を差し出し、ムウレアの次世代を根底から汚染するプロセスの触媒となる。物理演算：fluid_separation / static_Pressure / 粘度1150cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Contaminated_Milk"
+},
+"V2_DQ11_SELEN_9023": {
+"v2_id": "V2_DQ11_SELEN_9023",
+"original_id": "村英雄刻印・産後最感度・巨根予約射精",
+"detail": "【苗床：参】分娩直後の「黄金の感度」への最大質量投下。村で最も肥大した個体が、セレンの胎内へ「次の繁殖」のための種を深く刻印（Imprint）。物理的な痛覚を快感として脊髄に焼き付け、女王を永遠の待機状態へ。物理演算：Velocity_Impact / Nerve_Overload / 粘度1800cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Hero_Reservation"
+},
+"V2_DQ11_SELEN_9024": {
+"v2_id": "V2_DQ11_SELEN_9024",
+"original_id": "空腹部再充填・模擬妊娠・精液膨張",
+"detail": "【苗床：肆】雛が去った空虚への資源補填。胎児が抜けて凹んだ腹部を、純粋に「男たちの種」のみで再びパンパンに膨らませる。物理的な膨満感（Volumetric_Deformation）がセレンに「偽りの妊娠」を与え、「オホォ……」という満足感を強制。物理演算：Static_Pressure / Volumetric_Deformation / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Semen_Pregnancy"
+},
+"V2_DQ11_SELEN_9025": {
+"v2_id": "V2_DQ11_SELEN_9025",
+"original_id": "無限搾乳宴・女王母乳盃・公共資源化",
+"detail": "【苗床：伍】止まらない母乳の公共化。村人たちが女王の乳房を代わる代わる絞り、盃に満たして酒宴の飲料とする。セレンは自分の体液が村の娯楽として消費される光景を、白濁した瞳で見つめながら絶頂し続ける。物理演算：fluid_separation / static_Pressure / 粘度850cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Public_Lactation"
+},
+"V2_DQ11_SELEN_9026": {
+"v2_id": "V2_DQ11_SELEN_9026",
+"original_id": "産褥愉悦・高揚蹂躙・精神天界昇華",
+"detail": "【終着：壱】出産直後のホルモン異常と終わらない絶頂の融合。肉体が物理的な崩壊を迎えながらも、神経系は「産褥の悦び」を男の質量で上書き。セレンの精神は現実を離れ、快楽のみが存在する天界へと永続的に離脱。物理演算：Nerve_Overload / Aural_details / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Postpartum_High"
+},
+"V2_DQ11_SELEN_9027": {
+"v2_id": "V2_DQ11_SELEN_9027",
+"original_id": "ロウのバニー換装・むふふ本モデル・産後羞恥",
+"detail": "【終着：弐】賢者ロウによる物理的・精神的冒涜。産後の衰弱したセレンに強引にバニー衣装を装着し、汚れた姿を「むふふな本」の記録媒体とする。かつての賢者さえも、彼女を「ただの肉」として扱う絶望的状況。物理演算：Material_friction / Stress_Limit / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Bunny_Shame"
+},
+"V2_DQ11_SELEN_9028": {
+"v2_id": "V2_DQ11_SELEN_9028",
+"original_id": "精液濡産着・雛汚濁包・衣装残骸汚染",
+"detail": "【終着：参】雛たちを包む布地への資源浸透。セレンが必死に隠そうとした母としての慈愛は、男たちの種でベトベトになった衣装の残骸によって上書き。新生児たちは、母の汚れ（Semen）を吸いながら産着を纏う。物理演算：fluid_separation / Material_Slide / 粘度1600cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Soiled_Swaddle"
+},
+"V2_DQ11_SELEN_9029": {
+"v2_id": "V2_DQ11_SELEN_9029",
+"original_id": "敗北永久乳母・主人跪・放出待望動態",
+"detail": "【終着：肆】絶対的服従の定着。自分を犯した男たちを「主人」と認識。女王のプライドは完全に焼失し、膝元で這いつくばりながら、次の放出を「オホォッ！」と期待して待つ「生ける資源供給機」へと完成。物理演算：Static_Pressure / Nerve_Overload / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Kneeling_Slave"
+},
+"V2_DQ11_SELEN_9030": {
+"v2_id": "V2_DQ11_SELEN_9030",
+"original_id": "戦姫女王終着点・白目涎垂・種母乳泉",
+"detail": "【終着：伍】全プロトコルの完結。白目を剥き、涎を垂らし、知性の欠片もない「オホォ……」**を漏らし続けるだけの存在。海底王国の女王は今、村の「種と母乳の永続的な泉」として、永遠の絶頂の中に沈降した。物理演算：Static_Pressure / static_Pressure / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Selen_Final_Spring"
+},
+"V2_DQ11_NIMA_9031": {
+"v2_id": "V2_DQ11_NIMA_9031",
+"original_id": "蹲踞謁見・スリット全開・聖なる蜜滴下",
+"detail": "【日常生活：壱】聖地の主として弟子を迎える際、常に腰を深く落とした「蹲踞（そんきょ）」を維持。修行服の深いスリットから露出した白く柔らかな内腿を晒し、そこから定常的に滴る愛液を隠すこともしない。物理演算：Static_Pressure / Material_Slide / 粘度900cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Squat_Audience"
+},
+"V2_DQ11_NIMA_9032": {
+"v2_id": "V2_DQ11_NIMA_9032",
+"original_id": "食事の儀・蹲踞結合摂取・突き上げ流し込み",
+"detail": "【日常生活：弐】栄養摂取と射精受容の同時執行。蹲踞のまま器を持つニマに対し、下部から弟子の質量がドッキング。突き上げの衝撃による肉体の揺動（Vibration_Sync）を、食事を嚥下するリズムと同期させる不浄な摂食動態。物理演算：Vibration_Sync / static_Pressure / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Combined_Meal"
+},
+"V2_DQ11_NIMA_9033": {
+"v2_id": "V2_DQ11_NIMA_9033",
+"original_id": "蹲踞排尿の儀・全弟子前演目台・精神統一音響",
+"detail": "【日常生活：参】修練場中央、演目台における公開放尿。蹲踞のまま、弟子たちの目前で排泄。修行服を伝い床を叩く水音を「精神統一の極致」として聴かせ、一部の筆頭弟子にはその聖水を口中で直接受容させる。物理演算：fluid_separation / Velocity_Impact / 粘度800cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Holy_Rain"
+},
+"V2_DQ11_NIMA_9034": {
+"v2_id": "V2_DQ11_NIMA_9034",
+"original_id": "睡蓮蹲踞睡眠・不眠固定・夜な夜な種流し",
+"detail": "【日常生活：肆】横臥を禁じられた一晩中の蹲踞姿勢維持。疲労で筋肉が弛緩し、秘部が無防備に開く深夜、夜な夜な弟子たちが忍び寄り、無言で種を流し込む。ニマは眠気と快感の狭間で**「オホッ……」と微かな息を漏らす。物理演算：Stress_Limit / static_Pressure / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Squat_Sleep"
+},
+"V2_DQ11_NIMA_9035": {
+"v2_id": "V2_DQ11_NIMA_9035",
+"original_id": "移動蹲踞跳躍・巨乳顎打撃・胎内精液チャプ音",
+"detail": "【日常生活：伍】聖地内における移動制限。跳ねるように着地するたび、自身の巨乳が顎を打つほどの物理的衝撃（Velocity_Impact）を記録。同時に、胎内に充填された資源が「チャプッ」と音を立て、師父の体内が精液の器であることを周囲に誇示する。物理演算：fluid_separation / Vibration_Sync / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Bounce_Move"
+},
+"V2_DQ11_NIMA_9036": {
+"v2_id": "V2_DQ11_NIMA_9036",
+"original_id": "奥義蹲踞圧搾・脚力根元絞・ドS指導",
+"detail": "【修練：壱】弟子の質量を蹲踞の脚力で物理的に挟み込み、根元まで強制圧搾。師父として「もっと熱いものを出しなさい！」と冷徹に命じながら、自身の粘膜で資源を根こそぎ奪い去る、支配と快楽の演武。物理演算：Volumetric_Deformation / static_Pressure / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Leg_Press"
+},
+"V2_DQ11_NIMA_9037": {
+"v2_id": "V2_DQ11_NIMA_9037",
+"original_id": "精神統一1L重み・蹲踞一昼夜・漏出即叱責",
+"detail": "【修練：弐】胎内への1リットル資源保持修練。蹲踞の姿勢で一昼夜、一滴も漏らさずに耐え忍ぶ。括約筋が限界を迎え、白濁液が溢れた瞬間に、待ち構えていた弟子から「未熟者！」と叱責され、罰としての追撃中出しを執行される。物理演算：Static_Pressure / Stress_Limit / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_1L_Endurance"
+},
+"V2_DQ11_NIMA_9038": {
+"v2_id": "V2_DQ11_NIMA_9038",
+"original_id": "白銀髪緊縛奉仕・銀髪ポニーテール拘束・旅行客蹂躙",
+"detail": "【修練：参】自慢の銀髪（白髪）ポニーテールを自身の四肢に巻き付けられた、自己緊縛状態。自由を奪われたまま蹲踞で晒し台に置かれ、聖地を訪れる旅行客たちの不特定多数の質量を、師としての修行として受容する。物理演算：Material_friction / Stress_Limit / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Hair_Bondage"
+},
+"V2_DQ11_NIMA_9039": {
+"v2_id": "V2_DQ11_NIMA_9039",
+"original_id": "気功感度上昇・魔力全変換・オホッ跳白目",
+"detail": "【修練：肆】自身の気功（魔力）を用いた感覚神経の異常増幅。全魔力を感度へ転換し、指先が触れただけで「オホッ！」と巨躯を跳ねさせ、即座に白目（Eye_Roll）を剥く超感度体質への自己改造。物理演算：Nerve_Overload / Vibration_Sync / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Ki_Sensitivity"
+},
+"V2_DQ11_NIMA_9040": {
+"v2_id": "V2_DQ11_NIMA_9040",
+"original_id": "ドゥルダの鐘絶頂・鐘鳴同期・全力質量衝突",
+"detail": "【修練：伍】聖地の鐘の音に同期した、深奥への物理的打撃。鐘が鳴り響くたび、蹲踞で構えるニマの最奥へ、弟子が全身の力を込めて質量を叩き込む。鐘の残響と「オホォォーッ！」**という絶叫が修練場にこだまする。物理演算：Velocity_Impact / Aural_details / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Bell_Impact"
+},
