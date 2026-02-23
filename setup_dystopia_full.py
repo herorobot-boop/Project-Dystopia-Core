@@ -1,54 +1,43 @@
 # =========================================================
-# Project Dystopia - Phase I: Final Infrastructure (v7.3)
+# Project Dystopia - Phase I: Setup v7.6 [Fail-Safe Edition]
 # =========================================================
-import os
-import subprocess
-from pathlib import Path
+import os, subprocess, shutil
 
-GDRIVE_MODEL_PATH = "gdrive:/AI_Models"
-LOCAL_WORKSPACE = "/workspace/models"
 COMFYUI_PATH = "/workspace/ComfyUI"
 
-def run_command(cmd):
-    print(f"[*] Executing: {cmd}")
-    subprocess.run(cmd, shell=True)
+def safe_clone(url, path, alt_url=None):
+    if os.path.exists(path):
+        print(f"[*] Removing existing directory: {path}")
+        shutil.rmtree(path)
+    
+    print(f"[*] Cloning: {url}")
+    result = subprocess.run(f"git clone {url} {path}", shell=True)
+    
+    # 認証要求等で失敗した場合は代替URL(Public版)を試行
+    if result.returncode != 0 and alt_url:
+        print(f"[!] Primary URL failed. Switching to Public Mirror: {alt_url}")
+        subprocess.run(f"git clone {alt_url} {path}", shell=True)
 
 def setup_env():
-    print("🚀 Project Dystopia: Starting Final Integration Setup v7.3...")
+    # 1. ComfyUI本体の完全な再構築
+    safe_clone("https://github.com/comfyanonymous/ComfyUI.git", COMFYUI_PATH)
+    subprocess.run(f"pip install -r {COMFYUI_PATH}/requirements.txt", shell=True)
 
-    # 1. ディレクトリ確保
-    for sub in ["checkpoints", "loras", "unet/wan2.2", "vae", "clip"]:
-        os.makedirs(os.path.join(LOCAL_WORKSPACE, sub), exist_ok=True)
-
-    # 2. 必須ライブラリの一括インストール (API / WebSocket / Image用)
-    print("[*] Installing core python libraries...")
-    run_command("pip install requests websocket-client pillow pandas opencv-python-headless originote-sdk")
-
-    # 3. 高速同期 (Fast Mode)
-    run_command(f"rclone copy {GDRIVE_MODEL_PATH} {LOCAL_WORKSPACE} --progress --update --size-only --transfers 16")
-
-    # 4. 依存カスタムノードの「徴用」 (NotebookLM指摘分を網羅)
+    # 2. カスタムノードの確実な徴用 (問題の箇所を修正済)
     nodes = [
-        "https://github.com/ltdrdata/ComfyUI-Manager.git",
-        "https://github.com/Kijai/ComfyUI-WanVideoWrapper.git",
-        "https://github.com/civitai/sd_civitai_extension.git", # Civitai-Helper
-        "https://github.com/pythongosssss/ComfyUI-WD14-Tagger.git",
-        "https://github.com/LucianoCirino/efficiency-nodes-comfyui.git",
-        "https://github.com/Mel-Anine/ComfyUI-VideoHelperSuite.git",
-        "https://github.com/cubiq/ComfyUI_IPAdapter_plus.git" # 検体固定用追加
+        ("https://github.com/ltdrdata/ComfyUI-Manager.git", f"{COMFYUI_PATH}/custom_nodes/ComfyUI-Manager", None),
+        ("https://github.com/Kijai/ComfyUI-WanVideoWrapper.git", f"{COMFYUI_PATH}/custom_nodes/ComfyUI-WanVideoWrapper", None),
+        ("https://github.com/LucianoCirino/efficiency-nodes-comfyui.git", f"{COMFYUI_PATH}/custom_nodes/efficiency-nodes-comfyui", None),
+        # 認証が必要なURLを避け、最初からパブリック版(Kosinkadink)を指定
+        ("https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite.git", f"{COMFYUI_PATH}/custom_nodes/ComfyUI-VideoHelperSuite", None)
     ]
-    for repo in nodes:
-        name = repo.split("/")[-1].replace(".git", "")
-        path = os.path.join(COMFYUI_PATH, f"custom_nodes/{name}")
-        if not os.path.exists(path):
-            run_command(f"git clone {repo} {path}")
-            if os.path.exists(f"{path}/requirements.txt"):
-                run_command(f"pip install -r {path}/requirements.txt")
 
-    # 5. リポジトリ最新化
-    run_command("git pull origin main")
+    for url, path, alt in nodes:
+        safe_clone(url, path, alt)
+        if os.path.exists(f"{path}/requirements.txt"):
+            subprocess.run(f"pip install -r {path}/requirements.txt", shell=True)
 
-    print("\n✅ 武装完了。launch_h-k9.sh でComfyUIを起動してください。")
+    print("\n✅ [H-K9] 再構築完了。次は止まりません。")
 
 if __name__ == "__main__":
     setup_env()
