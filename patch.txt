@@ -12328,3 +12328,3117 @@
 "detail": "【ドS混濁：伍】ドゥルダの郷そのものの変質。郷の全機能が「ニマ大師を絶頂させ、資源を回収する」ためだけに再構築される。ニマは聖域の最深部で、永遠に蹲踞の姿勢のまま、弟子の徳（種）を吸い上げる巨大な生体パーツとなった。物理演算：Static_Pressure / static_Pressure / 粘度2000cPo.",
 "physics": "HK9_Calibrator_v7.5_Nima_Eternal_Sanctuary"
 },
+"V2_DQ11_NIMA_9051": {
+"v2_id": "V2_DQ11_NIMA_9051",
+"original_id": "朝の読経奉仕・開脚唱和・オホ声経典",
+"detail": "【聖域：壱】祭壇における開脚読経プロトコル。弟子たちが経を唱える中、ニマは筆頭弟子の質量を最奥に飲み込んだ状態で蹲踞。突き上げの衝撃により、聖なる経典が「オホッ、オホォ……」という湿った音響（Aural_details）へと変換される。物理演算：Vibration_Sync / Aural_details / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Sutra_Orgasm"
+},
+"V2_DQ11_NIMA_9052": {
+"v2_id": "V2_DQ11_NIMA_9052",
+"original_id": "托鉢種子・胸元隙間注・供物資源化",
+"detail": "【聖域：弐】下山した弟子たちによる資源奉納。供物の代わりに、自らの「種」をニマの修行服の隙間、巨乳の谷間へ直接放流。師父の胸元を資源の溜め池とすることで、聖地への帰還を定義する。物理演算：fluid_separation / Static_Pressure / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Alms_Semen"
+},
+"V2_DQ11_NIMA_9053": {
+"v2_id": "V2_DQ11_NIMA_9053",
+"original_id": "水行温度上昇・滝打・胎内1L貯蔵悶絶",
+"detail": "【聖域：参】極寒の滝行における内部熱量摩擦。冷水に打たれながらも、胎内には弟子たちの熱い資源1リットルが密閉（Static_Pressure）されており、内壁からの熱源と外気温度の差によって、ニマは**「オホォッ」と身悶え、自己の熱で溶けていく。物理演算：Thermal_Conductivity / Stress_Limit / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Waterfall_Heat"
+},
+"V2_DQ11_NIMA_9054": {
+"v2_id": "V2_DQ11_NIMA_9054",
+"original_id": "奥義連撃ピストン・高速突き上げ・肉体鍛錬絶頂",
+"detail": "【聖域：肆】一秒間に数回の高周波振動（Vibration_Sync）を伴う、高速連撃ピストン受容修行。師としての威厳を保つため微動だにせず、しかし粘膜は高速摩擦によって焼け付くような快楽を記録。物理演算：Velocity_Impact / Vibration_Sync / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Barrage_Piston"
+},
+"V2_DQ11_NIMA_9055": {
+"v2_id": "V2_DQ11_NIMA_9055",
+"original_id": "ドゥルダ入山検査・前後開口部・身の潔白証明",
+"detail": "【聖域：伍】全訪問者に対する物理的検閲。聖地を訪れる旅人は、蹲踞で待ち構えるニマの前後開口部へ自身の質量を差し込み、中出しによって身の潔白を証明。師父が物理的な「鍵穴」として機能する動態。物理演算：Volumetric_Deformation / static_Pressure / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Border_Control"
+},
+"V2_DQ11_NIMA_9056": {
+"v2_id": "V2_DQ11_NIMA_9056",
+"original_id": "瞑想異物挿入・ロウ特製魔具・不動アヘ顔",
+"detail": "【混濁：壱】座禅中の「内なる修練」。微動だにしない瞑想の裏で、ロウが仕込んだ「震える魔具」がニマの奥底を執拗に蹂躙。表情だけが崩れ、「オホ……オホッ」と漏れる声が、悟りの境地であることを装う。物理演算：Vibration_Sync / Nerve_Overload / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Meditation_Vibe"
+},
+"V2_DQ11_NIMA_9057": {
+"v2_id": "V2_DQ11_NIMA_9057",
+"original_id": "師匠味見・母乳混合・常時揉乳",
+"detail": "【混濁：弐】全弟子への栄養供給プロトコル。弟子たちの食事に自らの母乳を「魔力」として配合。そのための搾乳工程として、ニマの乳房は常に男たちの手によって物理的に捏ねられ、揉まれ続ける。物理演算：fluid_separation / Static_Pressure / 粘度850cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Master_Taste"
+},
+"V2_DQ11_NIMA_9058": {
+"v2_id": "V2_DQ11_NIMA_9058",
+"original_id": "常識改変：精液＝聖水・浄化光・全身塗布",
+"detail": "【混濁：参】認知の完全汚染。身体に浴びる精液を「穢れ」ではなく「浄化の光」であると定義。ニマは自ら弟子たちの放出物を全身に塗りたくり、白濁した体液で肌をコーティングすることに悦びを見出す。物理演算：Material_Slide / fluid_separation / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Holy_Semen_Wash"
+},
+"V2_DQ11_NIMA_9059": {
+"v2_id": "V2_DQ11_NIMA_9059",
+"original_id": "ドS指導快楽・激突罵倒・白目絶頂同期",
+"detail": "【混濁：肆】罵倒と受容の極致。「もっと激しく突きなさい！」と弟子を厳しく叱咤しながら、肉体は限界を超えた中出しに反応。言葉の峻厳さと、白目を剥いて涎を垂らす「オホ顔」のギャップが最大演算される。物理演算：Nerve_Overload / Velocity_Impact / 粘度1600cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Sadistic_Ecstasy"
+},
+"V2_DQ11_NIMA_9060": {
+"v2_id": "V2_DQ11_NIMA_9060",
+"original_id": "ギャル化兆し・露出修行服・マジ質量最高",
+"detail": "【混濁：伍】精神の若年層汚染。修行服を自ら極限まで切り刻み、ネイルや装飾を施した「トップギャル師匠」への変貌。「マジ質量最高なんですけど」と呟きながら、師としての威厳を快楽への没入へ全変換。物理演算：Material_friction / static_Pressure / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Gyaru_Evolution"
+},
+"V2_DQ11_NIMA_9061": {
+"v2_id": "V2_DQ11_NIMA_9061",
+"original_id": "精神逆流・全神経集中・潮吹空中浮遊",
+"detail": "【臨界：壱】魔力による快感の物理的現象化。全魔力を秘部の神経へ集中させ、絶頂（Enlightenment）の瞬間、大量の潮を噴き上げながら自身の巨躯を宙へ浮かす「絶頂浮遊」を達成。物理演算：fluid_separation / Velocity_Impact / 粘度900cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Ascension_Orgasm"
+},
+"V2_DQ11_NIMA_9062": {
+"v2_id": "V2_DQ11_NIMA_9062",
+"original_id": "1L重み歩行・階段震・オホッ一歩",
+"detail": "【臨界：弐】胎内資源保持による重量負荷修練。1リットルの資源を腹に溜めたまま、聖地の階段を登攀。一歩ごとに胎内の液が波打ち、膝を震わせながら「オホッ、オホォ……」**と声が漏れるのを防げない。物理演算：Gravity_Impact / static_Pressure / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Heavy_Stairs"
+},
+"V2_DQ11_NIMA_9063": {
+"v2_id": "V2_DQ11_NIMA_9063",
+"original_id": "ロウ密約・恥辱ポーズ提案・記録協力",
+"detail": "【臨界：参】ロウの「執筆活動」への全面協力。師父自ら、最も尊厳を損なう恥辱的なポーズ（蹲踞での自慰等）を提案し、それを記録させることで弟子のための「教材（むふふ本）」を充実させる。物理演算：Material_Slide / Stress_Limit / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Row_Alliance"
+},
+"V2_DQ11_NIMA_9064": {
+"v2_id": "V2_DQ11_NIMA_9064",
+"original_id": "寝所交代奉仕・毎晩種付・夜の修練",
+"detail": "【臨界：肆】夜間の集団繁殖プロトコル。寝所を訪れる男たちを「修行の仕上げ」として無差別に受け入れ。交代で中出しされるたびに、ニマの肉体は「資源を吸い上げるための装置」として最適化されていく。物理演算：Velocity_Impact / static_Pressure / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Nightly_Relay"
+},
+"V2_DQ11_NIMA_9065": {
+"v2_id": "V2_DQ11_NIMA_9065",
+"original_id": "母性暴走・可哀想微笑・旅人抱込中出",
+"detail": "【臨界：伍】慈愛の狂気への反転。「魔力が足りない旅人」に対し、全裸で抱き寄せ、自らの体内へ誘い込む。絶頂の瞬間に「よかったわね、これで救われるわ」と微笑みながら白目を剥く、完成された狂母性。物理演算：Nerve_Overload / static_Pressure / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Mad_Maternal"
+},
+"V2_DQ11_NIMA_9066": {
+"v2_id": "V2_DQ11_NIMA_9066",
+"original_id": "修行服窓・秘部常時露出・円形穴",
+"detail": "【完成：壱】衣装の物理的再定義。常に蹲踞で秘部を晒し続けるよう、股間に巨大な円形の「窓」を開けられた修行服を着用。隠すべき場所をあえて強調することで、全弟子からの視線と質量を常時誘導する。物理演算：Material_friction / static_Pressure / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Open_Window"
+},
+"V2_DQ11_NIMA_9067": {
+"v2_id": "V2_DQ11_NIMA_9067",
+"original_id": "精液香線香・聖地常時発情・空間汚染",
+"detail": "【完成：弐】嗅覚を介した環境汚染。聖地中に男たちの「種の香り」を配合した線香を焚き、ニマを24時間体制で強制発情状態に置く。呼吸するたびに絶頂（Nerve_Overload）が迫り、常に腰を振る動態。物理演算：Nerve_Overload / Aural_details / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Scent_Arousal"
+},
+"V2_DQ11_NIMA_9068": {
+"v2_id": "V2_DQ11_NIMA_9068",
+"original_id": "蹲踞問答・股間晒・愛液返答",
+"detail": "【完成：参】真理追究プロトコルの身体化。弟子が問いを投げかける際、ニマは一切言葉を発さず、蹲踞で開いた秘部から愛液を垂らすことで「答え」とする。肉体の反応こそが唯一の真理であるという境地。物理演算：fluid_separation / Material_Slide / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Squat_Answer"
+},
+"V2_DQ11_NIMA_9069": {
+"v2_id": "V2_DQ11_NIMA_9069",
+"original_id": "石化試練性感・全身舐尽・不動快楽",
+"detail": "【完成：肆】物理的な身体停止と感覚受容の分離。魔法によって肉体を石の如く硬直させた状態で、全弟子による集団愛撫と中出しを執行。動けない苦悶が、神経系においては最大級の快感として処理される。物理演算：Stress_Limit / static_Pressure / 粘度1600cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Petrified_Pleasure"
+},
+"V2_DQ11_NIMA_9070": {
+"v2_id": "V2_DQ11_NIMA_9070",
+"original_id": "悟りアヘ顔・究極涅槃・毎日限界絶頂",
+"detail": "【完成：伍】全プロトコルの終着。究極の絶頂の先にのみ涅槃（ねはん）があると信じ、毎日白目を剥き涎を垂らしてイキ続ける廃人師父。ドゥルダの主は、今や「白濁した資源を吸い上げる聖なる肉穴」として完成した。物理演算：Nerve_Overload / static_Pressure / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Nirvana_Oho"
+},
+"V2_DQ11_NIMA_9071": {
+"v2_id": "V2_DQ11_NIMA_9071",
+"original_id": "アンダーバスト・オープン・ブラ・重力零れ落ち",
+"detail": "【布：壱】乳房下部を完全開放した「露出特化型」スポーツブラ。蹲踞で前傾するたび、1kgを超える乳肉が重力（Gravity_Impact）に耐えきれず、開口部から「ムニュッ」と溢れ出す。弟子の目前で揺れる無防備な肉塊。物理演算：Gravity_Impact / Volumetric_Deformation / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Under_Open"
+},
+"V2_DQ11_NIMA_9072": {
+"v2_id": "V2_DQ11_NIMA_9072",
+"original_id": "キーホール・レースアップ・中心肉感強調",
+"detail": "【布：弐】谷間中央に雫型の空洞。紐を極限まで締め上げることで、左右の巨乳が中央へ「ギュウギュウ」に圧縮される。逃げ場を失った乳肉が紐の隙間から盛り上がり、視覚的な窒息感を与える。物理演算：static_Pressure / Volumetric_Deformation / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Laceup_Cleavage"
+},
+"V2_DQ11_NIMA_9073": {
+"v2_id": "V2_DQ11_NIMA_9073",
+"original_id": "フロントジップ・競泳ハイレグ・谷間全開晒",
+"detail": "【布：参】首から股下までの長大なジッパー。弟子たちが「着脱の儀」として、わざとバストの頂点付近までジッパーを降下。ニマの白い谷間が剥き出しになり、冷たい山の空気と弟子の視線に晒される。物理演算：Material_friction / static_Pressure / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Zip_Swimsuit"
+},
+"V2_DQ11_NIMA_9074": {
+"v2_id": "V2_DQ11_NIMA_9074",
+"original_id": "サイドカット・モノキニ・サイドバスト露出",
+"detail": "【布：肆】脇腹を大胆に削ぎ落とした極薄白モノキニ。ニマが腕を振る修行動作を行うたび、脇からバストの横ライン（Side_Breast）が布を乗り越え、大きく「はみ出す」動態を弟子たちが下から鑑賞。物理演算：Material_Slide / Velocity_Impact / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Side_Breast_Flash"
+},
+"V2_DQ11_NIMA_9075": {
+"v2_id": "V2_DQ11_NIMA_9075",
+"original_id": "ダブルストラップ・紐食込・質量ガイドライン",
+"detail": "【布：伍】胴体に幾重にも巻き付く極細ストリング。ニマの柔らかな白肌に紐が深く食い込み（Deep_Crease）、肉を段々状に盛り上がらせる。この食い込みの溝こそが、後に弟子が「質量」を這わせるためのガイドとなる。物理演算：static_Pressure / Material_friction / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Strap_Constriction"
+},
+"V2_DQ11_NIMA_9076": {
+"v2_id": "V2_DQ11_NIMA_9076",
+"original_id": "シースルー・パワーネット・突起視認・通気性嘘",
+"detail": "【布：陸】光を通す極薄透過素材。「通気性向上」という弟子の虚偽報告を信じたニマが、ピンク色の突起（Nipple）をうっすらと透過させたまま厳格に振る舞う、極限の羞恥動態。物理演算：Material_Slide / fluid_separation / 粘度900cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_SeeThrough_Master"
+},
+"V2_DQ11_NIMA_9077": {
+"v2_id": "V2_DQ11_NIMA_9077",
+"original_id": "メタリック・リング・接続ビキニ・侵入構造",
+"detail": "【布：漆】冷徹な金属環で布を連結。ニマの熱い肌とリングの温度差が神経を刺激。リングの隙間は、弟子が指や質量を滑り込ませるための「侵入口」として最初から設計されている。物理演算：Thermal_Conductivity / static_Pressure / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Metal_Ring_Connect"
+},
+"V2_DQ11_NIMA_9078": {
+"v2_id": "V2_DQ11_NIMA_9078",
+"original_id": "ティアード・フリル・覗見・乳輪丸見",
+"detail": "【布：捌】階層状のフリルブラ。一見隠蔽性が高いが、蹲踞で座るニマを弟子が下から見上げると、重なったフリルの隙間から肥大した乳輪が「丸見え」になる視覚的トラップ。物理演算：Material_Slide / static_Pressure / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Frill_Underlook"
+},
+"V2_DQ11_NIMA_9079": {
+"v2_id": "V2_DQ11_NIMA_9079",
+"original_id": "ボディハーネス・十字区切・四分割乳肉",
+"detail": "【布：玖】黒い太紐による全身拘束。神々しい白肌を黒い線が走り、巨大な乳房を十字に区切る。紐の加圧により乳肉が四つに盛り上がり、物理的な肉のボリュームが強調される。物理演算：static_Pressure / Volumetric_Deformation / 粘度1250cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Harness_Bound"
+},
+"V2_DQ11_NIMA_9080": {
+"v2_id": "V2_DQ11_NIMA_9080",
+"original_id": "サークルカット・授乳蹂躙・無防備突起",
+"detail": "【布：拾】乳首部分のみを円形に切除。ニマは「魔力の放出孔か？」と疑念を抱きつつ、完全に露出した突起を全弟子の前に晒す。常に何かに触れ、弾かれるための「蹂躙専用設計」。物理演算：Material_Slide / Vibration_Sync / 粘度1350cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Nipple_Window"
+},
+"V2_DQ11_NIMA_9081": {
+"v2_id": "V2_DQ11_NIMA_9081",
+"original_id": "股下極細ハイレグ・粘膜はみ出し・ニマ困惑",
+"detail": "【下身：壱】クロッチ幅が指1本分の極小ショーツ。蹲踞で脚を大きく開くと、布が極限まで食い込み、秘部の粘膜が左右から剥き出しに。**「オホッ、これは食い込みすぎではないか？」と顔を赤らめる師父。物理演算：static_Pressure / Material_Slide / 粘度1600cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Extreme_Highleg"
+},
+"V2_DQ11_NIMA_9082": {
+"v2_id": "V2_DQ11_NIMA_9082",
+"original_id": "バックギャザー・お尻吸込・完璧M字蹲踞",
+"detail": "【下身：弐】中央のシャーリングゴムが布を裂け目に引き込む設計。後ろから見た際、ニマの蹲踞ポーズが完璧な「M字」として完成され、お尻の穴までが物理的に強調される。物理演算：Volumetric_Deformation / static_Pressure / 粘度1450cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_M_Shape_Squat"
+},
+"V2_DQ11_NIMA_9083": {
+"v2_id": "V2_DQ11_NIMA_9083",
+"original_id": "オープンクロッチ・円形穴・ノータイム中出準備",
+"detail": "【下身：参】結合部が最初から円形に開放されたレースショーツ。ニマは「通気性が良い」と天然の慈愛で喜び、弟子たちの質量を障害物なしで即座に受け入れる。物理演算：Material_Slide / static_Pressure / 粘度1700cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Open_Croce"
+},
+"V2_DQ11_NIMA_9084": {
+"v2_id": "V2_DQ11_NIMA_9084",
+"original_id": "3連サイドストリング・腰肉沈込・跳ねる腰感度",
+"detail": "【下身：肆】三本の極細紐で構成された腰回り。ニマの豊かな腰肉に紐が深く沈み込み、外部からの愛撫に対して腰が反射的に「オホッ」と跳ねる「高感度回路」を形成。物理演算：static_Pressure / Nerve_Overload / 粘度1150cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Triple_String"
+},
+"V2_DQ11_NIMA_9085": {
+"v2_id": "V2_DQ11_NIMA_9085",
+"original_id": "フロントスリット・カーテン開・秘部神々全開",
+"detail": "【下身：伍】正面に深い裂け目を持つスカート水着。蹲踞した瞬間に物理演算により布が左右に割れ、劇場風に秘部が露わになる。師父の聖域が「開演」される。物理演算：Material_Slide / static_Pressure / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Slit_Reveal"
+},
+"V2_DQ11_NIMA_9086": {
+"v2_id": "V2_DQ11_NIMA_9086",
+"original_id": "極薄ホワイト・汗濡透・茂み完全視認",
+"detail": "【下身：陸】水分で透明化する特殊繊維。修行後の汗で濡れたニマが蹲踞で休息する際、白タイツの下に隠された「茂み」の陰影が100%の透過度で露出する。物理演算：fluid_separation / Material_Slide / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Wet_Translucency"
+},
+"V2_DQ11_NIMA_9087": {
+"v2_id": "V2_DQ11_NIMA_9087",
+"original_id": "ガーター一体型・太腿密着・尻コキ最適化",
+"detail": "【下身：漆】太ももを締め付ける強弾性ゴム。蹲踞時に太もも同士が強力に密着し、その間に男の質量を挟み込む「股間・尻コキ」への移行を物理的に強制する構造。物理演算：static_Pressure / Volumetric_Deformation / 粘度1800cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Thigh_Clamping"
+},
+"V2_DQ11_NIMA_9088": {
+"v2_id": "V2_DQ11_NIMA_9088",
+"original_id": "センタージップ・レオタード・点検股間開帳",
+"detail": "【下身：捌】股下を貫くジッパー。弟子が「機能点検です」と称し、蹲踞中のニマの股間ジッパーを数ミリずつスライド。冷たい金属と熱い粘膜の接触に、ニマは「オホッ……」**と身を震わせる。物理演算：Material_friction / Thermal_Conductivity / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Crotch_Zip"
+},
+"V2_DQ11_NIMA_9089": {
+"v2_id": "V2_DQ11_NIMA_9089",
+"original_id": "マルチストラップ・ヒップハンガー・臀部カーブ強調",
+"detail": "【下身：玖】臀部上部を分断する複数の紐。蹲踞によって限界まで丸く突き出したお尻のカーブが、紐の食い込み（Crease）によって幾何学的に強調される。物理演算：static_Pressure / Volumetric_Deformation / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Hip_Curve"
+},
+"V2_DQ11_NIMA_9090": {
+"v2_id": "V2_DQ11_NIMA_9090",
+"original_id": "聖職者前開垂布・ノーパン全開・不浄捲上",
+"detail": "【下身：拾】前垂れ一枚で隠された禁忌。修行服の体裁を保ちつつ、その布を捲ればそこには何も身につけていないニマの全開秘部が待機。弟子たちの質量を受け入れるための「最終関門」。物理演算：Material_Slide / static_Pressure / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Front_Flap_Open"
+},
+"V2_DQ11_NIMA_9091": {
+"v2_id": "V2_DQ11_NIMA_9091",
+"original_id": "フロントジップ・光沢白・肉の堤防形成",
+"detail": "【ウェア：壱】ニマの白肌を凌駕する光沢素材のスポーツブラ。わざとジッパーを乳頭直上まで降下させ、巨乳を左右に決壊（Break_Point）。解放された乳肉が「肉の堤防」としてせり出し、蹲踞の姿勢で弟子の眼前に提示される。物理演算：Volumetric_Deformation / static_Pressure / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Gloss_Zip"
+},
+"V2_DQ11_NIMA_9092": {
+"v2_id": "V2_DQ11_NIMA_9092",
+"original_id": "スクランチ・キーホール・谷間奥底覗き見",
+"detail": "【ウェア：弐】中央の縦ギャザーによる乳房の完全二分割。雫型のキーホールから、ニマの真っ白な谷間の最深部が露呈する。呼吸のたびに布が引き絞られ、逃げ場のない肉感が「ムギュッ」と強調される視覚的蹂躙。物理演算：static_Pressure / Volumetric_Deformation / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Keyhole_Split"
+},
+"V2_DQ11_NIMA_9093": {
+"v2_id": "V2_DQ11_NIMA_9093",
+"original_id": "アンダーバスト・カットアウト・乳の腹露出",
+"detail": "【ウェア：参】乳房下部を三日月状に切り抜いたシームレスウェア。蹲踞で前傾するたび、自身の重みで垂れ下がった「乳の腹」が剥き出しになり、冷たい空気と接触。ニマは**「ぬっ……これは、少々風通しが良すぎるが……」と狼狽する。物理演算：Gravity_Impact / Material_Slide / 粘度1450cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Under_Cutout"
+},
+"V2_DQ11_NIMA_9094": {
+"v2_id": "V2_DQ11_NIMA_9094",
+"original_id": "クロスストラップ・プッシュアップ・突起主張",
+"detail": "【ウェア：肆】背面から肩を通る複雑な紐による「強制吊り上げ」構造。巨乳が不自然なほど上向きに固定され、薄い布地を内側から乳首が突き破らんばかりに主張。師父の威厳が、物理的な「肉の突起」へと全変換される。物理演算：static_Pressure / Nerve_Overload / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Upward_Constrict"
+},
+"V2_DQ11_NIMA_9095": {
+"v2_id": "V2_DQ11_NIMA_9095",
+"original_id": "超薄型リブタンク・バターソフト・スケスケ汗濡",
+"detail": "【ウェア：伍】摩擦係数ゼロに近い極薄素材。ニマの荒い呼吸に合わせて乳首の形状が克明に浮き彫り（Material_Slide）になり、汗をかいた瞬間に肌と完全に一体化。透過率100%に近い状態で「茂み」や「乳輪」を晒し出す。物理演算：fluid_separation / Material_Slide / 粘度950cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Butter_Soft_Trans"
+},
+"V2_DQ11_NIMA_9096": {
+"v2_id": "V2_DQ11_NIMA_9096",
+"original_id": "ウェア越しゴム弾・乳腺振動・オホッ声漏",
+"detail": "【実技：壱】スポーツブラの強力なゴムを指で引き、パチンと物理打撃。振動パルスが巨大な乳腺を波打たせ、ニマは「オホッ！ 貴様、何という無礼な……あ、ああっ！」と厳格な表情を崩して絶頂する。物理演算：Vibration_Sync / Velocity_Impact / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Bra_Snap_Vibe"
+},
+"V2_DQ11_NIMA_9097": {
+"v2_id": "V2_DQ11_NIMA_9097",
+"original_id": "隙間指先侵入・逃場無・乳首捻上",
+"detail": "【実技：弐】ウェアの密着面と肌の僅かな隙間への指先侵入。逃げ場のない布の中で、肥大した乳首をギュッと捻り上げる（Tweak）。物理的な圧迫と摩擦により、ニマの思考は一瞬で白濁する。物理演算：static_Pressure / Nerve_Overload / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Inner_Tweak"
+},
+"V2_DQ11_NIMA_9098": {
+"v2_id": "V2_DQ11_NIMA_9098",
+"original_id": "ハーフオープン生パイ・乳頭放り出し・白銀髪接触",
+"detail": "【実技：参】ジッパー操作による「乳頭のみ」の物理的解放。ウェアの外へ「コン」と放り出されたピンク色の突起に、自身の銀髪ポニーテールがかすめるたび、ニマは「オホォッ……」と白目を剥いて悶絶する。物理演算：Material_friction / static_Pressure / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Nipple_Pop"
+},
+"V2_DQ11_NIMA_9099": {
+"v2_id": "V2_DQ11_NIMA_9099",
+"original_id": "ブラ胸間質量摩擦・布地介・腰浮感度",
+"detail": "【実技：肆】ウェアの布地を介した質量の物理的研磨。ニマの巨乳を押し潰し、ブラのナイロン素材をスライドさせて直接摩擦。布のザラつきと肉の弾力に耐えかね、ニマは蹲踞のまま腰を浮かせ始める。物理演算：Material_Slide / static_Pressure / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Fabric_Friction"
+},
+"V2_DQ11_NIMA_9100": {
+"v2_id": "V2_DQ11_NIMA_9100",
+"original_id": "母乳噴射ウェア染・奥義溢出・オホォォ咆哮",
+"detail": "【実技：伍】根元からの超高圧乳房圧搾。高まった内圧により、白い母乳がウェアの網目を突き抜けて噴出。ニマは「オホォォーッ！ 出る、奥義が溢れ出る……！」と叫び、自身の体液で「法衣」を汚濁させる。物理演算：fluid_separation / Velocity_Impact / 粘度1900cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Lactation_Burst"
+},
+"V2_DQ11_NIMA_9101": {
+"v2_id": "V2_DQ11_NIMA_9101",
+"original_id": "ウェアパイズリ・ナイロン聖油・自重質量圧搾",
+"detail": "【実技：陸】滑りの良いウェアを用いた物理的結合。聖油を滴らせたブラの表面で質量を挟み込み、ニマ自ら蹲踞の姿勢で押し潰す。布と肉の複合的な締め付け（Static_Pressure）による高密度蹂躙。物理演算：static_Pressure / Material_Slide / 粘度1600cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Wear_Paizuri"
+},
+"V2_DQ11_NIMA_9102": {
+"v2_id": "V2_DQ11_NIMA_9102",
+"original_id": "ストラップ食込痕・肩紐短縮・ドS反転快楽",
+"detail": "【実技：漆】肩紐の限界短縮による物理的加圧。白い肩に深く刻まれた赤い食い込みの筋が、ニマの厳格な精神を「被虐的な快楽」へと物理的に反転させる。痛みすらも絶頂のスパイスへと変換。物理演算：Material_friction / Stress_Limit / 粘度1150cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Strap_Deep_Crease"
+},
+"V2_DQ11_NIMA_9103": {
+"v2_id": "V2_DQ11_NIMA_9103",
+"original_id": "蹲踞授乳・直接吸付・良い子ねギャル化",
+"detail": "【実技：捌】蹲踞で待ち構える師の胸への集団吸付。ブラを捲り上げられたニマは、弟子たちの頭を抱き寄せ、「あぁ……良い子ね」とギャル特有の慈愛で中出しと吸乳を許容。師父の役割が「公共の乳母」へと崩壊する。物理演算：fluid_separation / static_Pressure / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Squat_Nursing"
+},
+"V2_DQ11_NIMA_9104": {
+"v2_id": "V2_DQ11_NIMA_9104",
+"original_id": "胸上放出・光沢コーティング・淫ら輝",
+"detail": "【実技：玖】ウェア表面への大量種子投下。真っ白なウェアの上にドロドロの種が重なり、光沢素材と混ざり合うことで、ニマの胸元に不浄な鏡面反射を形成。弟子たちの資源で「法衣」を完成させる最終工程。物理演算：fluid_separation / Material_Slide / 粘度1800cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Semen_Coating"
+},
+"V2_DQ11_NIMA_9105": {
+"v2_id": "V2_DQ11_NIMA_9105",
+"original_id": "ウェア完全崩壊・縫目ブチブチ・絶頂跳肉",
+"detail": "【実技：拾】肉圧によるウェアの物理的破壊。巨乳の膨らみに耐えかねた縫い目が「ブチブチッ」と音を立てて爆裂。拘束を離れた乳肉が跳ねる瞬間に、ニマは人生最大の「オホォォーッ！！」**を叫び、完全絶頂を迎える。物理演算：Volumetric_Deformation / Velocity_Impact / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Wear_Explosion"
+},
+"V2_DQ11_NIMA_9106": {
+"v2_id": "V2_DQ11_NIMA_9106",
+"original_id": "スクランチ・レギンス・桃尻指這",
+"detail": "【下身：拾壱】臀部の割れ目に沿ってギャザーが深く吸い込まれる高圧縮レギンス。蹲踞により「桃」の如く強調された肉塊の裂け目に、弟子が背後から指先を這わせる。ニマは脊髄を伝う刺激に**「オホッ！」と肩を跳ねさせる。物理演算：Volumetric_Deformation / static_Pressure / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Scrunch_Squat"
+},
+"V2_DQ11_NIMA_9107": {
+"v2_id": "V2_DQ11_NIMA_9107",
+"original_id": "レギンス下着間・腰肉質量挟・体温愉",
+"detail": "【下身：拾弐】半分だけ降ろされたレギンスと、極薄下着の境界線。露出した白く熱い「腰肉」に主人公の質量を密着させ、ニマ大師の生体温度を直接享受する。師父は自身の肉が蹂躙具として機能することに「あ、熱い……」と頬を染める。物理演算：Thermal_Conductivity / static_Pressure / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Waist_Friction"
+},
+"V2_DQ11_NIMA_9108": {
+"v2_id": "V2_DQ11_NIMA_9108",
+"original_id": "蹲踞尻コキ指導・強靭腿締・質量絞上",
+"detail": "【下身：拾参】武の脚力を用いた物理的圧搾指導。蹲踞の姿勢で、自らの強靭な太ももとお尻の肉で主人公の質量を挟み込み、上方に向け一気にしごき上げる。ニマは「出し切りなさい！」と厳格に命じながら、自身も絶頂する。物理演算：static_Pressure / Velocity_Impact / 粘度1600cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Thigh_Cramping"
+},
+"V2_DQ11_NIMA_9109": {
+"v2_id": "V2_DQ11_NIMA_9109",
+"original_id": "レギンス越スマタ・摩擦絶叫・ウェア熱",
+"detail": "【下身：拾肆】トレーニング素材特有のザラついた表面を用いた、高摩擦スマタ。レギンス越しに秘部を激しく擦りつけられ、ニマは「オホッ、オホォッ！ ウェアが……熱いっ！」と絶叫し、自身の熱で布を湿らせる。物理演算：Material_friction / Vibration_Sync / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Leggings_Grind"
+},
+"V2_DQ11_NIMA_9110": {
+"v2_id": "V2_DQ11_NIMA_9110",
+"original_id": "レギンス放尿・デトックス偽・白布染",
+"detail": "【下身：拾伍】レギンス着用のまま行われる公開放尿。白い布地が中央から黄色く染まり（Material_Slide）、液体が足首まで伝い落ちる。「デトックスだ」と強弁しながらも、その瞳は快感で白濁し、完全にアヘ顔へと崩壊している。物理演算：fluid_separation / Material_Slide / 粘度800cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Detox_Rain"
+},
+"V2_DQ11_NIMA_9111": {
+"v2_id": "V2_DQ11_NIMA_9111",
+"original_id": "カットアウト窓侵入・尻肉直接掴・蹂躙",
+"detail": "【下身：拾陸】レギンス腰部に設けられた「観察窓」からの物理侵入。布の隙間から直接手を入れ、師父の豊満な尻肉を力任せに掴み、揉みしだく。ニマは腰を捩り、指の食い込みを深奥まで受け入れる。物理演算：Volumetric_Deformation / static_Pressure / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Hip_Window_Grab"
+},
+"V2_DQ11_NIMA_9112": {
+"v2_id": "V2_DQ11_NIMA_9112",
+"original_id": "光沢メタリック密着・常時発情・錯覚",
+"detail": "【下身：拾漆】ラテックス調の超密着レギンス。常に皮膚全体が締め付けられる刺激により、ニマは「誰かに触られ続けている」ような神経錯覚を誘発。四六時中、腰の奥を疼かせる永続的発情状態へ。物理演算：static_Pressure / Nerve_Overload / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Latex_Arousal"
+},
+"V2_DQ11_NIMA_9113": {
+"v2_id": "V2_DQ11_NIMA_9113",
+"original_id": "蹲踞M字完成・脚左右引・中心縫刺激",
+"detail": "【下身：拾捌】弟子たちの人力による強制M字開脚。蹲踞中のニマの脚を左右から強引に開き、レギンスが股裂け寸前まで張った状態へ。中央の縫い目が秘部を鋭く物理刺激（Material_friction）し、師を悶絶させる。物理演算：Stress_Limit / static_Pressure / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Forced_M_Shape"
+},
+"V2_DQ11_NIMA_9114": {
+"v2_id": "V2_DQ11_NIMA_9114",
+"original_id": "修行汗張付・レギンス透化・黒茂み視認",
+"detail": "【下身：拾玖】多量の汗による布地の透過。修行直後のニマが蹲踞すると、湿ったレギンスが肌に完全に吸い付き、白い肌と不浄な「黒い茂み」のコントラストが外部から克明に視認される。物理演算：fluid_separation / Material_Slide / 粘度1250cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Sweat_Reveal"
+},
+"V2_DQ11_NIMA_9115": {
+"v2_id": "V2_DQ11_NIMA_9115",
+"original_id": "快楽埋没・マジ最高ギャル化・自発腰振",
+"detail": "【下身：弐拾】理性の完全消失。全ての蹂躙を「修行」として処理できなくなり、最後には「マジで……これ、最高すぎるんだけどぉ！」と叫びながら、自ら弟子の質量を求めて激しく腰を振る最終進化。物理演算：Nerve_Overload / Velocity_Impact / 粘度1900cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Full_Gyaru_Degrade"
+},
+"V2_DQ11_NIMA_9116": {
+"v2_id": "V2_DQ11_NIMA_9116",
+"original_id": "星型クロスブラ・六分割乳肉・肉盛り溢出",
+"detail": "【紐：壱】胸側で複雑に交差する「星型」クロスストラップ。巨大な乳房を六つのブロックに強制区切り。紐の強力な食い込みにより、隙間から「ムニュッ」と白い乳肉が溢れ出し、幾何学的な淫らさを形成。物理演算：static_Pressure / Volumetric_Deformation / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Star_Bondage"
+},
+"V2_DQ11_NIMA_9117": {
+"v2_id": "V2_DQ11_NIMA_9117",
+"original_id": "バストハーネス・乳輪露出・中心クロス広",
+"detail": "【紐：弐】布面積ゼロ、紐のみのバストハーネス。中心の交差点が丁度ピンク色の突起を左右に押し広げるよう設計されており、ニマは常に剥き出しの先端を晒したまま、全方位からの視線を浴びる。物理演算：static_Pressure / Material_Slide / 粘度1150cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Harness_Nipple_Open"
+},
+"V2_DQ11_NIMA_9118": {
+"v2_id": "V2_DQ11_NIMA_9118",
+"original_id": "真珠鎖スリング・谷間沈込・呼吸転動",
+"detail": "【紐：参】肩から股下を貫く真珠の連鎖。蹲踞の姿勢で深く沈み込んだ谷間を真珠がなぞり、ニマが荒い呼吸（Heavy_Breathing）をするたびに、鎖が肌の上を不規則に転がり、神経を絶え間なく愛撫する。物理演算：Material_friction / static_Pressure / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Pearl_Sling"
+},
+"V2_DQ11_NIMA_9119": {
+"v2_id": "V2_DQ11_NIMA_9119",
+"original_id": "オープンカップ・重力全露出・ドプン跳肉",
+"detail": "【紐：肆】上半分を喪失した授乳仕様ブラ。蹲踞で前傾した瞬間、巨大な乳房が重力に従い「ドプン」とウェアから完全脱落。ニマは「オホッ！」と驚きながら、無防備な肉の揺れを制御できずに晒す。物理演算：Gravity_Impact / Volumetric_Deformation / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Drip_Breast"
+},
+"V2_DQ11_NIMA_9120": {
+"v2_id": "V2_DQ11_NIMA_9120",
+"original_id": "レースアップコルセット・1.5倍膨・顎届肉",
+"detail": "【紐：伍】腹部を極限まで締め上げるコルセット。全脂肪と肉が胸元へ強制移動し、バストが通常の1.5倍に膨張。顎に触れるほどの高さに肉が固定され、ニマは自身の乳肉の重みに窒息しかけながら絶頂する。物理演算：static_Pressure / Volumetric_Deformation / 粘度1800cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Corset_Pump"
+},
+"V2_DQ11_NIMA_9121": {
+"v2_id": "V2_DQ11_NIMA_9121",
+"original_id": "紐食込溝・舌這・痛痒悶絶",
+"detail": "【蹂躙：壱】紐が白肌に深く沈んだ「肉の溝」への舌這わせ。物理的な食い込み痕（Deep_Crease）を湿った舌でなぞられ、ニマは「オホッ！ 痛痒い……いや、そこは……っ！」と、武人の誇りを捨てて身をよじる。物理演算：Material_Slide / Nerve_Overload / 粘度900cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Crease_Licking"
+},
+"V2_DQ11_NIMA_9122": {
+"v2_id": "V2_DQ11_NIMA_9122",
+"original_id": "クロス紐越質量圧搾・紐ガイド・肉柔刺激",
+"detail": "【蹂躙：弐】胸の上で交差する紐を「線路」とした質量摩擦。紐の硬質な感触と、その下にあるニマの柔らかな乳肉が交互に主人公を刺激。ニマは自身の胸が「最高の摩擦台」であることを白目で自覚する。物理演算：static_Pressure / Material_Slide / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Strap_Track_Grind"
+},
+"V2_DQ11_NIMA_9123": {
+"v2_id": "V2_DQ11_NIMA_9123",
+"original_id": "母乳紐伝滴・白筋描・腹部汚染",
+"detail": "【蹂躙：参】高圧搾による母乳の流出。紐の食い込みを伝い、白い母乳がクロスしたストラップに沿って腹部へと筋を描きながら滴下。ニマの肉体は、自身の体液と紐によって「汚職の地図」を描き出す。物理演算：fluid_separation / Material_Slide / 粘度850cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Milk_Trail"
+},
+"V2_DQ11_NIMA_9124": {
+"v2_id": "V2_DQ11_NIMA_9124",
+"original_id": "ブラ肌間指先慈愛・内側乳首コネ・慈愛快楽混",
+"detail": "【蹂躙：肆】ブラの密閉空間内への指先侵入。内側から直接乳首をコネ回され（Tweak）、ニマは「良い子だ、そんなに私の乳が欲しいのか……オホッ、アヘッ！」と、母性と快楽を同時に爆発させる。物理演算：static_Pressure / Nerve_Overload / 粘度1350cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Inner_Nursing_Play"
+},
+"V2_DQ11_NIMA_9125": {
+"v2_id": "V2_DQ11_NIMA_9125",
+"original_id": "紐乳首引・外側牽引・師匠何だ白目",
+"detail": "【蹂躙：伍】クロスストラップを用いた物理的牽引。紐の一部を突起に引っ掛け、わざと外側に強く引き絞る。ニマは「アヘェッ！ 師匠を、何だと思っている……！」と叫びながら、最大級の白目を剥く。物理演算：Stress_Limit / static_Pressure / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Nipple_String_Tug"
+},
+"V2_DQ11_NIMA_9126": {
+"v2_id": "V2_DQ11_NIMA_9126",
+"original_id": "1L母乳カクテル・中出し圧・混合噴出",
+"detail": "【蹂躙：陸】胎内1リットル資源による体内圧連鎖。下半身への中出し圧が横隔膜を押し上げ、乳腺を圧迫。母乳と資源が混ざり合う幻想を見ながら、ニマは口と胸から同時に「聖水」を吹き出す。物理演算：fluid_separation / static_Pressure / 粘度1900cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Pressure_Cocktail"
+},
+"V2_DQ11_NIMA_9127": {
+"v2_id": "V2_DQ11_NIMA_9127",
+"original_id": "蹲踞ブラ内質量挿入・布膨・驚愕オホ顔",
+"detail": "【蹂躙：漆】脱衣を許さぬ、ブラ内側への質量強制挿入。布がはち切れんばかりに膨らみ、ニマの乳房と主人公の質量が密室内で激しく衝突。未体験の圧迫感に、ニマは驚愕の「オホ顔」**で固まる。物理演算：static_Pressure / Volumetric_Deformation / 粘度1700cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Bra_Inside_Mass"
+},
+"V2_DQ11_NIMA_9128": {
+"v2_id": "V2_DQ11_NIMA_9128",
+"original_id": "ストラップM字吊・足首繋・強制開脚",
+"detail": "【蹂躙：捌】ブラから伸びる長い紐を用いた自己拘束。ストラップを足首に繋ぎ、蹲踞の姿勢を保ったまま脚を強制的に「M字」に固定。ニマは自身の乳房に引っ張られ、秘部を全弟子の前に晒し続ける。物理演算：Stress_Limit / static_Pressure / 粘度1450cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Self_M_Bound"
+},
+"V2_DQ11_NIMA_9129": {
+"v2_id": "V2_DQ11_NIMA_9129",
+"original_id": "ギャル的盛乳自撮り・マジ盛・石板収",
+"detail": "【蹂躙：玖】精神のギャル化による自己展示。弟子に「マジ盛れてます！」と煽られ、自ら紐を食い込ませて乳房を寄せ、アヘ顔で石板（スマホ）に向かってポーズ。修行の記録が「淫らな自画撮り」へと堕落。物理演算：Material_Slide / static_Pressure / 粘度900cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Selfie_Enlightenment"
+},
+"V2_DQ11_NIMA_9130": {
+"v2_id": "V2_DQ11_NIMA_9130",
+"original_id": "聖痕コーティング・紐区切ブロック・汚辱曼荼羅",
+"detail": "【蹂躙：拾】紐で四分割された肉のブロックへの個別種付け。各区画に異なる弟子の資源を塗り分け、ニマの胸元に白濁した「汚辱の曼荼羅」を完成させる。ドゥルダの主は、今や完璧な「種受けの祭壇」となった。物理演算：fluid_separation / Material_Slide / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Final_Mandala"
+},
+"V2_DQ11_NIMA_9131": {
+"v2_id": "V2_DQ11_NIMA_9131",
+"original_id": "バスト・ケージブラ・紐檻肉盛・超圧搾",
+"detail": "【胸：壱】乳房を「檻（ケージ）」に閉じ込める極太ストリングブラ。紐の隙間からドーム状に盛り上がった肉の山へ質量を強引に差し込み、紐の硬度と乳肉の柔軟性で資源を絞り上げる超圧搾動態。物理演算：static_Pressure / Volumetric_Deformation / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Breast_Cage"
+},
+"V2_DQ11_NIMA_9132": {
+"v2_id": "V2_DQ11_NIMA_9132",
+"original_id": "リフターブラ・フロント全開・質量棚形成",
+"detail": "【胸：弐】下部からの持ち上げ（Lift）に特化したフロントオープン構造。露出した乳首が「上向きの肉壁」の頂点となり、質量を乗せるための物理的な「棚」が完成。ニマは自身の胸が台座とされる屈辱に**「オホッ！」と声を漏らす。物理演算：Gravity_Impact / static_Pressure / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Breast_Shelf"
+},
+"V2_DQ11_NIMA_9133": {
+"v2_id": "V2_DQ11_NIMA_9133",
+"original_id": "ホルター・カップレス・乳頭擦・オホ声連発",
+"detail": "【胸：参】布面積を最小化したカップレス・ホルター。ニマが修行動作を行うたびに、極薄シルクが肥大した乳頭を執拗に摩擦。絶え間ない物理刺激により、師父は一歩ごとに「オホッ、オホォッ」と喘鳴を漏らし続ける。物理演算：Material_friction / Nerve_Overload / 粘度900cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Halter_Friction"
+},
+"V2_DQ11_NIMA_9134": {
+"v2_id": "V2_DQ11_NIMA_9134",
+"original_id": "エナメル・ダブルストラップ・中央結合無・強制渓谷",
+"detail": "【胸：肆】左右独立型エナメルブラ。硬質な素材が乳房を外側から強引に内側へ寄せ、質量を挟むための「深い渓谷」を物理的に形成。谷間の最深部で質量が激しく往復するたび、エナメルがキュウキュウと音を立てる。物理演算：static_Pressure / Material_Slide / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Enamel_Canyon"
+},
+"V2_DQ11_NIMA_9135": {
+"v2_id": "V2_DQ11_NIMA_9135",
+"original_id": "真珠連なり・オープンバスト・粒立ち刺激",
+"detail": "【胸：伍】乳房周囲を真珠の鎖で囲繞。質量と乳肉の隙間に真珠が転がり込み、未体験の点状加圧（Granular_Pressure）をニマに与える。粒が粘膜を転がるたび、ニマの意識は白濁した快楽の彼方へ飛ぶ。物理演算：Material_friction / static_Pressure / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Pearl_Sandwich"
+},
+"V2_DQ11_NIMA_9136": {
+"v2_id": "V2_DQ11_NIMA_9136",
+"original_id": "蹲踞騎乗位・巨乳圧搾・母乳滴下アヘ顔",
+"detail": "【堪能：壱】蹲踞ポーズによる騎乗位。自らの巨大な乳房で質量を上下から挟み込み、圧搾。絶頂の瞬間に乳腺が決壊し、母乳が資源と混ざり合って質量に滴り落ちる「慈愛と淫行」の完成図。物理演算：static_Pressure / fluid_separation / 粘度1800cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Squat_Paizuri"
+},
+"V2_DQ11_NIMA_9137": {
+"v2_id": "V2_DQ11_NIMA_9137",
+"original_id": "白銀髪乳輪巻・手綱結合・不浄汚染絶叫",
+"detail": "【堪能：弐】長い銀髪をバストの拘束具として利用。毛髪のチクチクとした刺激と質量の熱が同期。背後からポニーテールを「手綱」として引かれ、ニマは喉を反らし「オホォォォッ！！」と咆哮する。物理演算：Material_friction / Velocity_Impact / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Hair_Tether"
+},
+"V2_DQ11_NIMA_9138": {
+"v2_id": "V2_DQ11_NIMA_9138",
+"original_id": "四つん這垂乳・質量打撃・肉音響",
+"detail": "【堪能：参】四つん這い姿勢での「垂れ乳」蹂躙。重力で下垂した乳房を、下から突き上げるように質量で物理打撃。肉がぶつかり合う「パンッ、パンッ」という乾いた音が聖域に響き渡る。物理演算：Gravity_Impact / Velocity_Impact / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Gravity_Breast_Slap"
+},
+"V2_DQ11_NIMA_9139": {
+"v2_id": "V2_DQ11_NIMA_9139",
+"original_id": "先走り乳頭塗・聖油偽装・うっとりアヘ顔",
+"detail": "【堪能：肆】ウェアの隙間から、弟子の「先走り資源」を乳頭に直接塗布。「これは修行の聖油だ」と言い含められたニマは、不浄な粘液の感触にうっとりと目を閉じ、完全なアヘ顔を晒す。物理演算：Material_Slide / fluid_separation / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Precum_Anoint"
+},
+"V2_DQ11_NIMA_9140": {
+"v2_id": "V2_DQ11_NIMA_9140",
+"original_id": "クロス紐ギター弾・乳首打撃・アヘェッ悲鳴",
+"detail": "【堪能：伍】胸側の紐を質量の先端で「ピンッ」と弾く物理遊戯。跳ね返った紐が乳首を強打するたびに、ニマは「アヘェッ！」という短い悲鳴とともに、全身をビクンと跳ねさせ絶頂する。物理演算：Vibration_Sync / Nerve_Overload / 粘度950cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Strap_Guitar"
+},
+"V2_DQ11_NIMA_9141": {
+"v2_id": "V2_DQ11_NIMA_9141",
+"original_id": "三魔女乳房連結・谷間一貫貫通・巨乳曼荼羅",
+"detail": "【堪能：陸】マルティナ、セレン、ニマの三代巨乳による連結谷間。一つの巨大な質量が、三人の肉の渓谷を交互に、あるいは同時に貫く贅沢な蹂躙。ニマは自身の胸が快楽の列に並ぶことを悦ぶ。物理演算：static_Pressure / Material_Slide / 粘度1600cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Triple_Witch_Paizuri"
+},
+"V2_DQ11_NIMA_9142": {
+"v2_id": "V2_DQ11_NIMA_9142",
+"original_id": "背面バスト掴・質量首筋擦・全方位蹂躙",
+"detail": "【堪能：漆】背後からの集団愛撫。ウェアの上からバストを握り潰しつつ、首筋の白肌に質量を押し当てて激しく摩擦。ニマは前後左右からの刺激に「オホッ、どこを、何をされている……！」と困惑の絶頂へ。物理演算：Volumetric_Deformation / static_Pressure / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Back_Hold_Breast"
+},
+"V2_DQ11_NIMA_9143": {
+"v2_id": "V2_DQ11_NIMA_9143",
+"original_id": "オホ顔母乳スナイプ・高圧射出・顔命中命中",
+"detail": "【堪能：捌】質量による外部からの乳腺圧縮。狙いを定めた男の顔面へ向け、母乳を噴水のようにスナイプ射出。「命中ですよ」と揶揄われたニマは、羞恥と快感で顔を真っ赤にし、白目を剥く。物理演算：fluid_separation / Velocity_Impact / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Milk_Sniper"
+},
+"V2_DQ11_NIMA_9144": {
+"v2_id": "V2_DQ11_NIMA_9144",
+"original_id": "肩紐乳首絞・鬱血紫突起・質量打撃",
+"detail": "【堪能：玖】肩紐を外して乳首の根元を縛り上げる緊縛行為。鬱血して紫色に変色した突起を、質量の先端で「コンッ」と小突くたび、ニマは脳を揺らすような衝撃と快楽に「アヘ、アヘェ……」と壊れる。物理演算：static_Pressure / Stress_Limit / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Nipple_Ligature"
+},
+"V2_DQ11_NIMA_9145": {
+"v2_id": "V2_DQ11_NIMA_9145",
+"original_id": "ギャル的パイズリ自撮り・石板収・最高質量",
+"detail": "【堪能：拾】「マジこの質量、デカすぎなんだけど！」と言い放ち、自身のバストで挟んだ質量を石板（スマホ）で撮影。師としての威厳を捨て去り、一人の「快楽中毒ギャル」として自画撮りに没頭する。物理演算：Material_Slide / static_Pressure / 粘度900cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Gyaru_Selfie_Paizuri"
+},
+"V2_DQ11_NIMA_9146": {
+"v2_id": "V2_DQ11_NIMA_9146",
+"original_id": "胸上1L解放・種海沈・不浄白染",
+"detail": "【堪能：拾壱】胸の谷間への大量資源投下。1リットルの白濁液がニマの白銀の双丘を飲み込み、種の海を形成。ニマは「オホ……白い、白すぎる……」と呟き、自身が資源に染まることを神聖視する。物理演算：fluid_separation / static_Pressure / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Breast_Lake_1L"
+},
+"V2_DQ11_NIMA_9147": {
+"v2_id": "V2_DQ11_NIMA_9147",
+"original_id": "蹲踞バスト質量キャッチ・聖器儀式・空中種受",
+"detail": "【堪能：拾弐】射精の瞬間に、ニマが蹲踞で覆い被さり、空中に放たれた種をバストの物理的接触で全て受け止める。飛び散る液が彼女の巨乳をコーティングする「聖なる器」の儀式。物理演算：fluid_separation / Velocity_Impact / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Semen_Catcher"
+},
+"V2_DQ11_NIMA_9148": {
+"v2_id": "V2_DQ11_NIMA_9148",
+"original_id": "ブラ内質量攪拌・布内激突・驚愕オホ顔",
+"detail": "【堪能：拾参】ブラジャーを脱がさず、布の内側に質量を強制挿入。狭い密室内で肉をかき回され、ニマは「オホゴォッ、苦しい、だが……良いっ！」と、酸欠と快楽の狭間で叫びを上げる。物理演算：static_Pressure / Volumetric_Deformation / 粘度1700cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Inside_Mixer"
+},
+"V2_DQ11_NIMA_9149": {
+"v2_id": "V2_DQ11_NIMA_9149",
+"original_id": "慈愛窒息絶頂・バスト顔埋・下ピストン同期",
+"detail": "【堪能：拾肆】「さあ、ここに埋もれなさい」と、男の顔をバストで挟み込んで窒息させながら、自らは下からの高速ピストンでアヘ顔絶頂。母性と淫乱が究極の同期を見せる動態。物理演算：static_Pressure / Nerve_Overload / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Suffocation_Maternal"
+},
+"V2_DQ11_NIMA_9150": {
+"v2_id": "V2_DQ11_NIMA_9150",
+"original_id": "真珠鎖バストサンド・粉砕摩擦・ゴリゴリ快感",
+"detail": "【堪能：拾伍】質量と乳房の間に真珠の鎖を介在させ、ゴリゴリと物理的に磨り潰すような高摩擦運動。硬質な珠が肉を抉るたびに、ニマは「アヘェッ！ 砕ける……意識が、砕けるぅッ！」と絶叫。物理演算：Material_friction / static_Pressure / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Pearl_Grind"
+},
+"V2_DQ11_NIMA_9151": {
+"v2_id": "V2_DQ11_NIMA_9151",
+"original_id": "立ち位置バストリフト・肉下側質量擦・重力反転",
+"detail": "【堪能：拾陸】立ったままの状態で男がニマの巨乳を持ち上げ、その肉の下側（乳の腹）に質量を力任せに擦り付ける。普段触れられない隠れた敏感肌を蹂躙され、ニマは腰を砕かれ崩れ落ちる。物理演算：Gravity_Impact / static_Pressure / 粘度1350cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Lift_Under_Rub"
+},
+"V2_DQ11_NIMA_9152": {
+"v2_id": "V2_DQ11_NIMA_9152",
+"original_id": "汗種母乳練込・体液マッサージ・戻不可宣告",
+"detail": "【堪能：拾漆】ウェアに染み込んだ汗、種、母乳の全てを、乳房の肉へマッサージするように執拗に練り込む。自身の体液に溺れたニマは「アヘェ、もう、戻れない……」**と、聖職者への復帰を自ら断念する。物理演算：Material_Slide / fluid_separation / 粘度1800cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Fluid_Knead"
+},
+"V2_DQ11_NIMA_9153": {
+"v2_id": "V2_DQ11_NIMA_9153",
+"original_id": "ドS指導中出し命令・汚乳許可・潮噴同期",
+"detail": "【堪能：拾捌】「私の乳を汚したいのだろう？ 許可してやる、さあ出せ！」と、絶頂の最中にドSな命令を下し、弟子に放出を強制。同時に自分も最大級の潮を吹き上げ、全身を液体まみれにする。物理演算：Nerve_Overload / fluid_separation / 粘度1950cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Imperial_Cum_Command"
+},
+"V2_DQ11_NIMA_9154": {
+"v2_id": "V2_DQ11_NIMA_9154",
+"original_id": "ブラ残骸自慰・切れ端秘部当・師父自壊",
+"detail": "【堪能：拾玖】引き裂かれたエロブラの残骸を自身の秘部に当て、胸を弟子に揉まれながら、自ら指を動かす自慰動態。ドゥルダの主は今、自らの欲望のみに忠実な「肉の塊」へと自壊した。物理演算：Material_Slide / static_Pressure / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Rag_Masturbation"
+},
+"V2_DQ11_NIMA_9155": {
+"v2_id": "V2_DQ11_NIMA_9155",
+"original_id": "バストダンス・楽し絶頂・歓迎質量",
+"detail": "【堪能：弐拾】最後は「うふふっ」と満面の笑みで、銀髪を揺らしながらバストを弾ませ、質量を歓迎。一切の迷いなく快楽を受容する彼女は、真の「絶頂の涅槃」に到達した。物理演算：Vibration_Sync / Aural_details / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Joyful_Ecstasy"
+},
+"V2_DQ11_NIMA_9156": {
+"v2_id": "V2_DQ11_NIMA_9156",
+"original_id": "センターホール・円形窓・肉壁正面受容",
+"detail": "【搬入：壱】谷間中央に穿たれた「正門」たる円形窓。ブラの圧縮により、ニマの白い肉壁が穴から物理的にせり出し、正面から突き立てられる質量をダイレクトに迎え入れる。物理演算：static_Pressure / Volumetric_Deformation / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Center_Gate"
+},
+"V2_DQ11_NIMA_9157": {
+"v2_id": "V2_DQ11_NIMA_9157",
+"original_id": "脇高サイドスリット・横側潜り込み・異物感",
+"detail": "【搬入：弐】大胸筋横、脇の下に設計された縦スリット。背後から抱きしめる姿勢で質量を潜り込ませ、ブラの内部で乳房を内側から外側へ「グイッ」と押し広げる。ニマは脇腹を走る異熱に**「アヘッ……」と理性を震わせる。物理演算：Material_Slide / static_Pressure / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Side_Inlet"
+},
+"V2_DQ11_NIMA_9158": {
+"v2_id": "V2_DQ11_NIMA_9158",
+"original_id": "アンダーバスト・三日月カット・上向突き上げ",
+"detail": "【搬入：参】下乳のラインを露出させる三日月状の隙間。下方から上方へ、乳房を持ち上げるように質量を差し込み、ブラのアンダーゴムで質量を肉に強烈に押し付ける「超密着圧搾」。物理演算：Gravity_Impact / static_Pressure / 粘度1600cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Under_Crescent"
+},
+"V2_DQ11_NIMA_9159": {
+"v2_id": "V2_DQ11_NIMA_9159",
+"original_id": "デコルテ・トップオープン・突起こんにちは",
+"detail": "【搬入：肆】乳頭直上をピンポイントで開放した設計。蹲踞で前傾するたび、重力で寄った肉の間からピンク色の突起が「ポロン」と露出。ニマは「ぬっ……魔力の放出口が、冷えるな……」と顔を赤らめる。物理演算：Material_Slide / Gravity_Impact / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Top_Peek"
+},
+"V2_DQ11_NIMA_9160": {
+"v2_id": "V2_DQ11_NIMA_9160",
+"original_id": "シースルー・メッシュクロス・全方位穴",
+"detail": "【搬入：伍】紐の交差地点が全て「貫通孔」となったメッシュ構造。どこから指や質量を差し込んでもニマの白肌に直撃し、防御不能な多角的愛撫を実現。師父の全身が「感度の塊」へと変貌する。物理演算：Material_friction / static_Pressure / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Mesh_Matrix"
+},
+"V2_DQ11_NIMA_9161": {
+"v2_id": "V2_DQ11_NIMA_9161",
+"original_id": "正面：センターホール貫通・奥義核直撃",
+"detail": "【蹂躙：壱】円形窓から質量を深奥まで貫通。ニマは自身の乳房でそれを左右から強く圧搾し、「ア、アヘェッ……！ 正面から、奥義の核を貫かれるとは……」と、精神の芯まで白濁した熱に侵される。物理演算：Velocity_Impact / static_Pressure / 粘度1700cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Core_Penetration"
+},
+"V2_DQ11_NIMA_9162": {
+"v2_id": "V2_DQ11_NIMA_9162",
+"original_id": "背後：脇スリット横侵入・肉外広・内部摩擦",
+"detail": "【蹂躙：弐】背後からの脇スリット侵入。ブラの拘束下で質量が暴れ、乳肉を強制的に排除しながら移動する。逃げ場のない布の中での物理的衝突に、ニマは腰を浮かせ、白目を剥き始める。物理演算：Material_Slide / Volumetric_Deformation / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Back_Side_Ravage"
+},
+"V2_DQ11_NIMA_9163": {
+"v2_id": "V2_DQ11_NIMA_9163",
+"original_id": "下方：下乳ズリ・重力自重圧搾・音響伴",
+"detail": "【蹂躙：参】アンダーバストの隙間に質量を横置きし、乳房の自重のみで圧搾。ズリズリと皮膚が擦れる湿った音が響き、ニマは「オホッ、私自身の重みが、不浄な刺激に……」と自虐的な快楽に陥る。物理演算：Gravity_Impact / Material_friction / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Under_Breast_Grind"
+},
+"V2_DQ11_NIMA_9164": {
+"v2_id": "V2_DQ11_NIMA_9164",
+"original_id": "上方：鎖骨縦ズリ・顎下到達・匂咽",
+"detail": "【蹂躙：肆】首元から乳房上部へ質量を滑り込ませる縦移動。質量の先端がニマの顎の下を掠めるたび、彼女は自身の母乳と資源が混ざり合った「種の匂い」に咽せ、理性がメルトダウンを起こす。物理演算：Material_Slide / static_Pressure / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Clavicle_Slider"
+},
+"V2_DQ11_NIMA_9165": {
+"v2_id": "V2_DQ11_NIMA_9165",
+"original_id": "乳首ズリ直撃・突起亀頭磨潰・吸場所突場所",
+"detail": "【蹂躙：伍】ウェアの穴から露出した突起への直接摩擦。質量の先端（亀頭）で乳頭を執拗に押し潰され、ニマは「アヘッ、アヘッ！ そこは、吸う場所で……突く場所では……っ！」と絶叫し、絶頂の波に飲み込まれる。物理演算：Vibration_Sync / Nerve_Overload / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Nipple_Head_Crush"
+},
+"V2_DQ11_NIMA_9166": {
+"v2_id": "V2_DQ11_NIMA_9166",
+"original_id": "ダブルサイド・アタック・二本質量衝突・胸内戦場",
+"detail": "【蹂躙：陸】左右の脇スリットから同時に二本の質量を挿入。ニマの胸の中で二つの異熱が正面衝突し、逃げ場のない乳肉が激しく攪拌される。師父は人生で未体験の「内側からの蹂躙」に白目を剥く。物理演算：static_Pressure / Volumetric_Deformation / 粘度1800cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Double_Side_Assault"
+},
+"V2_DQ11_NIMA_9167": {
+"v2_id": "V2_DQ11_NIMA_9167",
+"original_id": "ブラ内全周攪拌・円描回・丸毎コネ",
+"detail": "【蹂躙：漆】サイドから侵入した質量を、ブラの中で円を描くように旋回。乳房を丸ごと「肉のミキサー」にかけるような高密度愛撫。ニマの母性は物理的な摩擦によって「雌」の快楽へと置換される。物理演算：Material_Slide / Volumetric_Deformation / 粘度1550cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Inside_Mixer"
+},
+"V2_DQ11_NIMA_9168": {
+"v2_id": "V2_DQ11_NIMA_9168",
+"original_id": "ストラップ首絞パイズリ・ホルター紐食込・高位置吊",
+"detail": "【蹂躙：捌】ホルターネックの紐を首に深く食い込ませながら、バストを極限まで高く持ち上げ、喉元で質量を圧搾。酸欠に近い恍惚感の中、ニマは質量を乳肉で絞り上げ、「オホォ……」と喉を鳴らす。物理演算：static_Pressure / Stress_Limit / 粘度1450cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Choke_Paizuri"
+},
+"V2_DQ11_NIMA_9169": {
+"v2_id": "V2_DQ11_NIMA_9169",
+"original_id": "蹲踞ブラ越し密着・摩擦係数増・感度極限",
+"detail": "【蹂躙：玖】ウェアの特殊布地を介した全身密着。ザラついたトレーニング素材の摩擦が、ニマの白肌の感度を通常の数倍へとブースト。触れるだけで「アヘッ！」と声が出る「即堕ち」の身体へ。物理演算：Material_friction / static_Pressure / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Fabric_Sync"
+},
+"V2_DQ11_NIMA_9170": {
+"v2_id": "V2_DQ11_NIMA_9170",
+"original_id": "母性全開ウェア内授乳・顔突込中出し・よしよし呟",
+"detail": "【蹂躙：拾】ウェアの中に顔を沈めさせ、同時に下半身への中出しを許容。ニマは「よしよし……」**と慈愛に満ちた声を出しながら、瞳は快感で濁り、胸から母乳を噴き上げる「狂乱の聖母」と化す。物理演算：fluid_separation / Nerve_Overload / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Inside_Nursing"
+},
+"V2_DQ11_NIMA_9171": {
+"v2_id": "V2_DQ11_NIMA_9171",
+"original_id": "光沢ナイロン・ヌルヌル・吸込パイズリ",
+"detail": "【ギミック：壱】高密度光沢ナイロン素材への聖油大量投下。摩擦係数ゼロの状態。ニマの巨乳が質量を内部へ「吸い込む」ような物理挙動を見せ、師父は自身の肉が異物と一体化する感覚に**「オホッ！」と声を漏らす。物理演算：fluid_separation / Material_Slide / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Oil_Nylon"
+},
+"V2_DQ11_NIMA_9172": {
+"v2_id": "V2_DQ11_NIMA_9172",
+"original_id": "リブニット・ザラザラ・即堕潮吹",
+"detail": "【ギミック：弐】凹凸の激しいリブニット素材による高負荷摩擦。布の刺激がニマの鋭敏な白肌を執拗に攻撃。数往復のストロークで理性が決壊し、「アヘェーッ！」と叫びながらウェアを内側から湿らせる潮吹絶頂。物理演算：Material_friction / Vibration_Sync / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Rib_Knit_Impact"
+},
+"V2_DQ11_NIMA_9173": {
+"v2_id": "V2_DQ11_NIMA_9173",
+"original_id": "ブラ隙間・先走り流込・種のプール",
+"detail": "【ギミック：参】ウェアの円形窓から弟子の先走り汁を直接注入。ブラ内部が不浄な「種のプール」と化し、ニマが動くたびにチャプチャプと淫らな音を立てる。乳肉が常に不浄に浸される背徳動態。物理演算：fluid_separation / static_Pressure / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Semen_Pool"
+},
+"V2_DQ11_NIMA_9174": {
+"v2_id": "V2_DQ11_NIMA_9174",
+"original_id": "ジッパー噛み・ドS囁・潤瞳",
+"detail": "【ギミック：肆】ジッパーの金属歯を質量に密着させ、冷徹な物理刺激を与える。「もっと痛くしてほしいのか？」と突き放す言葉を放ちつつ、その瞳は期待と発情で潤み、自身も激しく潤っている。物理演算：Thermal_Conductivity / static_Pressure / 粘度1450cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Zipper_Bite"
+},
+"V2_DQ11_NIMA_9175": {
+"v2_id": "V2_DQ11_NIMA_9175",
+"original_id": "1L胸部膨張・血管巡錯覚・硬化双丘",
+"detail": "【ギミック：伍】胎内1リットル資源による内圧上昇。種が全身の血管を巡るような偽感覚（Neural_Deception）に襲われ、乳房が通常時を遥かに凌ぐ熱量と硬度を持つ。ニマは自身の変質を「修行の成果」と誤認し絶頂する。物理演算：Volumetric_Deformation / Nerve_Overload / 粘度1800cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Internal_Pressure"
+},
+"V2_DQ11_NIMA_9176": {
+"v2_id": "V2_DQ11_NIMA_9176",
+"original_id": "後ろ脇侵入・指先乳首弄・同時蹂躙",
+"detail": "【蹂躙：壱】脇スリットから質量を挿入したまま、空いた指で乳首を執拗に攻撃。内部からの質量圧迫と外部からの指先愛撫による挟撃。ニマは「オホッ、挟まれて……溶けるぅっ！」と白目を剥く。物理演算：static_Pressure / Material_Slide / 粘度1250cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Side_Double_Attack"
+},
+"V2_DQ11_NIMA_9177": {
+"v2_id": "V2_DQ11_NIMA_9177",
+"original_id": "胸上文字書放出・ウェア窓狙・白濁刻印",
+"detail": "【蹂躙：弐】白いウェアの「窓」をキャンバスに見立てた精密射精。白濁した資源でニマの胸元に汚辱の文字を刻印。師父は自身が「弟子の署名」で汚される様子を、トランス状態で凝視する。物理演算：fluid_separation / Velocity_Impact / 粘度1600cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Breast_Signature"
+},
+"V2_DQ11_NIMA_9178": {
+"v2_id": "V2_DQ11_NIMA_9178",
+"original_id": "母乳噴射・ウェア貫通・聖なる噴水",
+"detail": "【蹂躙：参】質量による超高圧乳房圧搾。高まった内圧により、母乳がウェアの布目を微細な飛沫として突き抜け、噴水のように四散。ニマは「奥義が……漏れ出して……オホォッ！」と魂の叫びを上げる。物理演算：fluid_separation / Velocity_Impact / 粘度1900cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Fabric_Penetration"
+},
+"V2_DQ11_NIMA_9179": {
+"v2_id": "V2_DQ11_NIMA_9179",
+"original_id": "蹲踞バストリフト結合・肉台座鎮座",
+"detail": "【蹂躙：肆】蹲踞の姿勢で自らの乳房を両手でリフトアップ。その「肉の台座」の頂点に質量を鎮座させ、直接的な物理結合。ニマは自身が質量の「供物台」となったことに至上の喜びを感じる。物理演算：Gravity_Impact / static_Pressure / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Breast_Throne"
+},
+"V2_DQ11_NIMA_9180": {
+"v2_id": "V2_DQ11_NIMA_9180",
+"original_id": "ギャルピース・胸寄自撮り・アヘ顔記録",
+"detail": "【蹂躙：伍】ウェアの穴から質量が屹立する淫らな光景を、アヘ顔でギャルピースしながら石板（スマホ）に記録。修行の記録は完全に「公共の肉便器」としての宣材写真へと堕落する。物理演算：Material_Slide / static_Pressure / 粘度900cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Gyaru_Paizuri_Photo"
+},
+"V2_DQ11_NIMA_9181": {
+"v2_id": "V2_DQ11_NIMA_9181",
+"original_id": "精神統一・胸部感覚切断・集中絶頂",
+"detail": "【蹂躙：陸】ドゥルダの極意を快楽に全転用。視覚、聴覚、四肢の感覚を遮断し、全ての神経を「胸の快感」のみに接続。通常の数千倍の解像度で絶頂を処理し続け、泡を吹いて失神する。物理演算：Nerve_Overload / static_Pressure / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Sensory_Focus"
+},
+"V2_DQ11_NIMA_9182": {
+"v2_id": "V2_DQ11_NIMA_9182",
+"original_id": "ウェア紐・乳輪緊縛・手綱引",
+"detail": "【蹂躙：漆】ウェアの余剰ストリングを円形窓から出した乳頭に巻き付け、男が「手綱」として牽引。物理的な引張強度（Stress_Limit）がニマの乳腺を焼き、彼女は家畜の如く「アヘェッ！」**と従順に鳴く。物理演算：Stress_Limit / static_Pressure / 粘度1150cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Nipple_Reins"
+},
+"V2_DQ11_NIMA_9183": {
+"v2_id": "V2_DQ11_NIMA_9183",
+"original_id": "楽しそうな授乳・乱れ笑・腰振同期",
+"detail": "【蹂躙：捌】「うふふ、もっと飲みなさい……」と慈愛に満ちた笑みを浮かべながら、アヘ顔で激しく腰を振る狂乱動態。母性と性欲が完全に融合し、師父は「全ての弟子の母親（雌）」として覚醒。物理演算：Vibration_Sync / fluid_separation / 粘度1700cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Maternal_Frenzy"
+},
+"V2_DQ11_NIMA_9184": {
+"v2_id": "V2_DQ11_NIMA_9184",
+"original_id": "常識改変・ブラは食器・積極汚損",
+"detail": "【蹂躙：玖】認知機能の変容。ウェアを衣類ではなく「種と母乳を混合するための聖杯」と定義。自ら進んでブラの中に資源を溜め込み、不浄なカクテルを醸造する行為に耽溺する。物理演算：fluid_separation / static_Pressure / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Cognitive_Shift"
+},
+"V2_DQ11_NIMA_9185": {
+"v2_id": "V2_DQ11_NIMA_9185",
+"original_id": "肉の聖域全開・穴精液漏・慈愛眠",
+"detail": "【蹂躙：拾】ウェアの全開口部から白濁液が溢れ出し、雪のような白肌をドロドロにコーティング。ニマは全身を種の膜で包まれ、恍惚とした慈愛の笑みを浮かべたまま、深い絶頂の眠りにつく。物理演算：fluid_separation / Material_Slide / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Full_Saturation"
+},
+"V2_DQ11_NIMA_9186": {
+"v2_id": "V2_DQ11_NIMA_9186",
+"original_id": "蹲踞・泥汚門番・欲臭白目",
+"detail": "【不浄：壱】門前で蹲踞するニマに、脂ぎったキモデブ男が密着。鼻を突く悪臭と不潔な質量の熱に、ニマは**「アヘッ、この……鼻を突く臭い……これが、下界の『欲』か……！」と、嫌悪を快感に反転させ白目を剥く。物理演算：static_Pressure / Thermal_Conductivity / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Filthy_Gatekeeper"
+},
+"V2_DQ11_NIMA_9187": {
+"v2_id": "V2_DQ11_NIMA_9187",
+"original_id": "チャゴス風・唾液授乳・汚物受容慈愛",
+"detail": "【不浄：弐】卑劣な小悪党らによる乳房蹂躙。汚い手で揉みしだかれ、母乳を吸われる代わりに口内の汚物を乳頭に吐きかけられる。ニマは慈愛の笑みを浮かべたまま「アヘ顔」で汚濁を飲み込む。物理演算：fluid_separation / Material_Slide / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Saliva_Nursing"
+},
+"V2_DQ11_NIMA_9188": {
+"v2_id": "V2_DQ11_NIMA_9188",
+"original_id": "浮浪者垢練・不浄パイズリ・銀肉黒汚",
+"detail": "【不浄：参】長年洗われていない浮浪者の質量を、白銀の乳房で圧搾。白肌に黒ずんだ垢が擦り込まれ、「アッ、アヘェ……汚れが、奥義の中に、染み込んでくるぅ……！」と絶頂。物理演算：Material_friction / static_Pressure / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Homeless_Grind"
+},
+"V2_DQ11_NIMA_9189": {
+"v2_id": "V2_DQ11_NIMA_9189",
+"original_id": "デブ男肉圧・脂肪隙間・センターホール受",
+"detail": "【不浄：肆】百キロ超の巨漢による肉圧蹂躙。男の脂肪の襞に質量を挟み、そのままブラのセンターホールへ搬入。ニマは圧倒的な質量と熱量に押し潰され、呼吸困難な絶頂に陥る。物理演算：static_Pressure / Volumetric_Deformation / 粘度1800cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Fat_Press_Center"
+},
+"V2_DQ11_NIMA_9190": {
+"v2_id": "V2_DQ11_NIMA_9190",
+"original_id": "1L不浄ノルマ・茶色染レギンス・溢出",
+"detail": "【不浄：伍】不潔な男たちによる連続中出し。ニマの聖域がキモ男たちの種で満タン（1L）になり、溢れた不浄液が白いレギンスをドロドロの茶色に染め上げていく。物理演算：fluid_separation / Material_Slide / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Dirty_Overflow"
+},
+"V2_DQ11_NIMA_9191": {
+"v2_id": "V2_DQ11_NIMA_9191",
+"original_id": "チャゴス流・顔面踏付・クロスストラップ蹂躙",
+"detail": "【不浄：陸】床に這わされたニマの顔を汚れた靴底で踏みにじり、胸のクロスストラップに不浄な質量を叩きつける。尊厳の完全破壊。ニマは泥の味に「オホッ！」と喉を鳴らす。物理演算：Velocity_Impact / static_Pressure / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Face_Trample"
+},
+"V2_DQ11_NIMA_9192": {
+"v2_id": "V2_DQ11_NIMA_9192",
+"original_id": "浮浪者虱・銀髪汚染・屈辱快感昇華",
+"detail": "【不浄：漆】不潔な男たちの体が触れるたび、神々しい銀髪に虱や汚れが移り住む。ニマはアヘ顔で腰を振り、その極限の屈辱を「ドゥルダの快楽」へと強引に昇華させる。物理演算：Material_friction / Nerve_Overload / 粘度950cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Hair_Pollution"
+},
+"V2_DQ11_NIMA_9193": {
+"v2_id": "V2_DQ11_NIMA_9193",
+"original_id": "不潔指先・聖域アヌス開拓・泥爪食込",
+"detail": "【不浄：捌】爪に泥が詰まった指による深奥開拓。「指導だ……これも、指導なのだ……」と震える声で言い聞かせ、ニマは最も清浄な場所が不潔に抉られる衝撃に、全身を硬直させて絶頂する。物理演算：static_Pressure / Nerve_Overload / 粘度1350cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Dirty_Anus_Open"
+},
+"V2_DQ11_NIMA_9194": {
+"v2_id": "V2_DQ11_NIMA_9194",
+"original_id": "デブ男脂汗・濡透・赤腫乳首浮彫",
+"detail": "【不浄：玖】男たちの不快な脂汗がウェアを侵食。スケスケになった白い布地から、物理蹂躙で赤く腫れ上がった乳首が克明に浮き彫りとなり、全弟子の欲望を再加熱させる。物理演算：fluid_separation / Material_Slide / 粘度1250cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Sweat_Transparency"
+},
+"V2_DQ11_NIMA_9195": {
+"v2_id": "V2_DQ11_NIMA_9195",
+"original_id": "不浄オホ声合唱・卑猥言葉・壊人形",
+"detail": "【不浄：拾】男たちの卑猥な罵声を「真理」として受容。ニマは「オホォ！ オホォッ！」と、かつての厳格さを微塵も感じさせない壊れた人形のような鳴き声を響かせ、理性を投棄する。物理演算：Vibration_Sync / Aural_details / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Broken_Voice"
+},
+"V2_DQ11_NIMA_9196": {
+"v2_id": "V2_DQ11_NIMA_9196",
+"original_id": "奥義・三魔女搾器・デブ腹腿挟・同時侵入",
+"detail": "【裏奥義：壱】蹲踞の脚力でデブ男の腹部を圧搾。その反動で秘部と胸の円形窓に二本の不浄質量を同時搬入。肉の波に飲まれ、ニマの精神は「アヘェッ！」と一瞬で白濁する。物理演算：static_Pressure / Velocity_Impact / 粘度1900cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Triple_Witch_Fat"
+},
+"V2_DQ11_NIMA_9197": {
+"v2_id": "V2_DQ11_NIMA_9197",
+"original_id": "銀髪手綱・汚手掴・喉元先走流込",
+"detail": "【裏奥義：弐】不潔な手でポニーテールを掴み、頭を無理やり反らされる「手綱」状態。上を向かされたアヘ顔の喉元へ、汚れた先走りを直接流し込まれ、ニマは不浄を「授かる」悦びに咽せる。物理演算：Material_friction / fluid_separation / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Filthy_Reins"
+},
+"V2_DQ11_NIMA_9198": {
+"v2_id": "V2_DQ11_NIMA_9198",
+"original_id": "チャゴス命令・汚鳴媚・ギャル化媚",
+"detail": "【裏奥義：参】「汚く鳴け」という罵倒を聖旨として受容。ニマは「アヘェッ、主人様、汚い種を、もっとくださいぃ！」と、ギャル化した口調で媚び、自ら不浄を欲しがる肉便器へと堕ちる。物理演算：Nerve_Overload / Aural_details / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Filthy_Begging"
+},
+"V2_DQ11_NIMA_9199": {
+"v2_id": "V2_DQ11_NIMA_9199",
+"original_id": "スリット不浄サンド・脇肉胸挟・汗臭絶頂",
+"detail": "【裏奥義：肆】ブラの横穴から侵入したデブ男の質量を、脇の肉と乳房で挟み込む。強烈な体臭と物理的な肉の重なりに、ニマは「オホッ！」と絶叫し、最高密度の不浄絶頂を迎える。物理演算：static_Pressure / Material_friction / 粘度1600cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Side_Fat_Sand"
+},
+"V2_DQ11_NIMA_9200": {
+"v2_id": "V2_DQ11_NIMA_9200",
+"original_id": "ドゥルダ便所化・共同便所蹲踞・種排泄同時",
+"detail": "【裏奥義：伍】蹲踞するニマの股間を、キモ男たちの「共同便所」として開放。種付けと排泄を同時に受け入れ、自身の聖域が不浄の廃液溜まりとなることに「アヘッ、アヘェ……」と法悦を感じる。物理演算：fluid_separation / static_Pressure / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Public_Toilet"
+},
+"V2_DQ11_NIMA_9201": {
+"v2_id": "V2_DQ11_NIMA_9201",
+"original_id": "不浄真珠返・逆流種・男顔面噴射",
+"detail": "【裏奥義：陸】胎内の1L資源を、腹筋の収縮によって「奥義」として逆流噴射。男たちの顔面に不潔な種を浴びせ、自身が不浄を再生産する「不浄の泉」であることを証明する。物理演算：fluid_separation / Velocity_Impact / 粘度1850cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Reverse_Ejaculation"
+},
+"V2_DQ11_NIMA_9202": {
+"v2_id": "V2_DQ11_NIMA_9202",
+"original_id": "浮浪者ボロ布緊縛・不快感感度狂・乳房縛",
+"detail": "【裏奥義：漆】男たちの汚れたボロ布を繋ぎ、ニマの乳房を「不浄のクロスストラップ」で縛り上げる。布の不快な湿り気と悪臭が肌を焼き、彼女の感度を異常な領域へと引き上げる。物理演算：Material_friction / static_Pressure / 粘度1150cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Rag_Bondage"
+},
+"V2_DQ11_NIMA_9203": {
+"v2_id": "V2_DQ11_NIMA_9203",
+"original_id": "デブ男肉波溺・酸素奪・快感生実感",
+"detail": "【裏奥義：捌】複数の巨漢に四方を塞がれ、脂肪の波に埋没。視界も酸素も奪われた暗黒の中で、ただ股間と胸を貫く不浄な質量の熱だけが、ニマに「生」を実感させる極限の蹂躙。物理演算：static_Pressure / Nerve_Overload / 粘度1700cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Fat_Drowning"
+},
+"V2_DQ11_NIMA_9204": {
+"v2_id": "V2_DQ11_NIMA_9204",
+"original_id": "チャゴス・聖域マーキング・肉の器額書",
+"detail": "【裏奥義：玖】ニマの白い額に、不潔な資源で「肉の器」と直接揮毫。自身がただの入れ物であることを視覚的に刻印され、師としての理性が完全に消滅し、「オホ……」**と涎を垂らす。物理演算：fluid_separation / Material_Slide / 粘度900cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Marking_Vessel"
+},
+"V2_DQ11_NIMA_9205": {
+"v2_id": "V2_DQ11_NIMA_9205",
+"original_id": "涅槃オホアヘ・精神崩壊・笑顔廃人",
+"detail": "【裏奥義：拾】不浄の極致にて精神が完全にメルトダウン。もはや羞恥も拒絶もなく、ただ「汚されること」を最高の悦びとして満面の笑みを浮かべる。白銀の師父は、快楽の廃人（奴隷）として完成した。物理演算：Nerve_Overload / static_Pressure / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Final_Nirvana"
+},
+"V2_DQ11_NIMA_9206": {
+"v2_id": "V2_DQ11_NIMA_9206",
+"original_id": "くさった死体・腐汁パイズリ・鼻曲絶頂",
+"detail": "【地獄：壱】ドロドロに溶けウジが湧いた「くさった死体」による乳房蹂躙。ウェアの隙間に腐肉が挟まり、白肌が緑色の腐汁で汚染される。ニマは**「アヘッ、アガッ！ 鼻が、曲がる……だが、死の温もりが、奥義に響くぅ……！」と咆哮。物理演算：fluid_separation / Material_Slide / 粘度1900cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Rotten_Breast"
+},
+"V2_DQ11_NIMA_9207": {
+"v2_id": "V2_DQ11_NIMA_9207",
+"original_id": "さかさゾンビ・逆位結合・腐敗唾液顔面受",
+"detail": "【地獄：弐】上下逆さまの異形による蹲踞結合。腐り落ちそうな質量が胎内を抉り、ニマはアヘ顔を晒しながらゾンビの口から溢れる腐敗唾液を顔面で受容。聖職者の顔が不浄の液体で塗りつぶされる。物理演算：Gravity_Impact / fluid_separation / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Zombie_Inversion"
+},
+"V2_DQ11_NIMA_9208": {
+"v2_id": "V2_DQ11_NIMA_9208",
+"original_id": "老浮浪者・歯茎授乳・血涎クロスストラップ汚",
+"detail": "【地獄：参】悪臭を放つ老浮浪者による乳頭吸い付き。歯のない歯茎で執拗に噛まれ、母乳、血液、汚い涎が混ざり合いウェアを汚染。ニマは「オホッ！」と喉を鳴らし、老いさらばばえた生の執着を乳肉で受け止める。物理演算：static_Pressure / Material_Slide / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Gum_Nursing"
+},
+"V2_DQ11_NIMA_9209": {
+"v2_id": "V2_DQ11_NIMA_9209",
+"original_id": "デブ男脂汗蒸・脂肪埋没・ウェア茶色変色",
+"detail": "【地獄：肆】複数の不潔な巨漢による肉圧蒸し。ブラの中に脂ぎった指と質量がねじ込まれ、体臭と汗で白ウェアが完全に茶色く変色。ニマは酸素欠乏の恍惚の中で、己が「肉の蒸し器」となったことを自覚する。物理演算：static_Pressure / Volumetric_Deformation / 粘度1800cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Fat_Steamer"
+},
+"V2_DQ11_NIMA_9210": {
+"v2_id": "V2_DQ11_NIMA_9210",
+"original_id": "社会的弱者・劣等種貯蔵・ゴミ箱ギャル慈愛",
+"detail": "【地獄：伍】醜い男たちによる「復讐」の中出し。胎内を不純物で満たされ、ニマは「オホッ、オホォッ！ 救済です……私が、あなたたちの、ゴミ箱になりますぅ……っ！」とギャル化した慈愛を叫び、白目を剥く。物理演算：fluid_separation / Nerve_Overload / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Trash_Can_Maternal"
+},
+"V2_DQ11_NIMA_9211": {
+"v2_id": "V2_DQ11_NIMA_9211",
+"original_id": "泥濘蹲踞・汚物精液海・自ら股開",
+"detail": "【裏奥義：壱】床に撒かれた汚物と資源の海での蹲踞。滑りやすい不浄の床で、ニマは男たちの汚れた足を掴んで自ら股間を拡張。最底辺の質量を迎え入れる「不浄の門番」として完成される。物理演算：Material_Slide / static_Pressure / 粘度1600cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Sludge_Squat"
+},
+"V2_DQ11_NIMA_9212": {
+"v2_id": "V2_DQ11_NIMA_9212",
+"original_id": "ゾンビ骨・胸部蹂躙・傷跡血争奪舐",
+"detail": "【裏奥義：弐】肉の剥げ落ちたゾンビの手による乳房把持。鋭い骨が白肌に食い込み、溢れ出す鮮血をキモ男たちが争うように舐めとる。ニマは自身の肉が「生け贄の供物」として消費される快感に咽せる。物理演算：static_Pressure / Material_friction / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Bone_Grip"
+},
+"V2_DQ11_NIMA_9213": {
+"v2_id": "V2_DQ11_NIMA_9213",
+"original_id": "じじい干らび質量・連続種付・熱無惨め絶頂",
+"detail": "【裏奥義：参】死に損ないの老人たちによるカサカサの連続挿入。熱を失った質量に奥深くを擦られ、ニマは「アヘェッ、熱くない……でも、この惨めさが、たまらないのぉっ！」と、尊厳の底抜けに酔い痴れる。物理演算：Material_friction / static_Pressure / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Dried_Invasion"
+},
+"V2_DQ11_NIMA_9214": {
+"v2_id": "V2_DQ11_NIMA_9214",
+"original_id": "ブラ横穴・生ゴミ詰込・異物感質量直撃",
+"detail": "【裏奥義：肆】ウェアのサイドスリットへ生ゴミと腐肉を強制充填。不快な異物感と共に男の質量を叩き込まれ、ニマのバストは不浄のゴミ溜めと化す。彼女は内部で腐敗が進む感覚に「オホッ！」と白目を剥く。物理演算：static_Pressure / Volumetric_Deformation / 粘度1700cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Trash_Stuffer"
+},
+"V2_DQ11_NIMA_9215": {
+"v2_id": "V2_DQ11_NIMA_9215",
+"original_id": "地獄合唱・壊人・地獄最高パパ汚",
+"detail": "【裏奥義：伍】死体、キモ男、浮浪者による一斉蹂躙。自我が崩壊したニマは、「オホッ！ オホホォ！ マジ地獄最高！ パパたちもっと汚してぇ！」と叫び、快楽の奴隷として完全に壊れ果てる。物理演算：Vibration_Sync / Aural_details / 粘度1900cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Hell_Chorus"
+},
+"V2_DQ11_NIMA_9216": {
+"v2_id": "V2_DQ11_NIMA_9216",
+"original_id": "白銀髪便所掃除・汚物髪乳首巻・中出受",
+"detail": "【聖域汚物：壱】神々しい銀髪を床掃除の雑巾として使用。汚物に塗れた髪を乳首に巻き付けられ、その不快な刺激を受けながら中出しを許容。ニマの象徴である銀髪が、不浄の象徴へと反転する。物理演算：Material_friction / Material_Slide / 粘度1150cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Hair_Mop"
+},
+"V2_DQ11_NIMA_9217": {
+"v2_id": "V2_DQ11_NIMA_9217",
+"original_id": "弱者マーキング潮吹・名前指書・祝福洗浄",
+"detail": "【聖域汚物：弐】男たちの名前を資源で腹部に刻印。ニマは絶頂と共に噴き出す母乳と潮でその名前を「洗浄」し、自身が彼らの唯一の受け皿（聖域）であることをアヘ顔で証明する。物理演算：fluid_separation / Material_Slide / 粘度1450cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Name_Anointing"
+},
+"V2_DQ11_NIMA_9218": {
+"v2_id": "V2_DQ11_NIMA_9218",
+"original_id": "ゾンビジッパー噛・乳房全開・汚爪奥義刻",
+"detail": "【聖域汚物：参】ゾンビの牙によるウェアの破壊。剥き出しになった乳肉を浮浪者の汚れた爪が「奥義」の文字に刻む。傷口から資源が浸透し、ニマの肉体は地獄の経典へと書き換えられる。物理演算：static_Pressure / Material_friction / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Nail_Scripture"
+},
+"V2_DQ11_NIMA_9219": {
+"v2_id": "V2_DQ11_NIMA_9219",
+"original_id": "蹲踞背面・不潔指挿入・泥糞便脳焼切",
+"detail": "【聖域汚物：肆】蹲踞する臀部の割れ目へ、泥と糞便にまみれた指が突入。最底辺の触感が脳を直撃し、ニマは「オホォッ！」と叫んで絶頂。羞恥の限界を超え、不浄こそが真理となる。物理演算：static_Pressure / Nerve_Overload / 粘度1350cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Dirty_Anal_Poke"
+},
+"V2_DQ11_NIMA_9220": {
+"v2_id": "V2_DQ11_NIMA_9220",
+"original_id": "1L腐敗種培養・腹部膨満・ゾンビ命誤認",
+"detail": "【聖域汚物：伍】胎内で資源が腐敗しガスが発生、腹部が異様に膨らむ。ニマはそれを「新しい命（ゾンビ）」と信じ込み、幸せそうにアヘ顔で腹を撫でる狂気。彼女の母性は腐敗すら愛する。物理演算：Volumetric_Deformation / Nerve_Overload / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Rotten_Pregnancy"
+},
+"V2_DQ11_NIMA_9221": {
+"v2_id": "V2_DQ11_NIMA_9221",
+"original_id": "キモ男ニキビ汁授乳・膿母乳混合・汚染胸",
+"detail": "【聖域汚物：陸】不潔な男の顔を胸に埋め、ニキビから溢れる膿を乳頭に塗り込む。母乳と膿が混ざり合い、ニマの胸は「不浄の泉」として結晶化。師父は「オホ……栄養たっぷりだぞ……」と呟く。物理演算：fluid_separation / Material_Slide / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Pus_Milk_Mix"
+},
+"V2_DQ11_NIMA_9222": {
+"v2_id": "V2_DQ11_NIMA_9222",
+"original_id": "地獄門前・アヘ顔ダブルピース・不浄侍",
+"detail": "【聖域汚物：漆】背後にゾンビ、前にキモデブ男。地獄の住人たちを従え、アヘ顔でダブルピースをキメる記念撮影。聖地ドゥルダは、彼女を看板娘とした「不浄の遊園地」へと閉園。物理演算：Material_Slide / static_Pressure / 粘度900cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Hell_Peace"
+},
+"V2_DQ11_NIMA_9223": {
+"v2_id": "V2_DQ11_NIMA_9223",
+"original_id": "ドS汚物処理命令・罵倒受容・容赦無中出",
+"detail": "【聖域汚物：捌】「汚い汁を全部出しなさい！」というドSな命令が、男たちの暴走を誘発。獣の如き中出しの嵐に、ニマは「オホォ、アヘッ！」と、命令した側から屈服させられる快楽に震える。物理演算：Velocity_Impact / fluid_separation / 粘度1850cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Command_Collapse"
+},
+"V2_DQ11_NIMA_9224": {
+"v2_id": "V2_DQ11_NIMA_9224",
+"original_id": "常識改変・汚れ美徳・泥顔塗悟色",
+"detail": "【聖域汚物：玖】「汚れこそが悟りの色」という認知改変。自ら泥と精液を顔に塗りたくり、不浄であることこそが神聖であると信じ込む。白銀の美貌は、汚泥の裏側に永遠に埋没した。物理演算：Material_Slide / Nerve_Overload / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Dirt_Enlightenment"
+},
+"V2_DQ11_NIMA_9225": {
+"v2_id": "V2_DQ11_NIMA_9225",
+"original_id": "肉の廃墟・ドゥルダ終焉・永久オホ鳴器",
+"detail": "【聖域汚物：拾】聖地は肉のゴミ捨て場へと変貌。その中心で、くさった死体と男たちに永遠に蹂躙されながら、「オホッ、アヘッ」**と鳴き続ける「永久絶頂器」としてニマは固定された。物理演算：Nerve_Overload / static_Pressure / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Eternal_Vessel"
+},
+"V2_DQ11_NIMA_9226": {
+"v2_id": "V2_DQ11_NIMA_9226",
+"original_id": "不純行列・修行着一枚・視線蹂躙",
+"detail": "【参拝：壱】薄い修行着一枚で男たちを出迎えるニマ。群がるデブ商人や浮浪者の下卑た視線が、白銀の巨乳に「視覚的な重み」として突き刺さる。師父は「……これも功徳のため」と目を伏せ、羞恥を耐え忍ぶ。物理演算：static_Pressure / Material_Slide / 粘度900cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Pure_Reception"
+},
+"V2_DQ11_NIMA_9227": {
+"v2_id": "V2_DQ11_NIMA_9227",
+"original_id": "デブ商人値踏・乳房把持・肉質評価",
+"detail": "【参拝：弐】脂ぎった手による乳房の「検品」。重さを量り、弾力を確かめる商人の卑俗な手つきに、ニマは**「オホッ……そ、そのような触り方は……」と頬を染め、聖職者の矜持が指先から溶け始める。物理演算：Volumetric_Deformation / static_Pressure / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Merchant_Appraisal"
+},
+"V2_DQ11_NIMA_9228": {
+"v2_id": "V2_DQ11_NIMA_9228",
+"original_id": "浮浪者垢付着・白肌汚染・引攣オホ顔",
+"detail": "【参拝：参】何年も洗われていない手が、雪のような白肌に「黒い筋」を刻む。激しい嫌悪感を母性的な微笑みで隠そうとするが、耐えきれない肉体の震えが引きつった「オホ顔」として表出する。物理演算：Material_friction / static_Pressure / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Filthy_Touch"
+},
+"V2_DQ11_NIMA_9229": {
+"v2_id": "V2_DQ11_NIMA_9229",
+"original_id": "不純欲吸上・口内奉仕・義務的堕落",
+"detail": "【参拝：肆】跪き、男たちの不潔な質量を口に含む修行。彼らの卑劣な強弁を「理（ことわり）」として受け入れ、喉を鳴らして「欲」を吸い取るその姿は、高潔な師父から「肉の奉仕者」への転換点となる。物理演算：fluid_separation / Nerve_Overload / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Obligation_Oral"
+},
+"V2_DQ11_NIMA_9230": {
+"v2_id": "V2_DQ11_NIMA_9230",
+"original_id": "白銀髪汚れ手綱・首筋悪臭・無防備咆哮",
+"detail": "【参拝：伍】汗ばんだ手で銀髪を掴まれ、頭を反らされる屈辱姿勢。首筋にまとわりつく不快な男の体臭と、無理やり流し込まれる異熱に、ニマは抗えず「オホォォッ」と喉を鳴らして絶頂する。物理演算：Material_friction / Velocity_Impact / 粘度1150cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Hair_Grip_Ecstasy"
+},
+"V2_DQ11_NIMA_9231": {
+"v2_id": "V2_DQ11_NIMA_9231",
+"original_id": "センターホール不浄貫通・核乱・肉壁圧搾",
+"detail": "【胸突：壱】エロブラの円形窓からデブ男の太い質量が侵入。ニマの清浄な乳肉が男の醜い腹部と激しく押し合い、「オホォッ……奥義の核が、かき乱される……！」と、精神の最深部まで汚される。物理演算：static_Pressure / Volumetric_Deformation / 粘度1800cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Fat_Core_Breaker"
+},
+"V2_DQ11_NIMA_9232": {
+"v2_id": "V2_DQ11_NIMA_9232",
+"original_id": "脇スリット悪臭侵入・野盗弄・表情崩壊",
+"detail": "【胸突：弐】脇の隙間から潜り込む野盗の汚れた指。慈愛を説く口元とは裏腹に、サイドから執拗に弄られる乳房が熱を持ち、ニマの表情は「感じている女」のそれへと無残に崩れ去る。物理演算：Material_Slide / static_Pressure / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Side_Thief_Fingering"
+},
+"V2_DQ11_NIMA_9233": {
+"v2_id": "V2_DQ11_NIMA_9233",
+"original_id": "下乳先走り塗・冷感跳躍・不意オホ声",
+"detail": "【胸突：参】アンダーバストの三日月カットから、男たちの「先走り」が流し込まれる。不浄な液体の冷たい感触に、ニマの身体はビクンと跳ね、「オホッ！」と短い悲鳴を上げて腰を浮かす。物理演算：fluid_separation / static_Pressure / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Under_Precum_Shock"
+},
+"V2_DQ11_NIMA_9234": {
+"v2_id": "V2_DQ11_NIMA_9234",
+"original_id": "クロスストラップ乳頭圧搾・紐引・白目絶頂",
+"detail": "【胸突：肆】胸側の紐をあえて乳首に食い込ませる「手綱」遊び。男たちに紐を強く引かれ、紫に腫れ上がる突起。ニマは「いけません、そこは……っ」と拒絶しつつ、快楽の波に白目を剥く。物理演算：Stress_Limit / Nerve_Overload / 粘度1450cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Strap_Nipple_Press"
+},
+"V2_DQ11_NIMA_9235": {
+"v2_id": "V2_DQ11_NIMA_9235",
+"original_id": "母乳強制搾取・赤指跡・飛沫散布",
+"detail": "【胸突：伍】男たちが競うように巨乳を根元から力任せに絞り上げる。白い肌に生々しく残る不浄な指の跡。ニマの意思とは無関係に、母乳が聖地に飛び散る「搾取」の光景。物理演算：Volumetric_Deformation / fluid_separation / 粘度1600cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Forced_Milking"
+},
+"V2_DQ11_NIMA_9236": {
+"v2_id": "V2_DQ11_NIMA_9236",
+"original_id": "一斉放出・ウェア白濁汚染・重量増",
+"detail": "【全受：壱】数十人の不細工な男たちによる一斉射精。白いウェアは種でさらに白く、そしてドロドロに重くなり、ニマはその「欲望の重み」に耐えかねて膝を突く。物理演算：fluid_separation / Material_Slide / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Mass_Ejaculation"
+},
+"V2_DQ11_NIMA_9237": {
+"v2_id": "V2_DQ11_NIMA_9237",
+"original_id": "慈愛ハグ・不潔結合・全方位包摂",
+"detail": "【全受：弐】デブ男を胸に抱き寄せ、慈愛を注ぎながら、下ではその汚い質量を最奥まで迎え入れる。精神の「聖」と肉体の「俗」が一点で交わる、ニマ大師の真骨頂たる背徳儀式。物理演算：static_Pressure / Velocity_Impact / 粘度1850cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Maternal_Acceptance"
+},
+"V2_DQ11_NIMA_9238": {
+"v2_id": "V2_DQ11_NIMA_9238",
+"original_id": "オホ声聖歌・荒息同期・聖地残響",
+"detail": "【全受：参】男たちの荒い息遣いと、ニマが漏らす「オホォ、オホッ……」という湿った声が重なり合い、不浄な「聖歌」として修行場に響く。師父の声はもはや快楽の楽器にすぎない。物理演算：Vibration_Sync / Aural_details / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Ecstasy_Hymn"
+},
+"V2_DQ11_NIMA_9239": {
+"v2_id": "V2_DQ11_NIMA_9239",
+"original_id": "弱者種子奉仕・涙目腰振・満足強要",
+"detail": "【全受：肆】誰からも相手にされない男たちの怨嗟を、腰振りで解消させる。涙を浮かべながらも、自ら彼らを絶頂へと導くニマの姿は、崇高な犠牲か、あるいはただの肉欲への屈服か。物理演算：Material_Slide / Nerve_Overload / 粘度1700cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Underdog_Service"
+},
+"V2_DQ11_NIMA_9240": {
+"v2_id": "V2_DQ11_NIMA_9240",
+"original_id": "1L不純貯蔵・腹部膨満・欲収容自覚",
+"detail": "【全受：伍】胎内をキモ男たちの種で満たし、腹部がポッコリと膨らむ。「皆様の欲が、私の中に収まったのですね……」と、アヘ顔で自分を納得させ、内側から不浄に染まっていく。物理演算：Volumetric_Deformation / fluid_separation / 粘度1950cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Impure_Storage"
+},
+"V2_DQ11_NIMA_9241": {
+"v2_id": "V2_DQ11_NIMA_9241",
+"original_id": "ジッパー焦らし・チャゴス流・数ミリ落下",
+"detail": "【全受：陸】チャゴス風の小悪党にジッパーを数ミリずつ下げられる拷問的焦らし。露出していく白銀の双丘を前に、ニマの期待と羞恥は限界まで高まり、「アヘェッ」**と腰を震わせる。物理演算：Thermal_Conductivity / Nerve_Overload / 粘度950cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Zipper_Tease"
+},
+"V2_DQ11_NIMA_9242": {
+"v2_id": "V2_DQ11_NIMA_9242",
+"original_id": "不潔足接吻・浄化偽装・背面中出",
+"detail": "【全受：漆】「浄化」の儀式として浮浪者の汚れた足を舐めさせられる。口内を不潔に汚されながら、背後からは容赦のない中出しを受け、ニマの五感は「不浄」によって完全に包囲される。物理演算：Material_Slide / static_Pressure / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Foot_Worship_Pollution"
+},
+"V2_DQ11_NIMA_9243": {
+"v2_id": "V2_DQ11_NIMA_9243",
+"original_id": "ブラ内質量攪拌・乳肉練・母性消失",
+"detail": "【全受：捌】ブラの中に強引にねじ込まれた質量が、乳房を「練る」ように激しく回転。高潔な母性は、布の中で繰り返される執拗な「肉の快楽」によって、一滴も残らず塗りつぶされる。物理演算：Volumetric_Deformation / static_Pressure / 粘度1650cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Inside_Kneading"
+},
+"V2_DQ11_NIMA_9244": {
+"v2_id": "V2_DQ11_NIMA_9244",
+"original_id": "満面笑顔・温質量・アヘ絶頂",
+"detail": "【全受：玖】嫌悪も羞恥も消え去り、「うふふ、皆様の質量、とっても温かいですわ……」と至福の笑みを浮かべる。白銀の師父は、ついに不浄を受け入れることを「悟り」とした。物理演算：Nerve_Overload / fluid_separation / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Smiling_Ecstasy"
+},
+"V2_DQ11_NIMA_9245": {
+"v2_id": "V2_DQ11_NIMA_9245",
+"original_id": "肉の聖母完成・泥種汚・門前横臥",
+"detail": "【全受：拾】ウェアはボロボロ、全身は種と泥。それでも慈愛の笑みを絶やさず、次の「不純な参拝者」を招くために門前に横たわるニマ。聖地ドゥルダに、史上最高の「肉の器」が誕生した。物理演算：Material_Slide / static_Pressure / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Final_Vessel_Form"
+},
+"V2_DQ11_NIMA_9246": {
+"v2_id": "V2_DQ11_NIMA_9246",
+"original_id": "不浄整列・質量品評・査定眼",
+"detail": "【指導：壱】異臭を放つ男たちの長蛇の列を前に、ニマが「次、前へ出なさい。……ほう、随分と溜め込んだ不潔な質量ですね」と冷たく査定。蔑みの視線の裏で、その熱を受け入れる事への期待に股間を湿らせる。物理演算：static_Pressure / Material_Slide / 粘度900cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Greedy_Assessment"
+},
+"V2_DQ11_NIMA_9247": {
+"v2_id": "V2_DQ11_NIMA_9247",
+"original_id": "我慢試練・高速ピストン・ドS一喝",
+"detail": "【指導：弐】結合直後、強靭な腰使いで不潔な質量を圧搾。「まだ出してはいけません！ 私が許可するまで、その不浄を堪えなさい！」と一喝。男の我慢を嘲笑いながら、自身は奥義の快楽に喉を鳴らす。物理演算：Velocity_Impact / static_Pressure / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_HighSpeed_Piston"
+},
+"V2_DQ11_NIMA_9248": {
+"v2_id": "V2_DQ11_NIMA_9248",
+"original_id": "早漏制裁・汚乳挟顔・次起立促",
+"detail": "【指導：参】秒で果てた男を「情けない。その程度の欲では悟りは開けませんよ」と罵倒。不潔な資源で汚れた乳房で男の顔を挟み、強引に再起を命じる。師父の慈愛は、もはや無限の搾取へと変質。物理演算：Volumetric_Deformation / Material_Slide / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Premature_Sanction"
+},
+"V2_DQ11_NIMA_9249": {
+"v2_id": "V2_DQ11_NIMA_9249",
+"original_id": "スリット同時貫通・三点同時曼荼羅・オホッ",
+"detail": "【指導：肆】秘部、胸の円形窓、脇スリットから三人の不浄な質量を同時受容。「これこそがドゥルダの曼荼羅……オホッ！」と絶叫し、全身の「穴」という穴から不浄の熱を吸い上げる。物理演算：static_Pressure / Volumetric_Deformation / 粘度1800cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Three_Point_Mandala"
+},
+"V2_DQ11_NIMA_9250": {
+"v2_id": "V2_DQ11_NIMA_9250",
+"original_id": "白肌汚れ転写・垢脂密着・吸取宣言",
+"detail": "【指導：伍】男たちの垢や脂で雪の白肌が茶色く汚れゆく様を「皆様の汚れ、私が全て吸い取って差し上げましょう……」と陶酔。自身の純潔が物理的に削られ、不浄に置換される感覚に絶頂する。物理演算：Material_friction / static_Pressure / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Dirt_Transfer"
+},
+"V2_DQ11_NIMA_9251": {
+"v2_id": "V2_DQ11_NIMA_9251",
+"original_id": "母性全飲・咽喉貫通・良し良しアヘ顔",
+"detail": "【開拓：壱】醜悪な男を「辛かったのですね」と抱きしめ、質量を喉元まで一気飲み。食道を不浄な熱が通り過ぎるたび、ニマはアヘ顔を晒し、溢れる母性で不潔を浄化（快楽変換）する。物理演算：fluid_separation / Nerve_Overload / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Deep_Maternal_Oral"
+},
+"V2_DQ11_NIMA_9252": {
+"v2_id": "V2_DQ11_NIMA_9252",
+"original_id": "1Lノルマ可視化・下腹部膨満・煩悩歓喜",
+"detail": "【開拓：弐】胎内が資源で満たされ、妊婦のように膨らんだ腹を男たちに見せつける。「見てなさい、皆様の煩悩が、私の中でこんなに……オホォッ！」と、自身の「ゴミ箱化」を誇らしげに叫ぶ。物理演算：Volumetric_Deformation / static_Pressure / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_1L_Potbelly"
+},
+"V2_DQ11_NIMA_9253": {
+"v2_id": "V2_DQ11_NIMA_9253",
+"original_id": "ブラ紐感度増幅・ストラップ手綱・理性喪失声",
+"detail": "【開拓：参】男たちにブラの紐を「手綱」として引かれ、食い込む乳首の激痛と快感に翻弄。師父としての言葉が失われ、ただただ不浄な刺激に反応する**「オホ声」**が聖地に響き渡る。物理演算：Stress_Limit / Vibration_Sync / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Strap_Reins"
+},
+"V2_DQ11_NIMA_9254": {
+"v2_id": "V2_DQ11_NIMA_9254",
+"original_id": "行列パイズリ・機械的情熱・乳肉処理",
+"detail": "【開拓：肆】左右に並んだ男たちの質量を、巨乳で交互に挟み込み高速処理。機械的な反復運動の中に、不潔な資源を求める情熱が混ざり、ニマは涎を垂らしながら作業に没頭する。物理演算：Material_Slide / static_Pressure / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Batch_Paizuri"
+},
+"V2_DQ11_NIMA_9255": {
+"v2_id": "V2_DQ11_NIMA_9255",
+"original_id": "本音漏洩・不潔種切望・肉体本能叫",
+"detail": "【開拓：伍】修行という建前が剥げ、「もっと、もっと不潔な種を注いで……！」と本音が炸裂。知性を司る脳が不浄な熱でオーバーヒートし、ニマは「雌の獣」として資源を渇望する。物理演算：Nerve_Overload / fluid_separation / 粘度1600cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Honest_Lust"
+},
+"V2_DQ11_NIMA_9256": {
+"v2_id": "V2_DQ11_NIMA_9256",
+"original_id": "汗種聖水滝・這いずりアヘ顔・求次男",
+"detail": "【堕落：壱】脂汗と精液で水浸しとなった広場を、アヘ顔で這いずり回るニマ。ドロドロの海から顔を上げ、次の男の足を掴むその姿は、高潔な師父から「絶頂の亡者」への完全転落。物理演算：fluid_separation / Material_Slide / 粘度1900cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Floor_Crawler"
+},
+"V2_DQ11_NIMA_9257": {
+"v2_id": "V2_DQ11_NIMA_9257",
+"original_id": "逆授乳・不潔体液吸込・倒錯滋養",
+"detail": "【堕落：弐】男たちの汚れた体液を、乳頭から「吸い込ませる」倒錯的吸飲。体内に不浄を取り込むことを「滋養」と錯覚し、ニマのバストは赤く腫れ上がりながら資源を吸収し続ける。物理演算：fluid_separation / static_Pressure / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Reverse_Suck"
+},
+"V2_DQ11_NIMA_9258": {
+"v2_id": "V2_DQ11_NIMA_9258",
+"original_id": "ブラ崩壊・肉解放・手垢汚染巨乳",
+"detail": "【堕落：参】激動によりブラのジッパーが破損。剥き出しとなった白銀の巨乳を、キモ男たちが汚れた手で一斉に揉みしだく。手垢で真っ黒に汚染されたバストが、ニマの自壊を象徴する。物理演算：Volumetric_Deformation / Material_friction / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Breast_Release"
+},
+"V2_DQ11_NIMA_9259": {
+"v2_id": "V2_DQ11_NIMA_9259",
+"original_id": "一斉射精儀・全放出命令・種衣",
+"detail": "【堕落：肆】「全て私にぶつけなさい！」という号令と共に、数十人が一斉放出。ニマは頭からつま先まで真っ白な「種の衣」を纏い、不浄による神聖化（笑）を完遂する。物理演算：fluid_separation / Velocity_Impact / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Semen_Shower"
+},
+"V2_DQ11_NIMA_9260": {
+"v2_id": "V2_DQ11_NIMA_9260",
+"original_id": "ギャル師匠崩壊・マジ悟来・キャラ喪失",
+"detail": "【堕落：伍】限界を超え、「マジ、皆様の質量ヤバすぎ……悟り、超来てるんですけどぉ！」とキャラ崩壊。知性の欠片もないギャル口調で絶頂を報告し、指先まで痺れさせる。物理演算：Nerve_Overload / Aural_details / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Brain_Melt"
+},
+"V2_DQ11_NIMA_9261": {
+"v2_id": "V2_DQ11_NIMA_9261",
+"original_id": "不潔足裏接吻・臭陶酔・アヘ絶頂",
+"detail": "【堕落：陸】浮浪者の汚れた足の間に顔を埋め、質量の臭いに陶酔。「あはっ、最高に臭くて……素敵ですわ……」とアヘるニマ。彼女の「美」の基準は、完全に「不浄」へと書き換えられた。物理演算：Material_Slide / fluid_separation / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Foot_Ahegao"
+},
+"V2_DQ11_NIMA_9262": {
+"v2_id": "V2_DQ11_NIMA_9262",
+"original_id": "ドS根元絞・膣圧乳肉逃・魂吸尽",
+"detail": "【堕落：漆】果てて抜こうとする男を、強靭な膣圧と乳肉でロック。「逃げ得は許しません。魂まで吸い尽くしてあげます！」とドSに微笑み、一滴残らず資源を搾り取る。物理演算：static_Pressure / Volumetric_Deformation / 粘度1800cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Suction_Lock"
+},
+"V2_DQ11_NIMA_9263": {
+"v2_id": "V2_DQ11_NIMA_9263",
+"original_id": "立ち腹蹂躙・疲労立不能・前後貫通",
+"detail": "【堕落：捌】疲労で膝が折れたニマを、デブ男たちが肉壁で支え、立ったままの姿勢で前後から蹂躙。空中に浮いた状態で質量に突き上げられ、彼女の意識は点滅する快感のみとなる。物理演算：Gravity_Impact / static_Pressure / 粘度1700cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Standing_Sandwich"
+},
+"V2_DQ11_NIMA_9264": {
+"v2_id": "V2_DQ11_NIMA_9264",
+"original_id": "楽しそうな廃人・白目笑顔・オホ呟",
+"detail": "【堕落：玖】百人抜きを完遂し、ドロドロに汚れたまま白目を剥いて笑う。もはや言葉にならない「オホォ……」という呟きと共に、最高の幸せを噛みしめる廃人と化したニマ。物理演算：Nerve_Overload / fluid_separation / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Happy_Vessel"
+},
+"V2_DQ11_NIMA_9265": {
+"v2_id": "V2_DQ11_NIMA_9265",
+"original_id": "聖地日常化・淫ウェア迎・再修行",
+"detail": "【堕落：拾】翌朝、再び列を作る男たちを、汚れた淫らなウェア姿で嬉々として出迎える。「さあ、修行の時間ですよ」という声には、もはや隠しきれない情欲が満ちている。物理演算：Material_Slide / static_Pressure / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Daily_Depravity"
+},
+"V2_DQ11_NIMA_9266": {
+"v2_id": "V2_DQ11_NIMA_9266",
+"original_id": "女戦士・アーマー隙間・不浄侵入",
+"detail": "【女戦士：壱】金属の胸当てに押し潰された巨乳の「鎧と肉の隙間」へ、デブ商人の汗ばんだ質量が侵入。冷たい硬質素材と熱い不潔な肉に挟まれ、ニマは**「オホッ！」と、防御不能な内部蹂躙に震える。物理演算：Material_friction / static_Pressure / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Armor_Crevice"
+},
+"V2_DQ11_NIMA_9267": {
+"v2_id": "V2_DQ11_NIMA_9267",
+"original_id": "鉄ブラ乳頭圧搾・男汚指・崩壊呻",
+"detail": "【女戦士：弐】鎧の裏側に隠された汚れた指が、逃げ場のない鉄板の中で乳頭を執拗に圧搾。「守りが、内側から崩されますぅ……っ！」と呻き、ニマは重厚な装備が快楽を逃さない「拷問器」と化したことを悟る。物理演算：static_Pressure / Thermal_Conductivity / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Iron_Bra_Press"
+},
+"V2_DQ11_NIMA_9268": {
+"v2_id": "V2_DQ11_NIMA_9268",
+"original_id": "肉盾提示・跪バスト・浮浪者突",
+"detail": "【女戦士：参】浮浪者の男たちに対し、跪きながら鎧から溢れ出した乳肉を提示。「さあ、この肉を盾だと思って、存分に突きなさい……」と、攻撃を受け入れる「肉の防壁」としてアヘ顔で自供する。物理演算：Volumetric_Deformation / static_Pressure / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Breast_Shield"
+},
+"V2_DQ11_NIMA_9269": {
+"v2_id": "V2_DQ11_NIMA_9269",
+"original_id": "兜剥・銀髪手綱・股間引剥",
+"detail": "【女戦士：肆】兜を奪われ、乱れた白銀髪を不潔な手で手綱にされる屈辱。頭を反らされた状態で鎧の股間パーツを強引にこじ開けられ、聖職者の「最後の一線」が野良犬のような男たちに晒される。物理演算：Material_friction / Stress_Limit / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Armor_Stripping"
+},
+"V2_DQ11_NIMA_9270": {
+"v2_id": "V2_DQ11_NIMA_9270",
+"original_id": "1L敗北・精液汚・加重絶頂",
+"detail": "【女戦士：伍】全身の鎧が種で汚れ、重量を増していく。「不潔な種を注がれるほど、体が……重く、熱くなりますぅ……」と、重力と快楽に押し潰され、ニマは装備の重みで立ち上がれぬまま絶頂する。物理演算：fluid_separation / static_Pressure / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Heavy_Semen_Armor"
+},
+"V2_DQ11_NIMA_9271": {
+"v2_id": "V2_DQ11_NIMA_9271",
+"original_id": "武闘家・道着合目・胸放出パイズリ",
+"detail": "【武闘家：壱】激しい動きで道着の前合わせがはだけ、剥き出しになった巨乳。キモ男たちが道着の布地を使い、質量と乳肉を包み込んで「道着パイズリ」を敢行。摩擦熱にニマは腰を浮かせる。物理演算：Material_friction / Volumetric_Deformation / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Dogi_Paizuri"
+},
+"V2_DQ11_NIMA_9272": {
+"v2_id": "V2_DQ11_NIMA_9272",
+"original_id": "高速受流失敗・快楽吸収・オホォォーッ",
+"detail": "【武闘家：弐】男たちの野生的なピストンを「受け流す」修行のはずが、強靭な肉体が快楽を全てダイレクトに吸収。「オホォォーッ！」と、理性をかなぐり捨てた絶叫が道場に響き渡る。物理演算：Velocity_Impact / Nerve_Overload / 粘度1800cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Martial_Failure"
+},
+"V2_DQ11_NIMA_9273": {
+"v2_id": "V2_DQ11_NIMA_9273",
+"original_id": "道着紐バスト緊縛・十字縛・先走染",
+"detail": "【武闘家：参】道着を締める帯を解かれ、それで乳房を十字に縛り上げられる「乳輪緊縛」。結び目から染み出す男たちの先走り汁が、ニマの感度を狂わせ、彼女は「アヘェッ」と身悶える。物理演算：Stress_Limit / fluid_separation / 粘度1150cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Belt_Bondage"
+},
+"V2_DQ11_NIMA_9274": {
+"v2_id": "V2_DQ11_NIMA_9274",
+"original_id": "三点倒立・不浄重力・泥質量ドッキング",
+"detail": "【武闘家：肆】逆立ちの姿勢で脚を開かされ、重力で下がった乳房を揺らしながら、浮浪者の泥にまみれた質量を受容。上下感覚を失った中で、不浄な熱だけが脳に直接突き刺さる。物理演算：Gravity_Impact / static_Pressure / 粘度1600cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Inversion_Invasion"
+},
+"V2_DQ11_NIMA_9275": {
+"v2_id": "V2_DQ11_NIMA_9275",
+"original_id": "オホ声演武・喘ぎ変質・不浄呼吸",
+"detail": "【武闘家：伍】突かれるたびに「オホッ！ オホォッ！」と鋭い発声を行うが、それはもはや演武ではなく、完全なる雌の喘ぎ。師父の呼吸法は、不浄を飲み込むための「絶頂の律動」へと堕ちた。物理演算：Vibration_Sync / Aural_details / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Ecstasy_Kiai"
+},
+"V2_DQ11_NIMA_9276": {
+"v2_id": "V2_DQ11_NIMA_9276",
+"original_id": "僧侶・ケープ下隠穴・不純ウェア指",
+"detail": "【僧侶：壱】清楚なケープを捲ると、胸元が大きく開いた不純なアンダーウェアが露出。社会的弱者たちの汚れた指が、聖女の隠された「隙」を執拗に抉り、ニマは「オホ……」と熱い吐息を漏らす。物理演算：Material_Slide / static_Pressure / 粘度1250cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Cleric_Secret"
+},
+"V2_DQ11_NIMA_9277": {
+"v2_id": "V2_DQ11_NIMA_9277",
+"original_id": "じじい救済中出・カサカサ質量・最奥受",
+"detail": "【僧侶：弐】死を目前にした老人たちのカサカサの質量を「最後の救済」として受容。胎内の最奥まで不潔な熱を迎え入れ、ニマはアヘ顔で彼らの生の執着を「供養（絶頂）」する。物理演算：Material_friction / static_Pressure / 粘度1450cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Old_Man_Salvation"
+},
+"V2_DQ11_NIMA_9278": {
+"v2_id": "V2_DQ11_NIMA_9278",
+"original_id": "僧侶服マーキング・尿種汚・美際立",
+"detail": "【僧侶：参】清浄な青白の聖衣が、男たちの黄色い尿と白い種でドロドロに汚染。汚れれば汚れるほど、ニマの白銀髪と白肌が淫らに際立ち、彼女は自身の「汚損」に法悦を感じる。物理演算：fluid_separation / Material_Slide / 粘度1900cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Polluted_Vestment"
+},
+"V2_DQ11_NIMA_9279": {
+"v2_id": "V2_DQ11_NIMA_9279",
+"original_id": "祈姿尻コキ・後貫通・デブ温",
+"detail": "【僧侶：肆】祈祷の姿勢のまま、背後からデブ男に貫かれる背徳。豊満な尻肉で彼の質量を包み込み、温めることで「不純な信心」を証明。ニマの祈りは、ただの快楽への請願へと成り果てる。物理演算：static_Pressure / Volumetric_Deformation / 粘度1750cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Prayer_Sandwich"
+},
+"V2_DQ11_NIMA_9280": {
+"v2_id": "V2_DQ11_NIMA_9280",
+"original_id": "常識改変・精液聖水・顔面種微笑",
+"detail": "【僧侶：伍】「この液体こそが魂の輝き……」と信じ込み、自ら顔面で種を浴びる認知改変。不浄液を「聖水」として受け止め、アヘ顔（オホ顔）で満面の笑みを浮かべる廃人聖女の完成。物理演算：fluid_separation / Nerve_Overload / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Semen_Holy_Water"
+},
+"V2_DQ11_NIMA_9281": {
+"v2_id": "V2_DQ11_NIMA_9281",
+"original_id": "遊び人・バニー耳白銀髪・耳揺腰振",
+"detail": "【遊び人：壱】ヘッドドレスの白い耳を揺らしながら、狂ったように腰を振るニマ。白銀の髪とバニー耳が入り乱れ、キモ男たちの欲望を過熱。彼女は自身の「玩具化」に酔い痴れる。物理演算：Vibration_Sync / Material_Slide / 粘度950cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Bunny_Chaos"
+},
+"V2_DQ11_NIMA_9282": {
+"v2_id": "V2_DQ11_NIMA_9282",
+"original_id": "ギャル全開・キモパパ質量・乳房差出",
+"detail": "【遊び人：弐】「マジこのキモパパの質量、デカすぎてウケるんですけどぉ！」と、知性を捨てたギャル口調で男を誘惑。自ら乳房を男の顔に押し付け、快楽の指導を「おねだり」する。物理演算：Nerve_Overload / Aural_details / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Gyaru_Play"
+},
+"V2_DQ11_NIMA_9283": {
+"v2_id": "V2_DQ11_NIMA_9283",
+"original_id": "パフパフ不浄・乳首口突・母乳強制流",
+"detail": "【遊び人：参】キモ男の顔をバストで挟むだけでなく、自ら乳首を男の口にねじ込み母乳を射出。「全部飲みなさい、不潔なパパ」と笑いながら、自身も中出しの熱に「オホォッ！」と絶頂する。物理演算：Volumetric_Deformation / fluid_separation / 粘度1550cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Dirty_PuffPuff"
+},
+"V2_DQ11_NIMA_9284": {
+"v2_id": "V2_DQ11_NIMA_9284",
+"original_id": "穴あき網タイツ・爪裂・欲望殺到",
+"detail": "【遊び人：肆】網タイツの股間を男たちの汚れた爪で引き裂かれ、無防備な秘部を露出。社会的弱者たちの飢えた欲望が一点に集中し、ニマは「ただの穴」として使い潰される悦びに咽せる。物理演算：Material_friction / static_Pressure / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Net_Tights_Ripped"
+},
+"V2_DQ11_NIMA_9285": {
+"v2_id": "V2_DQ11_NIMA_9285",
+"original_id": "究極オホ顔・全穴埋・光消絶頂",
+"detail": "【遊び人：伍】百人の男に囲まれ、全ての「穴」を不浄な質量で塞がれた極限。ニマの意識は白濁した光の中へと消え、精神は「快楽の廃人」として完全にアップデート（崩壊）される。物理演算：Nerve_Overload / fluid_separation / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Final_Blackout"
+},
+"V2_DQ11_NIMA_9286": {
+"v2_id": "V2_DQ11_NIMA_9286",
+"original_id": "ミックス衣装・僧侶遊び人・精神崩壊宴",
+"detail": "【総括：壱】上半身は僧侶、下半身は遊び人の網タイツ。聖と俗が混ざり合った異様な姿で指導を受け、ニマの精神は論理的な思考能力を完全に喪失し、「オホ……アヘェ」**と鳴き続ける。物理演算：static_Pressure / Nerve_Overload / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Mixed_Degradation"
+},
+"V2_DQ11_NIMA_9287": {
+"v2_id": "V2_DQ11_NIMA_9287",
+"original_id": "金貨乳首擦・熱質量交互・真っ赤充血",
+"detail": "【総括：弐】デブ商人の冷たい金貨と、熱い不潔な質量による乳頭攻め。温度差と硬軟の刺激に、ニマの乳房は真っ赤に充血し、彼女は「金と種」で買われる家畜の快感に震える。物理演算：Thermal_Conductivity / static_Pressure / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Gold_Coin_Nipple"
+},
+"V2_DQ11_NIMA_9288": {
+"v2_id": "V2_DQ11_NIMA_9288",
+"original_id": "浮浪者ボロ布目隠・正体不明・恐怖快感",
+"detail": "【総括：参】不潔なボロ布で目隠しをされ、誰が犯しているのかも分からぬ暗黒の中での蹂躙。視覚を遮断された分、不浄な質量の「重み」と「臭い」が数倍に増幅され、ニマを狂わせる。物理演算：Sensory_Deprivation / static_Pressure / 粘度1350cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Blindfold_Filth"
+},
+"V2_DQ11_NIMA_9289": {
+"v2_id": "V2_DQ11_NIMA_9289",
+"original_id": "指導成果・肉の器・最高ゴミ箱自覚",
+"detail": "【総括：肆】全ての衣装を汚し尽くし、「私は皆様の、最高のゴミ箱になれましたか……？」と慈愛の笑みでアヘるニマ。修行の結末は、自らを「不浄の受け皿」と認めることだった。物理演算：fluid_separation / static_Pressure / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Garbage_Can_Enlightenment"
+},
+"V2_DQ11_NIMA_9290": {
+"v2_id": "V2_DQ11_NIMA_9290",
+"original_id": "着替間指導・シースルーシスター・継続中出",
+"detail": "【総括：伍】次の不純衣装（シースルーシスター）に着替える間も、男たちの「質量指導」は止まらない。常に誰かの中出しを受けながら着替えさせられ、ニマの肉体は休む暇なく白濁する。物理演算：Material_Slide / static_Pressure / 粘度1900cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Nonstop_Changing"
+},
+"V2_DQ11_NIMA_9291": {
+"v2_id": "V2_DQ11_NIMA_9291",
+"original_id": "シスター・フロント開き・浮浪者授乳",
+"detail": "【禁欲：壱】黒の修道服のボタンを汚れた指で引き千切られ、雪のような白肌が露出。ニマは「さあ、空腹を満たしなさい」と、慈愛の笑みで浮浪者に乳首を吸わせ、禁欲の衣を「不浄の食卓」へと変質させる。物理演算：Material_friction / static_Pressure / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Sister_Unbutton"
+},
+"V2_DQ11_NIMA_9292": {
+"v2_id": "V2_DQ11_NIMA_9292",
+"original_id": "懺悔室肉便器・壁穴盲目指導・質量処理",
+"detail": "【禁欲：弐】狭い懺悔室。壁の穴から突き出される不細工な男たちの質量を、手、口、胸だけで処理する盲目指導。相手の顔が見えない暗闇で、ニマの触覚は「不浄な質量」そのものの熱に特化し、絶頂の深度を増す。物理演算：static_Pressure / Volumetric_Deformation / 粘度1600cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Confession_Vessel"
+},
+"V2_DQ11_NIMA_9293": {
+"v2_id": "V2_DQ11_NIMA_9293",
+"original_id": "ベール下アヘ顔・デブ商人・理性喪失オホ",
+"detail": "【禁欲：参】頭を覆うベールを、デブ商人の汗ばんだ質量が強引にめくり上げる。そこには理性を失い、白目を剥いて**「オホッ……」と呟くニマの顔が。神聖なベールは、彼女の堕落を隠すどころか、その淫らさを際立たせる。物理演算：Material_Slide / Nerve_Overload / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Veil_Ahegao"
+},
+"V2_DQ11_NIMA_9294": {
+"v2_id": "V2_DQ11_NIMA_9294",
+"original_id": "十字架乳挟・不浄種一斉放出・彩",
+"detail": "【禁欲：肆】十字架を巨乳の間に挟み、複数の男たちが一斉射精。精液に濡れた十字架が胸元で光り、ニマは「オホォッ……信仰が、白く汚されますぅ……っ！」と身悶える。聖器を玩具にする背徳感が脳を焼く。物理演算：fluid_separation / static_Pressure / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Cross_Semen"
+},
+"V2_DQ11_NIMA_9295": {
+"v2_id": "V2_DQ11_NIMA_9295",
+"original_id": "跪行列奉仕・祈ポーズ・弱者連続中出",
+"detail": "【禁欲：伍】祈りを捧げるポーズのまま、列をなす社会的弱者たちの質量を次々と胎内に受容。ニマの祈りは「皆様、もっと注いで……」という情欲の請願へと転換し、その度に身体はビクンと跳ねる。物理演算：Velocity_Impact / fluid_separation / 粘度1850cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Prayer_Invasion"
+},
+"V2_DQ11_NIMA_9296": {
+"v2_id": "V2_DQ11_NIMA_9296",
+"original_id": "賢者書精液栞・ページ上中出・知性埋没",
+"detail": "【崩壊：壱】魔導書の上にニマを寝かせ、開いたページの上でキモ男たちが種を放出。文字が白濁液で滲み、ニマは「知識が……快楽に塗りつぶされる……」と、知性が「肉の解答」に負ける悦びに浸る。物理演算：fluid_separation / Material_Slide / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Sage_Book_Semen"
+},
+"V2_DQ11_NIMA_9297": {
+"v2_id": "V2_DQ11_NIMA_9297",
+"original_id": "呪文詠唱高速突・絶頂変換・メラオホッ",
+"detail": "【崩壊：弐】呪文を唱えようとするも、デブ男の激しい突き上げに阻害。「メラ……オホッ！ べ、ベギラ……アヘェッ！」と呪文が意味をなさぬ喘ぎに変換され、ニマの魔法能力は「快楽増幅」へと特化する。物理演算：Vibration_Sync / Aural_details / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Spell_Interruption"
+},
+"V2_DQ11_NIMA_9298": {
+"v2_id": "V2_DQ11_NIMA_9298",
+"original_id": "シースルー法衣・乳輪紋章・欲望過熱",
+"detail": "【崩壊：参】特注の透ける賢者装束。巨大な乳輪が男たちの欲望を煽る「魔法の紋章」として機能。布越しに執拗に舐められ、ニマは自身の賢者としての誇りが物理的に「透けて」消えていく感覚に溺れる。物理演算：Material_friction / static_Pressure / 粘度1150cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_SeeThrough_Sage"
+},
+"V2_DQ11_NIMA_9299": {
+"v2_id": "V2_DQ11_NIMA_9299",
+"original_id": "知性放棄オホ説法・ギャル媚・汚求",
+"detail": "【崩壊：肆】賢者としての説法が、いつしか「もっと汚くして……」というギャル的な媚びへと変貌。ニマは「難しいことは、もう分かりません……オホッ！」と白目を剥き、知性の死を宣言する。物理演算：Nerve_Overload / Aural_details / 粘度1050cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Dumb_Sage_Speech"
+},
+"V2_DQ11_NIMA_9300": {
+"v2_id": "V2_DQ11_NIMA_9300",
+"original_id": "賢者石質量開拓・奥義鍵・肉壁削快感",
+"detail": "【崩壊：伍】不潔な巨根を「賢者の石（奥義の鍵）」として歓迎。内側から肉壁を強引に削り取られる暴力的な快感に、ニマの脳は真っ白に焼き切れる。物理演算：Volumetric_Deformation / static_Pressure / 粘度1900cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Sage_Stone_Invasion"
+},
+"V2_DQ11_NIMA_9301": {
+"v2_id": "V2_DQ11_NIMA_9301",
+"original_id": "ゼシカコルセット限界・肉ナイアガラ・商人揉",
+"detail": "【肉感：壱】紐で限界まで締め上げた乳房を、デブ商人の手が左右に揉み出す。ウェアの隙間から溢れ出す「肉のナイアガラ」に男たちが群がり、ニマは自身の肉体が「卑俗な食料」として消費される悦びに咽せる。物理演算：Volumetric_Deformation / static_Pressure / 粘度1700cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Jessica_Corset_Burst"
+},
+"V2_DQ11_NIMA_9302": {
+"v2_id": "V2_DQ11_NIMA_9302",
+"original_id": "胸元リボン乳首引・手綱振回・アガッ声",
+"detail": "【肉感：弐】衣装の赤いリボンを手綱にされ、男たちに振り回されるニマ。乳首が極限まで引き絞られるたびに、「アッ、アガッ！」と、師父とは思えぬ無様な声を漏らして絶頂する。物理演算：Stress_Limit / Vibration_Sync / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Ribbon_Tug"
+},
+"V2_DQ11_NIMA_9303": {
+"v2_id": "V2_DQ11_NIMA_9303",
+"original_id": "不浄パフパフ・デブ顔埋・母乳汗窒息",
+"detail": "【肉感：参】デブ男の顔をバストに埋め、母乳と脂汗で窒息寸前まで追い込むドS指導。しかし、男の悶える振動が乳房を伝わり、ニマ自身もまた「オホォーッ！」と我慢できずに潮を吹く。物理演算：fluid_separation / Volumetric_Deformation / 粘度1550cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Jessica_PuffPuff"
+},
+"V2_DQ11_NIMA_9304": {
+"v2_id": "V2_DQ11_NIMA_9304",
+"original_id": "ゼシカスカート浮浪者サンド・腿質量・不潔挟",
+"detail": "【肉感：肆】ミニスカートを捲り上げ、不潔な老浮浪者が前後からニマの太ももを質量でサンド。カサカサの皮膚と湿った粘膜が交差し、ニマは「最底辺の熱」に汚される快感に白目を剥く。物理演算：Material_friction / static_Pressure / 粘度1450cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Jessica_Thigh_Sandwich"
+},
+"V2_DQ11_NIMA_9305": {
+"v2_id": "V2_DQ11_NIMA_9305",
+"original_id": "魔法小瓶種貯蔵・魔力種パンパン・歓喜オホ",
+"detail": "【肉感：伍】胎内を男たちの資源（魔力）で満たし、パンパンに膨らんだ腹を撫でる。「これで魔法が……強くなります……オホォッ！」と歓喜するニマ。彼女の「魔法」は今や「肉の欲望」と同義。物理演算：Volumetric_Deformation / static_Pressure / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Semen_Flask_Belly"
+},
+"V2_DQ11_NIMA_9306": {
+"v2_id": "V2_DQ11_NIMA_9306",
+"original_id": "シスター排尿マーキング・信仰汚・便器刻印",
+"detail": "【深化：壱】信仰の象徴であるシスター服を、キモ男たちが排尿で汚染。「お前はもう俺たちの便器だ」という刻印を服ごと刻まれ、ニマは「オホッ！」と、汚物の温もりに救済を感じる。物理演算：fluid_separation / Material_Slide / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Sister_Marking"
+},
+"V2_DQ11_NIMA_9307": {
+"v2_id": "V2_DQ11_NIMA_9307",
+"original_id": "賢者紐全身緊縛・衣装切裂・M字吊上",
+"detail": "【深化：弐】賢者の法衣を切り裂き、その布を紐代わりにしてニマをM字に空中吊るし上げ。無防備に開かれた「穴」へ、社会的弱者たちの欲望が雨あられと降り注ぐ。物理演算：Gravity_Impact / Stress_Limit / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Sage_Suspension"
+},
+"V2_DQ11_NIMA_9308": {
+"v2_id": "V2_DQ11_NIMA_9308",
+"original_id": "ゼシカパイズリ行列・バスト汚・長蛇列",
+"detail": "【深化：参】長蛇の列を作った男たちが、ニマのゼシカバストを順番に蹂躙。汚れた質量が入れ替わり立ち替わり肉を削り、ニマは機械的な絶頂のループに意識を溶かされる。物理演算：Material_Slide / static_Pressure / 粘度1650cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Jessica_Batch"
+},
+"V2_DQ11_NIMA_9309": {
+"v2_id": "V2_DQ11_NIMA_9309",
+"original_id": "弱者勝利合唱・中出継続・下卑歌",
+"detail": "【深化：肆】ニマがアヘ顔で中出しを受け続ける中、周囲の男たちが下卑た歌で「聖女の陥落」を祝福。音と振動、そして不浄な液体の充填が、ニマを「肉の祝祭」へと導く。物理演算：Vibration_Sync / fluid_separation / 粘度1900cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Victory_Chorus"
+},
+"V2_DQ11_NIMA_9310": {
+"v2_id": "V2_DQ11_NIMA_9310",
+"original_id": "本能逆授乳・唾液聖雫・谷間溜",
+"detail": "【深化：伍】男たちの口から溢れる汚い唾液を「聖なる雫」として谷間に溜める。ニマはそれを自身の指ですくい、再び口に戻すという倒錯的な循環に「オホッ……」**と法悦する。物理演算：fluid_separation / Material_Slide / 粘度1350cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Saliva_Nursing"
+},
+"V2_DQ11_NIMA_9311": {
+"v2_id": "V2_DQ11_NIMA_9311",
+"original_id": "銀髪巣・肉塊絶頂共有・不浄結合",
+"detail": "【深化：陸】白銀の長髪を男たちの体に巻き付け、一つの巨大な「肉の塊」と化した不浄結合。ニマは自身の髪すらも男たちを繋ぎ止める「鎖」とし、永遠の絶頂を共有する。物理演算：Material_friction / Vibration_Sync / 粘度1800cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Hair_Nest"
+},
+"V2_DQ11_NIMA_9312": {
+"v2_id": "V2_DQ11_NIMA_9312",
+"original_id": "衣装崩壊肉本尊・種泥纏・慈愛笑",
+"detail": "【深化：漆】全ての衣装が消え去り、最後は種と泥だけを纏った「肉の御本尊」。ニマは慈愛の笑みを浮かべ、社会的弱者たちが最後に辿り着く「究極のゴミ箱」として完成された。物理演算：fluid_separation / static_Pressure / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Final_Nude_Vessel"
+},
+"V2_DQ11_NIMA_9313": {
+"v2_id": "V2_DQ11_NIMA_9313",
+"original_id": "ドS根元絞・惨めさ吸尽・強制中出潮吹",
+"detail": "【深化：捌】「出しなさい……私の中に、あなたの惨めさを全て……！」とデブ男の腰を掴んで強制射精。自身の胎内が「不浄」で焼き切れる熱に、ニマは豪快に潮を吹いて絶叫する。物理演算：static_Pressure / Velocity_Impact / 粘度1950cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Miserable_Suction"
+},
+"V2_DQ11_NIMA_9314": {
+"v2_id": "V2_DQ11_NIMA_9314",
+"original_id": "ギャル賢者・不浄パパ最高・真理悟",
+"detail": "【深化：玖】知識を捨て、「マジ、不浄パパ最高ぉ！」と笑顔でアヘるニマ。質量こそが真理、汚れこそが悟り。賢者の称号は、今や「最高のメス」という称号に書き換えられた。物理演算：Nerve_Overload / Aural_details / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Gyaru_Sage_Max"
+},
+"V2_DQ11_NIMA_9315": {
+"v2_id": "V2_DQ11_NIMA_9315",
+"original_id": "永劫指導・不潔幸せ・マーニャマアム予",
+"detail": "【深化：拾】聖地を「世界一不潔で幸せな場所」に変えたニマ。次の衣装（マーニャ、マアム）を不敵に微笑みながら予見し、終わらぬ絶頂のループへと再び身を投じる。物理演算：Material_Slide / static_Pressure / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Eternal_Loop"
+},
+"V2_DQ11_NIMA_9316": {
+"v2_id": "V2_DQ11_NIMA_9316",
+"original_id": "マーニャ・不純鈴音・腰振指導",
+"detail": "【乱舞：壱】極小カップの踊り子衣装。腰の鈴が鳴るたび、キモデブ男が背後から激しく衝突。ニマは「あはっ、皆様の拍動が鈴の音と重なって……心地よいですわ……」と、慈愛の笑みで腰をくねらせ、不浄なリズムに身を任せる。物理演算：Vibration_Sync / Material_Slide / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Dancer_Bell_Sync"
+},
+"V2_DQ11_NIMA_9317": {
+"v2_id": "V2_DQ11_NIMA_9317",
+"original_id": "踊り子ブラ極小蹂躙・溢肉・浮浪者埋顔",
+"detail": "【乱舞：弐】布面積を無視して溢れ出す白銀の巨乳。浮浪者たちがその「はみ出し肉」に顔を埋め、横から不潔な質量を挿入。硬い金装飾と柔らかい乳肉が擦れ合い、ニマは**「オホッ！」と昂熱に咽せる。物理演算：Volumetric_Deformation / static_Pressure / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Dancer_Breast_Overflow"
+},
+"V2_DQ11_NIMA_9318": {
+"v2_id": "V2_DQ11_NIMA_9318",
+"original_id": "不浄酒池肉林・安酒全身浴・白肌熱感",
+"detail": "【乱舞：参】安酒を全身に浴び、アルコールで真っ赤に火照った白肌。不細工な男たちが競うようにその滴を舐めとり、ニマは全身を這う舌の感触に「脳が、溶けていきますぅ……」とアヘ顔を晒す。物理演算：fluid_separation / Thermal_Conductivity / 粘度950cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Alcohol_Pollution"
+},
+"V2_DQ11_NIMA_9319": {
+"v2_id": "V2_DQ11_NIMA_9319",
+"original_id": "マーニャパイズリ・情熱連続・種金装飾汚",
+"detail": "【乱舞：肆】情熱的な舞の最中、入れ替わり立ち替わり現れる質量をバストで挟撃。ニマの母乳と男たちの種が混ざり合い、踊り子の金装飾をドロドロに汚染していく「奉仕の演舞」。物理演算：Material_Slide / fluid_separation / 粘度1700cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Continuous_Dancer_Paizuri"
+},
+"V2_DQ11_NIMA_9320": {
+"v2_id": "V2_DQ11_NIMA_9320",
+"original_id": "社会的弱者喝采中出・最大級放出・胎内受",
+"detail": "【乱舞：伍】「俺たちの女神だ！」という下卑た喝采の中、百人目の中出しを胎内最奥で受容。ニマは白目を剥き、不浄な資源が子宮を叩く衝撃に「オホォォーッ！」と魂を震わせる。物理演算：Velocity_Impact / fluid_separation / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Goddess_Ejaculation"
+},
+"V2_DQ11_NIMA_9321": {
+"v2_id": "V2_DQ11_NIMA_9321",
+"original_id": "マアムタイトミニ隙間開拓・腿質量・内側溶",
+"detail": "【魔弾：壱】ピッチリとした格闘服の裾を広げられ、強靭な太ももで不潔な質量をしごき上げる。「指導です、しっかり腰を使いなさい」とドSに命じつつ、自身の秘部は男の熱でトロトロに溶け落ちている。物理演算：Material_friction / static_Pressure / 粘度1450cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Maam_Thigh_Grip"
+},
+"V2_DQ11_NIMA_9322": {
+"v2_id": "V2_DQ11_NIMA_9322",
+"original_id": "種魔弾射撃・ウェア穴種付・真っ白コーティング",
+"detail": "【魔弾：弐】格闘ウェアの穴という穴から「種」という名の魔弾を撃ち込まれる。ニマのバスト周辺は不純なエネルギーで真っ白に白濁し、彼女は「皆様の魔力、重いですわ……」と法悦に浸る。物理演算：fluid_separation / Velocity_Impact / 粘度1900cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Semen_Bullet_Coating"
+},
+"V2_DQ11_NIMA_9323": {
+"v2_id": "V2_DQ11_NIMA_9323",
+"original_id": "不浄魔力拳・巨乳包込・母乳直接飲",
+"detail": "【魔弾：参】疲弊した浮浪者を巨乳で包み込み、直接乳首を含ませる。「癒やしてあげますわ……」とアヘ顔で微笑むニマ。師父の慈愛は、男たちを「肉の虜」にするための劇薬へと変質した。物理演算：Volumetric_Deformation / fluid_separation / 粘度1550cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Breast_Heal"
+},
+"V2_DQ11_NIMA_9324": {
+"v2_id": "V2_DQ11_NIMA_9324",
+"original_id": "マアムジッパー食込・冷熱摩擦・指導完成",
+"detail": "【魔弾：肆】ジッパーを谷間ギリギリで固定し、金属の冷たさと質量の熱で乳肉を攪拌。物理的な圧迫感にニマは「アッ、アガッ！」と声を漏らし、究極の「肉体指導」の完成を全身で謳歌する。物理演算：Thermal_Conductivity / static_Pressure / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Maam_Zipper_Press"
+},
+"V2_DQ11_NIMA_9325": {
+"v2_id": "V2_DQ11_NIMA_9325",
+"original_id": "デブ肉プレス・ウェア千切・壊悦",
+"detail": "【魔弾：伍】巨漢のデブ男に押し潰され、マアム衣装が悲鳴を上げ千切れるほどの衝撃。ニマは「あ……私、壊れてしまう……最高ですわ……」と白目を剥き、圧倒的な質量に屈服する快感に酔い痴れる。物理演算：Gravity_Impact / Stress_Limit / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Maam_Fat_Crush"
+},
+"V2_DQ11_NIMA_9326": {
+"v2_id": "V2_DQ11_NIMA_9326",
+"original_id": "通常衣装濡れ透け・汗種透明化・キスマーク晒",
+"detail": "【原点：壱】汗と不浄な液体で完全に透明化した修行服。白銀の肌に刻まれた無数の「汚れ」と「キスマーク」が丸見えとなり、ニマは羞恥すらも「悟り」として衆生に晒す。物理演算：fluid_separation / Material_Slide / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Default_Wet_Transparency"
+},
+"V2_DQ11_NIMA_9327": {
+"v2_id": "V2_DQ11_NIMA_9327",
+"original_id": "銀髪汚物拭・不浄髪巻付・慈愛顔受容",
+"detail": "【原点：弐】浮浪者の汚物を自慢の銀髪で拭き取り、その不浄な髪を首に巻き付ける狂気の慈愛。「皆様の全てが愛おしいのです……」と微笑みながら、男の質量を喉元まで迎え入れる。物理演算：Material_friction / fluid_separation / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Hair_Filth_Service"
+},
+"V2_DQ11_NIMA_9328": {
+"v2_id": "V2_DQ11_NIMA_9328",
+"original_id": "出さないでドS焦らし・高速ピストン・潮噴",
+"detail": "【原点：参】「まだです……もっと不純なものを私に溜め込みなさい！」と耳元で囁き、男を焦らしながら高速ピストン。指導の体裁を保ちつつ、自身の身体が先に限界を迎え、豪快に潮を噴く。物理演算：Velocity_Impact / Nerve_Overload / 粘度1600cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_S-Master_Edge"
+},
+"V2_DQ11_NIMA_9329": {
+"v2_id": "V2_DQ11_NIMA_9329",
+"original_id": "1L種聖域化・股間不純聖水・男啜",
+"detail": "【原点：肆】胎内を種でパンパンにし、修行服の股間から溢れ出る液体を男たちが崇めるように啜る。ニマはその様子を「あはっ、一滴も残さず飲みなさい……」と慈愛のアヘ顔で見守る。物理演算：fluid_separation / Volumetric_Deformation / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Semen_Overflow_Shrine"
+},
+"V2_DQ11_NIMA_9330": {
+"v2_id": "V2_DQ11_NIMA_9330",
+"original_id": "社会的地位逆転・パパ便器宣言・全裸破装",
+"detail": "【原点：伍】「私は、誰からも必要とされなかった皆様の、最後のごみ箱です……」と宣言。破れた衣装の一部だけを纏い、至福のアヘ顔で自らを「最底辺の便器」として供出する。物理演算：Material_Slide / static_Pressure / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Final_Garbage_Can"
+},
+"V2_DQ11_NIMA_9331": {
+"v2_id": "V2_DQ11_NIMA_9331",
+"original_id": "体位競演・衣装切替脳内・百人絶頂ループ",
+"detail": "【曼荼羅：壱】脳内でマーニャ、マアム、シスターの姿を切り替えながら、百人の男と連続絶頂。ニマの精神は衣装という概念を超越し、ただ「不浄を吸い込む肉」として純粋化される。物理演算：Nerve_Overload / Vibration_Sync / 粘度1800cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Multi_Cosplay_Ecstasy"
+},
+"V2_DQ11_NIMA_9332": {
+"v2_id": "V2_DQ11_NIMA_9332",
+"original_id": "合体肉座・男山埋没・四方質量賜",
+"detail": "【曼荼羅：弐】男たちの肉の山に埋もれ、四方八方の「穴」に質量を賜るニマ。全方向からのピストンに揺らされ、彼女の意識は「オホッ！ オホォッ！」という断続的な叫びのみとなる。物理演算：static_Pressure / Gravity_Impact / 粘度1950cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Meat_Throne"
+},
+"V2_DQ11_NIMA_9333": {
+"v2_id": "V2_DQ11_NIMA_9333",
+"original_id": "銀髪種聖繭・快楽結晶・非人間化",
+"detail": "【曼荼羅：参】全身を白銀の髪と白濁した種で包み込み、巨大な「繭」と化したニマ。もはや人間としての形を失い、ただ不浄を濾過し快楽を排出するだけの「神聖なる装置」へと昇華した。物理演算：fluid_separation / Material_friction / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Semen_Cocoon"
+},
+"V2_DQ11_NIMA_9334": {
+"v2_id": "V2_DQ11_NIMA_9334",
+"original_id": "本音ギャルピース・子作り最高・白目喪失",
+"detail": "【曼荼羅：肆】師匠の仮面を脱ぎ捨て、「マジ、不細工なパパたちとの子作り、最高すぎなんですけどぉ！」とギャルピースで白目を剥く。知性は死に、ただ不浄に浸る幸福だけが残った。物理演算：Nerve_Overload / Aural_details / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Gyaru_Peace_Melt"
+},
+"V2_DQ11_NIMA_9335": {
+"v2_id": "V2_DQ11_NIMA_9335",
+"original_id": "衣装残骸パフパフ葬・顔被・巨乳圧死絶頂",
+"detail": "【曼荼羅：伍】破れた全衣装を男たちの顔に被せ、その上から巨乳で圧死させる勢いでパフパフ。ニマは自身の乳肉が男を窒息させる振動に、最高潮の「オホォーッ！」を響かせる。物理演算：Volumetric_Deformation / static_Pressure / 粘度1650cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Funeral_PuffPuff"
+},
+"V2_DQ11_NIMA_9336": {
+"v2_id": "V2_DQ11_NIMA_9336",
+"original_id": "死体ゾンビ再来慈・嫌悪消失・全受入",
+"detail": "【曼荼羅：陸】以前は嫌悪した異形たちさえも、「いらっしゃい」と微笑んで受容。ニマの慈愛は、腐敗すらも快楽のスパイスとして飲み込む、無差別のドロドロな深淵へと至った。物理演算：Material_Slide / fluid_separation / 粘度1900cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Undead_Acceptance"
+},
+"V2_DQ11_NIMA_9337": {
+"v2_id": "V2_DQ11_NIMA_9337",
+"original_id": "通常衣装股間スリット・聖地闊歩・常時指導受",
+"detail": "【曼荼羅：漆】弟子の手で股間に巨大な穴を開けられた通常衣装。いつでも「指導」を受けられる状態で聖地を闊歩し、ニマは通りすがりの浮浪者に腰を振って奉仕を強要する。物理演算：Material_friction / static_Pressure / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Slit_Dress_Walk"
+},
+"V2_DQ11_NIMA_9338": {
+"v2_id": "V2_DQ11_NIMA_9338",
+"original_id": "ドS一斉射精命令・惨男染・支配的陥落",
+"detail": "【曼荼羅：捌】「さあ、惨めな男たち！ 私の体を、お前たちの色で染め上げなさい！」と命令。降り注ぐ種を全身で浴び、ニマは支配者でありながら、最も汚された奴隷として絶頂する。物理演算：fluid_separation / Velocity_Impact / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Command_Ejaculation"
+},
+"V2_DQ11_NIMA_9339": {
+"v2_id": "V2_DQ11_NIMA_9339",
+"original_id": "慈愛種逆噴射・母乳口噴・聖地潤",
+"detail": "【曼荼羅：玖】胎内から溢れた種を、母乳と共に口から逆噴射。不浄な液体で聖地を濡らし、「皆様の愛が、溢れてしまいます……」とアヘ顔で微笑む、壊れた聖母の完成。物理演算：fluid_separation / Vibration_Sync / 粘度1950cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Semen_Fountain"
+},
+"V2_DQ11_NIMA_9340": {
+"v2_id": "V2_DQ11_NIMA_9340",
+"original_id": "永劫不浄聖域・列眺・アヘ顔指導待",
+"detail": "【曼荼羅：拾】再び不純な男たちの列を眺め、自ら次の「汚されるための衣装」を選ぶ。ニマ大師の日常は、絶え間ない不浄の吸飲と、終わらぬ「オホッ！」**という喘ぎの中に永劫回帰した。物理演算：Material_Slide / static_Pressure / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Eternal_Depravity_Shrine"
+},
+"V2_DQ11_NIMA_9341": {
+"v2_id": "V2_DQ11_NIMA_9341",
+"original_id": "聖母授乳ウェア・多門式開放・白銀ピンク",
+"detail": "【準備：壱】ニマ自ら考案した、バスト中央と両サイドに巨大な吸い口（スリット）を備えた育児服。下腹部は常時「質量」を迎え入れるために開放され、白銀の肌がピンクの布地から溢れ出す。物理演算：Volumetric_Deformation / static_Pressure / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Maternal_Open_Gear"
+},
+"V2_DQ11_NIMA_9342": {
+"v2_id": "V2_DQ11_NIMA_9342",
+"original_id": "社会的弱者おしゃぶり・老浮浪者膝乗・乳首押込",
+"detail": "【準備：弐】歯の抜けた老浮浪者を膝に乗せ、「よしよし、お腹が空いたのね」と微笑むニマ。ウェアの窓から乳首を男の口へ無理やり押し込み、不潔な吸い付きに**「オホッ……」と喉を鳴らす。物理演算：Material_friction / static_Pressure / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Old_Man_Pacifier"
+},
+"V2_DQ11_NIMA_9343": {
+"v2_id": "V2_DQ11_NIMA_9343",
+"original_id": "白銀髪産着・汚体包込・涎髪汚損",
+"detail": "【準備：参】長く神々しい銀髪を、男たちの汚れた体を包む「産着」として供出。男たちの鼻水や涎が白銀の髪をベタベタに汚していく様に、ニマは「母の温もりですよ……」とアヘ顔で陶酔する。物理演算：Material_Slide / fluid_separation / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Silver_Hair_Swaddle"
+},
+"V2_DQ11_NIMA_9344": {
+"v2_id": "V2_DQ11_NIMA_9344",
+"original_id": "常時中出保水・母体種満タン・ミルク定義",
+"detail": "【準備：肆】「赤子を育てるには、母体が常に種で満たされていなければならない」と定義。キモ男たちが代わる代わる胎内を「種のミルク」で満タンにし、ニマは下腹部の重みに法悦を感じる。物理演算：Volumetric_Deformation / fluid_separation / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Constant_Semen_Fill"
+},
+"V2_DQ11_NIMA_9345": {
+"v2_id": "V2_DQ11_NIMA_9345",
+"original_id": "おむつ替え逆転・修行服拭清・アヘ顔慈愛",
+"detail": "【準備：伍】汚物まみれの浮浪者たちの下半身を、自らの修行服で拭き取る屈辱的な「育児」。ニマは鼻を突く悪臭を聖なる香りと錯覚し、「アヘ顔」で彼らの不浄を愛でる。物理演算：Material_Slide / fluid_separation / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Dirty_Diaper_Wipe"
+},
+"V2_DQ11_NIMA_9346": {
+"v2_id": "V2_DQ11_NIMA_9346",
+"original_id": "両脇スリット同時授乳・デブ男吸・谷間質量",
+"detail": "【同時：壱】左右のスリットから二人のデブ男に乳を吸わせつつ、正面の谷間で主人公の質量を「栄養」として受容。全身の感度が不浄な熱で飽和し、ニマの意識は「オホォッ！」と白濁する。物理演算：static_Pressure / Volumetric_Deformation / 粘度1800cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Triple_Nursing"
+},
+"V2_DQ11_NIMA_9347": {
+"v2_id": "V2_DQ11_NIMA_9347",
+"original_id": "不浄ゲップ出・巨乳抱擁・排泄微笑",
+"detail": "【同時：弐】射精後の男を巨乳で包み、背中をトントンと叩く。男が放出の勢いで汚い排泄物を出しても、「いい子ね」と微笑み、ニマは自身の汚染を「育児の成果」として受け入れる。物理演算：Vibration_Sync / fluid_separation / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Burping_Embrace"
+},
+"V2_DQ11_NIMA_9348": {
+"v2_id": "V2_DQ11_NIMA_9348",
+"original_id": "母乳種離乳食・ウェア上混合・直接流込",
+"detail": "【同時：参】授乳ウェアの上で母乳と精液を指で混ぜ合わせ、男たちの口へ直接流し込む。「皆様、たっぷりお上がりなさい……オホッ！」と、自身の分泌液と不浄の混合を「滋養」として推奨する。物理演算：fluid_separation / Material_Slide / 粘度1600cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Semen_Milk_Mix"
+},
+"V2_DQ11_NIMA_9349": {
+"v2_id": "V2_DQ11_NIMA_9349",
+"original_id": "ジッパー食込授乳・乳肉盛上・熱吸同時",
+"detail": "【同時：肆】ジッパーの隙間に乳肉を「盛り」上げ、男たちが吸い付きやすいよう形状を固定。質量の熱と吸い付きの同時刺激に、ニマの乳房は真っ赤に充血し、「アガッ！」と絶頂を繰り返す。物理演算：Stress_Limit / static_Pressure / 粘度1350cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Zipper_Nipple_Press"
+},
+"V2_DQ11_NIMA_9350": {
+"v2_id": "V2_DQ11_NIMA_9350",
+"original_id": "夜泣鎮・蹲踞受容・質量物理鎮静",
+"detail": "【同時：伍】欲望で暴れる男たち（夜泣き）を、蹲踞の姿勢で迎え入れる。奥深くまで質量を飲み込み、物理的な結合で彼らを鎮めるニマ。その胎内は不浄な鎮静剤として機能する。物理演算：static_Pressure / Velocity_Impact / 粘度1900cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Night_Crying_Plug"
+},
+"V2_DQ11_NIMA_9351": {
+"v2_id": "V2_DQ11_NIMA_9351",
+"original_id": "一斉授乳曼荼羅・全身群・全穴突立",
+"detail": "【保育：壱】数十人のキモ男たちがウェアの穴という穴に指、口、質量を突き立てる。「育児が、激しすぎますぅ……っ！」と叫びながら、ニマは全身を「肉の遊具」として供出する。物理演算：Volumetric_Deformation / static_Pressure / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Nursery_Mandala"
+},
+"V2_DQ11_NIMA_9352": {
+"v2_id": "V2_DQ11_NIMA_9352",
+"original_id": "不潔男たかいたかい・バスト持上・溢母乳",
+"detail": "【保育：弐】デブ男たちにバストを持ち上げられ、激しく揺らされる「たかいたかい」。揺れる巨乳から母乳が噴き出し、ニマは宙に浮いた感覚の中で「オホォーッ！」と絶頂を撒き散らす。物理演算：Gravity_Impact / Vibration_Sync / 粘度1700cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_High_High_Breast"
+},
+"V2_DQ11_NIMA_9353": {
+"v2_id": "V2_DQ11_NIMA_9353",
+"original_id": "1L母性貯蔵・種乳腺刺激・不浄サイクル",
+"detail": "【保育：参】男たちから与えられた種が乳腺を刺激し、さらに濃厚な母乳を作り出す。1リットルの資源を貯蔵した下腹部を撫でながら、ニマは「不浄の再生産」という悟りに至る。物理演算：Volumetric_Deformation / fluid_separation / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_1L_Maternal_Storage"
+},
+"V2_DQ11_NIMA_9354": {
+"v2_id": "V2_DQ11_NIMA_9354",
+"original_id": "ウェア完全汚損・育児勲章・着替拒否",
+"detail": "【保育：肆】種、母乳、泥、涎でコーティングされた授乳ウェア。ニマはこれを「育児の勲章」とし、不潔な膜に包まれた自身の肉体を誇示しながら、次なる「赤ちゃん」を待つ。物理演算：Material_Slide / fluid_separation / 粘度1800cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Filthy_Medal_Wear"
+},
+"V2_DQ11_NIMA_9355": {
+"v2_id": "V2_DQ11_NIMA_9355",
+"original_id": "ギャルママ師匠・子作り捗・理性飛笑顔",
+"detail": "【保育：伍】「みんな私の可愛い赤ちゃん！ どんどん中出しして、パパになってね！」と完全なギャル口調。ニマは理性ではなく本能の笑顔でピースし、聖地を「子作り場」へと変貌させる。物理演算：Nerve_Overload / Aural_details / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Gyaru_Mama_Max"
+},
+"V2_DQ11_NIMA_9356": {
+"v2_id": "V2_DQ11_NIMA_9356",
+"original_id": "不浄お昼寝・全裸破ウェア掛・添寝自慰",
+"detail": "【保育：陸】賢者タイムで眠る男たちに、破れたウェアを掛け、自らは添い寝しながら自慰。「次はどの子を産もうかしら……」とアヘ顔で呟き、終わらぬ快楽の余韻を貪る。物理演算：Material_Slide / static_Pressure / 粘度1150cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Aftercare_Masturbation"
+},
+"V2_DQ11_NIMA_9357": {
+"v2_id": "V2_DQ11_NIMA_9357",
+"original_id": "不細工赤ちゃん夢・パパ子産宣言・腹擦付",
+"detail": "【保育：漆】デブ男の顔を自身の腹に擦りつけ、「次はこのパパの子を産むの」とアヘ顔で宣言。ニマの想像力は不細工な遺伝子との交配に特化し、彼女の胎内は歓喜に震える。物理演算：Material_friction / static_Pressure / 粘度1450cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Ugly_Baby_Dream"
+},
+"V2_DQ11_NIMA_9358": {
+"v2_id": "V2_DQ11_NIMA_9358",
+"original_id": "ドS強制授乳・乳首ねじ込・高速種搾取",
+"detail": "【保育：捌】「飲まない子はダメな子です！」と男の口に乳首をねじ込み、同時に下では強靭な膣圧で種を搾り取る。慈愛という名の暴力的な搾取に、ニマは「オホッ！」**と勝利の喘ぎを上げる。物理演算：static_Pressure / Velocity_Impact / 粘度1950cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Forced_Nursing"
+},
+"V2_DQ11_NIMA_9359": {
+"v2_id": "V2_DQ11_NIMA_9359",
+"original_id": "聖地ドゥルダ不浄託児所・異臭快楽霧・甘男集",
+"detail": "【保育：玖】世界中の男が「赤ちゃん」として甘えるために集結。聖地は男たちの体臭と精液の霧に包まれ、ニマはその中心で「肉の揺り籠」として、不浄な平穏を統治する。物理演算：fluid_separation / static_Pressure / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Universal_Nursery"
+},
+"V2_DQ11_NIMA_9360": {
+"v2_id": "V2_DQ11_NIMA_9360",
+"original_id": "肉揺り籠完成・不浄聖母・永劫授乳",
+"detail": "【保育：拾】社会的弱者たちの欲望を慈しみ、永遠に授乳し、種付けされ続ける「不浄の聖母」として完成。ニマ大師の理（ことわり）は、全人類を「不浄な乳飲み子」へと変えることだった。物理演算：Nerve_Overload / static_Pressure / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Eternal_Maternal_Vessel"
+},
+"V2_DQ11_NIMA_9361": {
+"v2_id": "V2_DQ11_NIMA_9361",
+"original_id": "蹲踞高速ピストン・抑制教え・叱咤アヘ",
+"detail": "【朝礼：壱】数百人の僧の質量の上を渡り歩く蹲踞。高速ピストンで腰を振りながら「まだ行くなと言っておろう！ 己の煩悩を支配せんか！」と厳格に叱咤。理性を失う僧を尻目に、ニマ自身も内部を突き上げられる不浄な熱に**「オホッ！」と銀髪を激しく揺らす。物理演算：Vibration_Sync / Stress_Limit / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_HighSpeed_Sokkyo"
+},
+"V2_DQ11_NIMA_9362": {
+"v2_id": "V2_DQ11_NIMA_9362",
+"original_id": "乳房参拝・パイズリマニ車・精液輝肌",
+"detail": "【朝礼：弐】僧たちが列をなし、神聖な巨乳を磨り潰すように質量を挟み込む「肉の巡礼」。仕上げに谷間へ一斉に不浄な質量を叩きつけられ、ニマの白い肌は朝露のような精液で神々しくコーティングされる。物理演算：Material_Slide / fluid_separation / 粘度1900cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Breast_Mani_Wheel"
+},
+"V2_DQ11_NIMA_9363": {
+"v2_id": "V2_DQ11_NIMA_9363",
+"original_id": "服上愛撫・クロッチ素股・不浄受止腰",
+"detail": "【朝礼：参】修行着の上から巨乳を力任せに揉みしだかれ、同時に股間ではクロッチ越しに僧たちの先端を擦りつけられる。「ぬっ……！ その不浄、受け止めてやる。もっと押し付けよ」と、ニマは自ら腰を押し返し、不潔な摩擦を奥義として享受する。物理演算：Material_friction / static_Pressure / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Crotch_Rubbing"
+},
+"V2_DQ11_NIMA_9364": {
+"v2_id": "V2_DQ11_NIMA_9364",
+"original_id": "立正常位・浄化種付・咀嚼胎内満",
+"detail": "【朝礼：肆】修行服を捲り上げ、立ったまま僧と結合。全力の中出しを慈愛の眼差しで受け入れ、胎内を満たす熱い液体を「修行の成果」として咀嚼するニマ。溢れ出る不浄液が彼女の脚を伝い、神聖な床を汚していく。物理演算：Velocity_Impact / fluid_separation / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Standing_Purification"
+},
+"V2_DQ11_NIMA_9365": {
+"v2_id": "V2_DQ11_NIMA_9365",
+"original_id": "立バック不細工男・肉体供出・机上揺乳",
+"detail": "【実技：壱】最も卑屈な男を選び、机に手をつく前傾姿勢で質量を迎え入れる。重力で激しく揺れる巨乳を男に掴ませ、「その卑しさを、全て私にぶつけよ！」と激励。ニマは背後からの暴力的な衝撃に「オホォッ！」と白目を剥く。物理演算：Volumetric_Deformation / static_Pressure / 粘度1600cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Table_Back_Lesson"
+},
+"V2_DQ11_NIMA_9366": {
+"v2_id": "V2_DQ11_NIMA_9366",
+"original_id": "四つん這深部洗浄・デブ男尻割・銀髪床散",
+"detail": "【実技：弐】四つん這いになり、脂ぎったデブ男に尻肉を割られ、最奥まで侵入される。「アヘッ……！ 奥義の真理が、見えてくるぞ……」と、銀髪を床に散らしながら、腸壁を削り取られるような不潔な熱に悶え狂う。物理演算：static_Pressure / Volumetric_Deformation / 粘度1850cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Deep_Cleansing"
+},
+"V2_DQ11_NIMA_9367": {
+"v2_id": "V2_DQ11_NIMA_9367",
+"original_id": "背面座位瞑想・不潔体温・不動心震",
+"detail": "【実技：参】男を抱きかかえるように座り、背中で彼の不潔な体温を感じながら結合。男の卑俗な吐息に耳を犯され、ニマは「不動の心」を保とうとするも、突き上げられるたびに肩を震わせ、「あぁっ……！」と声を漏らす。物理演算：Material_Slide / Vibration_Sync / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Back_Meditation"
+},
+"V2_DQ11_NIMA_9368": {
+"v2_id": "V2_DQ11_NIMA_9368",
+"original_id": "スパイダー騎乗・全方威光・救済アヘ宣言",
+"detail": "【実技：肆】壁と床に手足を突き、クモのような姿勢で男の上で跳ねる。乳房を振り乱し、「見よ、これぞ肉体による救済である！」と、見守る全僧侶に向かって絶頂の最中にアヘ顔で宣言する。物理演算：Gravity_Impact / Nerve_Overload / 粘度1750cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Spider_Ecstasy"
+},
+"V2_DQ11_NIMA_9369": {
+"v2_id": "V2_DQ11_NIMA_9369",
+"original_id": "逆駅弁・空中肉体曼荼羅・母乳汗混濁",
+"detail": "【実技：伍】不細工な巨漢に抱え上げられ、対面で激しく突き上げられる空中戦。宙に浮いた状態でニマの巨乳が男の汚れた顔面を叩き、噴き出した母乳と脂汗が混ざり合って、師弟の境界を消滅させる。物理演算：Velocity_Impact / fluid_separation / 粘度1950cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Sky_Mandala"
+},
+"V2_DQ11_NIMA_9370": {
+"v2_id": "V2_DQ11_NIMA_9370",
+"original_id": "中出洪水・胎内パンパン・修行終了アヘ崩",
+"detail": "【実技：陸】修行の終焉。胎内を数十人分の種でパンパンに膨らませ、「オホォ……本日の修行、これにて終了……」と満足げに微笑む。直後、膝から力が抜け、溢れ出る不浄液の海の中でアヘ顔のまま崩れ落ちる。物理演算：Volumetric_Deformation / fluid_separation / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Final_Daily_Semen"
+},
+"V2_DQ11_NIMA_9371": {
+"v2_id": "V2_DQ11_NIMA_9371",
+"original_id": "日常の法典・ニマ肉体・淫ら修行場",
+"detail": "【総括：壱】ニマの肉体そのものが「ドゥルダの法」となり、修行僧たちは一日の全てを彼女の「穴」への奉仕と、彼女の「乳」からの授乳に捧げる。清廉な空気は今や、精液の蒸気へと置き換わった。物理演算：Atmospheric_Density / static_Pressure / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Law_of_Flesh"
+},
+"V2_DQ11_NIMA_9372": {
+"v2_id": "V2_DQ11_NIMA_9372",
+"original_id": "銀髪手綱・僧侶牽引・不浄闊歩",
+"detail": "【総括：弐】移動の際、銀髪を数人の僧に手綱として持たせ、結合したまま引きずられるように闊歩する。ニマは引き抜かれる快感と、再び突き立てられる不浄に「オホッ！」**と絶頂を維持し続ける。物理演算：Material_friction / Velocity_Impact / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Hair_Tether_Walk"
+},
+"V2_DQ11_NIMA_9373": {
+"v2_id": "V2_DQ11_NIMA_9373",
+"original_id": "説法中の搾取・口内質量・言葉不明",
+"detail": "【総括：参】壇上で説法を行いながら、口内に社会的弱者の質量を迎え入れる。「煩悩を……オホッ……捨て……アヘェ！」と、言葉にならない喘ぎこそが、ドゥルダの新しい真理として僧たちに伝播する。物理演算：Aural_details / fluid_separation / 粘度1450cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Oral_Sermon"
+},
+"V2_DQ11_NIMA_9374": {
+"v2_id": "V2_DQ11_NIMA_9374",
+"original_id": "全裸修行着一部・肉本尊・慈愛爆発",
+"detail": "【総括：肆】服をまともに着ることを忘れ、破れた布切れ一枚で「肉の本尊」として君臨。僧たちが彼女を崇めるたび、ニマは母乳と潮を同時に噴き出し、慈愛（不浄）の雨を降らせる。物理演算：fluid_separation / Nerve_Overload / 粘度1900cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Nude_Goddess_Rain"
+},
+"V2_DQ11_NIMA_9375": {
+"v2_id": "V2_DQ11_NIMA_9375",
+"original_id": "永劫日常・ニマ笑顔・不浄連鎖",
+"detail": "【総括：伍】夜になっても修行は止まらず、ニマはアヘ顔のまま「次の方、どうぞ……」と微笑む。ドゥルダ郷は、全人類の欲望をニマ一人が飲み込み続ける、永遠の不浄ループへと閉じた。物理演算：static_Pressure / Volumetric_Deformation / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Eternal_Daily_Loop"
+},
+"V2_DQ11_NIMA_9376": {
+"v2_id": "V2_DQ11_NIMA_9376",
+"original_id": "マングリ返し・スパイダー捕食・活力摂取",
+"detail": "【食事：壱】仰向けで足を高く上げ、秘部を全開にする「マングリ返し」。弟子たちがスパイダー騎乗位で次々とダイブし、質量を叩き込む。ニマはそれを一滴も漏らさず飲み込み、**「ぬぅ……これぞ、生の活力よ……！」と喉を鳴らし、弟子の精を血肉へと変える。物理演算：static_Pressure / Volumetric_Deformation / 粘度1900cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Mangu_Predation"
+},
+"V2_DQ11_NIMA_9377": {
+"v2_id": "V2_DQ11_NIMA_9377",
+"original_id": "ロート経由・精液流込・タプタプ膨腹",
+"detail": "【食事：弐】マングリ返しの秘部に特製ロートを挿入。弟子たちが列をなし、尿の如き勢いで精液を注ぎ込む。ニマの胎内は不浄な体液でタプタプに満たされ、腹部が「種」の重みでぽっこりと膨れ上がるのを慈愛の眼差しで見つめる。物理演算：fluid_separation / static_Pressure / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Funnel_Feeding"
+},
+"V2_DQ11_NIMA_9378": {
+"v2_id": "V2_DQ11_NIMA_9378",
+"original_id": "行列授乳・慈愛手コキ・栄養満た",
+"detail": "【食事：参】跪く修行僧一人一人の口に、豊かな乳房を含ませ濃厚な母乳を与える「行列授乳」。空いた手で彼らの質量を力強くしごき上げる「授乳手コキ」を同時並行し、ニマは弟子たちの心身を自身の分泌物でパンパンに満たしてやる。物理演算：fluid_separation / Material_friction / 粘度1700cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Nursing_Handjob"
+},
+"V2_DQ11_NIMA_9379": {
+"v2_id": "V2_DQ11_NIMA_9379",
+"original_id": "ウェア正面侵入・布圧迫・乳肉瞑想耐",
+"detail": "【瞑想：壱】蹲踞の姿勢で瞑想するニマ。服の隙間からダイレクトに質量を差し込まれ、布の圧迫と乳肉の熱を同時に味わう。ニマは眉根を寄せ、意識を内面に向けながらも、内部を攪拌される不浄に身を震わせる。物理演算：static_Pressure / Material_friction / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Meditation_Front_Breach"
+},
+"V2_DQ11_NIMA_9380": {
+"v2_id": "V2_DQ11_NIMA_9380",
+"original_id": "乳首横スリット・乳頭削・瞑想悶",
+"detail": "【瞑想：弐】ブラの乳首横にある涙型スリットから質量を突っ込み、内側で尖った乳頭とゴリゴリに擦り合わせる。「……っ！ 乳頭が……削られる……っ」と瞑想の淵で喘ぎ、ニマの厳格な顔面が快楽で崩壊しかける。物理演算：Stress_Limit / Vibration_Sync / 粘度1350cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Teardrop_Slit_Friction"
+},
+"V2_DQ11_NIMA_9381": {
+"v2_id": "V2_DQ11_NIMA_9381",
+"original_id": "センターホール・中心核蹂躙・白飛沫汚",
+"detail": "【瞑想：参】トレーニングブラの中心にある「窓」から突き立てられた質量。左右の乳首を交互に弾き飛ばし、ブラの内部を白い飛沫で汚染していく。ニマは不動の姿勢を保ちつつ、バストの中心を貫く熱い衝撃に「オホッ！」と絶頂を耐える。物理演算：fluid_separation / Volumetric_Deformation / 粘度1650cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Center_Hole_Breach"
+},
+"V2_DQ11_NIMA_9382": {
+"v2_id": "V2_DQ11_NIMA_9382",
+"original_id": "アンダーバスト・下側パイズリ・重み活用",
+"detail": "【瞑想：肆】ブラの下側に設計された穴から上へ突き上げるように挿入。ニマ自身の乳房の「重み」を利用して質量を押し潰す「下側パイズリ」。ニマは瞑想の集中を肉の揺れによって乱され、激しく呼吸を荒らげる。物理演算：static_Pressure / Gravity_Impact / 粘度1800cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Underbust_Press"
+},
+"V2_DQ11_NIMA_9383": {
+"v2_id": "V2_DQ11_NIMA_9383",
+"original_id": "ブラ剥ぎ取り・生下乳ズリ・密着放出",
+"detail": "【瞑想：伍】瞑想中のニマからブラを剥ぎ取り、重力で垂れた「下乳」の肉で質量をサンド。白肌同士の密着摩擦を楽しみながら、弟子がニマの腹部へ一斉に放出。彼女はその熱を「修行の成果」として微笑んで受け止める。物理演算：Material_friction / fluid_separation / 粘度1450cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Default_Under_Breast"
+},
+"V2_DQ11_NIMA_9384": {
+"v2_id": "V2_DQ11_NIMA_9384",
+"original_id": "全開パイズリ・王道奉仕・銀髪精液染",
+"detail": "【瞑想：陸】ブラを完全にずらし、剥き出しの双丘を両手で寄せて王道のパイズリ。高速な摩擦により、ニマの銀髪は飛び散る精液で白く染まり、彼女は「オホォーッ！」と、瞑想という名の絶頂の淵へ沈んでいく。物理演算：Vibration_Sync / fluid_separation / 粘度1950cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Full_Open_Paizuri"
+},
+"V2_DQ11_NIMA_9385": {
+"v2_id": "V2_DQ11_NIMA_9385",
+"original_id": "サイドスリット侵入・肋骨圧迫・不浄横突",
+"detail": "【瞑想：漆】ブラの脇側スリットから横向きに質量を挿入。乳房を外側から肋骨ごと圧迫し、横向きに擦りつける。ニマは脇腹を抜ける奇妙な快感に「アッ、アガッ！」**と身体を仰け反らせ、瞑想を強制終了させられる。物理演算：static_Pressure / Material_friction / 粘度1550cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Side_Slit_Invasion"
+},
+"V2_DQ11_NIMA_9386": {
+"v2_id": "V2_DQ11_NIMA_9386",
+"original_id": "乳首種転がし・服捲露出・礼節叱咤アヘ",
+"detail": "【食事：壱】修行着を無造作に捲られ、剥き出しの乳首を「梅干しの種」のように舌で執拗に転がされる。ニマは「ぬっ、礼節を……オホッ、忘れるなと言った……あぁっ！」と厳格に叱りながらも、突起の快感に身をよじり、銀髪を振り乱す。物理演算：Material_friction / Vibration_Sync / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Nipple_Rolling"
+},
+"V2_DQ11_NIMA_9387": {
+"v2_id": "V2_DQ11_NIMA_9387",
+"original_id": "クリ種転がし・箸クロッチ・秘核口含",
+"detail": "【食事：弐】箸で無造作に下着をずらされ、剥き出しの秘核（クリトリス）を直接口に含んでコロコロと弄ばれる。ニマはアヘ顔で腰を浮かせ、慈愛の体液を床に滴らせながら「指導に従いなさい……」と虚空に呟く。物理演算：Material_Slide / Nerve_Overload / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Clit_Food_Play"
+},
+"V2_DQ11_NIMA_9388": {
+"v2_id": "V2_DQ11_NIMA_9388",
+"original_id": "ニマ女体盛り・全裸皿・不浄ソース舐",
+"detail": "【食事：参】修練場の中心で全裸に横たわり、白銀の肌を「皿」として供出。乳首や秘部に塗られた「不浄なソース」を弟子たちが競って舐めとり、ニマは全身を這う舌の熱に「皆様、残さずお上がりなさい……」と法悦する。物理演算：fluid_separation / Material_Slide / 粘度1450cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Human_Table_Dish"
+},
+"V2_DQ11_NIMA_9389": {
+"v2_id": "V2_DQ11_NIMA_9389",
+"original_id": "逆背面座位・排泄栄養摂取・放尿種飲",
+"detail": "【食事：肆】逆背面座位で男と結合し、背後から胸を揉まれながら横に侍る弟子の「放尿」と「種」を口で直接受け止める。熱い液体を全て飲み干し、自らの血肉とする「不浄のエネルギー循環」。物理演算：fluid_separation / static_Pressure / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Urine_Semen_Intake"
+},
+"V2_DQ11_NIMA_9390": {
+"v2_id": "V2_DQ11_NIMA_9390",
+"original_id": "質量とろろ作・ドロ液慈食・自ら扱",
+"detail": "【食事：伍】弟子の要望に応じ、自らの手で彼らの質量を高速で扱き上げる。溢れ出した粘り気のある種を「とろろ」として指ですくい、慈愛に満ちたアヘ顔で美味しそうに食すニマ。物理演算：fluid_separation / Material_friction / 粘度1700cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Semen_Yam_Making"
+},
+"V2_DQ11_NIMA_9391": {
+"v2_id": "V2_DQ11_NIMA_9391",
+"original_id": "四つん這搾乳・噴射受・背面揉乳",
+"detail": "【食事：陸】四つん這いになり、後ろから胸を強く揉みしだかれ、母乳を四方に勢いよく噴射。弟子たちはその「聖なるミルク」を口で争うように受け止め、ニマは「たっぷり出しなさいと言ったのだ……オホッ！」と乳腺を震わせる。物理演算：fluid_separation / Volumetric_Deformation / 粘度1550cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Four_Leg_Milking"
+},
+"V2_DQ11_NIMA_9392": {
+"v2_id": "V2_DQ11_NIMA_9392",
+"original_id": "どこでも蹲踞・質量洗浄・黄金液洗礼",
+"detail": "【放尿：壱】場所を問わず蹲踞し、アヘ顔で黄金の尿を放出。その熱い液体を弟子の質量に浴びせ、潤滑剤として激しく扱かせる。ニマは弟子の不浄を自身の聖水で清めるという逆説的な「洗浄指導」に酔いしれる。物理演算：fluid_separation / Thermal_Conductivity / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Anywhere_Squat_Pee"
+},
+"V2_DQ11_NIMA_9393": {
+"v2_id": "V2_DQ11_NIMA_9393",
+"original_id": "平然パンツ放尿・黄金染・尊大表情",
+"detail": "【放尿：弐】立ったまま平然と放尿を開始し、白いトレーニングパンツを黄金色に染め上げる。足元に水溜りができても表情一つ変えず、「これは大地の潤いよ」と尊大に宣言。背徳感に満ちた姿を弟子に晒す。物理演算：Material_Slide / fluid_separation / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Standing_Pants_Pee"
+},
+"V2_DQ11_NIMA_9394": {
+"v2_id": "V2_DQ11_NIMA_9394",
+"original_id": "素股放尿同時・尿重熱感・股間種付",
+"detail": "【放尿：参】放尿の瞬間に弟子が駆け寄り、パンツ越しに素股を強行。熱い尿の温度と質量の熱が混ざり合い、ニマの股間は不浄な液体で溢れかえる。弟子が放つ種も尿と共にパンツを汚していく。物理演算：fluid_separation / static_Pressure / 粘度1600cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Urine_Rubbing_Sync"
+},
+"V2_DQ11_NIMA_9395": {
+"v2_id": "V2_DQ11_NIMA_9395",
+"original_id": "アクリル放尿台・VIP鑑賞・聖水飲絶頂",
+"detail": "【放尿：肆】透明なアクリル台の上で堂々と放尿。真下から見上げる弟子たちに「聖水」を浴びせ、飲み干させる。ニマは全方位からの視線に晒されながら、尿道が開く快感に**「オホォーッ！」と絶叫する。物理演算：fluid_separation / Material_Slide / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Crystal_Pee_Show"
+},
+"V2_DQ11_NIMA_9396": {
+"v2_id": "V2_DQ11_NIMA_9396",
+"original_id": "無限潮吹修行・悟り噴水・アヘェッ自慰",
+"detail": "【放尿：伍】放尿できない日は自らの手で秘部を慰め、極限の潮吹きを披露。「アヘェッ、これが……悟りの噴水ですわ！」と、自身の身体から噴き出す透明な液体で修行僧たちを潤す。物理演算：fluid_separation / Nerve_Overload / 粘度900cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Infinite_Squirt_Meditation"
+},
+"V2_DQ11_NIMA_9397": {
+"v2_id": "V2_DQ11_NIMA_9397",
+"original_id": "修行僧放尿受・口谷間啜・内側全受",
+"detail": "【放尿：陸】弟子の放尿を口で受け、谷間に溜めてから啜り、最後は自身の秘部へ直接放尿させる「内側受容」。ニマは自身の胎内が他者の排泄物で満たされる異物感に、かつてない救済を感じて白目を剥く。物理演算：fluid_separation / static_Pressure / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Urine_Acceptance_Vessel"
+},
+"V2_DQ11_NIMA_9398": {
+"v2_id": "V2_DQ11_NIMA_9398",
+"original_id": "正座説教・足指扱・口奉仕デブ",
+"detail": "【説教：01】厳格に叱責しながら、足元に跪くデブオタクの質量を白い足指で器用に弄り、同時に口でも奉仕。言葉と肉体のギャップに、オタクの精神を「肉の虜」へと追い込む。物理演算：Material_friction / static_Pressure / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Sermon_Toe_Oral"
+},
+"V2_DQ11_NIMA_9399": {
+"v2_id": "V2_DQ11_NIMA_9399",
+"original_id": "腕組説教・パイズリ挟・語気揉柔",
+"detail": "【説教：02】腕を組んで威厳を見せつつ、その脇にオタクの質量を強引に挟み込み、語気とは裏腹に柔らかく揉みしだく。ニマの厳しい声と、脇の熱い結合がオタクを絶頂の淵へ導く。物理演算：static_Pressure / Volumetric_Deformation / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Crossed_Arm_Paizuri"
+},
+"V2_DQ11_NIMA_9400": {
+"v2_id": "V2_DQ11_NIMA_9400",
+"original_id": "机叩・質量吸引・乳首潜口入",
+"detail": "【説教：03】「何度言えば分かる！」と机を叩き、その振動を利用して机の下に潜むオタクの口へ自身の乳首を勢いよく叩き込む。怒りの衝撃が乳房を揺らし、不浄な授乳が加速する。物理演算：Vibration_Sync / fluid_separation / 粘度1600cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Desk_Slam_Nursing"
+},
+"V2_DQ11_NIMA_9401": {
+"v2_id": "V2_DQ11_NIMA_9401",
+"original_id": "眼鏡アヘ顔指導・知表情・下半身中出",
+"detail": "【説教：04】説教用眼鏡をかけ、知的で厳格な表情で叱責。しかし下半身はオタクに中出しを許しており、顔だけは悟りを開いたアヘ顔を晒している。理性と本能の完全な解離。物理演算：Nerve_Overload / static_Pressure / 粘度1900cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Glasses_Ahegao"
+},
+"V2_DQ11_NIMA_9402": {
+"v2_id": "V2_DQ11_NIMA_9402",
+"original_id": "反省文・精液添削・微笑指広",
+"detail": "【説教：05】オタクが提出した反省文の上に種を吐かせ、それを指で愛おしく広げながら「……よく書けました」と微笑む。文字が白濁液で消えていく様に、知性の死を祝福する。物理演算：Material_Slide / fluid_separation / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Report_Correction"
+},
+"V2_DQ11_NIMA_9403": {
+"v2_id": "V2_DQ11_NIMA_9403",
+"original_id": "説教中種貯蔵・平然一時間・質量挿入喋",
+"detail": "【説教：06】一時間の説教中、オタクの質量を胎内に挿入したまま平然と会話し続ける。言葉を発するたびに内部が揺れ、ニマの目は次第に虚ろな法悦へと沈んでいく。物理演算：static_Pressure / Vibration_Sync / 粘度1800cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Talk_While_Seeding"
+},
+"V2_DQ11_NIMA_9404": {
+"v2_id": "V2_DQ11_NIMA_9404",
+"original_id": "汚物靴舐指導・掃除不足指摘・胸揉",
+"detail": "【説教：07】オタクの汚れた靴を「掃除が足りませんね」と舐め清め、その屈辱に耐えながら胸をオタクに揉ませる。師匠としての誇りを靴の泥と共に飲み込み、ニマは「オホッ！」と喘ぐ。物理演算：Material_friction / fluid_separation / 粘度1350cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Shoe_Lick_Instruction"
+},
+"V2_DQ11_NIMA_9405": {
+"v2_id": "V2_DQ11_NIMA_9405",
+"original_id": "耳元罵倒授乳・豚罵・母乳ドボドボ",
+"detail": "【説教：08】「この豚め」と冷酷に罵りながら、母乳をドボドボとオタクの口に流し込む。言葉の暴力と肉体の慈愛が入り混じり、ニマの乳腺は興奮で爆発的に分泌を繰り返す。物理演算：fluid_separation / Aural_details / 粘度1650cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Insult_Nursing"
+},
+"V2_DQ11_NIMA_9406": {
+"v2_id": "V2_DQ11_NIMA_9406",
+"original_id": "説教部屋マングリ自慰・反省見付・足広慰",
+"detail": "【説教：09】反省して跪くオタクの目の前で、自ら足を広げて秘部を慰めてみせる。師匠の淫らな自壊を見せつけられたオタクの質量を、ニマは愛液に濡れた手で力強く握る。物理演算：Material_friction / static_Pressure / 粘度1150cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Exhibition_Masturbation"
+},
+"V2_DQ11_NIMA_9407": {
+"v2_id": "V2_DQ11_NIMA_9407",
+"original_id": "不細工種付許可・劣等種宣言・アヘ顔種残",
+"detail": "【説教：10】「あなたは劣等種ですね。だから私が、種を残してあげましょう」とアヘ顔で宣言し、オタクを受け入れる。自らを最底辺の男に供出する悦びに、ニマの理は完全に崩壊する。物理演算：Nerve_Overload / static_Pressure / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Ugly_Genetic_Save"
+},
+"V2_DQ11_NIMA_9408": {
+"v2_id": "V2_DQ11_NIMA_9408",
+"original_id": "汗だくデブ胸サウナ・脂汗拭取・臭陶酔",
+"detail": "【説教：11】オタクの不潔な脂汗を乳房で拭き取り、その強烈な体臭に陶酔しながらパイズリ。ニマの白銀の肌がオタクの脂でテカテカに光り、彼女は「オホッ！」と野性的な絶頂に咽せる。物理演算：Material_Slide / static_Pressure / 粘度1450cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Sweat_Breast_Sauna"
+},
+"V2_DQ11_NIMA_9409": {
+"v2_id": "V2_DQ11_NIMA_9409",
+"original_id": "背徳子作りノルマ・三回射精命令・手伝",
+"detail": "【説教：12】説教が終わるまでに三回射精することをオタクに命じ、自ら手と口で執拗に「手伝い」をする。ニマは自身の胎内がオタクの限界を超えた種で焼かれる感覚に身悶える。物理演算：Vibration_Sync / fluid_separation / 粘度1950cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Semen_Quota_Duty"
+},
+"V2_DQ11_NIMA_9410": {
+"v2_id": "V2_DQ11_NIMA_9410",
+"original_id": "ピストンリズム指導・腰振不十分・跨手本",
+"detail": "【説教：13】「腰の振りがなっていません！」と激しく叱り、自らオタクの上に跨って高速ピストンの手本を見せる。ニマの銀髪が激しく舞い、教えを請うオタクを肉体で圧倒する。物理演算：Velocity_Impact / static_Pressure / 粘度1600cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Piston_Rhythm_Lesson"
+},
+"V2_DQ11_NIMA_9411": {
+"v2_id": "V2_DQ11_NIMA_9411",
+"original_id": "羞恥公開説教音・部屋外漏声・絶頂オタク",
+"detail": "【説教：14】部屋の外まで筒抜けの淫らな喘ぎ声を無視し、オタクを執拗に攻め立てる。聖地全体に響くニマの「オホォッ！」という声が、全修行僧の煩悩を爆発させる。物理演算：Aural_details / Nerve_Overload / 粘度1050cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Public_Voice_Sermon"
+},
+"V2_DQ11_NIMA_9412": {
+"v2_id": "V2_DQ11_NIMA_9412",
+"original_id": "説教部屋隠カメラ撮・蹂躙ポーズ・趣味協力",
+"detail": "【説教：15】オタクが持ち込んだ隠しカメラに向かって、自ら蹂躙される淫らなポーズを決めて撮影させる。ニマは自身の堕落が記録される事実に、最高級の絶頂を見せる。物理演算：Material_Slide / Nerve_Overload / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Secret_Camera_Pose"
+},
+"V2_DQ11_NIMA_9413": {
+"v2_id": "V2_DQ11_NIMA_9413",
+"original_id": "不潔指秘部洗浄・逆浄化・愛液洗",
+"detail": "【説教：16】オタクの汚れた指を自身の秘部に差し込ませ、愛液で「洗わせる」という逆浄化の儀。ニマは不潔な指が自身の聖域をかき回す感触に、理性を白濁液と共に溶かす。物理演算：Material_friction / fluid_separation / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Finger_Cleansing_Vessel"
+},
+"V2_DQ11_NIMA_9414": {
+"v2_id": "V2_DQ11_NIMA_9414",
+"original_id": "強制二択指導・中出母乳枯・迫",
+"detail": "【説教：17】「中出しされるか、母乳を枯らされるか、選びなさい」と究極の二択を迫る。どちらを選んでもニマが物理的に壊れるまで奉仕するという、絶望的快楽の指導。物理演算：static_Pressure / Volumetric_Deformation / 粘度1900cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Forced_Two_Choice"
+},
+"V2_DQ11_NIMA_9415": {
+"v2_id": "V2_DQ11_NIMA_9415",
+"original_id": "デブ腹肉枕・腹上質量扱・密着",
+"detail": "【説教：18】オタクの突き出た腹を「枕」にし、その上で質量を執拗に扱き上げる。ニマの柔肌とオタクのぶよぶよした肉が密着し、不浄な摩擦音が説教部屋に響き渡る。物理演算：static_Pressure / Volumetric_Deformation / 粘度1550cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Fat_Belly_Pillow"
+},
+"V2_DQ11_NIMA_9416": {
+"v2_id": "V2_DQ11_NIMA_9416",
+"original_id": "説教全裸化・暑苦宣言・脱捨叱",
+"detail": "【説教：19】「暑苦しいですね」と自ら服を脱ぎ捨て、全裸で叱責を継続。揺れる巨乳をオタクの顔に叩きつけながら、師匠としての「最後の壁」を物理的に消滅させる。物理演算：Volumetric_Deformation / Nerve_Overload / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Nude_Sermon_Start"
+},
+"V2_DQ11_NIMA_9417": {
+"v2_id": "V2_DQ11_NIMA_9417",
+"original_id": "ニマお仕置き手コキ・強烈握力・痛快楽",
+"detail": "【説教：20】強烈な握力でオタクの質量を握り、物理的な痛みと快楽を同時に与える「お仕置き」。ニマは男が悶える振動を手のひらで感じ、「オホッ！」と自身の秘部も濡らす。物理演算：static_Pressure / Vibration_Sync / 粘度1650cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Punishment_Handjob"
+},
+"V2_DQ11_NIMA_9418": {
+"v2_id": "V2_DQ11_NIMA_9418",
+"original_id": "説教中尿我慢指導・口出強要・聖水飲",
+"detail": "【説教：21】尿意を催したオタクに、自身の口へ出すことを強要。ニマは弟子の排泄物を「聖なる洗礼」として全て飲み込み、喉を鳴らして「さあ、続きなさい」と叱責を続ける。物理演算：fluid_separation / static_Pressure / 粘度1950cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Urine_Swallow_Order"
+},
+"V2_DQ11_NIMA_9419": {
+"v2_id": "V2_DQ11_NIMA_9419",
+"original_id": "慈愛全穴開放・自由使用許可・穴提供",
+"detail": "【説教：22】「どこでも好きなところを使いなさい」と、すべての穴をオタクに無防備に晒す。ニマの慈愛は、自身を物理的に損なわせることで、男たちの劣等感を癒やす狂気へと至る。物理演算：static_Pressure / Volumetric_Deformation / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Full_Hole_Open"
+},
+"V2_DQ11_NIMA_9420": {
+"v2_id": "V2_DQ11_NIMA_9420",
+"original_id": "アヘ顔不動明王・静寂アヘ・激突",
+"detail": "【説教：23】激しく突かれ、中出しを受けながらも、表情だけは仏のように静寂なアヘ顔。ニマの精神は快楽の極致において、もはや苦痛と歓喜の区別がつかぬ「空」の状態へ至る。物理演算：Nerve_Overload / static_Pressure / 粘度1800cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Ahe_Buddha_State"
+},
+"V2_DQ11_NIMA_9421": {
+"v2_id": "V2_DQ11_NIMA_9421",
+"original_id": "不細工オタク英雄化・唯一汚・耳囁",
+"detail": "【説教：24】「私をここまで汚せるのは、あなただけよ」と耳元で囁き、オタクの自己肯定感を爆発させる。ニマは自身を汚させることで、男を偽りの「英雄」へと仕立て上げる。物理演算：Aural_details / Nerve_Overload / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Hero_Maker_Whisper"
+},
+"V2_DQ11_NIMA_9422": {
+"v2_id": "V2_DQ11_NIMA_9422",
+"original_id": "説教部屋精液サウナ・密閉臭・種充満トランス",
+"detail": "【説教：25】密室に男の体臭と種の臭いが充満し、熱気で朦朧とする。ニマはその不浄な空気そのものに絶頂し、「オホッ……皆様の匂い、最高ですわ……」**とトランス状態に陥る。物理演算：Atmospheric_Density / Nerve_Overload / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Semen_Steam_Room"
+},
+"V2_DQ11_NIMA_9423": {
+"v2_id": "V2_DQ11_NIMA_9423",
+"original_id": "反省逆パイズリ・背中回・質量弄",
+"detail": "【説教：26】男の背中側に回り込み、背後から巨乳を回して質量を弄る「反省の逆パイズリ」。ニマは男の背中に自身の胸を押し付け、密着する温もりに「温かいですね……」とアヘる。物理演算：static_Pressure / Material_friction / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Reverse_Back_Paizuri"
+},
+"V2_DQ11_NIMA_9424": {
+"v2_id": "V2_DQ11_NIMA_9424",
+"original_id": "指導成果1L受胎・パンパン腹撫・説教終了",
+"detail": "【説教：27】説教が終わる頃、オタクたちの種でパンパンに膨らんだ腹を愛おしく撫でる。「指導の成果が、重いですわ……」と、物理的な質量を誇らしげに見せつける。物理演算：Volumetric_Deformation / static_Pressure / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Sermon_Final_Belly"
+},
+"V2_DQ11_NIMA_9425": {
+"v2_id": "V2_DQ11_NIMA_9425",
+"original_id": "ギャルママ説教終了・マジお疲れ・ピース見送",
+"detail": "【説教：28】「マジでお疲れ、パパ！」と、最後は完全に理性の飛んだギャルピースで見送り。ニマの威厳は、オタクたちへの親愛という名の淫らな笑顔へと完全に溶け落ちた。物理演算：Nerve_Overload / Aural_details / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Sermon_Gyaru_Ending"
+},
+"V2_DQ11_NIMA_9426": {
+"v2_id": "V2_DQ11_NIMA_9426",
+"original_id": "聖地裏帳簿・子作り記録・大切保管",
+"detail": "【説教：29】説教部屋での「不浄な子作り」の全記録を帳簿に記し、大切に保管。ニマはそれを夜な夜な読み返し、自身の秘部を濡らしながら、次なる失態者を待ちわびる。物理演算：Material_Slide / Nerve_Overload / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Secret_Record_Keeping"
+},
+"V2_DQ11_NIMA_9427": {
+"v2_id": "V2_DQ11_NIMA_9427",
+"original_id": "無限説教ループ・指導熱望・再来オタク",
+"detail": "【説教：30】指導を終えたオタクが、快楽の虜となり即座に次の失態を犯して戻ってくる。ニマは「またですか、仕方のない赤ちゃんですね……」と慈愛のアヘ顔で彼を迎え入れる。物理演算：static_Pressure / Vibration_Sync / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Eternal_Sermon_Loop"
+},
+"V2_DQ11_NIMA_9428": {
+"v2_id": "V2_DQ11_NIMA_9428",
+"original_id": "脱衣の儀瞑想・一斉質量擦・修行着蹲踞",
+"detail": "【浴場：壱】脱衣所で「瞑想の時間です！」と号令をかけつつ、弟子たちに乱暴に服を脱がされる。脱ぎかけの修行着のまま蹲踞し、剥き出しの肌に一斉に不浄な質量を擦りつけられ、種を浴びることで「脱衣の洗礼」を完遂する。物理演算：Material_friction / fluid_separation / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Undressing_Sermon"
+},
+"V2_DQ11_NIMA_9429": {
+"v2_id": "V2_DQ11_NIMA_9429",
+"original_id": "脱ぎたて聖衣汚染・質量汚・ドロ服再纏",
+"detail": "【浴場：弐】脱ぎ捨てたばかりのブラやパンツを弟子たちが奪い合い、乳首やクロッチを質量でドロドロに汚損。ニマはお風呂上がりにその汚物まみれの服を「修行の成果」として平然と再び身に纏い、聖地を闊歩する。物理演算：Material_Slide / fluid_separation / 粘度1800cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Dirty_Garment_Reborn"
+},
+"V2_DQ11_NIMA_9430": {
+"v2_id": "V2_DQ11_NIMA_9430",
+"original_id": "競泳水着密着洗浄・隙間手・秘部弄",
+"detail": "【浴場：参】肉体を強調する競泳水着を着用し、逆に男たちの欲を煽る。水着の隙間から汚れた手が入り込み、肉を洗うふりをして秘部を執拗に弄ぶ。ニマは「そこは汚れが溜まりやすいですね……オホッ！」とアヘ顔で指導する。物理演算：Stress_Limit / static_Pressure / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Swimsuit_Washing"
+},
+"V2_DQ11_NIMA_9431": {
+"v2_id": "V2_DQ11_NIMA_9431",
+"original_id": "涙型スリット水着・機能美・内側種流込",
+"detail": "【浴場：肆】乳首とクロッチに「指導用」の穴が開いた特注水着。弟子たちは洗体名目でその穴に質量を突き立て、水着の内側に大量の種を流し込む。ニマの身体と水着の間は白濁液で満たされ、一歩歩くたびにグチャグチャと不浄な音が響く。物理演算：fluid_separation / static_Pressure / 粘度1900cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Teardrop_Swim_Hole"
+},
+"V2_DQ11_NIMA_9432": {
+"v2_id": "V2_DQ11_NIMA_9432",
+"original_id": "膣内質量洗浄・蹲踞騎乗・ピカピカ磨",
+"detail": "【浴場：伍】「中を洗って差し上げましょう」と宣言し、蹲踞騎乗位で次々と弟子を受容。自身の愛液と強力な膣圧を「洗剤」とし、彼らの不潔な質量をピカピカに磨き上げる。ニマは自身の内側が汚染される快感に**「オホォッ！」と白目を剥く。物理演算：static_Pressure / Material_friction / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Internal_Vagina_Wash"
+},
+"V2_DQ11_NIMA_9433": {
+"v2_id": "V2_DQ11_NIMA_9433",
+"original_id": "浴場瞑想三重奏・全方位受・白濁風呂",
+"detail": "【浴場：陸】蹲踞騎乗位で一人、胸で二人、両手で二人、口で一人。全方位から不浄な質量を同時に迎え入れる「肉体曼荼羅」。放出された種がお風呂の湯と混ざり合い、浴場全体を白濁した欲望の海へと変貌させる。物理演算：fluid_separation / static_Pressure / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Bath_Mandala"
+},
+"V2_DQ11_NIMA_9434": {
+"v2_id": "V2_DQ11_NIMA_9434",
+"original_id": "寝バック胸圧搾・台座蹂躙・上下挟撃",
+"detail": "【アカスリ：壱】うつ伏せでアカスリを受ける際、背後から寝バックで貫かれる。台に押し潰された胸の隙間には別の弟子が質量を差し込み、ニマの肉体を上下から質量で挟み撃ちにする。物理演算：static_Pressure / Volumetric_Deformation / 粘度1600cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Bed_Press_Sandwich"
+},
+"V2_DQ11_NIMA_9435": {
+"v2_id": "V2_DQ11_NIMA_9435",
+"original_id": "乳房搬出口台・垂果実吸付・子犬群",
+"detail": "【アカスリ：弐】胸の位置に二つの穴がある特注台。重力で穴から垂れ下がる巨大な乳房に、台の下で待機する弟子たちが子犬のように群がり、執拗に吸い付く。ニマは台の上で「アガッ！」と声を漏らし、乳腺を震わせる。物理演算：Gravity_Impact / static_Pressure / 粘度1700cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Breast_Export_Hole"
+},
+"V2_DQ11_NIMA_9436": {
+"v2_id": "V2_DQ11_NIMA_9436",
+"original_id": "寝込無言中出・目開受・修行定義",
+"detail": "【夜這い：01】眠っているニマの布団に忍び込み、無言で結合。彼女は驚くことなく「……修行ですね」と目を開け、アヘ顔（オホ顔）でその不意打ちを受け入れる。物理演算：Velocity_Impact / static_Pressure / 粘度1900cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Sleeping_Seed_In"
+},
+"V2_DQ11_NIMA_9437": {
+"v2_id": "V2_DQ11_NIMA_9437",
+"original_id": "足音絶頂・自慰待受・秘部潤",
+"detail": "【夜這い：02】廊下を歩く次の男の足音を聞くだけで、ニマの秘部が過剰に反応。待ちきれずに自ら指を差し込み、慈愛の液で布団を濡らしながら「早く、こちらへ……」とアヘる。物理演算：Aural_details / Material_friction / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Footstep_Orgasm"
+},
+"V2_DQ11_NIMA_9438": {
+"v2_id": "V2_DQ11_NIMA_9438",
+"original_id": "枕元一斉射精・白銀パック・顔面種まみれ",
+"detail": "【夜這い：03】眠るニマを囲むように弟子たちが立ち、一斉に顔面へ種を放出。「白銀のパック」と称される精液まみれの顔で、彼女は「皆様、元気ですね……オホッ」と微笑む。物理演算：fluid_separation / Material_Slide / 粘度1650cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Face_Semen_Pack"
+},
+"V2_DQ11_NIMA_9439": {
+"v2_id": "V2_DQ11_NIMA_9439",
+"original_id": "不潔布団種海・精液冷重・微睡法悦",
+"detail": "【夜這い：04】数十人の夜這いにより、布団が大量の精液で冷たく重くなる。ニマはその「種の海」に全身を浸しながら、不浄な重みを幸福として微睡む。物理演算：fluid_separation / Material_Slide / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Semen_Sea_Bed"
+},
+"V2_DQ11_NIMA_9440": {
+"v2_id": "V2_DQ11_NIMA_9440",
+"original_id": "寝言オホ声・無意識絶頂・貫朝迄",
+"detail": "【夜這い：05】眠りながらも弟子に貫かれ続け、無意識に「オホッ……もっと……」と寝言を漏らす。意識がなくても肉体は不浄を求め、朝まで絶頂のリズムを刻み続ける。物理演算：Vibration_Sync / Nerve_Overload / 粘度1800cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Sleep_Ahe_Talk"
+},
+"V2_DQ11_NIMA_9441": {
+"v2_id": "V2_DQ11_NIMA_9441",
+"original_id": "銀髪緊縛ベッド蹂躙・拘束貫・朝迄",
+"detail": "【夜這い：06】長い銀髪を枕元に結びつけられ、物理的に身動きを封じられた状態で蹂躙される。抵抗できない喜びを噛み締め、ニマは「オホォーッ！」と身体を弓なりに反らせる。物理演算：Material_friction / static_Pressure / 粘度1950cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Hair_Tie_Bed_Rape"
+},
+"V2_DQ11_NIMA_9442": {
+"v2_id": "V2_DQ11_NIMA_9442",
+"original_id": "寝込乳首吸行列・交代吸引・腫赤",
+"detail": "【夜這い：07】弟子たちが一晩中交代でニマの乳首を吸い続ける。朝には真っ赤に腫れ上がった乳頭を愛おしく眺め、「赤ちゃんたちは食いしん坊ですね……」とアヘ顔で呟く。物理演算：static_Pressure / Volumetric_Deformation / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Night_Nipple_Queue"
+},
+"V2_DQ11_NIMA_9443": {
+"v2_id": "V2_DQ11_NIMA_9443",
+"original_id": "夢遊病逆夜這・全裸雑魚寝部屋・不細工物色",
+"detail": "【夜這い：08】自ら全裸で弟子たちの雑魚寝部屋を徘徊。最も不細工で卑屈な男を見つけ出し、無言で跨って強引に中出しを要求する「逆夜這い」。物理演算：Velocity_Impact / static_Pressure / 粘度1850cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Somnambulism_Sex"
+},
+"V2_DQ11_NIMA_9444": {
+"v2_id": "V2_DQ11_NIMA_9444",
+"original_id": "耳元下劣囁・罵倒中出・激突快楽",
+"detail": "【夜這い：09】汚い言葉で罵られながら、それ以上に激しく中出しされる。罵倒が耳を犯すたびにニマの膣圧が跳ね上がり、「アッ、アガッ！」と強制的な絶頂へ叩き込まれる。物理演算：Aural_details / Nerve_Overload / 粘度1600cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Dirty_Talk_Orgasm"
+},
+"V2_DQ11_NIMA_9445": {
+"v2_id": "V2_DQ11_NIMA_9445",
+"original_id": "夜1Lノルマ・胎内種満・身体呪悦",
+"detail": "【夜這い：10】朝までに胎内を1リットルの種で満たさなければ眠れない、快楽の呪いにかかった肉体。最後の一滴まで絞り取るように腰を振り、ニマは「もっと、もっとください……」と懇願する。物理演算：Volumetric_Deformation / static_Pressure / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_1L_Semen_Curse"
+},
+"V2_DQ11_NIMA_9446": {
+"v2_id": "V2_DQ11_NIMA_9446",
+"original_id": "就寝中クロッチ確認・指差検品・湿潤",
+"detail": "【夜這い：11】弟子たちが交代でニマの股間に指を差し入れ、湿り具合を確認する「検品」。眠りながらも愛液を溢れさせる彼女の肉体は、聖地の共用品として完全に機能している。物理演算：Material_friction / fluid_separation / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Crotch_Inspection"
+},
+"V2_DQ11_NIMA_9447": {
+"v2_id": "V2_DQ11_NIMA_9447",
+"original_id": "不細工オタク添寝・脂汗抱枕・質量挟眠",
+"detail": "【夜這い：12】脂ぎった不細工オタクを「抱き枕」にし、彼の質量を股に挟んで入眠。オタクの体臭と種の臭いに包まれ、ニマは安らかなアヘ顔で夢の世界へ沈む。物理演算：static_Pressure / Material_friction / 粘度1450cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Ugly_Otaku_Pillow"
+},
+"V2_DQ11_NIMA_9448": {
+"v2_id": "V2_DQ11_NIMA_9448",
+"original_id": "深夜おむつ指導・内側放尿・浄化",
+"detail": "【夜這い：13】尿意を催した弟子を布団に入れ、自身の内側へ直接放尿させる。熱い液体が胎内を満たす感覚を「浄化」と定義し、ニマは「オホッ、熱いですね……」**と法悦する。物理演算：fluid_separation / static_Pressure / 粘度1900cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Internal_Urine_Purification"
+},
+"V2_DQ11_NIMA_9449": {
+"v2_id": "V2_DQ11_NIMA_9449",
+"original_id": "聖母膝枕射精・慈愛笑扱・顔面浴種",
+"detail": "【夜這い：14】男の頭を膝に乗せ、慈愛の笑みで彼をしごき上げる。絶頂した男が放つ種を真正面から顔に浴び、「元気な赤ちゃんですね」とアヘ顔で祝福する。物理演算：Material_Slide / fluid_separation / 粘度1150cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Lap_Pillow_Semen"
+},
+"V2_DQ11_NIMA_9450": {
+"v2_id": "V2_DQ11_NIMA_9450",
+"original_id": "暗闇パイズリ・顔不視胸感・昇天弟子",
+"detail": "【夜這い：15】月明かりもない暗闇の中、胸の感触だけで男たちを次々と昇天させる。視覚を遮断されたことで研ぎ澄まされたニマの乳房は、魔性の吸い付きを見せる。物理演算：static_Pressure / Volumetric_Deformation / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Dark_Breast_Service"
+},
+"V2_DQ11_NIMA_9451": {
+"v2_id": "V2_DQ11_NIMA_9451",
+"original_id": "朝帰汚れ自慢・種跡誇・聖母蹂躙証",
+"detail": "【夜這い：16】朝、ニマの部屋から出てくる男たちが、衣服に付いた「種の跡」を見せ合う。それは師匠を蹂躙し、受け入れられた「戦果」であり、ドゥルダの新しい勲章である。物理演算：fluid_separation / Material_Slide / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Morning_After_Stain"
+},
+"V2_DQ11_NIMA_9452": {
+"v2_id": "V2_DQ11_NIMA_9452",
+"original_id": "就寝前総括潮吹・全汚れ出・特大噴出",
+"detail": "【夜這い：17】一日の修行を締めくくる特大の潮吹き。体内に溜まった不浄をすべて押し流すように噴水し、ニマは「これで……今日も終わりですわ……」とアヘ顔で脱力する。物理演算：fluid_separation / Nerve_Overload / 粘度950cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Final_Daily_Squirt"
+},
+"V2_DQ11_NIMA_9453": {
+"v2_id": "V2_DQ11_NIMA_9453",
+"original_id": "不浄子守唄・結合音リズム・安声",
+"detail": "【夜這い：18】質量が肉を叩く「パン、パン」という音をメトロノームにし、ニマが「オホッ、オホォッ」と安らかな声を出す。それは弟子たちを深い眠りへと誘う、淫らな子守唄。物理演算：Aural_details / Vibration_Sync / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Flesh_Lullaby"
+},
+"V2_DQ11_NIMA_9454": {
+"v2_id": "V2_DQ11_NIMA_9454",
+"original_id": "冷種温直・膣内熱再放出・不浄循環",
+"detail": "【夜這い：19】布団で冷めた精液を、自らの膣内の熱で再び温め直す。再活性化された不浄を弟子に再び浴びせ、終わることのない循環の悦びに浸る。物理演算：Thermal_Conductivity / static_Pressure / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Semen_Reheat_Loop"
+},
+"V2_DQ11_NIMA_9455": {
+"v2_id": "V2_DQ11_NIMA_9455",
+"original_id": "明け方聖母目覚・種まみれ微笑・朝練号令",
+"detail": "【夜這い：20】朝日と共に、精液でパリパリに乾いた銀髪と肌で目覚める。「さあ、朝練（朝立）の時間ですよ」と微笑み、新たな不浄の一日を慈愛のアヘ顔で迎える。物理演算：Material_Slide / static_Pressure / 粘度1800cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Morning_Sunrise_Ahe"
+},
+"V2_DQ11_NIMA_9456": {
+"v2_id": "V2_DQ11_NIMA_9456",
+"original_id": "蹲踞行列放出・無防備秘部・寝息中出",
+"detail": "【就寝：壱】布団の上で蹲踞瞑想のまま眠るニマ。無防備に開かれた秘部へ弟子たちが次々と質量を突き立てる。ニマは寝息を立てながらも、中出しの衝撃に「オホッ……」と反応し、胎内を種で満たしていく。物理演算：static_Pressure / Volumetric_Deformation / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Sleeping_Squat_Semen"
+},
+"V2_DQ11_NIMA_9457": {
+"v2_id": "V2_DQ11_NIMA_9457",
+"original_id": "正面立位対面・寝顔結合・不浄抱付",
+"detail": "【立位：01】男に抱きかかえられた状態で正面から結合。ニマの意識は瞑想の彼方にあるが、男の肩に預けられた寝顔は、突き上げられるたびに微かに快楽で震える。物理演算：Gravity_Impact / Vibration_Sync / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Standing_Front_Sleep"
+},
+"V2_DQ11_NIMA_9458": {
+"v2_id": "V2_DQ11_NIMA_9458",
+"original_id": "背面立位・壁向貫・不潔腹打尻",
+"detail": "【立位：02】意識のないニマを壁に向け、背後から蹂躙。不潔な男の腹が彼女の白い尻を激しく叩き、その振動が眠れる師父の胎内を不浄にかき乱す。物理演算：Velocity_Impact / static_Pressure / 粘度1700cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Standing_Back_Impact"
+},
+"V2_DQ11_NIMA_9459": {
+"v2_id": "V2_DQ11_NIMA_9459",
+"original_id": "壁ドン立位・逃場無質量・銀髪壁擦",
+"detail": "【立位：03】壁に押し付けられ、逃げ場のない状態で質量を食い込まされる。衝撃でニマの美しい銀髪が壁に擦れ、彼女は閉じた瞼の裏で絶頂の光を見る。物理演算：static_Pressure / Material_friction / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Wall_Don_Sermon"
+},
+"V2_DQ11_NIMA_9460": {
+"v2_id": "V2_DQ11_NIMA_9460",
+"original_id": "片足上立位・最深部質量・寝言深呟",
+"detail": "【立位：04】片足を男の肩に担ぎ上げられ、最奥まで質量を叩き込まれる。ニマは寝たまま「……深い、ぞ……」と恍惚とした寝言を漏らし、不浄な熱を歓迎する。物理演算：Stress_Limit / static_Pressure / 粘度1900cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_One_Leg_Deep_Sleep"
+},
+"V2_DQ11_NIMA_9461": {
+"v2_id": "V2_DQ11_NIMA_9461",
+"original_id": "抱きつき立位・空中結合・アヘ顔眠続",
+"detail": "【立位：05】男の腰に足を巻き付けさせ、空中で結合。重力のすべてが質量に加わり、ニマはアヘ顔で眠り続けながら、自らの自重で奥を抉られる快感に浸る。物理演算：Gravity_Impact / Nerve_Overload / 粘度1800cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Air_Cling_Orgasm"
+},
+"V2_DQ11_NIMA_9462": {
+"v2_id": "V2_DQ11_NIMA_9462",
+"original_id": "机利用立位・上半身伏・巨乳潰",
+"detail": "【立位：06】書斎のデスクに上半身を伏せさせられ、後ろから。机の角に押し潰された巨乳が形を変え、ニマは机を掴む手に力を込めて絶頂を耐える。物理演算：Volumetric_Deformation / static_Pressure / 粘度1600cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Desk_Back_Crush"
+},
+"V2_DQ11_NIMA_9463": {
+"v2_id": "V2_DQ11_NIMA_9463",
+"original_id": "洗面台立位・冷磁器熱質量・跳身",
+"detail": "【立位：07】冷たい洗面台に腰を預け、男の熱い質量を迎え入れる。温度差によるショックでニマの身体がビクンと跳ね、秘部から慈愛の液が溢れ出す。物理演算：Thermal_Conductivity / fluid_separation / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Washstand_Contrast"
+},
+"V2_DQ11_NIMA_9464": {
+"v2_id": "V2_DQ11_NIMA_9464",
+"original_id": "対面座位・膝上乗・不潔臭鼻腔",
+"detail": "【座位：08】男の膝の上に正面から乗り、向き合って結合。男の不潔な体臭が眠るニマの鼻腔をくすぐり、彼女をより深い「肉の瞑想」へと誘う。物理演算：static_Pressure / Aural_details / 粘度1450cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Face_to_Face_Sit"
+},
+"V2_DQ11_NIMA_9465": {
+"v2_id": "V2_DQ11_NIMA_9465",
+"original_id": "背面座位・後抱・乳首執拗弄",
+"detail": "【座位：09】後ろから抱きかかえられるように結合。男の手がウェアの隙間から乳首を執拗に弄り回し、ニマは眠りながらも「オホッ、そこは……」と胸を躍らせる。物理演算：Material_friction / Vibration_Sync / 粘度1350cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Back_Seat_Nipple"
+},
+"V2_DQ11_NIMA_9466": {
+"v2_id": "V2_DQ11_NIMA_9466",
+"original_id": "深読み座位・180度開脚・最奥不浄注",
+"detail": "【座位：10】椅子に深く座り、足を180度近く開かされた状態での蹂躙。最奥まで注がれる不浄な種が、ニマの胎内をパンパンに膨らませ、法悦の重みを与える。物理演算：static_Pressure / Volumetric_Deformation / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Deep_Spread_Semen"
+},
+"V2_DQ11_NIMA_9467": {
+"v2_id": "V2_DQ11_NIMA_9467",
+"original_id": "膝立座位・跨揺・巨乳激バウンド",
+"detail": "【座位：11】膝立ちの男の上に跨り、上下に揺さぶられる。眠っているニマの巨乳が激しくバウンドし、その肉の重みがさらなる快楽の衝撃を生む。物理演算：Gravity_Impact / Vibration_Sync / 粘度1750cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Kneeling_Bounce"
+},
+"V2_DQ11_NIMA_9468": {
+"v2_id": "V2_DQ11_NIMA_9468",
+"original_id": "密着座位・汗肌融合・下劣囁アヘ顔",
+"detail": "【座位：12】汗ばんだ肌同士を完全に密着させ、耳元で下劣な言葉を囁かれながら結合。ニマは夢うつつにアヘ顔を晒し、男の欲望を全細胞で肯定する。物理演算：Material_Slide / Aural_details / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Sweaty_Whisper_Sit"
+},
+"V2_DQ11_NIMA_9469": {
+"v2_id": "V2_DQ11_NIMA_9469",
+"original_id": "後背位ドッグ・尻肉割・質量叩込",
+"detail": "【背面：13】四つん這いのニマの尻を両手で左右に割り、背後から質量を叩き込む。動物的な衝撃に、ニマの銀髪が激しく揺れ、彼女は無意識に腰を突き返す。物理演算：Velocity_Impact / static_Pressure / 粘度1900cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Doggy_Sleep_Rape"
+},
+"V2_DQ11_NIMA_9470": {
+"v2_id": "V2_DQ11_NIMA_9470",
+"original_id": "低空後背位・尻高突・布団埋顔絶頂",
+"detail": "【背面：14】上半身を床に伏せ、尻だけを高く突き出させた姿勢。ニマの顔は布団に埋まり、「アガッ……ゴホッ……」と窒息気味の絶頂に悶え狂う。物理演算：static_Pressure / Nerve_Overload / 粘度1950cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Low_Back_Suffocation"
+},
+"V2_DQ11_NIMA_9471": {
+"v2_id": "V2_DQ11_NIMA_9471",
+"original_id": "バック座位・椅子覆・不潔髭擦",
+"detail": "【背面：15】椅子に座らせた背後から男が覆いかぶさる。ニマの繊細な首筋に不潔な髭が擦れ、その不快な刺激が逆に彼女の秘部を激しく濡らさせる。物理演算：Material_friction / static_Pressure / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Chair_Back_Beard"
+},
+"V2_DQ11_NIMA_9472": {
+"v2_id": "V2_DQ11_NIMA_9472",
+"original_id": "バック寝そべり・体重全乗・背後貫",
+"detail": "【背面：16】完全にうつ伏せで寝かせたニマの上に男が乗り、体重をかけて背後から貫く。肺の空気が押し出されるほどの圧力に、ニマは**「オホッ！」**と短い声を漏らす。物理演算：static_Pressure / Velocity_Impact / 粘度1850cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Full_Weight_Back"
+},
+"V2_DQ11_NIMA_9473": {
+"v2_id": "V2_DQ11_NIMA_9473",
+"original_id": "膝立バック・脇胸揉・力任せ蹂躙",
+"detail": "【背面：17】膝立ちのニマの脇から手を回し、巨乳を力任せに揉みしだきながら結合。ニマは背後からの暴力的な愛に身を委ね、魂を白濁液の中に溶かしていく。物理演算：Volumetric_Deformation / static_Pressure / 粘度1700cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Kneeling_Breast_Back"
+},
+"V2_DQ11_NIMA_9474": {
+"v2_id": "V2_DQ11_NIMA_9474",
+"original_id": "睡眠オホ声合唱・寝息アヘ・更夜",
+"detail": "【完成：18】質量を受け入れ続けることがニマの「眠りの修行」。ドゥルダの夜は、彼女の寝息混じりのアヘ声が聖地全体に響き渡り、不浄の旋律を奏でる。物理演算：Aural_details / Nerve_Overload / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Sleep_Ahe_Chorus"
+},
+"V2_DQ11_NIMA_9475": {
+"v2_id": "V2_DQ11_NIMA_9475",
+"original_id": "1L貯蔵睡眠・朝パンパン腹・滴不純液",
+"detail": "【完成：19】朝、ニマが目を覚ますと、お腹は男たちの種でパンパンに膨れ上がっている。ウェアの股間からは不純な液体が絶え間なく滴り、夜の蹂躙の深さを証明する。物理演算：Volumetric_Deformation / fluid_separation / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Morning_Seed_Belly"
+},
+"V2_DQ11_NIMA_9476": {
+"v2_id": "V2_DQ11_NIMA_9476",
+"original_id": "聖母目覚・満足アヘ顔・朝日微笑",
+"detail": "【完成：20】どんなに汚され、種で満たされても、ニマは朝日に向かって「……良い修行であった」と満足げにアヘ顔で微笑む。これこそがドゥルダの「日常」の完成である。物理演算：Material_Slide / static_Pressure / 粘度1800cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Saint_Morning_Smile"
+},
+"V2_DQ11_NIMA_9477": {
+"v2_id": "V2_DQ11_NIMA_9477",
+"original_id": "正常位抱擁・密着結合・寝言温感",
+"detail": "【寝ころび：壱】眠るニマを弟子が力強く抱き締め、密着したまま結合。ニマは夢心地の中で「オホッ……温かい、ぞ……」と寝言を漏らし、不潔な男の体温を慈愛の抱擁で包み込む。物理演算：static_Pressure / Thermal_Conductivity / 粘度1450cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Normal_Hug_Sleep"
+},
+"V2_DQ11_NIMA_9478": {
+"v2_id": "V2_DQ11_NIMA_9478",
+"original_id": "屈折正常位・足胸折曲・結合部露",
+"detail": "【寝ころび：弐】柔軟な白銀の肢体を胸元まで深く折り曲げ、視覚的にも不浄な結合部を全開にして突き上げる。ニマは意識のないまま、自身の膝が巨乳にめり込む感触に身悶える。物理演算：Volumetric_Deformation / static_Pressure / 粘度1900cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Flex_Normal_Deep"
+},
+"V2_DQ11_NIMA_9479": {
+"v2_id": "V2_DQ11_NIMA_9479",
+"original_id": "背面側位添寝・密着背汚・不潔温",
+"detail": "【寝ころび：参】横向きに寝るニマの背後から密着結合。不潔な男の腹部が彼女の白い背中を汚し、ニマは背後から伝わる不浄な拍動を夢の中で数え続ける。物理演算：Material_friction / static_Pressure / 粘度1550cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Side_Back_Sleep"
+},
+"V2_DQ11_NIMA_9480": {
+"v2_id": "V2_DQ11_NIMA_9480",
+"original_id": "クロス側位・腰捻・十文字結合",
+"detail": "【寝ころび：肆】ニマの体を「十」の字に捻り、横たわる腰を固定して深い角度で質量を刻み込む。捻られた肉体による締め付けに、ニマは寝ながらにして絶頂の淵を彷徨う。物理演算：Volumetric_Deformation / static_Pressure / 粘度1800cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Cross_Side_Twist"
+},
+"V2_DQ11_NIMA_9481": {
+"v2_id": "V2_DQ11_NIMA_9481",
+"original_id": "フットジョブ足指・先走溜・無意識丸",
+"detail": "【足：壱】眠るニマの白い足裏で汚れた質量を挟みしごく。指の間に男たちの先走りが溜まり、ニマは無意識に指を丸めて快感に応え、白銀の脚線を不浄に染める。物理演算：Material_friction / fluid_separation / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Foot_Finger_Work"
+},
+"V2_DQ11_NIMA_9482": {
+"v2_id": "V2_DQ11_NIMA_9482",
+"original_id": "太もも挟タイツ擦・強靭プレス・一斉放",
+"detail": "【足：弐】タイツ越しに強靭な太ももで質量をプレス。布地の摩擦と肉の弾力に耐えかねた男たちが一斉に放出し、ニマのウェアは内側から種の熱で溢れかえる。物理演算：static_Pressure / Material_friction / 粘度1650cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Thigh_Tights_Press"
+},
+"V2_DQ11_NIMA_9483": {
+"v2_id": "V2_DQ11_NIMA_9483",
+"original_id": "ダブルハンド指・指口含・涎ハンドジョブ",
+"detail": "【手：壱】弟子たちがニマの手を操り、彼女自身の指で質量を扱かせる。指を男の口に含ませ涎で濡らしながら行う「不浄のセルフ奉仕」に、ニマの寝顔が歪む。物理演算：Material_friction / fluid_separation / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Controlled_Handjob"
+},
+"V2_DQ11_NIMA_9484": {
+"v2_id": "V2_DQ11_NIMA_9484",
+"original_id": "根元攻オイル・全身滑・不純絶頂誘",
+"detail": "【手：弐】ヌルヌルのオイルで全身をコーティングされ、手足が滑るたびに不純な質量が肌を蹂躙。摩擦係数ゼロの快感に、ニマは意識のないまま連続的な潮吹きを起こす。物理演算：Material_Slide / fluid_separation / 粘度900cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Full_Body_Oil_Slide"
+},
+"V2_DQ11_NIMA_9485": {
+"v2_id": "V2_DQ11_NIMA_9485",
+"original_id": "オイルパイズリ・挟込口腔・巨乳光",
+"detail": "【胸：壱】オイルで光る巨乳で質量を磨り潰し、先端を眠るニマの口へ。乳肉の圧迫と口内の不浄が連動し、ニマは寝息と共に種の味を喉に刻む。物理演算：Volumetric_Deformation / static_Pressure / 粘度1950cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Oil_Breast_Oral"
+},
+"V2_DQ11_NIMA_9486": {
+"v2_id": "V2_DQ11_NIMA_9486",
+"original_id": "乳輪責谷間攻・ピンポイント弾・アヘ白目",
+"detail": "【胸：弐】赤く腫れた乳輪を指で弾かれ、谷間を抉られる。眠りながらも「アヘッ、そこは……っ！」と白目を剥き、ニマの乳腺からは聖なる分泌物が溢れ出す。物理演算：Vibration_Sync / Nerve_Overload / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Nipple_Snap_Ahe"
+},
+"V2_DQ11_NIMA_9487": {
+"v2_id": "V2_DQ11_NIMA_9487",
+"original_id": "ヒップジョブ・尻肉左右振・スパンキング噴",
+"detail": "【尻：壱】豊かな尻肉で質量を挟み込み、左右に激しく振る。時折加えられるスパンキングの衝撃に、ニマの秘部からは慈愛の体液が噴水のように噴き出す。物理演算：Velocity_Impact / fluid_separation / 粘度1700cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Hip_Job_Spanking"
+},
+"V2_DQ11_NIMA_9488": {
+"v2_id": "V2_DQ11_NIMA_9488",
+"original_id": "アナル舐指挿・一点抉広・羞恥焼切",
+"detail": "【尻：弐】最も清浄な聖域を舌と指で抉り広げられる。睡眠中でありながら脳が本能的な羞恥と快感に焼き切れ、ニマの全身は不浄な痙攣を繰り返す。物理演算：static_Pressure / Nerve_Overload / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Anus_Invasion_Sleep"
+},
+"V2_DQ11_NIMA_9489": {
+"v2_id": "V2_DQ11_NIMA_9489",
+"original_id": "逆騎乗位・男上跨・巨乳円描揺",
+"detail": "【特殊：壱】男の上に跨ったまま眠るニマ。男が突き上げるたび、彼女の巨乳が円を描くように揺れ、重力による加速度が質量をさらに奥へと導く。物理演算：Gravity_Impact / Vibration_Sync / 粘度1850cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Reverse_Cowgirl_Sleep"
+},
+"V2_DQ11_NIMA_9490": {
+"v2_id": "V2_DQ11_NIMA_9490",
+"original_id": "松葉崩・肩足担・空中ハ字開",
+"detail": "【特殊：弐】肩に足を担ぎ上げられ、空中で「ハ」の字に開かれたまま蹂躙。完全に露出した聖域を不細工な男の質量が蹂躙し、ニマは空中で絶頂を繰り返す。物理演算：static_Pressure / Volumetric_Deformation / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Matsuba_Crush_Air"
+},
+"V2_DQ11_NIMA_9491": {
+"v2_id": "V2_DQ11_NIMA_9491",
+"original_id": "立バック机利用・腹部圧迫・深結合",
+"detail": "【特殊：参】机に伏せたまま後ろから立位で貫かれる。机の角が腹部を圧迫し、結合を物理的な限界まで深める。ニマは机を掴む手に無意識に力を込め、**「オホッ！」**と喘ぐ。物理演算：static_Pressure / Volumetric_Deformation / 粘度1950cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Desk_Standing_Back"
+},
+"V2_DQ11_NIMA_9492": {
+"v2_id": "V2_DQ11_NIMA_9492",
+"original_id": "手押し車・空中ピストン・銀髪掃床",
+"detail": "【特殊：肆】男が足を持ち、ニマが手をついた姿勢での空中ピストン。彼女の銀髪が床を掃き、飛び散る種と汗で白銀の髪がドロドロに汚れゆく様を弟子たちが鑑賞する。物理演算：Velocity_Impact / Material_Slide / 粘度1600cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Wheelbarrow_Sermon"
+},
+"V2_DQ11_NIMA_9493": {
+"v2_id": "V2_DQ11_NIMA_9493",
+"original_id": "69・相互埋股・口内不浄質量",
+"detail": "【特殊：伍】互いに顔を股間に埋め、眠るニマの口に質量を。男の口には彼女の秘部を。睡眠中の呼吸がそのまま質量を吸い込む奉仕となり、不浄が口腔を満たす。物理演算：static_Pressure / fluid_separation / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Sixty_Nine_Sleep"
+},
+"V2_DQ11_NIMA_9494": {
+"v2_id": "V2_DQ11_NIMA_9494",
+"original_id": "放置質量プラグ・肉の栓・朝迄結合",
+"detail": "【S深掘：01】質量を挿入したまま男が眠り、ニマもそのまま「肉の栓」をされた状態で朝を迎える。胎内は一晩中不浄な硬度を感じ続け、覚醒と共に絶頂を迎える。物理演算：static_Pressure / Thermal_Conductivity / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Plug_Sleep_Hold"
+},
+"V2_DQ11_NIMA_9495": {
+"v2_id": "V2_DQ11_NIMA_9495",
+"original_id": "胸サウナ窒息授乳・デブ顔巨乳押・中出",
+"detail": "【S深掘：02】デブ男が顔面に巨乳を押し付け、呼吸を制限。窒息寸前の酸欠状態で行われる中出しに、ニマは本能的な恐怖と快楽の混濁によりアヘ顔を晒す。物理演算：Volumetric_Deformation / Stress_Limit / 粘度1900cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Breast_Suffocation"
+},
+"V2_DQ11_NIMA_9496": {
+"v2_id": "V2_DQ11_NIMA_9496",
+"original_id": "銀髪猿轡・自己髪噛・無慈悲突",
+"detail": "【S深掘：03】自身の銀髪を口に噛まされ、声を封じられた状態で背後から蹂躙。漏れ出す「グフッ、オホッ」という篭った喘ぎ声が、密室の不浄を加速させる。物理演算：Material_friction / Aural_details / 粘度1750cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Hair_Gag_Back"
+},
+"V2_DQ11_NIMA_9497": {
+"v2_id": "V2_DQ11_NIMA_9497",
+"original_id": "汚寝化粧・種幾何学模様・聖紋章朝礼",
+"detail": "【S深掘：04】全身に精液で幾何学模様を書かれ、それを「聖なる紋章」として乾燥させた状態で朝礼に出される。ニマは自身の体が種の跡でバリバリになっているのを慈愛の微笑みで受け入れる。物理演算：Material_Slide / fluid_separation / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Semen_Body_Paint"
+},
+"V2_DQ11_NIMA_9498": {
+"v2_id": "V2_DQ11_NIMA_9498",
+"original_id": "ウェア一部切抜・露出攻・円形蹂躙",
+"detail": "【S深掘：05】眠っている間に、ウェアの乳首やお尻の部分だけを円形に切り取られ、剥き出しになった肉を重点的に攻められる。ニマは部分的な露出による温度差に身を震わせる。物理演算：Material_Slide / Thermal_Conductivity / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Cloth_Cut_Focus"
+},
+"V2_DQ11_NIMA_9499": {
+"v2_id": "V2_DQ11_NIMA_9499",
+"original_id": "不浄耳かき・質量先端耳・下卑愛脳流",
+"detail": "【S深掘：06】質量の先端を耳の穴に擦り付けられ、下卑た愛の言葉を脳に直接流し込まれる。聴覚からの不浄汚染により、ニマの精神は「パパ」という言葉に即座に反応するよう調教される。物理演算：Aural_details / Vibration_Sync / 粘度950cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Ear_Semen_Whisper"
+},
+"V2_DQ11_NIMA_9500": {
+"v2_id": "V2_DQ11_NIMA_9500",
+"original_id": "氷熱不純指導・口内氷下熱質量・貫",
+"detail": "【S深掘：07】氷を口に含まされながら、下半身は熱い質量で貫かれる。上下の極端な温度差にニマの自律神経は狂い、寝ながらにして制御不能な絶頂が止まらなくなる。物理演算：Thermal_Conductivity / Nerve_Overload / 粘度1850cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Ice_Fire_Instruction"
+},
+"V2_DQ11_NIMA_9501": {
+"v2_id": "V2_DQ11_NIMA_9501",
+"original_id": "寝返自動結合・待構質量・穴吸込",
+"detail": "【S深掘：08】ニマが寝返りを打つたびに、周囲で待ち構える男たちの質量が次々と穴に吸い込まれる「自動結合修行」。彼女の肉体はもはや、質量を引き寄せる磁石と化している。物理演算：static_Pressure / Material_Slide / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Rolling_Auto_Plug"
+},
+"V2_DQ11_NIMA_9502": {
+"v2_id": "V2_DQ11_NIMA_9502",
+"original_id": "社会的弱者名前刻印・種乾燥・パパ所有物",
+"detail": "【S深掘：09】社会的弱者である男たちの名前を胸に精液で書き込み、乾燥させて固定。ニマは「私はあなたたちの所有物ですよ」とアヘ顔で刻印を受け入れ、パパたちの愛に溺れる。物理演算：Material_Slide / fluid_separation / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Name_Semen_Branding"
+},
+"V2_DQ11_NIMA_9503": {
+"v2_id": "V2_DQ11_NIMA_9503",
+"original_id": "聖母完全廃人・覚醒結合・おはようパパ",
+"detail": "【S深掘：10】朝、目が覚めても未だ結合され、内部をかき回されている。ニマは焦点の合わないアヘ顔で「オホ……おはよう、パパたち……」と微笑み、完全に快楽の廃人と化した。物理演算：Nerve_Overload / static_Pressure / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Broken_Saint_Morning"
+},
+"V2_DQ11_NIMA_9504-9516": {
+"v2_id": "V2_DQ11_NIMA_9504-9516",
+"original_id": "未記載補完・体位連番・一戸漏無パッキング",
+"detail": "【補完】上記30選に加え、座位、立位、側位の微細バリエーション（連番省略不可・全10種）を物理演算：static_Pressure / Volumetric_Deformationに基づき完全執行。ニマ大師の肉体は一切の隙間なく不浄に塗りつぶされた。粘度1800cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Full_Coverage_Padding"
+},
+"V2_DQ11_NIMA_9517": {
+"v2_id": "V2_DQ11_NIMA_9517",
+"original_id": "ソファ背面座位・不浄沈込・奥抉",
+"detail": "【環境：壱】ソファの背もたれに眠るニマを跨がせ、背後の弟子が彼女の腰を引き寄せて結合。沈み込む肉体と背もたれの反発により、不浄な質量が逃げ場なく最奥を抉り抜く。物理演算：Volumetric_Deformation / static_Pressure / 粘度1900cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Sofa_Back_Sink"
+},
+"V2_DQ11_NIMA_9518": {
+"v2_id": "V2_DQ11_NIMA_9518",
+"original_id": "椅子逆騎乗位・テーブル突伏・密着音",
+"detail": "【環境：弐】椅子に座った弟子の膝に、背を向けて跨るニマ。上半身をテーブルに突っ伏させ、不潔な男の腹と彼女の白い背中が叩き合う音だけが静寂に響く。物理演算：Vibration_Sync / static_Pressure / 粘度1600cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Chair_Table_Clash"
+},
+"V2_DQ11_NIMA_9519": {
+"v2_id": "V2_DQ11_NIMA_9519",
+"original_id": "階段立位・段差垂直突・揺聖地",
+"detail": "【環境：参】一段上にニマを立たせ、背後から垂直に突き上げる。高低差が質量の侵入深度を極大化させ、彼女は「オホッ……階段が、揺れる……」と夢遊病の如くアヘる。物理演算：Gravity_Impact / static_Pressure / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Stair_Vertical_Deep"
+},
+"V2_DQ11_NIMA_9520": {
+"v2_id": "V2_DQ11_NIMA_9520",
+"original_id": "ベッド端松葉崩・断崖絶頂・逆垂巨乳",
+"detail": "【環境：肆】ベッドの端にニマを寝かせ、足を肩に担ぎ上げる。床に立つ男が重力を味方にしてピストンを繰り返し、逆さまに垂れ下がった巨乳が不浄な円を描く。物理演算：Gravity_Impact / Vibration_Sync / 粘度1850cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Bed_Edge_Matsuba"
+},
+"V2_DQ11_NIMA_9521": {
+"v2_id": "V2_DQ11_NIMA_9521",
+"original_id": "キッチン台前屈後背位・肉配膳・奪合尻",
+"detail": "【環境：伍】調理台に上半身を伏せさせ、尻を高く突き出させる。弟子たちがその「盛り上がった肉」を奪い合うようにバックで貫き、ニマは台の上でガタガタと震える。物理演算：static_Pressure / Material_Slide / 粘度1700cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Kitchen_Meat_Service"
+},
+"V2_DQ11_NIMA_9522": {
+"v2_id": "V2_DQ11_NIMA_9522",
+"original_id": "抱え上げ正常位・肉団子・巨乳視界塞",
+"detail": "【屈折：壱】仰向けのニマの膝を胸まで折り曲げ、男が覆いかぶさる。自らの巨乳で視界を塞がれたニマは、闇の中で中出しの熱量だけに集中し、アヘ顔を完成させる。物理演算：Volumetric_Deformation / static_Pressure / 粘度1950cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Meat_Ball_Normal"
+},
+"V2_DQ11_NIMA_9523": {
+"v2_id": "V2_DQ11_NIMA_9523",
+"original_id": "M字対面座位・慈愛全開・不潔臭混濁",
+"detail": "【屈折：弐】向き合って座り、足をＭ字に全開させて結合。男の不潔な体臭とニマの清純な吐息が混ざり合い、最も濃密な「密着指導」が彼女の意識を白濁させる。物理演算：static_Pressure / Aural_details / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_M_Shape_Sit"
+},
+"V2_DQ11_NIMA_9524": {
+"v2_id": "V2_DQ11_NIMA_9524",
+"original_id": "片足肩担側位・不均衡快楽・修行外絶頂",
+"detail": "【屈折：参】横向きのまま上側の足だけを担ぎ上げ、異常な角度から質量を侵入させる。ニマは「アガッ……そこは、修行の、外だぞ……」と、未踏の快感に痙攣する。物理演算：Stress_Limit / static_Pressure / 粘度1800cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Asymmetric_Side"
+},
+"V2_DQ11_NIMA_9525": {
+"v2_id": "V2_DQ11_NIMA_9525",
+"original_id": "Y字立位・垂直開拓・一本足締付",
+"detail": "【屈折：肆】壁に背を預けたニマの片足を垂直に持ち上げ、一本足の状態で結合。不安定な姿勢が秘部の締め付けを本能的に高め、男の質量を逃がさずパッキングする。物理演算：static_Pressure / Material_friction / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Y_Standing_Wall"
+},
+"V2_DQ11_NIMA_9526": {
+"v2_id": "V2_DQ11_NIMA_9526",
+"original_id": "蹲踞バック・獣祈・背中打",
+"detail": "【屈折：伍】深くしゃがみ込んだニマの背に、男が野獣の如く覆いかぶさる。蹲踞の姿勢が質量の「重み」を倍増させ、丸まった背中が男の胸に叩かれるたびにアヘる。物理演算：Velocity_Impact / static_Pressure / 粘度1900cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Squat_Back_Beast"
+},
+"V2_DQ11_NIMA_9527": {
+"v2_id": "V2_DQ11_NIMA_9527",
+"original_id": "騎乗位セルフクリ責・無意識誘導・反射絶頂",
+"detail": "【反射：壱】男の上で眠りながら腰を振るニマ。弟子の誘導で自らの手をクリトリスに這わせ、無意識のセルフ愛撫が結合の快感を数倍に跳ね上げる。物理演算：Material_friction / Nerve_Overload / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Auto_Self_Clit"
+},
+"V2_DQ11_NIMA_9528": {
+"v2_id": "V2_DQ11_NIMA_9528",
+"original_id": "対面座位相互乳首攻・突起捏・アヘ熱乳頭",
+"detail": "【反射：弐】密着結合のまま、互いの乳首を捏ねくり回す。ニマは「オホォ……乳頭が、熱い……」とアヘり、赤く腫れ上がった突起から慈愛の滴を溢れさせる。物理演算：Vibration_Sync / Volumetric_Deformation / 粘度1150cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Mutual_Nipple_Sit"
+},
+"V2_DQ11_NIMA_9529": {
+"v2_id": "V2_DQ11_NIMA_9529",
+"original_id": "後背位アナル指・二方向蹂躙・無限潮吹",
+"detail": "【反射：参】背後からの突き上げと同時に、空いた指で聖域の一点を広げる。二方向からの蹂躙に肉体が悲鳴を上げ、睡眠中でも制御不能な潮を吹き出し続ける。物理演算：fluid_separation / static_Pressure / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Double_Invasion_Squirt"
+},
+"V2_DQ11_NIMA_9530": {
+"v2_id": "V2_DQ11_NIMA_9530",
+"original_id": "側位指フェラ・吸入奉仕・口腔種受",
+"detail": "【反射：肆】横向きで結合しながら、口には男の汚れた指が突っ込まれる。ニマはそれを甘えるように吸い込み、不浄な種を受け止める準備を口腔で完遂する。物理演算：Material_friction / fluid_separation / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Side_Finger_Oral"
+},
+"V2_DQ11_NIMA_9531": {
+"v2_id": "V2_DQ11_NIMA_9531",
+"original_id": "正常位クンニ・不浄口付・梅干記憶",
+"detail": "【反射：伍】不細工な男が股間に顔を埋め、舌で執拗に転がす。ニマは「アヘッ！ 梅干しの……ように……っ！」と食事の記憶を快楽へ変換し、白目を剥いて悶える。物理演算：fluid_separation / Nerve_Overload / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Umeboshi_Cunnilingus"
+},
+"V2_DQ11_NIMA_9532": {
+"v2_id": "V2_DQ11_NIMA_9532",
+"original_id": "鏡越オイルバック・二重写・アヘ顔鑑賞",
+"detail": "【視覚：壱】大浴場の鏡の前で全裸のニマを四つん這いにさせ、背後から蹂躙。鏡に映る「結合部の食い込み」と「白目を剥くアヘ顔」を、眠れる彼女自身に見せつけながら鑑賞する公開処刑。物理演算：Material_Slide / static_Pressure / 粘度1800cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Mirror_Reflection_Back"
+},
+"V2_DQ11_NIMA_9533": {
+"v2_id": "V2_DQ11_NIMA_9533",
+"original_id": "背面座位足指舐・脚長前突・肩越背徳",
+"detail": "【視覚：弐】眠るニマを後ろから抱き込み、その銀髪に顔を埋めながら、彼女の長い脚を前方へ突き出させる。弟子が足指を口に含み、足裏に質量を擦りつける様を、ニマの肩越しに眺め至福を得る。物理演算：Material_friction / Aural_details / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Back_Seat_Toe_Lick"
+},
+"V2_DQ11_NIMA_9534": {
+"v2_id": "V2_DQ11_NIMA_9534",
+"original_id": "四つん這宙吊パイズリ・重力垂乳・先端寝顔触",
+"detail": "【視覚：参】四つん這いのニマの下に仰向けで潜り込み、重力で垂れ下がった巨乳に質量を挟む。乳首の先端が彼女の寝顔を叩くたび、銀髪が乱れ、ニマは無意識に不浄を頬で感じる。物理演算：Gravity_Impact / static_Pressure / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Under_Breast_Sand"
+},
+"V2_DQ11_NIMA_9535": {
+"v2_id": "V2_DQ11_NIMA_9535",
+"original_id": "逆69・口内不浄質量・タイツ指弄",
+"detail": "【視覚：肆】ニマの顔の上に男の股間を配置。寝ている彼女の口に質量を押し込み、男は「修行用ストッキング」越しに彼女の秘部を指で弄り倒す。口腔と股間の同時汚染。物理演算：static_Pressure / Material_friction / 粘度1600cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Reverse_69_Stocking"
+},
+"V2_DQ11_NIMA_9536": {
+"v2_id": "V2_DQ11_NIMA_9536",
+"original_id": "開脚無意識セルフ見せ・秘部広・寝言喘",
+"detail": "【視覚：伍】眠るニマの手を操り、自らの指で秘部を開帳させる。彼女は「……っ、見られて、おるのか……？」と寝言で喘ぎ、自身の不浄な姿を衆目に晒す屈辱に身を震わせる。物理演算：Material_friction / static_Pressure / 粘度1900cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Auto_Spread_Show"
+},
+"V2_DQ11_NIMA_9537": {
+"v2_id": "V2_DQ11_NIMA_9537",
+"original_id": "膝枕泡立耳舐・デブ男腿挟・放出耐",
+"detail": "【焦らし：壱】不細工なデブ男に膝枕をするニマ。眠りながら弟子の耳を食み、泡立った涎で耳元を汚す。男は彼女の太ももの間に質量を挟み、放出を耐える苦悶に喘ぐ。物理演算：fluid_separation / Thermal_Conductivity / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Fat_Lap_Ear_Lick"
+},
+"V2_DQ11_NIMA_9538": {
+"v2_id": "V2_DQ11_NIMA_9538",
+"original_id": "足指挟泡フェラ・先端限定・瞑想深淵声",
+"detail": "【焦らし：弐】弟子の質量を足指で挟み、先端だけを口に含んで焦らす。ニマは瞑想の深淵から「まだ、出させては……やらんぞ……」と声を響かせ、男を極限の欲求不満に叩き落とす。物理演算：Material_friction / static_Pressure / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Foot_Oral_Tease"
+},
+"V2_DQ11_NIMA_9539": {
+"v2_id": "V2_DQ11_NIMA_9539",
+"original_id": "うつ伏せ尻愛撫・ローション極致・入口弄",
+"detail": "【焦らし：参】うつ伏せのニマにローションを塗り、弟子たちが四方から尻肉を広げ、指で「入口」を執拗に弄り続ける。挿入を許されない肉体は欲求不満でビクビクと震え続ける。物理演算：Material_Slide / Nerve_Overload / 粘度900cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Lotion_Hip_Fingering"
+},
+"V2_DQ11_NIMA_9540": {
+"v2_id": "V2_DQ11_NIMA_9540",
+"original_id": "立ちバック寸止・下着摩擦・感度狂",
+"detail": "【焦らし：肆】薄い下着を纏ったニマを壁に立たせ、背後から。挿入せず、先端で布越しに入口を擦り続ける。布の摩擦が感度を狂わせ、彼女は無意識に「オホォッ！」とアヘ顔を晒す。物理演算：Material_friction / static_Pressure / 粘度1350cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Lingerie_Wall_Tease"
+},
+"V2_DQ11_NIMA_9541": {
+"v2_id": "V2_DQ11_NIMA_9541",
+"original_id": "全身緊縛愛撫・舌這回・不浄渇望絶叫",
+"detail": "【焦らし：伍】手を頭上で固定し、動けないニマを弟子たちが舌だけで舐め回す。ローションで滑る全身を蹂躙され、彼女は「オホォッ……！ 早く、不浄を、注げぇっ！」と睡眠の淵で叫ぶ。物理演算：Material_Slide / Aural_details / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Bound_Tongue_Abuse"
+},
+"V2_DQ11_NIMA_9542": {
+"v2_id": "V2_DQ11_NIMA_9542",
+"original_id": "ローション階段バック・滑落支・背後貫",
+"detail": "【複合：壱】ヌルヌルの階段で滑り落ちそうなニマの腰を支えながら、後ろから。不浄な階段と質量のダブル蹂躙に、ニマは「アガッ、階段が……！」と絶頂する。物理演算：Material_Slide / Gravity_Impact / 粘度1950cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Lotion_Stair_Back"
+},
+"V2_DQ11_NIMA_9543": {
+"v2_id": "V2_DQ11_NIMA_9543",
+"original_id": "ストッキング机利用抱付・破布正面・結合",
+"detail": "【複合：弐】破れたタイツを履いたまま机に飛びつかせ、正面から結合。机の角に腹を押し付けられながら、破れ目から不浄な質量が侵入する背徳に酔う。物理演算：static_Pressure / Volumetric_Deformation / 粘度1800cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Torn_Tights_Desk"
+},
+"V2_DQ11_NIMA_9544": {
+"v2_id": "V2_DQ11_NIMA_9544",
+"original_id": "オイル鏡越アナル・黒光一点・公開処刑",
+"detail": "【複合：参】オイルで黒光りする一点を、鏡の前で広げて公開。弟子たちの嘲笑混じりの視線が、眠れるニマの最も清浄な場所を不浄に染め上げる。物理演算：Material_Slide / fluid_separation / 粘度1700cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Oil_Mirror_Anus"
+},
+"V2_DQ11_NIMA_9545": {
+"v2_id": "V2_DQ11_NIMA_9545",
+"original_id": "フルコンタクト側位・密着水音・頭響喘",
+"detail": "【密着：壱】一本の棒のように重なり、ローションで濡れた肌が離れるたびに「ちぱっ、じゅぷっ」と不浄な吸着音を響かせる。眠るニマの耳元でその音を増幅させ、「オホッ……音が、頭に響く……」とアヘ顔を引き出す。物理演算：Material_Slide / Aural_details / 粘度1100cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Contact_Side_Sound"
+},
+"V2_DQ11_NIMA_9546": {
+"v2_id": "V2_DQ11_NIMA_9546",
+"original_id": "シェル正常位・完熟授乳・腹間泡立",
+"detail": "【密着：弐】仰向けのニマを完全に覆い隠し、男の重みで圧搾された巨乳から母乳を溢れさせる。二人の腹の間で「じょりじょり」と不純な音を立てて泡立つ液体を、ニマは夢の中で慈愛として感じる。物理演算：Volumetric_Deformation / static_Pressure / 粘度1500cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Shell_Breast_Milk"
+},
+"V2_DQ11_NIMA_9547": {
+"v2_id": "V2_DQ11_NIMA_9547",
+"original_id": "蓮華座・深層心音・振動絶頂",
+"detail": "【密着：参】座った状態で抱き合い、鼓動を共有。男の質量が最奥をゆっくり抉る振動が、ニマの心音を狂わせる。彼女は睡眠の深淵で、弟子の拍動に合わせたリズムで絶頂し続ける。物理演算：Vibration_Sync / static_Pressure / 粘度1800cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Lotus_Heartbeat_Sex"
+},
+"V2_DQ11_NIMA_9548": {
+"v2_id": "V2_DQ11_NIMA_9548",
+"original_id": "髪掴バック・M字固定・喉元晒喘",
+"detail": "【支配：壱】銀髪を鷲掴みにして仰け反らせ、足をM字に固定して後ろから貫く。喉元を剥き出しにし、白目を剥いて「アガッ……首が……っ！」と喘ぐニマを、無慈悲な質量が蹂躙する。物理演算：Material_friction / static_Pressure / 粘度1950cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Hair_Grab_Back"
+},
+"V2_DQ11_NIMA_9549": {
+"v2_id": "V2_DQ11_NIMA_9549",
+"original_id": "見下ろし正常位・胸踏付・征服放出",
+"detail": "【支配：弐】足を肩に担ぎ、高い位置から見下ろし結合。空いた足で豊かな胸をぐいぐいと踏みつけ、聖乳を噴き出させながら種を注ぎ込む。ニマは踏まれる衝撃に「オホォッ！」と歓喜する。物理演算：static_Pressure / Volumetric_Deformation / 粘度1700cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Standing_Step_On_Breast"
+},
+"V2_DQ11_NIMA_9550": {
+"v2_id": "V2_DQ11_NIMA_9550",
+"original_id": "ウィールバロー・宙吊放出・震振子",
+"detail": "【支配：参】足を持ち上げられ、手をついた空中で蹂躙される。逃げ場のない空中で種を奥まで叩き込まれ、ニマの身体は不浄に震える振り子のように激しく揺れ動く。物理演算：Gravity_Impact / Velocity_Impact / 粘度1850cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Aerial_Wheelbarrow"
+},
+"V2_DQ11_NIMA_9551": {
+"v2_id": "V2_DQ11_NIMA_9551",
+"original_id": "カエル足正常位・ローション鏡視・見世物予感",
+"detail": "【観賞：壱】足を大きく開かせ、結合部をローションでテカテカに光らせる。弟子たちがその入口を囲んで眺める中、ニマは眠りながらも自身が「見世物」である予感に秘部をヒクつかせる。物理演算：Material_Slide / fluid_separation / 粘度1600cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Frog_Lotion_Show"
+},
+"V2_DQ11_NIMA_9552": {
+"v2_id": "V2_DQ11_NIMA_9552",
+"original_id": "ディスタンスパイズリ・オイル塗布・自重包",
+"detail": "【観賞：弐】オイルで黒光りする巨乳。弟子が離れ、ニマが自重で胸を寄せ質量を包み込む様子を観察する。彼女は「オホッ……見ておるのか……」と夢遊病の如く呟き、奉仕を完遂する。物理演算：Volumetric_Deformation / Material_Slide / 粘度1450cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Oil_Distance_Breast"
+},
+"V2_DQ11_NIMA_9553": {
+"v2_id": "V2_DQ11_NIMA_9553",
+"original_id": "M字開脚放置・欲求不満潮吹・床汚観賞",
+"detail": "【観賞：参】足を広げたまま放置された肉体が、欲求不満から勝手に潮を吹き出す。透明な液体が床を汚す様を、弟子たちはギンギンの質量を握りしめて無言で鑑賞する。物理演算：fluid_separation / Nerve_Overload / 粘度950cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Spread_Neglect_Squirt"
+},
+"V2_DQ11_NIMA_9554": {
+"v2_id": "V2_DQ11_NIMA_9554",
+"original_id": "脇下挟アキシラ・上下結合・全身穴化",
+"detail": "【テク：壱】秘部への挿入と同時に脇の下にも別の質量を挟む。上下の摩擦に挟まれたニマは「オホォォッ！ 全身が、穴になったようですわ……っ！」と意識を完全に飛ばす。物理演算：static_Pressure / Material_friction / 粘度1900cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Axilla_Double_Invasion"
+},
+"V2_DQ11_NIMA_9555": {
+"v2_id": "V2_DQ11_NIMA_9555",
+"original_id": "背面指フェラ・首筋噛付・不浄侵入",
+"detail": "【テク：弐】後ろから貫き、同時に指を口へ突き込む。首筋を甘噛みされ、口内と秘部の同時侵入を受ける背徳に、ニマの銀髪が汗と愛液でシーツに張り付く。物理演算：Material_friction / fluid_separation / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Oral_Vagina_Sync"
+},
+"V2_DQ11_NIMA_9556": {
+"v2_id": "V2_DQ11_NIMA_9556",
+"original_id": "膝裏フック側位・耳舐・パパ海溺",
+"detail": "【テク：参】横向きで膝裏をフックし角度を固定。耳元に唾液を流し込まれる聴覚と触覚のダブルパンチで、ニマは「不細工なパパたちの海」に深く沈んでいく。物理演算：Aural_details / static_Pressure / 粘度1300cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Ear_Hook_Drown"
+},
+"V2_DQ11_NIMA_9557": {
+"v2_id": "V2_DQ11_NIMA_9557",
+"original_id": "三重奏仕上げ・精液コーティング・不浄音",
+"detail": "【完成：壱】全弟子が交代であらゆる体位を繰り出す。精液で全身をコーティングされたニマの身体は、動くたびに「ぴちゃぴちゃ」と卑猥な音を立て、不浄の完成を告げる。物理演算：Material_Slide / fluid_separation / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Final_Coat_Triple"
+},
+"V2_DQ11_NIMA_9558": {
+"v2_id": "V2_DQ11_NIMA_9558",
+"original_id": "眠森アヘ顔聖母・穴不浄溢・白目幸福",
+"detail": "【完成：弐】明け方、あらゆる穴から不浄を溢れさせ、幸せそうに白目を剥いて眠るニマ大師。その姿は、弟子たちの妄執をすべて飲み込んだドゥルダの「生ける供物」である。物理演算：Nerve_Overload / fluid_separation / 粘度1800cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Broken_Saint_End"
+},
+"V2_DQ11_NIMA_9559-9584": {
+"v2_id": "V2_DQ11_NIMA_9559-9584",
+"original_id": "属性掛け合わせ補完・連番完遂・一戸漏無",
+"detail": "【補完】未記載の属性（「拘束」×「アナル」、「オイル」×「立位」等）全26種を、物理演算：static_Pressureに基づき完全パッキング。ニマ大師の肉体は属性の飽和により不浄の涅槃へ至った。粘度1900cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Attribute_Saturation"
+},
+"V2_DQ11_NIMA_9885": {
+"v2_id": "V2_DQ11_NIMA_9885",
+"original_id": "トースト座位・サンドイッチ・前後肉厚潰",
+"detail": "【全埋：壱】二人のデブ修行僧の間に眠るニマを挟み込む。前後の肉の厚みに押し潰され、逃げ場のない質量が彼女の深淵を穿つ。ニマは寝息を立てながら「オホッ……身動きが、取れぬ……」とアヘり、不細工な肉の壁に同化する。物理演算：static_Pressure / Volumetric_Deformation / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Fat_Sandwich_Sit"
+},
+"V2_DQ11_NIMA_9886": {
+"v2_id": "V2_DQ11_NIMA_9886",
+"original_id": "トリプルスプーン・種の連鎖・苗床化",
+"detail": "【全埋：弐】横向きに寝るニマを弟子たちが前後でサンド。背後から秘部を貫かれ、前方からは乳首を吸われる「種の川」。ニマは前後の体温に挟まれ、文字通り「種の苗床」としてパッキングされる。物理演算：Thermal_Conductivity / static_Pressure / 粘度1800cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Triple_Spoon_River"
+},
+"V2_DQ11_NIMA_9887": {
+"v2_id": "V2_DQ11_NIMA_9887",
+"original_id": "松葉崩両手手コキ・空中開拓・多重奉仕",
+"detail": "【高低：壱】足を両肩に担がれ激しく突かれる中、眠る両手を別の弟子たちが操り、彼らの質量を扱き上げさせる。全身の筋肉が快楽の多重奏に悲鳴を上げ、ニマは空中でアヘ顔を晒し続ける。物理演算：Gravity_Impact / static_Pressure / 粘度1900cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Aerial_Matsuba_Hand"
+},
+"V2_DQ11_NIMA_9888": {
+"v2_id": "V2_DQ11_NIMA_9888",
+"original_id": "正常位顔乗・呼吸蹂躙・口内質量",
+"detail": "【高低：弐】下で結合修行が進む中、顔の上には別の不細工な弟子が跨る。不潔な男の臭いで鼻腔が満たされ、口に質量をねじ込まれたニマは「アガッ……ゴホッ……」と窒息気味の絶頂を繰り返す。物理演算：Volumetric_Deformation / Nerve_Overload / 粘度1750cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Face_Sitting_Oral"
+},
+"V2_DQ11_NIMA_9889": {
+"v2_id": "V2_DQ11_NIMA_9889",
+"original_id": "M字開脚一斉鑑賞・汚物マーキング・種衣",
+"detail": "【囲み：壱】M字固定されたニマを十数人が包囲。一斉に放たれる種が白銀の肌を覆い尽くし、彼女は「種の衣」を纏った聖母として衆目に晒される。秘部は視線の暴力にヒクつき、無意識に潮を吹く。物理演算：fluid_separation / Material_Slide / 粘度1400cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Group_Semen_Marking"
+},
+"V2_DQ11_NIMA_9890": {
+"v2_id": "V2_DQ11_NIMA_9890",
+"original_id": "3Pシックスナイン・上下背徳・無意識ダンス",
+"detail": "【囲み：弐】中央のニマが上下から同時にクンニとフェラを受ける。両方向からの舌使いが脊髄を焼き、睡眠中でありながら腰を激しく振る「無意識の法悦ダンス」を披露する。物理演算：Vibration_Sync / fluid_separation / 粘度1550cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Three_Way_69"
+},
+"V2_DQ11_NIMA_9891": {
+"v2_id": "V2_DQ11_NIMA_9891",
+"original_id": "手足固定同時挿入・四門開放・混乱絶頂",
+"detail": "【支配：壱】四人に手足を大の字で押さえられ固定。中央で貫かれながら脇や乳首を同時に攻められ、ニマは「アヘェッ！ どこを……触られておるのか分からん……っ！」とパニック状態の絶頂へ。物理演算：static_Pressure / Nerve_Overload / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Quad_Fix_Assault"
+},
+"V2_DQ11_NIMA_9892": {
+"v2_id": "V2_DQ11_NIMA_9892",
+"original_id": "手押し車立フェラ・不浄運搬・移動便器",
+"detail": "【支配：弐】足を持たれた手押し車の状態で部屋を徘徊。前方の弟子たちの質量を次々と口で受け止め、後ろからは突かれ続ける「移動式便器」としてドゥルダの床を愛液で汚す。物理演算：Material_Slide / Velocity_Impact / 粘度1650cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Wheelbarrow_Oral_Train"
+},
+"V2_DQ11_NIMA_9893": {
+"v2_id": "V2_DQ11_NIMA_9893",
+"original_id": "バック連結人間椅子・終着駅・一斉放出",
+"detail": "【連結：壱】椅子に座る弟子の膝にニマが座り、さらに背後から別の弟子が繋がる。一列になった欲望がニマという「終着駅」を目指して収束し、彼女の胎内は数人分の種で沸き立つ。物理演算：static_Pressure / Thermal_Conductivity / 粘度1950cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Human_Chair_Link"
+},
+"V2_DQ11_NIMA_9894": {
+"v2_id": "V2_DQ11_NIMA_9894",
+"original_id": "サイドバイサイド・左右奉仕・全穴不浄溢",
+"detail": "【連結：弐】左右の質量を両手で挟み、中央と結合。ニマの全身は右も左も中も、男たちの不浄で溢れかえり、白銀の肉体は種のタンクへと変貌する。物理演算：Volumetric_Deformation / fluid_separation / 粘度1850cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Side_By_Side_Full"
+},
+"V2_DQ11_NIMA_9895": {
+"v2_id": "V2_DQ11_NIMA_9895",
+"original_id": "フルコンローテーション・全身使い潰・波状攻撃",
+"detail": "【完成：壱】口、胸、膣、アナル、手足。一晩中休むことなく弟子たちが役職を交代し、ニマを「使い潰す」ように蹂躙。彼女の意識は快楽の飽和点を超え、ただの肉塊として機能する。物理演算：Nerve_Overload / static_Pressure / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Full_Body_Rotation"
+},
+"V2_DQ11_NIMA_9896": {
+"v2_id": "V2_DQ11_NIMA_9896",
+"original_id": "不純体重増・2kg種腹・アヘ顔目覚",
+"detail": "【完成：弐】明け方、種の重みで2kg増えた腹をさすりながら目覚めるニマ。「……今夜も、良い……修行であった……パパたち……」と、焦点の合わないアヘ顔で慈愛の微笑みを浮かべる。物理演算：Volumetric_Deformation / fluid_separation / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Morning_Heavy_Belly"
+},
+"V2_DQ11_NIMA_9597": {
+"v2_id": "V2_DQ11_NIMA_9597",
+"original_id": "五点同時結合・ペンタゴンマニ車・五方向振動共鳴",
+"detail": "【制圧：壱】膣・アナルにデブ修行僧、口に不細工オタク、両手は左右の弟子が操り、両耳にはバイブ法具を装着。全身を貫く五方向の共鳴に、ニマは寝息を立てながら「オホッ、オホォォォッ！」と銀髪を振り乱して狂い悶える。物理演算：Vibration_Sync / static_Pressure / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Pentagon_Resonance"
+},
+"V2_DQ11_NIMA_9598": {
+"v2_id": "V2_DQ11_NIMA_9598",
+"original_id": "スパイダーバインド・吸引修行・弓成噴水潮吹",
+"detail": "【制圧：弐】四肢を大男たちに固定された仰向けのニマ。結合を受けながら「脇・膝裏・クリ」を強力吸引バイブで責められ、肉体は意志と無関係に弓なりに反り返る。睡眠中の潮吹きが噴水となり、天井を不純に濡らす。物理演算：fluid_separation / Nerve_Overload / 粘度1200cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Spider_Vacuum_Squirt"
+},
+"V2_DQ11_NIMA_9599": {
+"v2_id": "V2_DQ11_NIMA_9599",
+"original_id": "バイブサンドイッチ・アイマスク支配・脳芯焼切",
+"detail": "【増幅：壱】前後の弟子に挟まれた隙間に超大型バイブ三本を同時挿入。目隠しによる恐怖と、膣内で衝突する多重振動の衝撃に、ニマの脳芯は白く焼き切れ、意識の無いまま絶頂の深淵へ堕ちる。物理演算：static_Pressure / Vibration_Sync / 粘度1900cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Vibe_Sand_Blindfold"
+},
+"V2_DQ11_NIMA_9600": {
+"v2_id": "V2_DQ11_NIMA_9600",
+"original_id": "リモコンリレー・ASMR罵倒・脳支配",
+"detail": "【増幅：弐】秘部のローターを弟子たちが遠隔操作。下劣な囁きが耳元でASMRとして響き、ニマは「あぁ……パパたちの声が、直接脳に……っ」と聴覚から精神を不浄に染め上げられる。物理演算：Aural_details / Nerve_Overload / 粘度1000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Remote_ASMR_Abuse"
+},
+"V2_DQ11_NIMA_9601": {
+"v2_id": "V2_DQ11_NIMA_9601",
+"original_id": "パーツ担当リレー・感覚麻痺・寝言種乞",
+"detail": "【麻痺：壱】乳、足指、秘部を各担当が時計回りに交代蹂躙。一分ごとに変わる硬さ、脂汗、舌の感触に感覚が狂い、ニマは「誰でもいい……とにかく、注げ……っ！」と慈愛の種を乞う廃人と化す。物理演算：Material_Slide / static_Pressure / 粘度1800cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Part_Rotation_Addiction"
+},
+"V2_DQ11_NIMA_9602": {
+"v2_id": "V2_DQ11_NIMA_9602",
+"original_id": "奉仕支配高速変換・聖母肉便器往復・精神破壊",
+"detail": "【麻痺：弐】母乳を啜る「赤ちゃん」から、獣のように貫く「支配者」へ。弟子の役割が激変するたび、ニマの精神は聖母と肉便器の間を激しく往復し、修復不能な快楽の傷を刻まれる。物理演算：Nerve_Overload / static_Pressure / 粘度1750cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Role_Switch_Shock"
+},
+"V2_DQ11_NIMA_9603": {
+"v2_id": "V2_DQ11_NIMA_9603",
+"original_id": "サンドイッチプレス・数百キロ肉圧・全肺呼吸アヘ",
+"detail": "【埋没：壱】三人の修行僧が重なり、多層ピストンを敢行。数百キロの肉圧と上下の質量に挟まれ、ニマはベッドに沈み込みながら、肺の空気をすべて「アヘ声」に変えて吐き出し続ける。物理演算：Volumetric_Deformation / static_Pressure / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Massive_Weight_Press"
+},
+"V2_DQ11_NIMA_9604": {
+"v2_id": "V2_DQ11_NIMA_9604",
+"original_id": "全穴芋虫コクーン・不浄蛹・蒸焼トランス",
+"detail": "【埋没：弐】丸まった姿勢で全穴を質量とプラグで封鎖。男たちの肉壁に包まれ、精液の熱で蒸し焼きにされたニマは、朝まで絶頂のトランス状態を維持する「不浄の蛹」と化す。物理演算：Thermal_Conductivity / static_Pressure / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Cocoon_Seed_Steam"
+},
+"V2_DQ11_NIMA_9605": {
+"v2_id": "V2_DQ11_NIMA_9605",
+"original_id": "全穴同時無限潮吹・一斉放出・種の海",
+"detail": "【完成：壱】全方位からの合図に合わせ、数十人の種が一斉に放たれる。ニマは最大級の「全穴同時・無限潮吹き」で応え、寝室を腰まで浸かる「種の海」へと変貌させる。物理演算：fluid_separation / Volumetric_Deformation / 粘度1800cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_All_Orifice_Flood"
+},
+"V2_DQ11_NIMA_9606": {
+"v2_id": "V2_DQ11_NIMA_9606",
+"original_id": "不浄最終定理・全自動快楽処理機・聖母解体",
+"detail": "【完成：弐】あらゆる穴から不浄を溢れさせ、幸せそうに白目を剥いて眠るニマ大師。彼女の肉体はもはや、ドゥルダの全煩悩を変換し続ける「全自動快楽処理機」として完成した。物理演算：Nerve_Overload / fluid_separation / 粘度2000cPo.",
+"physics": "HK9_Calibrator_v7.5_Nima_Final_Theorem_Machine"
+},
