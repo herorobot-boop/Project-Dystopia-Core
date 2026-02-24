@@ -4,7 +4,7 @@ import shutil
 from pathlib import Path
 
 # =========================================================
-# 1. 物理定数・認証情報の定義 (Genesis v7.5 Protocol)
+# 1. 物理定数・認証情報
 # =========================================================
 GITHUB_TOKEN = "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"
 GITHUB_REPO = "herorobot-boop/Project-Dystopia-Core"
@@ -20,47 +20,41 @@ def run_cmd(cmd, shell=True):
     print(f"🚀 Executing: {cmd}")
     return subprocess.run(cmd, shell=shell, check=True)
 
-# =========================================================
-# 2. 執行フェーズ
-# =========================================================
-
 def main():
-    print("🐺 [H-K9] 執行開始。手作業の時代を終わらせます。")
+    print("🐺 [H-K9] 執行開始。環境の欠落を補填し、点火します。")
 
-    # --- Step 1: Rclone 物理配線 ---
-    print("📦 [1/5] Rclone 構成ファイルの自動注入...")
+    # --- Step 1: ComfyUI 本体の配備 ---
+    comfy_path = Path("/workspace/ComfyUI")
+    if not comfy_path.exists():
+        print("🏗️ ComfyUI が見当たりません。新規建設を開始...")
+        run_cmd(f"git clone https://github.com/comfyanonymous/ComfyUI.git {comfy_path}")
+        # Managerも入れておくと後が楽です
+        run_cmd(f"git clone https://github.com/ltdrdata/ComfyUI-Manager.git {comfy_path}/custom_nodes/ComfyUI-Manager")
+        # ComfyUIの依存関係も解決
+        run_cmd(f"pip install -r {comfy_path}/requirements.txt")
+
+    # --- Step 2: Rclone & 兵站搬入 ---
     config_path = Path("~/.config/rclone/rclone.conf").expanduser()
     config_path.parent.mkdir(parents=True, exist_ok=True)
     config_path.write_text(RCLONE_CONF)
-
-    # --- Step 2: 兵站（モデル）の物理搬入 ---
-    print("🚚 [2/5] Gdrive資産をNVMeへ爆速コピー中 (FUSE回避)...")
-    model_dirs = ["checkpoints", "unet", "vlm", "loras"]
-    for d in model_dirs:
+    
+    for d in ["checkpoints", "unet", "vlm", "loras", "vae", "clip"]:
         Path(f"/workspace/models/{d}").mkdir(parents=True, exist_ok=True)
     
-    # size-only で既存ファイルを確認し、差分のみ高速コピー
     run_cmd("rclone copy gdrive:Project-Dystopia/models /workspace/models --progress --transfers 16 --size-only")
 
-    # --- Step 3: 知能（GitHub）の同期 ---
-    print("🧠 [3/5] GitHub 知能同期 (認証プロンプト排除)...")
+    # --- Step 3: GitHub 知能同期 ---
     target_repo_path = "/workspace/Project-Dystopia-Core"
     if os.path.exists(target_repo_path):
         shutil.rmtree(target_repo_path)
-    
-    auth_url = f"https://{GITHUB_TOKEN}@github.com/{GITHUB_REPO}.git"
-    run_cmd(f"git clone {auth_url} {target_repo_path}")
+    run_cmd(f"git clone https://{GITHUB_TOKEN}@github.com/{GITHUB_REPO}.git {target_repo_path}")
 
-    # --- Step 4: 筋肉（Pip）の強制装着 ---
-    print("💪 [4/5] 依存ライブラリの一括インストール...")
+    # --- Step 4: 依存ライブラリの再装着 ---
     os.chdir(target_repo_path)
-    if os.path.exists("core/requirements.txt"):
-        run_cmd("pip install -r core/requirements.txt")
+    run_cmd("pip install -r core/requirements.txt")
     run_cmd("pip install llama-cpp-python huggingface_hub tqdm")
 
-    # --- Step 5: Blackwell 点火構成の生成 ---
-    print("🔥 [5/5] Blackwell 5090 最適化起動シーケンス生成...")
-    # extra_model_paths.yaml の生成
+    # --- Step 5: Blackwell 最適化設定 ---
     yaml_content = """comfyui:
     base_path: /workspace/models
     checkpoints: checkpoints/
@@ -73,11 +67,10 @@ def main():
     yaml_file.parent.mkdir(parents=True, exist_ok=True)
     yaml_file.write_text(yaml_content)
 
-    # --- 最終執行 ---
-    print("\n✅ 全ての配線が完了しました。Blackwell を点火します。")
-    os.chdir("/workspace/ComfyUI")
-    # nvfp4 フラグを立てて起動
-    run_cmd("python3 main.py --listen 0.0.0.0 --port 8188 --nvfp4 --bf16-storage --extra-model-paths-config " + str(yaml_file))
+    # --- 最終点火 ---
+    print("\n✅ [H-K9] 基盤・知能・兵站、全て接続。Blackwell 点火。")
+    os.chdir(comfy_path)
+    run_cmd(f"python3 main.py --listen 0.0.0.0 --port 8188 --nvfp4 --bf16-storage --extra-model-paths-config {yaml_file}")
 
 if __name__ == "__main__":
     main()
