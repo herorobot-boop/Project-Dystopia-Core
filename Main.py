@@ -1,76 +1,88 @@
-# =========================================================
-# H-K9 System: Central Command Unit [v7.0 FINAL]
-# =========================================================
-import sys
+import json
+import requests
 import os
-import time
+import sys
 from pathlib import Path
 
-# 各エンジンのインポート
-from core.engines.thought_translator import H_K9_PhysicalSimulator
-from core.engines.comfy_api_bridge import ComfyAPIBridge
-from core.engines.video_executor import HK9_VideoExecutor
-from core.utils.lipsync_handler import HK9_LipSyncHandler
-from core.utils.c2pa_signer import HK9_C2PASigner
+# =========================================================
+# 🏛️ H-K9 System: Central Command Unit (Main.py)
+# =========================================================
 
-class HK9_CentralCommand:
-    def __init__(self):
-        print("🏛️ H-K9 System: Operation Center [Phase I Complete]")
-        self.sim = H_K9_PhysicalSimulator()
-        self.bridge = ComfyAPIBridge()
-        self.video = HK9_VideoExecutor()
-        self.lipsync = HK9_LipSyncHandler()
-        self.signer = HK9_C2PASigner()
+# 物理パス設定（genesis_ultimate_final.py の構成に準拠）
+BASE_DIR = Path("/workspace/Project-Dystopia-Core")
+DICTIONARY_PATH = BASE_DIR / "config/dictionary/h_k9_dictionary_V2_Final.json"
+COMFY_URL = "http://127.0.0.1:8888/prompt"
 
-    def execute_full_protocol(self, subject_image, scenario_id, mod_id="改06"):
-        """
-        全自動執行プロトコル:
-        1. 思想訳 -> 2. Z-Image画像現像 -> 3. Wan 2.2動画化 -> 4. LipSync -> 5. C2PA署名
-        """
-        start_time = time.time()
-        print(f"\n[!] INITIATING PROTOCOL: {mod_id} / {scenario_id}")
+def execute_h_k9_v2(script_id):
+    """
+    聖典V2から「詳細」と「物理定数」を抽出し、5090へ射出する
+    """
+    if not DICTIONARY_PATH.exists():
+        print(f"❌ [Error] 聖典が見つかりません: {DICTIONARY_PATH}")
+        return
 
-        # --- 1. 思想変換 (Step 4) ---
-        print("[1/5] Physical Thought Translation...")
-        logic = self.sim.translate(f"{mod_id} {scenario_id}", intensity=0.98)
+    print(f"🐺 [H-K9] 聖典ログ {script_id} をスキャン中...")
+    
+    with open(DICTIONARY_PATH, 'r', encoding='utf-8') as f:
+        data = json.load(f)
 
-        # --- 2. 静止画現像 (Step 5 / Z-Image Base) ---
-        print("[2/5] Rendering High-Precision Still (Z-Image)...")
-        # 検体名を特定
-        subject_id = Path(subject_image).stem
-        # ComfyUI APIを通じてZ-Imageモデルで現像
-        render_result = self.bridge.execute_lora_training(logic, subject_image, f"lora_{subject_id}")
-        
-        # 仮の現像パス
-        still_path = Path(f"/workspace/outputs/renders/{subject_id}_final.png")
+    # 1. 聖典からV2オブジェクトを抽出
+    protocol = data.get(script_id)
+    if not protocol:
+        print(f"⚠️  [Warning] ID: {script_id} は聖典に定義されていません。")
+        return
 
-        # --- 3. 動画執行 (Step 6 / Wan 2.2) ---
-        print("[3/5] Generating Dynamic Physics Video (Wan 2.2)...")
-        audio_params = self.video.sync_audio_to_physics("資源の定着を確認しました。報告を継続。", intensity=0.98)
-        video_payload = self.video.generate_video_payload(logic, audio_params)
-        
-        # 実際にはここでComfyUIのWan 2.2ワークフローを叩く
-        video_path = Path(f"/workspace/outputs/video/{subject_id}_dynamic.mp4")
+    detail = protocol.get("detail", "")
+    physics = protocol.get("physics", "")
+    print(f"🧠 [Thought] 翻訳完了: {detail[:50]}...")
+    print(f"⚙️  [Physics] 物理演算定数: {physics}")
 
-        # --- 4. 顔面・音声同期 (Step 6-B) ---
-        print("[4/5] Synchronizing Facial Coherence (Lip-Sync Pro)...")
-        final_video = self.lipsync.execute_sync(still_path, "tmp_audio.wav", f"H-K9_{scenario_id}")
+    # 2. 23,000行の工場（JSONワークフロー）の構築・射出
+    # ここではシンプルにプロンプトを ComfyUI API 形式でパッキング
+    workflow = {
+        "3": {
+            "class_type": "KSampler",
+            "inputs": {
+                "seed": 42, # 本来はランダム化
+                "steps": 35,
+                "cfg": 4.5,
+                "sampler_name": "dpmpp_2m_sde_gpu",
+                "scheduler": "karras",
+                "denoise": 0.42, # Z-Image 最適化値
+                "model": ["4", 0],
+                "positive": ["6", 0],
+                "negative": ["7", 0],
+                "latent_image": ["5", 0]
+            }
+        },
+        "4": {"class_type": "CheckpointLoaderSimple", "inputs": {"ckpt_name": "zimage_6b.safetensors"}},
+        "5": {"class_type": "EmptyLatentImage", "inputs": {"width": 1024, "height": 1536, "batch_size": 1}},
+        "6": {"class_type": "CLIPTextEncode", "inputs": {"text": f"{detail}, {physics}, raw photo, high quality"}},
+        "7": {"class_type": "CLIPTextEncode", "inputs": {"text": "illustration, painting, plastic skin, blurry"}},
+        "8": {"class_type": "VAEDecode", "inputs": {"samples": ["3", 0], "vae": ["4", 2]}},
+        "9": {"class_type": "SaveImage", "inputs": {"filename_prefix": f"H-K9_{script_id}", "images": ["8", 0]}}
+    }
 
-        # --- 5. 法的武装: C2PA署名 (拡張 1) ---
-        print("[5/5] Embedding C2PA Proof of Non-Existence...")
-        protected_video = self.signer.sign_content(final_video)
-
-        elapsed = time.time() - start_time
-        print(f"\n[🔥] EXECUTION COMPLETE in {elapsed:.2f}s")
-        print(f"[📦] FINAL ARCHIVE: {protected_video}")
+    try:
+        res = requests.post(COMFY_URL, json={"prompt": workflow})
+        if res.status_code == 200:
+            print(f"🔥 [Launch] 5090 Blackwell が現像を開始。Prompt ID: {res.json().get('prompt_id')}")
+        else:
+            print(f"❌ [Rejected] API Error: {res.text}")
+    except Exception as e:
+        print(f"❌ [Error] 接続失敗: {e}")
 
 if __name__ == "__main__":
-    # 執行例: ターゲット画像を放り込み、聖典のシナリオを指定
-    command_center = HK9_CentralCommand()
+    print("\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
+    print("🐺 H-K9 HEAVY OPERATION CENTER: ACTIVE")
+    print("聖典のID（例: V2_執行ログ#151_1）を入力してください。")
+    print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
     
-    # ターゲット: subject_01.jpg シナリオ: 夢の国執行#28
-    command_center.execute_full_protocol(
-        subject_image="target_subject_01.jpg", 
-        scenario_id="夢の国執行#28",
-        mod_id="改06"
-    )
+    while True:
+        cmd = input("H-K9 >> ").strip()
+        if cmd.lower() in ['exit', 'quit']:
+            break
+        if cmd.startswith("V2_"):
+            execute_h_k9_v2(cmd)
+        else:
+            print("💡 'V2_' で始まるIDを入力してください。")
