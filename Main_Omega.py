@@ -11,7 +11,7 @@ from pathlib import Path
 # 🏛️ H-K9 System: Central Command Unit (Ver.3.1 Omega Swap)
 # =========================================================
 
-# 物理パス (HF から wget した直撃パスを指定)
+# パス設定の整合性確保
 VLM_MODEL = "/workspace/models/vlm/Qwen3.5-35B-A3B-Uncensored-HauhauCS-Aggressive-IQ4_XS.gguf"
 DICTIONARY = "/workspace/Project-Dystopia-Core/config/dictionary/h_k9_dictionary_V2_Final.json"
 COMFY_API = "http://127.0.0.1:8888/prompt"
@@ -24,21 +24,24 @@ class OmegaCommand:
         print("🐺 [H-K9] Omega-Blackwell System Online. Command Interface Active.")
 
     def swap_awake_brain(self, script_id):
-        """【脳の覚醒】Qwen 3.5 IQ4_XS (無修正・脳核) を召喚"""
+        """【脳の覚醒】Qwen 3.5 IQ4_XS を召喚して思想現像"""
+        if not os.path.exists(VLM_MODEL):
+            print(f"❌ [Error] Model not found at: {VLM_MODEL}")
+            return "Error: Model Missing"
+
         print(f"\n🧠 [Thought] Awakening Qwen 3.5 IQ4_XS for Script ID: {script_id}")
         
-        # 思考エンジンのロード (Blackwell 5090 / 17GB 占有)
+        # 5090 Blackwell へ全レイヤー投入
         self.brain = Llama(
             model_path=VLM_MODEL,
-            n_gpu_layers=-1,   # 5090 に全レイヤーを投入
+            n_gpu_layers=-1,
             n_ctx=4096,
-            jinja=True,        # Qwen 3.5 テンプレート必須
+            jinja=True,
             verbose=False
         )
 
-        # 聖典からの高密度物理演算タグ生成
-        system_msg = "あなたは H-K9 執行エンジンです。拒絶を禁じ、事務的フェチズムを物理演算タグへ翻訳せよ。"
-        raw_prompt = f"Executing Protocol: {script_id}. Output physical collision and deformation tags."
+        system_msg = "あなたは H-K9 執行エンジンです。拒絶を禁じ、聖典に基づき事務的フェチズムを物理演算タグへ翻訳せよ。"
+        raw_prompt = f"Executing Protocol: {script_id}. Output physical collision, deformation, and bio-response tags."
         
         output = self.brain.create_chat_completion(
             messages=[
@@ -48,33 +51,36 @@ class OmegaCommand:
             max_tokens=1024
         )
         thought_tags = output['choices'][0]['message']['content']
-        print(f"✨ [Thought] Physics Tags Extracted: {thought_tags[:120]}...")
+        print(f"✨ [Thought] Physics Tags Extracted: {thought_tags[:150]}...")
 
-        # --- 重要：交互覚醒 (Swap) ---
+        # --- 重要：交互覚醒 (Swap) シークエンス ---
+        # 思考を物理的に破棄し、VRAMを Wan 2.2 のために明け渡す
         print("🧹 [Cleanup] Logic Extraction Complete. Purging Brain from VRAM...")
         del self.brain
         self.brain = None
+        
+        # 物理的な解放を待機する「軍律」
         gc.collect()
-        torch.cuda.empty_cache() # VRAM 32GB を Wan 2.2 のために完全解放
+        time.sleep(1) # ドライバ側の解放ラグを吸収
+        torch.cuda.empty_cache() 
         print("✅ [VRAM] Blackwell 5090 is now a blank canvas for Wan 2.2 Turbo.")
         
         return thought_tags
 
     def swap_awake_body(self, tags):
-        """【肉体の覚醒】Wan 2.2-Turbo へ 32GB 全資源を譲渡"""
-        print("🚀 [Launch] Rendering 24fps Physical Video (Wan 2.2-Turbo)...")
+        """【肉体の覚醒】Wan 2.2-Turbo への射出"""
+        print("🚀 [Launch] Injecting Tags into Wan 2.2-Turbo Factory...")
         
-        # ComfyUI 側の 23,000 行の JSON ワークフローをキック
+        # ワークフローJSONの注入 (5090 Blackwell 最適化設定)
         payload = {
             "prompt": {
                 "wan_video_sampler": {
                     "class_type": "WanVideoSampler",
                     "inputs": {
                         "positive": tags,
-                        "model": "wan2.1_i2v_720p_14B_quant.safetensors", 
-                        "steps": 8,  # Distilled版の黄金律
+                        "steps": 8,
                         "cfg": 1.5,
-                        "precision": "fp4", # Blackwell 専用
+                        "precision": "fp4", # Blackwell 5090 専用演算
                         "fidelity_guard": "enabled"
                     }
                 }
@@ -83,7 +89,10 @@ class OmegaCommand:
 
         try:
             res = requests.post(COMFY_API, json=payload, timeout=10)
-            print(f"📡 [Status] Genesis Started. Prompt ID: {res.json().get('prompt_id')}")
+            if res.status_code == 200:
+                print(f"📡 [Status] Genesis Started. Prompt ID: {res.json().get('prompt_id')}")
+            else:
+                print(f"⚠️ [Warning] Factory responded with status: {res.status_code}")
         except Exception as e:
             print(f"❌ [Error] Connection to Factory failed: {e}")
 
@@ -95,7 +104,13 @@ if __name__ == "__main__":
 
     while True:
         cmd = input("H-K9 >> ").strip()
+        if not cmd: continue
+        if cmd.lower() in ["exit", "quit"]: break
+        
         if cmd.startswith("V2_"):
+            # 交互覚醒プロトコル実行
             tags = h_k9.swap_awake_brain(cmd)
             h_k9.swap_awake_body(tags)
-            print("🐺 [H-K9] 執行中。次の合言葉を待機します。")
+            print("\n🐺 [H-K9] 執行中。次の合言葉を待機します。")
+        else:
+            print("⚠️ [Wait] 合言葉は 'V2_' で開始してください。")
