@@ -1,83 +1,92 @@
 import os
 import subprocess
 import shutil
-import time
 from pathlib import Path
+import time
 
 # =========================================================
-# 認証・知能リポジトリ情報
+# 🏛️ Project Dystopia: Genesis Ultimate Final (Omega-Blackwell)
 # =========================================================
 GITHUB_TOKEN = "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"
 GITHUB_REPO = "herorobot-boop/Project-Dystopia-Core"
 
+# 最新の Gdrive 認証プロトコル
 RCLONE_CONF = """[gdrive]
 type = drive
 client_id = 449525467106-qf2uaotmlk66di5cb6qbmj34iu04gv6b.apps.googleusercontent.com
 client_secret = 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
 scope = drive
-token = {"access_token":"ya29.a0ATkoCc4U0Vl1S0oQxtpSHTTx_sxRHE9NkZO46Y8NKdFljt1ALjSEm5HJpggFxk8z0W-2l4TyZr0J-ttquDwRmanyTSDrHpGoBrahwQCkyOkPNRlTS3RdUQXIjwq-SDvR3s1UgjG42wMwUv6lRzeU7h2WMpGBWgzny1qO5CHjZd0F-ni_RPih-AsxpFFPBJx6JH5OirgaCgYKAZoSARYSFQHGX2MiDF9ygENm8NLx_BDOfs3X0w0206","token_type":"Bearer","refresh_token":"1//0eJk0XuWWbaYjCgYIARAAGA4SNwF-L9IrLfkJqCQZH2fvLNj9Oo7CaNyCifQqDtsoHBiP1VUpZiSGZeb2qWZXpqyIcsBhPFV_Ugc","expiry":"2026-02-24T19:54:56.1288591+09:00"}
+token = {"access_token":"ya29.a0ATkoCc5uPfwemGWNxdcG7WP207hUl_unvldyPhKTmqmDO2MF0mAIQ9ojXP5RhaEZcNXOeeqLqJCgcbaTxJSy4PVA9Dr_Ky415655WrEf9c_h87ueX2GFrIl1x_e8guC5Ef6LcbXu7tOThm9BhJi96CQH_sEkUlmZP_Bn4X6E45_DqI3lkQZahLwwlEIUxjMtNnb9L2IaCgYKAc4SARYSFQHGX2MizMKudkfZnY17qJuQWMFI1g0206","token_type":"Bearer","refresh_token":"1//0ehxqw9InG0QACgYIARAAGA4SNwF-L9IrhALZhzaQ_5BKHaAK4LVoaAjIipQQxc_SbVZxthIUuNY23-z4xR26SKTdwJkcev2Ind0","expiry":"2026-03-24T12:58:51Z"}
 """
 
 def run_cmd(cmd):
-    print(f"🚀 Executing: {cmd}")
-    return subprocess.run(cmd, shell=True)
+    print(f"🚀 [H-K9] Executing: {cmd}")
+    subprocess.run(cmd, shell=True, executable='/bin/bash')
 
-def main():
-    print("🐺 [H-K9] 最終制圧シーケンス：オメガ。開始します。")
+def setup_dystopia():
+    print("🐺 [H-K9] 最終制圧シーケンス：オメガ・ブラックウェル点火。")
 
-    # 1. Rclone構成
+    # 1. 基礎インフラの徴用
+    run_cmd("apt-get update && apt-get install -y rclone tmux fuser lsof tar zstd wget git")
+    # Blackwell 5090 最適化ビルド（GGML_CUDA_ENABLE）
+    run_cmd("pip install --upgrade pip")
+    run_cmd("CMAKE_ARGS='-DGGML_CUDA_ENABLE=on' pip install llama-cpp-python gguf sage-attention requests websocket-client pandas")
+
+    # 2. 兵站の搬入 (Gdrive -> NVMe 物理コピー)
     config_path = Path("~/.config/rclone/rclone.conf").expanduser()
     config_path.parent.mkdir(parents=True, exist_ok=True)
     config_path.write_text(RCLONE_CONF)
 
-    # 2. 本体とマネージャーの配備
-    comfy_dir = "/workspace/ComfyUI"
-    if not os.path.exists(comfy_dir):
-        run_cmd(f"git clone https://github.com/comfyanonymous/ComfyUI.git {comfy_dir}")
-        run_cmd(f"git clone https://github.com/ltdrdata/ComfyUI-Manager.git {comfy_dir}/custom_nodes/ComfyUI-Manager")
-        run_cmd(f"pip install -r {comfy_dir}/requirements.txt")
+    vlm_path = "/workspace/models/vlm"
+    os.makedirs(vlm_path, exist_ok=True)
+    os.makedirs("/workspace/models/unet", exist_ok=True)
+    os.makedirs("/workspace/models/checkpoints", exist_ok=True)
 
-    # 3. 33GB資産の同期 (重複スキップ)
-    print("🚚 モデル資産を完全同期中...")
-    run_cmd("rclone copy gdrive:Project-Dystopia/models /workspace/models --size-only --progress")
+    print("🚚 兵站：最新モデルを直接射出（Qwen3.5 IQ4_XS & Wan 2.2）...")
+    # HF直撃URLによる欠損回避
+    hf_base = "https://huggingface.co/HauhauCS/Qwen3.5-35B-A3B-Uncensored-HauhauCS-Aggressive/resolve/main/"
+    hf_models = [
+        "Qwen3.5-35B-A3B-Uncensored-HauhauCS-Aggressive-IQ4_XS.gguf",
+        "mmproj-Qwen3.5-35B-A3B-Uncensored-HauhauCS-Aggressive-f16.gguf"
+    ]
+    for m in hf_models:
+        if not os.path.exists(f"{vlm_path}/{m}"):
+            run_cmd(f"wget -c {hf_base}{m} -P {vlm_path}/")
 
-    # 4. 知能(GitHub)の同期
-    core_dir = "/workspace/Project-Dystopia-Core"
-    if os.path.exists(core_dir): shutil.rmtree(core_dir)
-    run_cmd(f"git clone https://{GITHUB_TOKEN}@github.com/{GITHUB_REPO}.git {core_dir}")
-    run_cmd(f"pip install -r {core_dir}/requirements.txt", ignore_error=True)
+    # GdriveからNVMeへ物理同期（FUSEエラー回避）
+    run_cmd("rclone copy gdrive:Project_Dystopia/Models /workspace/models --size-only -P --transfers 8")
 
-    # 5. モデルパス設定の強制注入
-    # ComfyUIが起動時に必ず読み込む場所に配置します
-    yaml_dest = f"{comfy_dir}/extra_model_paths.yaml"
+    # 3. 司令塔（知能層）の同期
+    auth_url = f"https://{GITHUB_TOKEN}@github.com/{GITHUB_REPO}.git"
+    run_cmd(f"rm -rf /workspace/Project-Dystopia-Core && git clone {auth_url} /workspace/Project-Dystopia-Core")
+
+    # 4. 点火用 YAML 生成
     yaml_content = """comfyui:
     base_path: /workspace/models
     checkpoints: checkpoints/
-    loras: loras/
-    vae: vae/
     clip: clip/
     unet: unet/
+    vlm: vlm/
+    loras: loras/
 """
-    with open(yaml_dest, "w") as f:
-        f.write(yaml_content)
+    Path("/workspace/ComfyUI/extra_model_paths.yaml").write_text(yaml_content)
 
-    # 6. ポート8888の浄化
-    print("🧹 Jupyterをパージし、Port 8888を奪取します...")
-    os.system("fuser -k 8888/tcp || kill $(lsof -t -i:8888)")
-    time.sleep(5)
+    # 5. Jupyter パージ (Port 8888 奪取)
+    run_cmd("fuser -k 8888/tcp || true")
+    time.sleep(5) 
 
-    # 7. 最終起動 (プロセスをComfyUIに置換)
-    os.chdir(comfy_dir)
-    print("\n✅ [H-K9] 全工程完了。Blackwell 5090、点火。")
-    print("通信切断後、1分待ってから RunPod ダッシュボードのリンクを開いてください。")
-    
-    # スクリプト自体を ComfyUI に変身させ、永続化する
-    os.execlp("python3", "python3", "main.py", 
-              "--listen", "0.0.0.0", 
-              "--port", "8888", 
-              "--highvram", 
-              "--fp8_e4m3fn-unet", 
-              "--bf16-vae")
+    # 6. Blackwell 5090 司令室 (tmux) の構築
+    launch_cmd = (
+        "tmux new-session -d -s h_k9 'cd /workspace/ComfyUI && "
+        "export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True && "
+        "python3 main.py --listen 0.0.0.0 --port 8888 --nvfp4 --bf16-storage --weight-streaming "
+        "--extra-model-paths-config extra_model_paths.yaml'; "
+        "tmux split-window -h -t h_k9 'cd /workspace/Project-Dystopia-Core && python3 Main.py'; "
+        "tmux attach-session -t h_k9"
+    )
+
+    print("\n✅ [H-K9] 全神経接続完了。tmux 司令室（h_k9）へ移行します。")
+    os.system(launch_cmd)
 
 if __name__ == "__main__":
-    main()
+    setup_dystopia()
