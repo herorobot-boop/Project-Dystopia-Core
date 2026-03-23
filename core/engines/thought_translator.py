@@ -4,13 +4,14 @@ from pathlib import Path
 
 class ThoughtTranslator:
     def __init__(self, dict_path="config/dictionary/h_k9_dictionary_V2_Final.json"):
-        self.base_dir = Path(__file__).resolve().parents[13]
+        # プロジェクトルートからの相対パスを特定
+        self.base_dir = Path(__file__).resolve().parents[2]
         self.dict_full_path = self.base_dir / dict_path
         self.dictionary = {}
         self._load_dictionary()
 
     def _load_dictionary(self):
-        """聖典V2（4000行）をロード"""
+        """聖典V2（全5000件規模）をロード"""
         if not self.dict_full_path.exists():
             print(f"⚠️ [Warning] Dictionary not found at {self.dict_full_path}")
             return
@@ -19,26 +20,35 @@ class ThoughtTranslator:
         print(f"📖 [H-K9] Sacred Dictionary Loaded. Size: {len(self.dictionary)} entries.")
 
     def translate(self, command):
-        """合言葉（例：V2_執行ログ#151_1）を物理タグへ変換"""
+        """合言葉（V2_XXX）を物理演算タグへ変換"""
         entry = self.dictionary.get(command)
         if not entry:
-            return f"Unknown Protocol: {command}"
+            # 部分一致検索（全角半角やIDの揺れを吸収）
+            clean_cmd = command.replace("#", "").replace("_", "").lower()
+            for k, v in self.dictionary.items():
+                if clean_cmd in k.replace("#", "").replace("_", "").lower():
+                    entry = v
+                    break
+        
+        if not entry:
+            return f"Unknown Protocol: {command}. Defaulting to generic high-fidelity logistics."
 
-        detail = entry.get("detail", "")
-        physics = entry.get("physics", "standard_physics")
+        detail = entry.get("detail", str(entry))
+        physics = entry.get("physics", "standard_physics, collision_detection")
 
-        # 物理演算数値の自動抽出（1.4などの重みを強調プロンプトへ変換） [14, 15]
+        # 物理演算数値の自動抽出（強度の強調）
         weight_match = re.search(r"\((\d+\.\d+)\)", detail)
         intensity = weight_match.group(1) if weight_match else "1.3"
 
-        # Qwen3.5 への流し込み用プロンプト構築 [12]
+        # Qwen3.5 への流し込み用プロンプト構築
         system_instruction = (
-            f"Convert to high-density physics tags: {detail}, {physics}. "
-            f"Focus on: (extremely detailed skin texture:{intensity}), (subsurface scattering:1.2), "
-            f"(tissue displacement:1.3), 30 denier translucency."
+            f"Convert the following to high-density physics tags: {detail}, {physics}. "
+            f"Mandatory requirements: (extremely detailed skin texture:{intensity}), "
+            f"(subsurface scattering:1.2), (tissue displacement:1.3), physically_based_rendering."
         )
         return system_instruction
 
 if __name__ == "__main__":
     translator = ThoughtTranslator()
+    # テスト：聖典の合言葉を入力
     print(translator.translate("V2_改09_夢の国執行#28"))
