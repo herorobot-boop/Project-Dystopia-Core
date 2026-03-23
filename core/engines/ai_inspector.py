@@ -1,64 +1,99 @@
 import os
-import random
 import time
+import json
+import torch
+import gc
 from pathlib import Path
+from PIL import Image
+from transformers import Qwen2VLForConditionalGeneration, AutoProcessor
+
+# =========================================================
+# H-K9 Core: AI Inspector v1.0 (Omega-Blackwell)
+# =========================================================
 
 class AIInspector:
-    def __init__(self, threshold=0.8, max_retries=3):
-        self.threshold = threshold
-        self.max_retries = max_retries
+    def __init__(self, output_dir="/workspace/ComfyUI/output"):
+        self.output_dir = Path(output_dir)
+        self.model_id = "Qwen/Qwen2-VL-7B-Instruct" # 5090なら7Bは余裕で動く
+        self.device = "cuda"
+        self.model = None
+        self.processor = None
+        self.threshold = 0.85 # SQUISH（資源定着率）の合格基準
 
-    def inspect(self, image_path, original_command):
-        """
-        画像の合否判定。現在は擬似判定だが、将来的にLlava/Moondreamを接続。
-        """
-        print(f"🧐 [INSPECT] 画像を解析中: {image_path}")
-        
-        if not os.path.exists(image_path):
-            return False, "File_Missing: 生成物が確認できません。"
+    def _load_vlm(self):
+        """検品用の『審美眼』を VRAM へロード"""
+        print("👁️ [Inspector] Awakening Qwen2-VL (Visual Audit Mode)...")
+        self.model = Qwen2VLForConditionalGeneration.from_pretrained(
+            self.model_id, torch_dtype=torch.bfloat16, device_map="auto"
+        )
+        self.processor = AutoProcessor.from_pretrained(self.model_id)
 
-        # シミュレーション判定ロジック
-        # 初回はあえて厳しめに判定し、リトライの動きを確認できるようにします
-        score = random.uniform(0.5, 1.0)
-        
-        if score >= self.threshold:
-            return True, "Protocol satisfied: Resource concentration and squish confirmed."
-        else:
-            return False, "Protocol violation: Insufficient resource coating or depth."
+    def _unload_vlm(self):
+        """検品終了後、即座に VRAM を解放（交互覚醒の鉄則）"""
+        print("🧹 [Inspector] Purging Visual Brain...")
+        del self.model
+        del self.processor
+        gc.collect()
+        torch.cuda.empty_cache()
 
-    def execute_with_retry(self, engine, command):
-        """
-        思想エンジンと連携し、合格するまでループさせる中枢メソッド
-        """
-        current_command = command
+    def inspect_latest(self):
+        """最新の生成ファイルを視認し、スコアリングを実行"""
+        files = sorted(self.output_dir.glob("*.png"), key=os.path.getmtime)
+        if not files:
+            return None
         
-        for i in range(self.max_retries):
-            print(f"🚀 [LOOP] 執行試行 {i+1}/{self.max_retries}")
-            
-            # 1. 思想エンジンでプロンプト生成とComfyUIへの射出
-            # (ここではengineの生成メソッドを呼び出す想定)
-            thought = engine.generate_thought(current_command)
-            
-            # 2. 生成完了まで待機 (仮に image_path が返ってくるとする)
-            # 実際にはComfyUIのAPIから出力パスを取得します
-            image_path = f"/workspace/outputs/images/tmp_gen_{int(time.time())}.png"
-            
-            # 3. 検品
-            success, reason = self.inspect(image_path, current_command)
-            
-            if success:
-                print(f"✨ [PASS] 執行完了: {reason}")
-                return image_path
+        latest_file = files[-1]
+        print(f"🧐 [Audit] Inspecting: {latest_file.name}")
+
+        self._load_vlm()
+        image = Image.open(latest_file).convert("RGB")
+        
+        # 検品用プロンプト：聖典の要求（資源定着、解剖学的正確性）を確認
+        prompt = (
+            "Analyze this image. Is the 'viscous fluid' correctly fixed on the target subject? "
+            "Rate the 'Resource Squish (SQUISH)' from 0.0 to 1.0. "
+            "Also check for anatomical consistency. Output only a JSON with 'squish_score' and 'consistency_score'."
+        )
+        
+        messages = [{"role": "user", "content": [{"type": "image", "image": image}, {"type": "text", "text": prompt}]}]
+        text = self.processor.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
+        inputs = self.processor(text=[text], images=[image], padding=True, return_tensors="pt").to(self.device)
+        
+        output_ids = self.model.generate(**inputs, max_new_tokens=128)
+        response = self.processor.batch_decode(output_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False)[0]
+        
+        self._unload_vlm()
+
+        try:
+            # JSON部分のみ抽出
+            json_str = response.split("assistant\n")[-1]
+            score_data = json.loads(json_str)
+            return score_data
+        except:
+            print(f"⚠️ [Warning] Failed to parse score. Raw response: {response}")
+            return {"squish_score": 0.5, "consistency_score": 0.5}
+
+    def run_audit_loop(self, commander, script_id):
+        """合格するまで再送を繰り返す『無限執行ループ』"""
+        while True:
+            # Main_Omega.py の射出を待機（ここではシミュレート）
+            print("⏳ [Waiting] Waiting for generation to complete...")
+            time.sleep(60) # 生成時間を考慮
+
+            score = self.inspect_latest()
+            if not score: continue
+
+            print(f"📊 [Result] SQUISH: {score['squish_score']}, Consistency: {score['consistency_score']}")
+
+            if score['squish_score'] >= self.threshold:
+                print("🏁 [Success] Quality Standard Met. Moving to Gdrive.")
+                # ここで Gdrive への移動コマンドなどを実行
+                break
             else:
-                print(f"⚠️ [FAIL] 不合格: {reason}")
-                # 4. プロンプトの汚染強度を自動強化して次へ
-                current_command += ", (extreme detail, emphasis on fluid and skin displacement:1.3)"
-                time.sleep(1) # インターバル
-
-        print("❌ [LIMIT] 最大リトライ数に達しました。")
-        return None
+                print(f"♻️ [Retry] Score {score['squish_score']} below threshold. Re-executing sequence...")
+                commander.execute_sequence(script_id) # 再射出
 
 if __name__ == "__main__":
-    # 単体テスト用
+    # Main_Omega の DystopiaCommander と連携
     inspector = AIInspector()
-    print(inspector.inspect("test.png", "部活#10"))
+    # inspector.run_audit_loop(commander, "V2_執行ログ#151_1")
