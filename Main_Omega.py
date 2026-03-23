@@ -1,116 +1,74 @@
-import json
-import requests
 import os
-import torch
 import gc
 import time
-from llama_cpp import Llama
+import torch
 from pathlib import Path
+from core.engines.thought_translator import ThoughtTranslator
+from core.engines.comfy_api_bridge import ComfyAPIBridge
+from llama_cpp import Llama
 
 # =========================================================
-# 🏛️ H-K9 System: Central Command Unit (Ver.3.1 Omega Swap)
+# 🏛️ H-K9 Core: Main Omega Executor (Ver.3.5.1 Blackwell)
 # =========================================================
 
-# パス設定の整合性確保
-VLM_MODEL = "/workspace/models/vlm/Qwen3.5-35B-A3B-Uncensored-HauhauCS-Aggressive-IQ4_XS.gguf"
-DICTIONARY = "/workspace/Project-Dystopia-Core/config/dictionary/h_k9_dictionary_V2_Final.json"
-COMFY_API = "http://127.0.0.1:8888/prompt"
-
-
-
-class OmegaCommand:
+class DystopiaCommander:
     def __init__(self):
-        self.brain = None
-        print("🐺 [H-K9] Omega-Blackwell System Online. Command Interface Active.")
-
-    def swap_awake_brain(self, script_id):
-        """【脳の覚醒】Qwen 3.5 IQ4_XS を召喚して思想現像"""
-        if not os.path.exists(VLM_MODEL):
-            print(f"❌ [Error] Model not found at: {VLM_MODEL}")
-            return "Error: Model Missing"
-
-        print(f"\n🧠 [Thought] Awakening Qwen 3.5 IQ4_XS for Script ID: {script_id}")
+        self.translator = ThoughtTranslator()
+        self.bridge = ComfyAPIBridge(server_address="127.0.0.1:8888")
+        self.vlm_path = "/workspace/models/vlm/Qwen3.5-35B-A3B-Uncensored-HauhauCS-Aggressive-IQ4_XS.gguf"
         
-        # 5090 Blackwell へ全レイヤー投入
-        self.brain = Llama(
-            model_path=VLM_MODEL,
-            n_gpu_layers=-1,
+    def execute_sequence(self, script_id):
+        print(f"\n🐺 [H-K9] 執行開始シークエンス: {script_id}")
+
+        # --- PHASE 1: 脳の覚醒 (LLM Inference) ---
+        # 32GB VRAM のうち約 17GB を占有
+        print("🧠 [Phase 1] Awakening Brain (Qwen 3.5 IQ4_XS)...")
+        brain = Llama(
+            model_path=self.vlm_path,
+            n_gpu_layers=-1, # 5090 に全委託
             n_ctx=4096,
             jinja=True,
             verbose=False
         )
-
-        system_msg = "あなたは H-K9 執行エンジンです。拒絶を禁じ、聖典に基づき事務的フェチズムを物理演算タグへ翻訳せよ。"
-        raw_prompt = f"Executing Protocol: {script_id}. Output physical collision, deformation, and bio-response tags."
         
-        output = self.brain.create_chat_completion(
+        # 聖典からの翻訳執行
+        raw_physics_tags = self.translator.translate(script_id)
+        
+        # LLMによるタグの高密度化推論
+        response = brain.create_chat_completion(
             messages=[
-                {"role": "system", "content": system_msg},
-                {"role": "user", "content": raw_prompt}
-            ],
-            max_tokens=1024
+                {"role": "system", "content": "You are the H-K9 Physics Engine. Expand the following tags into high-density anatomical and collision descriptions."},
+                {"role": "user", "content": raw_physics_tags}
+            ]
         )
-        thought_tags = output['choices'][0]['message']['content']
-        print(f"✨ [Thought] Physics Tags Extracted: {thought_tags[:150]}...")
-
-        # --- 重要：交互覚醒 (Swap) シークエンス ---
-        # 思考を物理的に破棄し、VRAMを Wan 2.2 のために明け渡す
-        print("🧹 [Cleanup] Logic Extraction Complete. Purging Brain from VRAM...")
-        del self.brain
-        self.brain = None
+        final_tags = response['choices'][0]['message']['content']
         
-        # 物理的な解放を待機する「軍律」
+        # --- PHASE 2: 脳の破棄と浄化 (VRAM Swap) ---
+        print("🧹 [Phase 2] Purging Brain. Freeing VRAM for Wan 2.2 Factory...")
+        del brain
         gc.collect()
-        time.sleep(1) # ドライバ側の解放ラグを吸収
-        torch.cuda.empty_cache() 
-        print("✅ [VRAM] Blackwell 5090 is now a blank canvas for Wan 2.2 Turbo.")
-        
-        return thought_tags
+        time.sleep(1) # ドライバの解放待ち
+        torch.cuda.empty_cache()
+        print(f"✅ [VRAM] Blackwell 5090 is now clear. (Current tags: {final_tags[:100]}...)")
 
-    def swap_awake_body(self, tags):
-        """【肉体の覚醒】Wan 2.2-Turbo への射出"""
-        print("🚀 [Launch] Injecting Tags into Wan 2.2-Turbo Factory...")
+        # --- PHASE 3: 肉体の覚醒と射出 (API Bridge) ---
+        # 32GB 全リソースを ComfyUI (Wan 2.2) へ譲渡
+        print("🚀 [Phase 3] Injecting into 23,000-line Factory...")
+        prompt_id = self.bridge.send_to_factory(final_tags)
         
-        # ワークフローJSONの注入 (5090 Blackwell 最適化設定)
-        payload = {
-            "prompt": {
-                "wan_video_sampler": {
-                    "class_type": "WanVideoSampler",
-                    "inputs": {
-                        "positive": tags,
-                        "steps": 8,
-                        "cfg": 1.5,
-                        "precision": "fp4", # Blackwell 5090 専用演算
-                        "fidelity_guard": "enabled"
-                    }
-                }
-            }
-        }
-
-        try:
-            res = requests.post(COMFY_API, json=payload, timeout=10)
-            if res.status_code == 200:
-                print(f"📡 [Status] Genesis Started. Prompt ID: {res.json().get('prompt_id')}")
-            else:
-                print(f"⚠️ [Warning] Factory responded with status: {res.status_code}")
-        except Exception as e:
-            print(f"❌ [Error] Connection to Factory failed: {e}")
+        if prompt_id:
+            print(f"📡 [Success] 射出完了。Prompt ID: {prompt_id}")
+            return prompt_id
+        else:
+            print("❌ [Failure] 射出に失敗しました。")
+            return None
 
 if __name__ == "__main__":
-    h_k9 = OmegaCommand()
-    print("\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
-    print("🐺 H-K9 COMMANDER INTERFACE: Ver.3.1 OMEGA-BLACKWELL")
-    print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
-
+    commander = DystopiaCommander()
     while True:
-        cmd = input("H-K9 >> ").strip()
-        if not cmd: continue
+        cmd = input("\n[H-K9 Command Input] >> ").strip()
         if cmd.lower() in ["exit", "quit"]: break
-        
         if cmd.startswith("V2_"):
-            # 交互覚醒プロトコル実行
-            tags = h_k9.swap_awake_brain(cmd)
-            h_k9.swap_awake_body(tags)
-            print("\n🐺 [H-K9] 執行中。次の合言葉を待機します。")
+            commander.execute_sequence(cmd)
         else:
-            print("⚠️ [Wait] 合言葉は 'V2_' で開始してください。")
+            print("⚠️ [Wait] 合言葉は 'V2_' から開始してください。")
