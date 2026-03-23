@@ -29,9 +29,9 @@ def setup_omega():
 
     # --- Step 1: 基礎インフラの徴用 ---
     run_cmd("apt-get update && apt-get install -y rclone tmux fuser zstd wget git")
-    # Blackwell 5090 最適化版の依存関係
     run_cmd("pip install --upgrade pip")
-    run_cmd("CMAKE_ARGS='-DGGML_CUDA=on' pip install llama-cpp-python gguf sage-attention requests websocket-client")
+    # Blackwell 5090 最適化ビルド: 最新の GGML_CUDA_ENABLE=on を適用
+    run_cmd("CMAKE_ARGS='-DGGML_CUDA_ENABLE=on' pip install llama-cpp-python gguf sage-attention requests websocket-client")
 
     # --- Step 2: 兵站（モデル）のハイブリッド搬入プロトコル ---
     config_path = Path("~/.config/rclone/rclone.conf").expanduser()
@@ -52,7 +52,6 @@ def setup_omega():
         "mmproj-Qwen3.5-35B-A3B-Uncensored-HauhauCS-Aggressive-f16.gguf"
     ]
     for m in hf_models:
-        # 既存チェックを入れて二重DLを防止
         if not os.path.exists(f"{vlm_path}/{m}"):
             run_cmd(f"wget -c {hf_base}{m} -P {vlm_path}/")
 
@@ -71,7 +70,7 @@ def setup_omega():
     run_cmd("fuser -k 8888/tcp || true")
     time.sleep(2)
 
-    # tmux セッション構築 (FP4演算を明示的に強制)
+    # tmux セッション構築 (Blackwell 専用フラグを全投入)
     launch_cmd = (
         "tmux new-session -d -s h_k9_omega 'cd /workspace/ComfyUI && "
         "export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True && "
