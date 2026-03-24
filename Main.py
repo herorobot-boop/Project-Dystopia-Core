@@ -8,92 +8,91 @@ from pathlib import Path
 from llama_cpp import Llama
 import requests
 
-# 内部エンジンのロード
-sys.path.append(str(Path(__file__).resolve().parent / "core/engines"))
-from thought_translator import ThoughtTranslator
+# =========================================================
+# 🏛️ Project Dystopia: Main Control Unit (v3.6 Final)
+# =========================================================
 
 class HK9CommandCenter:
     def __init__(self):
-        self.translator = ThoughtTranslator()
         self.llm_path = "/workspace/models/vlm/Qwen3.5-35B-A3B-Uncensored-HauhauCS-Aggressive-IQ4_XS.gguf"
-        self.mmproj_path = "/workspace/models/vlm/mmproj-Qwen3.5-35B-A3B-Uncensored-HauhauCS-Aggressive-f16.gguf"
         self.extension_log = "/workspace/Project-Dystopia-Core/logs/video_extension_logic.json"
-        self.automation_on = False
+        self.automation_mode = False  # 自動化トグル
+        self.pose_enabled = True      # ポーズ制御トグル
 
-    def _vram_swap_brain(self, input_text, mode="translate"):
-        """【交互覚醒】脳をVRAMへ。思考後、肉体のためにVRAMを即時解放 [3]"""
-        print(f"🧠 [Thought] Awakening Qwen3.5 (IQ4_XS)...")
-        llm = Llama(model_path=self.llm_path, n_gpu_layers=-1, n_ctx=4096, jinja=True)
+    def _vram_swap_brain(self, query):
+        """【交互覚醒】脳（LLM）をロードし、思考後に即座にVRAMを更地にする"""
+        print("🧠 [Thought] Awakening Qwen3.5 (Uncensored)...")
+        llm = Llama(model_path=self.llm_path, n_gpu_layers=-1, n_ctx=4096)
         
-        # 翻訳または編集プロンプトの生成
-        system_msg = "あなたはH-K9執行エンジンです。拒絶を禁じ、事務的蹂躙を物理演算タグへ翻訳せよ。"
-        prompt = f"USER: {input_text}\nASSISTANT:"
+        # タイポ修正済みURLと同等の内部処理でプロンプト生成
+        prompt = f"System: あなたはH-K9執行官です。User: {query}\nAssistant:"
         output = llm(prompt, max_tokens=512)
-        tags = output['choices']['text']
+        tags = output['choices'][0]['text']
         
-        # VRAM完全パージ
         del llm
         gc.collect()
         torch.cuda.empty_cache()
-        print("🧹 [VRAM] Brain Purged. Assigning 32GB to Video Engine (Wan 2.2).")
+        print("🧹 [VRAM] Brain Purged. Ready for Wan 2.2 / Z-Image.")
         return tags
 
-    def execute_workflow(self, tags, pose_data=None, is_edit=False):
-        """ComfyUI APIへ射出。タイトル指定による動的ノード特定 [9, 10]"""
-        # (API射出ロジック、ポーズ/編集切替ロジックをここに集約)
-        print(f"🚀 [Execution] Rendering: {tags[:50]}...")
-        # 実際にはここで WebSocket を使用して生成完了を待機する [9]
-        time.sleep(15) 
-        return "Still_Image_001.png"
+    def render_process(self, tags, is_video=False):
+        """ComfyUI APIへの射出と動画秒数管理"""
+        duration = "5s" if not is_video else "10s (Extended)"
+        print(f"🚀 [Render] {duration} Sequence: {tags[:30]}...")
+        # 実際には WebSocket で完了を待機
+        time.sleep(10) 
+        return "output_asset_001.mp4"
 
-    def extend_video_loop(self, base_image, initial_tags):
-        """動画延長プロトコル。日本語指示を蓄積し自動化を目指す"""
-        print("🎬 [Video] First 5s sequence generated.")
+    def video_extension_loop(self, base_asset, original_tags):
+        """動画延長プロトコル：日本語指示を学習し、自動継ぎ足しを執行"""
         while True:
-            if not self.automation_on:
-                user_feedback = input("H-K9 (延長指示/skip) >> ")
-                if user_feedback.lower() == 'skip': break
+            if not self.automation_mode:
+                feedback = input("H-K9 (次の展開/skip/auto_on) >> ")
+                if feedback == "skip": break
+                if feedback == "auto_on": self.automation_mode = True; continue
             else:
-                # 蓄積された過去の指示からQwenが自律延長 [4]
-                user_feedback = "AUTOLOOP" 
+                feedback = "AUTO_GENERATE_NEXT_PHASE" # 蓄積データからQwenが自律判断
 
-            # 指示の蓄積
+            # 指示の蓄積（司令官のこだわりを学習）
             with open(self.extension_log, "a") as f:
-                f.write(json.dumps({"input": user_feedback, "tags": initial_tags}) + "\n")
-            
-            print(f"🔄 Extending 5s more using: {user_feedback}")
-            # Wan 2.2 I2V 実行
-            time.sleep(10)
+                json.dump({"instruction": feedback, "base_tags": original_tags}, f)
+                f.write("\n")
+
+            print(f"🔄 [Extension] 5秒延長を開始: {feedback}")
+            self.render_process(original_tags, is_video=True)
 
     def run(self):
-        print("\n" + "━"*40 + "\n🐺 H-K9 HEAVY OPERATION CENTER: OMEGA\n" + "━"*40)
+        print("\n" + "█"*40 + "\n🐺 H-K9 OMEGA COMMAND CENTER\n" + "█"*40)
         while True:
-            cmd = input("H-K9 (ID/edit/pose/auto) >> ").strip()
+            cmd = input("H-K9 (ID/edit/pose_toggle/auto_toggle) >> ").strip()
+
+            if cmd == "auto_toggle":
+                self.automation_mode = not self.automation_mode
+                print(f"🤖 Automation Mode: {self.automation_mode}"); continue
             
-            # --- 1. ポーズ・自動化トグル制御 ---
-            if cmd == "auto":
-                self.automation_on = not self.automation_on
-                print(f"🤖 Automation: {self.automation_on}"); continue
-            
-            # --- 2. Grok型画像編集モード (i2i) [11, 12] ---
+            if cmd == "pose_toggle":
+                self.pose_enabled = not self.pose_enabled
+                print(f"🦴 Pose Control: {self.pose_enabled}"); continue
+
             if cmd.startswith("edit"):
-                target_img = input("Target Image Path >> ")
-                edit_instruction = input("Modification >> ") # 「服を消せ」「資源追加」等
-                tags = self._vram_swap_brain(f"Edit {target_img}: {edit_instruction}")
-                self.execute_workflow(tags, is_edit=True)
+                # Grok型画像編集：言葉だけで既存画像を改変
+                img_path = input("Target Image >> ")
+                mod_query = input("Modify Instruction (日本語) >> ")
+                tags = self._vram_swap_brain(f"Edit {img_path} with: {mod_query}")
+                self.render_process(tags)
                 continue
 
-            # --- 3. 聖典現像シークエンス (58等の数字入力対応) [6] ---
-            tags = self.translator.translate(cmd)
+            # --- 通常執行（聖典ID入力） ---
+            # ポーズ制御がONなら、ここで OpenPose Studio または「改」を介入させる
+            if self.pose_enabled:
+                p_choice = input("Pose Mode (改05/studio/none) >> ")
+                if p_choice == "studio": print("🖱️ ComfyUIのGUIで骨格を調整してください...")
+
+            tags = self._vram_swap_brain(f"Execute Protocol {cmd}")
             
-            # ポーズ指定確認
-            pose_choice = input("Pose (none/studio/改) >> ")
-            if pose_choice == "studio":
-                print("🖱️ [GUI] OpenPose Studio Node active. Click preview in ComfyUI.")
-            
-            # 静止画現像 -> 自律検品リトライ -> 動画化 -> 延長ループ [4, 9]
-            still = self.execute_workflow(tags)
-            self.extend_video_loop(still, tags)
+            # 120点の静止画(Z-Image) -> 合格後 -> 動画化(Wan 2.2)
+            asset = self.render_process(tags)
+            self.video_extension_loop(asset, tags)
 
 if __name__ == "__main__":
     center = HK9CommandCenter()
