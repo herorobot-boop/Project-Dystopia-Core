@@ -3,7 +3,7 @@ import subprocess
 from pathlib import Path
 
 # =========================================================
-# 🏛️ Project Dystopia: Genesis V3.6 (Final Physical Link)
+# 🏛️ Project Dystopia: Genesis V3.6 (Final Physical Link - Fix)
 # =========================================================
 
 def run_cmd(cmd):
@@ -15,12 +15,12 @@ def setup_omega_logistics():
     print("🐺 [H-K9] 最終兵站確保シーケンス：物理結合プロトコル発動。")
 
     # 1. ディレクトリ構造の強制定義（ComfyUI標準準拠）
-    base_path = Path("/workspace/ComfyUI/models")
-    vlm_path = Path("/workspace/models/vlm")
-    diffusion_path = base_path / "diffusion_models"
-    clip_path = base_path / "clip"
+    comfy_models = Path("/workspace/ComfyUI/models")
+    vlm_path = Path("/workspace/models/vlm") # 思考・検品用
+    diffusion_path = comfy_models / "diffusion_models"
+    t5_path = comfy_models / "t5" # Wan2.1標準のT5配置先
     
-    for p in [vlm_path, diffusion_path, clip_path]:
+    for p in [vlm_path, diffusion_path, t5_path]:
         p.mkdir(parents=True, exist_ok=True)
 
     # --- PHASE 1: 脳と眼 (LLM/VLM) ---
@@ -34,36 +34,35 @@ def setup_omega_logistics():
 
     # --- PHASE 2: 肉体 (Wan 2.1 Engine) ---
     print("🎬 徴用：Wan 2.1 T2V (City96 Route - GGUF)")
-    # Blackwell 5090 の VRAM 管理に最適な Q4_K_M を指定
     wan_url = "https://huggingface.co/city96/Wan2.1-T2V-14B-gguf/resolve/main/wan2.1-t2v-14b-Q4_K_M.gguf"
     run_cmd(f"wget -c '{wan_url}' -O {diffusion_path}/wan2.1-t2v-14b-Q4_K_M.gguf")
 
-    # --- PHASE 3: 翻訳補助 (T5 Encoder 物理結合) ---
-    print("📑 徴用：T5-v1_1-XXL (Zai-org Route / Physical Merge)")
+    # --- PHASE 3: 翻訳補助 (T5 Encoder 物理配置) ---
+    print("📑 徴用：T5-v1_1-XXL (Zai-org Route / Structural Optimization)")
     t5_url_base = "https://huggingface.co/zai-org/CogVideoX1.5-5B-SAT/resolve/main/t5-v1_1-xxl/"
     
-    # 一時的な保存先
-    tmp_t5_1 = clip_path / "t5_part1.tmp"
-    tmp_t5_2 = clip_path / "t5_part2.tmp"
-    final_t5 = clip_path / "t5xxl_fp16.safetensors"
-
-    if not final_t5.exists():
-        run_cmd(f"wget -c '{t5_url_base}model-00001-of-00002.safetensors' -O {tmp_t5_1}")
-        run_cmd(f"wget -c '{t5_url_base}model-00002-of-00002.safetensors' -O {tmp_t5_2}")
-        
-        print("🛠️ [Merge] T5-v1_1-XXL の物理結合を開始...")
-        # safetensorsの分割ファイルを1つに結合（注: 単純結合が不可能な場合はディレクトリごとロードさせる設定に変更）
-        # ここではComfyUIがディレクトリ指定でロードできるよう、サブフォルダを作成して配置
-        t5_dir = clip_path / "t5xxl_v11"
-        t5_dir.mkdir(exist_ok=True)
-        run_cmd(f"mv {tmp_t5_1} {t5_dir}/model-00001-of-00002.safetensors")
-        run_cmd(f"mv {tmp_t5_2} {t5_dir}/model-00002-of-00002.safetensors")
-        print("✅ [Merge] T5-v1_1-XXL をディレクトリ形式で正常配備。")
+    # 分割ファイルは ComfyUI が自動マージする場合もあるが、
+    # 確実性を期して「1つのフォルダに標準名称」で配置
+    t5_target_dir = t5_path / "t5xxl_v11"
+    t5_target_dir.mkdir(exist_ok=True)
+    
+    # 1枚目
+    run_cmd(f"wget -c '{t5_url_base}model-00001-of-00002.safetensors' -O {t5_target_dir}/model-00001-of-00002.safetensors")
+    # 2枚目
+    run_cmd(f"wget -c '{t5_url_base}model-00002-of-00002.safetensors' -O {t5_target_dir}/model-00002-of-00002.safetensors")
+    
+    # ComfyUIが単一ファイルとして期待する場合の予備リンク (catコマンドによる物理結合)
+    # 32GB VRAM環境では fp16 のまま結合したほうが精度が高いため、catで結合を試みる
+    combined_t5 = t5_path / "t5xxl_fp16.safetensors"
+    if not combined_t5.exists():
+        print("🛠️ [Merge] T5-v1_1-XXL を単一 safetensors に物理結合中...")
+        run_cmd(f"cat {t5_target_dir}/model-00001-of-00002.safetensors {t5_target_dir}/model-00002-of-00002.safetensors > {combined_t5}")
+        print("✅ [Merge] 物理結合完了。")
 
     print("\n" + "█"*60)
-    print("✅ [H-K9] 兵站搬入・物理結合完了。")
-    print(f"   LOCATION: {base_path}")
-    print("   STATUS: BLACKWELL 5090 IS READY FOR IGNITION.")
+    print("✅ [H-K9] 全兵站、Blackwell 5090 への装填を完了。")
+    print(f"   VRAM TARGET: 32GB Optimized")
+    print(f"   T5 STATUS: Merged and Directory-ready")
     print("█"*60)
 
 if __name__ == "__main__":
