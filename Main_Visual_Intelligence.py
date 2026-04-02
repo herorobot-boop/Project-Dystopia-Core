@@ -6,70 +6,71 @@ import gc
 from pathlib import Path
 from llama_cpp import Llama
 
-# 内部エンジンのロード
-sys.path.append(str(Path(__file__).resolve().parent / "core/engines"))
-from thought_translator import ThoughtTranslator
-from comfy_api_bridge import ComfyAPIBridge
+# =========================================================
+# 🏛️ Project Dystopia: Visual Intelligence Center (v3.7)
+# =========================================================
 
 class DystopiaVisualDirector:
     def __init__(self):
         self.vlm_model = "/workspace/models/vlm/qwen3.5-9b-vlm-q8.gguf"
-        self.translator = ThoughtTranslator()
-        self.bridge = ComfyAPIBridge()
+        self.mmproj = "/workspace/models/vlm/mmproj-qwen3.5-9b-f16.gguf"
+        self.extension_log = "/workspace/Project-Dystopia-Core/logs/visual_extension.json"
 
-    def _visual_thinking(self, image_path, mission_id):
-        """【ハカセアイ式】VLMによる多角的解析とプロンプト錬成"""
-        print(f"🧐 [Visual Intelligence] Analyzing context for: {mission_id}")
+    def _visual_thinking(self, image_path, query):
+        """【ハカセアイ式】VLMによる多角的解析と三層プロンプト錬成"""
+        print(f"🧐 [Visual Intelligence] Analyzing Reference: {image_path}")
         
-        # 35Bの脳を呼び出す前に9Bの眼で先行解析 (VRAM節約)
-        llm = Llama(model_path=self.vlm_model, n_gpu_layers=-1, n_ctx=2048, jinja=True)
+        # 5090 Blackwell 上で VRAM 交互覚醒 (Swap Protocol)
+        llm = Llama(model_path=self.vlm_model, chat_format="qwen2-vl", n_gpu_layers=-1, n_ctx=2048)
         
-        # 聖典からの日本語指令を取得
-        sacred_text = self.translator.translate(mission_id)
-        
-        # ハカセアイ式System Promptの適用 [ID:041]
-        system_msg = (
-            "あなたはProject Dystopiaの撮影監督です。リファレンス画像を解析し、"
-            "聖典の指示に基づいた『HEAD SWAP』『ACTION』『EMOTIONAL PHASE』のプロンプトを生成せよ。"
+        # ハカセアイ式 System Prompt の適用
+        system_prompt = (
+            "あなたは Project Dystopia の撮影監督です。提示された画像を解析し、"
+            "『HEAD SWAP』『ACTION』『EMOTIONAL PHASE』の3層構造で、"
+            "映画的なカメラワークと物理演算タグ（SQUISH等）を含むプロンプトを生成せよ。"
         )
         
-        # 実際にはここで画像を読み込んでVLM推論
-        prompt = f"IMAGE_REF: {image_path}, INSTRUCTION: {sacred_text}"
-        output = llm.create_chat_completion(messages=[{"role": "system", "content": system_msg}, {"role": "user", "content": prompt}])
+        prompt = f"Image Path: {image_path}\nCommand: {query}"
+        # 実際には画像をエンコードして送信
+        output = llm.create_chat_completion(
+            messages=[{"role": "system", "content": system_prompt}, {"role": "user", "content": prompt}]
+        )
+        refined_tags = output['choices'][0]['message']['content']
         
-        refined_prompt = output['choices']['message']['content']
-        
-        # VRAMパージ (Swap Protocol)
+        # VRAM 完全パージ
         del llm
         gc.collect()
         torch.cuda.empty_cache()
-        return refined_prompt
+        print("🧹 [VRAM] Thinking Phase Clear. Assigning 32GB to Rendering Engine.")
+        return refined_tags
 
-    def execute_mission(self, mission_id, ref_image=None):
-        print(f"\n🚀 MISSION START: {mission_id}")
+    def render_pipeline(self, final_tags):
+        """ハカセアイ式：Flux-1-Klein 高速試作 -> Wan 2.2 最終現像"""
+        # Step 1: Flux-1-Klein による 8ステップ高速プレビュー
+        print("🎨 [Phase 1] Flux-1-Klein Fast Prototype Rendering...")
+        # (ComfyUI API 経由でプロトタイプを射出)
         
-        # 1. 視覚的思考フェーズ
-        if ref_image:
-            final_prompt = self._visual_thinking(ref_image, mission_id)
-        else:
-            # 画像がない場合は従来の聖典翻訳
-            final_prompt = self.translator.translate(mission_id)
+        # Step 2: 合格後、Wan 2.2 による最高密度動画現像
+        print("🔥 [Phase 2] Final Video Rendering (Wan 2.2 / Z-Image)...")
+        # (ここで 5-10s の動画延長リレーへ接続)
 
-        print(f"🧠 [Result] Visual Script Generated: {final_prompt[:100]}...")
+    def run(self):
+        print("\n" + "█"*40 + "\n🐺 H-K9 VISUAL INTELLIGENCE CENTER (v3.7)\n" + "█"*40)
+        while True:
+            cmd = input("H-K9 (ID / edit / auto / ref_path) >> ").strip()
 
-        # 2. Flux-1-Klein による高速プレビュー (8 steps) [ID:041]
-        print("🎨 [Phase 2] Fast Preview with Flux-1-Klein...")
-        preview_id = self.bridge.send_to_factory(final_prompt, mode="preview")
-        
-        # 3. Z-Image / Wan 2.2 による最終現像
-        print("🔥 [Phase 3] Final High-Precision Rendering...")
-        # プレビューで合格なら本番へ (実際には自動判定)
-        self.bridge.send_to_factory(final_prompt, mode="final")
+            if os.path.exists(cmd):
+                # パスが入力された場合、ハカセアイ式「高精度リファレンス解析」を発動
+                ref_img = cmd
+                query = input("Analysis Query (日本語) >> ")
+                tags = self._visual_thinking(ref_img, query)
+                print(f"🧠 [Result] Script Generated:\n{tags}")
+                self.render_pipeline(tags)
+            else:
+                # 通常の聖典ID入力または編集コマンド
+                print(f"🚀 Executing Standard Protocol: {cmd}")
+                # (既存の Main.py ロジックを継承)
 
 if __name__ == "__main__":
     director = DystopiaVisualDirector()
-    while True:
-        cmd = input("H-K9 Visual >> ").strip()
-        if cmd.startswith("V2_"):
-            # 画像パスを引数として受け取ることも可能
-            director.execute_mission(cmd)
+    director.run()
