@@ -13,7 +13,7 @@ def run_cmd(cmd):
 def setup_visual_dystopia():
     print("🐺 [H-K9] 最終兵站確保：ハカセアイ式・自律型VLMパイプラインを徴用。")
     
-    # 1. ディレクトリ構造の再定義
+    # 1. ディレクトリ構造の再定義（Blackwell 5090 最適化）
     base_path = Path("/workspace/models")
     for sub in ["vlm", "unet", "checkpoints", "loras", "clip"]:
         (base_path / sub).mkdir(parents=True, exist_ok=True)
