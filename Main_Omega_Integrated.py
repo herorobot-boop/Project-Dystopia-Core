@@ -1,135 +1,157 @@
 import os
 import sys
-import time
-import torch
 import gc
 import json
+import time
 import requests
+import torch
+import multiprocessing
 from pathlib import Path
-from llama_cpp import Llama
+from scripts.comfy_api_bridge import ComfyAPIBridge
+from scripts.audit_gate import inspect_image_locally
+from scripts.c2pa_signer import sign_media_atomically
 
-# 内部エンジンのインポート（パスの整合性を確保）
-sys.path.append(str(Path(__file__).resolve().parent / "core/engines"))
-from thought_translator import ThoughtTranslator
-from comfy_api_bridge import ComfyAPIBridge
-from ai_inspector import AIInspector
-from video_executor import VideoExecutor
+# CUDA Start Method 完全固定
+os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
+if __name__ == "__main__":
+    try:
+        multiprocessing.set_start_method("spawn", force=True)
+    except RuntimeError:
+        pass
 
-# =========================================================
-# 🏛️ Project Dystopia: Final Execution Authority (Omega-Blackwell)
-# =========================================================
+COMFY_URL = "http://127.0.0.1:8188"
+WORKSPACE_DIR = Path("/workspace")
+WORKFLOW_DIR = WORKSPACE_DIR / "Project-Dystopia-Core/workflows"
+OUTPUT_DIR = WORKSPACE_DIR / "ComfyUI/output"
 
-class DystopiaProjectManager:
-    def __init__(self):
-        print("🐺 [H-K9] Operation Center: Level 5 Authority Active.")
-        self.translator = ThoughtTranslator()
-        self.bridge = ComfyAPIBridge()
-        self.inspector = AIInspector()
-        self.video = VideoExecutor()
-        
-        # モデルパスの物理固定
-        self.vlm_path = "/workspace/models/vlm/Qwen3.5-35B-A3B-Uncensored-HauhauCS-Aggressive-IQ4_XS.gguf"
-        self.output_dir = Path("/workspace/ComfyUI/output")
+def safe_choices_getter(choices) -> str:
+    """脱・角括弧記法による choices 抽出"""
+    if isinstance(choices, list) and len(choices) > int(0):
+        first_choice, *_ = choices
+        if isinstance(first_choice, dict):
+            if "text" in first_choice:
+                return str(first_choice.get("text", ""))
+            elif "message" in first_choice and isinstance(first_choice["message"], dict):
+                return str(first_choice["message"].get("content", ""))
+        return str(first_choice)
+    elif isinstance(choices, dict):
+        return str(choices.get("text", ""))
+    return str(choices)
 
-    def _swap_awaken_brain(self, script_id):
-        """【交互覚醒：思考】LLMを召喚し、翻訳後にVRAMを強制浄化"""
-        print(f"\n🧠 [Thought] Awakening Qwen 3.5 IQ4_XS: {script_id}")
-        
-        # 5090に最適化されたロード
+class MultiAgentBrainProcess(multiprocessing.Process):
+    """VRAM完全分離型 4役CoT思考プロセス"""
+    def __init__(self, user_prompt: str, queue: multiprocessing.Queue):
+        super().__init__()
+        self.user_prompt = user_prompt
+        self.queue = queue
+        self.llm_path = "/workspace/models/llm/Qwen3.5-35B-A3B-Uncensored-HauhauCS-Aggressive-IQ4_XS.gguf"
+
+    def run(self):
+        from llama_cpp import Llama
+
+        system_cot_prompt = (
+            "あなたはProject Dystopiaの4役統合思考エンジンです。\n"
+            "以下の4人の専門家として内部議論(Chain of Thought)を行い、最終的な現像・動画パラメータを出力せよ。\n\n"
+            "1. 【撮影監督】: カメラアングル、被写界深度、視点移動(Pan/Tilt/Zoom)の策定。\n"
+            "2. 【照明技師】: Specular反射、肌の光沢、Subsurface Scattering、陰影配置。\n"
+            "3. 【衣装デザイナー】: 生地の張力、濡れ感、スパッツ・タイツの境界線密着。\n"
+            "4. 【物理監査官】: SQUISH(肉体圧縮係数 0.35-0.50)、流体粘度、表面張力。\n\n"
+            "【出力フォーマット】\n"
+            "隠語やメタファー（バッファ、ポート等）は禁止。ストレートで高精細な英語物理描写のみで構成せよ。\n"
+            "必ず以下の純粋なJSON構造のみを出力せよ。余計な解説文は禁止する。\n"
+            "{\n"
+            '  "cot_reasoning": "4役による議論ログ...",\n'
+            '  "positive_prompt": "詳細な英語物理タグ、mature adult female、写実的な情景描写...",\n'
+            '  "negative_prompt": "blurry, deformed, petite, child, teen, school_uniform...",\n'
+            '  "squish_factor": 0.42,\n'
+            '  "camera_motion": "Zoom In",\n'
+            '  "is_distilled_model": true\n'
+            "}"
+        )
+
+        print("🧠 [Brain Process] Qwen3.5 35B 子プロセス起動 (Blackwell 5090)...")
         llm = Llama(
-            model_path=self.vlm_path,
-            n_gpu_layers=-1,
+            model_path=self.llm_path,
+            n_gpu_layers=-int(1),
             n_ctx=4096,
-            jinja=True,
             verbose=False
         )
 
-        # 聖典V2の解釈と物理演算タグへの翻訳
-        raw_translation = self.translator.translate(script_id)
-        
-        # 高密度化推論
-        prompt = f"USER: Expand this into high-density physics tags for Blackwell 5090: {raw_translation}\nASSISTANT:"
-        output = llm(prompt, max_tokens=1024)
-        tags = output['choices'][0]['text']
+        full_prompt = f"<|im_start|>system\n{system_cot_prompt}<|im_end|>\n<|im_start|>user\n{self.user_prompt}<|im_end|>\n<|im_start|>assistant\n"
+        output = llm(full_prompt, max_tokens=1024, temperature=0.7)
 
-        # 【最重要】脳の完全排除
+        raw_text = safe_choices_getter(output.get("choices", []))
+
         del llm
         gc.collect()
-        time.sleep(1) # VRAM解放の物理待機
-        torch.cuda.empty_cache()
-        print("🧹 [VRAM] Brain purged. 32GB Territory is now Open.")
-        return tags
+        if torch.cuda.is_available():
+            torch.cuda.empty_cache()
 
-    def wait_for_output(self, mission_id, timeout=120):
-        """物理ファイルの着弾をポーリング監視（WebSocketの代替）"""
-        start_time = time.time()
-        print(f"⏳ [Wait] Waiting for factory output: {mission_id}...")
-        while time.time() - start_time < timeout:
-            # ComfyUIの出力ファイル命名規則に合わせて検索
-            files = list(self.output_dir.glob(f"*{mission_id}*.png"))
-            if files:
-                return sorted(files, key=os.path.getmtime)[-1]
-            time.sleep(2)
-        return None
+        self.queue.put(raw_text)
+        print("🧹 [Brain Process] VRAM完全解放・子プロセス終了。")
 
-    def execute_full_cycle(self, mission_id):
-        """思考 -> 現像 -> 検品 -> 動画化 の全自動執行ループ"""
-        print(f"\n━━━━━━━━━━━━ Mission Start: {mission_id} ━━━━━━━━━━━━")
+class HK9CommandCenter:
+    def __init__(self):
+        self.bridge = ComfyAPIBridge()
+
+    def run_brain_swap(self, user_input: str) -> dict:
+        self.bridge.purge_comfyui_vram_cache()
+
+        queue = multiprocessing.Queue()
+        p = MultiAgentBrainProcess(user_input, queue)
+        p.start()
+        p.join()
+
+        raw_result = queue.get()
+        return self.bridge.extract_json_by_depth_counter(raw_result)
+
+    def load_workflow(self, rel_path: str) -> dict:
+        wf_path = WORKSPACE_DIR / rel_path
+        with open(wf_path, 'r', encoding='utf-8') as f:
+            return json.load(f)
+
+    def execute_pipeline(self, free_japanese_prompt: str):
+        print("\n" + "═"*60)
+        print(f"🐺 [H-K9 OMEGA] 命令受領: {free_japanese_prompt}")
+        print("═"*60)
 
         # 1. 思考フェーズ
-        physics_tags = self._swap_awaken_brain(mission_id)
+        prompt_data = self.run_brain_swap(free_japanese_prompt)
+        print(f"👁️ [CoT Reasoning]: {prompt_data.get('cot_reasoning', '')[:100]}...")
+        print(f"✨ [Positive Prompt]: {prompt_data.get('positive_prompt', '')[:100]}...")
 
-        # 2. 静止画現像フェーズ (Retryループ)
-        success_image = None
-        for attempt in range(3): # 最大3回まで自律リトライ
-            print(f"🎨 [Phase 2] Rendering Still (Attempt {attempt+1}/3)...")
-            prompt_id = self.bridge.send_to_factory(physics_tags)
-            
-            # 生成完了待機
-            output_path = self.wait_for_output(mission_id)
-            if not output_path:
-                print("❌ [Error] Factory Timeout. Retrying...")
-                continue
+        # 2. 静止画現像フェーズ (Flux + Z-Image カスケード)
+        still_wf = self.load_workflow("Project-Dystopia-Core/workflows/z_image_still_api.json")
+        still_wf = self.bridge.inject_dynamic_parameters(still_wf, prompt_data)
+        
+        still_filename = self.bridge.dispatch_and_wait_media(still_wf, timeout=180)
+        rendered_img_path = OUTPUT_DIR / still_filename
 
-            # 3. 自律検品フェーズ (AI Inspector)
-            print("🧐 [Phase 3] AI Inspection (Qwen2-VL)...")
-            passed, msg = self.inspector.inspect(output_path, mission_id)
-            print(msg)
+        # output/ から input/ への画像同期
+        self.bridge.sync_output_to_input(still_filename)
 
-            if passed:
-                success_image = output_path
-                break
-            else:
-                print(f"♻️ [Retry] Aesthetic failure. Re-adjusting weights and re-shooting...")
-                time.sleep(2)
-
-        if not success_image:
-            print("💀 [Abort] Mission failed after 3 attempts. Insufficient quality.")
+        # 3. 視覚ピクセル自律検品ゲート
+        if not inspect_image_locally(str(rendered_img_path)):
+            print("❌ [AUDIT FAILED] Visual Safety Gate rejected image. Cycle aborted.")
             return
 
-        # 4. 動画化フェーズ (Wan 2.2)
-        print("🎬 [Phase 4] Transitioning to Motion Synthesis (Wan 2.2)...")
-        video_id = self.video.execute_video_generation(str(success_image), physics_tags)
-        
-        print(f"🏁 [Final] Mission Accomplished. Video ID: {video_id}")
-        print(f"📂 [Storage] Target safely stored at: {success_image}")
+        # 4. 動画化現像フェーズ (Wan 2.2 Fun Camera)
+        video_wf = self.load_workflow("Project-Dystopia-Core/workflows/wan22_fun_camera_api.json")
+        video_wf = self.bridge.inject_dynamic_parameters(video_wf, prompt_data)
+        video_wf = self.bridge.inject_image_to_workflow(video_wf, still_filename)
+
+        video_filename = self.bridge.dispatch_and_wait_media(video_wf, timeout=360)
+        raw_video_path = OUTPUT_DIR / video_filename
+
+        # 5. C2PA 不可逆電子署名の付与
+        sign_media_atomically(raw_video_path)
+
+        print("\n" + "═"*60)
+        print(f"🎉 [COMPLETE] 成果物が正常に出力・電子署名されました: {raw_video_path}")
+        print("💡 ComfyUI画面またはJupyterLabから手元のPCへダウンロード可能です。")
+        print("═"*60)
 
 if __name__ == "__main__":
-    commander = DystopiaProjectManager()
-    print("\n" + "═"*50)
-    print("🐺 H-K9 HEAVY OPERATION CENTER: OMEGA-BLACKWELL V3.5.1")
-    print("═"*50)
-
-    while True:
-        try:
-            mission = input("\nH-K9 >> ").strip()
-            if not mission: continue
-            if mission.lower() in ["exit", "quit"]: break
-            
-            if mission.startswith("V2_"):
-                commander.execute_full_cycle(mission)
-            else:
-                print("⚠️ [Access Denied] Mission ID must start with 'V2_'.")
-        except KeyboardInterrupt:
-            print("\n👋 [Termination] Sequence interrupted by Commander.")
-            break
+    center = HK9CommandCenter()
+    test_input = "雨の夜の駅ホーム、濡れたタイツが脚に密着し光沢を放つ、カメラがローアングルからゆっくり接近"
+    center.execute_pipeline(test_input)
