@@ -11,7 +11,6 @@ from scripts.comfy_api_bridge import ComfyAPIBridge
 from scripts.audit_gate import inspect_image_locally
 from scripts.c2pa_signer import sign_media_atomically
 
-# CUDA Start Method 完全固定
 os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
 if __name__ == "__main__":
     try:
@@ -25,7 +24,6 @@ WORKFLOW_DIR = WORKSPACE_DIR / "Project-Dystopia-Core/workflows"
 OUTPUT_DIR = WORKSPACE_DIR / "ComfyUI/output"
 
 def safe_choices_getter(choices) -> str:
-    """脱・角括弧記法による choices 抽出"""
     if isinstance(choices, list) and len(choices) > int(0):
         first_choice, *_ = choices
         if isinstance(first_choice, dict):
@@ -39,7 +37,6 @@ def safe_choices_getter(choices) -> str:
     return str(choices)
 
 class MultiAgentBrainProcess(multiprocessing.Process):
-    """VRAM完全分離型 4役CoT思考プロセス"""
     def __init__(self, user_prompt: str, queue: multiprocessing.Queue):
         super().__init__()
         self.user_prompt = user_prompt
@@ -115,7 +112,7 @@ class HK9CommandCenter:
         print(f"🐺 [H-K9 OMEGA] 命令受領: {free_japanese_prompt}")
         print("═"*60)
 
-        # 1. 思考フェーズ
+        # 1. 思考フェーズ (完全自由入力 ➔ 4役CoT ➔ VRAMパージ)
         prompt_data = self.run_brain_swap(free_japanese_prompt)
         print(f"👁️ [CoT Reasoning]: {prompt_data.get('cot_reasoning', '')[:100]}...")
         print(f"✨ [Positive Prompt]: {prompt_data.get('positive_prompt', '')[:100]}...")
@@ -130,7 +127,7 @@ class HK9CommandCenter:
         # output/ から input/ への画像同期
         self.bridge.sync_output_to_input(still_filename)
 
-        # 3. 視覚ピクセル自律検品ゲート
+        # 3. 視覚ピクセル自律検品ゲート (Qwen2.5-VL ローカル実行)
         if not inspect_image_locally(str(rendered_img_path)):
             print("❌ [AUDIT FAILED] Visual Safety Gate rejected image. Cycle aborted.")
             return
