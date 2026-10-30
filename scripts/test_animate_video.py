@@ -45,7 +45,6 @@ if __name__ == "__main__":
     if len(sys.argv) > int(1):
         target_img = sys.argv[int(1)]
     else:
-        # 指定がない場合は output/ 内の最新静止画を自動探索
         images = sorted(list(OUTPUT_DIR.glob("*.png")), key=os.path.getmtime, reverse=True)
         if not images:
             print("❌ 静止画が見つかりません。先に test_critic_image.py を回してください。")
