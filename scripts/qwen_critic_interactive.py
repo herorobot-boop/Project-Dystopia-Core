@@ -5,9 +5,15 @@ import json
 import torch
 import multiprocessing
 from pathlib import Path
+
+# 作業ディレクトリに依存せず scripts モジュールを解決する自律パス解決
+CURRENT_DIR = Path(__file__).resolve().parent
+PROJECT_ROOT = CURRENT_DIR.parent
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+
 from scripts.comfy_api_bridge import ComfyAPIBridge
 
-# CUDA Start Method ＆ VRAMアロケータ最適化
 os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
 if __name__ == "__main__":
     try:
@@ -16,7 +22,6 @@ if __name__ == "__main__":
         pass
 
 def safe_choices_getter(choices) -> str:
-    """脱・角括弧記法による choices 抽出"""
     if isinstance(choices, list) and len(choices) > int(0):
         first_choice, *_ = choices
         if isinstance(first_choice, dict):
@@ -30,7 +35,6 @@ def safe_choices_getter(choices) -> str:
     return str(choices)
 
 class InteractiveCriticProcess(multiprocessing.Process):
-    """4役CoT思考 ＋ Venice AI風自己添削(Self-Critique)子プロセス"""
     def __init__(self, user_prompt: str, queue: multiprocessing.Queue):
         super().__init__()
         self.user_prompt = user_prompt
@@ -44,26 +48,23 @@ class InteractiveCriticProcess(multiprocessing.Process):
             "You are the Lead Visual Director and DiT Prompt Critic for Project Dystopia.\n"
             "Analyze the user's concept and output a strict JSON object containing your raw draft, "
             "a rigorous Venice-AI-style self-critique, and the finalized production prompt.\n\n"
-            "### AUDITING DIRECTIVES (Venice AI Style)\n"
-            "1. Ban meaningless buzzwords: Strip '8k', 'masterpiece', 'physically based rendering'. "
-            "Replace with 1/60s shutter speed and optical properties.\n"
-            "2. Resolve shot conflicts: Ensure camera tracking and lens focal length are strictly harmonious. "
-            "Never mix Pan and Zoom in the same shot.\n"
-            "3. Biomechanical compliance: squish_factor must be 0.60-0.80 for natural human flesh. "
-            "Must specify exact anatomical stress points (e.g., 'seam stress at waistband', 'flesh indentation').\n"
-            "4. Lighting temperature mismatch: Specify mixed Kelvin temperatures (e.g., 3200K tungsten key, 5000K ambient fluorescent).\n\n"
+            "### AUDITING DIRECTIVES\n"
+            "1. Ban meaningless buzzwords: Strip '8k', 'masterpiece', 'physically based rendering'. Replace with 1/60s shutter speed.\n"
+            "2. Resolve shot conflicts: Ensure camera tracking and lens focal length are harmonious.\n"
+            "3. Biomechanical compliance: squish_factor must be 0.60-0.80 for natural human tissue. Must specify anatomical stress points (e.g., 'seam stress at waistband').\n"
+            "4. Lighting temperature mismatch: Specify mixed Kelvin temperatures (e.g., 3200K key, 5000K ambient).\n\n"
             "### JSON OUTPUT SCHEMA\n"
             "{\n"
             '  "raw_draft_positive": "Initial draft prompt before critique...",\n'
-            '  "self_critique": "Venice AI style sharp critique detailing specific flaws in the draft...",\n'
-            '  "final_positive_prompt": "Perfected prompt with camera, location, lighting Kelvin, clothing seam stress, 1/60s shutter speed, subsurface scattering, authentic skin pores...",\n'
-            '  "final_negative_prompt": "blurry, deformed, bad proportions, bad anatomy, fused fingers, asymmetric eyes, extra limbs, low resolution",\n'
+            '  "self_critique": "Venice AI style sharp critique of the draft flaws...",\n'
+            '  "final_positive_prompt": "Perfected prompt with 1/60s shutter speed, lighting Kelvin temps, anatomical seam stress...",\n'
+            '  "final_negative_prompt": "blurry, deformed, bad anatomy, fused fingers, asymmetric eyes, extra limbs, low resolution",\n'
             '  "squish_factor": 0.72,\n'
             '  "camera_motion": "Zoom In"\n'
             "}"
         )
 
-        print("\n🧠 [Saluki-27B] 4役CoT思考 ＆ Venice AI風自己批評を実行中...")
+        print("\n🧠 [Saluki-27B] 思考 ＆ Venice AI風自己批評中...")
         llm = Llama(
             model_path=self.llm_path,
             n_gpu_layers=-int(1),
@@ -95,7 +96,7 @@ def run_interactive_session():
         try:
             concept = input("\n💬 日本語でシチュエーションを入力してください (q で終了): ").strip()
             if not concept or concept.lower() == 'q':
-                print("テスターセッションを終了します。")
+                print("セッションを終了します。")
                 break
 
             queue = multiprocessing.Queue()
@@ -121,7 +122,7 @@ def run_interactive_session():
             print("\n中断されました。")
             break
         except Exception as e:
-            print(f"\n⚠️ パースまたは実行エラー: {e}")
+            print(f"\n⚠️ エラーが発生しました: {e}")
 
 if __name__ == "__main__":
     run_interactive_session()
