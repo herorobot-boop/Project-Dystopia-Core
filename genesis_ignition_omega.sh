@@ -2,7 +2,7 @@
 set -euo pipefail
 
 echo "=========================================================="
-echo "   🐺 Project Dystopia: Genesis Ignition Omega (v8.2)     "
+echo "   🐺 Project Dystopia: Genesis Ignition Omega (v8.3)     "
 echo "=========================================================="
 
 WORKSPACE="/workspace"
@@ -41,7 +41,7 @@ if [ -f "${MANAGER_CONFIG}" ]; then
     fi
 fi
 
-# 5. 実弾モデルの一括直接着弾（兵站確保：所要10-15分）
+# 5. 実弾モデルの一括直接着弾（兵站確保：所要約5分）
 python3 "${CORE_DIR}/scripts/fetch_missing_assets.py"
 
 # 6. 未導入カスタムノードの自動解決
