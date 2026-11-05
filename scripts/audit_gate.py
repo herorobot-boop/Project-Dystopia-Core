@@ -1,4 +1,5 @@
 import os
+import sys
 import gc
 import time
 import json
@@ -8,6 +9,13 @@ import requests
 import torch
 import multiprocessing
 from PIL import Image
+from pathlib import Path
+
+CURRENT_DIR = Path(__file__).resolve().parent
+PROJECT_ROOT = CURRENT_DIR.parent
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+
 from scripts.comfy_api_bridge import ComfyAPIBridge
 
 def encode_image_to_base64_local(image_path: str) -> str:
@@ -91,6 +99,5 @@ def inspect_image_locally(image_path: str, max_retries=3) -> bool:
     return True
 
 if __name__ == "__main__":
-    import sys
     img = sys.argv[1] if len(sys.argv) > 1 else "/workspace/ComfyUI/output/latest.png"
     inspect_image_locally(img)
