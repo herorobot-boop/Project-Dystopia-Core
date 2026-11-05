@@ -6,6 +6,12 @@ import requests
 import torch
 import multiprocessing
 from pathlib import Path
+
+CURRENT_DIR = Path(__file__).resolve().parent
+PROJECT_ROOT = CURRENT_DIR.parent
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+
 from scripts.comfy_api_bridge import ComfyAPIBridge
 
 os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
@@ -102,7 +108,6 @@ def run_test_image_cycle(user_input: str):
     still_wf_path = WORKFLOW_DIR / "z_image_still_api.json"
     if not still_wf_path.exists():
         print(f"❌ ワークフローファイルが見つかりません: {still_wf_path}")
-        print("💡 第1章の手順5に従い、ComfyUI画面から 'Save (API Format)' でエクスポートしてください。")
         return
 
     with open(still_wf_path, "r", encoding="utf-8") as f:
@@ -115,7 +120,7 @@ def run_test_image_cycle(user_input: str):
     print("\n" + "═"*60)
     print(f"🎉 【静止画現像完了】: {still_filename}")
     print("💡 スマホブラウザ（Port 8188）で画像を確認してください。")
-    print(f"👉 気に入ったら、第3部の動画化スクリプトを実行: python3 scripts/test_animate_video.py {still_filename}")
+    print(f"👉 気に入ったら、動画化スクリプトを実行: python3 scripts/test_animate_video.py {still_filename}")
     print("═"*60 + "\n")
 
 if __name__ == "__main__":
