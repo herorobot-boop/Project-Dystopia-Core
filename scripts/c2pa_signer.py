@@ -66,6 +66,5 @@ def sign_media_atomically(input_media_path: Path):
         print(f"⚠️ [C2PA] Signing failed, preserving raw file: {res.stderr.decode()}")
 
 if __name__ == "__main__":
-    import sys
     target = Path(sys.argv[1]) if len(sys.argv) > 1 else Path("/workspace/ComfyUI/output/latest.mp4")
     sign_media_atomically(target)
