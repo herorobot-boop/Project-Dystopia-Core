@@ -51,4 +51,8 @@ def auto_install_missing_nodes(workflow_json_path: str):
                             subprocess.run(f"pip install -r '{req_file}'", shell=True)
 
 if __name__ == "__main__":
-    auto_install_missing_nodes("/workspace/Project-Dystopia-Core/workflows/wan22_fun_camera_api.json")
+    test_wf = Path("/workspace/Project-Dystopia-Core/workflows/wan22_fun_camera_api.json")
+    if test_wf.exists():
+        auto_install_missing_nodes(str(test_wf))
+    else:
+        print("💡 ワークフロー未配置のためノードスキャンを待機します。")
