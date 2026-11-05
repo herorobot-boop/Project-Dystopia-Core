@@ -96,59 +96,60 @@ def fetch_hf_direct(url: str, output_path: Path):
         raise ValueError(f"HF Download failed or corrupt: {url}")
 
 def setup_all_missing_assets():
-    print("🐺 [H-K9] 兵站確保シークエンス開始：全実弾モデルの直撃ダウンロードを開始します。")
+    print("🐺 [H-K9] 兵站確保シークエンス開始：最新実弾モデルの直接一括ダウンロードを開始します。")
     for p in TARGET_DIRS.values():
         p.mkdir(parents=True, exist_ok=True)
 
-    # 1. 脳 (Qwen3.5-35B-Uncensored GGUF)
+    # 1. 脳 (Underdog-Saluki-27B-1.0-MTP-Abliterated GGUF: 約8.35GB)
+    # Qwen3.5-35Bの半分の容量で爆速MTP推論・完全無検閲・高精度JSONを実現
     fetch_hf_direct(
-        f"https://huggingface.co/{'HauhauCS'}/Qwen3.5-35B-A3B-Uncensored-HauhauCS-Aggressive/resolve/main/Qwen3.5-35B-A3B-Uncensored-HauhauCS-Aggressive-IQ4_XS.gguf",
-        TARGET_DIRS["llm"] / "Qwen3.5-35B-A3B-Uncensored-HauhauCS-Aggressive-IQ4_XS.gguf"
+        f"https://huggingface.co/{'Kujira'}/Underdog-Saluki-27B-1.0-MTP-Abliterated-GGUF/resolve/main/{'Underdog-Saluki-27B-1.0-IQ2-mix-MTP-abliterated.gguf'}",
+        TARGET_DIRS["llm"] / "Underdog-Saluki-27B-1.0-IQ2-mix-MTP-abliterated.gguf"
     )
 
-    # 2. 眼 (Qwen2.5-VL-7B-Instruct GGUF)
+    # 2. 眼 (Qwen2.5-VL-7B-Instruct GGUF: 約7.5GB)
     fetch_hf_direct(
         f"https://huggingface.co/{'cxtb'}/Qwen2.5-VL-7B-Instruct-Q8_0-GGUF/resolve/main/qwen2.5-vl-7b-instruct-q8_0.gguf",
         TARGET_DIRS["vlm"] / "qwen2.5-vl-7b-instruct-q8_0.gguf"
     )
 
-    # 3. 視覚プロジェクター (mmproj-F16.gguf)
+    # 3. 視覚プロジェクター (mmproj-F16.gguf: 約600MB)
     fetch_hf_direct(
         f"https://huggingface.co/{'cxtb'}/Qwen2.5-VL-7B-Instruct-Q8_0-GGUF/resolve/main/mmproj-F16.gguf",
         TARGET_DIRS["vlm"] / "mmproj-F16.gguf"
     )
 
-    # 4. 構図試作 (Flux-1-Klein GGUF)
+    # 4. 構図試作 (Flux-1-Klein GGUF: 約9.3GB)
     fetch_hf_direct(
         f"https://huggingface.co/{'city96'}/FLUX.1-dev-gguf/resolve/main/flux1-dev-Q8_0.gguf",
         TARGET_DIRS["unet"] / "flux1-dev-Q8_0.gguf"
     )
 
-    # 5. 究極受肉 (Z-Image-Turbo BF16)
+    # 5. 究極受肉 (Z-Image-Turbo BF16: 約12.0GB)
     fetch_hf_direct(
         f"https://huggingface.co/{'Tongyi-MAI'}/Z-Image-Turbo/resolve/main/z_image_turbo_bf16.safetensors",
         TARGET_DIRS["diffusion_models"] / "z_image_turbo_bf16.safetensors"
     )
 
-    # 6. 動画エンジン (Wan 2.1 14B GGUF)
+    # 6. 動画エンジン (Wan 2.1 14B GGUF: 約9.4GB)
     fetch_hf_direct(
         f"https://huggingface.co/{'city96'}/Wan2.1-T2V-14B-gguf/resolve/main/wan2.1-t2v-14b-Q4_K_M.gguf",
         TARGET_DIRS["diffusion_models"] / "wan2.1-t2v-14b-Q4_K_M.gguf"
     )
 
-    # 7. 正規 Wan テキストエンコーダー (umT5 FP8 Scaled)
+    # 7. 正規 Wan テキストエンコーダー (umT5 FP8 Scaled: 約5.0GB)
     fetch_hf_direct(
         f"https://huggingface.co/{'Comfy-Org'}/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors",
         TARGET_DIRS["text_encoders"] / "umt5_xxl_fp8_e4m3fn_scaled.safetensors"
     )
 
-    # 8. Wan 専用 3D-VAE
+    # 8. Wan 専用 3D-VAE (約2.6GB)
     fetch_hf_direct(
         f"https://huggingface.co/{'Comfy-Org'}/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/vae/wan_2.1_vae.safetensors",
         TARGET_DIRS["vae"] / "wan_2.1_vae.safetensors"
     )
 
-    # 9. CLIP Vision
+    # 9. CLIP Vision (約1.2GB)
     fetch_hf_direct(
         f"https://huggingface.co/{'Comfy-Org'}/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/clip_vision/clip_vision_h.safetensors",
         TARGET_DIRS["clip_vision"] / "clip_vision_h.safetensors"
@@ -163,7 +164,7 @@ def setup_all_missing_assets():
     extra_yaml = COMFY_DIR / "extra_model_paths.yaml"
     extra_yaml.write_text(yaml_content)
     print("✅ [H-K9] extra_model_paths.yaml を整合配備しました。")
-    print("🎉 [H-K9] 全実弾モデルの着弾・配置が完全に完了しました。")
+    print("🎉 [H-K9] 全実弾モデルの着弾・配置が完了しました。")
 
 if __name__ == "__main__":
     setup_all_missing_assets()
