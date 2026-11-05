@@ -96,12 +96,11 @@ def fetch_hf_direct(url: str, output_path: Path):
         raise ValueError(f"HF Download failed or corrupt: {url}")
 
 def setup_all_missing_assets():
-    print("🐺 [H-K9] 兵站確保シークエンス開始：最新実弾モデルの直接一括ダウンロードを開始します。")
+    print("🐺 [H-K9] 兵站確保シークエンス開始：全実弾モデルの直撃ダウンロードを開始します。")
     for p in TARGET_DIRS.values():
         p.mkdir(parents=True, exist_ok=True)
 
     # 1. 脳 (Underdog-Saluki-27B-1.0-MTP-Abliterated GGUF: 約8.35GB)
-    # Qwen3.5-35Bの半分の容量で爆速MTP推論・完全無検閲・高精度JSONを実現
     fetch_hf_direct(
         f"https://huggingface.co/{'Kujira'}/Underdog-Saluki-27B-1.0-MTP-Abliterated-GGUF/resolve/main/{'Underdog-Saluki-27B-1.0-IQ2-mix-MTP-abliterated.gguf'}",
         TARGET_DIRS["llm"] / "Underdog-Saluki-27B-1.0-IQ2-mix-MTP-abliterated.gguf"
@@ -113,9 +112,9 @@ def setup_all_missing_assets():
         TARGET_DIRS["vlm"] / "qwen2.5-vl-7b-instruct-q8_0.gguf"
     )
 
-    # 3. 視覚プロジェクター (mmproj-F16.gguf: 約600MB)
+    # 3. 視覚プロジェクター (mmproj-F16.gguf: 約1.35GB) ※unsloth正規URL
     fetch_hf_direct(
-        f"https://huggingface.co/{'cxtb'}/Qwen2.5-VL-7B-Instruct-Q8_0-GGUF/resolve/main/mmproj-F16.gguf",
+        f"https://huggingface.co/{'unsloth'}/Qwen2.5-VL-7B-Instruct-GGUF/resolve/main/mmproj-F16.gguf",
         TARGET_DIRS["vlm"] / "mmproj-F16.gguf"
     )
 
@@ -164,7 +163,7 @@ def setup_all_missing_assets():
     extra_yaml = COMFY_DIR / "extra_model_paths.yaml"
     extra_yaml.write_text(yaml_content)
     print("✅ [H-K9] extra_model_paths.yaml を整合配備しました。")
-    print("🎉 [H-K9] 全実弾モデルの着弾・配置が完了しました。")
+    print("🎉 [H-K9] 全実弾モデルの着弾・配置が完全に完了しました。")
 
 if __name__ == "__main__":
     setup_all_missing_assets()
