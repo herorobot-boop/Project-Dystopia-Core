@@ -2,62 +2,71 @@
 set -euo pipefail
 
 echo "=========================================================="
-echo "   🐺 Project Dystopia: Genesis Ignition Omega (v8.4)     "
+echo "   Project Dystopia: Genesis Ignition Omega (v9.0)"
 echo "=========================================================="
 
-WORKSPACE="/workspace"
-CORE_DIR="${WORKSPACE}/Project-Dystopia-Core"
-COMFY_DIR="${WORKSPACE}/ComfyUI"
+WORKSPACE=/workspace
+CORE_DIR=${WORKSPACE}/Project-Dystopia-Core
+COMFY_DIR=${WORKSPACE}/ComfyUI
+GALLERY_DIR=${WORKSPACE}/smart-comfyui-gallery
 
-apt-get update && apt-get install -y --no-install-recommends aria2 jq c2patool openssl || true
+# 1. 必須パッケージ
+apt-get update && apt-get install -y --no-install-recommends aria2 jq c2patool openssl python3-venv || true
 
-if [ -z "${CIVITAI_API_TOKEN:-}" ]; then
-    echo "⚠️ [WARN] CIVITAI_API_TOKEN が未設定です。Civitai.red の認証ダウンロードが失敗する可能性があります。"
-fi
-
-if [ -n "${GITHUB_TOKEN:-}" ]; then
-    git config --global url."https://x-access-token:${GITHUB_TOKEN}@github.com/".insteadOf "https://github.com/"
-fi
-
+# 2. コード同期
 if [ ! -d "${CORE_DIR}/.git" ]; then
-    echo "📥 [Git] リポジトリをクローン中..."
-    git clone "https://github.com/herorobot-boop/Project-Dystopia-Core.git" "${CORE_DIR}"
+    git clone https://github.com/herorobot-boop/Project-Dystopia-Core.git "${CORE_DIR}"
 else
-    echo "🔄 [Git] 最新コードを同期中..."
     cd "${CORE_DIR}" && git pull origin main
 fi
 
-MANAGER_CONFIG="${COMFY_DIR}/custom_nodes/ComfyUI-Manager/config.ini"
+# 3. ComfyUI-Manager civitai.red 認証
+MANAGER_CONFIG=${COMFY_DIR}/custom_nodes/ComfyUI-Manager/config.ini
 if [ -f "${MANAGER_CONFIG}" ]; then
-    echo "🔧 [Config] ComfyUI-Manager を civitai.red 認証モードへ構成..."
-    sed -i "s/^base_domain = .*/base_domain = civitai.red/" "${MANAGER_CONFIG}"
-    sed -i "s/^enable_nsfw = .*/enable_nsfw = True/" "${MANAGER_CONFIG}"
+    sed -i 's|^base_domain = .*|base_domain = civitai.red|' "${MANAGER_CONFIG}"
+    sed -i 's|^enable_nsfw = .*|enable_nsfw = True|' "${MANAGER_CONFIG}"
     if [ -n "${CIVITAI_API_TOKEN:-}" ]; then
-        sed -i "s/^api_key = .*/api_key = ${CIVITAI_API_TOKEN}/" "${MANAGER_CONFIG}"
+        sed -i "s|^api_key = .*|api_key = ${CIVITAI_API_TOKEN}|" "${MANAGER_CONFIG}"
     fi
 fi
 
+# 4. DAM ビューアー
+if [ ! -d "${GALLERY_DIR}" ]; then
+    git clone https://github.com/biagiomaf/smart-comfyui-gallery.git "${GALLERY_DIR}"
+    cd "${GALLERY_DIR}" && pip install -r requirements.txt || true
+fi
+
+# 5. 兵站確保
 python3 "${CORE_DIR}/scripts/fetch_missing_assets.py"
+
+# 6. ノード解決
 python3 "${CORE_DIR}/scripts/scan_and_install_nodes.py"
 
-export PYTORCH_CUDA_ALLOC_CONF="expandable_segments:True,garbage_collection_threshold:0.8"
-export CUDA_MODULE_LOADING="LAZY"
+# 7. アロケータ最適化
+export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True,garbage_collection_threshold:0.8
+export CUDA_MODULE_LOADING=LAZY
 
-echo "🖥️ [ComfyUI] サーバーを常駐起動中..."
+# 8. GPU 判定による VRAM モード分岐（軍律14）
+VRAM_MB=$(nvidia-smi --query-gpu=memory.total --format=csv,noheader,nounits | head -n1)
+if [ "${VRAM_MB}" -lt 28000 ]; then
+    VRAM_FLAGS="--lowvram --reserve-vram 2.0 --cpu-vae"
+    export DYSTOPIA_WAN_TIER="5B"
+    echo "[GPU] ${VRAM_MB}MB 検出 → Wan 5B モード"
+else
+    VRAM_FLAGS="--highvram --reserve-vram 2.0"
+    export DYSTOPIA_WAN_TIER="14B"
+    echo "[GPU] ${VRAM_MB}MB 検出 → Wan 14B 2段モード"
+fi
+
+# 9. ComfyUI 常駐起動
 cd "${COMFY_DIR}"
-python3 main.py \
-    --listen 0.0.0.0 \
-    --port 8188 \
-    --highvram \
-    --reserve-vram 2.0 \
-    --cpu-vae > "${WORKSPACE}/comfyui.log" 2>&1 &
+python3 main.py --listen 0.0.0.0 --port 8188 ${VRAM_FLAGS} > "${WORKSPACE}/comfyui.log" 2>&1 &
 
-echo "⏳ [ComfyUI] API 応答待機中 (ポート 8188)..."
 until curl -s http://127.0.0.1:8188/system_stats > /dev/null; do
     sleep 2
 done
-echo "✅ [ComfyUI] API 疎通確認完了。"
+echo "[ComfyUI] API 疎通確認完了"
 
-echo "🔥 [Ignition] Main_Omega_Integrated.py 起動！"
+# 10. 点火
 cd "${CORE_DIR}"
 exec python3 Main_Omega_Integrated.py
