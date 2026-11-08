@@ -2,7 +2,7 @@
 set -euo pipefail
 
 echo "=========================================================="
-echo "   Project Dystopia: Genesis Ignition Omega (v9.0)"
+echo "   Project Dystopia: Genesis Ignition Omega (v9.2)"
 echo "=========================================================="
 
 WORKSPACE=/workspace
@@ -42,11 +42,15 @@ python3 "${CORE_DIR}/scripts/fetch_missing_assets.py"
 # 6. ノード解決
 python3 "${CORE_DIR}/scripts/scan_and_install_nodes.py"
 
-# 7. アロケータ最適化
+# 7. 出力ディレクトリと既定値（軍律16）
+mkdir -p "${WORKSPACE}"/out/{raw,selected,rejected,video}
+export DYSTOPIA_AUTO_VIDEO=${DYSTOPIA_AUTO_VIDEO:-0}
+
+# 8. アロケータ最適化
 export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True,garbage_collection_threshold:0.8
 export CUDA_MODULE_LOADING=LAZY
 
-# 8. GPU 判定による VRAM モード分岐（軍律14）
+# 9. GPU 判定（軍律14）
 VRAM_MB=$(nvidia-smi --query-gpu=memory.total --format=csv,noheader,nounits | head -n1)
 if [ "${VRAM_MB}" -lt 28000 ]; then
     VRAM_FLAGS="--lowvram --reserve-vram 2.0 --cpu-vae"
@@ -58,7 +62,7 @@ else
     echo "[GPU] ${VRAM_MB}MB 検出 → Wan 14B 2段モード"
 fi
 
-# 9. ComfyUI 常駐起動
+# 10. ComfyUI 常駐
 cd "${COMFY_DIR}"
 python3 main.py --listen 0.0.0.0 --port 8188 ${VRAM_FLAGS} > "${WORKSPACE}/comfyui.log" 2>&1 &
 
@@ -67,6 +71,6 @@ until curl -s http://127.0.0.1:8188/system_stats > /dev/null; do
 done
 echo "[ComfyUI] API 疎通確認完了"
 
-# 10. 点火
+# 11. 点火
 cd "${CORE_DIR}"
 exec python3 Main_Omega_Integrated.py
