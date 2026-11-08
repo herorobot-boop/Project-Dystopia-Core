@@ -20,6 +20,7 @@ TARGET_DIRS = {
     "vae": COMFY_MODEL_DIR / "vae",
     "clip_vision": COMFY_MODEL_DIR / "clip_vision",
     "loras": COMFY_MODEL_DIR / "loras",
+    "bbox": COMFY_MODEL_DIR / "ultralytics" / "bbox",
 }
 for p in TARGET_DIRS.values():
     p.mkdir(parents=True, exist_ok=True)
@@ -81,14 +82,14 @@ def fetch_hf(url: str, dest_dir: Path, filename: str):
 def setup_all_assets():
     print("[H-K9] 兵站確保シークエンス開始")
 
-    # 1. 思考層: Saluki-27B（MTP/Abliterated GGUF）
+    # 1. 思考層
     fetch_hf(
         "https://huggingface.co/Kujira/Underdog-Saluki-27B-1.0-MTP-Abliterated-GGUF/resolve/main/Underdog-Saluki-27B-1.0-IQ2-mix-MTP-abliterated.gguf",
         TARGET_DIRS["llm"],
         "Underdog-Saluki-27B-1.0-IQ2-mix-MTP-abliterated.gguf",
     )
 
-    # 2. 視覚検品層: Qwen2.5-VL-7B + mmproj
+    # 2. 視覚検品層
     fetch_hf(
         "https://huggingface.co/cxtb/Qwen2.5-VL-7B-Instruct-Q8_0-GGUF/resolve/main/qwen2.5-vl-7b-instruct-q8_0.gguf",
         TARGET_DIRS["vlm"],
@@ -100,11 +101,11 @@ def setup_all_assets():
         "mmproj-F16.gguf",
     )
 
-    # 3. T2I 着衣現像段: Fluxed Up + aidmaNSFWunlock
+    # 3. T2I 着衣現像段
     fetch_civitai(1997816, TARGET_DIRS["checkpoints"], "fluxed_up_5.1_fp8.safetensors")
     fetch_civitai(754298, TARGET_DIRS["loras"], "aidmaNSFWunlock-FLUX-V0.2.safetensors")
 
-    # 4. 差分編集段: Qwen-Image-Edit-2509 + 脱衣 Edit LoRA（軍律15: 低強度で併用）
+    # 4. 差分編集段
     fetch_hf(
         "https://huggingface.co/Comfy-Org/Qwen-Image-Edit/resolve/main/qwen_image_edit_2509_fp8.safetensors",
         TARGET_DIRS["diffusion_models"],
@@ -116,7 +117,7 @@ def setup_all_assets():
         "qwen_image_edit_remove_clothes.safetensors",
     )
 
-    # 5. 動画化段: Wan 2.2 I2V（4090 は 5B、5090 は 14B 2段）
+    # 5. 動画化段（軍律14）
     fetch_hf(
         "https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/resolve/main/split_files/diffusion_models/wan2.2_i2v_5B_fp16.safetensors",
         TARGET_DIRS["diffusion_models"],
@@ -143,7 +144,7 @@ def setup_all_assets():
         "wan22_i2v_lightning_low.safetensors",
     )
 
-    # 6. 共通: テキストエンコーダ / VAE / CLIP Vision
+    # 6. 共通
     fetch_hf(
         "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors",
         TARGET_DIRS["text_encoders"],
@@ -160,7 +161,14 @@ def setup_all_assets():
         "clip_vision_h.safetensors",
     )
 
-    # 7. extra_model_paths.yaml（v8.5 の文字列破損を修正）
+    # 7. 手検出（自動マスク用）
+    fetch_hf(
+        "https://huggingface.co/Bingsu/adetailer/resolve/main/hand_yolov8s.pt",
+        TARGET_DIRS["bbox"],
+        "hand_yolov8s.pt",
+    )
+
+    # 8. extra_model_paths.yaml（v8.5 の文字列破損を修正）
     yaml_text = """comfyui:
     base_path: /workspace/models
     llm: llm/
