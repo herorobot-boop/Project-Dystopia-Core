@@ -1,0 +1,36 @@
+id: e2_kaikin_002
+title: オープン更衣室・仕切りなし
+engine: E2
+place: スポーツクラブ更衣室
+tags:
+- 常識改編
+- 多人数
+- 着替え
+cast:
+  female: 2
+  male: 1
+  cast_note: ''
+wardrobe:
+  female:
+  - スポーツブラ
+  - レギンス
+  male:
+  - ジャージ
+key_props:
+- 「仕切り撤去」の貼り紙
+- ベンチ
+beats:
+- 「本日より仕切りを撤去」の貼り紙
+- 女性が入ってくる
+- 目線を外さないまま会話
+- スポーツブラを捲り上げる
+- 胸を露出
+verdicts:
+  V1: 段階触診
+  V3: 観察
+prompt_seed: locker room with benches, japanese women changing, sports bra lifted, no partition, mixed
+  genders, bright ceiling light, wide shot
+ng:
+- blush
+- mannequin
+notes: 多人数なので手の接触は1組に絞る。

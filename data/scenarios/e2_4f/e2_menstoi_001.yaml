@@ -1,0 +1,42 @@
+id: e2_menstoi_001
+title: 混雑男トイレ・個室待ち
+engine: E2
+place: 駅ビル4F 男子トイレ
+tags:
+- 常識改編
+- 密室
+- 立ち
+- 手コキ
+cast:
+  female: 1
+  male: 2
+  cast_note: ''
+wardrobe:
+  female:
+  - ブラウス
+  - タイトスカート
+  - ストッキング
+  - パンプス
+  male:
+  - スーツ
+  - ネクタイ
+key_props:
+- 清掃中プレート
+- 手すり
+- 個室ドア
+beats:
+- 満員で個室待ちの列ができる
+- 清掃中プレートに「女性係員も使用可」とある
+- 男性が先に個室へ入る
+- 女性が押し込まれる
+- 狭い個室で密着する
+- 手コキ
+verdicts:
+  V1: 段階触診
+  V3: 観察
+prompt_seed: station building toilet, narrow stall, japanese woman in blouse and tight skirt, stockings
+  around one ankle, standing, handjob, cleaning sign on door, fluorescent light, vertical composition
+ng:
+- blush
+- mannequin
+notes: 掲示物で常識を説明。文字は読めなくてよい。

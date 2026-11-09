@@ -1,0 +1,38 @@
+id: e3_sokutei_003
+title: 採寸会・メジャーが胸を回る
+engine: E3
+place: デパート催事場
+tags:
+- 制度手続き
+- 採寸
+- 下着
+cast:
+  female: 1
+  male: 1
+  cast_note: ''
+wardrobe:
+  female:
+  - キャミソール
+  - ショーツ
+  male:
+  - 作業着
+  - メジャー
+key_props:
+- メジャー
+- 採寸票
+- パーティション
+beats:
+- 採寸票を渡される
+- パーティションの裏に案内される
+- バスト周りを測るためキャミソールを捲る
+- メジャーが胸の下を回る
+- そのまま測り続ける
+verdicts:
+  V1: 段階触診
+  V3: 観察
+prompt_seed: department store event space, partition screen, japanese woman in camisole, measuring tape
+  around underbust, measuring chart on clipboard, vertical composition
+ng:
+- blush
+- mannequin
+notes: 制度なので「測っているだけ」の顔を維持。
