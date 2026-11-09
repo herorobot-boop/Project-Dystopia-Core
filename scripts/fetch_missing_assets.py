@@ -124,16 +124,6 @@ def setup_all_assets():
         "wan2.2_i2v_5B_fp16.safetensors",
     )
     fetch_hf(
-        "https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/resolve/main/split_files/diffusion_models/wan2.2_i2v_high_noise_14B_fp8_scaled.safetensors",
-        TARGET_DIRS["diffusion_models"],
-        "wan2.2_i2v_high_noise_14B_fp8_scaled.safetensors",
-    )
-    fetch_hf(
-        "https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/resolve/main/split_files/diffusion_models/wan2.2_i2v_low_noise_14B_fp8_scaled.safetensors",
-        TARGET_DIRS["diffusion_models"],
-        "wan2.2_i2v_low_noise_14B_fp8_scaled.safetensors",
-    )
-    fetch_hf(
         "https://huggingface.co/lightx2v/Wan2.2-Lightning/resolve/main/Wan2.2-I2V-A14B-4steps-lora-rank64-Seko-V1/high_noise_model.safetensors",
         TARGET_DIRS["loras"],
         "wan22_i2v_lightning_high.safetensors",

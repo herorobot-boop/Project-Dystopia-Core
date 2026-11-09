@@ -23,7 +23,7 @@ install_c2patool_soft() {
         && echo "c2patool 導入済み" \
         || echo "WARN: c2patool 未導入。C2PA 署名はスキップ"
 }
-uo pipefail
+set -uo pipefail
 
 echo "=========================================================="
 echo "   Project Dystopia: Genesis Ignition Omega (v9.2)"
