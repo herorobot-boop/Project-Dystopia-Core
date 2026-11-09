@@ -43,6 +43,11 @@ Project Dystopia: Genesis Ignition Omega の起動で実際に発生した障害
 | 13 | Civitai の 401 HTML が `.safetensors` として保存される | `raise_for_status` せず本文を書いていた | ステータス検査を追加 | 修正済 |
 | 14 | `extra_model_paths.yaml` が壊れると ComfyUI が起動しない | f-string の三重クォート依存 | 明示文字列＋`yaml.safe_load` 検証 | 修正済 |
 
+| 15 | 停止中の `git clone` を `kill %1` して ComfyUI ツリーが半壊 | 既存ディレクトリへの clone が中断し、custom_nodes が消えた | tarball 展開に統一。退避してから作り直す | 修正済 |
+
+| 16 | 復旧後に genesis が Step 3 で即死 | ガードが `.git` 判定。tarball 復旧した木には `.git` が無く、非空ディレクトリへの clone が失敗 | `fetch_repo()` で中身の有無を判定し tarball 展開 | 修正済 |
+| 17 | preflight の追記が無言で空振り | アンカー `if [ $fail -ne 0 ]` が実物と不一致。`replace` の戻りを見ていなかった | アンカー候補を順試しし、不一致なら明示的に MISS を出す | 修正済 |
+
 ## 起動前チェック
 
 `bash scripts/preflight.sh` を通す。NG が1つでもあれば起動しない。
