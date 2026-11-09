@@ -114,7 +114,7 @@ def setup_all_assets():
 
     # 4. 差分編集段
     fetch_hf(
-        "https://huggingface.co/Comfy-Org/Qwen-Image-Edit/resolve/main/qwen_image_edit_2509_fp8.safetensors",
+        "https://huggingface.co/Comfy-Org/Qwen-Image-Edit_ComfyUI/resolve/main/split_files/diffusion_models/qwen_image_edit_fp8_e4m3fn.safetensors",
         TARGET_DIRS["diffusion_models"],
         "qwen_image_edit_2509_fp8.safetensors",
     )
@@ -124,6 +124,16 @@ def setup_all_assets():
         "qwen_image_edit_remove_clothes.safetensors",
     )
 
+    fetch_hf(
+        "https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI/resolve/main/split_files/text_encoders/qwen_2.5_vl_7b_fp8_scaled.safetensors",
+        TARGET_DIRS["text_encoders"],
+        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
+    )
+    fetch_hf(
+        "https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI/resolve/main/split_files/vae/qwen_image_vae.safetensors",
+        TARGET_DIRS["vae"],
+        "qwen_image_vae.safetensors",
+    )
     # 5. 動画化段（軍律14）
     fetch_hf(
         "https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/resolve/main/split_files/diffusion_models/wan2.2_i2v_5B_fp16.safetensors",

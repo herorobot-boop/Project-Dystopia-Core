@@ -62,6 +62,10 @@ Project Dystopia: Genesis Ignition Omega の起動で実際に発生した障害
 
 | 26 | `fetch_hf` に repo 名を渡して aria2c が URI エラー | 第1引数はフルURL | `resolve/main` 形式のURLを渡す | 修正済 |
 
+| 27 | `qwen_image_edit_2509_fp8.safetensors` が 404 | Comfy-Org の実リポジトリは `_ComfyUI` 付きで、実体は `split_files/` 配下 | HF API でファイル一覧を引いて実パスを解決。推測でURLを書かない | 修正済 |
+| 28 | Qwen-Image-Edit のテキストエンコーダと VAE が未取得 | スクリプトに項目自体が無かった | `qwen_2.5_vl_7b` と `qwen_image_vae` を追加 | 修正済 |
+| 29 | Civitai が全モデルで 403（API 200 でもDL不可） | 早期アクセス扱いでアカウント権限外。トークンでは回避不能 | HF の `Comfy-Org/flux1-dev` へフォールバック。LoRA はブラウザ手動 | 回避策実装 |
+
 ## 起動前チェック
 
 `bash scripts/preflight.sh` を通す。NG が1つでもあれば起動しない。
