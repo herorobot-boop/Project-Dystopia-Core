@@ -1,4 +1,19 @@
 #!/usr/bin/env bash
+fetch_repo() {
+  local repo="$1" dest="$2"
+  if [ -d "${dest}" ] && [ -n "$(ls -A "${dest}" 2>/dev/null)" ]; then
+    echo "[SKIP] ${dest}"; return 0
+  fi
+  local br
+  br=$(curl -fsSL "https://api.github.com/repos/${repo}" | jq -r '.default_branch // empty')
+  [ -z "${br}" ] && { echo "[FAIL] repo不明 ${repo}"; return 1; }
+  mkdir -p "${dest}"
+  curl -fsSL --max-time 300 "https://codeload.github.com/${repo}/tar.gz/refs/heads/${br}" -o /tmp/_r.tgz || return 1
+  tar -xzf /tmp/_r.tgz -C "${dest}" --strip-components=1
+  rm -f /tmp/_r.tgz
+  echo "[OK] ${dest}"
+}
+
 set -e
 install_c2patool_soft() {
     command -v c2patool >/dev/null 2>&1 && return 0
@@ -42,19 +57,19 @@ command -v aria2c >/dev/null || { echo "[FATAL] aria2c 不在"; exit 1; }
 
 # 2. コード同期
 if [ ! -d "${CORE_DIR}/.git" ]; then
-    git clone https://github.com/herorobot-boop/Project-Dystopia-Core.git "${CORE_DIR}"
+    fetch_repo herorobot-boop/Project-Dystopia-Core "${CORE_DIR}"
 else
     cd "${CORE_DIR}" && git pull origin main
 fi
 
 # 2.5 ComfyUI 本体と Manager
 if [ ! -d "${COMFY_DIR}/.git" ]; then
-    git clone https://github.com/comfyanonymous/ComfyUI.git "${COMFY_DIR}"
+    fetch_repo comfyanonymous/ComfyUI "${COMFY_DIR}"
 fi
 pip install --no-cache-dir -r "${COMFY_DIR}/requirements.txt"
 mkdir -p "${COMFY_DIR}/custom_nodes"
 if [ ! -d "${COMFY_DIR}/custom_nodes/ComfyUI-Manager" ]; then
-    git clone https://github.com/ltdrdata/ComfyUI-Manager.git "${COMFY_DIR}/custom_nodes/ComfyUI-Manager"
+    fetch_repo ltdrdata/ComfyUI-Manager "${COMFY_DIR}/custom_nodes/ComfyUI-Manager"
 fi
 pip install --no-cache-dir -r "${COMFY_DIR}/custom_nodes/ComfyUI-Manager/requirements.txt" || true
 
@@ -70,7 +85,7 @@ fi
 
 # 4. DAM ビューアー
 if [ ! -d "${GALLERY_DIR}" ]; then
-    git clone https://github.com/biagiomaf/smart-comfyui-gallery.git "${GALLERY_DIR}"
+    fetch_repo biagiomaf/smart-comfyui-gallery "${GALLERY_DIR}"
     cd "${GALLERY_DIR}" && pip install -r requirements.txt || true
 fi
 

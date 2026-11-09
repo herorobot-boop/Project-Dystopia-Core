@@ -48,6 +48,9 @@ Project Dystopia: Genesis Ignition Omega の起動で実際に発生した障害
 | 16 | 復旧後に genesis が Step 3 で即死 | ガードが `.git` 判定。tarball 復旧した木には `.git` が無く、非空ディレクトリへの clone が失敗 | `fetch_repo()` で中身の有無を判定し tarball 展開 | 修正済 |
 | 17 | preflight の追記が無言で空振り | アンカー `if [ $fail -ne 0 ]` が実物と不一致。`replace` の戻りを見ていなかった | アンカー候補を順試しし、不一致なら明示的に MISS を出す | 修正済 |
 
+| 18 | genesis への関数挿入が空振り | アンカー `^set -euo pipefail` が実物と不一致 | shebang 直後を挿入点にする | 修正済 |
+| 19 | preflight の `chk` 行が全部 NG、`[: missing ]` | `chk` は第2引数を評価するのに引数を括っていなかった | `chk "ラベル" "コマンド"` で必ず括る。`py_compile` で入れ子引用符を回避 | 修正済 |
+
 ## 起動前チェック
 
 `bash scripts/preflight.sh` を通す。NG が1つでもあれば起動しない。

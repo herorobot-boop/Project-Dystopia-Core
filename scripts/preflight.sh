@@ -12,9 +12,9 @@ chk "torch CUDA"      "python3 -c 'import torch,sys;sys.exit(0 if torch.cuda.is_
 chk "comfy モジュール" "cd /workspace/ComfyUI && python3 -c 'import comfy' 2>/dev/null"
 chk "ComfyUI 実体"     "[ -f /workspace/ComfyUI/main.py ]"
 chk "Manager 実体"     "[ -f /workspace/ComfyUI/custom_nodes/ComfyUI-Manager/__init__.py ]"
-chk fetch_missing 構文 python3 -c 'import ast;ast.parse(open("scripts/fetch_missing_assets.py").read())' 2>/dev/null
-chk scan_nodes 構文  python3 -c 'import ast;ast.parse(open("scripts/scan_and_install_nodes.py").read())' 2>/dev/null
-chk ノード6本 [ $(ls -d /workspace/ComfyUI/custom_nodes/*/ 2>/dev/null | wc -l) -ge 6 ]
-chk Civitaiトークン [ -n "${CIVITAI_API_TOKEN:-}" ]
+chk "fetch_missing 構文" "python3 -m py_compile scripts/fetch_missing_assets.py"
+chk "scan_nodes 構文" "python3 -m py_compile scripts/scan_and_install_nodes.py"
+chk "ノード6本" "[ \$(ls -d /workspace/ComfyUI/custom_nodes/*/ 2>/dev/null | wc -l) -ge 6 ]"
+chk "Civitaiトークン" "[ -n \"\${CIVITAI_API_TOKEN:-}\" ]"
 if [ "$fail" -ne 0 ]; then echo "--- 未解決あり ---"; exit 1; fi
 echo "--- 通過 ---"
