@@ -1,20 +1,14 @@
-# 生成物は基本コミットしない（distは索引だけ残す）
-out/
 __pycache__/
 *.pyc
 .venv/
 .DS_Store
 
-# 大きい素材
+# 生成した画像・動画はRunPod側に置くので上げない
+out/
 *.png
 *.jpg
 *.jpeg
 *.webp
 *.mp4
-*.safetensors
-*.ckpt
 
-# distは索引だけ追跡
-dist/**
-!dist/INDEX.md
-!dist/.gitkeep
+# dist は .md だけなので全部上げる（除外しない）
