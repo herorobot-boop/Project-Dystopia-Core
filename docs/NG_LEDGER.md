@@ -60,6 +60,8 @@ Project Dystopia: Genesis Ignition Omega の起動で実際に発生した障害
 | 24 | `fetch_hf` の引数順を誤り `IsADirectoryError` | シグネチャは `(repo, dest_dir, filename)` | 順序を修正。絶対パスを右辺に置かない | 修正済 |
 | 25 | Civitai 失敗でスクリプト全体が停止 | 例外を投げていた | 警告して `return False`。呼び出し側で代替判定 | 修正済 |
 
+| 26 | `fetch_hf` に repo 名を渡して aria2c が URI エラー | 第1引数はフルURL | `resolve/main` 形式のURLを渡す | 修正済 |
+
 ## 起動前チェック
 
 `bash scripts/preflight.sh` を通す。NG が1つでもあれば起動しない。

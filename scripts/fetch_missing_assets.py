@@ -109,7 +109,7 @@ def setup_all_assets():
         fetch_civitai(1997816, TARGET_DIRS["checkpoints"], "fluxed_up_5.1_fp8.safetensors")
     if not ckpt.exists():
         print("[WARN] fluxed_up 不可。Comfy-Org/flux1-dev fp8 で代替")
-        fetch_hf("Comfy-Org/flux1-dev", TARGET_DIRS["checkpoints"], "flux1-dev-fp8.safetensors")
+        fetch_hf("https://huggingface.co/Comfy-Org/flux1-dev/resolve/main/flux1-dev-fp8.safetensors", TARGET_DIRS["checkpoints"], "flux1-dev-fp8.safetensors")
     fetch_civitai(754298, TARGET_DIRS["loras"], "aidmaNSFWunlock-FLUX-V0.2.safetensors")
 
     # 4. 差分編集段
