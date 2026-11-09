@@ -11,5 +11,12 @@ out/
 *.webp
 *.mp4
 
-# dist は .md だけなので全部上げる（除外しない）
-dist/
+# モデル重量
+models/
+*.safetensors
+*.gguf
+*.onnx
+*.pt
+*.bin
+
+# ビルド成果物は .md のみなので上げる（除外しない）
