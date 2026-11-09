@@ -6,6 +6,7 @@ PY=/usr/local/bin/python3
 ROOT=/workspace/Project-Dystopia-Core
 RUNLOG="/workspace/logs/comfy_$(date +%H%M%S).log"
 PORT=8188
+PIN_DATE="2026-10-01"
 mkdir -p /workspace/logs
 
 fail() { echo "❌ $*"; exit "${2:-1}"; }
@@ -31,6 +32,16 @@ start() {
   done
 }
 
+pin_comfy() {
+  echo "--- ComfyUI を ${PIN_DATE} 時点に固定 ---"
+  git -C "$COMFY" fetch --unshallow 2>/dev/null || git -C "$COMFY" fetch --all 2>/dev/null
+  local ref
+  ref=$(git -C "$COMFY" rev-list -1 --before="$PIN_DATE" origin/master 2>/dev/null \
+        || git -C "$COMFY" rev-list -1 --before="$PIN_DATE" origin/main 2>/dev/null)
+  [ -n "$ref" ] || { echo "  固定先が引けない。git pull で代用"; git -C "$COMFY" pull --ff-only 2>/dev/null; return 0; }
+  git -C "$COMFY" checkout -q "$ref" && echo "  固定: $ref"
+}
+
 if alive; then echo "  既存を再利用"; else
   echo "--- 起動 ---"
   start || { tail -n 30 "$RUNLOG"; fail "起動失敗 $RUNLOG" 3; }
@@ -41,8 +52,7 @@ curl -sf "http://127.0.0.1:$PORT/system_stats" | "$PY" -c \
 
 echo "--- ノード照合 ---"
 if ! "$PY" "$ROOT/scripts/preflight_nodes.py"; then
-  echo "--- ComfyUI 更新を試行 ---"
-  git -C "$COMFY" pull --ff-only >/dev/null 2>&1
+  pin_comfy
   start || fail "再起動失敗" 3
   "$PY" "$ROOT/scripts/preflight_nodes.py" || fail "ノード不整合が解消しない" 5
 fi
