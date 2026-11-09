@@ -18,6 +18,7 @@ NEEDED = {
     "KSampler": ["model", "positive", "negative", "latent_image", "seed", "steps",
                  "cfg", "sampler_name", "scheduler", "denoise"],
     "VAEDecode": ["samples", "vae"],
+    "VAEDecodeTiled": ["samples", "vae", "tile_size", "overlap"],
     "VAEEncode": ["pixels", "vae"],
     "SaveImage": ["filename_prefix", "images"],
     "TextEncodeQwenImageEditPlus": ["clip", "vae", "image1", "prompt"],
@@ -40,9 +41,8 @@ FILES = {
 }
 
 bad = 0
-
 try:
-    info = requests.get(f"{BASE}/object_info", timeout=60).json()
+    info = requests.get(f"{BASE}/object_info", timeout=90).json()
 except Exception as e:
     print("object_info 取得失敗:", e)
     sys.exit(1)
@@ -56,16 +56,14 @@ for cls, inputs in NEEDED.items():
     have = set(spec.get("required", {})) | set(spec.get("optional", {}))
     for name in inputs:
         if name not in have:
-            print(f"❌ 入力名不一致: {cls}.{name}（実在: {sorted(have)}）")
+            print(f"❌ 入力名不一致: {cls}.{name}")
             bad += 1
-
     if cls == "CLIPLoader":
         types = spec.get("required", {}).get("type", [None])[0]
         for want in ("qwen_image", "wan"):
             if types and want not in types:
                 print(f"❌ CLIPLoader に type={want} が無い")
                 bad += 1
-
     if cls == "TextEncodeQwenImageEditPlus" and len(info[cls].get("output", [])) < 2:
         print("❌ TextEncodeQwenImageEditPlus の出力が2本未満")
         bad += 1
@@ -85,4 +83,4 @@ for field, names in FILES.items():
 if bad:
     print(f"\n❌ 不整合 {bad} 件")
     sys.exit(1)
-print("✅ ノード・ファイル整合OK")
+print("✅ 整合OK")
