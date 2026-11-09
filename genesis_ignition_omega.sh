@@ -1,5 +1,29 @@
 #!/usr/bin/env bash
-set -euo pipefail
+set -e
+install_c2patool_soft() {
+    command -v c2patool >/dev/null 2>&1 && return 0
+    local url
+    url=$(curl -fsSL https://api.github.com/repos/contentauth/c2patool/releases/latest 2>/dev/null \
+        | jq -r '.assets[]?.browser_download_url' 2>/dev/null \
+        | grep -E 'x86_64-unknown-linux-gnu\.(tar\.gz|zip)$' | head -1)
+    if [ -z "${url}" ]; then
+        echo "WARN: c2patool の取得先を解決できない。C2PA 署名はスキップ"
+        return 0
+    fi
+    local tmp; tmp=$(mktemp -d)
+    if curl -fsSL "$url" -o "$tmp/pkg"; then
+        case "$url" in
+            *.zip) unzip -qo "$tmp/pkg" -d "$tmp" ;;
+            *)     tar -xzf "$tmp/pkg" -C "$tmp" ;;
+        esac
+        find "$tmp" -type f -name c2patool -exec install -m755 {} /usr/local/bin/ \; 2>/dev/null
+    fi
+    rm -rf "$tmp"
+    command -v c2patool >/dev/null 2>&1 \
+        && echo "c2patool 導入済み" \
+        || echo "WARN: c2patool 未導入。C2PA 署名はスキップ"
+}
+uo pipefail
 
 echo "=========================================================="
 echo "   Project Dystopia: Genesis Ignition Omega (v9.2)"
@@ -12,8 +36,8 @@ GALLERY_DIR=${WORKSPACE}/smart-comfyui-gallery
 
 # 1. 必須パッケージ
 apt-get update || true
-apt-get install -y --no-install-recommends aria2 jq openssl python3-venv
-apt-get install -y --no-install-recommends c2patool || true
+apt-get install -y -qq --no-install-recommends aria2 jq openssl python3-venv
+install_c2patool_soft
 command -v aria2c >/dev/null || { echo "[FATAL] aria2c 不在"; exit 1; }
 
 # 2. コード同期
@@ -67,7 +91,7 @@ export CUDA_MODULE_LOADING=LAZY
 # 9. GPU 判定（軍律14）
 VRAM_MB=$(nvidia-smi --query-gpu=memory.total --format=csv,noheader,nounits | head -n1)
 if [ "${VRAM_MB}" -lt 28000 ]; then
-    VRAM_FLAGS="--lowvram --reserve-vram 2.0 --cpu-vae"
+    VRAM_FLAGS="--highvram --reserve-vram 2.0"
     export DYSTOPIA_WAN_TIER="5B"
     echo "[GPU] ${VRAM_MB}MB 検出 → Wan 5B モード"
 else
