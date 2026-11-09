@@ -47,13 +47,15 @@ def fetch_civitai(model_version_id: int, target_dir: Path, filename: str) -> Non
     token = os.environ.get("CIVITAI_API_TOKEN", "")
     headers = {"Authorization": f"Bearer {token}"} if token else {}
     url = f"https://civitai.com/api/download/models/{model_version_id}"
+    if token:
+        url += f"?token={token}"
     print(f"[Downloading Civitai] {filename} (ID: {model_version_id})...")
     with requests.get(url, headers=headers, stream=True, timeout=120, allow_redirects=True) as r:
         if r.status_code != 200:
-            raise RuntimeError(f"Civitai HTTP {r.status_code} for {filename} (ID {model_version_id})")
+            print(f"[WARN] Civitai HTTP {r.status_code}: {filename}"); return False
         ctype = r.headers.get("Content-Type", "").lower()
         if "html" in ctype or "json" in ctype:
-            raise RuntimeError(f"Civitai がファイル以外を返した: {ctype} (ID {model_version_id})")
+            print(f"[WARN] Civitai がファイル以外: {ctype} {filename}"); return False
         tmp = target.with_suffix(target.suffix + ".part")
         with tmp.open("wb") as f:
             for chunk in r.iter_content(1 << 20):
@@ -101,7 +103,13 @@ def setup_all_assets():
     )
 
     # 3. T2I 着衣現像段
-    fetch_civitai(1997816, TARGET_DIRS["checkpoints"], "fluxed_up_5.1_fp8.safetensors")
+    ckpt = TARGET_DIRS["checkpoints"] / "fluxed_up_5.1_fp8.safetensors"
+    TARGET_DIRS["checkpoints"].mkdir(parents=True, exist_ok=True)
+    if not ckpt.exists():
+        fetch_civitai(1997816, TARGET_DIRS["checkpoints"], "fluxed_up_5.1_fp8.safetensors")
+    if not ckpt.exists():
+        print("[WARN] fluxed_up 不可。Comfy-Org/flux1-dev fp8 で代替")
+        fetch_hf("Comfy-Org/flux1-dev", TARGET_DIRS["checkpoints"], "flux1-dev-fp8.safetensors")
     fetch_civitai(754298, TARGET_DIRS["loras"], "aidmaNSFWunlock-FLUX-V0.2.safetensors")
 
     # 4. 差分編集段

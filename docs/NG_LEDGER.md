@@ -56,6 +56,10 @@ Project Dystopia: Genesis Ignition Omega の起動で実際に発生した障害
 
 | 22 | Civitai 取得が `MissingSchema: '/model-versions/1997816'` | API の `downloadUrl` が空で Web パスにフォールバックしていた | `/api/download/models/{id}` を直接叩く。Content-Type も検査 | 修正済 |
 
+| 23 | Civitai が API 200 でもダウンロード 403 | 対象モデルが早期アクセス扱いでアカウント権限外 | HF の `Comfy-Org/flux1-dev` fp8 へフォールバック | 回避策実装 |
+| 24 | `fetch_hf` の引数順を誤り `IsADirectoryError` | シグネチャは `(repo, dest_dir, filename)` | 順序を修正。絶対パスを右辺に置かない | 修正済 |
+| 25 | Civitai 失敗でスクリプト全体が停止 | 例外を投げていた | 警告して `return False`。呼び出し側で代替判定 | 修正済 |
+
 ## 起動前チェック
 
 `bash scripts/preflight.sh` を通す。NG が1つでもあれば起動しない。
