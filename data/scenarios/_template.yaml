@@ -1,0 +1,46 @@
+# 複製して使う雛形。id と title は必ず書き換える。
+id: e2_place_000
+title: 仮タイトル
+engine: E2
+place: 仮の場所
+tags:
+  - 常識改編
+  - 密室
+
+cast:
+  female: 1
+  male: 1
+  cast_note: ""          # roll_cast.py の出力をここに貼る
+
+wardrobe:
+  female:
+    - ブラウス
+    - タイトスカート
+  male:
+    - スーツ
+
+key_props:
+  - 掲示物
+  - 手すり
+
+beats:
+  - 入口で違和感に気づく
+  - 掲示物に新しい規則が書かれている
+  - 規則に従って密着する
+  - 接触が始まる
+  - 行為に移る
+
+verdicts:
+  V1: 段階触診
+  V2: 射精判定
+  V3: 観察
+
+prompt_seed: >
+  narrow japanese interior, woman in blouse and tight skirt, standing,
+  notice board with printed rule sheet, fluorescent light, vertical composition
+
+ng:
+  - blush
+  - mannequin
+
+notes: 掲示物で常識を説明する。文字は読めなくてよい。
