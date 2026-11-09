@@ -55,7 +55,8 @@ def fetch_civitai(model_version_id: str, dest_dir: Path, filename: str):
     fetch_headers = {"User-Agent": headers["User-Agent"]} if "amazonaws.com" in download_url else headers
     tmp_path = output_path.with_suffix(".tmp")
     with session.get(download_url, headers=fetch_headers, stream=True, timeout=60) as r:
-        r.raise_for_status()
+        if r.status_code != 200:
+            raise RuntimeError(f"Civitai HTTP {r.status_code} for {filename} (ID {model_version_id})")
         with open(tmp_path, "wb") as f:
             for chunk in r.iter_content(chunk_size=4 * 1024 * 1024):
                 if chunk:
@@ -72,7 +73,7 @@ def fetch_hf(url: str, dest_dir: Path, filename: str):
     print(f"[Downloading HF] {filename}...")
     auth = f'--header="Authorization: Bearer {HF_TOKEN}"' if HF_TOKEN else ""
     cmd = (
-        f"aria2c -x 16 -s 16 -k 1M {auth} --console-log-level=warn "
+        f"aria2c -x 16 -s 16 -k 1M {auth} --console-log-level=warn --continue=true --max-tries=5 --retry-wait=5 "
         f"-c -d '{dest_dir}' -o '{filename}' '{url}'"
     )
     subprocess.run(cmd, shell=True, check=True)
@@ -165,6 +166,12 @@ def setup_all_assets():
     vlm: vlm/
 """
     (COMFY_DIR / "extra_model_paths.yaml").write_text(yaml_text)
+    try:
+        import yaml as _y
+        _y.safe_load((COMFY_DIR / "extra_model_paths.yaml").read_text())
+    except Exception as e:
+        print(f"[H-K9] YAML 検証失敗: {e}")
+        raise
     print("[H-K9] 兵站確保 完了")
 
 

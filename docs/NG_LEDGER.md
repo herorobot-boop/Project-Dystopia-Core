@@ -35,6 +35,14 @@ Project Dystopia: Genesis Ignition Omega の起動で実際に発生した障害
 | 9 | `tail -30 /workspace/run_*.log` が `option used in invalid context` | glob が複数ファイルに展開された | `tail -n 40 "$(ls -t /workspace/logs/run_*.log | head -1)"` | 運用で回避 |
 | 10 | `git commit` が空振り | ステージが空でも実行していた | `git diff --cached --quiet || git commit ...` | 運用で回避 |
 
+| 8 | ComfyUI 本体の依存が入らない | `pip install -r requirements.txt` が `if [ ! -d .git ]` の内側にあり、tarball 先置きでブロックごとスキップされた | `if` の外へ移動 | 修正済 |
+| 9 | `tail -30 /workspace/run_*.log` が壊れる | glob が複数ファイルに展開された | `tail -n 40 $(ls -t /workspace/logs/run_*.log \| head -1)` | 運用で回避 |
+| 10 | `git commit` が空振り | ステージが空でも実行していた | `git diff --cached --quiet \|\| git commit ...` | 運用で回避 |
+| 11 | preflight の `import comfy` が常に NG | `comfy` はパッケージ未 install で cwd 依存 | `cd /workspace/ComfyUI` を挟む | 修正済 |
+| 12 | 素の状態から起動すると再びクローンで停止 | 手動回避がスクリプトに反映されていなかった | `fetch_repo()` で tarball 取得。失敗時のみ git clone | 修正済 |
+| 13 | Civitai の 401 HTML が `.safetensors` として保存される | `raise_for_status` せず本文を書いていた | ステータス検査を追加 | 修正済 |
+| 14 | `extra_model_paths.yaml` が壊れると ComfyUI が起動しない | f-string の三重クォート依存 | 明示文字列＋`yaml.safe_load` 検証 | 修正済 |
+
 ## 起動前チェック
 
 `bash scripts/preflight.sh` を通す。NG が1つでもあれば起動しない。

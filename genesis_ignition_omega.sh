@@ -50,8 +50,8 @@ fi
 # 2.5 ComfyUI 本体と Manager
 if [ ! -d "${COMFY_DIR}/.git" ]; then
     git clone https://github.com/comfyanonymous/ComfyUI.git "${COMFY_DIR}"
-    pip install --no-cache-dir -r "${COMFY_DIR}/requirements.txt"
 fi
+pip install --no-cache-dir -r "${COMFY_DIR}/requirements.txt"
 mkdir -p "${COMFY_DIR}/custom_nodes"
 if [ ! -d "${COMFY_DIR}/custom_nodes/ComfyUI-Manager" ]; then
     git clone https://github.com/ltdrdata/ComfyUI-Manager.git "${COMFY_DIR}/custom_nodes/ComfyUI-Manager"
