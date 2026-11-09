@@ -1,22 +1,15 @@
 #!/usr/bin/env python3
-"""dist/blocks の .md から POSITIVE を読んで静止画を生成する。
-既定LoRAは MS_Nude_Style 0.85 の1本。--unlock で aidma 0.6 を追加。
-使い方: python3 gen_still.py dist/blocks/e2/e2_menstoi_001.md --n 3 [--unlock]"""
-import argparse, json, re, sys, time
+"""POSITIVEを読んで静止画生成。既定LoRAは MS_Nude_Style 0.85。"""
+import argparse
+import re
+import sys
+import time
 from pathlib import Path
-import requests
 
-BASE = "http://127.0.0.1:8188"
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import _common as C
 
-UNLOCK_TOKEN = "aidmaNSFWunlock, "
-
-
-def purge() -> None:
-    try:
-        requests.post(f"{BASE}/free", json={"unload_models": True, "free_memory": True}, timeout=20)
-        time.sleep(2)
-    except Exception:
-        pass
+UNLOCK = "aidmaNSFWunlock, "
 
 
 def section(md: str, name: str) -> str:
@@ -31,18 +24,19 @@ def main() -> int:
     ap.add_argument("--width", type=int, default=832)
     ap.add_argument("--height", type=int, default=1216)
     ap.add_argument("--unlock", action="store_true")
-    ap.add_argument("--nude", type=float, default=0.85, help="MS_Nude_Style 強度")
+    ap.add_argument("--nude", type=float, default=0.85)
     ap.add_argument("--seed", type=int, default=-1)
     a = ap.parse_args()
 
     md = Path(a.block).read_text(encoding="utf-8")
     pos, neg = section(md, "POSITIVE"), section(md, "NEGATIVE")
     if not pos:
-        print("POSITIVE が空"); return 1
+        print("POSITIVE が空")
+        return 1
     if a.unlock:
-        pos = UNLOCK_TOKEN + pos
+        pos = UNLOCK + pos
 
-    purge()
+    C.purge()
 
     for i in range(a.n):
         seed = a.seed if a.seed >= 0 else int(time.time() * 1000) % 10**9 + i
@@ -64,7 +58,7 @@ def main() -> int:
                              "scheduler": "simple", "denoise": 1.0}},
             "8": {"class_type": "VAEDecode", "inputs": {"samples": ["7", 0], "vae": ["1", 2]}},
             "9": {"class_type": "SaveImage",
-                  "inputs": {"filename_prefix": f"Raw_{Path(a.block).stem}", "images": ["8", 0]}},
+                  "inputs": {"filename_prefix": "Tmp", "images": ["8", 0]}},
         }
         if a.unlock:
             wf["3"] = {"class_type": "LoraLoader",
@@ -75,20 +69,12 @@ def main() -> int:
             wf["5"]["inputs"]["clip"] = ["3", 1]
             wf["7"]["inputs"]["model"] = ["3", 0]
 
-        r = requests.post(f"{BASE}/prompt", json={"prompt": wf}, timeout=30)
-        if r.status_code != 200:
-            print("POST失敗", r.status_code, r.text[:500]); return 1
-        pid = r.json()["prompt_id"]
-        for _ in range(200):
-            time.sleep(2)
-            h = requests.get(f"{BASE}/history/{pid}", timeout=10).json()
-            if pid in h:
-                if h[pid].get("status", {}).get("status_str") == "error":
-                    print(json.dumps(h[pid]["status"], ensure_ascii=False)[:900]); return 1
-                for node in h[pid].get("outputs", {}).values():
-                    if "images" in node:
-                        print("生成:", node["images"][0]["filename"])
-                break
+        out, err = C.run(wf, 900)
+        if err:
+            print("失敗:", err)
+            return 1
+        moved = C.stash(C.collect(out))
+        print("生成:", moved)
     return 0
 
 
