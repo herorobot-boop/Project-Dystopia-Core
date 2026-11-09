@@ -1,51 +1,38 @@
 #!/usr/bin/env python3
-"""Wan2.2 TI2V-5B で微動動画化。704x1280 / 121frame / 24fps。
-既定は素の5B(25step/cfg5.0/shift8.0)。--fast でTurbo下書き。
-使い方: python3 wan5b_i2v.py 入力.png "she slowly exhales" [--more-motion] [--fast]"""
-import argparse, json, sys, time
+"""Wan2.2 TI2V-5B 微動動画。既定は素の5B 25step。--fast でTurbo下書き。"""
+import argparse
+import sys
+import time
 from pathlib import Path
-import requests
 
-BASE = "http://127.0.0.1:8188"
-COMFY_OUT = Path("/workspace/ComfyUI/output")
-
-
-def purge() -> None:
-    try:
-        requests.post(f"{BASE}/free", json={"unload_models": True, "free_memory": True}, timeout=20)
-        time.sleep(2)
-    except Exception:
-        pass
-
-
-def upload(path: Path) -> str:
-    with path.open("rb") as f:
-        r = requests.post(f"{BASE}/upload/image", files={"image": (path.name, f)}, timeout=120)
-    r.raise_for_status()
-    return r.json()["name"]
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import _common as C
 
 
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("image")
     ap.add_argument("motion")
-    ap.add_argument("--fast", action="store_true", help="Turbo 4step 下書き")
-    ap.add_argument("--more-motion", action="store_true", help="shiftを下げcfgを上げる")
+    ap.add_argument("--fast", action="store_true")
+    ap.add_argument("--more-motion", action="store_true")
     ap.add_argument("--shift", type=float, default=-1.0)
+    ap.add_argument("--frames", type=int, default=121)
     ap.add_argument("--seed", type=int, default=-1)
     a = ap.parse_args()
 
     src = Path(a.image)
-    if not src.exists() and (COMFY_OUT / a.image).exists():
-        src = COMFY_OUT / a.image
+    if not src.exists() and (C.RAW / a.image).exists():
+        src = C.RAW / a.image
+    if not src.exists() and (C.COMFY_OUT / a.image).exists():
+        src = C.COMFY_OUT / a.image
     if not src.exists():
-        print("画像が無い:", a.image); return 1
+        print("画像が無い:", a.image)
+        return 1
 
     if a.fast:
         unet, steps, cfg, shift = "Wan2_2-TI2V-5B-Turbo_fp16.safetensors", 4, 1.0, 8.0
     else:
         unet, steps, cfg, shift = "wan2.2_ti2v_5B_fp16.safetensors", 25, 5.0, 8.0
-
     if a.more_motion:
         if a.fast:
             steps, cfg, shift = 6, 1.5, 6.0
@@ -54,8 +41,8 @@ def main() -> int:
     if a.shift > 0:
         shift = a.shift
 
-    purge()
-    name = upload(src)
+    C.purge()
+    name = C.upload(src)
     seed = a.seed if a.seed >= 0 else int(time.time() * 1000) % 10**9
 
     wf = {
@@ -69,35 +56,28 @@ def main() -> int:
         "7": {"class_type": "CLIPTextEncode", "inputs": {"clip": ["2", 0], "text": ""}},
         "8": {"class_type": "Wan22ImageToVideoLatent",
               "inputs": {"vae": ["3", 0], "width": 704, "height": 1280,
-                         "length": 121, "batch_size": 1, "start_image": ["4", 0]}},
+                         "length": a.frames, "batch_size": 1, "start_image": ["4", 0]}},
         "9": {"class_type": "KSampler",
               "inputs": {"model": ["5", 0], "positive": ["6", 0], "negative": ["7", 0],
                          "latent_image": ["8", 0], "seed": seed, "steps": steps, "cfg": cfg,
                          "sampler_name": "euler", "scheduler": "simple", "denoise": 1.0}},
-        "10": {"class_type": "VAEDecode", "inputs": {"samples": ["9", 0], "vae": ["3", 0]}},
+        "10": {"class_type": "VAEDecodeTiled",
+               "inputs": {"samples": ["9", 0], "vae": ["3", 0],
+                          "tile_size": 256, "overlap": 64,
+                          "temporal_size": 32, "temporal_overlap": 8}},
         "11": {"class_type": "VHS_VideoCombine",
                "inputs": {"images": ["10", 0], "frame_rate": 24, "loop_count": 0,
-                          "filename_prefix": f"Vid_{src.stem}", "format": "video/h264-mp4",
+                          "filename_prefix": "TmpVid", "format": "video/h264-mp4",
                           "pingpong": False, "save_output": True}},
     }
 
-    print(f"unet={unet} steps={steps} cfg={cfg} shift={shift}")
-    r = requests.post(f"{BASE}/prompt", json={"prompt": wf}, timeout=30)
-    if r.status_code != 200:
-        print("POST失敗", r.status_code, r.text[:600]); return 1
-    pid = r.json()["prompt_id"]
-    for _ in range(400):
-        time.sleep(3)
-        h = requests.get(f"{BASE}/history/{pid}", timeout=10).json()
-        if pid in h:
-            if h[pid].get("status", {}).get("status_str") == "error":
-                print(json.dumps(h[pid]["status"], ensure_ascii=False)[:900]); return 1
-            for node in h[pid].get("outputs", {}).values():
-                for key in ("gifs", "videos"):
-                    if key in node:
-                        print("生成:", node[key][0]["filename"]); return 0
-            print("出力なし"); return 1
-    print("タイムアウト"); return 1
+    print(f"unet={unet} steps={steps} cfg={cfg} shift={shift} frames={a.frames}")
+    out, err = C.run(wf, 3600, poll=3)
+    if err:
+        print("失敗:", err)
+        return 1
+    print("生成:", C.stash(C.collect(out, "gifs")))
+    return 0
 
 
 if __name__ == "__main__":
