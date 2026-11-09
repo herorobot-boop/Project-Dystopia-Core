@@ -38,31 +38,29 @@ def verify_file(file_path: Path) -> bool:
     return True
 
 
-def fetch_civitai(model_version_id: str, dest_dir: Path, filename: str):
-    output_path = dest_dir / filename
-    if output_path.exists() and verify_file(output_path):
+def fetch_civitai(model_version_id: int, target_dir: Path, filename: str) -> None:
+    target_dir.mkdir(parents=True, exist_ok=True)
+    target = target_dir / filename
+    if target.exists() and target.stat().st_size > 1_000_000:
         print(f"[Exist] Civitai: {filename}")
         return
+    token = os.environ.get("CIVITAI_API_TOKEN", "")
+    headers = {"Authorization": f"Bearer {token}"} if token else {}
+    url = f"https://civitai.com/api/download/models/{model_version_id}"
     print(f"[Downloading Civitai] {filename} (ID: {model_version_id})...")
-    url = f"https://civitai.red/api/download/models/{model_version_id}?type=Model&format=SafeTensor"
-    headers = {
-        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64)",
-        "Authorization": f"Bearer {CIVITAI_TOKEN}" if CIVITAI_TOKEN else "",
-    }
-    session = requests.Session()
-    res = session.get(url, headers=headers, allow_redirects=False, timeout=15)
-    download_url = res.headers.get("Location") if res.status_code in (301, 302, 307, 308) else url
-    fetch_headers = {"User-Agent": headers["User-Agent"]} if "amazonaws.com" in download_url else headers
-    tmp_path = output_path.with_suffix(".tmp")
-    with session.get(download_url, headers=fetch_headers, stream=True, timeout=60) as r:
+    with requests.get(url, headers=headers, stream=True, timeout=120, allow_redirects=True) as r:
         if r.status_code != 200:
             raise RuntimeError(f"Civitai HTTP {r.status_code} for {filename} (ID {model_version_id})")
-        with open(tmp_path, "wb") as f:
-            for chunk in r.iter_content(chunk_size=4 * 1024 * 1024):
+        ctype = r.headers.get("Content-Type", "").lower()
+        if "html" in ctype or "json" in ctype:
+            raise RuntimeError(f"Civitai がファイル以外を返した: {ctype} (ID {model_version_id})")
+        tmp = target.with_suffix(target.suffix + ".part")
+        with tmp.open("wb") as f:
+            for chunk in r.iter_content(1 << 20):
                 if chunk:
                     f.write(chunk)
-    tmp_path.rename(output_path)
-    print(f"[SUCCESS] Civitai Model ready: {filename}")
+    tmp.replace(target)
+    print(f"[SUCCESS] Civitai ready: {filename}")
 
 
 def fetch_hf(url: str, dest_dir: Path, filename: str):

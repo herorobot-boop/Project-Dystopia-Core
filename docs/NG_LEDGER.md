@@ -54,6 +54,8 @@ Project Dystopia: Genesis Ignition Omega の起動で実際に発生した障害
 | 20 | `chk` の `cd` が後続チェックに漏れる | `eval` を同一シェルで実行していた | `( eval "$2" )` で subshell 化、パスは絶対化 | 修正済 |
 | 21 | 退避ディレクトリに Impact-Pack を置き去り | `mv` でツリーごと退避したため | 退避先から `cp -a` で復元 | 修正済 |
 
+| 22 | Civitai 取得が `MissingSchema: '/model-versions/1997816'` | API の `downloadUrl` が空で Web パスにフォールバックしていた | `/api/download/models/{id}` を直接叩く。Content-Type も検査 | 修正済 |
+
 ## 起動前チェック
 
 `bash scripts/preflight.sh` を通す。NG が1つでもあれば起動しない。
