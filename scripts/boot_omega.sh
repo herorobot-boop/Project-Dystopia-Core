@@ -2,12 +2,12 @@
 # 起動前検証 → ComfyUI確実起動 → スモークテスト。失敗時は理由を出して止まる。
 set -uo pipefail
 
-ROOT="${ROOT:-/workspace/Project-Dystopia-Core}"
-COMFY="${COMFY:-/workspace/ComfyUI}"
-PY="${PY:-/usr/local/bin/python3}"
-LOG="${LOG:-/workspace/logs}"
+ROOT=/workspace/Project-Dystopia-Core
+COMFY=/workspace/ComfyUI
+PY=/usr/local/bin/python3
+LOG=/workspace/logs
 RUNLOG="$LOG/comfy_$(date +%H%M%S).log"
-PORT="${PORT:-8188}"
+PORT=8188
 
 mkdir -p "$LOG"
 cd "$ROOT" || exit 1
@@ -67,7 +67,7 @@ else
 fi
 
 curl -sf "http://127.0.0.1:$PORT/system_stats" | "$PY" -c \
-  'import json,sys;d=json.load(sys.stdin);devs=d.get("devices",[]);print("  GPU:", devs[0]["name"] if devs else "None")' \
+  'import json,sys;d=json.load(sys.stdin);print("  GPU:",d["devices"][0]["name"])' \
   || fail "system_stats が読めない" 3
 
 # --- 5. VRAMパージ ---
