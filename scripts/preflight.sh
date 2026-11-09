@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 fail=0
-chk() { if eval "$2"; then echo "OK   $1"; else echo "NG   $1"; fail=1; fi; }
+chk() { if ( eval "$2" ); then echo "OK   $1"; else echo "NG   $1"; fail=1; fi; }
 chk "aria2c"       "command -v aria2c >/dev/null"
 chk "jq"           "command -v jq >/dev/null"
 chk "curl"         "command -v curl >/dev/null"
@@ -12,8 +12,8 @@ chk "torch CUDA"      "python3 -c 'import torch,sys;sys.exit(0 if torch.cuda.is_
 chk "comfy モジュール" "cd /workspace/ComfyUI && python3 -c 'import comfy' 2>/dev/null"
 chk "ComfyUI 実体"     "[ -f /workspace/ComfyUI/main.py ]"
 chk "Manager 実体"     "[ -f /workspace/ComfyUI/custom_nodes/ComfyUI-Manager/__init__.py ]"
-chk "fetch_missing 構文" "python3 -m py_compile scripts/fetch_missing_assets.py"
-chk "scan_nodes 構文" "python3 -m py_compile scripts/scan_and_install_nodes.py"
+chk "fetch_missing 構文" "python3 -m py_compile /workspace/Project-Dystopia-Core/scripts/fetch_missing_assets.py"
+chk "scan_nodes 構文" "python3 -m py_compile /workspace/Project-Dystopia-Core/scripts/scan_and_install_nodes.py"
 chk "ノード6本" "[ \$(ls -d /workspace/ComfyUI/custom_nodes/*/ 2>/dev/null | wc -l) -ge 6 ]"
 chk "Civitaiトークン" "[ -n \"\${CIVITAI_API_TOKEN:-}\" ]"
 if [ "$fail" -ne 0 ]; then echo "--- 未解決あり ---"; exit 1; fi

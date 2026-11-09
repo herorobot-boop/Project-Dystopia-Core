@@ -51,6 +51,9 @@ Project Dystopia: Genesis Ignition Omega の起動で実際に発生した障害
 | 18 | genesis への関数挿入が空振り | アンカー `^set -euo pipefail` が実物と不一致 | shebang 直後を挿入点にする | 修正済 |
 | 19 | preflight の `chk` 行が全部 NG、`[: missing ]` | `chk` は第2引数を評価するのに引数を括っていなかった | `chk "ラベル" "コマンド"` で必ず括る。`py_compile` で入れ子引用符を回避 | 修正済 |
 
+| 20 | `chk` の `cd` が後続チェックに漏れる | `eval` を同一シェルで実行していた | `( eval "$2" )` で subshell 化、パスは絶対化 | 修正済 |
+| 21 | 退避ディレクトリに Impact-Pack を置き去り | `mv` でツリーごと退避したため | 退避先から `cp -a` で復元 | 修正済 |
+
 ## 起動前チェック
 
 `bash scripts/preflight.sh` を通す。NG が1つでもあれば起動しない。
