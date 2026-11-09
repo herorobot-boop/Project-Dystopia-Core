@@ -1,0 +1,38 @@
+# 女優の抽選ルール。roll_cast.py が読む。
+female:
+  nationality:
+    - { value: japanese, weight: 80 }
+    - { value: korean, weight: 8 }
+    - { value: chinese, weight: 6 }
+    - { value: caucasian, weight: 6 }
+
+  age_min: 20
+  age_max: 38
+
+  cup:
+    - { value: D, weight: 25 }
+    - { value: E, weight: 30 }
+    - { value: F, weight: 25 }
+    - { value: G, weight: 20 }
+
+  hair:
+    - { value: "black hair, straight", weight: 40 }
+    - { value: "black hair, tied back", weight: 25 }
+    - { value: "brown hair, shoulder length", weight: 25 }
+    - { value: "light brown hair, bob", weight: 10 }
+
+  expression:
+    - { value: "deadpan, flat expression", weight: 30 }
+    - { value: "parted lips, tongue out", weight: 25 }
+    - { value: "eyes closed, relaxed", weight: 25 }
+    - { value: "ahegao, eyes rolled up", weight: 20 }
+
+  skin: "even skin tone, no blush, no red cheeks"
+
+male:
+  age_min: 22
+  age_max: 55
+  build:
+    - { value: "average build", weight: 60 }
+    - { value: "slim build", weight: 25 }
+    - { value: "stocky build", weight: 15 }
