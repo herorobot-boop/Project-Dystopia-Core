@@ -12,8 +12,13 @@ mkdir -p /workspace/logs
 fail() { echo "❌ $*"; exit "${2:-1}"; }
 
 "$PY" -c 'import torch;assert torch.cuda.is_available()' 2>/dev/null || fail "CUDA不可"
+
 FREE=$(df -BG --output=avail /workspace | tail -1 | tr -dc '0-9')
 [ "${FREE:-0}" -ge 15 ] || fail "空き ${FREE}GB。15GB必要"
+
+VRAM=$(nvidia-smi --query-gpu=memory.free --format=csv,noheader,nounits | head -1 | tr -dc '0-9')
+[ "${VRAM:-0}" -ge 20000 ] || fail "VRAM空き ${VRAM}MB。20GB必要（他プロセスを止める）"
+echo "VRAM空き ${VRAM}MB"
 
 YML="$COMFY/extra_model_paths.yaml"
 if ! "$PY" -c "import yaml;yaml.safe_load(open('$YML'))" 2>/dev/null; then
@@ -32,15 +37,7 @@ start() {
   done
 }
 
-pin_comfy() {
-  echo "--- ComfyUI を ${PIN_DATE} 時点に固定 ---"
-  git -C "$COMFY" fetch --unshallow 2>/dev/null || git -C "$COMFY" fetch --all 2>/dev/null
-  local ref
-  ref=$(git -C "$COMFY" rev-list -1 --before="$PIN_DATE" origin/master 2>/dev/null \
-        || git -C "$COMFY" rev-list -1 --before="$PIN_DATE" origin/main 2>/dev/null)
-  [ -n "$ref" ] || { echo "  固定先が引けない。git pull で代用"; git -C "$COMFY" pull --ff-only 2>/dev/null; return 0; }
-  git -C "$COMFY" checkout -q "$ref" && echo "  固定: $ref"
-}
+try_nodes() { "$PY" "$ROOT/scripts/preflight_nodes.py"; }
 
 if alive; then echo "  既存を再利用"; else
   echo "--- 起動 ---"
@@ -50,11 +47,27 @@ fi
 curl -sf "http://127.0.0.1:$PORT/system_stats" | "$PY" -c \
   'import json,sys;d=json.load(sys.stdin);print("GPU:",d["devices"][0]["name"])' || fail "stats不可" 3
 
-echo "--- ノード照合 ---"
-if ! "$PY" "$ROOT/scripts/preflight_nodes.py"; then
-  pin_comfy
-  start || fail "再起動失敗" 3
-  "$PY" "$ROOT/scripts/preflight_nodes.py" || fail "ノード不整合が解消しない" 5
+if try_nodes; then
+  echo "  初回照合OK"
+else
+  echo "--- 段階2: ${PIN_DATE} に固定 ---"
+  git -C "$COMFY" reset --hard -q 2>/dev/null
+  git -C "$COMFY" fetch --unshallow -q 2>/dev/null || git -C "$COMFY" fetch --all -q 2>/dev/null
+  ref=$(git -C "$COMFY" rev-list -1 --before="$PIN_DATE" origin/master 2>/dev/null \
+        || git -C "$COMFY" rev-list -1 --before="$PIN_DATE" origin/main 2>/dev/null)
+  if [ -n "$ref" ]; then
+    git -C "$COMFY" checkout -q "$ref"
+    start || fail "固定後の再起動失敗" 3
+    if try_nodes; then echo "  固定で解消"; else
+      echo "--- 段階3: 最新へ ---"
+      git -C "$COMFY" checkout -q master 2>/dev/null || git -C "$COMFY" checkout -q main
+      git -C "$COMFY" reset --hard -q origin/HEAD
+      start || fail "最新化後の再起動失敗" 3
+      try_nodes || fail "ノード不整合が解消しない。この行を貼り直す: bash /tmp/u" 5
+    fi
+  else
+    fail "固定先が引けない。この行を貼り直す: bash /tmp/u" 5
+  fi
 fi
 
 curl -sf -X POST "http://127.0.0.1:$PORT/free" -H 'Content-Type: application/json' \
