@@ -1,0 +1,22 @@
+# 全プロンプトに必ず付く共通部分。build.py が末尾に足す。
+positive_suffix: >
+  photorealistic, natural skin texture, japanese setting, vertical composition,
+  shot on 50mm, soft indoor light
+
+# ポジティブ側で潰す除外（CFG 1.0ではネガティブが効かないため）
+positive_guard: >
+  no blush, even skin tone, single subject focus
+
+default_ng:
+  - blush
+  - mannequin
+  - watermark
+  - text
+  - extra limbs
+  - fused fingers
+
+# 画角の鉄則
+camera_rules:
+  paizuri: "high angle, looking down at chest"
+  contact: "side close-up, perpendicular to contact point"
+  hole: "true side view, chest height"
