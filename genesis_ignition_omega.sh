@@ -11,7 +11,10 @@ COMFY_DIR=${WORKSPACE}/ComfyUI
 GALLERY_DIR=${WORKSPACE}/smart-comfyui-gallery
 
 # 1. 必須パッケージ
-apt-get update && apt-get install -y --no-install-recommends aria2 jq c2patool openssl python3-venv || true
+apt-get update || true
+apt-get install -y --no-install-recommends aria2 jq openssl python3-venv
+apt-get install -y --no-install-recommends c2patool || true
+command -v aria2c >/dev/null || { echo "[FATAL] aria2c 不在"; exit 1; }
 
 # 2. コード同期
 if [ ! -d "${CORE_DIR}/.git" ]; then
@@ -19,6 +22,17 @@ if [ ! -d "${CORE_DIR}/.git" ]; then
 else
     cd "${CORE_DIR}" && git pull origin main
 fi
+
+# 2.5 ComfyUI 本体と Manager
+if [ ! -d "${COMFY_DIR}/.git" ]; then
+    git clone https://github.com/comfyanonymous/ComfyUI.git "${COMFY_DIR}"
+    pip install --no-cache-dir -r "${COMFY_DIR}/requirements.txt"
+fi
+mkdir -p "${COMFY_DIR}/custom_nodes"
+if [ ! -d "${COMFY_DIR}/custom_nodes/ComfyUI-Manager" ]; then
+    git clone https://github.com/ltdrdata/ComfyUI-Manager.git "${COMFY_DIR}/custom_nodes/ComfyUI-Manager"
+fi
+pip install --no-cache-dir -r "${COMFY_DIR}/custom_nodes/ComfyUI-Manager/requirements.txt" || true
 
 # 3. ComfyUI-Manager civitai.red 認証
 MANAGER_CONFIG=${COMFY_DIR}/custom_nodes/ComfyUI-Manager/config.ini
@@ -66,8 +80,14 @@ fi
 cd "${COMFY_DIR}"
 python3 main.py --listen 0.0.0.0 --port 8188 ${VRAM_FLAGS} > "${WORKSPACE}/comfyui.log" 2>&1 &
 
-until curl -s http://127.0.0.1:8188/system_stats > /dev/null; do
+for i in $(seq 1 60); do
+    curl -s http://127.0.0.1:8188/system_stats > /dev/null && break
     sleep 2
+    if [ "$i" -eq 60 ]; then
+        echo "[FATAL] ComfyUI 起動失敗"
+        tail -40 "${WORKSPACE}/comfyui.log"
+        exit 1
+    fi
 done
 echo "[ComfyUI] API 疎通確認完了"
 
