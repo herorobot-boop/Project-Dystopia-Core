@@ -1,20 +1,27 @@
 #!/usr/bin/env python3
-"""Qwen-Image-Edit で差分編集。マスクを塗らずに自然言語で指示する。
-使い方: python3 edit_still.py 入力.png "Only pull the bra cup down" [--lora]"""
+"""Qwen-Image-Edit で差分編集。マスクを塗らず自然言語で指示する。
+使い方: python3 edit_still.py 入力.png "Only pull the bra cup down" [--lora] [--lora-strength 0.55]"""
 import argparse, json, sys, time
 from pathlib import Path
 import requests
 
 BASE = "http://127.0.0.1:8188"
 COMFY_OUT = Path("/workspace/ComfyUI/output")
-INBOX = Path("/workspace/ComfyUI/input")
 
 KEEP = "Keep everything identical. "
 
 
+def purge() -> None:
+    try:
+        requests.post(f"{BASE}/free", json={"unload_models": True, "free_memory": True}, timeout=20)
+        time.sleep(2)
+    except Exception:
+        pass
+
+
 def upload(path: Path) -> str:
     with path.open("rb") as f:
-        r = requests.post(f"{BASE}/upload/image", files={"image": (path.name, f)}, timeout=60)
+        r = requests.post(f"{BASE}/upload/image", files={"image": (path.name, f)}, timeout=120)
     r.raise_for_status()
     return r.json()["name"]
 
@@ -24,6 +31,7 @@ def main() -> int:
     ap.add_argument("image")
     ap.add_argument("instruction")
     ap.add_argument("--lora", action="store_true")
+    ap.add_argument("--lora-strength", type=float, default=0.55)
     ap.add_argument("--seed", type=int, default=-1)
     a = ap.parse_args()
 
@@ -33,11 +41,12 @@ def main() -> int:
     if not src.exists():
         print("画像が無い:", a.image); return 1
 
-    name = upload(src)
     text = KEEP + a.instruction.strip()
     if a.lora:
         text = "remove all the clothes of the figure in the picture, " + text
 
+    purge()
+    name = upload(src)
     seed = a.seed if a.seed >= 0 else int(time.time() * 1000) % 10**9
 
     wf = {
@@ -62,17 +71,21 @@ def main() -> int:
     if a.lora:
         wf["10"] = {"class_type": "LoraLoaderModelOnly",
                     "inputs": {"model": ["1", 0],
-                               "lora_name": "remove-clothes.safetensors", "strength_model": 0.8}}
+                               "lora_name": "remove-clothes.safetensors",
+                               "strength_model": a.lora_strength}}
         wf["6"]["inputs"]["model"] = ["10", 0]
 
-    r = requests.post(f"{BASE}/prompt", json={"prompt": wf}, timeout=20)
+    print(f"lora={'on' if a.lora else 'off'} strength={a.lora_strength}")
+    r = requests.post(f"{BASE}/prompt", json={"prompt": wf}, timeout=30)
     if r.status_code != 200:
         print("POST失敗", r.status_code, r.text[:600]); return 1
     pid = r.json()["prompt_id"]
-    for _ in range(150):
+    for _ in range(200):
         time.sleep(2)
         h = requests.get(f"{BASE}/history/{pid}", timeout=10).json()
         if pid in h:
+            if h[pid].get("status", {}).get("status_str") == "error":
+                print(json.dumps(h[pid]["status"], ensure_ascii=False)[:900]); return 1
             for node in h[pid].get("outputs", {}).values():
                 if "images" in node:
                     print("生成:", node["images"][0]["filename"]); return 0
