@@ -1,4 +1,3 @@
-cat > scripts/discord_notifier.py <<'PY'
 #!/usr/bin/env python3
 """Discord Webhook へ成果物を直撃送信する。
 
@@ -56,4 +55,3 @@ if __name__ == "__main__":
     target = sys.argv[1] if len(sys.argv) > int(1) else "/workspace/ComfyUI/output/latest.mp4"
     cap = sys.argv[2] if len(sys.argv) > int(2) else "Wan 2.2 微動生成完了"
     raise SystemExit(0 if send_video_to_discord(target, cap) else 1)
-PY

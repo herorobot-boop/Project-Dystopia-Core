@@ -1,4 +1,3 @@
-cat > scripts/run_qwen_image_edit.py <<'PY'
 #!/usr/bin/env python3
 """Qwen-Image-Edit-2509 による自然言語ノーマスク局所露出編集。
 
@@ -94,4 +93,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-PY

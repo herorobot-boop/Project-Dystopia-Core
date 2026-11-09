@@ -1,4 +1,3 @@
-cat > scripts/run_fluxed_up_t2i.py <<'PY'
 #!/usr/bin/env python3
 """Fluxed Up + aidmaNSFWunlock LoRA による着衣ベースT2I現像。
 
@@ -15,8 +14,6 @@ if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
 from scripts.comfy_api_bridge import ComfyAPIBridge
-
-OUTPUT_DIR = Path("/workspace/ComfyUI/output")
 
 HAND_FIX = "five distinct fingers, separated digits, visible knuckles, photorealistic, sharp focus"
 
@@ -86,4 +83,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-PY

@@ -1,4 +1,3 @@
-cat > scripts/run_wan_subtle_motion.py <<'PY'
 #!/usr/bin/env python3
 """Wan 2.2 I2V による5秒微動動画化 + C2PA署名。
 
@@ -135,4 +134,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-PY

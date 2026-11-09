@@ -1,4 +1,3 @@
-cat > scripts/saluki_tag_generator.py <<'PY'
 #!/usr/bin/env python3
 """Saluki-27B をタグ列挙機として駆動するCLI。
 
@@ -108,4 +107,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-PY

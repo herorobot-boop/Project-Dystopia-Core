@@ -1,4 +1,3 @@
-cat > Main_Omega_Integrated.py <<'PY'
 #!/usr/bin/env python3
 """Project Dystopia v8.5 本稼働統合司令塔。
 
@@ -301,4 +300,3 @@ if __name__ == "__main__":
     except RuntimeError:
         pass
     raise SystemExit(main())
-PY
