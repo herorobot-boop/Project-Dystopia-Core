@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
-"""Wan2.2 TI2V-5B Turbo で微動動画化。704x1280 / 121frame / 24fps。
-使い方: python3 wan5b_i2v.py 入力.png "she slowly exhales" [--long]"""
+"""Wan2.2 TI2V-5B で微動動画化。704x1280 / 121frame / 24fps。
+既定は素の5B(25step/cfg5.0/shift8.0)。--fast でTurbo下書き。
+使い方: python3 wan5b_i2v.py 入力.png "she slowly exhales" [--more-motion] [--fast]"""
 import argparse, json, sys, time
 from pathlib import Path
 import requests
@@ -9,9 +10,17 @@ BASE = "http://127.0.0.1:8188"
 COMFY_OUT = Path("/workspace/ComfyUI/output")
 
 
+def purge() -> None:
+    try:
+        requests.post(f"{BASE}/free", json={"unload_models": True, "free_memory": True}, timeout=20)
+        time.sleep(2)
+    except Exception:
+        pass
+
+
 def upload(path: Path) -> str:
     with path.open("rb") as f:
-        r = requests.post(f"{BASE}/upload/image", files={"image": (path.name, f)}, timeout=60)
+        r = requests.post(f"{BASE}/upload/image", files={"image": (path.name, f)}, timeout=120)
     r.raise_for_status()
     return r.json()["name"]
 
@@ -20,7 +29,9 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("image")
     ap.add_argument("motion")
-    ap.add_argument("--long", action="store_true", help="素の5B(25step/cfg5)を使う")
+    ap.add_argument("--fast", action="store_true", help="Turbo 4step 下書き")
+    ap.add_argument("--more-motion", action="store_true", help="shiftを下げcfgを上げる")
+    ap.add_argument("--shift", type=float, default=-1.0)
     ap.add_argument("--seed", type=int, default=-1)
     a = ap.parse_args()
 
@@ -30,11 +41,22 @@ def main() -> int:
     if not src.exists():
         print("画像が無い:", a.image); return 1
 
+    if a.fast:
+        unet, steps, cfg, shift = "Wan2_2-TI2V-5B-Turbo_fp16.safetensors", 4, 1.0, 8.0
+    else:
+        unet, steps, cfg, shift = "wan2.2_ti2v_5B_fp16.safetensors", 25, 5.0, 8.0
+
+    if a.more_motion:
+        if a.fast:
+            steps, cfg, shift = 6, 1.5, 6.0
+        else:
+            cfg, shift = 5.5, 5.0
+    if a.shift > 0:
+        shift = a.shift
+
+    purge()
     name = upload(src)
     seed = a.seed if a.seed >= 0 else int(time.time() * 1000) % 10**9
-
-    unet = "wan2.2_ti2v_5B_fp16.safetensors" if a.long else "Wan2_2-TI2V-5B-Turbo_fp16.safetensors"
-    steps, cfg, shift = (25, 5.0, 8.0) if a.long else (4, 1.0, 8.0)
 
     wf = {
         "1": {"class_type": "UNETLoader", "inputs": {"unet_name": unet, "weight_dtype": "default"}},
@@ -59,16 +81,17 @@ def main() -> int:
                           "pingpong": False, "save_output": True}},
     }
 
-    r = requests.post(f"{BASE}/prompt", json={"prompt": wf}, timeout=20)
+    print(f"unet={unet} steps={steps} cfg={cfg} shift={shift}")
+    r = requests.post(f"{BASE}/prompt", json={"prompt": wf}, timeout=30)
     if r.status_code != 200:
         print("POST失敗", r.status_code, r.text[:600]); return 1
     pid = r.json()["prompt_id"]
-    for _ in range(300):
+    for _ in range(400):
         time.sleep(3)
         h = requests.get(f"{BASE}/history/{pid}", timeout=10).json()
         if pid in h:
             if h[pid].get("status", {}).get("status_str") == "error":
-                print(json.dumps(h[pid]["status"], ensure_ascii=False)[:800]); return 1
+                print(json.dumps(h[pid]["status"], ensure_ascii=False)[:900]); return 1
             for node in h[pid].get("outputs", {}).values():
                 for key in ("gifs", "videos"):
                     if key in node:
