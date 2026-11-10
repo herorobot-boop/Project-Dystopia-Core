@@ -90,7 +90,7 @@ while true; do
       [ -n "$b" ] || { echo "ブロックがありません。先に1)"; pause; continue; }
       read -rp "枚数 [3]: " n; n=${n:-3}
       read -rp "脱がせる? [y/N]: " nd
-      args=(--n "$n"); [ "$nd" = "y" ] && args+=(--nude)
+      args=(--n "$n"); [ "$nd" = "y" ] && args+=(--unlock --nude 0.9)
       "$PY" scripts/gen_still.py "$b" "${args[@]}"
       pause ;;
     3)
@@ -119,7 +119,7 @@ while true; do
       echo; echo "対象:"; r=$(pick_raw)
       [ -n "$r" ] || { echo "画像がありません"; pause; continue; }
       read -rp "動き（例: slow pelvic rocking）: " mo
-      "$PY" scripts/wan5b_i2v.py "$r" "$mo" --quality --frames 121
+      "$PY" scripts/wan5b_i2v.py "$r" "$mo" --frames 121
       pause ;;
     7)
       echo; echo "--- ブロック ---"
