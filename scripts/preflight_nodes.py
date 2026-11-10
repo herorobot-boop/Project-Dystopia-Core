@@ -25,6 +25,12 @@ NEEDED = {
     "Wan22ImageToVideoLatent": ["vae", "width", "height", "length", "batch_size", "start_image"],
     "ModelSamplingSD3": ["model", "shift"],
     "VHS_VideoCombine": ["images", "frame_rate", "filename_prefix", "format"],
+    "WanImageToVideo": ["positive", "negative", "vae", "clip_vision_output",
+                        "start_image", "width", "height", "length", "batch_size"],
+    "CLIPVisionLoader": ["clip_name"],
+    "KSamplerAdvanced": ["model", "positive", "negative", "latent_image", "noise_seed",
+                         "steps", "cfg", "sampler_name", "scheduler", "start_at_step",
+                         "end_at_step", "add_noise", "return_with_leftover_noise"],
 }
 
 FILES = {
