@@ -36,7 +36,10 @@ NEEDED = {
 FILES = {
     "unet_name": ["qwen_image_edit_2509_fp8_e4m3fn.safetensors",
                   "wan2.2_ti2v_5B_fp16.safetensors",
-                  "Wan2_2-TI2V-5B-Turbo_fp16.safetensors"],
+                  "Wan2_2-TI2V-5B-Turbo_fp16.safetensors",
+                  "qwen_image_fp8_e4m3fn.safetensors",
+                  "wan2.2_i2v_high_noise_14B_fp8_scaled.safetensors",
+                  "wan2.2_i2v_low_noise_14B_fp8_scaled.safetensors"],
     "ckpt_name": ["flux1-dev-fp8.safetensors"],
     "clip_name": ["qwen_2.5_vl_7b_fp8_scaled.safetensors",
                   "umt5_xxl_fp8_e4m3fn_scaled.safetensors"],
@@ -44,6 +47,7 @@ FILES = {
     "lora_name": ["aidmaNSFWunlock-FLUX-V0.2.safetensors",
                   "MS_Nude_Style_Flux_V2.safetensors",
                   "remove-clothes.safetensors"],
+    "clip_name_vision": ["clip_vision_h.safetensors"],
 }
 
 bad = 0
@@ -75,7 +79,20 @@ for cls, inputs in NEEDED.items():
         bad += 1
 
 for field, names in FILES.items():
+    if field == "clip_name_vision":
+        cls = "CLIPVisionLoader"
+        opts = info.get(cls, {}).get("input", {}).get("required", {}).get("clip_name", [[]])[0]
+        if not isinstance(opts, list):
+            continue
+        for name in names:
+            if opts and name not in opts:
+                print(f"❌ ファイル未認識: {cls}.clip_name に {name}")
+                bad += 1
+        continue
+
     for cls, inputs in NEEDED.items():
+        if cls == "CLIPVisionLoader":
+            continue
         if field not in inputs:
             continue
         opts = info.get(cls, {}).get("input", {}).get("required", {}).get(field, [[]])[0]
