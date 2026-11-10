@@ -21,7 +21,7 @@ NEEDED = {
     "VAEDecodeTiled": ["samples", "vae", "tile_size", "overlap"],
     "VAEEncode": ["pixels", "vae"],
     "SaveImage": ["filename_prefix", "images"],
-    "TextEncodeQwenImageEditPlus": ["clip", "vae", "image1", "prompt"],
+    "TextEncodeQwenImageEditPlus": ["clip", "vae", "image1", "image2", "prompt"],
     "Wan22ImageToVideoLatent": ["vae", "width", "height", "length", "batch_size", "start_image"],
     "ModelSamplingSD3": ["model", "shift"],
     "VHS_VideoCombine": ["images", "frame_rate", "filename_prefix", "format"],
