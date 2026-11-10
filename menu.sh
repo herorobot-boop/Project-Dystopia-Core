@@ -119,7 +119,7 @@ while true; do
       echo; echo "対象:"; r=$(pick_raw)
       [ -n "$r" ] || { echo "画像がありません"; pause; continue; }
       read -rp "動き（例: slow pelvic rocking）: " mo
-      "$PY" scripts/wan14b_i2v.py "$r" "$mo"
+      "$PY" scripts/wan5b_i2v.py "$r" "$mo" --quality --frames 121
       pause ;;
     7)
       echo; echo "--- ブロック ---"
