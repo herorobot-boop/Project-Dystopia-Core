@@ -24,7 +24,8 @@ def main() -> int:
     ap.add_argument("--width", type=int, default=832)
     ap.add_argument("--height", type=int, default=1216)
     ap.add_argument("--unlock", action="store_true")
-    ap.add_argument("--nude", type=float, default=0.85)
+    ap.add_argument("--nude-flag", action="store_true", help="--nude と同じ")
+    ap.add_argument("--nude", type=float, default=0.65)
     ap.add_argument("--seed", type=int, default=-1)
     a = ap.parse_args()
 
@@ -80,3 +81,5 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+if a.nude_flag:
+        a.nude = 0.9
