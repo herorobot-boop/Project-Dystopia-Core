@@ -35,7 +35,11 @@ def main() -> int:
     W, H = SIZES[a.size]
 
     if a.fast:
-        unet, steps, cfg, shift = "Wan2_2-TI2V-5B-Turbo_fp16.safetensors", 4, 1.0, 8.0
+        turbo = Path("/workspace/ComfyUI/models/diffusion_models/Wan2_2-TI2V-5B-Turbo_fp16.safetensors")
+        if turbo.exists():
+            unet, steps, cfg, shift = turbo.name, 4, 1.0, 8.0
+        else:
+            unet, steps, cfg, shift = "wan2.2_ti2v_5B_fp16.safetensors", 8, 1.0, 8.0
     else:
         unet, steps, cfg, shift = "wan2.2_ti2v_5B_fp16.safetensors", 25, 5.0, 8.0
     if a.more_motion:
