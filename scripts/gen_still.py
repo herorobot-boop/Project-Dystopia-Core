@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""POSITIVEを読んで静止画生成。既定LoRAは MS_Nude_Style 0.85。"""
+"""POSITIVEを読んで静止画生成。既定LoRAは MS_Nude_Style 0.65。--nude で0.9。"""
 import argparse
 import re
 import sys
@@ -24,10 +24,13 @@ def main() -> int:
     ap.add_argument("--width", type=int, default=832)
     ap.add_argument("--height", type=int, default=1216)
     ap.add_argument("--unlock", action="store_true")
-    ap.add_argument("--nude-flag", action="store_true", help="--nude と同じ")
+    ap.add_argument("--nude-flag", action="store_true", dest="nude_flag")
     ap.add_argument("--nude", type=float, default=0.65)
     ap.add_argument("--seed", type=int, default=-1)
     a = ap.parse_args()
+
+    if a.nude_flag:
+        a.nude = 0.9
 
     md = Path(a.block).read_text(encoding="utf-8")
     pos, neg = section(md, "POSITIVE"), section(md, "NEGATIVE")
@@ -74,12 +77,9 @@ def main() -> int:
         if err:
             print("失敗:", err)
             return 1
-        moved = C.stash(C.collect(out))
-        print("生成:", moved)
+        print("生成:", C.stash(C.collect(out)))
     return 0
 
 
 if __name__ == "__main__":
     raise SystemExit(main())
-if a.nude_flag:
-        a.nude = 0.9
