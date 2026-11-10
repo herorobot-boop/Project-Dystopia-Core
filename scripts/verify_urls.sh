@@ -4,6 +4,7 @@ MAN=/workspace/Project-Dystopia-Core/scripts/manifest.tsv
 bad=0
 while IFS=$'\t' read -r url dest size sha; do
   [ -z "${url:-}" ] && continue
+  [ "$size" = "*" ] && { echo "skip $(basename "$dest")"; continue; }
   out=$(curl -s -r 0-0 -D - -o /dev/null --max-time 25 "$url" \
         | tr -d '\r' | awk 'NR==1{print $2} /^content-range:/{print $3}')
   code=$(echo "$out" | sed -n 1p)
