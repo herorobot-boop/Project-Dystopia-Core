@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-"""Wan2.2 I2V A14B fp8 + 4step蒸留LoRA。480pで実動き。2段KSampler。
-使い方: python3 wan14b_i2v.py 0001 "she slowly exhales" """
+"""Wan2.2 I2V A14B fp8 + 4step蒸留LoRA。動き重視。
+使い方: python3 wan14b_i2v.py 0001 "she slowly exhales" [--size 480|576|720]"""
 import argparse
 import sys
 import time
@@ -9,13 +9,15 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import _common as C
 
-W, H, FRAMES = 480, 832, 81
+SIZES = {480: (480, 832), 576: (576, 1024), 720: (704, 1280)}
 
 
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("image")
     ap.add_argument("motion")
+    ap.add_argument("--size", type=int, default=480, choices=[480, 576, 720])
+    ap.add_argument("--frames", type=int, default=81)
     ap.add_argument("--seed", type=int, default=-1)
     a = ap.parse_args()
 
@@ -26,6 +28,7 @@ def main() -> int:
         print("画像が無い:", a.image)
         return 1
 
+    W, H = SIZES[a.size]
     C.purge()
     name = C.upload(src)
     seed = a.seed if a.seed >= 0 else int(time.time() * 1000) % 10**9
@@ -59,7 +62,7 @@ def main() -> int:
                "inputs": {"positive": ["11", 0], "negative": ["12", 0],
                           "vae": ["4", 0], "clip_vision_output": ["5", 0],
                           "start_image": ["6", 0],
-                          "width": W, "height": H, "length": FRAMES, "batch_size": 1}},
+                          "width": W, "height": H, "length": a.frames, "batch_size": 1}},
         "14": {"class_type": "KSamplerAdvanced",
                "inputs": {"model": ["9", 0], "positive": ["13", 0], "negative": ["13", 1],
                           "latent_image": ["13", 2], "noise_seed": seed,
@@ -82,8 +85,8 @@ def main() -> int:
                           "pingpong": False, "save_output": True}},
     }
 
-    print(f"14B motion {W}x{H} {FRAMES}f")
-    out, err = C.run(wf, 5400, poll=5)
+    print(f"14B {W}x{H} {a.frames}f")
+    out, err = C.run(wf, 7200, poll=5)
     if err:
         print("失敗:", err)
         return 1
