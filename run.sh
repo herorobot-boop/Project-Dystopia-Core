@@ -35,4 +35,7 @@ case "${1:-}" in
   *)
     echo "使い方: bash run.sh {ls|still|edit|vid|pick|reject|status}"
     ;;
+  gen)
+    shift; "$PY" scripts/llm_block.py "$@"
+    ;;
 esac
