@@ -36,7 +36,9 @@ case "${1:-}" in
     ;;
   ls)
     echo "--- blocks ---"
-    find dist/blocks -name '*.md' 2>/dev/null | sed 's#dist/blocks/##' | sort | head -60
+    for f in $(find dist/blocks -name '*.md' 2>/dev/null | sort | head -80); do
+      printf '%-34s %s\n' "$(basename "$f" .md)" "$(head -1 "$f" | sed 's/^# //')"
+    done
     echo "--- out/raw ---"
     ls -1 "$RAW" 2>/dev/null | grep -E '^[0-9]{4}\.' | sort || echo "(なし)"
     ;;
