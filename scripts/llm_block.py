@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
-"""日本語1行 → ローカルLLM → YAML → build。英語化とタグ化を自動化する。
-使い方: python3 llm_block.py --engine E2 --place menstoi --title "混雑男トイレ" "満員の個室で手コキ" """
+"""日本語1行 → ローカルLLM → YAML → build。LLMが落ちていれば自動起動する。"""
 import argparse
-import json
 import re
 import subprocess
 import sys
@@ -15,6 +13,17 @@ ROOT = Path(__file__).resolve().parent.parent
 SYS = ROOT / "config" / "llm_system.txt"
 SCEN = ROOT / "data" / "scenarios"
 LLM = "http://127.0.0.1:8000/v1/chat/completions"
+
+
+def ensure_llm() -> bool:
+    try:
+        if requests.get("http://127.0.0.1:8000/v1/models", timeout=2).status_code == 200:
+            return True
+    except Exception:
+        pass
+    print("LLMを起動します（初回は数分）")
+    r = subprocess.run(["bash", str(ROOT / "scripts" / "llm_server.sh")])
+    return r.returncode == 0
 
 
 def clean(text: str) -> str:
@@ -37,6 +46,9 @@ def main() -> int:
     if not SYS.exists():
         print("config/llm_system.txt が無い")
         return 1
+    if not ensure_llm():
+        print("LLM起動失敗")
+        return 1
 
     body = {
         "messages": [
@@ -47,32 +59,31 @@ def main() -> int:
         "max_tokens": 200,
     }
     try:
-        r = requests.post(LLM, json=body, timeout=180)
+        r = requests.post(LLM, json=body, timeout=300)
         r.raise_for_status()
         raw = r.json()["choices"][0]["message"]["content"]
     except Exception as e:
         print("LLM呼び出し失敗:", e)
-        print("先に llm_server.sh を実行すること")
         return 1
 
     prompt = clean(raw)
     if len(prompt) < 20:
-        print("生成が短すぎる:", raw[:200])
+        print("短すぎる:", raw[:200])
         return 1
-    print("--- 生成タグ ---")
+    print("--- タグ ---")
     print(prompt)
 
     subprocess.run([sys.executable, str(ROOT / "scripts" / "new_scenario.py"),
                     "--engine", a.engine, "--place", a.place, "--title", a.title],
                    check=True)
     slug = re.sub(r"[^a-z0-9]+", "_", a.place.lower()).strip("_")[:30]
-    d = SCEN / f"{a.engine.lower()}_{slug}"
-    target = sorted(d.glob("*.yaml"))[-1]
+    target = sorted((SCEN / f"{a.engine.lower()}_{slug}").glob("*.yaml"))[-1]
 
     data = yaml.safe_load(target.read_text(encoding="utf-8"))
     data["prompt_seed"] = prompt
     data["notes"] = a.situation
-    target.write_text(yaml.safe_dump(data, allow_unicode=True, sort_keys=False), encoding="utf-8")
+    target.write_text(yaml.safe_dump(data, allow_unicode=True, sort_keys=False),
+                      encoding="utf-8")
     print("--- 書き込み ---")
     print(target.relative_to(ROOT))
 
