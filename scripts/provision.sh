@@ -13,15 +13,16 @@ command -v git >/dev/null || fail "git が無い。git入りテンプレート�
 need=0
 while IFS=$'\t' read -r url dest size sha; do
   [ -z "${url:-}" ] && continue
+  [ "$size" = "*" ] && continue
   if [ -f "$dest" ] && [ "$(stat -c%s "$dest")" = "$size" ]; then continue; fi
   need=$((need + size))
 done < "$MAN"
-need_gb=$(( need / 1073741824 + 10 ))
+need_gb=$(( need / 1073741824 + 15 ))
 
 FREE=$(df -BG --output=avail /workspace | tail -1 | tr -dc '0-9')
 [ -n "$FREE" ] || fail "空き容量を判定できない"
 if [ "$need" -gt 0 ] && [ "$FREE" -lt "$need_gb" ]; then
-  fail "不足分 ${need_gb}GB に対し空き ${FREE}GB"
+  fail "不足分 ${need_gb}GB に対し空き ${FREE}GB。200GBにすること"
 fi
 echo "不足分 $(( need / 1073741824 ))GB / 空き ${FREE}GB"
 
@@ -59,7 +60,7 @@ fi
 while IFS=$'\t' read -r url dest size sha; do
   [ -z "${url:-}" ] && continue
   mkdir -p "$(dirname "$dest")"
-  if [ -f "$dest" ] && [ "$(stat -c%s "$dest")" = "$size" ]; then
+  if [ "$size" != "*" ] && [ -f "$dest" ] && [ "$(stat -c%s "$dest")" = "$size" ]; then
     echo "  skip $(basename "$dest")"; continue
   fi
   aria2c -c -x4 -s4 -k1M --file-allocation=none --max-tries=8 --retry-wait=10 \
@@ -71,9 +72,13 @@ done < "$MAN"
 while IFS=$'\t' read -r url dest size sha; do
   [ -z "${url:-}" ] && continue
   [ -f "$dest" ] || fail "欠落 $(basename "$dest")"
-  [ "$(stat -c%s "$dest")" = "$size" ] || fail "サイズ不一致 $(basename "$dest")"
+  s=$(stat -c%s "$dest")
+  [ "$s" -ge 1048576 ] || fail "小さすぎ $(basename "$dest")"
   head -c1 "$dest" | grep -qE '^[<{]' && fail "HTML混入 $(basename "$dest")"
-  [ "$(sha256sum "$dest" | cut -d' ' -f1)" = "$sha" ] || fail "SHA不一致 $(basename "$dest")"
+  if [ "$size" != "*" ]; then
+    [ "$s" = "$size" ] || fail "サイズ不一致 $(basename "$dest")"
+    [ "$(sha256sum "$dest" | cut -d' ' -f1)" = "$sha" ] || fail "SHA不一致 $(basename "$dest")"
+  fi
   echo "  OK $(basename "$dest")"
 done < "$MAN"
 
