@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""日本語1行 → ローカルLLM → YAML → build。LLMが落ちていれば自動起動する。"""
+"""日本語1行 → ローカルLLM → YAML → build。"""
 import argparse
 import re
 import subprocess
@@ -13,6 +13,8 @@ ROOT = Path(__file__).resolve().parent.parent
 SYS = ROOT / "config" / "llm_system.txt"
 SCEN = ROOT / "data" / "scenarios"
 LLM = "http://127.0.0.1:8000/v1/chat/completions"
+GUARD = "no blush, even skin tone"
+LIMIT = 880
 
 
 def ensure_llm() -> bool:
@@ -22,17 +24,22 @@ def ensure_llm() -> bool:
     except Exception:
         pass
     print("LLMを起動します（初回は数分）")
-    r = subprocess.run(["bash", str(ROOT / "scripts" / "llm_server.sh")])
-    return r.returncode == 0
+    return subprocess.run(["bash", str(ROOT / "scripts" / "llm_server.sh")]).returncode == 0
 
 
 def clean(text: str) -> str:
     text = re.sub(r"```.*?```", "", text, flags=re.S)
     text = re.sub(r"<[^>]+>", "", text)
     text = text.replace("\n", " ")
-    tags = [t.strip(" .。、") for t in text.split(",")]
-    tags = [t for t in tags if t and len(t) < 60]
-    return ", ".join(tags[:40])
+    tags = []
+    for t in text.split(","):
+        t = t.strip(" .。、")
+        if not t or len(t) > 60:
+            continue
+        if not re.fullmatch(r"[A-Za-z0-9 \-_']+", t):
+            continue
+        tags.append(t)
+    return ", ".join(dict.fromkeys(tags)[:40]) if False else ", ".join(list(dict.fromkeys(tags))[:40])
 
 
 def main() -> int:
@@ -67,6 +74,9 @@ def main() -> int:
         return 1
 
     prompt = clean(raw)
+    if "no blush" not in prompt:
+        prompt = f"{prompt}, {GUARD}"
+    prompt = prompt[:LIMIT]
     if len(prompt) < 20:
         print("短すぎる:", raw[:200])
         return 1
@@ -87,7 +97,9 @@ def main() -> int:
     print("--- 書き込み ---")
     print(target.relative_to(ROOT))
 
-    subprocess.run([sys.executable, str(ROOT / "scripts" / "validate.py")], check=False)
+    if subprocess.run([sys.executable, str(ROOT / "scripts" / "validate.py")]).returncode != 0:
+        print("⚠ 検品NG。上を直してから build すること")
+        return 1
     subprocess.run([sys.executable, str(ROOT / "scripts" / "build.py")], check=True)
     print(f"\n次: bash run.sh still {target.stem} --n 3")
     return 0
