@@ -16,9 +16,11 @@ fail() { echo "❌ $*"; exit "${2:-1}"; }
 FREE=$(df -BG --output=avail /workspace | tail -1 | tr -dc '0-9')
 [ "${FREE:-0}" -ge 15 ] || fail "空き ${FREE}GB。15GB必要"
 
-VRAM=$(nvidia-smi --query-gpu=memory.free --format=csv,noheader,nounits | head -1 | tr -dc '0-9')
-[ "${VRAM:-0}" -ge 20000 ] || fail "VRAM空き ${VRAM}MB。20GB必要（他プロセスを止める）"
-echo "VRAM空き ${VRAM}MB"
+VRAM=$(nvidia-smi --query-gpu=memory.free --format=csv,noheader,nounits 2>/dev/null | head -1 | tr -dc '0-9')
+if [ -z "${VRAM:-}" ]; then
+  VRAM=$("$PY" -c 'import torch;f,t=torch.cuda.mem_get_info();print(f//1048576)' 2>/dev/null || echo 0)
+fi
+[ "${VRAM:-0}" -ge 20000 ] || fail "VRAM空き ${VRAM}MB。20GB必要"
 
 YML="$COMFY/extra_model_paths.yaml"
 if ! "$PY" -c "import yaml;yaml.safe_load(open('$YML'))" 2>/dev/null; then
