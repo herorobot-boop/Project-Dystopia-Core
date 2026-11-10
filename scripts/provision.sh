@@ -8,9 +8,8 @@ PY=/usr/local/bin/python3
 mkdir -p /workspace/models/llm /workspace/logs /workspace/Project-Dystopia-Core/out/raw
 
 fail() { echo "❌ $*"; exit "${2:-1}"; }
-command -v git >/dev/null || fail "git が無い。テンプレートにgitを含むものを選ぶこと"
+command -v git >/dev/null || fail "git が無い。git入りテンプレートを選ぶこと"
 
-# 不足分だけを計算
 need=0
 while IFS=$'\t' read -r url dest size sha; do
   [ -z "${url:-}" ] && continue
@@ -22,7 +21,7 @@ need_gb=$(( need / 1073741824 + 10 ))
 FREE=$(df -BG --output=avail /workspace | tail -1 | tr -dc '0-9')
 [ -n "$FREE" ] || fail "空き容量を判定できない"
 if [ "$need" -gt 0 ] && [ "$FREE" -lt "$need_gb" ]; then
-  fail "不足分 ${need_gb}GB に対し空き ${FREE}GB。ディスクを増やすこと"
+  fail "不足分 ${need_gb}GB に対し空き ${FREE}GB"
 fi
 echo "不足分 $(( need / 1073741824 ))GB / 空き ${FREE}GB"
 
@@ -51,8 +50,11 @@ fi
 
 bash /workspace/Project-Dystopia-Core/scripts/verify_urls.sh || fail "URL検証で停止" 2
 
-AUTH=()
-[ -n "${HF_TOKEN:-}" ] && AUTH=(--header="Authorization: Bearer ${HF_TOKEN}")
+if [ -n "${HF_TOKEN:-}" ]; then
+  AUTH=(--header="Authorization: Bearer ${HF_TOKEN}")
+else
+  AUTH=()
+fi
 
 while IFS=$'\t' read -r url dest size sha; do
   [ -z "${url:-}" ] && continue
@@ -61,7 +63,7 @@ while IFS=$'\t' read -r url dest size sha; do
     echo "  skip $(basename "$dest")"; continue
   fi
   aria2c -c -x4 -s4 -k1M --file-allocation=none --max-tries=8 --retry-wait=10 \
-    --console-log-level=warn --summary-interval=0 "${AUTH[@]}" \
+    --console-log-level=warn --summary-interval=0 ${AUTH[@]+"${AUTH[@]}"} \
     -d "$(dirname "$dest")" -o "$(basename "$dest")" "$url" \
     || fail "DL失敗 $(basename "$dest")"
 done < "$MAN"
