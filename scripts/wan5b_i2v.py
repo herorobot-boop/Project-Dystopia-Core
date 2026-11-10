@@ -8,6 +8,8 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import _common as C
 
+SIZES = {480: (480, 832), 576: (576, 1024), 720: (704, 1280)}
+
 
 def main() -> int:
     ap = argparse.ArgumentParser()
@@ -17,6 +19,7 @@ def main() -> int:
     ap.add_argument("--more-motion", action="store_true")
     ap.add_argument("--shift", type=float, default=-1.0)
     ap.add_argument("--frames", type=int, default=121)
+    ap.add_argument("--size", type=int, default=720, choices=[480, 576, 720])
     ap.add_argument("--seed", type=int, default=-1)
     a = ap.parse_args()
 
@@ -28,6 +31,8 @@ def main() -> int:
     if not src.exists():
         print("画像が無い:", a.image)
         return 1
+
+    W, H = SIZES[a.size]
 
     if a.fast:
         unet, steps, cfg, shift = "Wan2_2-TI2V-5B-Turbo_fp16.safetensors", 4, 1.0, 8.0
@@ -55,7 +60,7 @@ def main() -> int:
         "6": {"class_type": "CLIPTextEncode", "inputs": {"clip": ["2", 0], "text": a.motion}},
         "7": {"class_type": "CLIPTextEncode", "inputs": {"clip": ["2", 0], "text": ""}},
         "8": {"class_type": "Wan22ImageToVideoLatent",
-              "inputs": {"vae": ["3", 0], "width": 704, "height": 1280,
+              "inputs": {"vae": ["3", 0], "width": W, "height": H,
                          "length": a.frames, "batch_size": 1, "start_image": ["4", 0]}},
         "9": {"class_type": "KSampler",
               "inputs": {"model": ["5", 0], "positive": ["6", 0], "negative": ["7", 0],
