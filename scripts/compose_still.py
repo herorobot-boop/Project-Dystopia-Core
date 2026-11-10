@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-"""2枚を1枚に合成する。image1=土台, image2=参照。マスク不要。
-使い方: python3 compose_still.py 0001 out/ref/hand.png "his hand cups her breast" """
+"""2枚または3枚を1枚に合成する。image1=土台, image2=参照, image3=参照(任意)。マスク不要。
+使い方: python3 compose_still.py 0001 out/ref/hand.png "his hand cups her breast" [--third out/ref/other.png]"""
 import argparse
 import sys
 import time
@@ -23,6 +23,7 @@ def main() -> int:
     ap.add_argument("base")
     ap.add_argument("reference")
     ap.add_argument("instruction")
+    ap.add_argument("--third", default=None)
     ap.add_argument("--seed", type=int, default=-1)
     a = ap.parse_args()
 
@@ -32,9 +33,17 @@ def main() -> int:
         print("画像が無い:", a.base, a.reference)
         return 1
 
+    t = None
+    if a.third:
+        t = resolve(a.third)
+        if not t:
+            print("画像が無い:", a.third)
+            return 1
+
     C.purge()
     n1 = C.upload(b)
     n2 = C.upload(r)
+    n3 = C.upload(t) if t else None
     seed = a.seed if a.seed >= 0 else int(time.time() * 1000) % 10**9
 
     text = ("Compose the two images into one. Keep the woman from image1 identical. "
@@ -63,6 +72,10 @@ def main() -> int:
         "10": {"class_type": "SaveImage",
                "inputs": {"filename_prefix": "Tmp", "images": ["9", 0]}},
     }
+
+    if n3:
+        wf["11"] = {"class_type": "LoadImage", "inputs": {"image": n3}}
+        wf["6"]["inputs"]["image3"] = ["11", 0]
 
     out, err = C.run(wf, 900)
     if err:
