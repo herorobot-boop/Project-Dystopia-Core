@@ -13,6 +13,9 @@ case "${1:-}" in
     [ -n "$f" ] || { echo "❌ ブロックが無い: $1"; exit 1; }
     shift; "$PY" scripts/gen_still.py "$f" "$@"
     ;;
+  crowd)
+    shift; "$PY" scripts/gen_crowd.py "$@"
+    ;;
   compose)
     shift; "$PY" scripts/compose_still.py "$@"
     ;;
@@ -22,29 +25,25 @@ case "${1:-}" in
   vid)
     shift; "$PY" scripts/wan5b_i2v.py "$@"
     ;;
+  motion)
+    shift; "$PY" scripts/wan14b_i2v.py "$@"
+    ;;
   pick)
     shift; "$PY" scripts/promote.py "$@"
     ;;
   reject)
     shift; "$PY" scripts/promote.py --reject "$@"
     ;;
-  ref)
-    shift; mkdir -p out/ref; "$PY" scripts/gen_still.py "$@" --width 832 --height 1216
-    ;;
   ls)
-    echo "--- dist/blocks ---"
+    echo "--- blocks ---"
     find dist/blocks -name '*.md' 2>/dev/null | sed 's#dist/blocks/##' | sort | head -60
     echo "--- out/raw ---"
     ls -1 "$RAW" 2>/dev/null | grep -E '^[0-9]{4}\.' | sort || echo "(なし)"
-    echo "--- out/ref ---"
-    ls -1 out/ref 2>/dev/null || echo "(なし)"
     ;;
   status)
     "$PY" scripts/promote.py --list
-    nvidia-smi --query-gpu=memory.used,memory.free --format=csv,noheader 2>/dev/null \
-      || "$PY" -c 'import torch;f,t=torch.cuda.mem_get_info();print("free",f//1048576,"MB")'
     ;;
   *)
-    echo "使い方: bash run.sh {gen|still|compose|edit|vid|pick|reject|ref|ls|status}"
+    echo "gen|still|crowd|compose|edit|vid|motion|pick|reject|ls|status"
     ;;
 esac
