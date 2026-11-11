@@ -136,8 +136,8 @@ def setup_all_assets():
         TARGET_DIRS["diffusion_models"],
         "qwen_image_edit_2509_fp8_e4m3fn.safetensors",
     )
-    fetch_hf(
-        "https://huggingface.co/Benrami11/aidmaNSFWunlock/resolve/main/aidmaNSFWunlock-FLUX-V0.2.safetensors",
+   fetch_hf(
+        "https://huggingface.co/TomaOmito/Qwen-Edit-2509-Lora-Remove-Clothing/resolve/main/remove_clothing.safetensors",
         TARGET_DIRS["loras"], "remove-clothes.safetensors",
     )
     fetch_hf(
