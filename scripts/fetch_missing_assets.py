@@ -136,7 +136,7 @@ def setup_all_assets():
         TARGET_DIRS["diffusion_models"],
         "qwen_image_edit_2509_fp8_e4m3fn.safetensors",
     )
-   fetch_hf(
+    fetch_hf(
         "https://huggingface.co/TomaOmito/Qwen-Edit-2509-Lora-Remove-Clothing/resolve/main/remove_clothing.safetensors",
         TARGET_DIRS["loras"], "remove-clothes.safetensors",
     )
@@ -178,11 +178,4 @@ def setup_all_assets():
     llm: llm/
     vlm: vlm/
 """
-    (COMFY_DIR / "extra_model_paths.yaml").write_text(yaml_text)
-    import yaml as _y
-    _y.safe_load((COMFY_DIR / "extra_model_paths.yaml").read_text())
-    print("[H-K9] 兵站確保 完了")
-
-
-if __name__ == "__main__":
-    setup_all_assets()
+    (COMFY_DIR / "extra_model_paths.yaml").
