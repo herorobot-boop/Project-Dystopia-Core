@@ -25,7 +25,7 @@ def generate_base_image(prompt_tags: str, seed: int = None, width: int = 896, he
     if seed is None:
         seed = int(time.time() * 1000) % 1000000
 
-    positive_text = f"{prompt_tags}, {HAND_FIX}"
+    positive_text = f"aidmaNSFWunlock, {prompt_tags}, {HAND_FIX}"
 
     workflow = {
         "1": {"class_type": "CheckpointLoaderSimple", "inputs": {"ckpt_name": "fluxed_up_5.1_fp8.safetensors"}},
