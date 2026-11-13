@@ -74,6 +74,7 @@ while true; do
   echo "  7) 一覧を見る"
   echo "  8) 採用 / 不採用"
   echo "  9) 状態（GPU・件数）"
+  echo " 10) スマホで見る"
   echo "  0) 終了"
   read -rp "番号: " c
   case $c in
@@ -139,6 +140,10 @@ while true; do
       "$PY" scripts/promote.py --list
       nvidia-smi --query-gpu=memory.used,memory.free --format=csv,noheader 2>/dev/null \
         || "$PY" -c 'import torch;f,t=torch.cuda.mem_get_info();print("free",f//1048576,"MB")'
+      pause ;;
+    10)
+      bash scripts/start_smart_gallery.sh
+      echo "スマホで http://<pod-id>-8080.proxy.runpod.net を開く"
       pause ;;
     0) exit 0 ;;
   esac
