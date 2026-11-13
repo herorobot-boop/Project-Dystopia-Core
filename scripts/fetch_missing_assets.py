@@ -76,6 +76,36 @@ def fetch_civitai(model_version_id: int, target_dir: Path, filename: str) -> boo
     return True
 
 
+def fetch_civitai_file(version_id: int, file_id: int, target_dir: Path, filename: str) -> bool:
+    target = target_dir / filename
+    if verify_file(target):
+        print(f"[Exist] Civitai: {filename}")
+        return True
+    import requests
+    headers = {"User-Agent": "Mozilla/5.0", "Referer": "https://civitai.com/"}
+    if CIVITAI_TOKEN:
+        headers["Authorization"] = f"Bearer {CIVITAI_TOKEN}"
+    url = f"https://civitai.com/api/download/models/{version_id}?fileId={file_id}"
+    if CIVITAI_TOKEN:
+        url += f"&token={CIVITAI_TOKEN}"
+    print(f"[Downloading Civitai] {filename} (v{version_id}/f{file_id})...")
+    tmp = target.with_suffix(target.suffix + ".part")
+    try:
+        with requests.get(url, headers=headers, stream=True, timeout=120, allow_redirects=True) as r:
+            if r.status_code != 200:
+                print(f"[WARN] Civitai HTTP {r.status_code}")
+                return False
+            with tmp.open("wb") as f:
+                for chunk in r.iter_content(1 << 20):
+                    if chunk:
+                        f.write(chunk)
+    except Exception as e:
+        print(f"[WARN] Civitai 例外: {e}")
+        return False
+    tmp.replace(target)
+    return verify_file(target) and print(f"[SUCCESS] {filename}") is None
+
+
 def fetch_hf(url: str, dest_dir: Path, filename: str):
     output_path = dest_dir / filename
     if verify_file(output_path):
@@ -113,16 +143,23 @@ def setup_all_assets():
         "mmproj-F16.gguf",
     )
 
-    # T2I 土台: DAC_Fluxed_Style（Civitai 681608）
-    ckpt = TARGET_DIRS["checkpoints"] / "fluxed_up_5.1_fp8.safetensors"
+    # T2I 土台: Fluxed Up 13.1 FP8 (Civitai 847101 / v3273057 / f3157597)
+    ckpt = TARGET_DIRS["checkpoints"] / "fluxed_up_13.1_fp8.safetensors"
     if not verify_file(ckpt):
-        fetch_civitai(681608, TARGET_DIRS["checkpoints"], "fluxed_up_5.1_fp8.safetensors")
+        fetch_civitai_file(3273057, 3157597, TARGET_DIRS["checkpoints"], "fluxed_up_13.1_fp8.safetensors")
     if not verify_file(ckpt):
-        print("[WARN] fluxed_up 不可。Comfy-Org/flux1-dev fp8 で代替")
+        print("[WARN] fluxed_up 不可。flux1-dev fp8 で代替")
         fetch_hf(
             "https://huggingface.co/Comfy-Org/flux1-dev/resolve/main/flux1-dev-fp8.safetensors",
             TARGET_DIRS["checkpoints"], "flux1-dev-fp8.safetensors",
         )
+    # 旧名の残骸を掃除
+    old = TARGET_DIRS["checkpoints"] / "fluxed_up_5.1_fp8.safetensors"
+    if old.exists() and not ckpt.exists():
+        pass
+    if ckpt.exists() and old.exists():
+        old.unlink()
+        print("[Prune] fluxed_up_5.1_fp8 を削除")
 
     # 着衣解除 LoRA（Civitai 検索は0件なので HF ミラー直指定）
     fetch_hf(
@@ -151,12 +188,17 @@ def setup_all_assets():
 
     # 動画化段
     fetch_hf(
-        "https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/resolve/main/split_files/diffusion_models/wan2.2_ti2v_5B_fp16.safetensors",
+        "https://huggingface.co/Comfy-Org/Wan-2.2/resolve/main/split_files/diffusion_models/wan2.2_ti2v_5B_fp16.safetensors",
         TARGET_DIRS["diffusion_models"], "wan2.2_ti2v_5B_fp16.safetensors",
     )
     fetch_hf(
-        "https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/resolve/main/split_files/vae/wan2.2_vae.safetensors",
+        "https://huggingface.co/Comfy-Org/Wan-2.2/resolve/main/split_files/vae/wan2.2_vae.safetensors",
         TARGET_DIRS["vae"], "wan2.2_vae.safetensors",
+    )
+    # 差分編集 2511（任意・A/B用）
+    fetch_hf(
+        "https://huggingface.co/Comfy-Org/Qwen-Image-Edit/resolve/main/split_files/diffusion_models/qwen_image_edit_2511_fp8mixed.safetensors",
+        TARGET_DIRS["diffusion_models"], "qwen_image_edit_2511_fp8mixed.safetensors",
     )
 
     # 共通
@@ -178,4 +220,11 @@ def setup_all_assets():
     llm: llm/
     vlm: vlm/
 """
-    (COMFY_DIR / "extra_model_paths.yaml").
+    (COMFY_DIR / "extra_model_paths.yaml").write_text(yaml_text)
+    import yaml as _y
+    _y.safe_load((COMFY_DIR / "extra_model_paths.yaml").read_text())
+    print("[H-K9] 兵站確保 完了")
+
+
+if __name__ == "__main__":
+    setup_all_assets()
