@@ -66,6 +66,12 @@ Project Dystopia: Genesis Ignition Omega の起動で実際に発生した障害
 | 40 | 同ファイルが `EmptySD3LatentImage`＋denoise 0.85 | 元画像の構図が壊れる | `VAEEncode`＋denoise 1.0 へ | 修正済 |
 | 41 | `run_wan_subtle_motion.py` が 14B 用 `WanImageToVideo` と `wan_2.1_vae` / 14B gguf | 5B で latent 不一致、VAE 不在 | `Wan22ImageToVideoLatent`／`wan2.2_vae`／5B safetensors へ | 修正済 |
 | 42 | `run_fluxed_up_t2i.py` にトリガーワードが無い | LoRA が発火しない | 先頭に `aidmaNSFWunlock` を付与 | 修正済 |
+| 43 | `start_smart_gallery.sh` がポート8000（LLMと衝突）・参照先 `ComfyUI/output` | 起動しても見えない | 8080・`out/raw`・起動判定つきに全面改稿 | 修正済 |
+| 44 | メニューからギャラリーを呼べない | 毎回手で叩く必要 | 10番を追加 | 修正済 |
+| 45 | Discord通知がどこからも呼ばれない | スマホに届かない | 動画生成直後に呼ぶ | 修正済 |
+| 46 | fluxed_up に別モデル（DAC_Fluxed_Style）を割当 | 土台がスタイル寄り | 正規の Fluxed Up 13.1（847101/v3273057/f3157597）へ | 修正済 |
+| 47 | Wan リポジトリ名が `Wan_2.2_ComfyUI_Repackaged` | 404 | 実名 `Comfy-Org/Wan-2.2` へ | 修正済 |
+| 48 | 編集UNETが 2509 固定 | 2511 の2人一貫性を使えない | 存在する方を自動選択 | 修正済 |
 
 ## 起動前チェック
 
