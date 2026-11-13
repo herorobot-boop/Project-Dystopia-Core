@@ -72,6 +72,10 @@ Project Dystopia: Genesis Ignition Omega の起動で実際に発生した障害
 | 46 | fluxed_up に別モデル（DAC_Fluxed_Style）を割当 | 土台がスタイル寄り | 正規の Fluxed Up 13.1（847101/v3273057/f3157597）へ | 修正済 |
 | 47 | Wan リポジトリ名が `Wan_2.2_ComfyUI_Repackaged` | 404 | 実名 `Comfy-Org/Wan-2.2` へ | 修正済 |
 | 48 | 編集UNETが 2509 固定 | 2511 の2人一貫性を使えない | 存在する方を自動選択 | 修正済 |
+| 49 | ギャラリーが外部リポジトリ名の推測に依存 | 名前が違うと起動不可 | 自前の `gallery_server.py` に置換。外部依存ゼロ | 修正済 |
+| 50 | 通知パスが `COMFY_OUT` だが `stash` が先に移動済み | 通知が空振り | `C.RAW` を渡す。`moved` を経由 | 修正済 |
+| 51 | `audit_urls.py` が `.sh` を見ない | シェル内URLが監査漏れ | `*.sh` も走査。codeload は除外 | 修正済 |
+| 52 | Pod専用コマンドが会話に散在 | 覚えられない | `docs/POD_ONLY.md` に集約 | 修正済 |
 
 ## 起動前チェック
 
