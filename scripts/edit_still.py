@@ -11,6 +11,18 @@ import _common as C
 KEEP = "Keep everything identical. "
 
 
+def _pick_unet() -> str:
+    d = Path("/workspace/ComfyUI/models/diffusion_models")
+    for n in ("qwen_image_edit_2511_fp8mixed.safetensors",
+              "qwen_image_edit_2509_fp8_e4m3fn.safetensors"):
+        if (d / n).exists():
+            return n
+    return "qwen_image_edit_2509_fp8_e4m3fn.safetensors"
+
+
+UNET = _pick_unet()
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("image")
@@ -39,7 +51,7 @@ def main() -> int:
 
     wf = {
         "1": {"class_type": "UNETLoader",
-              "inputs": {"unet_name": "qwen_image_edit_2509_fp8_e4m3fn.safetensors",
+              "inputs": {"unet_name": UNET,
                          "weight_dtype": "default"}},
         "2": {"class_type": "CLIPLoader",
               "inputs": {"clip_name": "qwen_2.5_vl_7b_fp8_scaled.safetensors",
