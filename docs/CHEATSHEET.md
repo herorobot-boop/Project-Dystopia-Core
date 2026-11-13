@@ -1,3 +1,4 @@
+Pod専用のコマンドは `docs/POD_ONLY.md` に全部あります。
 # 控え（読むだけ。打たなくてよい）
 ## 最初の1回
 curl -fsSL https://raw.githubusercontent.com/herorobot-boop/Project-Dystopia-Core/main/up.sh?t=$(date +%s) -o /tmp/u  bash /tmp/u
