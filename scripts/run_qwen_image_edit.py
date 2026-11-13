@@ -15,7 +15,18 @@ if str(PROJECT_ROOT) not in sys.path:
 from scripts.comfy_api_bridge import ComfyAPIBridge
 
 OUTPUT_DIR = Path("/workspace/ComfyUI/output")
-UNET = "qwen_image_edit_2509_fp8_e4m3fn.safetensors"
+
+
+def _pick_unet() -> str:
+    d = Path("/workspace/ComfyUI/models/diffusion_models")
+    for n in ("qwen_image_edit_2511_fp8mixed.safetensors",
+              "qwen_image_edit_2509_fp8_e4m3fn.safetensors"):
+        if (d / n).exists():
+            return n
+    return "qwen_image_edit_2509_fp8_e4m3fn.safetensors"
+
+
+UNET = _pick_unet()
 
 DEFAULT_INSTRUCTION = "pull panties aside to the right, exposing her anatomy"
 
