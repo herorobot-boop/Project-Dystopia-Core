@@ -4,7 +4,7 @@ from pathlib import Path
 
 pat = re.compile(r'https://[^\s"\')]+')
 bad = []
-for p in sorted(Path("scripts").glob("*.py")):
+for p in sorted(list(Path("scripts").glob("*.py")) + list(Path("scripts").glob("*.sh"))):
     for u in set(pat.findall(p.read_text(errors="ignore"))):
         if "127.0.0.1" in u or "github.com/herorobot" in u:
             continue
