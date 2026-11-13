@@ -146,20 +146,18 @@ def setup_all_assets():
     # T2I 土台: Fluxed Up 13.1 FP8 (Civitai 847101 / v3273057 / f3157597)
     ckpt = TARGET_DIRS["checkpoints"] / "fluxed_up_13.1_fp8.safetensors"
     if not verify_file(ckpt):
-        fetch_civitai_file(3273057, 3157597, TARGET_DIRS["checkpoints"], "fluxed_up_13.1_fp8.safetensors")
+        fetch_civitai_file(3273057, 3157597, TARGET_DIRS["checkpoints"],
+                           "fluxed_up_13.1_fp8.safetensors")
     if not verify_file(ckpt):
         print("[WARN] fluxed_up 不可。flux1-dev fp8 で代替")
         fetch_hf(
             "https://huggingface.co/Comfy-Org/flux1-dev/resolve/main/flux1-dev-fp8.safetensors",
             TARGET_DIRS["checkpoints"], "flux1-dev-fp8.safetensors",
         )
-    # 旧名の残骸を掃除
     old = TARGET_DIRS["checkpoints"] / "fluxed_up_5.1_fp8.safetensors"
-    if old.exists() and not ckpt.exists():
-        pass
-    if ckpt.exists() and old.exists():
+    if old.exists() and verify_file(ckpt):
         old.unlink()
-        print("[Prune] fluxed_up_5.1_fp8 を削除")
+        print("[Prune] 旧 fluxed_up_5.1_fp8 を削除")
 
     # 着衣解除 LoRA（Civitai 検索は0件なので HF ミラー直指定）
     fetch_hf(
