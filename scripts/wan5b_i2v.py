@@ -2,6 +2,7 @@
 """Wan2.2 TI2V-5B 微動動画。既定は素の5B 25step。--fast でTurbo下書き。"""
 import argparse
 import sys
+import subprocess
 import time
 from pathlib import Path
 
@@ -86,6 +87,9 @@ def main() -> int:
         print("失敗:", err)
         return 1
     print("生成:", C.stash(C.collect(out, "gifs")))
+    for _v in C.collect(out, "gifs"):
+        subprocess.run([sys.executable, str(Path(__file__).parent / "discord_notifier.py"),
+                        str(C.COMFY_OUT / _v), a.motion], check=False)
     return 0
 
 
