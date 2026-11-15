@@ -113,20 +113,21 @@ export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True,garbage_collection_thres
 export CUDA_MODULE_LOADING=LAZY
 
 # 9. GPU 判定（軍律14）
-VRAM_MB=$(nvidia-smi --query-gpu=memory.total --format=csv,noheader,nounits | head -n1)
-if [ "${VRAM_MB}" -lt 28000 ]; then
-    VRAM_FLAGS="--highvram"
+VRAM_MB=$(nvidia-smi --query-gpu=memory.total --format=csv,noheader,nounits 2>/dev/null | head -n1 | tr -dc '0-9')
+if [ -z "${VRAM_MB:-}" ]; then
+    VRAM_MB=$("$PY" -c 'import torch;print(torch.cuda.get_device_properties(0).total_memory//1048576)' 2>/dev/null || echo 0)
+fi
+if [ "${VRAM_MB:-0}" -lt 28000 ]; then
     export DYSTOPIA_WAN_TIER="5B"
     echo "[GPU] ${VRAM_MB}MB 検出 → Wan 5B モード"
 else
-    VRAM_FLAGS="--highvram"
     export DYSTOPIA_WAN_TIER="14B"
     echo "[GPU] ${VRAM_MB}MB 検出 → Wan 14B 2段モード"
 fi
 
 # 10. ComfyUI 常駐
 cd "${COMFY_DIR}"
-"$PY" main.py --listen 0.0.0.0 --port 8188 ${VRAM_FLAGS} > "${WORKSPACE}/comfyui.log" 2>&1 &
+"$PY" main.py --listen 0.0.0.0 --port 8188 --normalvram > "${WORKSPACE}/comfyui.log" 2>&1 &
 
 for i in $(seq 1 60); do
     curl -s http://127.0.0.1:8188/system_stats > /dev/null && break
