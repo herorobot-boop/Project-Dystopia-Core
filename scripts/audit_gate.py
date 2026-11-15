@@ -29,6 +29,11 @@ def _vlm_local_child_process(image_path: str, return_dict: dict):
 
     vlm_model_path = "/workspace/models/vlm/qwen2.5-vl-7b-instruct-q8_0.gguf"
     mmproj_path = "/workspace/models/vlm/mmproj-F16.gguf"
+    
+    for m in (vlm_model_path, mmproj_path):
+        if not Path(m).exists():
+            print(f"⚠️ [Audit Gate] VLMファイル無し: {m}")
+            return
 
     print("👁️ [Audit Gate] ローカルQwen2.5-VLをVRAMへロード中...")
     vlm = Llama(
@@ -84,7 +89,10 @@ def inspect_image_locally(image_path: str, max_retries=3) -> bool:
 
         p = multiprocessing.Process(target=_vlm_local_child_process, args=(image_path, return_dict))
         p.start()
-        p.join()
+        p.join(timeout=600)
+        if p.is_alive():
+            p.terminate()
+            p.join()
 
         raw_res = return_dict.get("result", "")
         try:
