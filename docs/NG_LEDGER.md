@@ -76,6 +76,9 @@ Project Dystopia: Genesis Ignition Omega の起動で実際に発生した障害
 | 50 | 通知パスが `COMFY_OUT` だが `stash` が先に移動済み | 通知が空振り | `C.RAW` を渡す。`moved` を経由 | 修正済 |
 | 51 | `audit_urls.py` が `.sh` を見ない | シェル内URLが監査漏れ | `*.sh` も走査。codeload は除外 | 修正済 |
 | 52 | Pod専用コマンドが会話に散在 | 覚えられない | `docs/POD_ONLY.md` に集約 | 修正済 |
+| 53 | `wan5b_i2v.py` の `moved = ...` が行頭にあり IndentationError | 置換時にインデントが落ちた | 4スペース下げる。`py_compile` を audit_all に含める | 修正済 |
+| 54 | `gen_still.py` が `flux1-dev-fp8` 固定 | 取得側は fluxed_up 成功時に flux1-dev を落とさない | `_pick_ckpt()` で 13.1→5.1→flux1-dev の順に選択 | 修正済 |
+| 55 | `run_fluxed_up_t2i.py` が削除対象の 5.1 を参照 | 取得側で 5.1 を prune する | 同上の自動選択に統一 | 修正済 |
 
 ## 起動前チェック
 
