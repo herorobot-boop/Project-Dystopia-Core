@@ -40,6 +40,7 @@ def normalize_motion(motion_prompt: str) -> str:
 
 def render_subtle_motion_video(input_image_name: str, motion_prompt: str, seed: int = None,
                                width: int = 576, height: int = 1024) -> str:
+    C.purge()
     bridge = ComfyAPIBridge()
     bridge.purge_comfyui_vram_cache()
     bridge.sync_output_to_input(input_image_name)
