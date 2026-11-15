@@ -26,7 +26,7 @@ case "${1:-}" in
     shift; "$PY" scripts/wan5b_i2v.py "$@"
     ;;
   motion)
-    shift; "$PY" scripts/wan14b_i2v.py "$@"
+    shift; "$PY" scripts/run_wan_subtle_motion.py "$@"
     ;;
   pick)
     shift; "$PY" scripts/promote.py "$@"
