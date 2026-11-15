@@ -1,4 +1,14 @@
 #!/usr/bin/env bash
+set -uo pipefail
+
+PY=/usr/local/bin/python3
+[ -x "$PY" ] || PY=$(command -v python3)
+
+pip_install() {
+    "$PY" -m pip install --no-cache-dir --break-system-packages "$@" 2>/dev/null \
+        || "$PY" -m pip install --no-cache-dir "$@"
+}
+
 fetch_repo() {
   local repo="$1" dest="$2"
   if [ -d "${dest}" ] && [ -n "$(ls -A "${dest}" 2>/dev/null)" ]; then
@@ -14,7 +24,6 @@ fetch_repo() {
   echo "[OK] ${dest}"
 }
 
-set -e
 install_c2patool_soft() {
     command -v c2patool >/dev/null 2>&1 && return 0
     local url
@@ -38,10 +47,9 @@ install_c2patool_soft() {
         && echo "c2patool 導入済み" \
         || echo "WARN: c2patool 未導入。C2PA 署名はスキップ"
 }
-set -uo pipefail
 
 echo "=========================================================="
-echo "   Project Dystopia: Genesis Ignition Omega (v9.2)"
+echo "    Project Dystopia: Genesis Ignition Omega (v9.2)"
 echo "=========================================================="
 
 WORKSPACE=/workspace
@@ -66,12 +74,12 @@ fi
 if [ ! -d "${COMFY_DIR}/.git" ]; then
     fetch_repo comfyanonymous/ComfyUI "${COMFY_DIR}"
 fi
-pip install --no-cache-dir -r "${COMFY_DIR}/requirements.txt"
+pip_install -r "${COMFY_DIR}/requirements.txt" || true
 mkdir -p "${COMFY_DIR}/custom_nodes"
 if [ ! -d "${COMFY_DIR}/custom_nodes/ComfyUI-Manager" ]; then
     fetch_repo ltdrdata/ComfyUI-Manager "${COMFY_DIR}/custom_nodes/ComfyUI-Manager"
 fi
-pip install --no-cache-dir -r "${COMFY_DIR}/custom_nodes/ComfyUI-Manager/requirements.txt" || true
+pip_install -r "${COMFY_DIR}/custom_nodes/ComfyUI-Manager/requirements.txt" || true
 
 # 3. ComfyUI-Manager civitai.red 認証
 MANAGER_CONFIG=${COMFY_DIR}/custom_nodes/ComfyUI-Manager/config.ini
@@ -86,14 +94,14 @@ fi
 # 4. DAM ビューアー
 if [ ! -d "${GALLERY_DIR}" ]; then
     fetch_repo biagiomaf/smart-comfyui-gallery "${GALLERY_DIR}"
-    cd "${GALLERY_DIR}" && pip install -r requirements.txt || true
+    cd "${GALLERY_DIR}" && pip_install -r requirements.txt || true
 fi
 
 # 5. 兵站確保
-python3 "${CORE_DIR}/scripts/fetch_missing_assets.py"
+"$PY" "${CORE_DIR}/scripts/fetch_missing_assets.py"
 
 # 6. ノード解決
-python3 "${CORE_DIR}/scripts/scan_and_install_nodes.py"
+"$PY" "${CORE_DIR}/scripts/scan_and_install_nodes.py"
 
 # 7. 出力ディレクトリと既定値（軍律16）
 mkdir -p "${WORKSPACE}"/out/{raw,selected,rejected,video}
@@ -106,18 +114,18 @@ export CUDA_MODULE_LOADING=LAZY
 # 9. GPU 判定（軍律14）
 VRAM_MB=$(nvidia-smi --query-gpu=memory.total --format=csv,noheader,nounits | head -n1)
 if [ "${VRAM_MB}" -lt 28000 ]; then
-    VRAM_FLAGS="--highvram --reserve-vram 2.0"
+    VRAM_FLAGS="--highvram"
     export DYSTOPIA_WAN_TIER="5B"
     echo "[GPU] ${VRAM_MB}MB 検出 → Wan 5B モード"
 else
-    VRAM_FLAGS="--highvram --reserve-vram 2.0"
+    VRAM_FLAGS="--highvram"
     export DYSTOPIA_WAN_TIER="14B"
     echo "[GPU] ${VRAM_MB}MB 検出 → Wan 14B 2段モード"
 fi
 
 # 10. ComfyUI 常駐
 cd "${COMFY_DIR}"
-python3 main.py --listen 0.0.0.0 --port 8188 ${VRAM_FLAGS} > "${WORKSPACE}/comfyui.log" 2>&1 &
+"$PY" main.py --listen 0.0.0.0 --port 8188 ${VRAM_FLAGS} > "${WORKSPACE}/comfyui.log" 2>&1 &
 
 for i in $(seq 1 60); do
     curl -s http://127.0.0.1:8188/system_stats > /dev/null && break
@@ -132,4 +140,4 @@ echo "[ComfyUI] API 疎通確認完了"
 
 # 11. 点火
 cd "${CORE_DIR}"
-exec python3 Main_Omega_Integrated.py
+exec "$PY" Main_Omega_Integrated.py
