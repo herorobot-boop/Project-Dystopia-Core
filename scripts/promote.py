@@ -17,7 +17,7 @@ RAW = ROOT / "out" / "raw"
 SEL = ROOT / "out" / "selected"
 REJ = ROOT / "out" / "rejected"
 
-EXTS = {".png", ".jpg", ".jpeg", ".webp"}
+EXTS = {".png", ".jpg", ".jpeg", ".webp", ".mp4", ".gif", ".webm"}
 
 
 def ensure_dirs() -> None:
