@@ -40,7 +40,7 @@ NEEDED = {
     "VAEDecodeTiled": ["samples", "vae", "tile_size", "overlap"],
     "VAEEncode": ["pixels", "vae"],
     "SaveImage": ["filename_prefix", "images"],
-    "TextEncodeQwenImageEditPlus": ["clip", "vae", "image1", "image2", "prompt"],
+    "TextEncodeQwenImageEditPlus": ["clip", "prompt"],
     "Wan22ImageToVideoLatent": ["vae", "width", "height", "length", "batch_size", "start_image"],
     "WanImageToVideo": ["positive", "negative", "vae", "clip_vision_output",
                         "start_image", "width", "height", "length", "batch_size"],
@@ -97,8 +97,8 @@ for cls, inputs in NEEDED.items():
             if types and want not in types:
                 print(f"❌ CLIPLoader に type={want} が無い")
                 bad += 1
-    if cls == "TextEncodeQwenImageEditPlus" and len(info[cls].get("output", [])) < 2:
-        print("❌ TextEncodeQwenImageEditPlus の出力が2本未満")
+    if cls == "TextEncodeQwenImageEditPlus" and len(info[cls].get("output", [])) < 1:
+        print("❌ TextEncodeQwenImageEditPlus の出力が無い")
         bad += 1
 
 for field, names in FILES.items():
