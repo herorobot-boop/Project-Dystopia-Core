@@ -18,6 +18,10 @@ df -h /workspace
 ## 使わない土台に戻す（2511 → 2509）
 mv /workspace/ComfyUI/models/diffusion_models/qwen_image_edit_2511_fp8mixed.safetensors /workspace/models/ 2>/dev/null
 
+## 2511 を取得する（20.5GB・空き22GB以上必要）
+DYSTOPIA_2511=1 /usr/local/bin/python3 scripts/fetch_missing_assets.py
+df -h /workspace
+
 ## 2511 を戻す
 mv /workspace/models/qwen_image_edit_2511_fp8mixed.safetensors /workspace/ComfyUI/models/diffusion_models/ 2>/dev/null
 
