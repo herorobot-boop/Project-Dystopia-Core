@@ -45,30 +45,35 @@ NEEDED = {
     "WanImageToVideo": ["positive", "negative", "vae", "clip_vision_output",
                         "start_image", "width", "height", "length", "batch_size"],
     "ModelSamplingSD3": ["model", "shift"],
-    "VHS_VideoCombine": ["images", "frame_rate", "filename_prefix", "format", "save_output"],
+    "VHS_VideoCombine": ["images", "frame_rate", "filename_prefix", "format", "crf", "save_output"],
 }
 
 FILES = {
     "unet_name": ["qwen_image_edit_2509_fp8_e4m3fn.safetensors",
-                  "qwen_image_fp8_e4m3fn.safetensors",
-                  "wan2.2_ti2v_5B_fp16.safetensors",
-                  "Wan2_2-TI2V-5B-Turbo_fp16.safetensors",
-                  "wan2.2_i2v_high_noise_14B_fp8_scaled.safetensors",
-                  "wan2.2_i2v_low_noise_14B_fp8_scaled.safetensors"],
+                  "wan2.2_ti2v_5B_fp16.safetensors"],
     "ckpt_name": [_pick_ckpt()],
     "clip_name": ["qwen_2.5_vl_7b_fp8_scaled.safetensors",
                   "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
                   "clip_vision_h.safetensors"],
     "vae_name": ["qwen_image_vae.safetensors", "wan2.2_vae.safetensors"],
     "lora_name": ["aidmaNSFWunlock-FLUX-V0.2.safetensors",
-                  "MS_Nude_Style_Flux_V2.safetensors",
-                  "remove-clothes.safetensors",
+                  "remove-clothes.safetensors"],
+}
+
+OPTIONAL_FILES = {
+    "unet_name": ["qwen_image_edit_2511_fp8mixed.safetensors",
+                  "qwen_image_fp8_e4m3fn.safetensors",
+                  "Wan2_2-TI2V-5B-Turbo_fp16.safetensors",
+                  "wan2.2_i2v_high_noise_14B_fp8_scaled.safetensors",
+                  "wan2.2_i2v_low_noise_14B_fp8_scaled.safetensors"],
+    "lora_name": ["MS_Nude_Style_Flux_V2.safetensors",
                   "nsfw_qwen_21.safetensors",
                   "wan2.2_i2v_lightx2v_4steps_lora_v1_high_noise.safetensors",
                   "wan2.2_i2v_lightx2v_4steps_lora_v1_low_noise.safetensors"],
 }
 
 bad = 0
+warn = 0
 try:
     info = requests.get(f"{BASE}/object_info", timeout=120).json()
 except Exception as e:
@@ -107,6 +112,21 @@ for field, names in FILES.items():
             if opts and name not in opts:
                 print(f"❌ ファイル未認識: {cls}.{field} に {name}")
                 bad += 1
+
+for field, names in OPTIONAL_FILES.items():
+    for cls, inputs in NEEDED.items():
+        if field not in inputs:
+            continue
+        opts = info.get(cls, {}).get("input", {}).get("required", {}).get(field, [[]])[0]
+        if not isinstance(opts, list):
+            continue
+        for name in names:
+            if opts and name not in opts:
+                print(f"⚠ 任意ファイル無し: {name}")
+                warn += 1
+
+if warn:
+    print(f"⚠ 任意 {warn} 件（起動は可）")
 
 if bad:
     print(f"\n❌ 不整合 {bad} 件")
