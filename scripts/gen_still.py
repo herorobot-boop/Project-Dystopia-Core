@@ -12,6 +12,21 @@ import _common as C
 UNLOCK = "aidmaNSFWunlock, "
 STYLE = Path("/workspace/ComfyUI/models/loras/MS_Nude_Style_Flux_V2.safetensors")
 
+CKPT_DIR = Path("/workspace/ComfyUI/models/checkpoints")
+CKPTS = ("fluxed_up_13.1_fp8.safetensors",
+         "fluxed_up_5.1_fp8.safetensors",
+         "flux1-dev-fp8.safetensors")
+
+
+def _pick_ckpt() -> str:
+    for n in CKPTS:
+        if (CKPT_DIR / n).exists():
+            return n
+    return CKPTS[-1]
+
+
+CKPT = _pick_ckpt()
+
 
 def section(md: str, name: str) -> str:
     m = re.search(rf"## {name}[^\n]*\n+```\n(.*?)```", md, re.S)
@@ -38,12 +53,13 @@ def main() -> int:
         pos = UNLOCK + pos
 
     C.purge()
+    print(f"土台: {CKPT}")
 
     for i in range(a.n):
         seed = a.seed if a.seed >= 0 else int(time.time() * 1000) % 10**9 + i
         wf = {
             "1": {"class_type": "CheckpointLoaderSimple",
-                  "inputs": {"ckpt_name": "flux1-dev-fp8.safetensors"}},
+                  "inputs": {"ckpt_name": CKPT}},
             "6": {"class_type": "EmptySD3LatentImage",
                   "inputs": {"width": a.width, "height": a.height, "batch_size": 1}},
         }
