@@ -33,6 +33,18 @@ def split_multi(text: str) -> list[str]:
     return [part.strip() for part in SPLIT_RE.split(text or "") if part.strip()]
 
 
+def clean_prompt_seed(text: str) -> str:
+    tags: list[str] = []
+    for part in SPLIT_RE.split(text or ""):
+        cleaned = " ".join(part.strip(" .。、").split())
+        if not cleaned:
+            continue
+        if not cleaned.isascii():
+            continue
+        tags.append(cleaned)
+    return ", ".join(dict.fromkeys(tags))
+
+
 def build_record(row: dict[str, str]) -> dict:
     engine = row["engine"].strip()
     place_slug = slug(row["place"])
@@ -56,7 +68,7 @@ def build_record(row: dict[str, str]) -> dict:
         "key_props": split_multi(row["props"]),
         "beats": split_multi(row["beats"]),
         "verdicts": {"V1": "段階触診", "V3": "観察"},
-        "prompt_seed": " ".join(row["prompt_seed"].split()),
+        "prompt_seed": clean_prompt_seed(row["prompt_seed"]),
         "ng": ["blush", "mannequin"],
         "notes": row["notes"].strip(),
     }
