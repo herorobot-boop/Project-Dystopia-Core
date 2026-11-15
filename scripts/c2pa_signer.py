@@ -1,9 +1,11 @@
 import os
 import shutil
 import subprocess
+import sys
 from pathlib import Path
 
 CERT_DIR = Path("/workspace/config/c2pa_certs")
+
 
 def ensure_c2pa_credentials():
     CERT_DIR.mkdir(parents=True, exist_ok=True)
@@ -18,6 +20,7 @@ def ensure_c2pa_credentials():
             f"-subj '/CN=Project Dystopia H-K9 Algorithmic Media/O=Non-Real Media Authority/'"
         )
         subprocess.run(cmd, shell=True, check=True)
+
 
 def sign_media_atomically(input_media_path: Path):
     ensure_c2pa_credentials()
@@ -55,7 +58,7 @@ def sign_media_atomically(input_media_path: Path):
 
     temp_signed_path = input_media_path.with_suffix(".signed.tmp")
     cmd = f"c2patool '{input_media_path}' -m '{manifest_json}' -o '{temp_signed_path}' --force"
-    res = subprocess.run(cmd, shell=True, capture_output=True)
+    res = subprocess.run(cmd, shell=True, capture_output=True, text=True)
 
     if res.returncode == int(0) and temp_signed_path.exists():
         shutil.move(temp_signed_path, input_media_path)
@@ -63,7 +66,8 @@ def sign_media_atomically(input_media_path: Path):
     else:
         if temp_signed_path.exists():
             temp_signed_path.unlink()
-        print(f"⚠️ [C2PA] Signing failed, preserving raw file: {res.stderr.decode()}")
+        print(f"⚠️ [C2PA] Signing failed, preserving raw file: {res.stderr}")
+
 
 if __name__ == "__main__":
     target = Path(sys.argv[1]) if len(sys.argv) > 1 else Path("/workspace/ComfyUI/output/latest.mp4")
