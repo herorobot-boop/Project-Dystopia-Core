@@ -77,12 +77,15 @@ def fetch_civitai(model_version_id: int, target_dir: Path, filename: str) -> boo
 
 
 def fetch_civitai_file(version_id: int, file_id: int, target_dir: Path, filename: str) -> bool:
+    """fileId 指定で Civitai から取得する。複数ファイル版から正しい1つを狙う用。成功で True。"""
+    target_dir.mkdir(parents=True, exist_ok=True)
     target = target_dir / filename
     if verify_file(target):
         print(f"[Exist] Civitai: {filename}")
         return True
     import requests
-    headers = {"User-Agent": "Mozilla/5.0", "Referer": "https://civitai.com/"}
+    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+               "Referer": "https://civitai.com/"}
     if CIVITAI_TOKEN:
         headers["Authorization"] = f"Bearer {CIVITAI_TOKEN}"
     url = f"https://civitai.com/api/download/models/{version_id}?fileId={file_id}"
@@ -91,9 +94,14 @@ def fetch_civitai_file(version_id: int, file_id: int, target_dir: Path, filename
     print(f"[Downloading Civitai] {filename} (v{version_id}/f{file_id})...")
     tmp = target.with_suffix(target.suffix + ".part")
     try:
-        with requests.get(url, headers=headers, stream=True, timeout=120, allow_redirects=True) as r:
+        with requests.get(url, headers=headers, stream=True, timeout=120,
+                          allow_redirects=True) as r:
             if r.status_code != 200:
-                print(f"[WARN] Civitai HTTP {r.status_code}")
+                print(f"[WARN] Civitai HTTP {r.status_code}: {filename}")
+                return False
+            ctype = r.headers.get("Content-Type", "").lower()
+            if "html" in ctype or "json" in ctype:
+                print(f"[WARN] Civitai がファイル以外: {ctype} {filename}")
                 return False
             with tmp.open("wb") as f:
                 for chunk in r.iter_content(1 << 20):
@@ -103,7 +111,10 @@ def fetch_civitai_file(version_id: int, file_id: int, target_dir: Path, filename
         print(f"[WARN] Civitai 例外: {e}")
         return False
     tmp.replace(target)
-    return verify_file(target) and print(f"[SUCCESS] {filename}") is None
+    if not verify_file(target):
+        return False
+    print(f"[SUCCESS] Civitai ready: {filename}")
+    return True
 
 
 def fetch_hf(url: str, dest_dir: Path, filename: str):
