@@ -57,6 +57,7 @@ FILES = {
                   "clip_vision_h.safetensors"],
     "vae_name": ["qwen_image_vae.safetensors", "wan2.2_vae.safetensors"],
     "lora_name": ["aidmaNSFWunlock-FLUX-V0.2.safetensors",
+                  "MS_Nude_Style_Flux_V2.safetensors",
                   "remove-clothes.safetensors"],
 }
 
@@ -66,8 +67,7 @@ OPTIONAL_FILES = {
                   "Wan2_2-TI2V-5B-Turbo_fp16.safetensors",
                   "wan2.2_i2v_high_noise_14B_fp8_scaled.safetensors",
                   "wan2.2_i2v_low_noise_14B_fp8_scaled.safetensors"],
-    "lora_name": ["MS_Nude_Style_Flux_V2.safetensors",
-                  "nsfw_qwen_21.safetensors",
+    "lora_name": ["nsfw_qwen_21.safetensors",
                   "wan2.2_i2v_lightx2v_4steps_lora_v1_high_noise.safetensors",
                   "wan2.2_i2v_lightx2v_4steps_lora_v1_low_noise.safetensors"],
 }
