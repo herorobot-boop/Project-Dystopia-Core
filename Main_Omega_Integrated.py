@@ -203,6 +203,15 @@ class DystopiaProductionPlant:
         if not edit_instruction.strip().startswith("Keep everything identical"):
             edit_instruction = f"Keep everything identical. Only {edit_instruction.strip()}"
 
+        src = Path("/workspace/ComfyUI/input") / base_image_name
+        try:
+            from PIL import Image
+            with Image.open(src) as img:
+                w, h = img.size
+            w, h = max(256, (w // 16) * 16), max(256, (h // 16) * 16)
+        except Exception:
+            w, h = 832, 1216
+
         workflow = {
             "1": {"class_type": "UNETLoader",
                   "inputs": {"unet_name": "qwen_image_edit_2509_fp8_e4m3fn.safetensors",
@@ -212,21 +221,16 @@ class DystopiaProductionPlant:
                              "type": "qwen_image"}},
             "3": {"class_type": "VAELoader", "inputs": {"vae_name": "qwen_image_vae.safetensors"}},
             "4": {"class_type": "LoadImage", "inputs": {"image": base_image_name}},
-            "5": {
-                "class_type": "TextEncodeQwenImageEditPlus",
-                "inputs": {"image1": ["4", 0], "prompt": edit_instruction,
-                           "clip": ["2", 0], "vae": ["3", 0]},
-            },
-            "6": {"class_type": "VAEEncode", "inputs": {"pixels": ["4", 0], "vae": ["3", 0]}},
-            "7": {
-                "class_type": "KSampler",
-                "inputs": {
-                    "model": ["1", 0], "positive": ["5", 0], "negative": ["5", 1],
-                    "latent_image": ["6", 0], "seed": new_seed(),
-                    "steps": 20, "cfg": 2.5, "sampler_name": "euler",
-                    "scheduler": "simple", "denoise": 0.85,
-                },
-            },
+            "5": {"class_type": "TextEncodeQwenImageEditPlus",
+                  "inputs": {"clip": ["2", 0], "vae": ["3", 0],
+                             "image1": ["4", 0], "prompt": edit_instruction}},
+            "6": {"class_type": "EmptySD3LatentImage",
+                  "inputs": {"width": w, "height": h, "batch_size": 1}},
+            "7": {"class_type": "KSampler",
+                  "inputs": {"model": ["1", 0], "positive": ["5", 0], "negative": ["5", 0],
+                             "latent_image": ["6", 0], "seed": new_seed(),
+                             "steps": 20, "cfg": 2.5, "sampler_name": "euler",
+                             "scheduler": "simple", "denoise": 1.0}},
             "8": {"class_type": "VAEDecode", "inputs": {"samples": ["7", 0], "vae": ["3", 0]}},
             "9": {"class_type": "SaveImage",
                   "inputs": {"filename_prefix": "Auto_Edit", "images": ["8", 0]}},
