@@ -17,6 +17,20 @@ from scripts.comfy_api_bridge import ComfyAPIBridge
 
 HAND_FIX = "five distinct fingers, separated digits, visible knuckles, photorealistic, sharp focus"
 
+CKPT_DIR = Path("/workspace/ComfyUI/models/checkpoints")
+
+
+def _pick_ckpt() -> str:
+    for n in ("fluxed_up_13.1_fp8.safetensors",
+              "fluxed_up_5.1_fp8.safetensors",
+              "flux1-dev-fp8.safetensors"):
+        if (CKPT_DIR / n).exists():
+            return n
+    return "flux1-dev-fp8.safetensors"
+
+
+BASE_CKPT = _pick_ckpt()
+
 
 def generate_base_image(prompt_tags: str, seed: int = None, width: int = 896, height: int = 1152) -> str:
     bridge = ComfyAPIBridge()
@@ -28,7 +42,7 @@ def generate_base_image(prompt_tags: str, seed: int = None, width: int = 896, he
     positive_text = f"aidmaNSFWunlock, {prompt_tags}, {HAND_FIX}"
 
     workflow = {
-        "1": {"class_type": "CheckpointLoaderSimple", "inputs": {"ckpt_name": "fluxed_up_5.1_fp8.safetensors"}},
+        "1": {"class_type": "CheckpointLoaderSimple", "inputs": {"ckpt_name": BASE_CKPT}},
         "2": {
             "class_type": "LoraLoader",
             "inputs": {
