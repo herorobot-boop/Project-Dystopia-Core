@@ -4,6 +4,7 @@
 15語制限と subtle|slow 接頭辞の自動補正。
 """
 import os
+import shutil
 import subprocess
 import sys
 import time
@@ -99,9 +100,29 @@ def render_subtle_motion_video(input_image_name: str, motion_prompt: str, seed: 
     return video_filename
 
 
+def _stage(arg: str) -> str | None:
+    """out/raw などの画像を ComfyUI/output に置いて、LoadImage 用の名前を返す。"""
+    src = Path(arg)
+    if not src.is_file():
+        for base in (C.RAW, C.ROOT):
+            if (base / arg).is_file():
+                src = base / arg
+                break
+    if not src.is_file():
+        return None
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    dst = OUTPUT_DIR / src.name
+    if src.resolve() != dst.resolve():
+        shutil.copy2(src, dst)
+    return dst.name
+
+
 def main() -> int:
     if len(sys.argv) > 1:
-        target_img = sys.argv[1]
+        target_img = _stage(sys.argv[1])
+        if not target_img:
+            print("画像が無い:", sys.argv[1])
+            return 1
     else:
         cands = sorted(OUTPUT_DIR.glob("QwenEdit_Exposed_*.png"), key=os.path.getmtime, reverse=True)
         if not cands:
