@@ -183,6 +183,12 @@ def setup_all_assets():
         TARGET_DIRS["loras"], "aidmaNSFWunlock-FLUX-V0.2.safetensors",
     )
 
+    # 解剖矯正 LoRA（T2I で常時使用）
+    fetch_hf(
+        "https://huggingface.co/rickrock-art/slim/resolve/main/MS_Nude_Style_Flux_V2.safetensors",
+        TARGET_DIRS["loras"], "MS_Nude_Style_Flux_V2.safetensors",
+    )
+
     # 差分編集段（保存名は edit_still.py の参照に合わせる）
     fetch_hf(
         "https://huggingface.co/Comfy-Org/Qwen-Image-Edit_ComfyUI/resolve/main/split_files/diffusion_models/qwen_image_edit_2509_fp8_e4m3fn.safetensors",
