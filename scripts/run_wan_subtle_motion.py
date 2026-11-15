@@ -71,7 +71,8 @@ def render_subtle_motion_video(input_image_name: str, motion_prompt: str, seed: 
         "12": {"class_type": "VHS_VideoCombine",
                "inputs": {"images": ["11", 0], "frame_rate": 16,
                           "format": "video/h264-mp4", "crf": 19,
-                          "filename_prefix": "Dystopia_Subtle_Wan"}},
+                          "filename_prefix": "Dystopia_Subtle_Wan",
+                          "save_output": True}},
     }
 
     print(f"🎬 [Wan 5B] 微動動画レンダリング (CFG 3.0 / Shift 3.0 / {width}x{height}): {clean_motion}")
