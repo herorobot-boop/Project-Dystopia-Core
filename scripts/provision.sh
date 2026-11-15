@@ -38,16 +38,23 @@ PIPOPT=""
   "$PY" -m pip install -q $PIPOPT pyyaml || fail "pyyaml 導入失敗"
 }
 
-if [ ! -d "$COMFY/custom_nodes/ComfyUI-VideoHelperSuite" ]; then
+VHS_DIR="$COMFY/custom_nodes/ComfyUI-VideoHelperSuite"
+if [ ! -d "$VHS_DIR" ]; then
   for i in 1 2 3; do
-    git clone --depth 1 https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite \
-      "$COMFY/custom_nodes/ComfyUI-VideoHelperSuite" && break
+    rm -rf "$VHS_DIR" /tmp/vhs.tar.gz
+    mkdir -p "$VHS_DIR"
+    if curl -fL "https://codeload.github.com/Kosinkadink/ComfyUI-VideoHelperSuite/tar.gz/refs/heads/main" -o /tmp/vhs.tar.gz \
+       && tar -xzf /tmp/vhs.tar.gz -C "$VHS_DIR" --strip-components=1; then
+      rm -f /tmp/vhs.tar.gz
+      break
+    fi
+    rm -rf "$VHS_DIR" /tmp/vhs.tar.gz
     sleep 5
   done
 fi
-[ -d "$COMFY/custom_nodes/ComfyUI-VideoHelperSuite" ] || fail "VHS 取得失敗"
+[ -d "$VHS_DIR" ] || fail "VHS 取得失敗"
 "$PY" -m pip install -q $PIPOPT -r \
-  "$COMFY/custom_nodes/ComfyUI-VideoHelperSuite/requirements.txt" 2>/dev/null
+  "$VHS_DIR/requirements.txt" 2>/dev/null
 
 bash /workspace/Project-Dystopia-Core/scripts/verify_urls.sh || fail "URL検証で停止" 2
 
