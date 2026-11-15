@@ -29,6 +29,8 @@ NEEDED = {
     "LoraLoaderModelOnly": ["model", "lora_name", "strength_model"],
     "CLIPTextEncode": ["clip", "text"],
     "EmptyLatentImage": ["width", "height", "batch_size"],
+    "EmptySD3LatentImage": ["width", "height", "batch_size"],
+    "ImageScaleToTotalPixels": ["image", "upscale_method", "total_pixels"],
     "KSampler": ["model", "positive", "negative", "latent_image", "seed", "steps",
                  "cfg", "sampler_name", "scheduler", "denoise"],
     "KSamplerAdvanced": ["model", "positive", "negative", "latent_image", "noise_seed",
