@@ -7,7 +7,7 @@ COMFY=/workspace/ComfyUI
 PY=/usr/local/bin/python3
 mkdir -p /workspace/models/llm /workspace/logs /workspace/Project-Dystopia-Core/out/raw
 
-fail() { echo "❌ $*"; exit "${2:-1}"; }
+fail() { echo "❌ ${1}"; exit "${2:-1}"; }
 command -v git >/dev/null || fail "git が無い。git入りテンプレートを選ぶこと"
 
 need=0
@@ -16,7 +16,7 @@ while IFS=$'\t' read -r url dest size sha; do
   [ "$size" = "*" ] && continue
   if [ -f "$dest" ] && [ "$(stat -c%s "$dest")" = "$size" ]; then continue; fi
   need=$((need + size))
-done < "$MAN"
+done < <(sed -e '$a\' "$MAN")
 need_gb=$(( need / 1073741824 + 15 ))
 
 FREE=$(df -BG --output=avail /workspace | tail -1 | tr -dc '0-9')
@@ -74,7 +74,7 @@ while IFS=$'\t' read -r url dest size sha; do
     --console-log-level=warn --summary-interval=0 ${AUTH[@]+"${AUTH[@]}"} \
     -d "$(dirname "$dest")" -o "$(basename "$dest")" "$url" \
     || fail "DL失敗 $(basename "$dest")"
-done < "$MAN"
+done < <(sed -e '$a\' "$MAN")
 
 while IFS=$'\t' read -r url dest size sha; do
   [ -z "${url:-}" ] && continue
@@ -87,6 +87,6 @@ while IFS=$'\t' read -r url dest size sha; do
     [ "$(sha256sum "$dest" | cut -d' ' -f1)" = "$sha" ] || fail "SHA不一致 $(basename "$dest")"
   fi
   echo "  OK $(basename "$dest")"
-done < "$MAN"
+done < <(sed -e '$a\' "$MAN")
 
 echo "✅ 資材完了"
