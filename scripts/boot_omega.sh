@@ -9,7 +9,7 @@ PORT=8188
 PIN_DATE="2026-10-01"
 mkdir -p /workspace/logs
 
-fail() { echo "❌ $*"; exit "${2:-1}"; }
+fail() { echo "❌ ${1}"; exit "${2:-1}"; }
 
 "$PY" -c 'import torch;assert torch.cuda.is_available()' 2>/dev/null || fail "CUDA不可"
 
@@ -51,6 +51,9 @@ curl -sf "http://127.0.0.1:$PORT/system_stats" | "$PY" -c \
 
 if try_nodes; then
   echo "  初回照合OK"
+elif ! git -C "$COMFY" rev-parse --git-dir >/dev/null 2>&1; then
+  echo "⚠ ComfyUI は git 管理外。バージョン固定を飛ばす"
+  try_nodes || echo "⚠ ノード不整合のまま続行（audit_all で確認）"
 else
   echo "--- 段階2: ${PIN_DATE} に固定 ---"
   git -C "$COMFY" reset --hard -q 2>/dev/null
