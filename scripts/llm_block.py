@@ -95,7 +95,9 @@ def main() -> int:
     prompt = clean(raw)
     if "no blush" not in prompt:
         prompt = f"{prompt}, {GUARD}"
-    prompt = prompt[:LIMIT]
+    if len(prompt) > LIMIT:
+        cut = prompt[:LIMIT]
+        prompt = cut.rsplit(",", 1)[0] if "," in cut else cut
     if len(prompt) < 20:
         print("短すぎる:", raw[:200])
         return 1
