@@ -43,7 +43,7 @@ def compose(record: dict, style: dict, camera_rules: dict):
     if props:
         parts.append(flatten(props))
 
-    parts.append(record.get("prompt_seed", "").strip())
+    parts.append((record.get("prompt_seed") or "").strip())
 
     tags = record.get("tags", [])
     if tags:
