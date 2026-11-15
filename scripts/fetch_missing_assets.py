@@ -117,6 +117,7 @@ def fetch_civitai_file(version_id: int, file_id: int, target_dir: Path, filename
         return False
     tmp.replace(target)
     if not verify_file(target):
+        print(f"[WARN] 中身不正: {filename}")
         return False
     print(f"[SUCCESS] Civitai ready: {filename}")
     return True
