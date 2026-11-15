@@ -28,7 +28,6 @@ NEEDED = {
     "LoraLoader": ["model", "clip", "lora_name", "strength_model", "strength_clip"],
     "LoraLoaderModelOnly": ["model", "lora_name", "strength_model"],
     "CLIPTextEncode": ["clip", "text"],
-    "EmptyLatentImage": ["width", "height", "batch_size"],
     "EmptySD3LatentImage": ["width", "height", "batch_size"],
     "ImageScaleToTotalPixels": ["image", "upscale_method", "total_pixels"],
     "KSampler": ["model", "positive", "negative", "latent_image", "seed", "steps",
@@ -38,7 +37,6 @@ NEEDED = {
                          "end_at_step", "add_noise", "return_with_leftover_noise"],
     "VAEDecode": ["samples", "vae"],
     "VAEDecodeTiled": ["samples", "vae", "tile_size", "overlap"],
-    "VAEEncode": ["pixels", "vae"],
     "SaveImage": ["filename_prefix", "images"],
     "TextEncodeQwenImageEditPlus": ["clip", "prompt"],
     "Wan22ImageToVideoLatent": ["vae", "width", "height", "length", "batch_size", "start_image"],
@@ -48,28 +46,44 @@ NEEDED = {
     "VHS_VideoCombine": ["images", "frame_rate", "filename_prefix", "format", "save_output"],
 }
 
+# (ノード, フィールド) -> 必須ファイル
 FILES = {
-    "unet_name": ["qwen_image_edit_2509_fp8_e4m3fn.safetensors",
-                  "wan2.2_ti2v_5B_fp16.safetensors"],
-    "ckpt_name": [_pick_ckpt()],
-    "clip_name": ["qwen_2.5_vl_7b_fp8_scaled.safetensors",
-                  "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
-                  "clip_vision_h.safetensors"],
-    "vae_name": ["qwen_image_vae.safetensors", "wan2.2_vae.safetensors"],
-    "lora_name": ["aidmaNSFWunlock-FLUX-V0.2.safetensors",
-                  "MS_Nude_Style_Flux_V2.safetensors",
-                  "remove-clothes.safetensors"],
+    ("UNETLoader", "unet_name"): [
+        "qwen_image_edit_2509_fp8_e4m3fn.safetensors",
+        "wan2.2_ti2v_5B_fp16.safetensors",
+    ],
+    ("CLIPLoader", "clip_name"): [
+        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
+        "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+    ],
+    ("CLIPVisionLoader", "clip_name"): ["clip_vision_h.safetensors"],
+    ("CheckpointLoaderSimple", "ckpt_name"): [_pick_ckpt()],
+    ("VAELoader", "vae_name"): ["qwen_image_vae.safetensors", "wan2.2_vae.safetensors"],
+    ("LoraLoader", "lora_name"): [
+        "aidmaNSFWunlock-FLUX-V0.2.safetensors",
+        "MS_Nude_Style_Flux_V2.safetensors",
+        "remove-clothes.safetensors",
+    ],
+    ("LoraLoaderModelOnly", "lora_name"): [
+        "aidmaNSFWunlock-FLUX-V0.2.safetensors",
+        "MS_Nude_Style_Flux_V2.safetensors",
+        "remove-clothes.safetensors",
+    ],
 }
 
 OPTIONAL_FILES = {
-    "unet_name": ["qwen_image_edit_2511_fp8mixed.safetensors",
-                  "qwen_image_fp8_e4m3fn.safetensors",
-                  "Wan2_2-TI2V-5B-Turbo_fp16.safetensors",
-                  "wan2.2_i2v_high_noise_14B_fp8_scaled.safetensors",
-                  "wan2.2_i2v_low_noise_14B_fp8_scaled.safetensors"],
-    "lora_name": ["nsfw_qwen_21.safetensors",
-                  "wan2.2_i2v_lightx2v_4steps_lora_v1_high_noise.safetensors",
-                  "wan2.2_i2v_lightx2v_4steps_lora_v1_low_noise.safetensors"],
+    ("UNETLoader", "unet_name"): [
+        "qwen_image_edit_2511_fp8mixed.safetensors",
+        "qwen_image_fp8_e4m3fn.safetensors",
+        "Wan2_2-TI2V-5B-Turbo_fp16.safetensors",
+        "wan2.2_i2v_high_noise_14B_fp8_scaled.safetensors",
+        "wan2.2_i2v_low_noise_14B_fp8_scaled.safetensors",
+    ],
+    ("LoraLoaderModelOnly", "lora_name"): [
+        "nsfw_qwen_21.safetensors",
+        "wan2.2_i2v_lightx2v_4steps_lora_v1_high_noise.safetensors",
+        "wan2.2_i2v_lightx2v_4steps_lora_v1_low_noise.safetensors",
+    ],
 }
 
 bad = 0
@@ -101,29 +115,26 @@ for cls, inputs in NEEDED.items():
         print("❌ TextEncodeQwenImageEditPlus の出力が無い")
         bad += 1
 
-for field, names in FILES.items():
-    for cls, inputs in NEEDED.items():
-        if field not in inputs:
-            continue
-        opts = info.get(cls, {}).get("input", {}).get("required", {}).get(field, [[]])[0]
-        if not isinstance(opts, list):
-            continue
-        for name in names:
-            if opts and name not in opts:
-                print(f"❌ ファイル未認識: {cls}.{field} に {name}")
-                bad += 1
 
-for field, names in OPTIONAL_FILES.items():
-    for cls, inputs in NEEDED.items():
-        if field not in inputs:
-            continue
-        opts = info.get(cls, {}).get("input", {}).get("required", {}).get(field, [[]])[0]
+def check_files(mapping: dict, fatal: bool) -> None:
+    global bad, warn
+    for (cls, field), names in mapping.items():
+        spec = info.get(cls, {}).get("input", {})
+        opts = spec.get("required", {}).get(field, [[]])[0]
         if not isinstance(opts, list):
             continue
         for name in names:
             if opts and name not in opts:
-                print(f"⚠ 任意ファイル無し: {name}")
-                warn += 1
+                if fatal:
+                    print(f"❌ ファイル未認識: {cls}.{field} に {name}")
+                    bad += 1
+                else:
+                    print(f"⚠ 任意ファイル無し: {name}")
+                    warn += 1
+
+
+check_files(FILES, True)
+check_files(OPTIONAL_FILES, False)
 
 if warn:
     print(f"⚠ 任意 {warn} 件（起動は可）")
