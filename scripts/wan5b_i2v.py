@@ -86,10 +86,11 @@ def main() -> int:
     if err:
         print("失敗:", err)
         return 1
-    print("生成:", C.stash(C.collect(out, "gifs")))
-    for _v in C.collect(out, "gifs"):
+moved = C.stash(C.collect(out, "gifs"))
+    print("生成:", moved)
+    for _v in moved:
         subprocess.run([sys.executable, str(Path(__file__).parent / "discord_notifier.py"),
-                        str(C.COMFY_OUT / _v), a.motion], check=False)
+                        str(C.RAW / _v), a.motion], check=False)
     return 0
 
 
