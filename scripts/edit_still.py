@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
-"""Qwen-Image-Edit で差分編集。--lora で脱衣LoRA（既定強度0.55）。"""
+"""Qwen-Image-Edit で差分編集。negativeはpositiveと同一条件付け（出力1本のため）。"""
 import argparse
 import sys
 import time
 from pathlib import Path
+
+from PIL import Image
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import _common as C
@@ -11,16 +13,10 @@ import _common as C
 KEEP = "Keep everything identical. "
 
 
-def _pick_unet() -> str:
-    d = Path("/workspace/ComfyUI/models/diffusion_models")
-    for n in ("qwen_image_edit_2511_fp8mixed.safetensors",
-              "qwen_image_edit_2509_fp8_e4m3fn.safetensors"):
-        if (d / n).exists():
-            return n
-    return "qwen_image_edit_2509_fp8_e4m3fn.safetensors"
-
-
-UNET = _pick_unet()
+def fit(path: Path) -> tuple[int, int]:
+    with Image.open(path) as img:
+        w, h = img.size
+    return max(256, (w // 16) * 16), max(256, (h // 16) * 16)
 
 
 def main() -> int:
@@ -41,6 +37,7 @@ def main() -> int:
         print("画像が無い:", a.image)
         return 1
 
+    w, h = fit(src)
     text = KEEP + a.instruction.strip()
     if a.lora:
         text = "remove all the clothes of the figure in the picture, " + text
@@ -51,7 +48,7 @@ def main() -> int:
 
     wf = {
         "1": {"class_type": "UNETLoader",
-              "inputs": {"unet_name": UNET,
+              "inputs": {"unet_name": "qwen_image_edit_2509_fp8_e4m3fn.safetensors",
                          "weight_dtype": "default"}},
         "2": {"class_type": "CLIPLoader",
               "inputs": {"clip_name": "qwen_2.5_vl_7b_fp8_scaled.safetensors",
@@ -59,13 +56,15 @@ def main() -> int:
         "3": {"class_type": "VAELoader", "inputs": {"vae_name": "qwen_image_vae.safetensors"}},
         "4": {"class_type": "LoadImage", "inputs": {"image": name}},
         "5": {"class_type": "TextEncodeQwenImageEditPlus",
-              "inputs": {"clip": ["2", 0], "vae": ["3", 0], "image1": ["4", 0], "prompt": text}},
-        "6": {"class_type": "KSampler",
-              "inputs": {"model": ["1", 0], "positive": ["5", 0], "negative": ["5", 1],
-                         "latent_image": ["7", 0], "seed": seed, "steps": 20, "cfg": 2.5,
+              "inputs": {"clip": ["2", 0], "vae": ["3", 0],
+                         "image1": ["4", 0], "prompt": text}},
+        "6": {"class_type": "EmptySD3LatentImage",
+              "inputs": {"width": w, "height": h, "batch_size": 1}},
+        "7": {"class_type": "KSampler",
+              "inputs": {"model": ["1", 0], "positive": ["5", 0], "negative": ["5", 0],
+                         "latent_image": ["6", 0], "seed": seed, "steps": 20, "cfg": 2.5,
                          "sampler_name": "euler", "scheduler": "simple", "denoise": 1.0}},
-        "7": {"class_type": "VAEEncode", "inputs": {"pixels": ["4", 0], "vae": ["3", 0]}},
-        "8": {"class_type": "VAEDecode", "inputs": {"samples": ["6", 0], "vae": ["3", 0]}},
+        "8": {"class_type": "VAEDecode", "inputs": {"samples": ["7", 0], "vae": ["3", 0]}},
         "9": {"class_type": "SaveImage", "inputs": {"filename_prefix": "Tmp", "images": ["8", 0]}},
     }
     if a.lora:
@@ -73,8 +72,9 @@ def main() -> int:
                     "inputs": {"model": ["1", 0],
                                "lora_name": "remove-clothes.safetensors",
                                "strength_model": a.lora_strength}}
-        wf["6"]["inputs"]["model"] = ["10", 0]
+        wf["7"]["inputs"]["model"] = ["10", 0]
 
+    print(f"size={w}x{h} lora={'on' if a.lora else 'off'}")
     out, err = C.run(wf, 900)
     if err:
         print("失敗:", err)
