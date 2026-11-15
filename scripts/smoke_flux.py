@@ -25,24 +25,31 @@ CKPT = _pick_ckpt()
 wf = {
     "1": {"class_type": "CheckpointLoaderSimple",
           "inputs": {"ckpt_name": CKPT}},
-    "2": {"class_type": "LoraLoader",
-          "inputs": {"model": ["1", 0], "clip": ["1", 1],
-                     "lora_name": "MS_Nude_Style_Flux_V2.safetensors",
-                     "strength_model": 0.85, "strength_clip": 0.85}},
     "4": {"class_type": "CLIPTextEncode",
-          "inputs": {"clip": ["2", 1],
+          "inputs": {"clip": ["1", 1],
                      "text": "nsfw, japanese woman, black hair, knit cardigan, indoor, no blush"}},
-    "5": {"class_type": "CLIPTextEncode", "inputs": {"clip": ["2", 1], "text": ""}},
-    "6": {"class_type": "EmptyLatentImage",
+    "5": {"class_type": "CLIPTextEncode", "inputs": {"clip": ["1", 1], "text": ""}},
+    "6": {"class_type": "EmptySD3LatentImage",
           "inputs": {"width": 512, "height": 640, "batch_size": 1}},
     "7": {"class_type": "KSampler",
-          "inputs": {"model": ["2", 0], "positive": ["4", 0], "negative": ["5", 0],
+          "inputs": {"model": ["1", 0], "positive": ["4", 0], "negative": ["5", 0],
                      "latent_image": ["6", 0], "seed": 12345,
                      "steps": 8, "cfg": 1.0, "sampler_name": "euler",
                      "scheduler": "simple", "denoise": 1.0}},
     "8": {"class_type": "VAEDecode", "inputs": {"samples": ["7", 0], "vae": ["1", 2]}},
     "9": {"class_type": "SaveImage", "inputs": {"filename_prefix": "Smoke", "images": ["8", 0]}},
 }
+
+if Path("/workspace/ComfyUI/models/loras/MS_Nude_Style_Flux_V2.safetensors").exists():
+    wf["2"] = {"class_type": "LoraLoader",
+               "inputs": {"model": ["1", 0], "clip": ["1", 1],
+                          "lora_name": "MS_Nude_Style_Flux_V2.safetensors",
+                          "strength_model": 0.85, "strength_clip": 0.85}}
+    wf["4"]["inputs"]["clip"] = ["2", 1]
+    wf["5"]["inputs"]["clip"] = ["2", 1]
+    wf["7"]["inputs"]["model"] = ["2", 0]
+else:
+    print("MS_Nude_Style 無し。LoRA抜きでスモーク")
 
 r = requests.post(f"{BASE}/prompt", json={"prompt": wf}, timeout=30)
 if r.status_code != 200:
