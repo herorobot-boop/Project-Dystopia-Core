@@ -4,6 +4,7 @@
 15語制限と subtle|slow 接頭辞の自動補正。
 """
 import os
+import subprocess
 import sys
 import time
 from pathlib import Path
@@ -15,6 +16,9 @@ if str(PROJECT_ROOT) not in sys.path:
 
 from scripts.comfy_api_bridge import ComfyAPIBridge, align_resolution_16px
 from scripts.c2pa_signer import sign_media_atomically
+
+sys.path.insert(0, str(CURRENT_DIR))
+import _common as C
 
 OUTPUT_DIR = Path("/workspace/ComfyUI/output")
 UNET = "wan2.2_ti2v_5B_fp16.safetensors"
@@ -82,7 +86,15 @@ def render_subtle_motion_video(input_image_name: str, motion_prompt: str, seed: 
     print("🔒 [C2PA] メタデータ注入中...")
     sign_media_atomically(raw_video_path)
 
-    print(f"\n🎉 完成: {raw_video_path}\n")
+    moved = C.stash([raw_video_path.name])
+    if moved:
+        dst = C.RAW / moved[0]
+        print(f"\n🎉 完成: {dst}\n")
+        subprocess.run([sys.executable, str(CURRENT_DIR / "discord_notifier.py"),
+                        str(dst), clean_motion], check=False)
+        return moved[0]
+
+    print(f"\n🎉 完成（退避失敗・outputに残置）: {raw_video_path}\n")
     return video_filename
 
 
