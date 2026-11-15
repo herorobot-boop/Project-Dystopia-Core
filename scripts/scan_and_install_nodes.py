@@ -13,7 +13,7 @@ MANDATORY_REPOS = [
     "https://github.com/kijai/ComfyUI-KJNodes",
     "https://github.com/city96/ComfyUI-GGUF",
     "https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite",
-    "https://github.com/roy-sau/ComfyUI-SendToDiscord",
+    "https://github.com/gmorks/ComfyUI-SendToDiscord",
 ]
 
 CUSTOM_NODES = Path("/workspace/ComfyUI/custom_nodes")
