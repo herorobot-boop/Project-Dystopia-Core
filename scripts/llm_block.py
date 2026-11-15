@@ -56,7 +56,7 @@ def clean(text: str) -> str:
         if not re.fullmatch(r"[A-Za-z0-9 \-_']+", t):
             continue
         tags.append(t)
-    return ", ".join(dict.fromkeys(tags)[:40]) if False else ", ".join(list(dict.fromkeys(tags))[:40])
+    return ", ".join(list(dict.fromkeys(tags))[:40])
 
 
 def main() -> int:
@@ -106,7 +106,11 @@ def main() -> int:
                     "--engine", a.engine, "--place", a.place, "--title", a.title],
                    check=True)
     slug = re.sub(r"[^a-z0-9]+", "_", a.place.lower()).strip("_")[:30]
-    target = sorted((SCEN / f"{a.engine.lower()}_{slug}").glob("*.yaml"))[-1]
+    hits = sorted((SCEN / f"{a.engine.lower()}_{slug}").glob("*.yaml"))
+    if not hits:
+        print(f"YAMLが見つからない: {a.engine.lower()}_{slug}/*.yaml")
+        return 1
+    target = hits[-1]
 
     data = yaml.safe_load(target.read_text(encoding="utf-8"))
     data["prompt_seed"] = prompt
