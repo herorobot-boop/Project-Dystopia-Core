@@ -5,6 +5,7 @@ import os
 import re
 import subprocess
 import sys
+import time
 from pathlib import Path
 
 import requests
@@ -13,20 +14,34 @@ import yaml
 ROOT = Path(__file__).resolve().parent.parent
 SYS = ROOT / "config" / "llm_system.txt"
 SCEN = ROOT / "data" / "scenarios"
-LLM_PORT = os.environ.get("LLM_PORT", "8001")
-LLM = f"http://127.0.0.1:{LLM_PORT}/v1/chat/completions"
+LLM_PORTS = [os.environ["LLM_PORT"]] if os.environ.get("LLM_PORT") else ["8000", "8001"]
 GUARD = "no blush, even skin tone"
 LIMIT = 880
 
 
-def ensure_llm() -> bool:
-    try:
-        if requests.get(f"http://127.0.0.1:{LLM_PORT}/v1/models", timeout=2).status_code == 200:
-            return True
-    except Exception:
-        pass
+def _live_port() -> str | None:
+    for p in LLM_PORTS:
+        try:
+            if requests.get(f"http://127.0.0.1:{p}/v1/models", timeout=2).status_code == 200:
+                return p
+        except Exception:
+            continue
+    return None
+
+
+def ensure_llm() -> str | None:
+    p = _live_port()
+    if p:
+        return p
     print("LLMを起動します（初回は数分）")
-    return subprocess.run(["bash", str(ROOT / "scripts" / "llm_server.sh")]).returncode == 0
+    if subprocess.run(["bash", str(ROOT / "scripts" / "llm_server.sh")]).returncode != 0:
+        return None
+    for _ in range(30):
+        time.sleep(2)
+        p = _live_port()
+        if p:
+            return p
+    return None
 
 
 def clean(text: str) -> str:
@@ -55,9 +70,11 @@ def main() -> int:
     if not SYS.exists():
         print("config/llm_system.txt が無い")
         return 1
-    if not ensure_llm():
+    port = ensure_llm()
+    if not port:
         print("LLM起動失敗")
         return 1
+    llm_url = f"http://127.0.0.1:{port}/v1/chat/completions"
 
     body = {
         "messages": [
@@ -68,7 +85,7 @@ def main() -> int:
         "max_tokens": 200,
     }
     try:
-        r = requests.post(LLM, json=body, timeout=300)
+        r = requests.post(llm_url, json=body, timeout=300)
         r.raise_for_status()
         raw = r.json()["choices"][0]["message"]["content"]
     except Exception as e:
