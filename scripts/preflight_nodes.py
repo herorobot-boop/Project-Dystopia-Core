@@ -45,7 +45,7 @@ NEEDED = {
     "WanImageToVideo": ["positive", "negative", "vae", "clip_vision_output",
                         "start_image", "width", "height", "length", "batch_size"],
     "ModelSamplingSD3": ["model", "shift"],
-    "VHS_VideoCombine": ["images", "frame_rate", "filename_prefix", "format", "crf", "save_output"],
+    "VHS_VideoCombine": ["images", "frame_rate", "filename_prefix", "format", "save_output"],
 }
 
 FILES = {
