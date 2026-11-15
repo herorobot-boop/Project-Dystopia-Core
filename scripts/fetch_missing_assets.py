@@ -184,7 +184,7 @@ def setup_all_assets():
 
     # 差分編集段（保存名は edit_still.py の参照に合わせる）
     fetch_hf(
-        "https://huggingface.co/Comfy-Org/Qwen-Image-Edit_ComfyUI/resolve/main/split_files/diffusion_models/qwen_image_edit_fp8_e4m3fn.safetensors",
+        "https://huggingface.co/Comfy-Org/Qwen-Image-Edit_ComfyUI/resolve/main/split_files/diffusion_models/qwen_image_edit_2509_fp8_e4m3fn.safetensors",
         TARGET_DIRS["diffusion_models"],
         "qwen_image_edit_2509_fp8_e4m3fn.safetensors",
     )
@@ -224,11 +224,11 @@ def setup_all_assets():
 
     # 共通
     fetch_hf(
-        "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+        "https://huggingface.co/Comfy-Org/Wan-2.1/resolve/main/split_files/text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors",
         TARGET_DIRS["text_encoders"], "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
     )
     fetch_hf(
-        "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/clip_vision/clip_vision_h.safetensors",
+        "https://huggingface.co/Comfy-Org/Wan-2.1/resolve/main/split_files/clip_vision/clip_vision_h.safetensors",
         TARGET_DIRS["clip_vision"], "clip_vision_h.safetensors",
     )
     fetch_hf(
