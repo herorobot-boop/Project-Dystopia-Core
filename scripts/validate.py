@@ -128,8 +128,8 @@ def check_record(path: Path, record: dict, ng_default: list[str]) -> None:
     if "blush" in merged_ng and "blush" in lowered and "no blush" not in lowered:
         fail(path, "prompt_seed に blush があるが no blush と書いていない")
 
-    if "mannequin" not in lowered and "female" in cast and cast.get("male", 0) >= 1:
-        pass
+    if isinstance(cast, dict) and cast.get("male", 0) >= 1 and "mannequin" not in lowered:
+        fail(path, "male がいるのに prompt_seed に mannequin 指定が無い")
 
 
 def main() -> int:
