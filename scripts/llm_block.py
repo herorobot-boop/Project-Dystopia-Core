@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """日本語1行 → ローカルLLM → YAML → build。"""
 import argparse
+import os
 import re
 import subprocess
 import sys
@@ -12,14 +13,15 @@ import yaml
 ROOT = Path(__file__).resolve().parent.parent
 SYS = ROOT / "config" / "llm_system.txt"
 SCEN = ROOT / "data" / "scenarios"
-LLM = "http://127.0.0.1:8000/v1/chat/completions"
+LLM_PORT = os.environ.get("LLM_PORT", "8001")
+LLM = f"http://127.0.0.1:{LLM_PORT}/v1/chat/completions"
 GUARD = "no blush, even skin tone"
 LIMIT = 880
 
 
 def ensure_llm() -> bool:
     try:
-        if requests.get("http://127.0.0.1:8000/v1/models", timeout=2).status_code == 200:
+        if requests.get(f"http://127.0.0.1:{LLM_PORT}/v1/models", timeout=2).status_code == 200:
             return True
     except Exception:
         pass
