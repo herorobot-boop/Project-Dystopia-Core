@@ -131,8 +131,9 @@ def fetch_hf(url: str, dest_dir: Path, filename: str):
     print(f"[Downloading HF] {filename}...")
     auth = f'--header="Authorization: Bearer {HF_TOKEN}"' if HF_TOKEN else ""
     cmd = (
-        f"aria2c -x 16 -s 16 -k 1M {auth} --console-log-level=warn --continue=true "
-        f"--max-tries=5 --retry-wait=5 -c -d '{dest_dir}' -o '{filename}' '{url}'"
+        f"aria2c -c -x4 -s4 -k1M --file-allocation=none {auth} "
+        f"--console-log-level=warn --max-tries=8 --retry-wait=10 "
+        f"-d '{dest_dir}' -o '{filename}' '{url}'"
     )
     subprocess.run(cmd, shell=True, check=False)
     if not verify_file(output_path):
