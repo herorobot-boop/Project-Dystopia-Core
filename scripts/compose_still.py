@@ -1,20 +1,28 @@
 #!/usr/bin/env python3
-"""2〜3枚を1枚に合成。image1=土台, image2/3=参照。マスク不要。"""
+"""2〜3枚を1枚に合成。negativeはpositiveと同一。"""
 import argparse
 import sys
 import time
 from pathlib import Path
 
+from PIL import Image
+
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import _common as C
 
 
-def resolve(arg: str) -> Path | None:
+def resolve(arg: str):
     for base in (Path("."), C.RAW, C.COMFY_OUT, C.ROOT):
         p = base / arg
         if p.exists():
             return p
     return None
+
+
+def fit(path: Path) -> tuple[int, int]:
+    with Image.open(path) as img:
+        w, h = img.size
+    return max(256, (w // 16) * 16), max(256, (h // 16) * 16)
 
 
 def main() -> int:
@@ -36,6 +44,7 @@ def main() -> int:
         print("3枚目が無い:", a.third)
         return 1
 
+    w, h = fit(b)
     C.purge()
     n1 = C.upload(b)
     n2 = C.upload(r)
@@ -59,9 +68,10 @@ def main() -> int:
         "6": {"class_type": "TextEncodeQwenImageEditPlus",
               "inputs": {"clip": ["2", 0], "vae": ["3", 0],
                          "image1": ["4", 0], "image2": ["5", 0], "prompt": text}},
-        "7": {"class_type": "VAEEncode", "inputs": {"pixels": ["4", 0], "vae": ["3", 0]}},
+        "7": {"class_type": "EmptySD3LatentImage",
+              "inputs": {"width": w, "height": h, "batch_size": 1}},
         "8": {"class_type": "KSampler",
-              "inputs": {"model": ["1", 0], "positive": ["6", 0], "negative": ["6", 1],
+              "inputs": {"model": ["1", 0], "positive": ["6", 0], "negative": ["6", 0],
                          "latent_image": ["7", 0], "seed": seed, "steps": 24, "cfg": 2.5,
                          "sampler_name": "euler", "scheduler": "simple", "denoise": 1.0}},
         "9": {"class_type": "VAEDecode", "inputs": {"samples": ["8", 0], "vae": ["3", 0]}},
