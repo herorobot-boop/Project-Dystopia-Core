@@ -86,7 +86,7 @@ def main() -> int:
     if err:
         print("失敗:", err)
         return 1
-moved = C.stash(C.collect(out, "gifs"))
+    moved = C.stash(C.collect(out, "gifs"))
     print("生成:", moved)
     for _v in moved:
         subprocess.run([sys.executable, str(Path(__file__).parent / "discord_notifier.py"),
