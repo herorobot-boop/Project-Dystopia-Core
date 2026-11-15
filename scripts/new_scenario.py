@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import json
 import re
 import sys
 from pathlib import Path
@@ -42,9 +43,11 @@ def main() -> int:
 
     text = TEMPLATE.read_text(encoding="utf-8")
     text = text.replace("id: e2_place_000", f"id: {rid}")
-    text = text.replace("title: 仮タイトル", f"title: {args.title}")
+    text = text.replace("title: 仮タイトル",
+                        f"title: {json.dumps(args.title, ensure_ascii=False)}")
     text = text.replace("engine: E2", f"engine: {args.engine}")
-    text = text.replace("place: 仮の場所", f"place: {args.place}")
+    text = text.replace("place: 仮の場所",
+                        f"place: {json.dumps(args.place, ensure_ascii=False)}")
 
     target.write_text(text, encoding="utf-8")
     print(f"作成: {target.relative_to(ROOT)}")
