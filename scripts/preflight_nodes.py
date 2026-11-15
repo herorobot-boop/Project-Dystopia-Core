@@ -1,9 +1,22 @@
 #!/usr/bin/env python3
 """実機のノード定義とファイル名を照合する。"""
 import sys
+from pathlib import Path
 import requests
 
 BASE = "http://127.0.0.1:8188"
+CKPT_DIR = Path("/workspace/ComfyUI/models/checkpoints")
+CKPTS = ("fluxed_up_13.1_fp8.safetensors",
+         "fluxed_up_5.1_fp8.safetensors",
+         "flux1-dev-fp8.safetensors")
+
+
+def _pick_ckpt() -> str:
+    for n in CKPTS:
+        if (CKPT_DIR / n).exists():
+            return n
+    return CKPTS[-1]
+
 
 NEEDED = {
     "UNETLoader": ["unet_name", "weight_dtype"],
@@ -15,7 +28,7 @@ NEEDED = {
     "LoraLoader": ["model", "clip", "lora_name", "strength_model", "strength_clip"],
     "LoraLoaderModelOnly": ["model", "lora_name", "strength_model"],
     "CLIPTextEncode": ["clip", "text"],
-    "EmptySD3LatentImage": ["width", "height", "batch_size"],
+    "EmptyLatentImage": ["width", "height", "batch_size"],
     "KSampler": ["model", "positive", "negative", "latent_image", "seed", "steps",
                  "cfg", "sampler_name", "scheduler", "denoise"],
     "KSamplerAdvanced": ["model", "positive", "negative", "latent_image", "noise_seed",
@@ -30,7 +43,7 @@ NEEDED = {
     "WanImageToVideo": ["positive", "negative", "vae", "clip_vision_output",
                         "start_image", "width", "height", "length", "batch_size"],
     "ModelSamplingSD3": ["model", "shift"],
-    "VHS_VideoCombine": ["images", "frame_rate", "filename_prefix", "format"],
+    "VHS_VideoCombine": ["images", "frame_rate", "filename_prefix", "format", "save_output"],
 }
 
 FILES = {
@@ -40,7 +53,7 @@ FILES = {
                   "Wan2_2-TI2V-5B-Turbo_fp16.safetensors",
                   "wan2.2_i2v_high_noise_14B_fp8_scaled.safetensors",
                   "wan2.2_i2v_low_noise_14B_fp8_scaled.safetensors"],
-    "ckpt_name": ["flux1-dev-fp8.safetensors"],
+    "ckpt_name": [_pick_ckpt()],
     "clip_name": ["qwen_2.5_vl_7b_fp8_scaled.safetensors",
                   "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
                   "clip_vision_h.safetensors"],
