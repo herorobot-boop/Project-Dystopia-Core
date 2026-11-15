@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
 import json
+import shutil
 import subprocess
-import requests
+import sys
+import time
 from pathlib import Path
+import requests
 
 MANDATORY_REPOS = [
     "https://github.com/ltdrdata/ComfyUI-Impact-Pack",
@@ -16,17 +19,85 @@ MANDATORY_REPOS = [
 CUSTOM_NODES = Path("/workspace/ComfyUI/custom_nodes")
 
 
-def install_repo(repo_url: str):
-    repo_name = repo_url.rstrip("/").split("/")[-1].replace(".git", "")
+def _pip_install(req: Path):
+    cmd_break = [sys.executable, "-m", "pip", "install", "-q", "--break-system-packages", "-r", str(req)]
+    res = subprocess.run(cmd_break, check=False)
+    if res.returncode != 0:
+        subprocess.run([sys.executable, "-m", "pip", "install", "-q", "-r", str(req)], check=False)
+
+
+def _resolve_branches(owner: str, repo: str) -> list[str]:
+    branches: list[str] = []
+    try:
+        r = requests.get(f"https://api.github.com/repos/{owner}/{repo}", timeout=10)
+        if r.status_code == 200:
+            default_br = r.json().get("default_branch")
+            if default_br:
+                branches.append(default_br)
+    except Exception:
+        pass
+    for b in ("main", "master"):
+        if b not in branches:
+            branches.append(b)
+    return branches
+
+
+def install_repo(repo_url: str) -> bool:
+    clean_url = repo_url.rstrip("/")
+    if clean_url.endswith(".git"):
+        clean_url = clean_url[:-4]
+    parts = clean_url.split("github.com/")[-1].split("/")
+    if len(parts) < 2:
+        print(f"[WARN] 不正なURL: {repo_url}")
+        return False
+    owner, repo_name = parts[0], parts[1]
     target = CUSTOM_NODES / repo_name
-    if target.exists():
+    if target.exists() and any(target.iterdir()):
         print(f"[Exist] {repo_name}")
-        return
-    print(f"[Install] {repo_name}")
-    subprocess.run(f"git clone {repo_url} '{target}'", shell=True, check=True)
+        return True
+
+    print(f"[Install] {repo_name} (tarball)")
+    CUSTOM_NODES.mkdir(parents=True, exist_ok=True)
+    branches = _resolve_branches(owner, repo_name)
+    tmp_tgz = Path(f"/tmp/{repo_name}.tar.gz")
+
+    installed = False
+    for attempt in range(1, 4):
+        for br in branches:
+            shutil.rmtree(target, ignore_errors=True)
+            tmp_tgz.unlink(missing_ok=True)
+            target.mkdir(parents=True, exist_ok=True)
+            tar_url = f"https://codeload.github.com/{owner}/{repo_name}/tar.gz/refs/heads/{br}"
+            dl = subprocess.run(
+                ["curl", "-fsSL", "--max-time", "180", tar_url, "-o", str(tmp_tgz)],
+                check=False,
+            )
+            if dl.returncode == 0 and tmp_tgz.exists() and tmp_tgz.stat().st_size > 0:
+                ext = subprocess.run(
+                    ["tar", "-xzf", str(tmp_tgz), "-C", str(target), "--strip-components=1"],
+                    check=False,
+                )
+                if ext.returncode == 0 and any(target.iterdir()):
+                    tmp_tgz.unlink(missing_ok=True)
+                    installed = True
+                    break
+        if installed:
+            break
+        shutil.rmtree(target, ignore_errors=True)
+        tmp_tgz.unlink(missing_ok=True)
+        if attempt < 3:
+            print(f"[Retry {attempt}/3] {repo_name} 取得再試行...")
+            time.sleep(5)
+
+    if not installed:
+        print(f"[WARN] 取得失敗: {repo_name}")
+        return False
+
     req = target / "requirements.txt"
     if req.exists():
-        subprocess.run(f"pip install -r '{req}'", shell=True)
+        _pip_install(req)
+    print(f"[OK] {repo_name}")
+    return True
 
 
 def auto_install_from_workflow(workflow_json_path: str):
