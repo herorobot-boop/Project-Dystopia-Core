@@ -27,6 +27,11 @@ for p in TARGET_DIRS.values():
 MIN_SIZE = 1_000_000
 
 
+def free_gb() -> float:
+    st = os.statvfs("/workspace")
+    return st.f_bavail * st.f_frsize / (1024 ** 3)
+
+
 def verify_file(file_path: Path) -> bool:
     if not file_path.exists() or file_path.stat().st_size < MIN_SIZE:
         if file_path.exists():
@@ -204,11 +209,17 @@ def setup_all_assets():
         "https://huggingface.co/Comfy-Org/Wan-2.2/resolve/main/split_files/vae/wan2.2_vae.safetensors",
         TARGET_DIRS["vae"], "wan2.2_vae.safetensors",
     )
-    # 差分編集 2511（任意・A/B用）
-    fetch_hf(
-        "https://huggingface.co/Comfy-Org/Qwen-Image-Edit/resolve/main/split_files/diffusion_models/qwen_image_edit_2511_fp8mixed.safetensors",
-        TARGET_DIRS["diffusion_models"], "qwen_image_edit_2511_fp8mixed.safetensors",
-    )
+    # 差分編集 2511（任意・A/B用）。既定は取得しない。DYSTOPIA_2511=1 で取得。
+    if os.environ.get("DYSTOPIA_2511") == "1":
+        if free_gb() >= 22:
+            fetch_hf(
+                "https://huggingface.co/Comfy-Org/Qwen-Image-Edit/resolve/main/split_files/diffusion_models/qwen_image_edit_2511_fp8mixed.safetensors",
+                TARGET_DIRS["diffusion_models"], "qwen_image_edit_2511_fp8mixed.safetensors",
+            )
+        else:
+            print(f"[WARN] 2511 を省略。空き {free_gb():.1f}GB < 22GB")
+    else:
+        print("[SKIP] 2511 は DYSTOPIA_2511=1 のときだけ取得")
 
     # 共通
     fetch_hf(
