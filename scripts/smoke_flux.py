@@ -1,13 +1,30 @@
 #!/usr/bin/env python3
 """最小1枚で配管を確認。LoRAは MS_Nude_Style のみ。"""
-import json, sys, time
+import json
+import sys
+import time
+from pathlib import Path
 import requests
 
 BASE = "http://127.0.0.1:8188"
+CKPT_DIR = Path("/workspace/ComfyUI/models/checkpoints")
+CKPTS = ("fluxed_up_13.1_fp8.safetensors",
+         "fluxed_up_5.1_fp8.safetensors",
+         "flux1-dev-fp8.safetensors")
+
+
+def _pick_ckpt() -> str:
+    for n in CKPTS:
+        if (CKPT_DIR / n).exists():
+            return n
+    return CKPTS[-1]
+
+
+CKPT = _pick_ckpt()
 
 wf = {
     "1": {"class_type": "CheckpointLoaderSimple",
-          "inputs": {"ckpt_name": "flux1-dev-fp8.safetensors"}},
+          "inputs": {"ckpt_name": CKPT}},
     "2": {"class_type": "LoraLoader",
           "inputs": {"model": ["1", 0], "clip": ["1", 1],
                      "lora_name": "MS_Nude_Style_Flux_V2.safetensors",
@@ -16,7 +33,7 @@ wf = {
           "inputs": {"clip": ["2", 1],
                      "text": "nsfw, japanese woman, black hair, knit cardigan, indoor, no blush"}},
     "5": {"class_type": "CLIPTextEncode", "inputs": {"clip": ["2", 1], "text": ""}},
-    "6": {"class_type": "EmptySD3LatentImage",
+    "6": {"class_type": "EmptyLatentImage",
           "inputs": {"width": 512, "height": 640, "batch_size": 1}},
     "7": {"class_type": "KSampler",
           "inputs": {"model": ["2", 0], "positive": ["4", 0], "negative": ["5", 0],
@@ -29,7 +46,8 @@ wf = {
 
 r = requests.post(f"{BASE}/prompt", json={"prompt": wf}, timeout=30)
 if r.status_code != 200:
-    print("POST失敗", r.status_code, r.text[:600]); sys.exit(1)
+    print("POST失敗", r.status_code, r.text[:600])
+    sys.exit(1)
 pid = r.json()["prompt_id"]
 
 for _ in range(120):
@@ -37,9 +55,13 @@ for _ in range(120):
     h = requests.get(f"{BASE}/history/{pid}", timeout=10).json()
     if pid in h:
         if h[pid].get("status", {}).get("status_str") == "error":
-            print(json.dumps(h[pid]["status"], ensure_ascii=False)[:900]); sys.exit(1)
+            print(json.dumps(h[pid]["status"], ensure_ascii=False)[:900])
+            sys.exit(1)
         for node in h[pid].get("outputs", {}).values():
             if "images" in node:
-                print("生成:", node["images"][0]["filename"]); sys.exit(0)
-        print("完了したが画像なし"); sys.exit(1)
-print("タイムアウト"); sys.exit(1)
+                print("生成:", node["images"][0]["filename"])
+                sys.exit(0)
+        print("完了したが画像なし")
+        sys.exit(1)
+print("タイムアウト")
+sys.exit(1)
