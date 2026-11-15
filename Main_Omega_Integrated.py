@@ -320,6 +320,11 @@ class DystopiaProductionPlant:
         if applied_spices:
             self.mutation_lab.record_feedback(applied_spices, reward=1.0)
 
+        import shutil
+        raw_dir = Path("/workspace/Project-Dystopia-Core/out/raw")
+        raw_dir.mkdir(parents=True, exist_ok=True)
+        shutil.copy(video_path, raw_dir / video_name)
+
         print("\n" + "═" * 65)
         print(f"🎉 【Job Completed】 {video_name}")
         print("═" * 65 + "\n")
