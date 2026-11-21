@@ -104,9 +104,10 @@ def main() -> int:
     index = {name: header.index(name) for name in COLUMNS}
     written = 0
 
-    for lineno, line in enumerate(lines[1:], start=2):
-        if not line.strip():
-            continue
+for lineno, line in enumerate(f, 1):
+        line = line.rstrip("\n")
+        if not line.strip() or line.startswith("place\t"):   # ← 追加
+            continue                                          # ← 追加
         cells = line.split("\t")
         if len(cells) < len(header):
             cells += [""] * (len(header) - len(cells))
