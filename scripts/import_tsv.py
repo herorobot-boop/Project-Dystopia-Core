@@ -37,13 +37,16 @@ MOVE_RE = re.compile(r"\b(lift|lifted|pull|pulled|kick|kicked|open|opened|aside|
 
 SLUGS_FILE = ROOT / "config" / "slugs.txt"
 
+
 def load_slugs() -> set:
     if not SLUGS_FILE.exists():
         return set()
     return {l.strip() for l in SLUGS_FILE.read_text(encoding="utf-8").splitlines()
             if l.strip() and not l.startswith("#")}
 
+
 SLUGS = load_slugs()
+
 
 def snap_slug(p: str, slugs: set) -> tuple:
     if not slugs or p in slugs:
@@ -57,6 +60,7 @@ def snap_slug(p: str, slugs: set) -> tuple:
     if best and score >= 2:
         return best, [f"place辞書補正 {p}->{best}"]
     return p, [f"place辞書外 {p}"]
+
 
 def normalize_fields(ins: str, mot: str) -> tuple:
     """instruction/motion の汚染を剥がす。"""
@@ -95,6 +99,7 @@ def normalize_fields(ins: str, mot: str) -> tuple:
     mot = ", ".join(dict.fromkeys(mtags))
     return ins, mot, fixes
 
+
 def sanitize(place, title, concept, instruction, motion, expression,
              recent_expr: tuple = ()) -> tuple:
     fixes: list[str] = []
@@ -102,7 +107,7 @@ def sanitize(place, title, concept, instruction, motion, expression,
     p = SLUG_RE.sub("_", place.strip().lower()).strip("_") or "misc"
     if p != place.strip():
         fixes.append(f"place矯正 {place!r}->{p!r}")
-    
+
     p, f3 = snap_slug(p, SLUGS)
     fixes.extend(f3)
 
@@ -126,14 +131,14 @@ def sanitize(place, title, concept, instruction, motion, expression,
 
     ins = SPACE_RE.sub(" ", instruction).strip().lower()
     mot = SPACE_RE.sub(" ", motion).strip().lower()
-    
+
     ins, mot, f2 = normalize_fields(ins, mot)
     fixes.extend(f2)
 
     if not any(ins.startswith(f) for f in FRAMING_PRIMARY):
         ins = "cowboy shot, " + ins
         fixes.append("構図タグ補完")
-        
+
     if len(TOKEN_RE.findall(ins)) > MAX_INSTRUCTION_WORDS:
         ins = " ".join(ins.split()[:MAX_INSTRUCTION_WORDS]).rstrip(",; ")
         fixes.append("instruction短縮")
@@ -156,18 +161,26 @@ def sanitize(place, title, concept, instruction, motion, expression,
 
     return p, t, c, ins, mot, ex, fixes
 
+
 def parse_line(line: str):
     sep = "\t" if "\t" in line else "|"
     if line.lower().startswith(f"place{sep}".lower()):
         return None, sep
     return [x.strip() for x in line.split(sep)], sep
 
-def build_cmd(row) -> list[str]:
+
+def build_cmd(row, fast: bool = False) -> list[str]:
     place, title, concept, instruction, motion, expression = row
-    return [sys.executable, str(GEN),
-            "--place", place, "--title", title, "--concept", concept,
-            "--instruction", instruction, "--motion", motion,
-            "--expression", expression]
+    cmd = [
+        sys.executable, str(GEN),
+        "--place", place, "--title", title, "--concept", concept,
+        "--instruction", instruction, "--motion", motion,
+        "--expression", expression,
+    ]
+    if fast:
+        cmd.append("--fast")
+    return cmd
+
 
 def mark_used(path: Path, linenos: set[int]):
     lines = path.read_text(encoding="utf-8").splitlines()
@@ -183,6 +196,7 @@ def mark_used(path: Path, linenos: set[int]):
             lines[i - 1] = sep.join(parts)
     path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("path", type=Path)
@@ -192,6 +206,7 @@ def main() -> int:
     ap.add_argument("--start", type=int, default=1)
     ap.add_argument("--end", type=int, default=0)
     ap.add_argument("--mark-used", action="store_true")
+    ap.add_argument("--fast", action="store_true")
     args = ap.parse_args()
 
     if not args.path.exists():
@@ -247,7 +262,7 @@ def main() -> int:
         for r in rows:
             print("|".join(r))
         print("\n[dry-run] 実行コマンド例:")
-        print(" ".join(f'"{x}"' if " " in x else x for x in build_cmd(rows[0])))
+        print(" ".join(f'"{x}"' if " " in x else x for x in build_cmd(rows[0], fast=args.fast)))
         return 0
 
     QUEUE.parent.mkdir(parents=True, exist_ok=True)
@@ -259,7 +274,7 @@ def main() -> int:
     done = 0
     for i, r in enumerate(rows[:args.count], 1):
         print(f"\n===== {i}/{min(args.count, len(rows))} : {r[1]} =====")
-        rc = subprocess.run(build_cmd(r)).returncode
+        rc = subprocess.run(build_cmd(r, fast=args.fast)).returncode
         if rc != 0:
             print(f"⚠️ 終了コード {rc}（続行）")
         else:
@@ -272,6 +287,7 @@ def main() -> int:
         mark_used(args.path, used_linenos)
         print("[mark] 台帳に使用済み印を付与")
     return 0
+
 
 if __name__ == "__main__":
     sys.exit(main())
