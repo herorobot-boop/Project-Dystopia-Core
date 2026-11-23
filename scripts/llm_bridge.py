@@ -53,7 +53,10 @@ class SalukiBridge:
             "--n_ctx", "2048",
         ]
         self.proc = subprocess.Popen(
-            cmd, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, preexec_fn=os.setsid
+            cmd,
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL,
+            start_new_session=True,
         )
         for _ in range(60):
             if self._is_alive():
